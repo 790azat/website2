@@ -1,319 +1,296 @@
+@extends('layouts.site')
+@use('App\Support\SiteContent')
+
 @php
     $siteName = config('app.name', 'Laravel');
     $title = null;
+    $description = $siteName.' publishes clear, research-driven guides that make money, business, and technology easier to understand.';
 
-    $data = require resource_path('data/articles.php');
-
-    $sectionStyles = [
-        'data-intelligence' => ['icon' => 'circle-stack', 'badge' => 'bg-sky-600', 'chip' => 'bg-gradient-to-r from-sky-500 to-blue-600', 'gradient' => 'bg-gradient-to-br from-sky-400 via-cyan-500 to-blue-600'],
-        'business-strategy' => ['icon' => 'arrow-trending-up', 'badge' => 'bg-amber-600', 'chip' => 'bg-gradient-to-r from-amber-500 to-orange-600', 'gradient' => 'bg-gradient-to-br from-amber-400 via-orange-500 to-amber-600'],
-        'digital-horizons' => ['icon' => 'cpu-chip', 'badge' => 'bg-violet-600', 'chip' => 'bg-gradient-to-r from-violet-500 to-indigo-600', 'gradient' => 'bg-gradient-to-br from-violet-400 via-purple-500 to-indigo-600'],
-        'people-impact' => ['icon' => 'user-group', 'badge' => 'bg-rose-600', 'chip' => 'bg-gradient-to-r from-rose-500 to-pink-600', 'gradient' => 'bg-gradient-to-br from-rose-400 via-pink-500 to-rose-600'],
-    ];
-
-    $categories = collect($data['sections'])
-        ->map(fn ($meta, $key) => array_merge(
-            ['id' => $key, 'title' => $meta['title']],
-            $sectionStyles[$key]
-        ))
-        ->sortBy(fn ($c) => $data['sections'][$c['id']]['order'])
-        ->values()
-        ->all();
-
-    $allArticles = collect($data['articles'])->sortByDesc('date')->values();
-
-    $attachMeta = function ($article) use ($data, $sectionStyles) {
-        $article['author_info'] = $data['authors'][$article['author']];
-        $article['section_title'] = $data['sections'][$article['section']]['title'];
-        $article['style'] = $sectionStyles[$article['section']];
-        return $article;
-    };
-
-    $featuredArticle = $allArticles->isNotEmpty() ? $attachMeta($allArticles->first()) : null;
-
-    $latestArticles = $allArticles->slice(1, 5)->values()->map($attachMeta);
-
-    $sidebarArticles = $allArticles->slice(6, 5)->values()->map($attachMeta);
-
-    $programs = collect($data['programs'] ?? []);
+    $categories = SiteContent::categories();
+    $allArticles = SiteContent::articles();
+    $featuredArticle = $allArticles->first();
+    $latestArticles = $allArticles->slice(1, 6)->values();
+    $moreArticles = $allArticles->slice(7, 4)->values();
+    $programs = SiteContent::programs();
+    $authors = SiteContent::authors();
 @endphp
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        @include('partials.head')
-        <meta name="description" content="{{ $siteName }} publishes clear, research-driven guides on data intelligence, business strategy, digital horizons, and people & impact." />
-    </head>
-    <body
-        x-data="{ mobileOpen: false }"
-        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
-    >
-        @include('partials.site-header', ['categories' => $categories, 'siteName' => $siteName])
 
-        <main>
-            {{-- Hero --}}
-            <section class="relative overflow-hidden">
-                <div class="pointer-events-none absolute inset-x-0 -top-40 -z-10 flex justify-center">
-                    <div class="h-[26rem] w-[56rem] rounded-full bg-blue-200/40 blur-3xl dark:bg-blue-500/10"></div>
-                </div>
+@section('content')
+    {{-- Hero --}}
+    <section class="relative overflow-hidden">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent_85%)]"></div>
 
-                <div class="mx-auto max-w-4xl px-6 pt-16 pb-12 text-center lg:px-8 lg:pt-20">
-                    <span class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                        Research &amp; business education
+        <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pt-14 pb-20 lg:grid-cols-12 lg:px-8 lg:pt-20 lg:pb-28">
+            <div class="lg:col-span-6">
+                <span class="eyebrow">Financial education, made clear</span>
+                <h1 class="mt-6 font-display text-5xl leading-[1.02] font-semibold tracking-tight text-balance text-ink sm:text-6xl lg:text-7xl">
+                    Learn money skills that
+                    <span class="relative whitespace-nowrap italic text-brand-600 dark:text-brand-400">
+                        <svg class="absolute -bottom-2 left-0 h-3 w-full text-zest-400" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c40-6 110-8 196-3" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" /></svg>
+                        <span class="relative">grow</span>
                     </span>
-                    <h1 class="mt-6 text-4xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-5xl dark:text-white">
-                        Welcome to {{ $siteName }}
-                    </h1>
-                    <p class="mt-6 text-lg leading-relaxed text-zinc-600 text-pretty dark:text-zinc-400">
-                        We provide clear, research-driven information to help consumers and professionals better understand today&rsquo;s financial and business landscape.
-                    </p>
+                    with you.
+                </h1>
+                <p class="mt-7 max-w-xl text-lg leading-relaxed text-body">
+                    {{ $siteName }} turns complex financial, business, and technology topics into practical lessons &mdash; researched carefully, written plainly, and free for everyone.
+                </p>
+                <div class="mt-9 flex flex-wrap gap-3">
+                    <a href="#latest" class="btn-primary">
+                        Start reading
+                        <flux:icon name="arrow-down" variant="mini" class="size-4" />
+                    </a>
+                    <a href="{{ route('team') }}" wire:navigate class="btn-ghost">Meet our editors</a>
                 </div>
 
-                {{-- Section chips --}}
-                <div class="mx-auto flex max-w-5xl flex-wrap justify-center gap-3 px-6 pb-14 lg:px-8">
-                    @foreach ($categories as $category)
-                        <a
-                            href="{{ route('section', $category['id']) }}"
-                            wire:navigate
-                            class="inline-flex items-center gap-2 rounded-full {{ $category['chip'] }} px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-black/5 transition hover:opacity-90 hover:shadow-md"
-                        >
-                            <flux:icon name="{{ $category['icon'] }}" class="size-4 text-white" />
-                            {{ $category['title'] }}
-                        </a>
+                <dl class="mt-12 grid max-w-lg grid-cols-3 divide-x divide-line border-y border-line py-5">
+                    <div class="pr-4">
+                        <dt class="text-xs font-semibold text-muted">Guides</dt>
+                        <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $allArticles->count() }}</dd>
+                    </div>
+                    <div class="px-4">
+                        <dt class="text-xs font-semibold text-muted">Topics</dt>
+                        <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $categories->count() }}</dd>
+                    </div>
+                    <div class="pl-4">
+                        <dt class="text-xs font-semibold text-muted">Cost to read</dt>
+                        <dd class="mt-1 font-display text-3xl font-semibold text-brand-600 dark:text-brand-400">$0</dd>
+                    </div>
+                </dl>
+            </div>
+
+            {{-- Hero visual: learning-path card --}}
+            <div class="relative lg:col-span-6">
+                <div class="relative overflow-hidden rounded-[2.5rem] bg-brand-800 p-6 sm:p-10">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_10%,var(--color-brand-600),transparent_50%)]"></div>
+                    <div class="absolute inset-0 bg-[radial-gradient(var(--color-brand-600)_1px,transparent_1px)] [background-size:20px_20px] opacity-50"></div>
+                    <div class="absolute -right-16 -bottom-16 size-64 rounded-full border-[28px] border-zest-400/20"></div>
+
+                    <div class="relative rounded-3xl bg-surface p-6 shadow-2xl shadow-brand-950/30 sm:p-7">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Your learning path</p>
+                                <p class="mt-1 font-display text-2xl font-semibold text-ink">Build your foundation</p>
+                            </div>
+                            <span class="flex size-12 items-center justify-center rounded-2xl bg-zest-300 text-brand-900">
+                                <flux:icon name="academic-cap" class="size-6" />
+                            </span>
+                        </div>
+
+                        <ol class="mt-6 space-y-3">
+                            @foreach ($categories as $i => $category)
+                                <li>
+                                    <a href="{{ route('section', $category['id']) }}" wire:navigate class="group flex items-center gap-4 rounded-2xl border border-line p-3.5 transition hover:border-brand-300 hover:bg-soft">
+                                        <span class="flex size-10 shrink-0 items-center justify-center rounded-xl {{ $i === 0 ? 'bg-brand-600 text-white' : 'bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200' }}">
+                                            <flux:icon name="{{ $category['icon'] }}" variant="mini" class="size-5" />
+                                        </span>
+                                        <span class="min-w-0 flex-1">
+                                            <span class="block font-semibold text-ink">{{ $category['title'] }}</span>
+                                            <span class="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-soft">
+                                                <span class="block h-full rounded-full bg-brand-500" style="width: {{ max(12, 88 - $i * 22) }}%"></span>
+                                            </span>
+                                        </span>
+                                        <flux:icon name="arrow-up-right" variant="mini" class="size-4 text-muted transition group-hover:text-brand-600" />
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ol>
+                    </div>
+
+                    <div class="relative mt-6 flex items-center gap-3 text-sm text-brand-100">
+                        <span class="flex -space-x-2">
+                            @foreach ($authors->take(4) as $author)
+                                @include('partials.avatar', ['author' => $author, 'class' => 'size-9 text-xs'])
+                            @endforeach
+                        </span>
+                        <span>Written by <span class="font-semibold text-white">{{ $authors->count() }} specialists</span> in finance &amp; data</span>
+                    </div>
+                </div>
+
+                <div class="absolute -top-5 -left-3 hidden rotate-[-6deg] rounded-2xl bg-zest-400 px-4 py-3 text-sm font-bold text-brand-950 shadow-lg sm:block">
+                    100% free &amp; independent
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Topics --}}
+    <section class="border-y border-line bg-surface">
+        <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+            <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+                <div class="max-w-2xl">
+                    <span class="eyebrow">Explore by topic</span>
+                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">Pick a subject and start learning</h2>
+                </div>
+                <a href="{{ route('articles') }}" wire:navigate class="link-underline shrink-0 text-sm font-semibold text-ink">Browse all articles</a>
+            </div>
+
+            <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                @foreach ($categories as $i => $category)
+                    <a href="{{ route('section', $category['id']) }}" wire:navigate class="group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-paper p-7 transition duration-300 hover:-translate-y-1 hover:border-brand-700 hover:bg-brand-700">
+                        <span class="font-display text-sm font-semibold text-muted transition group-hover:text-brand-200">0{{ $i + 1 }}</span>
+                        <span class="mt-8 flex size-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 transition group-hover:bg-zest-400 group-hover:text-brand-950 dark:bg-brand-900/60 dark:text-brand-200">
+                            <flux:icon name="{{ $category['icon'] }}" class="size-7" />
+                        </span>
+                        <h3 class="mt-6 font-display text-2xl font-semibold text-ink transition group-hover:text-white">{{ $category['title'] }}</h3>
+                        @if ($category['description'])
+                            <p class="mt-2 text-sm leading-relaxed text-muted transition group-hover:text-brand-100">{{ $category['description'] }}</p>
+                        @endif
+                        <span class="mt-8 flex items-center justify-between text-sm font-semibold text-body transition group-hover:text-white">
+                            {{ $category['count'] }} {{ Str::plural('article', $category['count']) }}
+                            <flux:icon name="arrow-right" variant="mini" class="size-4 transition group-hover:translate-x-1" />
+                        </span>
+                    </a>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    {{-- Latest articles --}}
+    <section id="latest" class="mx-auto max-w-7xl scroll-mt-28 px-6 py-20 lg:px-8">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+                <span class="eyebrow">Fresh from the editors</span>
+                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">Latest articles</h2>
+            </div>
+            @if ($allArticles->isNotEmpty())
+                <a href="{{ route('articles') }}" wire:navigate class="btn-ghost shrink-0">
+                    View all articles
+                    <flux:icon name="arrow-right" variant="mini" class="size-4" />
+                </a>
+            @endif
+        </div>
+
+        @if ($featuredArticle)
+            <div class="mt-12">
+                @include('partials.article-card', ['article' => $featuredArticle, 'variant' => 'featured'])
+            </div>
+
+            @if ($latestArticles->isNotEmpty())
+                <div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    @foreach ($latestArticles as $article)
+                        @include('partials.article-card', ['article' => $article])
                     @endforeach
                 </div>
-            </section>
-
-            {{-- Articles: main list + sidebar --}}
-            <section id="articles" class="mx-auto max-w-7xl scroll-mt-24 border-t border-zinc-200 px-6 py-14 lg:px-8 dark:border-zinc-800">
-                <div class="grid gap-12 lg:grid-cols-3">
-                    {{-- Main list --}}
-                    <div class="min-w-0 lg:col-span-2">
-                        <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Latest Articles</h2>
-
-                        {{-- Featured article --}}
-                        @if ($featuredArticle)
-                        <a
-                            href="{{ route('article', $featuredArticle['slug']) }}"
-                            wire:navigate
-                            class="group mt-6 flex flex-col overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition hover:shadow-md dark:border-zinc-800"
-                        >
-                            <div class="relative flex h-48 items-center justify-center overflow-hidden sm:h-64 {{ ($featuredArticle['image'] ?? null) ? '' : $featuredArticle['style']['gradient'] }}">
-                                @if ($featuredArticle['image'] ?? null)
-                                    <img
-                                        src="{{ asset('images/'.$featuredArticle['image']) }}"
-                                        alt="{{ $featuredArticle['title'] }}"
-                                        class="absolute inset-0 size-full object-cover"
-                                    />
-                                    <div class="absolute inset-0 bg-zinc-950/20"></div>
-                                @else
-                                    <div class="absolute -top-10 -right-10 size-40 rounded-full bg-white/15"></div>
-                                    <div class="absolute -bottom-14 -left-10 size-48 rounded-full bg-white/10"></div>
-                                    <div class="absolute top-1/3 right-1/4 size-16 rounded-full bg-white/10"></div>
-                                    <flux:icon name="{{ $featuredArticle['style']['icon'] }}" class="relative size-14 text-white drop-shadow sm:size-16" />
-                                @endif
-                            </div>
-                            <div class="bg-white p-6 dark:bg-zinc-950 sm:p-8">
-                                <span class="inline-flex w-fit items-center rounded-full px-2.5 py-1 text-[11px] font-semibold text-white {{ $featuredArticle['style']['badge'] }}">{{ $featuredArticle['section_title'] }}</span>
-                                <p class="mt-3 text-xl font-semibold text-zinc-900 group-hover:underline sm:text-2xl dark:text-white">
-                                    {{ $featuredArticle['title'] }}
-                                </p>
-                                <div class="mt-3 flex items-center gap-1.5 text-sm text-zinc-400 dark:text-zinc-500">
-                                    <span>{{ $featuredArticle['author_info']['name'] }}</span>
-                                    <span>&middot;</span>
-                                    <time datetime="{{ $featuredArticle['date'] }}">{{ \Carbon\Carbon::parse($featuredArticle['date'])->format('M j, Y') }}</time>
-                                </div>
-                            </div>
-                        </a>
-                        @else
-                            <p class="mt-6 text-sm text-zinc-500 dark:text-zinc-400">New articles are coming soon.</p>
-                        @endif
-
-                        <ul class="mt-8 divide-y divide-zinc-200 dark:divide-zinc-800">
-                            @foreach ($latestArticles as $article)
-                                <li class="min-w-0 py-5 first:pt-0">
-                                    <a href="{{ route('article', $article['slug']) }}" wire:navigate class="group flex min-w-0 gap-4">
-                                        <div class="relative flex h-20 w-32 shrink-0 items-center justify-center overflow-hidden rounded-lg shadow-sm {{ ($article['image'] ?? null) ? '' : $article['style']['gradient'] }} sm:h-24 sm:w-40">
-                                            @if ($article['image'] ?? null)
-                                                <img
-                                                    src="{{ asset('images/'.$article['image']) }}"
-                                                    alt="{{ $article['title'] }}"
-                                                    loading="lazy"
-                                                    decoding="async"
-                                                    class="absolute inset-0 size-full object-cover"
-                                                />
-                                                <div class="absolute inset-0 bg-zinc-950/10"></div>
-                                            @else
-                                                <div class="absolute -top-5 -right-5 size-16 rounded-full bg-white/20"></div>
-                                                <div class="absolute -bottom-6 -left-3 size-14 rounded-full bg-white/10"></div>
-                                                <flux:icon name="{{ $article['style']['icon'] }}" class="relative size-7 text-white drop-shadow" />
-                                            @endif
-                                        </div>
-                                        <div class="flex min-w-0 flex-col justify-center">
-                                            <span class="inline-flex w-fit items-center rounded-full px-2.5 py-1 text-[11px] font-semibold text-white {{ $article['style']['badge'] }}">{{ $article['section_title'] }}</span>
-                                            <p class="mt-1 line-clamp-2 font-medium text-zinc-900 group-hover:underline dark:text-white">
-                                                {{ $article['title'] }}
-                                            </p>
-                                            <div class="mt-2 flex items-center gap-1.5 text-xs text-zinc-400 dark:text-zinc-500">
-                                                <span>{{ $article['author_info']['name'] }}</span>
-                                                <span>&middot;</span>
-                                                <time datetime="{{ $article['date'] }}">{{ \Carbon\Carbon::parse($article['date'])->format('M j, Y') }}</time>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-
-                    {{-- Sidebar --}}
-                    <aside class="min-w-0 lg:col-span-1">
-                        <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">More to Read</h2>
-
-                        <ul class="mt-6 space-y-4">
-                            @foreach ($sidebarArticles as $article)
-                                <li class="min-w-0">
-                                    <a href="{{ route('article', $article['slug']) }}" wire:navigate class="group flex min-w-0 items-center gap-3">
-                                        <div class="relative flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-lg shadow-sm {{ ($article['image'] ?? null) ? '' : $article['style']['gradient'] }}">
-                                            @if ($article['image'] ?? null)
-                                                <img
-                                                    src="{{ asset('images/'.$article['image']) }}"
-                                                    alt="{{ $article['title'] }}"
-                                                    loading="lazy"
-                                                    decoding="async"
-                                                    class="absolute inset-0 size-full object-cover"
-                                                />
-                                                <div class="absolute inset-0 bg-zinc-950/10"></div>
-                                            @else
-                                                <div class="absolute -top-3 -right-3 size-9 rounded-full bg-white/20"></div>
-                                                <flux:icon name="{{ $article['style']['icon'] }}" class="relative size-5 text-white drop-shadow" />
-                                            @endif
-                                        </div>
-                                        <div class="min-w-0">
-                                            <span class="inline-flex w-fit items-center rounded-full px-2 py-0.5 text-[10px] font-semibold text-white {{ $article['style']['badge'] }}">{{ $article['section_title'] }}</span>
-                                            <p class="truncate font-medium text-zinc-900 group-hover:underline dark:text-white">{{ $article['title'] }}</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </aside>
-                </div>
-            </section>
-
-            {{-- Program guides --}}
-            @if ($programs->isNotEmpty())
-                <section class="border-t border-zinc-200 dark:border-zinc-800">
-                    <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8">
-                        <div class="max-w-2xl">
-                            <span class="inline-flex items-center rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-medium tracking-wide text-orange-700 uppercase dark:border-orange-900/40 dark:bg-orange-950/30 dark:text-orange-400">
-                                Program Guides
-                            </span>
-                            <h2 class="mt-4 text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white">
-                                In-Depth Course &amp; Program Reviews
-                            </h2>
-                            <p class="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
-                                Detailed breakdowns of specific certifications and degree programs, including curriculum, cost, and what to expect.
-                            </p>
-                        </div>
-
-                        <div class="mt-8 grid gap-6 sm:grid-cols-2">
-                            @foreach ($programs as $program)
-                                <a
-                                    href="{{ route('program', $program['slug']) }}"
-                                    wire:navigate
-                                    class="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition hover:shadow-md dark:border-zinc-800"
-                                >
-                                    <div class="relative flex h-32 items-center justify-center overflow-hidden {{ $program['hero_image'] ?? null ? '' : $program['hero_gradient'] }}">
-                                        @if ($program['hero_image'] ?? null)
-                                            <img
-                                                src="{{ asset('images/'.$program['hero_image']) }}"
-                                                alt="{{ $program['title'] }}"
-                                                loading="lazy"
-                                                decoding="async"
-                                                class="absolute inset-0 size-full object-cover"
-                                            />
-                                            <div class="absolute inset-0 bg-zinc-950/40"></div>
-                                        @else
-                                            <div class="absolute -top-8 -right-8 size-32 rounded-full bg-white/10"></div>
-                                            <div class="absolute -bottom-10 -left-8 size-36 rounded-full bg-white/10"></div>
-                                            <flux:icon name="{{ $program['hero_icon'] }}" class="relative size-10 text-white drop-shadow" />
-                                        @endif
-                                    </div>
-                                    <div class="flex flex-1 flex-col bg-white p-6 dark:bg-zinc-950">
-                                        <p class="font-semibold text-zinc-900 group-hover:underline dark:text-white">
-                                            {{ $program['title'] }}
-                                        </p>
-                                        <p class="mt-2 line-clamp-2 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
-                                            {{ $program['intro'] }}
-                                        </p>
-                                        <span class="mt-4 inline-flex w-fit items-center gap-1.5 rounded-full bg-orange-500 px-4 py-2 text-xs font-semibold text-white transition group-hover:bg-orange-600">
-                                            View Guide
-                                            <flux:icon name="arrow-right" class="size-3.5" />
-                                        </span>
-                                    </div>
-                                </a>
-                            @endforeach
-                        </div>
-                    </div>
-                </section>
             @endif
 
-            {{-- Approach strip --}}
-            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
-                <div class="mx-auto grid max-w-6xl gap-8 px-6 py-14 sm:grid-cols-3 lg:px-8">
-                    @php
-                        $values = [
-                            ['icon' => 'academic-cap', 'title' => 'Research-driven', 'description' => 'Grounded in publicly available information and established business and financial concepts.', 'gradient' => 'bg-gradient-to-br from-sky-500 to-blue-600'],
-                            ['icon' => 'eye', 'title' => 'Clear & transparent', 'description' => 'We explain the factors behind strategies and technologies, without the jargon.', 'gradient' => 'bg-gradient-to-br from-emerald-500 to-teal-600'],
-                            ['icon' => 'shield-check', 'title' => 'Educational only', 'description' => 'Informational content, not personalized financial, tax, or legal advice.', 'gradient' => 'bg-gradient-to-br from-violet-500 to-indigo-600'],
-                        ];
-                    @endphp
-                    @foreach ($values as $value)
-                        <div class="text-center sm:text-left">
-                            <div class="mx-auto flex size-10 items-center justify-center rounded-lg text-white shadow-sm sm:mx-0 {{ $value['gradient'] }}">
-                                <flux:icon name="{{ $value['icon'] }}" class="size-5" />
+            @if ($moreArticles->isNotEmpty())
+                <div class="mt-16 rounded-3xl border border-line bg-surface p-7 sm:p-9">
+                    <h3 class="font-display text-2xl font-semibold text-ink">More to read</h3>
+                    <div class="mt-7 grid gap-6 md:grid-cols-2">
+                        @foreach ($moreArticles as $article)
+                            @include('partials.article-card', ['article' => $article, 'variant' => 'compact'])
+                        @endforeach
+                    </div>
+                </div>
+            @endif
+        @else
+            @include('partials.empty-state')
+        @endif
+    </section>
+
+    {{-- Program guides --}}
+    @if ($programs->isNotEmpty())
+        <section class="border-t border-line bg-soft">
+            <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+                <div class="max-w-2xl">
+                    <span class="eyebrow">Program guides</span>
+                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">In-depth course &amp; program reviews</h2>
+                    <p class="mt-4 leading-relaxed text-body">Detailed breakdowns of certifications and degree programs, including curriculum, cost, and what to expect.</p>
+                </div>
+
+                <div class="mt-12 grid gap-8 md:grid-cols-2">
+                    @foreach ($programs as $program)
+                        <a href="{{ route('program', $program['slug']) }}" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+                            <div class="relative flex h-44 items-center justify-center overflow-hidden bg-brand-700">
+                                @if ($program['hero_image'])
+                                    <img src="{{ asset('images/'.$program['hero_image']) }}" alt="{{ $program['title'] }}" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105" />
+                                    <div class="absolute inset-0 bg-brand-950/35"></div>
+                                @else
+                                    <div class="absolute inset-0 bg-[radial-gradient(var(--color-brand-500)_1px,transparent_1px)] [background-size:18px_18px] opacity-40"></div>
+                                    <flux:icon name="{{ $program['hero_icon'] ?? 'academic-cap' }}" class="relative size-12 text-white/90" />
+                                @endif
                             </div>
-                            <h3 class="mt-4 font-semibold text-zinc-900 dark:text-white">{{ $value['title'] }}</h3>
-                            <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{{ $value['description'] }}</p>
+                            <div class="flex flex-1 flex-col p-7">
+                                <h3 class="font-display text-xl font-semibold text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $program['title'] }}</h3>
+                                <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">{{ $program['intro'] }}</p>
+                                <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-brand-700 dark:text-brand-300">
+                                    Read the guide
+                                    <flux:icon name="arrow-right" variant="mini" class="size-4 transition group-hover:translate-x-1" />
+                                </span>
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
+
+    {{-- How we teach --}}
+    <section class="border-t border-line bg-surface">
+        <div class="mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-12 lg:px-8">
+            <div class="lg:col-span-4">
+                <span class="eyebrow">How we teach</span>
+                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">Education first. Never a sales pitch.</h2>
+                <p class="mt-5 leading-relaxed text-body">Every guide is built to help you understand a topic well enough to make your own decisions.</p>
+            </div>
+
+            @php
+                $steps = [
+                    ['icon' => 'magnifying-glass', 'title' => 'Researched', 'description' => 'Grounded in publicly available data, established concepts, and reputable sources.'],
+                    ['icon' => 'light-bulb', 'title' => 'Explained plainly', 'description' => 'Complex ideas broken into clear steps, with the jargon translated.'],
+                    ['icon' => 'shield-check', 'title' => 'Independent', 'description' => 'Informational content only &mdash; never personalized financial, tax, or legal advice.'],
+                ];
+            @endphp
+            <div class="grid gap-5 sm:grid-cols-3 lg:col-span-8">
+                @foreach ($steps as $i => $step)
+                    <div class="rounded-3xl bg-paper p-7">
+                        <div class="flex items-center justify-between">
+                            <span class="flex size-12 items-center justify-center rounded-2xl bg-brand-600 text-white dark:bg-brand-500 dark:text-brand-950">
+                                <flux:icon name="{{ $step['icon'] }}" class="size-6" />
+                            </span>
+                            <span class="font-display text-4xl font-semibold text-line">0{{ $i + 1 }}</span>
+                        </div>
+                        <h3 class="mt-7 font-display text-xl font-semibold text-ink">{{ $step['title'] }}</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-muted">{!! $step['description'] !!}</p>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    {{-- Team CTA --}}
+    <section class="px-4 py-20 sm:px-6 lg:px-8">
+        <div class="relative mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-brand-700 px-8 py-16 sm:px-14 lg:py-20">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_0%_0%,var(--color-brand-500),transparent_45%),radial-gradient(circle_at_100%_100%,var(--color-brand-900),transparent_55%)]"></div>
+            <div class="absolute -top-20 -right-20 size-80 rounded-full border-[40px] border-zest-400/20"></div>
+
+            <div class="relative grid items-center gap-12 lg:grid-cols-2">
+                <div>
+                    <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">
+                        <span class="h-px w-6 bg-current"></span> Meet the team
+                    </span>
+                    <h2 class="mt-5 font-display text-4xl leading-tight font-semibold text-balance text-white sm:text-5xl">
+                        Written by people who work with money every day
+                    </h2>
+                    <p class="mt-5 max-w-lg leading-relaxed text-brand-100">
+                        Our editors combine hands-on experience in finance, data, and business with a commitment to clear, honest explanations.
+                    </p>
+                    <a href="{{ route('team') }}" wire:navigate class="btn-zest mt-9">
+                        Meet the full team
+                        <flux:icon name="arrow-right" variant="mini" class="size-4" />
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    @foreach ($authors->take(4) as $author)
+                        <div class="rounded-3xl bg-white/10 p-5 ring-1 ring-white/15 backdrop-blur">
+                            @include('partials.avatar', ['author' => $author, 'class' => 'size-12 text-sm'])
+                            <p class="mt-4 font-semibold text-white">{{ $author['name'] }}</p>
+                            <p class="text-sm text-brand-200">{{ $author['role'] }}</p>
                         </div>
                     @endforeach
                 </div>
-            </section>
-
-            {{-- Team jumbotron --}}
-            <section class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-violet-600 to-rose-500">
-                <div class="pointer-events-none absolute -left-24 -top-24 size-72 rounded-full bg-white/10 blur-3xl"></div>
-                <div class="pointer-events-none absolute -right-20 bottom-0 size-80 rounded-full bg-white/10 blur-3xl"></div>
-                <div class="pointer-events-none absolute top-1/2 left-1/2 size-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-400/10 blur-3xl"></div>
-
-                <div class="relative mx-auto max-w-6xl px-6 py-16 text-center lg:px-8 lg:py-20">
-                    <span class="inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-xs font-semibold tracking-wide text-white uppercase backdrop-blur">
-                        Meet the Team
-                    </span>
-                    <h2 class="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                        The People Behind {{ $siteName }}
-                    </h2>
-                    <p class="mx-auto mt-4 max-w-2xl leading-relaxed text-white/85">
-                        Our team combines practical knowledge with research-driven insights to help you navigate financial and business decisions with greater confidence.
-                    </p>
-
-                    <div class="mt-10 flex justify-center">
-                        <flux:button href="{{ route('team') }}" wire:navigate variant="primary" class="!bg-white !text-zinc-900 hover:!bg-white/90">
-                            Meet the Full Team
-                        </flux:button>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        @include('partials.site-footer', ['siteName' => $siteName])
-
-        @persist('toast')
-            <flux:toast.group>
-                <flux:toast />
-            </flux:toast.group>
-        @endpersist
-
-        @fluxScripts
-    </body>
-</html>
+            </div>
+        </div>
+    </section>
+@endsection

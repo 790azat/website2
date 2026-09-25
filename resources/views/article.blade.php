@@ -1,151 +1,120 @@
-@php
-    $siteName = config('app.name', 'Laravel');
-    $data = require resource_path('data/articles.php');
+@extends('layouts.site')
+@use('App\Support\SiteContent')
 
-    $article = collect($data['articles'])->firstWhere('slug', $slug);
+@php
+    $article = SiteContent::article($slug);
 
     if (! $article) {
         abort(404);
     }
 
-    $author = $data['authors'][$article['author']];
-    $sectionMeta = $data['sections'][$article['section']];
-
-    $categories = collect($data['sections'])
-        ->map(fn ($meta, $key) => ['id' => $key, 'title' => $meta['title']])
-        ->sortBy(fn ($c) => $data['sections'][$c['id']]['order'])
-        ->values()
-        ->all();
-
+    $siteName = config('app.name', 'Laravel');
+    $author = $article['author_info'];
     $publishedAt = \Carbon\Carbon::parse($article['date']);
 
-    $relatedArticles = collect($data['articles'])
-        ->where('section', $article['section'])
+    $relatedArticles = SiteContent::articles($article['section'])
         ->where('slug', '!=', $article['slug'])
-        ->sortByDesc('date')
         ->take(3)
         ->values();
 
-    $title = $article['title'].' — '.$siteName;
+    $title = $article['title'];
+    $description = Str::limit(strip_tags($article['body']), 155);
 @endphp
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        @include('partials.head')
-        <meta name="description" content="{{ Str::limit(strip_tags($article['body']), 155) }}" />
-    </head>
-    <body
-        x-data="{ mobileOpen: false }"
-        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
-    >
-        @include('partials.site-header', ['categories' => $categories, 'siteName' => $siteName])
 
-        <main>
-            {{-- Breadcrumb --}}
-            <div class="border-b border-zinc-200 dark:border-zinc-800">
-                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
-                    <a href="{{ route('home') }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Home</a>
-                    <flux:icon name="chevron-right" class="size-3.5" />
-                    <a href="{{ route('section', $article['section']) }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">{{ $sectionMeta['title'] }}</a>
-                    <flux:icon name="chevron-right" class="size-3.5" />
-                    <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">{{ $article['title'] }}</span>
+@section('content')
+    {{-- Article header --}}
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-4xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Breadcrumb">
+                <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <flux:icon name="home" variant="micro" class="size-4" /> Home
+                </a>
+                <span class="text-line">/</span>
+                <a href="{{ route('section', $article['section']) }}" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">{{ $article['section_title'] }}</a>
+            </nav>
+
+            <a href="{{ route('section', $article['section']) }}" wire:navigate class="tag mt-10">
+                <flux:icon name="{{ $article['section_icon'] }}" variant="micro" class="size-3.5" />
+                {{ $article['section_title'] }}
+            </a>
+
+            <h1 class="mt-5 font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                {{ $article['title'] }}
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="{{ route('team') }}" wire:navigate class="flex items-center gap-3">
+                    @include('partials.avatar', ['author' => $author, 'class' => 'size-12 text-sm'])
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">{{ $author['name'] }}</span>
+                        <span class="text-muted">{{ $author['role'] }}</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <flux:icon name="calendar" variant="mini" class="size-4 text-brand-500" />
+                    <time datetime="{{ $article['date'] }}">{{ $publishedAt->format('F j, Y') }}</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <flux:icon name="clock" variant="mini" class="size-4 text-brand-500" />
+                    {{ $article['reading_minutes'] }} min read
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-4xl px-6 lg:px-8">
+        {{-- Hero image --}}
+        @if ($article['image'])
+            <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="{{ asset('images/'.$article['image']) }}" alt="{{ $article['title'] }}" class="aspect-video w-full object-cover" />
+            </div>
+        @endif
+
+        <div class="mx-auto max-w-3xl pt-6 pb-16">
+            @include('partials.article-body', ['body' => $article['body']])
+
+            {{-- Author card --}}
+            <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                <div class="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                    <div class="flex items-center gap-4">
+                        @include('partials.avatar', ['author' => $author, 'class' => 'size-16 text-lg'])
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Written by</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">{{ $author['name'] }}</p>
+                            <p class="text-sm text-brand-200">{{ $author['role'] }} at {{ $siteName }}</p>
+                        </div>
+                    </div>
+                    <a href="{{ route('team') }}" wire:navigate class="btn-zest shrink-0">Meet the editors</a>
                 </div>
             </div>
 
-            {{-- Article header --}}
-            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
-                <a href="{{ route('section', $article['section']) }}" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                    {{ $sectionMeta['title'] }}
-                </a>
+            <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                <span class="font-semibold text-body">Educational content only.</span>
+                This article is for general information and is not personalized financial, investment, tax, or legal advice.
+            </p>
+        </div>
+    </article>
 
-                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
-                    {{ $article['title'] }}
-                </h1>
-
-                <div class="mt-6 flex items-center gap-3">
-                    <img
-                        src="{{ asset('images/team/'.$author['photo']) }}"
-                        alt="{{ $author['name'] }}"
-                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
-                    />
-                    <div class="text-sm">
-                        <a href="{{ route('team') }}" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
-                            {{ $author['name'] }}
-                        </a>
-                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
-                            <span>{{ $author['role'] }}</span>
-                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
-                            <time datetime="{{ $article['date'] }}">{{ $publishedAt->format('F j, Y') }}</time>
-                        </div>
+    {{-- Related articles --}}
+    @if ($relatedArticles->isNotEmpty())
+        <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Keep learning</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">More in {{ $article['section_title'] }}</h2>
                     </div>
+                    <a href="{{ route('section', $article['section']) }}" wire:navigate class="link-underline text-sm font-semibold text-ink">See all</a>
                 </div>
-
-                {{-- Hero image --}}
-                @if ($article['image'] ?? null)
-                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
-                        <img
-                            src="{{ asset('images/'.$article['image']) }}"
-                            alt="{{ $article['title'] }}"
-                            class="aspect-video w-full object-cover"
-                        />
-                    </div>
-                @endif
-
-                {{-- Body --}}
-                @include('partials.article-body', ['body' => $article['body']])
-
-                {{-- Author card / link to Our Editorial Team --}}
-                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
-                    <div class="flex items-center gap-4">
-                        <img
-                            src="{{ asset('images/team/'.$author['photo']) }}"
-                            alt="{{ $author['name'] }}"
-                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
-                        />
-                        <div>
-                            <p class="font-medium text-zinc-900 dark:text-white">Written by {{ $author['name'] }}</p>
-                            <p class="text-sm text-zinc-500 dark:text-zinc-400">{{ $author['role'] }} at {{ $siteName }}</p>
-                        </div>
-                    </div>
-                    <flux:button href="{{ route('team') }}" wire:navigate variant="primary" class="shrink-0">
-                        Meet Our Editorial Team
-                    </flux:button>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    @foreach ($relatedArticles as $related)
+                        @include('partials.article-card', ['article' => $related])
+                    @endforeach
                 </div>
-            </article>
-
-            {{-- Related articles --}}
-            @if ($relatedArticles->isNotEmpty())
-                <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
-                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
-                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
-                            More in {{ $sectionMeta['title'] }}
-                        </h2>
-                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
-                            @foreach ($relatedArticles as $related)
-                                @php $relatedAuthor = $data['authors'][$related['author']]; @endphp
-                                <a href="{{ route('article', $related['slug']) }}" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
-                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
-                                        {{ $related['title'] }}
-                                    </p>
-                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
-                                        {{ $relatedAuthor['name'] }} &middot; {{ \Carbon\Carbon::parse($related['date'])->format('M j, Y') }}
-                                    </p>
-                                </a>
-                            @endforeach
-                        </div>
-                    </div>
-                </section>
-            @endif
-        </main>
-
-        @include('partials.site-footer', ['siteName' => $siteName])
-
-        @persist('toast')
-            <flux:toast.group>
-                <flux:toast />
-            </flux:toast.group>
-        @endpersist
-
-        @fluxScripts
-    </body>
-</html>
+            </div>
+        </section>
+    @endif
+@endsection

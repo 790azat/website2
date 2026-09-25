@@ -9,7 +9,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Fraunces', ui-serif, Georgia, Cambria, 'Times New Roman', serif;
 
     --color-zinc-50: #fafafa;
     --color-zinc-100: #f5f5f5;
@@ -23,16 +24,52 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
-    --color-accent: var(--color-neutral-800);
-    --color-accent-content: var(--color-neutral-800);
+    /* EduFinance brand: forest green */
+    --color-brand-50: #eefaf2;
+    --color-brand-100: #d6f2df;
+    --color-brand-200: #afe4c3;
+    --color-brand-300: #7ccfa0;
+    --color-brand-400: #47b37a;
+    --color-brand-500: #26975f;
+    --color-brand-600: #187a4b;
+    --color-brand-700: #14623e;
+    --color-brand-800: #134e34;
+    --color-brand-900: #11402c;
+    --color-brand-950: #072418;
+
+    /* Secondary highlight: lime */
+    --color-zest-200: #e6f9b8;
+    --color-zest-300: #d4f38a;
+    --color-zest-400: #bfe85a;
+    --color-zest-500: #a3d136;
+
+    /* Semantic surface tokens (redefined for dark mode below) */
+    --color-paper: #f7f5ee;
+    --color-surface: #ffffff;
+    --color-soft: #edf3ea;
+    --color-line: #e2e0d4;
+    --color-ink: #0f231a;
+    --color-body: #33443b;
+    --color-muted: #647569;
+
+    --color-accent: var(--color-brand-600);
+    --color-accent-content: var(--color-brand-700);
     --color-accent-foreground: var(--color-white);
 }
 
 @layer theme {
     .dark {
-        --color-accent: var(--color-white);
-        --color-accent-content: var(--color-white);
-        --color-accent-foreground: var(--color-neutral-800);
+        --color-paper: #0a1510;
+        --color-surface: #0f1e17;
+        --color-soft: #13271d;
+        --color-line: #1f3a2c;
+        --color-ink: #eef5f0;
+        --color-body: #c4d3c9;
+        --color-muted: #8ea597;
+
+        --color-accent: var(--color-brand-400);
+        --color-accent-content: var(--color-brand-300);
+        --color-accent-foreground: var(--color-brand-950);
     }
 }
 
@@ -43,7 +80,49 @@
     ::before,
     ::backdrop,
     ::file-selector-button {
-        border-color: var(--color-gray-200, currentColor);
+        border-color: var(--color-line, currentColor);
+    }
+
+    h1, h2, h3, .font-display {
+        font-optical-sizing: auto;
+    }
+}
+
+@layer components {
+    /* Small uppercase label used above headings */
+    .eyebrow {
+        @apply inline-flex items-center gap-2 text-xs font-bold tracking-[0.16em] text-brand-700 uppercase dark:text-brand-300;
+    }
+
+    .eyebrow::before {
+        content: '';
+        @apply h-px w-6 bg-current;
+    }
+
+    /* Primary pill button */
+    .btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-brand-900/10 transition hover:bg-brand-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 dark:bg-brand-500 dark:hover:bg-brand-400 dark:text-brand-950;
+    }
+
+    .btn-zest {
+        @apply inline-flex items-center justify-center gap-2 rounded-full bg-zest-400 px-6 py-3 text-sm font-bold text-brand-950 transition hover:bg-zest-300;
+    }
+
+    .btn-ghost {
+        @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-surface px-6 py-3 text-sm font-semibold text-ink transition hover:border-brand-400 hover:text-brand-700 dark:hover:text-brand-300;
+    }
+
+    /* Section tag chip on cards */
+    .tag {
+        @apply inline-flex w-fit items-center gap-1.5 rounded-full bg-brand-50 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-700 uppercase ring-1 ring-brand-200/70 dark:bg-brand-900/50 dark:text-brand-200 dark:ring-brand-700/50;
+    }
+
+    .card {
+        @apply rounded-3xl border border-line bg-surface;
+    }
+
+    .link-underline {
+        @apply underline decoration-brand-300 decoration-2 underline-offset-4 transition hover:decoration-brand-600 dark:decoration-brand-700 dark:hover:decoration-brand-400;
     }
 }
 
@@ -61,6 +140,6 @@ select:focus[data-flux-control] {
     @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
 }
 
-/* \[:where(&)\]:size-4 {
-    @apply size-4;
-} */
+[x-cloak] {
+    display: none !important;
+}

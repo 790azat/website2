@@ -15,6 +15,9 @@ return [
 
     'name' => 'EduFinance',
 
+    // Public domain used for contact email addresses (hello@, editorial@).
+    'domain' => 'edufinance.site',
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
