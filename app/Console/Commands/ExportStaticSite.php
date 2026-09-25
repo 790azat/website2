@@ -15,10 +15,19 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
  * Exports the public site as static HTML for preview hosting (e.g. Vercel).
  *
  * Starting from the homepage, every internal link is rendered through the
- * HTTP kernel and written to disk: pages become "<path>.html" (served with
- * clean URLs), and PHP-served scripts such as livewire.js / flux.js are saved
- * at their own paths. The contents of public/ are copied alongside, and a
- * 404.html is produced from the app's own not-found page.
+ * HTTP kernel and written to disk as "<path>.html" (served with clean URLs).
+ * Static hosts ignore query strings, so URLs with a query are mapped to
+ * paths and the links in every page are rewritten to match:
+ *
+ *   /articles?page=2            -> /articles/page/2
+ *   /articles?section=x&page=2  -> /articles/page/2/section/x
+ *   /our-team?lang=es           -> /es/our-team
+ *
+ * A "lang" parameter becomes a path prefix, and links on a translated page
+ * keep that prefix (mirroring the session-remembered language on the live
+ * site). Search links ("q") cannot be pre-rendered and are left untouched.
+ * PHP-served scripts (livewire.js, flux.js), public/ assets, a 404.html and a
+ * vercel.json are written alongside.
  */
 class ExportStaticSite extends Command
 {
@@ -39,7 +48,17 @@ class ExportStaticSite extends Command
     protected array $excludedPrefixes = [
         '/login', '/logout', '/register', '/forgot-password', '/reset-password',
         '/email', '/two-factor', '/user', '/dashboard', '/settings', '/livewire/update',
+        '/sitemap.xml', '/up',
     ];
+
+    /**
+     * Query parameters that cannot be pre-rendered (links using them are left as-is).
+     *
+     * @var list<string>
+     */
+    protected array $dynamicParams = ['q'];
+
+    protected string $defaultLocale;
 
     /** @var array<string, true> */
     protected array $visited = [];
@@ -59,47 +78,51 @@ class ExportStaticSite extends Command
             'app.debug' => false,
         ]);
 
+        $this->defaultLocale = (string) config('app.locale');
+
         $out = base_path(trim((string) $this->option('out'), '/\\'));
         $files->deleteDirectory($out);
         $files->ensureDirectoryExists($out);
 
         $this->copyPublicAssets($files, $out);
 
-        $queue = ['/'];
+        /** @var list<array{0: string, 1: array<string, string>}> $queue */
+        $queue = [['/', []]];
         $pages = 0;
 
         while ($queue !== []) {
-            $path = array_shift($queue);
+            [$path, $query] = array_shift($queue);
+            $key = $this->key($path, $query);
 
-            if (isset($this->visited[$path])) {
+            if (isset($this->visited[$key])) {
                 continue;
             }
-            $this->visited[$path] = true;
+            $this->visited[$key] = true;
 
-            [$status, $body, $isHtml] = $this->render($kernel, $path);
+            [$status, $body, $isHtml] = $this->render($kernel, $path, $query);
 
             if ($status !== 200) {
-                $this->warn("  skipped {$path} (HTTP {$status})");
+                $this->warn("  skipped {$key} (HTTP {$status})");
 
                 continue;
             }
 
             if ($isHtml) {
                 $pages++;
-                foreach ($this->internalLinks($body) as $link) {
-                    if (! isset($this->visited[$link])) {
-                        $queue[] = $link;
-                    }
-                }
+                $body = $this->rewriteLinks($body, $query['lang'] ?? null, $queue);
+                $target = $this->staticPath($path, $query);
+                $target = $target === '/' ? '/index.html' : $target.'.html';
+            } else {
+                $target = $path;
             }
 
-            $target = $out.$this->targetPath($path, $isHtml);
-            $files->ensureDirectoryExists(dirname($target));
-            $files->put($target, $body);
+            $files->ensureDirectoryExists(dirname($out.$target));
+            $files->put($out.$target, $body);
         }
 
-        [, $notFound] = $this->render($kernel, '/__static-export-not-found__');
-        $files->put($out.'/404.html', $notFound);
+        [, $notFound] = $this->render($kernel, '/__static-export-not-found__', []);
+        $unused = [];
+        $files->put($out.'/404.html', $this->rewriteLinks($notFound, null, $unused));
 
         // Plain static files: no framework detection or build step on Vercel.
         $files->put($out.'/vercel.json', json_encode([
@@ -117,17 +140,20 @@ class ExportStaticSite extends Command
     }
 
     /**
+     * @param  array<string, string>  $query
      * @return array{0: int, 1: string, 2: bool}
      */
-    protected function render(Kernel $kernel, string $path): array
+    protected function render(Kernel $kernel, string $path, array $query): array
     {
-        // Livewire remembers per process that its scripts were injected;
-        // reset it so every exported page gets its own <script> tags.
+        // Reset per-process state that would otherwise leak between pages:
+        // Livewire's "scripts already injected" flag and the app locale.
         if (class_exists(Livewire::class)) {
             Livewire::flushState();
         }
+        app()->setLocale($this->defaultLocale);
 
-        $request = Request::create(self::ORIGIN.$path, 'GET');
+        $url = self::ORIGIN.$path.($query !== [] ? '?'.http_build_query($query) : '');
+        $request = Request::create($url, 'GET');
         $response = $kernel->handle($request);
         $kernel->terminate($request, $response);
 
@@ -154,47 +180,90 @@ class ExportStaticSite extends Command
     }
 
     /**
-     * Internal page and script URLs referenced from an HTML document.
+     * Rewrites internal href/src/action URLs to their static paths and queues
+     * every page and script they point to.
      *
-     * @return list<string>
+     * @param  list<array{0: string, 1: array<string, string>}>  $queue
      */
-    protected function internalLinks(string $html): array
+    protected function rewriteLinks(string $html, ?string $pageLocale, array &$queue): string
     {
-        preg_match_all('/(?:href|src)="(\/[^"]*)"/', $html, $matches);
+        return (string) preg_replace_callback(
+            '/\b(href|src|action)="(\/[^"]*)"/',
+            function (array $m) use ($pageLocale, &$queue) {
+                $original = html_entity_decode($m[2]);
+                $fragment = str_contains($original, '#') ? '#'.Str::after($original, '#') : '';
+                $url = Str::before($original, '#');
+                $path = Str::before($url, '?');
+                parse_str((string) parse_url($url, PHP_URL_QUERY), $rawQuery);
 
-        $links = [];
+                if ($path === '' || str_starts_with($path, '//') || Str::startsWith($path, $this->excludedPrefixes)) {
+                    return $m[0];
+                }
 
-        foreach ($matches[1] as $url) {
-            $url = html_entity_decode($url);
-            $path = Str::before(Str::before($url, '#'), '?');
+                // Static assets from public/ and PHP-served scripts keep their URL.
+                if (is_file(public_path(ltrim($path, '/'))) || preg_match('/\.(js|css|map|json|xml|txt)$/', $path)) {
+                    if (! is_file(public_path(ltrim($path, '/')))) {
+                        $queue[] = [$path, []];
+                    }
 
-            if ($path === '' || str_starts_with($path, '//')) {
-                continue;
-            }
+                    return $m[0];
+                }
 
-            if (str_contains(Str::before($url, '#'), '?') && ! str_ends_with($path, '.js')) {
-                $this->warn("  query-string link cannot be exported statically: {$url}");
+                /** @var array<string, string> $query */
+                $query = array_filter(
+                    array_map(fn ($v) => is_string($v) ? $v : '', $rawQuery),
+                    fn ($v) => $v !== '',
+                );
 
-                continue;
-            }
+                if (array_intersect(array_keys($query), $this->dynamicParams) !== []) {
+                    return $m[0];
+                }
 
-            if (is_file(public_path(ltrim($path, '/'))) || Str::startsWith($path, $this->excludedPrefixes)) {
-                continue;
-            }
+                // On a translated page, plain links stay in that language.
+                if (! isset($query['lang']) && $pageLocale !== null) {
+                    $query['lang'] = $pageLocale;
+                }
 
-            $links[] = $path === '/' ? '/' : rtrim($path, '/');
-        }
+                $path = $path === '/' ? '/' : rtrim($path, '/');
+                $queue[] = [$path, $query];
 
-        return array_values(array_unique($links));
+                return $m[1].'="'.e($this->staticPath($path, $query).$fragment).'"';
+            },
+            $html,
+        );
     }
 
-    protected function targetPath(string $path, bool $isHtml): string
+    /**
+     * @param  array<string, string>  $query
+     */
+    protected function staticPath(string $path, array $query): string
     {
-        if (! $isHtml) {
-            return $path;
+        $locale = $query['lang'] ?? null;
+        unset($query['lang']);
+        ksort($query);
+
+        $prefix = ($locale && $locale !== $this->defaultLocale) ? '/'.$locale : '';
+        $segments = '';
+        foreach ($query as $name => $value) {
+            $segments .= '/'.rawurlencode($name).'/'.rawurlencode($value);
         }
 
-        return $path === '/' ? '/index.html' : $path.'.html';
+        $static = $prefix.($path === '/' ? '' : $path).$segments;
+
+        return $static === '' ? '/' : $static;
+    }
+
+    /**
+     * @param  array<string, string>  $query
+     */
+    protected function key(string $path, array $query): string
+    {
+        if (($query['lang'] ?? null) === $this->defaultLocale) {
+            unset($query['lang']);
+        }
+        ksort($query);
+
+        return $path.($query !== [] ? '?'.http_build_query($query) : '');
     }
 
     protected function copyPublicAssets(Filesystem $files, string $out): void
