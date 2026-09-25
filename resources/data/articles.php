@@ -62,7 +62,7 @@ return [
         'lucas-vance' => [
             'name' => 'Lucas Vance',
             'role' => 'Credit, Lending & Wealth Strategies Analyst',
-            'bio' => 'Lucas specializes in the intersection of consumer credit, structured financing, and wealth accumulation. With a background blending retail banking analysis and credit advisory, his work helps readers weigh the true cost of borrowing—from mortgages and personal loans to strategic credit card optimization—while balancing short-term liquidity needs against long-term asset building.',
+            'bio' => 'Lucas specializes in the intersection of consumer credit, structured financing, and wealth accumulation. With a background blending retail banking analysis and credit advisory, his work helps readers weigh the true cost of borrowing—from mortgages and personal loans to strategic credit card optimization—while balancing those short-term liquidity needs against long-term asset building.',
         ],
         'sofia-martinez' => [
             'name' => 'Sofia Martinez',
@@ -70,7 +70,7 @@ return [
             'bio' => 'Sofia writes about household budgeting, everyday banking, and consumer lending. Her articles are grounded in real-world household constraints rather than idealized spreadsheets, focusing on trade-offs families and individuals actually face when managing tight monthly cash flows.',
         ],
         'claire-odonnell' => [
-            'name' => "Claire O'Donnell",
+            'name' => 'Claire O’Donnell',
             'role' => 'Private Wealth & Estate Strategy Analyst',
             'bio' => 'Claire specializes in high-net-worth wealth planning, asset protection, and generational wealth transfer. Coming from a background in private client services, her work focuses on the human side of wealth—helping families navigate legacy planning, tax-efficient investing, and trust structures without getting lost in legal or financial complexity.',
         ],
