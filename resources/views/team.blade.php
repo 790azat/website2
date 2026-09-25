@@ -4,17 +4,17 @@
 @php
     $siteName = config('app.name', 'Laravel');
     $title = 'Our Editorial Team';
-    $description = 'Meet the '.$siteName.' team — professionals with experience across financial research, investment strategy, data analysis, and business technology.';
+    $description = 'Meet the '.$siteName.' team — writers and analysts covering personal finance, wealth management, lending, and credit.';
 
     $team = SiteContent::authors();
 
     $services = [
-        ['icon' => 'banknotes', 'title' => 'Personal & Business Finance', 'description' => 'Educational insights into investing, risk management, financial planning, and market developments.'],
-        ['icon' => 'presentation-chart-line', 'title' => 'Business Analytics', 'description' => 'Data analysis, business intelligence, forecasting, and data-driven decision-making explained step by step.'],
-        ['icon' => 'arrow-trending-up', 'title' => 'Business Strategy', 'description' => 'Practical perspectives on growth, market positioning, customer retention, and organizational development.'],
-        ['icon' => 'cpu-chip', 'title' => 'Technology & Innovation', 'description' => 'Artificial intelligence, cloud computing, cybersecurity, and the tools reshaping how people work.'],
-        ['icon' => 'academic-cap', 'title' => 'Learning & Careers', 'description' => 'Courses, certifications, and skills that help professionals keep growing throughout their careers.'],
-        ['icon' => 'globe-alt', 'title' => 'Markets & Economy', 'description' => 'Research-based perspectives on economic developments and the trends that affect organizations and consumers.'],
+        ['icon' => 'wallet', 'title' => 'Banking & Budgeting', 'description' => 'Checking and savings accounts, high-yield options, online banking, and budgets that hold up in real life.'],
+        ['icon' => 'shield-check', 'title' => 'Insurance & Taxes', 'description' => 'Auto, life, and health coverage, Medicare, deductions, credits, and options for addressing tax debt.'],
+        ['icon' => 'chart-pie', 'title' => 'Investing & Retirement', 'description' => 'Portfolio allocation, retirement accounts, and long-term strategies for growing and protecting wealth.'],
+        ['icon' => 'building-library', 'title' => 'Loans & Mortgages', 'description' => 'Mortgages, personal and business loans, and how rates, fees, and terms shape the true cost of borrowing.'],
+        ['icon' => 'credit-card', 'title' => 'Credit & Cards', 'description' => 'Credit scores, rewards and travel cards, annual fees, and managing debt with a clear plan.'],
+        ['icon' => 'briefcase', 'title' => 'Small Business Finance', 'description' => 'Business bank accounts, cash flow, financing, and the practical money decisions owners face.'],
     ];
 
     $principles = [
@@ -36,7 +36,7 @@
                     The people who make {{ $siteName }} <span class="italic text-brand-600 dark:text-brand-400">make sense.</span>
                 </h1>
                 <p class="mt-7 text-lg leading-relaxed text-body">
-                    At {{ $siteName }}, we provide clear, research-driven information to help consumers and professionals better understand today&rsquo;s financial and business landscape &mdash; from money management and markets to analytics, technology, and leadership.
+                    At {{ $siteName }}, we provide clear, research-driven information to help consumers and professionals make better money decisions &mdash; from everyday banking and budgeting to investing, borrowing, and credit.
                 </p>
                 <a href="#team" class="btn-primary mt-9">
                     Meet the editors
@@ -98,7 +98,7 @@
                 <span class="eyebrow">The editors</span>
                 <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">Experience you can learn from</h2>
                 <p class="mt-4 leading-relaxed text-body">
-                    Our team brings together professionals with experience across financial research, investment strategy, data analysis, and business technology.
+                    Our writers and analysts bring experience across consumer banking, credit, lending, wealth planning, and small-business finance.
                 </p>
             </div>
 
@@ -110,6 +110,11 @@
                         <p class="mt-1 text-sm font-semibold text-brand-700 dark:text-brand-300">{{ $member['role'] }}</p>
                         @if (! empty($member['bio']))
                             <p class="mt-4 text-sm leading-relaxed text-muted">{{ $member['bio'] }}</p>
+                        @endif
+                        @if ($member['count'])
+                            <p class="mt-auto pt-5 text-xs font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">
+                                {{ $member['count'] }} {{ Str::plural('article', $member['count']) }}
+                            </p>
                         @endif
                     </div>
                 @endforeach
@@ -123,10 +128,10 @@
             <span class="eyebrow">Our approach</span>
             <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">Information should be easy to evaluate</h2>
             <p class="mt-5 leading-relaxed text-body">
-                We present information in context rather than treating individual financial or business decisions in isolation. Financial topics are examined alongside developments in strategy, technology, data, and leadership.
+                We present information in context rather than treating individual money decisions in isolation &mdash; a loan, a credit card, or a savings account is examined alongside its fees, risks, and long-term trade-offs.
             </p>
             <p class="mt-4 leading-relaxed text-body">
-                Articles focus on explaining concepts, identifying important considerations, and helping readers understand how different strategies can affect businesses, professionals, and consumers.
+                Articles focus on explaining concepts, identifying important considerations, and helping readers understand how different choices can affect households, professionals, and small businesses.
             </p>
         </div>
 

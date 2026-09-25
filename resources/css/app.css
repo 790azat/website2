@@ -126,6 +126,132 @@
     }
 }
 
+/* Rendered article Markdown (App\Support\ArticleMarkdown) */
+@layer components {
+    .article-body {
+        @apply text-[1.075rem] leading-[1.85] text-body;
+    }
+
+    .article-body > * + * {
+        @apply mt-6;
+    }
+
+    .article-body h2 {
+        @apply mt-14 scroll-mt-28 font-display text-3xl leading-tight font-semibold tracking-tight text-ink;
+    }
+
+    .article-body h3 {
+        @apply mt-10 font-display text-2xl leading-snug font-semibold text-ink;
+    }
+
+    .article-body h4 {
+        @apply mt-8 text-lg font-bold text-ink;
+    }
+
+    .article-body h2 + *,
+    .article-body h3 + *,
+    .article-body h4 + * {
+        @apply mt-4;
+    }
+
+    .article-body strong {
+        @apply font-bold text-ink;
+    }
+
+    .article-body a {
+        @apply font-medium text-brand-700 underline decoration-brand-300 decoration-2 underline-offset-4 transition hover:decoration-brand-600 dark:text-brand-300 dark:decoration-brand-700 dark:hover:decoration-brand-400;
+    }
+
+    .article-body ul {
+        @apply space-y-3;
+    }
+
+    .article-body ul > li {
+        @apply relative pl-7;
+    }
+
+    .article-body ul > li::before {
+        content: '';
+        @apply absolute top-[0.7em] left-1 size-2 rounded-full bg-brand-500 ring-4 ring-brand-100 dark:ring-brand-900;
+    }
+
+    .article-body ol {
+        counter-reset: step;
+        @apply space-y-4;
+    }
+
+    .article-body ol > li {
+        counter-increment: step;
+        @apply relative pl-11;
+    }
+
+    .article-body ol > li::before {
+        content: counter(step);
+        @apply absolute top-0.5 left-0 flex size-7 items-center justify-center rounded-full bg-brand-600 font-display text-sm font-semibold text-white dark:bg-brand-500 dark:text-brand-950;
+    }
+
+    .article-body li > ul,
+    .article-body li > ol {
+        @apply mt-3;
+    }
+
+    .article-body blockquote {
+        @apply rounded-2xl border-l-4 border-brand-500 bg-soft px-6 py-4 text-ink;
+    }
+
+    .article-body hr {
+        @apply my-12 border-line;
+    }
+
+    .article-body .table-wrap {
+        @apply overflow-x-auto rounded-2xl border border-line bg-surface;
+    }
+
+    .article-body table {
+        @apply w-full border-collapse text-left text-[0.95rem] leading-relaxed;
+    }
+
+    .article-body th {
+        @apply bg-brand-700 px-5 py-3.5 text-sm font-semibold text-white dark:bg-brand-800;
+    }
+
+    .article-body td {
+        @apply border-t border-line px-5 py-3.5 align-top;
+    }
+
+    .article-body tbody tr:nth-child(even) {
+        @apply bg-paper/60;
+    }
+
+    .article-body td:first-child {
+        @apply font-semibold text-ink;
+    }
+
+    .article-body .references {
+        @apply mt-16 rounded-3xl bg-soft p-7 text-sm leading-relaxed text-muted;
+    }
+
+    .article-body .references h2 {
+        @apply mt-0 font-sans text-xs font-bold tracking-[0.16em] text-brand-700 uppercase dark:text-brand-300;
+    }
+
+    .article-body .references ul {
+        @apply mt-5 space-y-2.5;
+    }
+
+    .article-body .references li {
+        @apply pl-5;
+    }
+
+    .article-body .references li::before {
+        @apply top-[0.6em] left-0 size-1.5 ring-0;
+    }
+
+    .article-body .references a {
+        @apply text-sm;
+    }
+}
+
 [data-flux-field]:not(ui-radio, ui-checkbox) {
     @apply grid gap-2;
 }

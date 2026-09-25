@@ -11,7 +11,7 @@
                     @include('partials.logo', ['invert' => true])
                 </a>
                 <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
-                    Clear, research-driven lessons on money, business, and technology &mdash; written to help you make confident decisions.
+                    Clear, research-driven guides to banking, investing, borrowing, and credit &mdash; written to help you make confident money decisions.
                 </p>
                 <a href="{{ route('articles') }}" wire:navigate class="btn-zest mt-7">
                     Start learning

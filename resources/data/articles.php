@@ -1,78 +1,89 @@
 <?php
 
 /**
- * Site content data: sections, authors, articles, and programs.
+ * Site content data: sections, authors, and programs.
  *
- * This file is the single source of truth for all published content.
- * There is no database, so everything is stored here as a plain PHP array
- * and read through App\Support\SiteContent by the Blade templates.
+ * There is no database; this file and the Markdown files next to it are the
+ * single source of truth, read through App\Support\SiteContent.
+ *
+ * Articles live in resources/data/articles/{slug}.md: a front-matter block
+ * (title, section, author, date, optional image/excerpt) followed by the
+ * Markdown body. Images are picked up automatically from
+ * public/images/articles/{slug}.{webp,jpg,jpeg,png} (or the front-matter
+ * "image" path); without one, generated artwork is shown.
  *
  * Sections: 'title', 'order', optional 'icon' (Heroicon name) and
- *   'description' (shown on the homepage topic cards and section header).
- * Authors: 'name', 'role', 'photo' (file in public/images/team/), optional
- *   'bio' (shown on the Our Team page).
- * Articles: 'slug', 'title', 'section', 'author', 'date', 'image' (path in
- *   public/images/), 'body', optional 'excerpt'.
- * Missing image files fall back to generated artwork automatically.
+ *   'description' (shown on topic cards and the section header).
+ * Authors: 'name', 'role', 'bio', optional 'photo' (file in
+ *   public/images/team/). Without 'photo', public/images/team/{key}.{webp,jpg,
+ *   jpeg,png} is used when present, otherwise the author's initials.
  */
 
 return [
 
     'sections' => [
-        'data-intelligence' => [
-            'title' => 'Data Intelligence',
+        'personal-finance' => [
+            'title' => 'Personal Finance',
             'order' => 1,
-            'icon' => 'chart-bar',
-            'description' => 'Understand the numbers behind everyday money and business decisions.',
+            'icon' => 'wallet',
+            'description' => 'Banking, budgeting, insurance, and taxes — the everyday money decisions that add up.',
         ],
-        'business-strategy' => [
-            'title' => 'Business Strategy',
+        'wealth-management' => [
+            'title' => 'Wealth Management',
             'order' => 2,
-            'icon' => 'arrow-trending-up',
-            'description' => 'Practical frameworks for growth, planning, and smarter choices.',
+            'icon' => 'chart-pie',
+            'description' => 'Investing, retirement, and estate planning for building wealth that lasts.',
         ],
-        'digital-horizons' => [
-            'title' => 'Digital Horizons',
+        'loans-financing' => [
+            'title' => 'Loans & Financing',
             'order' => 3,
-            'icon' => 'cpu-chip',
-            'description' => 'The tools and technology reshaping how we earn, save, and work.',
+            'icon' => 'building-library',
+            'description' => 'Mortgages, personal and business loans — understand the true cost of borrowing.',
         ],
-        'people-impact' => [
-            'title' => 'People & Impact',
+        'credit-cards' => [
+            'title' => 'Credit & Cards',
             'order' => 4,
-            'icon' => 'academic-cap',
-            'description' => 'Careers, learning, and the skills that compound over a lifetime.',
+            'icon' => 'credit-card',
+            'description' => 'Credit scores, card rewards, and fees explained so you can compare with confidence.',
         ],
     ],
 
     'authors' => [
-        'emily-carter' => [
-            'name' => 'Emily Carter',
-            'role' => 'Investment Consultant',
-            'photo' => 'emily-carter.jpg',
-            'bio' => 'Emily specializes in emerging markets and risk management, and writes practical guides on managing uncertainty and protecting long-term wealth.',
+        'rachel-bernstein' => [
+            'name' => 'Rachel Bernstein',
+            'role' => 'Senior Personal Finance & Credit Editor',
+            'bio' => 'Rachel has spent over eight years covering consumer banking, credit scoring, and debt management. Before writing full-time, she worked in community financial education, which shapes her no-nonsense, empathetic approach to helping people navigate tricky financial milestones without feeling overwhelmed.',
         ],
-        'james-mitchell' => [
-            'name' => 'James Mitchell',
-            'role' => 'Financial Specialist',
-            'photo' => 'james-mitchell.jpg',
-            'bio' => 'James focuses on navigating volatile markets and explains how diversified, resilient strategies are built step by step.',
+        'hannah-cohen' => [
+            'name' => 'Hannah Cohen',
+            'role' => 'Wealth Management & Investment Writer',
+            'bio' => 'Hannah covers long-term financial planning, retirement strategies, and portfolio allocation. She prefers plain-English explanations over industry jargon, helping readers break down complex, long-horizon decisions into manageable, actionable steps.',
         ],
-        'michael-anderson' => [
-            'name' => 'Michael Anderson',
-            'role' => 'Business and Data Analyst',
-            'photo' => 'michael-anderson.jpg',
-            'bio' => 'Michael helps readers turn complex information into practical insight, covering data analysis, performance measurement, and data-driven decisions.',
+        'lucas-vance' => [
+            'name' => 'Lucas Vance',
+            'role' => 'Credit, Lending & Wealth Strategies Analyst',
+            'bio' => 'Lucas specializes in the intersection of consumer credit, structured financing, and wealth accumulation. With a background blending retail banking analysis and credit advisory, his work helps readers weigh the true cost of borrowing—from mortgages and personal loans to strategic credit card optimization—while balancing short-term liquidity needs against long-term asset building.',
         ],
-        'daniel-brooks' => [
-            'name' => 'Daniel Brooks',
-            'role' => 'Financial Specialist',
-            'photo' => 'daniel-brooks.jpg',
-            'bio' => 'Daniel writes about market volatility and portfolio diversification, balancing growth opportunities with prudent risk management.',
+        'sofia-martinez' => [
+            'name' => 'Sofia Martinez',
+            'role' => 'Consumer Finance & Budgeting Writer',
+            'bio' => 'Sofia writes about household budgeting, everyday banking, and consumer lending. Her articles are grounded in real-world household constraints rather than idealized spreadsheets, focusing on trade-offs families and individuals actually face when managing tight monthly cash flows.',
         ],
-    ],
-
-    'articles' => [
+        'claire-odonnell' => [
+            'name' => "Claire O'Donnell",
+            'role' => 'Private Wealth & Estate Strategy Analyst',
+            'bio' => 'Claire specializes in high-net-worth wealth planning, asset protection, and generational wealth transfer. Coming from a background in private client services, her work focuses on the human side of wealth—helping families navigate legacy planning, tax-efficient investing, and trust structures without getting lost in legal or financial complexity.',
+        ],
+        'samuel-mensah' => [
+            'name' => 'Samuel Mensah',
+            'role' => 'Small Business & Strategy Contributor',
+            'bio' => 'Sam covers entrepreneurship, cash flow management, and business operations. Drawing from his background advising independent service providers and retail startups, he focuses on the unglamorous, practical hurdles of keeping a small business afloat in changing market conditions.',
+        ],
+        'ethan-kim' => [
+            'name' => 'Ethan Kim',
+            'role' => 'Data Operations & Technology Consultant',
+            'bio' => 'Ethan looks at how small to mid-sized businesses use internal data and software to streamline operations. He focuses on practical, cost-effective tech adoption rather than chasing enterprise-level tools that don\'t fit everyday business needs.',
+        ],
     ],
 
     'programs' => [

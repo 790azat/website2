@@ -4,7 +4,7 @@
 @php
     $siteName = config('app.name', 'Laravel');
     $title = null;
-    $description = $siteName.' publishes clear, research-driven guides that make money, business, and technology easier to understand.';
+    $description = $siteName.' publishes clear, research-driven guides to personal finance, wealth management, loans, and credit.';
 
     $categories = SiteContent::categories();
     $allArticles = SiteContent::articles();
@@ -32,7 +32,7 @@
                     with you.
                 </h1>
                 <p class="mt-7 max-w-xl text-lg leading-relaxed text-body">
-                    {{ $siteName }} turns complex financial, business, and technology topics into practical lessons &mdash; researched carefully, written plainly, and free for everyone.
+                    {{ $siteName }} turns banking, investing, borrowing, and credit into practical lessons &mdash; researched carefully, written plainly, and free for everyone.
                 </p>
                 <div class="mt-9 flex flex-wrap gap-3">
                     <a href="#latest" class="btn-primary">
@@ -102,7 +102,7 @@
                                 @include('partials.avatar', ['author' => $author, 'class' => 'size-9 text-xs'])
                             @endforeach
                         </span>
-                        <span>Written by <span class="font-semibold text-white">{{ $authors->count() }} specialists</span> in finance &amp; data</span>
+                        <span>Written by <span class="font-semibold text-white">{{ $authors->count() }} specialists</span> in personal finance &amp; wealth</span>
                     </div>
                 </div>
 

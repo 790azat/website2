@@ -10,6 +10,7 @@
 
     $siteName = config('app.name', 'Laravel');
     $author = $article['author_info'];
+    $rendered = \App\Support\ArticleMarkdown::render($article['body']);
     $publishedAt = \Carbon\Carbon::parse($article['date']);
 
     $relatedArticles = SiteContent::articles($article['section'])
@@ -18,7 +19,7 @@
         ->values();
 
     $title = $article['title'];
-    $description = Str::limit(strip_tags($article['body']), 155);
+    $description = Str::limit($article['excerpt'], 155);
 @endphp
 
 @section('content')
@@ -26,7 +27,7 @@
     <section class="relative overflow-hidden border-b border-line">
         <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
 
-        <div class="relative mx-auto max-w-4xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
             <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
                     <flux:icon name="home" variant="micro" class="size-4" /> Home
@@ -40,7 +41,7 @@
                 {{ $article['section_title'] }}
             </a>
 
-            <h1 class="mt-5 font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
                 {{ $article['title'] }}
             </h1>
 
@@ -64,37 +65,59 @@
         </div>
     </section>
 
-    <article class="mx-auto max-w-4xl px-6 lg:px-8">
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
         {{-- Hero image --}}
         @if ($article['image'])
             <div class="mt-12 overflow-hidden rounded-[2rem]">
-                <img src="{{ asset('images/'.$article['image']) }}" alt="{{ $article['title'] }}" class="aspect-video w-full object-cover" />
+                <img src="{{ asset('images/'.$article['image']) }}" alt="{{ $article['title'] }}" class="aspect-[21/9] w-full object-cover" />
             </div>
         @endif
 
-        <div class="mx-auto max-w-3xl pt-6 pb-16">
-            @include('partials.article-body', ['body' => $article['body']])
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            {{-- Table of contents --}}
+            @if (count($rendered['toc']) > 1)
+                <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="In this article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">In this article</span>
+                            <flux:icon name="chevron-down" variant="mini" class="size-4 text-muted transition lg:hidden" ::class="open && 'rotate-180'" />
+                        </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                            @foreach ($rendered['toc'] as $item)
+                                <li>
+                                    <a href="#{{ $item['id'] }}" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">{{ $item['title'] }}</a>
+                                </li>
+                            @endforeach
+                        </ol>
+                    </nav>
+                </aside>
+            @endif
 
-            {{-- Author card --}}
-            <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
-                <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
-                <div class="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-                    <div class="flex items-center gap-4">
+            <div class="min-w-0 lg:col-span-8">
+                @include('partials.article-body', ['html' => $rendered['html']])
+
+                {{-- Author card --}}
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
                         @include('partials.avatar', ['author' => $author, 'class' => 'size-16 text-lg'])
                         <div>
                             <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Written by</p>
                             <p class="mt-1 font-display text-2xl font-semibold text-white">{{ $author['name'] }}</p>
-                            <p class="text-sm text-brand-200">{{ $author['role'] }} at {{ $siteName }}</p>
+                            <p class="text-sm text-brand-200">{{ $author['role'] }}</p>
                         </div>
                     </div>
-                    <a href="{{ route('team') }}" wire:navigate class="btn-zest shrink-0">Meet the editors</a>
+                    @if ($author['bio'])
+                        <p class="relative mt-5 leading-relaxed text-brand-100">{{ $author['bio'] }}</p>
+                    @endif
+                    <a href="{{ route('team') }}" wire:navigate class="btn-zest relative mt-6">Meet the editors</a>
                 </div>
-            </div>
 
-            <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
-                <span class="font-semibold text-body">Educational content only.</span>
-                This article is for general information and is not personalized financial, investment, tax, or legal advice.
-            </p>
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Educational content only.</span>
+                    This article is for general information and is not personalized financial, investment, tax, or legal advice.
+                </p>
+            </div>
         </div>
     </article>
 

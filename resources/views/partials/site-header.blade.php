@@ -13,7 +13,7 @@
     <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
         <p class="flex items-center gap-2 truncate">
             <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
-            Free, independent guides to money, business &amp; learning
+            Free, independent guides to banking, investing, loans &amp; credit
         </p>
         <nav class="hidden items-center gap-5 font-medium sm:flex">
             <a href="{{ route('team') }}" wire:navigate class="transition hover:text-white">Our Team</a>
