@@ -4,21 +4,21 @@
 @php
     $siteName = config('app.name', 'Laravel');
     $domainName = SiteContent::domain();
-    $title = 'Contact';
-    $description = 'Get in touch with the '.$siteName.' team.';
+    $title = __('Contact');
+    $description = __('Get in touch with the :site team.', ['site' => $siteName]);
 
     $channels = [
-        ['icon' => 'envelope', 'title' => 'General inquiries', 'text' => 'Questions about our content, partnerships, or anything else.', 'email' => 'hello@'.$domainName],
-        ['icon' => 'pencil-square', 'title' => 'Editorial & corrections', 'text' => 'Spotted something that needs a closer look? Let our editors know.', 'email' => 'editorial@'.$domainName],
+        ['icon' => 'envelope', 'title' => __('General inquiries'), 'text' => __('Questions about our content, partnerships, or anything else.'), 'email' => 'hello@'.$domainName],
+        ['icon' => 'pencil-square', 'title' => __('Editorial & corrections'), 'text' => __('Spotted something that needs a closer look? Let our editors know.'), 'email' => 'editorial@'.$domainName],
     ];
 @endphp
 
 @section('content')
     @include('partials.page-hero', [
-        'crumbs' => ['Contact' => null],
-        'eyebrow' => 'Contact',
-        'heading' => 'Let’s talk',
-        'lead' => 'Have a question about an article, a correction to suggest, or feedback on '.$siteName.'? We would like to hear from you.',
+        'crumbs' => [__('Contact') => null],
+        'eyebrow' => __('Contact'),
+        'heading' => __('Let’s talk'),
+        'lead' => __('Have a question about an article, a correction to suggest, or feedback on :site? We would like to hear from you.', ['site' => $siteName]),
         'icon' => 'chat-bubble-left-right',
     ])
 
@@ -43,9 +43,9 @@
                 <span class="relative flex size-14 items-center justify-center rounded-2xl bg-zest-400 text-brand-950">
                     <flux:icon name="clock" class="size-7" />
                 </span>
-                <h2 class="relative mt-7 font-display text-2xl font-semibold text-white">Response time</h2>
+                <h2 class="relative mt-7 font-display text-2xl font-semibold text-white">{{ __('Response time') }}</h2>
                 <p class="relative mt-2 leading-relaxed text-brand-100">
-                    We aim to respond to every message within a few business days.
+                    {{ __('We aim to respond to every message within a few business days.') }}
                 </p>
             </div>
         </div>
@@ -53,7 +53,7 @@
         <div class="mt-10 flex gap-4 rounded-3xl border border-line bg-surface p-6 text-sm leading-relaxed text-muted">
             <flux:icon name="information-circle" class="size-6 shrink-0 text-brand-500" />
             <p>
-                {{ $siteName }} publishes educational and informational content only; we are not able to provide personalized financial, investment, tax, or legal advice through this contact channel.
+                {{ __(':site publishes educational and informational content only; we are not able to provide personalized financial, investment, tax, or legal advice through this contact channel.', ['site' => $siteName]) }}
             </p>
         </div>
     </section>

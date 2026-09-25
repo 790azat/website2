@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @php
-    $title = 'Page not found';
+    $title = __('Page not found');
     $description = null;
 @endphp
 
@@ -11,13 +11,13 @@
 
         <div class="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-24 text-center lg:py-32">
             <p class="font-display text-[7rem] leading-none font-semibold text-brand-600 sm:text-[10rem] dark:text-brand-400">404</p>
-            <h1 class="mt-6 font-display text-4xl font-semibold tracking-tight text-ink">This page took a different path</h1>
+            <h1 class="mt-6 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('This page took a different path') }}</h1>
             <p class="mt-4 max-w-md text-lg leading-relaxed text-body">
-                The page you are looking for does not exist or may have moved. Let&rsquo;s get you back to learning.
+                {{ __('The page you are looking for does not exist or may have moved. Let’s get you back to learning.') }}
             </p>
             <div class="mt-10 flex flex-wrap justify-center gap-3">
-                <a href="{{ route('home') }}" wire:navigate class="btn-primary">Back to homepage</a>
-                <a href="{{ route('articles') }}" wire:navigate class="btn-ghost">Browse articles</a>
+                <a href="{{ route('home') }}" wire:navigate class="btn-primary">{{ __('Back to homepage') }}</a>
+                <a href="{{ route('articles') }}" wire:navigate class="btn-ghost">{{ __('Browse articles') }}</a>
             </div>
         </div>
     </section>

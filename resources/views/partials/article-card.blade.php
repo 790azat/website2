@@ -12,7 +12,7 @@
         </div>
         <div class="flex flex-col justify-center p-7 sm:p-10">
             <div class="flex flex-wrap items-center gap-3">
-                <span class="rounded-full bg-zest-400 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-950 uppercase">Featured</span>
+                <span class="rounded-full bg-zest-400 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-950 uppercase">{{ __('Featured') }}</span>
                 <span class="tag">{{ $article['section_title'] }}</span>
             </div>
             <h3 class="mt-5 font-display text-2xl leading-tight font-semibold text-balance text-ink sm:text-3xl">
@@ -24,8 +24,8 @@
                 <div>
                     <p class="font-semibold text-ink">{{ $article['author_info']['name'] }}</p>
                     <p class="text-muted">
-                        <time datetime="{{ $article['date'] }}">{{ \Carbon\Carbon::parse($article['date'])->format('M j, Y') }}</time>
-                        &middot; {{ $article['reading_minutes'] }} min read
+                        <time datetime="{{ $article['date'] }}">{{ \Carbon\Carbon::parse($article['date'])->translatedFormat(__('M j, Y')) }}</time>
+                        &middot; {{ __(':minutes min read', ['minutes' => $article['reading_minutes']]) }}
                     </p>
                 </div>
             </div>
@@ -39,7 +39,7 @@
         <div class="min-w-0">
             <p class="text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">{{ $article['section_title'] }}</p>
             <p class="mt-1 line-clamp-2 font-semibold leading-snug text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $article['title'] }}</p>
-            <p class="mt-1 text-xs text-muted">{{ $article['reading_minutes'] }} min read</p>
+            <p class="mt-1 text-xs text-muted">{{ __(':minutes min read', ['minutes' => $article['reading_minutes']]) }}</p>
         </div>
     </a>
 @else
@@ -61,7 +61,7 @@
                         @include('partials.avatar', ['author' => $article['author_info'], 'class' => 'size-7 text-[10px]'])
                         <span class="truncate font-semibold text-body">{{ $article['author_info']['name'] }}</span>
                     </span>
-                    <time datetime="{{ $article['date'] }}" class="shrink-0">{{ \Carbon\Carbon::parse($article['date'])->format('M j, Y') }}</time>
+                    <time datetime="{{ $article['date'] }}" class="shrink-0">{{ \Carbon\Carbon::parse($article['date'])->translatedFormat(__('M j, Y')) }}</time>
                 </div>
             </div>
         </div>

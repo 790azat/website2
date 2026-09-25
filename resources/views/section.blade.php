@@ -24,16 +24,16 @@
     $otherCategories = SiteContent::categories()->where('id', '!=', $section);
 
     $title = $sectionMeta['title'];
-    $description = $sectionMeta['description'] ?? $sectionMeta['title'].' articles from '.$siteName.'.';
+    $description = $sectionMeta['description'] ?? __(':section articles from :site.', ['section' => $sectionMeta['title'], 'site' => $siteName]);
 @endphp
 
 @section('content')
     @include('partials.page-hero', [
-        'crumbs' => ['Articles' => route('articles'), $sectionMeta['title'] => null],
-        'eyebrow' => 'Topic',
+        'crumbs' => [__('Articles') => route('articles'), $sectionMeta['title'] => null],
+        'eyebrow' => __('Topic'),
         'heading' => $sectionMeta['title'],
         'lead' => $sectionMeta['description'],
-        'meta' => $totalArticles.' '.Str::plural('article', $totalArticles),
+        'meta' => trans_choice(':count article|:count articles', $totalArticles),
         'icon' => $sectionMeta['icon'],
     ])
 
@@ -54,7 +54,7 @@
     {{-- Other topics --}}
     <section class="border-t border-line bg-surface">
         <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-            <h2 class="font-display text-3xl font-semibold text-ink">Keep exploring</h2>
+            <h2 class="font-display text-3xl font-semibold text-ink">{{ __('Keep exploring') }}</h2>
             <div class="mt-8 grid gap-4 sm:grid-cols-3">
                 @foreach ($otherCategories as $category)
                     <a href="{{ route('section', $category['id']) }}" wire:navigate class="group flex items-center gap-4 rounded-2xl border border-line bg-paper p-5 transition hover:border-brand-400">
@@ -63,7 +63,7 @@
                         </span>
                         <span class="min-w-0 flex-1">
                             <span class="block font-semibold text-ink">{{ $category['title'] }}</span>
-                            <span class="text-sm text-muted">{{ $category['count'] }} {{ Str::plural('article', $category['count']) }}</span>
+                            <span class="text-sm text-muted">{{ trans_choice(':count article|:count articles', $category['count']) }}</span>
                         </span>
                         <flux:icon name="arrow-right" variant="mini" class="size-4 text-muted transition group-hover:translate-x-1 group-hover:text-brand-600" />
                     </a>

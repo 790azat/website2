@@ -10,17 +10,17 @@
 
 @include('partials.page-hero', [
     'crumbs' => [$heading => null],
-    'eyebrow' => 'Legal',
+    'eyebrow' => __('Legal'),
     'heading' => $heading,
-    'meta' => 'Last updated '.$lastUpdated->format('F j, Y'),
+    'meta' => __('Last updated :date', ['date' => $lastUpdated->translatedFormat(__('F j, Y'))]),
     'icon' => 'scale',
 ])
 
 <section class="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-12 lg:px-8">
     {{-- Table of contents --}}
     <aside class="lg:col-span-4">
-        <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="On this page">
-            <p class="text-xs font-bold tracking-[0.16em] text-muted uppercase">On this page</p>
+        <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="{{ __('On this page') }}">
+            <p class="text-xs font-bold tracking-[0.16em] text-muted uppercase">{{ __('On this page') }}</p>
             <ol class="mt-4 space-y-1 text-sm">
                 @foreach ($sections as $i => $block)
                     <li>
@@ -33,7 +33,7 @@
                 <li>
                     <a href="#contact-us" class="flex gap-3 rounded-xl px-3 py-2 text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">
                         <span class="w-5 shrink-0 font-display font-semibold text-brand-500">{{ count($sections) + 1 }}</span>
-                        Contact Us
+                        {{ __('Contact Us') }}
                     </a>
                 </li>
             </ol>
@@ -63,11 +63,13 @@
             @endforeach
 
             <div id="contact-us" class="scroll-mt-28 rounded-3xl bg-brand-800 p-8">
-                <h2 class="font-display text-2xl font-semibold text-white">Contact Us</h2>
+                <h2 class="font-display text-2xl font-semibold text-white">{{ __('Contact Us') }}</h2>
                 <p class="mt-3 leading-relaxed text-brand-100">
-                    If you have any questions about {{ $docName }}, please reach out to us at
-                    <a href="mailto:hello@{{ $domainName }}" class="font-bold text-zest-300 underline decoration-zest-400/40 underline-offset-4 hover:decoration-zest-300">hello@{{ $domainName }}</a>
-                    or visit our <a href="{{ route('contact') }}" wire:navigate class="font-bold text-zest-300 underline decoration-zest-400/40 underline-offset-4 hover:decoration-zest-300">Contact page</a>.
+                    {!! __('If you have any questions about :doc, please reach out to us at :email or visit our :contact.', [
+                        'doc' => e($docName),
+                        'email' => '<a href="mailto:hello@'.e($domainName).'" class="font-bold text-zest-300 underline decoration-zest-400/40 underline-offset-4 hover:decoration-zest-300">hello@'.e($domainName).'</a>',
+                        'contact' => '<a href="'.e(route('contact')).'" wire:navigate class="font-bold text-zest-300 underline decoration-zest-400/40 underline-offset-4 hover:decoration-zest-300">'.e(__('Contact page')).'</a>',
+                    ]) !!}
                 </p>
             </div>
         </div>

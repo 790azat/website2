@@ -13,23 +13,26 @@
     <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
         <p class="flex items-center gap-2 truncate">
             <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
-            Free, independent guides to banking, investing, loans &amp; credit
+            {{ __('Free, independent guides to banking, investing, loans & credit') }}
         </p>
-        <nav class="hidden items-center gap-5 font-medium sm:flex">
-            <a href="{{ route('team') }}" wire:navigate class="transition hover:text-white">Our Team</a>
-            <a href="{{ route('contact') }}" wire:navigate class="transition hover:text-white">Contact</a>
-        </nav>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="{{ route('team') }}" wire:navigate class="transition hover:text-white">{{ __('Our Team') }}</a>
+                <a href="{{ route('contact') }}" wire:navigate class="transition hover:text-white">{{ __('Contact') }}</a>
+            </nav>
+            @include('partials.language-switcher')
+        </div>
     </div>
 </div>
 
 <header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
     <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
-        <a href="{{ route('home') }}" wire:navigate class="shrink-0" aria-label="{{ config('app.name') }} home">
+        <a href="{{ route('home') }}" wire:navigate class="shrink-0" aria-label="{{ __(':site home', ['site' => config('app.name')]) }}">
             @include('partials.logo')
         </a>
 
         <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
-            <a href="{{ route('home') }}" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition {{ $navLink(request()->routeIs('home')) }}">Home</a>
+            <a href="{{ route('home') }}" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition {{ $navLink(request()->routeIs('home')) }}">{{ __('Home') }}</a>
             @foreach ($categories as $category)
                 <a href="{{ route('section', $category['id']) }}" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition {{ $navLink(request()->route('section') === $category['id']) }}">{{ $category['title'] }}</a>
             @endforeach
@@ -38,14 +41,14 @@
         <div class="flex items-center gap-3">
             <a href="{{ route('articles') }}" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
                 <flux:icon name="book-open" variant="mini" class="size-4" />
-                All Articles
+                {{ __('All Articles') }}
             </a>
 
             <button
                 type="button"
                 @click="mobileOpen = true"
                 class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
-                aria-label="Open menu"
+                aria-label="{{ __('Open menu') }}"
             >
                 <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                     <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
@@ -72,7 +75,7 @@
             <a href="{{ route('home') }}" wire:navigate @click="mobileOpen = false">
                 @include('partials.logo', ['size' => 'sm'])
             </a>
-            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Close menu">
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="{{ __('Close menu') }}">
                 <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
                     <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
                 </svg>
@@ -80,10 +83,10 @@
         </div>
 
         <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
-            <a href="{{ route('home') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Home</a>
-            <a href="{{ route('articles') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">All Articles</a>
+            <a href="{{ route('home') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">{{ __('Home') }}</a>
+            <a href="{{ route('articles') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">{{ __('All Articles') }}</a>
 
-            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Topics</p>
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">{{ __('Topics') }}</p>
             @foreach ($categories as $category)
                 <a href="{{ route('section', $category['id']) }}" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
                     <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
@@ -93,9 +96,9 @@
                 </a>
             @endforeach
 
-            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">About</p>
-            <a href="{{ route('team') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Our Team</a>
-            <a href="{{ route('contact') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">{{ __('About') }}</p>
+            <a href="{{ route('team') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">{{ __('Our Team') }}</a>
+            <a href="{{ route('contact') }}" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">{{ __('Contact') }}</a>
         </nav>
     </div>
 </div>

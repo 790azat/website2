@@ -28,9 +28,9 @@
         <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
 
         <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
-            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Breadcrumb">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="{{ __('Breadcrumb') }}">
                 <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
-                    <flux:icon name="home" variant="micro" class="size-4" /> Home
+                    <flux:icon name="home" variant="micro" class="size-4" /> {{ __('Home') }}
                 </a>
                 <span class="text-line">/</span>
                 <a href="{{ route('section', $article['section']) }}" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">{{ $article['section_title'] }}</a>
@@ -55,11 +55,11 @@
                 </a>
                 <span class="flex items-center gap-2 text-muted">
                     <flux:icon name="calendar" variant="mini" class="size-4 text-brand-500" />
-                    <time datetime="{{ $article['date'] }}">{{ $publishedAt->format('F j, Y') }}</time>
+                    <time datetime="{{ $article['date'] }}">{{ $publishedAt->translatedFormat(__('F j, Y')) }}</time>
                 </span>
                 <span class="flex items-center gap-2 text-muted">
                     <flux:icon name="clock" variant="mini" class="size-4 text-brand-500" />
-                    {{ $article['reading_minutes'] }} min read
+                    {{ __(':minutes min read', ['minutes' => $article['reading_minutes']]) }}
                 </span>
             </div>
         </div>
@@ -73,13 +73,20 @@
             </div>
         @endif
 
+        @if ($article['locale'] !== app()->getLocale())
+            <p class="mt-10 flex items-start gap-3 rounded-2xl border border-zest-400/60 bg-zest-300/20 p-5 text-sm leading-relaxed text-body">
+                <flux:icon name="language" variant="mini" class="mt-0.5 size-5 shrink-0 text-brand-600 dark:text-brand-400" />
+                {{ __('This article is currently available in English only.') }}
+            </p>
+        @endif
+
         <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
             {{-- Table of contents --}}
             @if (count($rendered['toc']) > 1)
                 <aside class="lg:order-last lg:col-span-4">
-                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="In this article" x-data="{ open: false }">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="{{ __('In this article') }}" x-data="{ open: false }">
                         <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
-                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">In this article</span>
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">{{ __('In this article') }}</span>
                             <flux:icon name="chevron-down" variant="mini" class="size-4 text-muted transition lg:hidden" ::class="open && 'rotate-180'" />
                         </button>
                         <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
@@ -102,7 +109,7 @@
                     <div class="relative flex items-center gap-4">
                         @include('partials.avatar', ['author' => $author, 'class' => 'size-16 text-lg'])
                         <div>
-                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Written by</p>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">{{ __('Written by') }}</p>
                             <p class="mt-1 font-display text-2xl font-semibold text-white">{{ $author['name'] }}</p>
                             <p class="text-sm text-brand-200">{{ $author['role'] }}</p>
                         </div>
@@ -110,12 +117,12 @@
                     @if ($author['bio'])
                         <p class="relative mt-5 leading-relaxed text-brand-100">{{ $author['bio'] }}</p>
                     @endif
-                    <a href="{{ route('team') }}" wire:navigate class="btn-zest relative mt-6">Meet the editors</a>
+                    <a href="{{ route('team') }}" wire:navigate class="btn-zest relative mt-6">{{ __('Meet the editors') }}</a>
                 </div>
 
                 <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
-                    <span class="font-semibold text-body">Educational content only.</span>
-                    This article is for general information and is not personalized financial, investment, tax, or legal advice.
+                    <span class="font-semibold text-body">{{ __('Educational content only.') }}</span>
+                    {{ __('This article is for general information and is not personalized financial, investment, tax, or legal advice.') }}
                 </p>
             </div>
         </div>
@@ -127,10 +134,10 @@
             <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
                 <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
                     <div>
-                        <span class="eyebrow">Keep learning</span>
-                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">More in {{ $article['section_title'] }}</h2>
+                        <span class="eyebrow">{{ __('Keep learning') }}</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">{{ __('More in :section', ['section' => $article['section_title']]) }}</h2>
                     </div>
-                    <a href="{{ route('section', $article['section']) }}" wire:navigate class="link-underline text-sm font-semibold text-ink">See all</a>
+                    <a href="{{ route('section', $article['section']) }}" wire:navigate class="link-underline text-sm font-semibold text-ink">{{ __('See all') }}</a>
                 </div>
                 <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     @foreach ($relatedArticles as $related)

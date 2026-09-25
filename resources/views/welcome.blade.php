@@ -4,7 +4,7 @@
 @php
     $siteName = config('app.name', 'Laravel');
     $title = null;
-    $description = $siteName.' publishes clear, research-driven guides to personal finance, wealth management, loans, and credit.';
+    $description = __(':site publishes clear, research-driven guides to personal finance, wealth management, loans, and credit.', ['site' => $siteName]);
 
     $categories = SiteContent::categories();
     $allArticles = SiteContent::articles();
@@ -22,37 +22,37 @@
 
         <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pt-14 pb-20 lg:grid-cols-12 lg:px-8 lg:pt-20 lg:pb-28">
             <div class="lg:col-span-6">
-                <span class="eyebrow">Financial education, made clear</span>
+                <span class="eyebrow">{{ __('Financial education, made clear') }}</span>
                 <h1 class="mt-6 font-display text-5xl leading-[1.02] font-semibold tracking-tight text-balance text-ink sm:text-6xl lg:text-7xl">
-                    Learn money skills that
+                    {{ __('Learn money skills that') }}
                     <span class="relative whitespace-nowrap italic text-brand-600 dark:text-brand-400">
                         <svg class="absolute -bottom-2 left-0 h-3 w-full text-zest-400" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c40-6 110-8 196-3" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" /></svg>
-                        <span class="relative">grow</span>
+                        <span class="relative">{{ __('grow') }}</span>
                     </span>
-                    with you.
+                    {{ __('with you.') }}
                 </h1>
                 <p class="mt-7 max-w-xl text-lg leading-relaxed text-body">
-                    {{ $siteName }} turns banking, investing, borrowing, and credit into practical lessons &mdash; researched carefully, written plainly, and free for everyone.
+                    {{ __(':site turns banking, investing, borrowing, and credit into practical lessons — researched carefully, written plainly, and free for everyone.', ['site' => $siteName]) }}
                 </p>
                 <div class="mt-9 flex flex-wrap gap-3">
                     <a href="#latest" class="btn-primary">
-                        Start reading
+                        {{ __('Start reading') }}
                         <flux:icon name="arrow-down" variant="mini" class="size-4" />
                     </a>
-                    <a href="{{ route('team') }}" wire:navigate class="btn-ghost">Meet our editors</a>
+                    <a href="{{ route('team') }}" wire:navigate class="btn-ghost">{{ __('Meet our editors') }}</a>
                 </div>
 
                 <dl class="mt-12 grid max-w-lg grid-cols-3 divide-x divide-line border-y border-line py-5">
                     <div class="pr-4">
-                        <dt class="text-xs font-semibold text-muted">Guides</dt>
+                        <dt class="text-xs font-semibold text-muted">{{ __('Guides') }}</dt>
                         <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $allArticles->count() }}</dd>
                     </div>
                     <div class="px-4">
-                        <dt class="text-xs font-semibold text-muted">Topics</dt>
+                        <dt class="text-xs font-semibold text-muted">{{ __('Topics') }}</dt>
                         <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $categories->count() }}</dd>
                     </div>
                     <div class="pl-4">
-                        <dt class="text-xs font-semibold text-muted">Cost to read</dt>
+                        <dt class="text-xs font-semibold text-muted">{{ __('Cost to read') }}</dt>
                         <dd class="mt-1 font-display text-3xl font-semibold text-brand-600 dark:text-brand-400">$0</dd>
                     </div>
                 </dl>
@@ -68,8 +68,8 @@
                     <div class="relative rounded-3xl bg-surface p-6 shadow-2xl shadow-brand-950/30 sm:p-7">
                         <div class="flex items-center justify-between">
                             <div>
-                                <p class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Your learning path</p>
-                                <p class="mt-1 font-display text-2xl font-semibold text-ink">Build your foundation</p>
+                                <p class="text-xs font-bold tracking-[0.16em] text-muted uppercase">{{ __('Your learning path') }}</p>
+                                <p class="mt-1 font-display text-2xl font-semibold text-ink">{{ __('Build your foundation') }}</p>
                             </div>
                             <span class="flex size-12 items-center justify-center rounded-2xl bg-zest-300 text-brand-900">
                                 <flux:icon name="academic-cap" class="size-6" />
@@ -102,12 +102,12 @@
                                 @include('partials.avatar', ['author' => $author, 'class' => 'size-9 text-xs'])
                             @endforeach
                         </span>
-                        <span>Written by <span class="font-semibold text-white">{{ $authors->count() }} specialists</span> in personal finance &amp; wealth</span>
+                        <span>{!! __('Written by :count in personal finance & wealth', ['count' => '<span class="font-semibold text-white">'.e(trans_choice(':count specialist|:count specialists', $authors->count())).'</span>']) !!}</span>
                     </div>
                 </div>
 
                 <div class="absolute -top-5 -left-3 hidden rotate-[-6deg] rounded-2xl bg-zest-400 px-4 py-3 text-sm font-bold text-brand-950 shadow-lg sm:block">
-                    100% free &amp; independent
+                    {{ __('100% free & independent') }}
                 </div>
             </div>
         </div>
@@ -118,10 +118,10 @@
         <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
             <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
                 <div class="max-w-2xl">
-                    <span class="eyebrow">Explore by topic</span>
-                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">Pick a subject and start learning</h2>
+                    <span class="eyebrow">{{ __('Explore by topic') }}</span>
+                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">{{ __('Pick a subject and start learning') }}</h2>
                 </div>
-                <a href="{{ route('articles') }}" wire:navigate class="link-underline shrink-0 text-sm font-semibold text-ink">Browse all articles</a>
+                <a href="{{ route('articles') }}" wire:navigate class="link-underline shrink-0 text-sm font-semibold text-ink">{{ __('Browse all articles') }}</a>
             </div>
 
             <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -136,7 +136,7 @@
                             <p class="mt-2 text-sm leading-relaxed text-muted transition group-hover:text-brand-100">{{ $category['description'] }}</p>
                         @endif
                         <span class="mt-8 flex items-center justify-between text-sm font-semibold text-body transition group-hover:text-white">
-                            {{ $category['count'] }} {{ Str::plural('article', $category['count']) }}
+                            {{ trans_choice(':count article|:count articles', $category['count']) }}
                             <flux:icon name="arrow-right" variant="mini" class="size-4 transition group-hover:translate-x-1" />
                         </span>
                     </a>
@@ -149,12 +149,12 @@
     <section id="latest" class="mx-auto max-w-7xl scroll-mt-28 px-6 py-20 lg:px-8">
         <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
-                <span class="eyebrow">Fresh from the editors</span>
-                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">Latest articles</h2>
+                <span class="eyebrow">{{ __('Fresh from the editors') }}</span>
+                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('Latest articles') }}</h2>
             </div>
             @if ($allArticles->isNotEmpty())
                 <a href="{{ route('articles') }}" wire:navigate class="btn-ghost shrink-0">
-                    View all articles
+                    {{ __('View all articles') }}
                     <flux:icon name="arrow-right" variant="mini" class="size-4" />
                 </a>
             @endif
@@ -175,7 +175,7 @@
 
             @if ($moreArticles->isNotEmpty())
                 <div class="mt-16 rounded-3xl border border-line bg-surface p-7 sm:p-9">
-                    <h3 class="font-display text-2xl font-semibold text-ink">More to read</h3>
+                    <h3 class="font-display text-2xl font-semibold text-ink">{{ __('More to read') }}</h3>
                     <div class="mt-7 grid gap-6 md:grid-cols-2">
                         @foreach ($moreArticles as $article)
                             @include('partials.article-card', ['article' => $article, 'variant' => 'compact'])
@@ -193,9 +193,9 @@
         <section class="border-t border-line bg-soft">
             <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
                 <div class="max-w-2xl">
-                    <span class="eyebrow">Program guides</span>
-                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">In-depth course &amp; program reviews</h2>
-                    <p class="mt-4 leading-relaxed text-body">Detailed breakdowns of certifications and degree programs, including curriculum, cost, and what to expect.</p>
+                    <span class="eyebrow">{{ __('Program guides') }}</span>
+                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('In-depth course & program reviews') }}</h2>
+                    <p class="mt-4 leading-relaxed text-body">{{ __('Detailed breakdowns of certifications and degree programs, including curriculum, cost, and what to expect.') }}</p>
                 </div>
 
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
@@ -214,7 +214,7 @@
                                 <h3 class="font-display text-xl font-semibold text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $program['title'] }}</h3>
                                 <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">{{ $program['intro'] }}</p>
                                 <span class="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-brand-700 dark:text-brand-300">
-                                    Read the guide
+                                    {{ __('Read the guide') }}
                                     <flux:icon name="arrow-right" variant="mini" class="size-4 transition group-hover:translate-x-1" />
                                 </span>
                             </div>
@@ -229,16 +229,16 @@
     <section class="border-t border-line bg-surface">
         <div class="mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-12 lg:px-8">
             <div class="lg:col-span-4">
-                <span class="eyebrow">How we teach</span>
-                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">Education first. Never a sales pitch.</h2>
-                <p class="mt-5 leading-relaxed text-body">Every guide is built to help you understand a topic well enough to make your own decisions.</p>
+                <span class="eyebrow">{{ __('How we teach') }}</span>
+                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">{{ __('Education first. Never a sales pitch.') }}</h2>
+                <p class="mt-5 leading-relaxed text-body">{{ __('Every guide is built to help you understand a topic well enough to make your own decisions.') }}</p>
             </div>
 
             @php
                 $steps = [
-                    ['icon' => 'magnifying-glass', 'title' => 'Researched', 'description' => 'Grounded in publicly available data, established concepts, and reputable sources.'],
-                    ['icon' => 'light-bulb', 'title' => 'Explained plainly', 'description' => 'Complex ideas broken into clear steps, with the jargon translated.'],
-                    ['icon' => 'shield-check', 'title' => 'Independent', 'description' => 'Informational content only &mdash; never personalized financial, tax, or legal advice.'],
+                    ['icon' => 'magnifying-glass', 'title' => __('Researched'), 'description' => __('Grounded in publicly available data, established concepts, and reputable sources.')],
+                    ['icon' => 'light-bulb', 'title' => __('Explained plainly'), 'description' => __('Complex ideas broken into clear steps, with the jargon translated.')],
+                    ['icon' => 'shield-check', 'title' => __('Independent'), 'description' => __('Informational content only — never personalized financial, tax, or legal advice.')],
                 ];
             @endphp
             <div class="grid gap-5 sm:grid-cols-3 lg:col-span-8">
@@ -251,7 +251,7 @@
                             <span class="font-display text-4xl font-semibold text-line">0{{ $i + 1 }}</span>
                         </div>
                         <h3 class="mt-7 font-display text-xl font-semibold text-ink">{{ $step['title'] }}</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-muted">{!! $step['description'] !!}</p>
+                        <p class="mt-2 text-sm leading-relaxed text-muted">{{ $step['description'] }}</p>
                     </div>
                 @endforeach
             </div>
@@ -267,16 +267,16 @@
             <div class="relative grid items-center gap-12 lg:grid-cols-2">
                 <div>
                     <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">
-                        <span class="h-px w-6 bg-current"></span> Meet the team
+                        <span class="h-px w-6 bg-current"></span> {{ __('Meet the team') }}
                     </span>
                     <h2 class="mt-5 font-display text-4xl leading-tight font-semibold text-balance text-white sm:text-5xl">
-                        Written by people who work with money every day
+                        {{ __('Written by people who work with money every day') }}
                     </h2>
                     <p class="mt-5 max-w-lg leading-relaxed text-brand-100">
-                        Our editors combine hands-on experience in finance, data, and business with a commitment to clear, honest explanations.
+                        {{ __('Our editors combine hands-on experience in finance, data, and business with a commitment to clear, honest explanations.') }}
                     </p>
                     <a href="{{ route('team') }}" wire:navigate class="btn-zest mt-9">
-                        Meet the full team
+                        {{ __('Meet the full team') }}
                         <flux:icon name="arrow-right" variant="mini" class="size-4" />
                     </a>
                 </div>

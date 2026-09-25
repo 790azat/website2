@@ -3,24 +3,24 @@
 
 @php
     $siteName = config('app.name', 'Laravel');
-    $title = 'Our Editorial Team';
-    $description = 'Meet the '.$siteName.' team — writers and analysts covering personal finance, wealth management, lending, and credit.';
+    $title = __('Our Editorial Team');
+    $description = __('Meet the :site team — writers and analysts covering personal finance, wealth management, lending, and credit.', ['site' => $siteName]);
 
     $team = SiteContent::authors();
 
     $services = [
-        ['icon' => 'wallet', 'title' => 'Banking & Budgeting', 'description' => 'Checking and savings accounts, high-yield options, online banking, and budgets that hold up in real life.'],
-        ['icon' => 'shield-check', 'title' => 'Insurance & Taxes', 'description' => 'Auto, life, and health coverage, Medicare, deductions, credits, and options for addressing tax debt.'],
-        ['icon' => 'chart-pie', 'title' => 'Investing & Retirement', 'description' => 'Portfolio allocation, retirement accounts, and long-term strategies for growing and protecting wealth.'],
-        ['icon' => 'building-library', 'title' => 'Loans & Mortgages', 'description' => 'Mortgages, personal and business loans, and how rates, fees, and terms shape the true cost of borrowing.'],
-        ['icon' => 'credit-card', 'title' => 'Credit & Cards', 'description' => 'Credit scores, rewards and travel cards, annual fees, and managing debt with a clear plan.'],
-        ['icon' => 'briefcase', 'title' => 'Small Business Finance', 'description' => 'Business bank accounts, cash flow, financing, and the practical money decisions owners face.'],
+        ['icon' => 'wallet', 'title' => __('Banking & Budgeting'), 'description' => __('Checking and savings accounts, high-yield options, online banking, and budgets that hold up in real life.')],
+        ['icon' => 'shield-check', 'title' => __('Insurance & Taxes'), 'description' => __('Auto, life, and health coverage, Medicare, deductions, credits, and options for addressing tax debt.')],
+        ['icon' => 'chart-pie', 'title' => __('Investing & Retirement'), 'description' => __('Portfolio allocation, retirement accounts, and long-term strategies for growing and protecting wealth.')],
+        ['icon' => 'building-library', 'title' => __('Loans & Mortgages'), 'description' => __('Mortgages, personal and business loans, and how rates, fees, and terms shape the true cost of borrowing.')],
+        ['icon' => 'credit-card', 'title' => __('Credit & Cards'), 'description' => __('Credit scores, rewards and travel cards, annual fees, and managing debt with a clear plan.')],
+        ['icon' => 'briefcase', 'title' => __('Small Business Finance'), 'description' => __('Business bank accounts, cash flow, financing, and the practical money decisions owners face.')],
     ];
 
     $principles = [
-        ['title' => 'Clear', 'text' => 'We explain complex subjects without unnecessary jargon or misleading claims.'],
-        ['title' => 'Transparent', 'text' => 'Our content is based on publicly available information, research, and established concepts.'],
-        ['title' => 'Balanced', 'text' => 'Where it matters, we discuss benefits, challenges, and trade-offs so you can weigh them yourself.'],
+        ['title' => __('Clear'), 'text' => __('We explain complex subjects without unnecessary jargon or misleading claims.')],
+        ['title' => __('Transparent'), 'text' => __('Our content is based on publicly available information, research, and established concepts.')],
+        ['title' => __('Balanced'), 'text' => __('Where it matters, we discuss benefits, challenges, and trade-offs so you can weigh them yourself.')],
     ];
 @endphp
 
@@ -31,15 +31,15 @@
 
         <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-6 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
             <div>
-                <span class="eyebrow">Our editorial team</span>
+                <span class="eyebrow">{{ __('Our editorial team') }}</span>
                 <h1 class="mt-5 font-display text-5xl leading-[1.04] font-semibold tracking-tight text-balance text-ink sm:text-6xl">
-                    The people who make {{ $siteName }} <span class="italic text-brand-600 dark:text-brand-400">make sense.</span>
+                    {{ __('The people who make :site', ['site' => $siteName]) }} <span class="italic text-brand-600 dark:text-brand-400">{{ __('make sense.') }}</span>
                 </h1>
                 <p class="mt-7 text-lg leading-relaxed text-body">
-                    At {{ $siteName }}, we provide clear, research-driven information to help consumers and professionals make better money decisions &mdash; from everyday banking and budgeting to investing, borrowing, and credit.
+                    {{ __('At :site, we provide clear, research-driven information to help consumers and professionals make better money decisions — from everyday banking and budgeting to investing, borrowing, and credit.', ['site' => $siteName]) }}
                 </p>
                 <a href="#team" class="btn-primary mt-9">
-                    Meet the editors
+                    {{ __('Meet the editors') }}
                     <flux:icon name="arrow-down" variant="mini" class="size-4" />
                 </a>
             </div>
@@ -64,9 +64,9 @@
     {{-- Mission --}}
     <section class="bg-brand-800">
         <div class="mx-auto max-w-5xl px-6 py-20 text-center lg:px-8">
-            <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Our mission</span>
+            <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">{{ __('Our mission') }}</span>
             <p class="mt-6 font-display text-3xl leading-snug font-medium text-balance text-white sm:text-4xl">
-                &ldquo;To provide accessible, practical information that helps readers understand financial, business, and organizational topics &mdash; and apply it to real-world decisions.&rdquo;
+                &ldquo;{{ __('To provide accessible, practical information that helps readers understand financial, business, and organizational topics — and apply it to real-world decisions.') }}&rdquo;
             </p>
         </div>
     </section>
@@ -74,8 +74,8 @@
     {{-- What we cover --}}
     <section class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div class="max-w-2xl">
-            <span class="eyebrow">What we cover</span>
-            <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">Educational resources across six areas</h2>
+            <span class="eyebrow">{{ __('What we cover') }}</span>
+            <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('Educational resources across six areas') }}</h2>
         </div>
 
         <div class="mt-12 grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
@@ -95,10 +95,10 @@
     <section id="team" class="scroll-mt-28 border-y border-line bg-surface">
         <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
             <div class="mx-auto max-w-2xl text-center">
-                <span class="eyebrow">The editors</span>
-                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">Experience you can learn from</h2>
+                <span class="eyebrow">{{ __('The editors') }}</span>
+                <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('Experience you can learn from') }}</h2>
                 <p class="mt-4 leading-relaxed text-body">
-                    Our writers and analysts bring experience across consumer banking, credit, lending, wealth planning, and small-business finance.
+                    {{ __('Our writers and analysts bring experience across consumer banking, credit, lending, wealth planning, and small-business finance.') }}
                 </p>
             </div>
 
@@ -113,7 +113,7 @@
                         @endif
                         @if ($member['count'])
                             <p class="mt-auto pt-5 text-xs font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">
-                                {{ $member['count'] }} {{ Str::plural('article', $member['count']) }}
+                                {{ trans_choice(':count article|:count articles', $member['count']) }}
                             </p>
                         @endif
                     </div>
@@ -125,13 +125,13 @@
     {{-- Approach --}}
     <section class="mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-2 lg:px-8">
         <div>
-            <span class="eyebrow">Our approach</span>
-            <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">Information should be easy to evaluate</h2>
+            <span class="eyebrow">{{ __('Our approach') }}</span>
+            <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance text-ink">{{ __('Information should be easy to evaluate') }}</h2>
             <p class="mt-5 leading-relaxed text-body">
-                We present information in context rather than treating individual money decisions in isolation &mdash; a loan, a credit card, or a savings account is examined alongside its fees, risks, and long-term trade-offs.
+                {{ __('We present information in context rather than treating individual money decisions in isolation — a loan, a credit card, or a savings account is examined alongside its fees, risks, and long-term trade-offs.') }}
             </p>
             <p class="mt-4 leading-relaxed text-body">
-                Articles focus on explaining concepts, identifying important considerations, and helping readers understand how different choices can affect households, professionals, and small businesses.
+                {{ __('Articles focus on explaining concepts, identifying important considerations, and helping readers understand how different choices can affect households, professionals, and small businesses.') }}
             </p>
         </div>
 
@@ -146,7 +146,7 @@
                 </div>
             @endforeach
             <p class="rounded-3xl bg-zest-200 p-6 text-sm leading-relaxed text-brand-900">
-                <span class="font-bold">Please note:</span> our content is intended for educational and informational purposes and should not be considered personalized financial, investment, tax, legal, or professional advice.
+                <span class="font-bold">{{ __('Please note:') }}</span> {{ __('our content is intended for educational and informational purposes and should not be considered personalized financial, investment, tax, legal, or professional advice.') }}
             </p>
         </div>
     </section>
@@ -155,12 +155,12 @@
     <section class="px-4 pb-20 sm:px-6 lg:px-8">
         <div class="relative mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-brand-700 px-8 py-16 text-center sm:px-14">
             <div class="absolute -bottom-24 -left-16 size-80 rounded-full border-[40px] border-zest-400/20"></div>
-            <h2 class="relative font-display text-4xl font-semibold text-balance text-white">Thank you for learning with {{ $siteName }}</h2>
+            <h2 class="relative font-display text-4xl font-semibold text-balance text-white">{{ __('Thank you for learning with :site', ['site' => $siteName]) }}</h2>
             <p class="relative mx-auto mt-5 max-w-2xl leading-relaxed text-brand-100">
-                We will keep developing educational resources designed to make complex subjects easier to understand and evaluate.
+                {{ __('We will keep developing educational resources designed to make complex subjects easier to understand and evaluate.') }}
             </p>
             <a href="{{ route('articles') }}" wire:navigate class="btn-zest relative mt-9">
-                Explore our articles
+                {{ __('Explore our articles') }}
                 <flux:icon name="arrow-right" variant="mini" class="size-4" />
             </a>
         </div>

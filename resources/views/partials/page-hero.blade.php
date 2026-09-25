@@ -9,9 +9,9 @@
 
     <div class="relative mx-auto max-w-7xl px-6 pt-10 pb-14 lg:px-8 lg:pt-12 lg:pb-20">
         @if (! empty($crumbs))
-            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Breadcrumb">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="{{ __('Breadcrumb') }}">
                 <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
-                    <flux:icon name="home" variant="micro" class="size-4" /> Home
+                    <flux:icon name="home" variant="micro" class="size-4" /> {{ __('Home') }}
                 </a>
                 @foreach ($crumbs as $label => $url)
                     <span class="text-line">/</span>

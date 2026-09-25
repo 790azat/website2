@@ -10,6 +10,12 @@ use Illuminate\Support\Str;
  * resources/data/articles.php, and articles from the Markdown files in
  * resources/data/articles/.
  *
+ * Translated articles live next to them in resources/data/articles/{locale}/
+ * with the same file name and front matter (only the title and body are
+ * translated). On the Spanish or French site an article without a
+ * translation is shown in English. Section titles and author roles and bios
+ * are translated through lang/{locale}.json.
+ *
  * Centralizes the lookups every public page needs and resolves image paths
  * only when the file actually exists in public/images, so pages fall back to
  * generated artwork (or author initials) instead of broken images.
@@ -20,17 +26,20 @@ use Illuminate\Support\Str;
  */
 class SiteContent
 {
+    /** Languages, other than English, that articles can be translated into. */
+    public const TRANSLATION_LOCALES = ['es', 'fr'];
+
     /** Image file types tried when an image is found by name. */
     protected const IMAGE_EXTENSIONS = ['webp', 'jpg', 'jpeg', 'png'];
 
     /** @var Content|null */
     protected static ?array $data = null;
 
-    /** @var Collection<int, Category>|null */
-    protected static ?Collection $categories = null;
+    /** @var array<string, Collection<int, Category>> Per locale. */
+    protected static array $categories = [];
 
-    /** @var Collection<int, array<string, mixed>>|null */
-    protected static ?Collection $articles = null;
+    /** @var array<string, Collection<int, array<string, mixed>>> Per locale. */
+    protected static array $articles = [];
 
     /** @var array<int|string, int>|null */
     protected static ?array $authorCounts = null;
@@ -50,6 +59,13 @@ class SiteContent
     {
         $data = require resource_path('data/articles.php');
         $data['articles'] = static::loadArticles(resource_path('data/articles'));
+        $data['translations'] = [];
+
+        foreach (self::TRANSLATION_LOCALES as $locale) {
+            $data['translations'][$locale] = collect(static::loadArticles(resource_path('data/articles/'.$locale)))
+                ->mapWithKeys(fn (array $article) => [$article['slug'] => ['title' => $article['title'], 'body' => $article['body']]])
+                ->all();
+        }
 
         return $data;
     }
@@ -61,15 +77,17 @@ class SiteContent
      */
     public static function categories(): Collection
     {
-        if (static::$categories === null) {
+        $locale = app()->getLocale();
+
+        if (! isset(static::$categories[$locale])) {
             $data = static::data();
             $counts = array_count_values(array_column($data['articles'], 'section'));
 
-            static::$categories = collect($data['sections'])
+            static::$categories[$locale] = collect($data['sections'])
                 ->map(fn (array $meta, string $key) => [
                     'id' => $key,
-                    'title' => $meta['title'],
-                    'description' => $meta['description'] ?? null,
+                    'title' => __($meta['title']),
+                    'description' => isset($meta['description']) ? __($meta['description']) : null,
                     'icon' => $meta['icon'] ?? 'book-open',
                     'order' => $meta['order'] ?? 99,
                     'count' => $counts[$key] ?? 0,
@@ -78,7 +96,7 @@ class SiteContent
                 ->values();
         }
 
-        return static::$categories;
+        return static::$categories[$locale];
     }
 
     /**
@@ -97,15 +115,17 @@ class SiteContent
     public static function author(?string $key): array
     {
         $author = static::data()['authors'][$key] ?? [
-            'name' => config('app.name').' Editorial Team',
+            'name' => __(':site Editorial Team', ['site' => config('app.name')]),
             'role' => 'Editorial Team',
         ];
+
+        $author['role'] = __($author['role']);
+        $author['bio'] = isset($author['bio']) ? __($author['bio']) : null;
 
         $author['key'] = $key;
         $author['photo'] = isset($author['photo'])
             ? static::image('team/'.$author['photo'])
             : static::findImage('team/'.$key);
-        $author['bio'] ??= null;
         $author['count'] = static::authorCounts()[$key] ?? 0;
         $author['initials'] = collect(explode(' ', $author['name']))
             ->map(fn (string $part) => mb_substr($part, 0, 1))
@@ -145,14 +165,31 @@ class SiteContent
      */
     public static function articles(?string $section = null): Collection
     {
-        static::$articles ??= collect(static::data()['articles'])
+        $locale = app()->getLocale();
+        $translations = static::data()['translations'][$locale] ?? [];
+
+        static::$articles[$locale] ??= collect(static::data()['articles'])
             ->sortByDesc('date')
             ->values()
-            ->map(fn (array $article) => static::withMeta($article));
+            ->map(fn (array $article) => static::withMeta(isset($translations[$article['slug']])
+                ? ['locale' => $locale] + $translations[$article['slug']] + $article
+                : ['locale' => 'en'] + $article));
 
         return $section
-            ? static::$articles->where('section', $section)->values()
-            : static::$articles;
+            ? static::$articles[$locale]->where('section', $section)->values()
+            : static::$articles[$locale];
+    }
+
+    /**
+     * Languages, English included, an article can be read in.
+     *
+     * @return list<string>
+     */
+    public static function articleLocales(string $slug): array
+    {
+        $translations = static::data()['translations'];
+
+        return ['en', ...array_values(array_filter(self::TRANSLATION_LOCALES, fn (string $locale) => isset($translations[$locale][$slug])))];
     }
 
     /**

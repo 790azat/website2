@@ -30,8 +30,8 @@
         default => route('articles'),
     };
 
-    $title = 'All Articles';
-    $description = 'Browse every guide published on '.$siteName.'.';
+    $title = __('All Articles');
+    $description = __('Browse every guide published on :site.', ['site' => $siteName]);
 
     $chip = fn (bool $active) => $active
         ? 'bg-brand-600 text-white border-brand-600 dark:bg-brand-500 dark:border-brand-500 dark:text-brand-950'
@@ -40,18 +40,18 @@
 
 @section('content')
     @include('partials.page-hero', [
-        'crumbs' => ['All Articles' => null],
-        'eyebrow' => 'The library',
-        'heading' => 'All articles',
-        'lead' => 'Every guide we have published, newest first. Filter by topic to focus on what you want to learn next.',
-        'meta' => $totalArticles.' '.Str::plural('article', $totalArticles),
+        'crumbs' => [__('All Articles') => null],
+        'eyebrow' => __('The library'),
+        'heading' => __('All articles'),
+        'lead' => __('Every guide we have published, newest first. Filter by topic to focus on what you want to learn next.'),
+        'meta' => trans_choice(':count article|:count articles', $totalArticles),
         'icon' => 'book-open',
     ])
 
     <section class="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div class="flex flex-wrap gap-2.5">
             <a href="{{ route('articles') }}" wire:navigate class="rounded-full border px-5 py-2.5 text-sm font-semibold transition {{ $chip(! $selectedSection) }}">
-                All topics
+                {{ __('All topics') }}
             </a>
             @foreach ($categories as $category)
                 <a href="{{ route('articles.topic', $category['id']) }}" wire:navigate class="inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition {{ $chip($selectedSection === $category['id']) }}">

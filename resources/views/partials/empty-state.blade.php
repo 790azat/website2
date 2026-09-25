@@ -5,9 +5,9 @@
     <span class="flex size-16 items-center justify-center rounded-2xl bg-zest-300 text-brand-900">
         <flux:icon name="pencil-square" class="size-8" />
     </span>
-    <h3 class="mt-6 font-display text-2xl font-semibold text-ink">{{ $heading ?? 'New lessons are on the way' }}</h3>
+    <h3 class="mt-6 font-display text-2xl font-semibold text-ink">{{ $heading ?? __('New lessons are on the way') }}</h3>
     <p class="mt-3 max-w-md leading-relaxed text-muted">
-        {{ $text ?? 'Our editors are preparing the first guides for this section. Check back soon.' }}
+        {{ $text ?? __('Our editors are preparing the first guides for this section. Check back soon.') }}
     </p>
-    <a href="{{ route('home') }}" wire:navigate class="btn-ghost mt-8">Back to the homepage</a>
+    <a href="{{ route('home') }}" wire:navigate class="btn-ghost mt-8">{{ __('Back to the homepage') }}</a>
 </div>

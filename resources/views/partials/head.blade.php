@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#14623e" />
 
 <title>
-    {{ filled($title ?? null) ? $title.' — '.config('app.name', 'Laravel') : config('app.name', 'Laravel').' — Financial education, made clear' }}
+    {{ filled($title ?? null) ? $title.' — '.config('app.name', 'Laravel') : config('app.name', 'Laravel').' — '.__('Financial education, made clear') }}
 </title>
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">

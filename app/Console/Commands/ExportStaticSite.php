@@ -146,11 +146,14 @@ class ExportStaticSite extends Command
     protected function render(Kernel $kernel, string $path, array $query): array
     {
         // Reset per-process state that would otherwise leak between pages:
-        // Livewire's "scripts already injected" flag and the app locale.
+        // Livewire's "scripts already injected" flag, the app locale and the
+        // session (the store is reused between requests and would otherwise
+        // keep the "locale" a previous ?lang= page put there).
         if (class_exists(Livewire::class)) {
             Livewire::flushState();
         }
         app()->setLocale($this->defaultLocale);
+        app('session')->driver()->flush();
 
         $url = self::ORIGIN.$path.($query !== [] ? '?'.http_build_query($query) : '');
         $request = Request::create($url, 'GET');
@@ -187,6 +190,16 @@ class ExportStaticSite extends Command
      */
     protected function rewriteLinks(string $html, ?string $pageLocale, array &$queue): string
     {
+        // The English and x-default alternates are bare URLs; on a translated
+        // page they must not pick up that page's language like other links.
+        if ($pageLocale !== null) {
+            $html = (string) preg_replace_callback(
+                '/(<link rel="alternate" hreflang="(?:en|x-default)" href=")(\/[^"]*)"/',
+                fn (array $m) => $m[1].$m[2].(str_contains($m[2], '?') ? '&amp;' : '?').'lang='.$this->defaultLocale.'"',
+                $html,
+            );
+        }
+
         return (string) preg_replace_callback(
             '/\b(href|src|action)="(\/[^"]*)"/',
             function (array $m) use ($pageLocale, &$queue) {

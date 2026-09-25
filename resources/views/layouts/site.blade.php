@@ -15,6 +15,10 @@
         @if (filled($description ?? null))
             <meta name="description" content="{{ $description }}" />
         @endif
+        @foreach (\App\Http\Middleware\SetLocale::SUPPORTED as $code)
+            <link rel="alternate" hreflang="{{ $code }}" href="{{ $code === 'en' ? url()->current() : url()->current().'?lang='.$code }}" />
+        @endforeach
+        <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}" />
     </head>
     <body
         x-data="{ mobileOpen: false }"
