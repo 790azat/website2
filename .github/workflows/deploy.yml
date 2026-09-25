@@ -1,8 +1,11 @@
 name: Deploy to SmartApe (rsync over SSH)
 
+# Auto-deploy on push is temporarily disabled until hosting secrets are set.
+# To re-enable, restore:
+#   push:
+#     branches: [main]
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
