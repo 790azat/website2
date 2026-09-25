@@ -1,10 +1,8 @@
 name: Deploy to SmartApe (rsync over SSH)
 
-# Auto-deploy on push is temporarily disabled until hosting secrets are set.
-# To re-enable, restore:
-#   push:
-#     branches: [main]
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -44,10 +42,15 @@ jobs:
       - name: Build frontend assets
         run: npm run build
 
+      # Upload to the server (SFTP/rsync) is temporarily disabled; every
+      # other step still runs on each push. To re-enable, remove the
+      # `if: false` lines on this step and the next one.
       - name: Install rsync tools
+        if: false
         run: sudo apt-get update && sudo apt-get install -y sshpass rsync
 
       - name: Deploy via rsync over SSH
+        if: false
         env:
           SSHPASS: ${{ secrets.SSH_PASSWORD }}
         run: |
