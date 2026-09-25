@@ -14,13 +14,12 @@
     $perPage = 12;
     $totalArticles = $sectionArticles->count();
     $lastPage = max(1, (int) ceil($totalArticles / $perPage));
-    $page = max(1, min((int) request()->query('page', 1), $lastPage));
+    $page = max(1, min((int) (request()->route('page') ?? request()->query('page', 1)), $lastPage));
     $pagedArticles = $sectionArticles->forPage($page, $perPage)->values();
 
-    $pageLink = fn ($p) => route('section', array_filter([
-        'section' => $section,
-        'page' => $p > 1 ? $p : null,
-    ]));
+    $pageLink = fn ($p) => $p > 1
+        ? route('section.page', ['section' => $section, 'page' => $p])
+        : route('section', $section);
 
     $otherCategories = SiteContent::categories()->where('id', '!=', $section);
 

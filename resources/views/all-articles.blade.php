@@ -5,8 +5,13 @@
     $siteName = config('app.name', 'Laravel');
     $categories = SiteContent::categories();
 
-    $selectedSection = request()->query('section');
+    // Topic and page come from the path (/articles/topic/{topic}/page/{page});
+    // the older ?section= / ?page= query form is still accepted.
+    $selectedSection = request()->route('topic') ?? request()->query('section');
     if ($selectedSection && ! $categories->contains('id', $selectedSection)) {
+        if (request()->route('topic')) {
+            abort(404);
+        }
         $selectedSection = null;
     }
 
@@ -15,13 +20,15 @@
     $perPage = 12;
     $totalArticles = $allArticles->count();
     $lastPage = max(1, (int) ceil($totalArticles / $perPage));
-    $page = max(1, min((int) request()->query('page', 1), $lastPage));
+    $page = max(1, min((int) (request()->route('page') ?? request()->query('page', 1)), $lastPage));
     $pagedArticles = $allArticles->forPage($page, $perPage)->values();
 
-    $pageLink = fn ($p) => route('articles', array_filter([
-        'section' => $selectedSection,
-        'page' => $p > 1 ? $p : null,
-    ]));
+    $pageLink = fn ($p) => match (true) {
+        $selectedSection && $p > 1 => route('articles.topic.page', ['topic' => $selectedSection, 'page' => $p]),
+        (bool) $selectedSection => route('articles.topic', $selectedSection),
+        $p > 1 => route('articles.page', $p),
+        default => route('articles'),
+    };
 
     $title = 'All Articles';
     $description = 'Browse every guide published on '.$siteName.'.';
@@ -47,7 +54,7 @@
                 All topics
             </a>
             @foreach ($categories as $category)
-                <a href="{{ route('articles', ['section' => $category['id']]) }}" wire:navigate class="inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition {{ $chip($selectedSection === $category['id']) }}">
+                <a href="{{ route('articles.topic', $category['id']) }}" wire:navigate class="inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition {{ $chip($selectedSection === $category['id']) }}">
                     <flux:icon name="{{ $category['icon'] }}" variant="mini" class="size-4" />
                     {{ $category['title'] }}
                 </a>
