@@ -49,7 +49,7 @@
                 </p>
                 <div class="mt-9 flex flex-wrap gap-3">
                     <a href="#latest" class="btn-primary">
-                        {{ __('Start reading') }}
+                        {{ __('Explore Top Guides') }}
                         <flux:icon name="arrow-down" variant="mini" class="size-4" />
                     </a>
                     <a href="{{ route('team') }}" wire:navigate class="btn-ghost">{{ __('Meet our editors') }}</a>
