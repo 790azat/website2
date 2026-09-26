@@ -1,7 +1,7 @@
 ---
 title: "Chase Sapphire Preferred: Rewards, Fees, and Travel Benefits"
 section: credit-cards
-author: sofia-martinez
+author: ethan-kim
 date: 2025-10-03
 ---
 The Chase Sapphire Preferred® card has long been positioned around flexible travel rewards rather than premium-card perks such as airport lounge access. In 2026, Chase expanded the card's earning categories and travel benefits while keeping its annual fee at \$95.

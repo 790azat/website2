@@ -1,7 +1,7 @@
 ---
 title: "Private Student Loans: A Guide to Education Financing"
 section: loans-financing
-author: sofia-martinez
+author: lucas-vance
 date: 2025-12-28
 ---
 Paying for college, graduate school, or professional education can require more funding than scholarships, grants, savings, and federal student aid provide. When those resources do not cover the remaining cost, a private student loan can fill part of the gap.

@@ -1,7 +1,7 @@
 ---
 title: "Building an Emergency Fund for Financial Security"
 section: personal-finance
-author: rachel-bernstein
+author: sofia-martinez
 date: 2026-08-06
 ---
 Life is inherently unpredictable. Whether it is an unexpected medical bill, sudden car repair, essential home maintenance, or a temporary interruption in household income, financial shocks can derail careful planning when there is no accessible cash reserve. An emergency fund provides a dedicated buffer that can help cover unexpected expenses without immediately relying on high-interest credit cards or personal loans.

@@ -1,7 +1,7 @@
 ---
 title: "Home Improvement and Renovation Mortgage Loans"
 section: loans-financing
-author: hannah-cohen
+author: lucas-vance
 date: 2026-05-23
 ---
 A home renovation can turn an outdated property into a more functional, energy-efficient, or valuable home, but major improvements can require substantially more cash than a homeowner has available.

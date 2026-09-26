@@ -1,7 +1,7 @@
 ---
 title: "Advanced Tax-Loss Harvesting: Lowering Your Capital Gains Liability Legally"
 section: personal-finance
-author: lucas-vance
+author: claire-odonnell
 date: 2025-10-05
 ---
 Building a taxable investment portfolio is not only about generating returns. Taxes can materially affect how much of those returns remain available for reinvestment, particularly when a portfolio produces substantial capital gains through rebalancing, security sales, or other taxable transactions.

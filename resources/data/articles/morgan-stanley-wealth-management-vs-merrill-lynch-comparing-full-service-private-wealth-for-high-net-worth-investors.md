@@ -1,7 +1,7 @@
 ---
 title: "Morgan Stanley Wealth Management vs. Merrill Lynch: Comparing Full-Service Private Wealth for High-Net-Worth Investors"
 section: wealth-management
-author: lucas-vance
+author: claire-odonnell
 date: 2025-12-30
 ---
 For high-net-worth investors, choosing a wealth-management firm is rarely just about selecting an investment account. At higher levels of wealth, the relationship can involve portfolio construction, lending, estate planning coordination, tax-aware strategies, philanthropy, banking, business succession, and family wealth transfer.

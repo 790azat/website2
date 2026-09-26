@@ -1,7 +1,7 @@
 ---
 title: "Mortgage Rates Explained: What Causes Rates to Change"
 section: loans-financing
-author: hannah-cohen
+author: lucas-vance
 date: 2026-05-31
 ---
 Mortgage rates can change from one week to the next, sometimes moving even when a borrower has not changed anything about their financial situation. The reason is that mortgage pricing depends on much more than an individual's credit score or the Federal Reserve's latest interest-rate decision.

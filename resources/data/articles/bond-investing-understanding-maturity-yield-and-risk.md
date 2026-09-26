@@ -1,7 +1,7 @@
 ---
 title: "Bond Investing: Understanding Maturity, Yield, and Risk"
 section: wealth-management
-author: lucas-vance
+author: hannah-cohen
 date: 2025-10-23
 ---
 Bonds are often described as the more predictable side of an investment portfolio, but that description can be misleading. A bond is a loan made by an investor to a government, corporation, municipality, or other issuer. In exchange, the borrower generally promises to make interest payments and return the bond's principal according to the terms of the issue.

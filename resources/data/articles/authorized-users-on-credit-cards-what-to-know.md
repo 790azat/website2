@@ -1,7 +1,7 @@
 ---
 title: "Authorized Users on Credit Cards: What to Know"
 section: credit-cards
-author: lucas-vance
+author: rachel-bernstein
 date: 2026-06-07
 ---
 Adding another person to a credit card account can make household spending easier, provide a family member with access to credit, or help someone begin establishing a credit history. But an authorized user is not the same as a joint account holder, and the distinction can have important consequences for responsibility, credit reporting, and account management.

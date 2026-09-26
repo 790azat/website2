@@ -1,7 +1,7 @@
 ---
 title: "SBA Loans: Understanding Government-Backed Financing for Small Businesses"
 section: loans-financing
-author: rachel-bernstein
+author: samuel-mensah
 date: 2026-07-13
 ---
 Access to capital can determine whether a small business can purchase equipment, hire employees, acquire another company, expand a facility, or manage a temporary working-capital shortage.

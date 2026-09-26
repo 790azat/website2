@@ -1,7 +1,7 @@
 ---
 title: "Brokerage Accounts vs. Retirement Accounts: Key Differences"
 section: wealth-management
-author: rachel-bernstein
+author: hannah-cohen
 date: 2026-07-02
 ---
 When people begin investing, the first question is often what to buy: stocks, ETFs, bonds, or mutual funds. The account itself can receive much less attention.

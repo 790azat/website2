@@ -1,7 +1,7 @@
 ---
 title: "Business Expense Management Suites: Integrating Corporate Cards With ERP and Accounting Software"
 section: credit-cards
-author: samuel-mensah
+author: ethan-kim
 date: 2026-07-31
 ---
 Managing corporate card spending becomes considerably more complicated as a company adds employees, departments, subsidiaries, vendors, and payment methods. A finance team may have to reconcile thousands of card transactions while ensuring that each expense is assigned to the correct general ledger account, department, project, entity, and tax category.

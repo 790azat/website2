@@ -1,7 +1,7 @@
 ---
 title: "Municipal Bonds: Understanding Tax-Advantaged Investing"
 section: wealth-management
-author: lucas-vance
+author: claire-odonnell
 date: 2025-10-08
 ---
 Municipal bonds are debt securities issued by states, cities, counties, public authorities, and other governmental entities to finance public projects and operations. For investors, they can provide interest income while potentially offering favorable tax treatment.

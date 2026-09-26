@@ -1,7 +1,7 @@
 ---
 title: "Asset-Based Lending (ABL): Financing Against Accounts Receivable and Inventory"
 section: loans-financing
-author: ethan-kim
+author: samuel-mensah
 date: 2025-11-24
 ---
 For businesses with substantial accounts receivable, inventory, or other working-capital assets, traditional cash-flow lending is not always the only way to obtain financing. A company may have valuable assets on its balance sheet while experiencing uneven earnings, seasonal working-capital requirements, or limited access to conventional credit.

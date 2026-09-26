@@ -1,7 +1,7 @@
 ---
 title: "Credit Card Fraud Protection, Virtual Cards, and Dispute Processes"
 section: credit-cards
-author: hannah-cohen
+author: rachel-bernstein
 date: 2025-12-25
 ---
 Credit cards offer consumers more than a way to borrow money. They also provide mechanisms for identifying unauthorized transactions, disputing certain billing errors, and limiting potential losses when card information is compromised.

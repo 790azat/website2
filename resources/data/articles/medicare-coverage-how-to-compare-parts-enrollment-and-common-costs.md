@@ -1,7 +1,7 @@
 ---
 title: "Medicare Coverage: How to Compare Parts, Enrollment, and Common Costs"
 section: personal-finance
-author: rachel-bernstein
+author: hannah-cohen
 date: 2026-02-27
 ---
 Medicare is a federal health insurance program with several coverage components, each serving a different purpose. Understanding how **Medicare Part A, Part B, Part C, and Part D** work can help people approaching Medicare eligibility evaluate premiums, deductibles, provider access, prescription coverage, and potential out-of-pocket expenses.

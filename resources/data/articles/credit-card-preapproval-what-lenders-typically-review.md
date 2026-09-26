@@ -1,7 +1,7 @@
 ---
 title: "Credit Card Preapproval: What Lenders Typically Review"
 section: credit-cards
-author: sofia-martinez
+author: ethan-kim
 date: 2026-07-05
 ---
 Credit card preapproval can make applying for a new account feel more predictable. Instead of submitting a full application without knowing whether you meet an issuer's general criteria, a consumer may first receive an offer or use an issuer's online preapproval tool to see which products they may qualify for.

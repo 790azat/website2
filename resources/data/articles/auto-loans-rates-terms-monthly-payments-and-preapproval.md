@@ -1,7 +1,7 @@
 ---
 title: "Auto Loans: Rates, Terms, Monthly Payments, and Preapproval"
 section: loans-financing
-author: samuel-mensah
+author: lucas-vance
 date: 2026-01-20
 ---
 Buying a vehicle with financing involves more than finding a monthly payment that fits the household budget. The interest rate, annual percentage rate (APR), loan term, down payment, vehicle price, and lender fees can all change the total amount paid over time.

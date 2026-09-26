@@ -1,7 +1,7 @@
 ---
 title: "Installment Loans: Understanding Fixed Payments, Terms, and Total Cost"
 section: loans-financing
-author: samuel-mensah
+author: lucas-vance
 date: 2025-10-13
 ---
 Installment loans are one of the most common forms of consumer borrowing. Unlike revolving credit, where a borrower can repeatedly draw against an available credit line, an installment loan generally provides a specific amount upfront and requires repayment through scheduled installments over a defined period.

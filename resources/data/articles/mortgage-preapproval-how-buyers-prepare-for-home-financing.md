@@ -1,7 +1,7 @@
 ---
 title: "Mortgage Preapproval: How Buyers Prepare for Home Financing"
 section: loans-financing
-author: ethan-kim
+author: lucas-vance
 date: 2026-01-30
 ---
 Buying a home often starts long before a buyer makes an offer. One of the most important early steps is obtaining a **mortgage preapproval**, which gives a prospective buyer an indication of how much a lender may be willing to finance based on their financial information.

@@ -1,7 +1,7 @@
 ---
 title: "Corporate Bonds: Evaluating Company Debt Securities"
 section: wealth-management
-author: lucas-vance
+author: hannah-cohen
 date: 2025-10-09
 ---
 Corporate bonds allow investors to lend money to companies in exchange for interest payments and the eventual repayment of principal. They can provide income and diversification within a broader investment portfolio, but the return offered by a corporate bond is closely connected to the financial condition of the company issuing the debt.

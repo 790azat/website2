@@ -1,7 +1,7 @@
 ---
 title: "Hard vs. Soft Credit Inquiries: What Consumers Should Know"
 section: credit-cards
-author: samuel-mensah
+author: rachel-bernstein
 date: 2025-11-04
 ---
 Whenever a lender, credit card company, or another business checks a consumer's credit report, that activity may be recorded as a credit inquiry. But not every inquiry has the same effect.

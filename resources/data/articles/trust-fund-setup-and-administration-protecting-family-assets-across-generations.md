@@ -1,7 +1,7 @@
 ---
 title: "Trust Fund Setup and Administration: Protecting Family Assets Across Generations"
 section: personal-finance
-author: hannah-cohen
+author: claire-odonnell
 date: 2026-04-30
 ---
 As families accumulate significant assets, a basic will may not address every issue involved in transferring and managing wealth. A will generally takes effect at death and directs the distribution of assets that pass through the probate process. A properly structured trust can provide additional instructions for how selected assets are managed, invested, and distributed during a person's lifetime and after death.

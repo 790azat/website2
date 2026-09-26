@@ -1,7 +1,7 @@
 ---
 title: "Charitable Remainder Trusts (CRTs): Unlocking Tax-Free Growth While Giving Back"
 section: wealth-management
-author: rachel-bernstein
+author: claire-odonnell
 date: 2026-01-27
 ---
 For investors with highly appreciated assets, charitable giving can create an interesting planning challenge. Selling appreciated stock, real estate, or another investment may generate a substantial capital-gains tax bill, while simply donating the asset can mean giving up the opportunity to receive income from it.

@@ -1,7 +1,7 @@
 ---
 title: "Fintech Budgeting Ecosystems: How Open Banking and AI Apps Transform Household Cash Flow"
 section: personal-finance
-author: sofia-martinez
+author: ethan-kim
 date: 2026-07-20
 ---
 Household budgeting once required considerable manual effort. Consumers tracked receipts, maintained spreadsheets, downloaded bank statements, and logged into separate financial institutions to understand where their money was going.

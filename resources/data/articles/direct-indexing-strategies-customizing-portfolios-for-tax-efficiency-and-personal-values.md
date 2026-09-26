@@ -1,7 +1,7 @@
 ---
 title: "Direct Indexing Strategies: Customizing Portfolios for Tax Efficiency and Personal Values"
 section: wealth-management
-author: ethan-kim
+author: claire-odonnell
 date: 2026-05-21
 ---
 Investors who want broad market exposure do not necessarily have to purchase a single index fund or ETF. Another approach, known as **direct indexing**, involves owning many of the individual securities that make up an index and managing those holdings as a customized portfolio.

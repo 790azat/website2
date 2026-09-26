@@ -1,7 +1,7 @@
 ---
 title: "Gas Station and Store Credit Cards: Evaluating Retail Rewards"
 section: credit-cards
-author: rachel-bernstein
+author: ethan-kim
 date: 2026-01-18
 ---
 Gas station and store credit cards can look attractive at the checkout counter. A card may offer an instant discount, fuel rewards, cash back, loyalty points, or promotional financing in exchange for opening an account.

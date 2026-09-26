@@ -1,7 +1,7 @@
 ---
 title: "Ally Bank Savings Accounts: Features, Rates, and Requirements"
 section: personal-finance
-author: rachel-bernstein
+author: sofia-martinez
 date: 2026-07-24
 ---
 Ally Bank's online savings account is designed for customers who want a digital savings account without a monthly maintenance fee or minimum balance requirement. The account currently pays a variable **3.00% APY**, according to Ally's rate disclosure dated September 10, 2026. Interest compounds daily, and there is no minimum deposit required to open the account or earn the published APY.

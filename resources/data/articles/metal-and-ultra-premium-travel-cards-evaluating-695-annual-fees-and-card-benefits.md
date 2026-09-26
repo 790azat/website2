@@ -1,7 +1,7 @@
 ---
 title: "Metal and Ultra-Premium Travel Cards: Evaluating $695+ Annual Fees and Card Benefits"
 section: credit-cards
-author: hannah-cohen
+author: ethan-kim
 date: 2026-01-29
 ---
 A premium travel credit card can look impressive before it is ever used. Metal construction, airport lounge access, hotel credits, concierge services, travel protections, and large rewards balances are designed to create an experience that feels different from an ordinary credit card.

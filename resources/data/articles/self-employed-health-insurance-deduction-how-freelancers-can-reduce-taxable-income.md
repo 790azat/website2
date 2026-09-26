@@ -1,7 +1,7 @@
 ---
 title: "Self-Employed Health Insurance Deduction: How Freelancers Can Reduce Taxable Income"
 section: personal-finance
-author: sofia-martinez
+author: samuel-mensah
 date: 2025-10-08
 ---
 Health insurance can represent one of the largest recurring expenses for freelancers, independent contractors, consultants, and business owners who do not receive employer-subsidized coverage. The federal tax code provides a potentially valuable deduction for qualifying self-employed individuals who pay premiums for eligible health insurance.

@@ -1,7 +1,7 @@
 ---
 title: "Debt Relief, Settlement, and Credit Counseling Options"
 section: loans-financing
-author: hannah-cohen
+author: rachel-bernstein
 date: 2025-10-28
 ---
 Debt can become difficult to manage when balances, interest charges, and minimum payments consume an increasing share of monthly income. When making the required payments is no longer straightforward, borrowers may encounter several forms of assistance, including debt management plans, debt settlement, consolidation, direct negotiations with creditors, and credit counseling.
