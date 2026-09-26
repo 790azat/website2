@@ -8,8 +8,8 @@ test('returns a successful response', function () {
     $response->assertOk();
 });
 
-test('hero card rotates through article links', function () {
-    $article = SiteContent::articles('personal-finance')->first();
+test('hero card rotates through articles with cover images', function () {
+    $article = SiteContent::articles()->first(fn ($article) => $article['image']);
 
     $this->get(route('home'))
         ->assertOk()

@@ -14,15 +14,18 @@
     $programs = SiteContent::programs();
     $authors = SiteContent::authors();
 
-    // Hero card slides: each slide shows one article per topic, newest first.
+    // Hero card slides: articles with a cover image, mixing topics
+    // round-robin, four per slide.
     $heroByTopic = $categories
-        ->map(fn ($category) => SiteContent::articles($category['id'])->take(5)->values())
+        ->map(fn ($category) => SiteContent::articles($category['id'])->filter(fn ($article) => $article['image'])->values())
         ->filter(fn ($articles) => $articles->isNotEmpty())
         ->values();
-    $heroSlides = collect(range(0, max(0, ($heroByTopic->max(fn ($articles) => $articles->count()) ?? 1) - 1)))
-        ->map(fn (int $s) => $heroByTopic->map(fn ($articles) => $articles[$s % $articles->count()]))
-        ->filter(fn ($slide) => $slide->isNotEmpty())
-        ->values();
+    $heroPool = collect(range(0, max(0, ($heroByTopic->max(fn ($articles) => $articles->count()) ?? 0) - 1)))
+        ->flatMap(fn (int $i) => $heroByTopic->map(fn ($articles) => $articles[$i] ?? null)->filter());
+    if ($heroPool->count() < 4) {
+        $heroPool = $allArticles;
+    }
+    $heroSlides = $heroPool->take(20)->chunk(4)->filter(fn ($slide) => $slide->count() === 4)->map->values()->values();
 @endphp
 
 @section('content')
@@ -91,10 +94,10 @@
                             x-data="{ active: 0, count: {{ $heroSlides->count() }}, go(i) { this.active = (i + this.count) % this.count } }"
                             class="hero-rotator mt-6"
                         >
-                            <div class="grid">
+                            <div class="grid grid-cols-1">
                                 @foreach ($heroSlides as $s => $slide)
                                     <ol
-                                        class="col-start-1 row-start-1 space-y-3 transition-all duration-500 ease-out"
+                                        class="col-start-1 row-start-1 min-w-0 space-y-3 transition-all duration-500 ease-out"
                                         @if ($s !== 0) x-cloak @endif
                                         :class="active === {{ $s }} ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-2 opacity-0 pointer-events-none'"
                                         :aria-hidden="active !== {{ $s }}"
@@ -102,7 +105,7 @@
                                         @foreach ($slide as $i => $article)
                                             <li>
                                                 <a href="{{ route('article', $article['slug']) }}" wire:navigate :tabindex="active === {{ $s }} ? 0 : -1" class="group flex items-center gap-4 rounded-2xl border border-line p-3.5 transition hover:border-brand-300 hover:bg-soft">
-                                                    <span class="relative flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-xl {{ $i === 0 ? 'bg-brand-600 text-white' : 'bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200' }}">
+                                                    <span class="relative flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-brand-600 text-white">
                                                         @if ($article['image'])
                                                             <img src="{{ asset('images/'.$article['image']) }}" alt="" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover" />
                                                         @else
@@ -111,7 +114,7 @@
                                                     </span>
                                                     <span class="min-w-0 flex-1">
                                                         <span class="block text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">{{ $article['section_title'] }}</span>
-                                                        <span class="mt-0.5 block truncate font-semibold text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $article['title'] }}</span>
+                                                        <span class="mt-0.5 line-clamp-2 text-sm leading-snug font-semibold text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $article['title'] }}</span>
                                                     </span>
                                                     <flux:icon name="arrow-up-right" variant="mini" class="size-4 shrink-0 text-muted transition group-hover:text-brand-600" />
                                                 </a>
