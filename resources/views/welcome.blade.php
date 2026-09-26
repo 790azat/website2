@@ -14,18 +14,18 @@
     $programs = SiteContent::programs();
     $authors = SiteContent::authors();
 
-    // Hero card slides: articles with a cover image, mixing topics
-    // round-robin, four per slide.
+    // Hero card slides: one article with a cover image per slide, mixing
+    // topics round-robin.
     $heroByTopic = $categories
         ->map(fn ($category) => SiteContent::articles($category['id'])->filter(fn ($article) => $article['image'])->values())
         ->filter(fn ($articles) => $articles->isNotEmpty())
         ->values();
     $heroPool = collect(range(0, max(0, ($heroByTopic->max(fn ($articles) => $articles->count()) ?? 0) - 1)))
         ->flatMap(fn (int $i) => $heroByTopic->map(fn ($articles) => $articles[$i] ?? null)->filter());
-    if ($heroPool->count() < 4) {
+    if ($heroPool->isEmpty()) {
         $heroPool = $allArticles;
     }
-    $heroSlides = $heroPool->take(20)->chunk(4)->filter(fn ($slide) => $slide->count() === 4)->map->values()->values();
+    $heroSlides = $heroPool->take(8)->values();
 @endphp
 
 @section('content')
@@ -89,38 +89,36 @@
                             </span>
                         </div>
 
-                        {{-- Rotating articles: one per topic per slide; advances when the timer bar finishes. --}}
+                        {{-- Rotating article: one per slide; advances when the timer bar finishes. --}}
                         <div
                             x-data="{ active: 0, count: {{ $heroSlides->count() }}, go(i) { this.active = (i + this.count) % this.count } }"
                             class="hero-rotator mt-6"
                         >
                             <div class="grid grid-cols-1">
-                                @foreach ($heroSlides as $s => $slide)
-                                    <ol
-                                        class="col-start-1 row-start-1 min-w-0 space-y-3 transition-all duration-500 ease-out"
+                                @foreach ($heroSlides as $s => $article)
+                                    <a
+                                        href="{{ route('article', $article['slug']) }}"
+                                        wire:navigate
+                                        class="group col-start-1 row-start-1 flex min-w-0 flex-col overflow-hidden rounded-2xl border border-line transition-all duration-500 ease-out hover:border-brand-300"
                                         @if ($s !== 0) x-cloak @endif
                                         :class="active === {{ $s }} ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-2 opacity-0 pointer-events-none'"
                                         :aria-hidden="active !== {{ $s }}"
+                                        :tabindex="active === {{ $s }} ? 0 : -1"
                                     >
-                                        @foreach ($slide as $i => $article)
-                                            <li>
-                                                <a href="{{ route('article', $article['slug']) }}" wire:navigate :tabindex="active === {{ $s }} ? 0 : -1" class="group flex items-center gap-4 rounded-2xl border border-line p-3.5 transition hover:border-brand-300 hover:bg-soft">
-                                                    <span class="relative flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-brand-600 text-white">
-                                                        @if ($article['image'])
-                                                            <img src="{{ asset('images/'.$article['image']) }}" alt="" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover" />
-                                                        @else
-                                                            <flux:icon name="{{ $article['section_icon'] }}" variant="mini" class="size-5" />
-                                                        @endif
-                                                    </span>
-                                                    <span class="min-w-0 flex-1">
-                                                        <span class="block text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">{{ $article['section_title'] }}</span>
-                                                        <span class="mt-0.5 line-clamp-2 text-sm leading-snug font-semibold text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $article['title'] }}</span>
-                                                    </span>
-                                                    <flux:icon name="arrow-up-right" variant="mini" class="size-4 shrink-0 text-muted transition group-hover:text-brand-600" />
-                                                </a>
-                                            </li>
-                                        @endforeach
-                                    </ol>
+                                        <span class="relative flex aspect-[16/9] items-center justify-center overflow-hidden">
+                                            @include('partials.article-art', ['iconClass' => 'size-14'])
+                                            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                                                {{ $article['section_title'] }}
+                                            </span>
+                                        </span>
+                                        <span class="flex items-start gap-3 p-5">
+                                            <span class="min-w-0 flex-1">
+                                                <span class="line-clamp-2 font-display text-xl leading-snug font-semibold text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $article['title'] }}</span>
+                                                <span class="mt-2 line-clamp-2 text-sm leading-relaxed text-muted">{{ $article['excerpt'] }}</span>
+                                            </span>
+                                            <flux:icon name="arrow-up-right" variant="mini" class="mt-1 size-4 shrink-0 text-muted transition group-hover:text-brand-600" />
+                                        </span>
+                                    </a>
                                 @endforeach
                             </div>
 
@@ -134,7 +132,7 @@
                                         ></span>
                                     </span>
                                     <span class="flex items-center gap-1.5">
-                                        @foreach ($heroSlides as $s => $slide)
+                                        @foreach ($heroSlides as $s => $article)
                                             <button
                                                 type="button"
                                                 @click="go({{ $s }})"
