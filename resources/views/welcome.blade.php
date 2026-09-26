@@ -64,31 +64,32 @@
                     <a href="{{ route('team') }}" wire:navigate class="btn-ghost">{{ __('Meet our editors') }}</a>
                 </div>
 
-                {{-- Article search: filters an inline index of this locale's articles as you type. --}}
+                {{-- Article search: filters an inline index of this locale's articles as you type.
+                     Results are real links rendered here (not built in JS) so the static export
+                     rewrites them to the right path and language like every other link. --}}
                 @php
-                    $searchIndex = $allArticles->map(fn ($article) => [
-                        'title' => $article['title'],
-                        'section' => $article['section_title'],
-                        'url' => route('article', $article['slug']),
-                        'text' => mb_strtolower($article['title'].' '.$article['section_title'].' '.$article['excerpt']),
-                    ])->values();
+                    $searchIndex = $allArticles->map(fn ($article) => mb_strtolower($article['title'].' '.$article['section_title'].' '.$article['excerpt']))->values();
                 @endphp
                 <div
                     x-data="{
                         query: '',
                         open: false,
-                        items: @js($searchIndex),
+                        texts: @js($searchIndex),
                         get results() {
                             const words = this.query.toLowerCase().split(/\s+/).filter(Boolean);
                             if (! words.length) return [];
-                            return this.items.filter(item => words.every(word => item.text.includes(word))).slice(0, 6);
+                            const found = [];
+                            for (let i = 0; i < this.texts.length && found.length < 6; i++) {
+                                if (words.every(word => this.texts[i].includes(word))) found.push(i);
+                            }
+                            return found;
                         },
                     }"
                     @click.outside="open = false"
                     @keydown.escape="open = false"
                     class="relative mt-12 max-w-lg"
                 >
-                    <form role="search" @submit.prevent="if (results.length) window.location.href = results[0].url">
+                    <form role="search" @submit.prevent="if (results.length) $refs['result' + results[0]].click()">
                         <label for="hero-search" class="sr-only">{{ __('Search articles') }}</label>
                         <div class="relative">
                             <flux:icon name="magnifying-glass" variant="mini" class="pointer-events-none absolute top-1/2 left-5 size-5 -translate-y-1/2 text-muted" />
@@ -109,14 +110,20 @@
                         x-cloak
                         x-show="open && query.trim() !== ''"
                         x-transition.opacity
-                        class="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl border border-line bg-surface shadow-xl shadow-brand-900/10"
+                        class="absolute inset-x-0 top-full z-30 mt-2 flex flex-col overflow-hidden rounded-2xl border border-line bg-surface shadow-xl shadow-brand-900/10"
                     >
-                        <template x-for="item in results" :key="item.url">
-                            <a :href="item.url" class="block border-b border-line px-5 py-3 last:border-b-0 hover:bg-soft focus:bg-soft focus:outline-none">
-                                <span class="block text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300" x-text="item.section"></span>
-                                <span class="mt-0.5 block text-sm font-semibold text-ink" x-text="item.title"></span>
+                        @foreach ($allArticles as $i => $article)
+                            <a
+                                href="{{ route('article', $article['slug']) }}"
+                                x-ref="result{{ $i }}"
+                                :style="{ order: results.indexOf({{ $i }}) }"
+                                class="hidden border-b border-line px-5 py-3 hover:bg-soft focus:bg-soft focus:outline-none"
+                                :class="{ 'hidden': ! results.includes({{ $i }}), 'block': results.includes({{ $i }}) }"
+                            >
+                                <span class="block text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">{{ $article['section_title'] }}</span>
+                                <span class="mt-0.5 block text-sm font-semibold text-ink">{{ $article['title'] }}</span>
                             </a>
-                        </template>
+                        @endforeach
                         <p x-show="results.length === 0" class="px-5 py-4 text-sm text-muted">{{ __('No articles found.') }}</p>
                     </div>
                 </div>
