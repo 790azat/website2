@@ -2,7 +2,7 @@
 title: "High-Yield Savings Accounts with Capital One, Ally, and Marcus: Comparing APY, Fees, and Access"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-25
+date: 2026-04-25
 ---
 When building an emergency fund or holding cash for a short- or medium-term financial goal, the interest rate on a savings account can materially affect how quickly those funds grow.
 

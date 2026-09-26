@@ -2,7 +2,7 @@
 title: "Prêts relais, prêts de construction et prêts fonciers"
 section: loans-financing
 author: samuel-mensah
-date: 2026-10-05
+date: 2026-03-04
 ---
 Acheter une maison existante est relativement simple : une hypothèque finance une propriété qui existe déjà, et le prêteur peut évaluer son état et sa valeur marchande avant la clôture. Financer une propriété en cours de construction, une parcelle qui n'a pas encore été développée, ou une nouvelle maison qui doit être achetée avant qu'une propriété existante ne se vende est plus compliqué.
 

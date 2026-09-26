@@ -2,7 +2,7 @@
 title: "Tarjetas de crédito de cash back y recompensas: comparando puntos, millas y beneficios"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-01-03
 ---
 Las recompensas de las tarjetas de crédito se han convertido en una parte importante del mercado de crédito al consumidor. El cash back, los puntos, las millas, las bonificaciones por inscripción, los beneficios de viaje y las protecciones de compra pueden influir en cómo las personas eligen y usan una tarjeta de crédito. El reto es que los programas de recompensas no son intercambiables. Una tarjeta que ofrece 2% de cash back funciona de manera distinta a una que ofrece puntos transferibles o millas de aerolínea, y la tasa de recompensa destacada no necesariamente indica cuánto valen realmente los beneficios.
 

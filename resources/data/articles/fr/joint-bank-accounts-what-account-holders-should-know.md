@@ -2,7 +2,7 @@
 title: "Comptes bancaires conjoints : ce que les titulaires de compte devraient savoir"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-09
+date: 2026-04-18
 ---
 Combiner ses finances peut devenir un élément important de la gestion d'un foyer. Les couples peuvent ouvrir un compte chèques commun pour payer le loyer et les services publics, des enfants adultes peuvent aider à gérer les dépenses récurrentes d'un parent, et des associés commerciaux ou des membres d'une même famille peuvent avoir besoin d'un compte commun à des fins financières précises.
 

@@ -2,7 +2,7 @@
 title: "Affacturage de factures et lignes de crédit d'entreprise : gérer les flux de trésorerie B2B"
 section: loans-financing
 author: samuel-mensah
-date: 2026-10-17
+date: 2025-12-22
 ---
 Les entreprises B2B peuvent générer des ventes substantielles tout en subissant une pression sur les flux de trésorerie. Un client peut recevoir une facture avec des conditions de paiement à 30, 60 ou 90 jours, tandis que l'entreprise a besoin immédiatement de liquidités pour la paie, les stocks, les fournisseurs, les taxes, le transport et d'autres dépenses d'exploitation.
 

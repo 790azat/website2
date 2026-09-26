@@ -2,7 +2,7 @@
 title: "Anualidades: contratos de jubilación de renta fija vs. variable generadores de ingresos"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-14
 ---
 La planificación de la jubilación a menudo implica una transición de la acumulación de activos a la creación de un flujo de ingresos confiable. Si bien el Seguro Social, las pensiones y los retiros de inversión pueden proporcionar parte de ese ingreso, algunos jubilados también consideran las anualidades como una forma de convertir una parte de sus ahorros en pagos futuros.
 

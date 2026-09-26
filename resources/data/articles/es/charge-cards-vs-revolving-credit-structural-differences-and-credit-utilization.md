@@ -2,7 +2,7 @@
 title: "Tarjetas de cargo frente a crédito revolvente: diferencias estructurales y utilización del crédito"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-03-22
 ---
 Las tarjetas de cargo y las tarjetas de crédito tradicionales pueden verse casi idénticas en una cartera, pero sus estructuras de crédito subyacentes son diferentes. La distinción afecta cómo se reembolsan los saldos, cómo puede aplicarse el interés, cómo se determina el crédito disponible y cómo puede interactuar una cuenta con los cálculos de utilización de crédito.
 

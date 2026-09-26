@@ -2,7 +2,7 @@
 title: "Auto Insurance Coverage: How to Compare Liability, Deductibles, and Protection"
 section: personal-finance
 author: rachel-bernstein
-date: 2025-02-12
+date: 2026-01-31
 ---
 Auto insurance does more than satisfy state requirements for drivers. It can help protect your finances from expenses associated with collisions, injuries, vehicle theft, weather damage, and accidents involving uninsured motorists.
 

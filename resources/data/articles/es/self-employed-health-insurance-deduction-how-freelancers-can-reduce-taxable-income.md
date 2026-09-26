@@ -2,7 +2,7 @@
 title: "Deducción del seguro médico para trabajadores autónomos: cómo los freelancers pueden reducir su ingreso gravable"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2025-10-08
 ---
 El seguro médico puede representar uno de los gastos recurrentes más grandes para freelancers, contratistas independientes, consultores y propietarios de negocios que no reciben cobertura subsidiada por un empleador. El código tributario federal ofrece una deducción potencialmente valiosa para los contribuyentes autónomos que califican y que pagan primas de seguros médicos elegibles.
 

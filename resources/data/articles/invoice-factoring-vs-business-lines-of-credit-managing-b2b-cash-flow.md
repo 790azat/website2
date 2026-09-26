@@ -2,7 +2,7 @@
 title: "Invoice Factoring vs. Business Lines of Credit: Managing B2B Cash Flow"
 section: loans-financing
 author: samuel-mensah
-date: 2026-10-17
+date: 2025-12-22
 ---
 B2B companies can generate substantial sales while still experiencing cash-flow pressure. A customer may receive an invoice with 30-, 60-, or 90-day payment terms, while the business needs cash immediately for payroll, inventory, suppliers, taxes, transportation, and other operating expenses.
 

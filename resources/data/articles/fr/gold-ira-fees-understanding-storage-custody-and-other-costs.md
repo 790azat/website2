@@ -2,7 +2,7 @@
 title: "Frais des Gold IRA : comprendre le stockage, la garde et les autres coûts"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-26
+date: 2026-06-19
 ---
 Un Gold IRA peut offrir un moyen de détenir certains métaux précieux physiques dans un compte de retraite, mais cette structure comporte des dépenses que les investisseurs peuvent ne pas rencontrer dans un IRA conventionnel investi principalement en actions, obligations, fonds communs de placement, ou FNB.
 

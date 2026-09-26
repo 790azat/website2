@@ -2,7 +2,7 @@
 title: "SEP IRA and Solo 401(k): Retirement Planning for Self-Employed Workers"
 section: wealth-management
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-09-03
 ---
 Retirement planning looks different when there is no employer providing a 401(k), matching contributions, or an automatic payroll system. Freelancers, consultants, independent contractors, sole proprietors, and business owners have to create their own retirement structure—and the choice of account can have a meaningful effect on how much they can save and how contributions are taxed.
 

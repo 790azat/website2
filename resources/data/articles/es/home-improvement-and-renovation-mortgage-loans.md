@@ -2,7 +2,7 @@
 title: "Préstamos hipotecarios para mejoras y renovación de vivienda"
 section: loans-financing
 author: hannah-cohen
-date: 2026-10-01
+date: 2026-05-23
 ---
 Una renovación puede convertir una propiedad anticuada en un hogar más funcional, eficiente en energía o valioso, pero las mejoras importantes pueden requerir sustancialmente más efectivo del que dispone el propietario.
 

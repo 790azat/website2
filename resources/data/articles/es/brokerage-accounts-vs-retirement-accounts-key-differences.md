@@ -2,7 +2,7 @@
 title: "Cuentas de Corretaje vs. Cuentas de Jubilación: Diferencias Clave"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-07-02
 ---
 Cuando las personas comienzan a invertir, la primera pregunta suele ser qué comprar: acciones, ETF, bonos o fondos mutuos. La cuenta en sí puede recibir mucha menos atención.
 

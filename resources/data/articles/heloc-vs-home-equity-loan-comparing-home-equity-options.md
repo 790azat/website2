@@ -2,7 +2,7 @@
 title: "HELOC vs. Home Equity Loan: Comparing Home Equity Options"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-25
+date: 2026-03-26
 ---
 Homeowners who have built substantial equity may have access to another source of financing beyond a traditional personal loan or credit card: the value accumulated in their property.
 

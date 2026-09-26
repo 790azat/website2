@@ -2,7 +2,7 @@
 title: "International and Emerging Market Investing: Accessing Global Markets"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-03-02
 ---
 For decades, U.S. investors could build portfolios almost entirely around domestic companies. Today, that approach can leave out a large portion of the global economy.
 

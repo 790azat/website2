@@ -2,7 +2,7 @@
 title: "Préstamos estudiantiles privados: una guía sobre el financiamiento educativo"
 section: loans-financing
 author: sofia-martinez
-date: 2025-10-09
+date: 2025-12-28
 ---
 Pagar la universidad, un posgrado o una educación profesional puede requerir más financiamiento del que ofrecen las becas, subvenciones, ahorros y la ayuda federal para estudiantes. Cuando esos recursos no cubren el costo restante, un préstamo estudiantil privado puede llenar parte de la brecha.
 

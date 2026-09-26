@@ -2,7 +2,7 @@
 title: "Bridge, Construction, and Land Property Loans"
 section: loans-financing
 author: samuel-mensah
-date: 2026-10-05
+date: 2026-03-04
 ---
 Buying an existing home is relatively straightforward: a mortgage finances a property that already exists, and the lender can evaluate its condition and market value before closing. Financing a property that is being built, a parcel that has not yet been developed, or a new home that must be purchased before an existing property sells is more complicated.
 

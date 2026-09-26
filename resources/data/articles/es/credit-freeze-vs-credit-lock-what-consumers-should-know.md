@@ -2,7 +2,7 @@
 title: "Congelamiento de crédito frente a bloqueo de crédito: lo que los consumidores deben saber"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-04-19
 ---
 Un número de Seguro Social robado, información personal expuesta, o una cuenta desconocida en un informe crediticio pueden crear el riesgo de que alguien intente abrir un nuevo crédito a nombre de otra persona. Dos herramientas comúnmente discutidas para limitar ese riesgo son el congelamiento de crédito y el bloqueo de crédito.
 

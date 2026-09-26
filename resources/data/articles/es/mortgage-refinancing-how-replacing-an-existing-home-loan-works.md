@@ -2,7 +2,7 @@
 title: "Refinanciamiento hipotecario: cómo funciona reemplazar un préstamo hipotecario existente"
 section: loans-financing
 author: ethan-kim
-date: 2026-09-25
+date: 2026-09-03
 ---
 Una hipoteca no tiene que permanecer necesariamente sin cambios hasta que se venda la vivienda. Los propietarios pueden reemplazar una hipoteca existente por un préstamo nuevo mediante un proceso conocido como refinanciamiento.
 

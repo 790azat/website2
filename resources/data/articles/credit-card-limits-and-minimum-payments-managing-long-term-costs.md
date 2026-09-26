@@ -2,7 +2,7 @@
 title: "Credit Card Limits and Minimum Payments: Managing Long-Term Costs"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-09-12
 ---
 A credit card's limit can look deceptively simple: it is the maximum balance the issuer allows you to carry. The minimum payment can seem equally straightforward: it is the smallest amount you need to pay by the due date to keep the account current.
 

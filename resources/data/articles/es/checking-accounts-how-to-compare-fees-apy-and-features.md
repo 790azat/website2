@@ -2,7 +2,7 @@
 title: "Cuentas corrientes: cómo comparar comisiones, APY y características"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-22
+date: 2026-03-29
 ---
 Una cuenta corriente es más que un lugar para depositar un cheque de nómina. Para muchos hogares, es el centro financiero utilizado para depósitos directos, pagos recurrentes, compras con tarjeta de débito, transferencias y gastos cotidianos.
 

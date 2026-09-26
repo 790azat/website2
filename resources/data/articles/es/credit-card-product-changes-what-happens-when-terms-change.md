@@ -2,7 +2,7 @@
 title: "Cambios en productos de tarjetas de crédito: qué sucede cuando cambian los términos"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-12
 ---
 Las tarjetas de crédito no son necesariamente productos permanentes. Un emisor de tarjetas puede cambiar los términos de una cuenta existente, modificar recompensas o beneficios, reemplazar un producto de tarjeta por otro, o transferir una cuenta a un emisor diferente. Para los titulares de tarjetas, estos cambios pueden afectar el costo del endeudamiento, las cuotas anuales, las recompensas, el crédito disponible, e incluso la forma en que se puede usar la cuenta.
 

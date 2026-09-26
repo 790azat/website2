@@ -2,7 +2,7 @@
 title: "L'assurance complémentaire (umbrella) : comment fonctionne la couverture de responsabilité supplémentaire"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2026-04-03
 ---
 L'assurance habitation et l'assurance automobile offrent une protection de responsabilité importante, mais les plafonds de ces polices peuvent ne pas être suffisants pour tous les ménages. Un accident de véhicule grave, une blessure importante survenue sur la propriété de quelqu'un, ou une autre réclamation de responsabilité peuvent potentiellement entraîner des dépenses qui dépassent les plafonds d'une police d'assurance sous-jacente.
 

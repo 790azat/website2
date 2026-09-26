@@ -2,7 +2,7 @@
 title: "Financement de l'énergie verte et du solaire : prêts spécialisés et incitations"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-10-18
+date: 2026-05-18
 ---
 Installer des panneaux solaires, du stockage par batterie, ou d'autres équipements d'énergie propre peut nécessiter un investissement initial substantiel. Pour les propriétaires et les entreprises, la décision de financement peut être presque aussi importante que la technologie elle-même.
 

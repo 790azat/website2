@@ -2,7 +2,7 @@
 title: "Credit Card Grace Periods: How Interest-Free Periods Work"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-04-26
 ---
 A credit card grace period can allow cardholders to use their credit card for purchases without paying interest, provided they meet the conditions established by the issuer. For many cards, that generally means paying the full statement balance by the payment due date.
 

@@ -2,7 +2,7 @@
 title: "Suites de gestión de gastos empresariales: cómo integrar las tarjetas corporativas con los sistemas ERP y de contabilidad"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-07-31
 ---
 Gestionar el gasto con tarjetas corporativas se vuelve considerablemente más complicado a medida que una empresa suma empleados, departamentos, filiales, proveedores y métodos de pago. Un equipo financiero puede tener que conciliar miles de transacciones con tarjeta, asegurándose a la vez de que cada gasto se asigne a la cuenta contable, el departamento, el proyecto, la entidad y la categoría fiscal correctos.
 

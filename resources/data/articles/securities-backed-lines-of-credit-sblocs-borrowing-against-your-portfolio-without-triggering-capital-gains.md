@@ -2,7 +2,7 @@
 title: "Securities-Backed Lines of Credit (SBLOCs): Borrowing Against Your Portfolio Without Triggering Capital Gains"
 section: wealth-management
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-03-17
 ---
 Selling appreciated investments can create a tax bill at exactly the moment an investor needs liquidity. For someone holding a large portfolio of stocks, bonds, or mutual funds with substantial unrealized gains, an alternative is to borrow against those assets rather than sell them.
 

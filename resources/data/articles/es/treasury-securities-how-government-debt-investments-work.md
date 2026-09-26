@@ -2,7 +2,7 @@
 title: "Valores del Tesoro: cómo funcionan las inversiones en deuda del gobierno"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2026-08-12
 ---
 Los valores del Tesoro son inversiones de deuda emitidas por el Departamento del Tesoro de los Estados Unidos para financiar las operaciones del gobierno federal y gestionar sus necesidades de endeudamiento. Para los inversores, ofrecen una forma de prestar dinero al gobierno federal a cambio de intereses o de una diferencia entre el precio de compra y el monto recibido al vencimiento.
 

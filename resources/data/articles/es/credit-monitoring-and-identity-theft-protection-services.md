@@ -2,7 +2,7 @@
 title: "Monitoreo de crédito y servicios de protección contra el robo de identidad"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-15
 ---
 El robo de identidad puede crear problemas financieros que van mucho más allá de un cargo desconocido en la tarjeta de crédito. Un número de Seguro Social robado u otra información personal potencialmente puede usarse para solicitar crédito, abrir cuentas, obtener servicios, o cometer otras formas de fraude.
 

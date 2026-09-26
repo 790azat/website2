@@ -2,7 +2,7 @@
 title: "Délais de grâce des cartes de crédit : comment fonctionnent les périodes sans intérêt"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-04-26
 ---
 Un délai de grâce de carte de crédit peut permettre aux titulaires de carte d'utiliser leur carte de crédit pour des achats sans payer d'intérêts, à condition de respecter les conditions établies par l'émetteur. Pour de nombreuses cartes, cela signifie généralement payer l'intégralité du solde du relevé avant la date d'échéance du paiement.
 

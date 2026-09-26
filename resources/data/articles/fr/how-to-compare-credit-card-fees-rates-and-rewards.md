@@ -2,7 +2,7 @@
 title: "Comment comparer les frais, taux et récompenses des cartes de crédit"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-17
 ---
 Choisir une carte de crédit implique bien plus que de comparer les points de récompense ou de rechercher un faible taux d'intérêt annoncé. Les frais annuels, les APR, les frais de transfert de solde, les frais de transaction à l'étranger, les catégories de récompenses, les règles d'échange et les conditions promotionnelles peuvent tous influer sur le coût réel et l'utilité d'une carte.
 

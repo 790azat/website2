@@ -2,7 +2,7 @@
 title: "Gold IRA Explained: How Gold Fits Into Retirement Investing"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-23
 ---
 A Gold IRA is a type of self-directed individual retirement arrangement that can hold certain physical precious metals instead of limiting the account to traditional securities such as stocks, bonds, and mutual funds. Gold can serve as one component of a retirement portfolio, but using an IRA to own physical bullion involves additional rules, costs, custodial requirements, and storage arrangements that do not apply to ordinary brokerage accounts.
 

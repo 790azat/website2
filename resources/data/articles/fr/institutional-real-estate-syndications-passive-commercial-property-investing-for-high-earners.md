@@ -2,7 +2,7 @@
 title: "Syndications immobilières institutionnelles : investissement passif dans l'immobilier commercial pour les hauts revenus"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-05-02
 ---
 L'immobilier commercial peut exiger un capital substantiel, des connaissances spécialisées et une gestion continue. Pour les investisseurs à revenu élevé qui souhaitent une exposition à des propriétés sans acheter et exploiter eux-mêmes un immeuble entier, les **syndications immobilières** offrent une autre structure.
 

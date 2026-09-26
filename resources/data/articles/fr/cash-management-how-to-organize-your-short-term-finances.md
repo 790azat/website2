@@ -2,7 +2,7 @@
 title: "Gestion de trésorerie : comment organiser vos finances à court terme"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-03
+date: 2026-06-22
 ---
 L'investissement à long terme et la planification de la retraite sont importants pour bâtir un patrimoine, mais une gestion de trésorerie efficace détermine à quel point vous gérez bien les exigences financières qui se présentent directement à vous. Le loyer, les paiements hypothécaires, les services publics, les primes d'assurance, les factures de carte de crédit, les impôts, les réparations et les dépenses imprévues nécessitent tous des liquidités accessibles.
 

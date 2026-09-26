@@ -2,7 +2,7 @@
 title: "Comptes courants Bank of America : caractéristiques, frais et options de compte"
 section: personal-finance
 author: hannah-cohen
-date: 2026-10-23
+date: 2026-04-24
 ---
 Bank of America propose plusieurs options de compte courant dans le cadre de sa gamme Advantage Banking, avec des différences en matière de frais mensuels de tenue de compte, d'exigences de solde minimum, de fonctionnalités de découvert, d'intérêts et d'accès à des services bancaires supplémentaires.
 

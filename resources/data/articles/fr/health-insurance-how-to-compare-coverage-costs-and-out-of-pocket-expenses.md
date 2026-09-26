@@ -2,7 +2,7 @@
 title: "Assurance maladie : comment comparer la couverture, les coûts et les frais à votre charge"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-02-16
+date: 2025-12-07
 ---
 L'assurance maladie peut affecter à la fois l'accès aux soins médicaux et les finances du ménage. La prime mensuelle n'est qu'une partie du coût total. Les franchises, les quotes-parts (copayments), la coassurance, les réseaux de fournisseurs, la couverture des médicaments d'ordonnance, et le maximum annuel à votre charge peuvent tous influencer combien une personne finit par payer pour les soins de santé.
 

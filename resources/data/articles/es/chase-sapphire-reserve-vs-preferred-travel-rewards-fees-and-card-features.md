@@ -2,7 +2,7 @@
 title: "Chase Sapphire Reserve vs. Preferred: recompensas de viaje, comisiones y características de la tarjeta"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-05-01
 ---
 Las tarjetas **Chase Sapphire Reserve®** y **Chase Sapphire Preferred®** atienden a distintos tipos de usuarios de recompensas de viaje. Ambas acumulan puntos de Chase Ultimate Rewards, ofrecen beneficios relacionados con viajes y permiten transferir puntos a programas de lealtad participantes de aerolíneas y hoteles. La diferencia principal es el costo y la estructura de los beneficios asociados a cada tarjeta.
 

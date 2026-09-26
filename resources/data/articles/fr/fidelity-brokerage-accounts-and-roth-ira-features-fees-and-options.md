@@ -2,7 +2,7 @@
 title: "Comptes de courtage Fidelity et Roth IRA : caractéristiques, frais et options"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-11-18
 ---
 Pour les investisseurs qui décident où détenir leurs placements, le compte lui-même peut être tout aussi important que les titres qu'il contient. Un compte de courtage imposable offre flexibilité et large accès aux placements, tandis qu'un Roth IRA est conçu spécifiquement pour la retraite et offre une structure fiscale différente.
 

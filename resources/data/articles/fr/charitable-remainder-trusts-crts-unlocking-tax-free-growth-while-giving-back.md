@@ -2,7 +2,7 @@
 title: "Fiducies résiduaires de bienfaisance (CRT) : libérer une croissance à l'abri de l'impôt tout en redonnant"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-01-27
 ---
 Pour les investisseurs détenant des actifs fortement appréciés, les dons caritatifs peuvent créer un défi de planification intéressant. Vendre des actions, des biens immobiliers ou un autre investissement apprécié peut générer une facture fiscale substantielle sur les plus-values, tandis que simplement donner l'actif peut signifier renoncer à la possibilité d'en tirer un revenu.
 

@@ -2,7 +2,7 @@
 title: "Commercial Real Estate Loans: Financing Business Properties"
 section: loans-financing
 author: hannah-cohen
-date: 2026-10-06
+date: 2026-07-06
 ---
 Buying commercial property is a significantly different financing decision from taking out a conventional residential mortgage. A business may need financing to purchase an office, retail location, warehouse, medical facility, industrial building, apartment property, or land for development. The loan may also be used to refinance an existing commercial mortgage, renovate a property, or finance an expansion.
 

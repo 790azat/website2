@@ -2,7 +2,7 @@
 title: "Donaciones benéficas: cómo incluir el dar en su plan financiero"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-06
+date: 2026-02-02
 ---
 Las donaciones benéficas a menudo se consideran principalmente una decisión personal basada en valores, participación comunitaria y el deseo de apoyar a organizaciones que realizan un trabajo significativo. Sin embargo, para los hogares que donan regularmente, las contribuciones benéficas también pueden incorporarse a un plan financiero más amplio.
 

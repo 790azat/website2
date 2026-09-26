@@ -2,7 +2,7 @@
 title: "Prêts de consolidation de dettes : fonctionnement et éléments à considérer"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-30
+date: 2025-10-17
 ---
 Gérer plusieurs dettes en même temps peut compliquer l'organisation du remboursement. Un emprunteur peut avoir plusieurs soldes de carte de crédit, un prêt personnel, des factures médicales ou d'autres obligations admissibles, chacune avec sa propre date de paiement, son taux d'intérêt et son solde.
 

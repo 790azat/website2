@@ -2,7 +2,7 @@
 title: "Surveillance du crédit et services de protection contre le vol d'identité"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-15
 ---
 Le vol d'identité peut créer des problèmes financiers qui vont bien au-delà d'un prélèvement inconnu sur une carte de crédit. Un numéro de sécurité sociale volé ou d'autres informations personnelles peuvent potentiellement être utilisés pour demander du crédit, ouvrir des comptes, obtenir des services, ou commettre d'autres formes de fraude.
 

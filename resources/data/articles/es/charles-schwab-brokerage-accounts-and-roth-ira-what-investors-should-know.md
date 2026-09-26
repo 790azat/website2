@@ -2,7 +2,7 @@
 title: "Cuentas de corretaje de Charles Schwab y Roth IRA: lo que los inversionistas deben saber"
 section: wealth-management
 author: ethan-kim
-date: 2026-09-25
+date: 2026-03-18
 ---
 Elegir una cuenta de inversión implica más que decidir qué acciones, fondos u otros valores comprar. La estructura de la cuenta determina cómo se pueden hacer las aportaciones, cómo se grava el ingreso de inversión y con qué facilidad se puede acceder a los fondos.
 

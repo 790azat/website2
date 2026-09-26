@@ -2,7 +2,7 @@
 title: "Cuentas del mercado monetario: cómo se comparan con las cuentas de ahorro"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-08
+date: 2025-12-23
 ---
 Al organizar las reservas de efectivo a corto plazo, la cuenta que elija puede afectar con qué facilidad accede a su dinero, cuánto interés gana y qué comisiones paga. Las cuentas del mercado monetario (MMA, por sus siglas en inglés) y las cuentas de ahorro pueden servir ambas como lugares para guardar ahorros de emergencia o dinero reservado para gastos a corto plazo, pero sus características no son idénticas.
 

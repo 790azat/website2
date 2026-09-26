@@ -2,7 +2,7 @@
 title: "Morgan Stanley Wealth Management frente a Merrill Lynch: comparando la banca privada de servicio completo para inversionistas de alto patrimonio"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-12-30
 ---
 Para los inversionistas de alto patrimonio, elegir una firma de gestión patrimonial rara vez se trata solo de seleccionar una cuenta de inversión. En niveles más altos de riqueza, la relación puede incluir la construcción de la cartera, el crédito, la coordinación de la planificación patrimonial, estrategias con criterio fiscal, filantropía, banca, sucesión empresarial y transferencia de riqueza familiar.
 

@@ -2,7 +2,7 @@
 title: "Seguro para inquilinos y de condominio: entendiendo la cobertura de propiedad y responsabilidad civil"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2025-10-12
 ---
 Los inquilinos y los propietarios de condominios enfrentan riesgos de propiedad diferentes a los de los propietarios de casas independientes, pero ambos pueden enfrentar una exposición financiera significativa sin un seguro adecuado. La póliza del edificio de un arrendador generalmente no asegura las pertenencias personales de un inquilino, mientras que la póliza maestra de una asociación de condominios puede no cubrir todo lo que hay dentro de una unidad individual.
 

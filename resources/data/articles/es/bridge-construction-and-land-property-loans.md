@@ -2,7 +2,7 @@
 title: "Préstamos Puente, de Construcción y de Terreno"
 section: loans-financing
 author: samuel-mensah
-date: 2026-10-05
+date: 2026-03-04
 ---
 Comprar una vivienda existente es relativamente sencillo: una hipoteca financia una propiedad que ya existe, y el prestamista puede evaluar su condición y valor de mercado antes del cierre. Financiar una propiedad que se está construyendo, una parcela que aún no se ha desarrollado, o una nueva vivienda que debe comprarse antes de que se venda una propiedad existente es más complicado.
 

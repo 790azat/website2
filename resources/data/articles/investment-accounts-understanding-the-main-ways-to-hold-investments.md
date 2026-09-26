@@ -2,7 +2,7 @@
 title: "Investment Accounts: Understanding the Main Ways to Hold Investments"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-07-05
 ---
 When people begin investing, much of the attention goes toward choosing **stocks, bonds, ETFs, mutual funds, and other securities**. However, the account used to hold those investments can be equally important.
 

@@ -2,7 +2,7 @@
 title: "Comptes d'épargne à haut rendement chez Capital One, Ally et Marcus : comparer l'APY, les frais et l'accès"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-25
+date: 2026-04-25
 ---
 Lors de la constitution d'un fonds d'urgence ou de la détention de liquidités pour un objectif financier à court ou moyen terme, le taux d'intérêt d'un compte d'épargne peut avoir un effet important sur la rapidité avec laquelle ces fonds fructifient.
 

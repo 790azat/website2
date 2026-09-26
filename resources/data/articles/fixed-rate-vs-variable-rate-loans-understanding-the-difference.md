@@ -2,7 +2,7 @@
 title: "Fixed-Rate vs. Variable-Rate Loans: Understanding the Difference"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-04
+date: 2025-10-27
 ---
 The interest rate on a loan affects much more than the amount of interest a borrower pays. It can influence monthly payments, budgeting, refinancing decisions, and the total cost of borrowing over several years.
 

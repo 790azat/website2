@@ -2,7 +2,7 @@
 title: "Dates d'échéance de paiement, paiement automatique et cycles de facturation des cartes de crédit"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-20
 ---
 Les relevés de carte de crédit contiennent plusieurs dates et soldes qui peuvent facilement prêter à confusion. Le cycle de facturation détermine quelles transactions apparaissent sur un relevé. La date de clôture du relevé détermine quand cette période de facturation se termine. La date d'échéance du paiement détermine quand au moins le paiement minimum requis doit parvenir à l'émetteur. Le paiement automatique peut alors automatiser ce paiement, réduisant potentiellement le risque d'échéances manquées.
 

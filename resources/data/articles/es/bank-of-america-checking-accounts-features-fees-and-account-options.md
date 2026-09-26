@@ -2,7 +2,7 @@
 title: "Cuentas corrientes de Bank of America: características, comisiones y opciones de cuenta"
 section: personal-finance
 author: hannah-cohen
-date: 2026-10-23
+date: 2026-04-24
 ---
 Bank of America ofrece varias opciones de cuenta corriente a través de su línea Advantage Banking, con diferencias en las comisiones mensuales de mantenimiento, los requisitos de saldo mínimo, las funciones de sobregiro, los intereses y el acceso a servicios bancarios adicionales.
 

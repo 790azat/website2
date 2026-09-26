@@ -2,7 +2,7 @@
 title: "Financiamiento de autos usados: qué revisar antes de financiar un vehículo seminuevo"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-03-24
 ---
 Financiar un vehículo usado implica más que encontrar un auto que se ajuste al presupuesto y elegir un pago mensual. La condición del vehículo, su antigüedad, el kilometraje, el precio de compra, la tasa de interés, el plazo del préstamo, las tarifas, el pago inicial y la fuente de financiamiento pueden afectar todos el costo total.
 

@@ -2,7 +2,7 @@
 title: "Assurance auto : comment comparer la responsabilité civile, les franchises et la protection"
 section: personal-finance
 author: rachel-bernstein
-date: 2025-02-12
+date: 2026-01-31
 ---
 L'assurance auto ne se limite pas à satisfaire les exigences de l'État en matière de conducteurs. Elle peut aider à protéger vos finances contre les dépenses liées aux collisions, aux blessures, au vol de véhicule, aux dommages météorologiques et aux accidents impliquant des automobilistes non assurés.
 

@@ -2,7 +2,7 @@
 title: "Generational Wealth Transfer Protocols: Minimizing Probate Friction and Estate Taxes"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-25
+date: 2026-01-16
 ---
 As family wealth grows, transferring assets from one generation to the next becomes more complicated than simply writing a will and naming beneficiaries. Real estate, investment accounts, business interests, life insurance, and other assets can each follow different ownership and transfer rules.
 

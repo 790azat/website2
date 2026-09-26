@@ -2,7 +2,7 @@
 title: "Rentes : contrats de retraite à revenu fixe vs. variable"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-14
 ---
 La planification de la retraite implique souvent une transition entre l'accumulation d'actifs et la création d'un flux de revenu fiable. Bien que la sécurité sociale, les pensions et les retraits de placement puissent fournir une partie de ce revenu, certains retraités envisagent aussi des rentes comme moyen de convertir une partie de leur épargne en paiements futurs.
 

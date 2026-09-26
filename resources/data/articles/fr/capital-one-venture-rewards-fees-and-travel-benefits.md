@@ -2,7 +2,7 @@
 title: "Capital One Venture : récompenses, frais et avantages voyage"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-12-19
 ---
 La carte de crédit Capital One Venture Rewards repose sur une structure de récompenses voyage relativement simple : des miles 2X illimités sur les achats courants, des récompenses majorées sur les réservations éligibles effectuées via Capital One Travel, et des moyens flexibles d'échanger ou de transférer les miles. La carte comporte actuellement des frais annuels de 95 \$.
 

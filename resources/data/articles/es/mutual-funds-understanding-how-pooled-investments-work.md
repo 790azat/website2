@@ -2,7 +2,7 @@
 title: "Fondos mutuos: cómo funcionan las inversiones colectivas"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2025-11-11
 ---
 Construir una cartera de inversión diversificada puede ser difícil cuando comprar acciones y bonos individuales requiere investigación continua, capital y gestión de cartera. Los **fondos mutuos** abordan este desafío reuniendo el dinero de múltiples inversionistas y usando ese capital combinado para comprar una cartera de títulos con base en un objetivo de inversión definido.
 

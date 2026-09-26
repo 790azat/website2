@@ -2,7 +2,7 @@
 title: "Seguro de viaje: qué tener en cuenta antes de proteger un viaje"
 section: personal-finance
 author: hannah-cohen
-date: 2026-02-28
+date: 2025-10-26
 ---
 Ya sea que esté planeando unas vacaciones transfronterizas, un itinerario complejo de varias ciudades o un viaje internacional prolongado, el seguro de viaje puede proporcionar una red de seguridad financiera frente a interrupciones inesperadas. Desde cancelaciones de vuelos y pérdida de equipaje hasta emergencias médicas graves en el extranjero, una póliza adecuada puede ayudar a reducir los costos que de otro modo saldrían del bolsillo del viajero y que podrían afectar significativamente el costo total de un viaje.
 

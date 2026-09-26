@@ -2,7 +2,7 @@
 title: "Tarjetas de crédito garantizadas: cómo funcionan y quién puede considerarlas"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-08-28
 ---
 Conseguir la aprobación de una tarjeta de crédito convencional puede ser difícil cuando un consumidor tiene poco historial crediticio, un perfil de crédito dañado o un revés financiero reciente. Una **tarjeta de crédito garantizada (secured credit card)** ofrece otra vía para establecer o reconstruir el crédito al requerir un depósito de garantía reembolsable que generalmente determina el límite de crédito de la cuenta.
 

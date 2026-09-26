@@ -2,7 +2,7 @@
 title: "Écosystèmes fintech de budgétisation : comment l'open banking et les applications d'IA transforment les flux de trésorerie des ménages"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-07-20
 ---
 La budgétisation des ménages exigeait autrefois un effort manuel considérable. Les consommateurs suivaient les reçus, tenaient des feuilles de calcul, téléchargeaient des relevés bancaires et se connectaient à des institutions financières distinctes pour comprendre où allait leur argent.
 

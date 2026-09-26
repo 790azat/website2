@@ -2,7 +2,7 @@
 title: "Factoraje de facturas frente a líneas de crédito empresariales: cómo gestionar el flujo de caja B2B"
 section: loans-financing
 author: samuel-mensah
-date: 2026-10-17
+date: 2025-12-22
 ---
 Las empresas B2B pueden generar ventas sustanciales y aun así experimentar presión de flujo de caja. Un cliente puede recibir una factura con términos de pago a 30, 60 o 90 días, mientras que la empresa necesita efectivo de inmediato para nómina, inventario, proveedores, impuestos, transporte y otros gastos operativos.
 

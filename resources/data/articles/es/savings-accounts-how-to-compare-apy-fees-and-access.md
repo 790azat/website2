@@ -2,7 +2,7 @@
 title: "Cuentas de ahorro: cómo comparar el APY, las comisiones y el acceso"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-18
+date: 2026-06-07
 ---
 Una cuenta de ahorro proporciona un lugar dedicado para guardar dinero que no se necesita para los gastos cotidianos. A diferencia de una cuenta corriente, que generalmente se usa para facturas y transacciones recurrentes, una cuenta de ahorro puede ayudar a separar los fondos de emergencia, los objetivos a corto plazo y otras reservas de efectivo de los gastos diarios.
 

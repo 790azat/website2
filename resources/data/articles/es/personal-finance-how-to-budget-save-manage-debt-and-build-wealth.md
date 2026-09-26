@@ -2,7 +2,7 @@
 title: "Finanzas personales: cómo presupuestar, ahorrar, gestionar deudas y crear riqueza"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-15
+date: 2026-06-29
 ---
 Gestionar las finanzas personales implica más que hacer seguimiento de los gastos. Un sistema financiero práctico conecta los ingresos, el gasto, el ahorro, la deuda, la inversión, el seguro y los objetivos a largo plazo, de modo que cada parte de su vida financiera respalde a las demás.
 

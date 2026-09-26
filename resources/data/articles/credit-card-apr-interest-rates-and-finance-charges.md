@@ -2,7 +2,7 @@
 title: "Credit Card APR, Interest Rates, and Finance Charges"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-27
 ---
 Credit card pricing can look deceptively simple. A card may advertise an annual percentage rate, or APR, but the actual cost of carrying a balance depends on how interest is calculated, when it begins accruing, which type of transaction generated the balance, and whether additional fees apply.
 

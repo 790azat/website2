@@ -2,7 +2,7 @@
 title: "Bases de l'assurance vie : comment comparer la couverture, les bénéficiaires et les types de polices"
 section: personal-finance
 author: hannah-cohen
-date: 2026-02-09
+date: 2025-10-03
 ---
 L'assurance vie peut offrir une protection financière aux personnes qui dépendent de votre revenu ou qui feraient face à des dépenses importantes après votre décès. Selon la police, une prestation de décès peut aider à remplacer un revenu perdu, à payer des dettes en cours, à couvrir des frais funéraires ou à fournir des fonds pour de futurs objectifs financiers.
 

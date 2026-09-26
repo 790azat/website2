@@ -2,7 +2,7 @@
 title: "Préstamos en línea: cómo funciona el endeudamiento digital, de la solicitud al desembolso"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-25
+date: 2026-03-19
 ---
 Los préstamos en línea han cambiado la mecánica de pedir dinero prestado. En lugar de visitar una sucursal, completar formularios en papel y esperar a que un oficial de préstamos revise los documentos manualmente, los prestatarios a menudo pueden enviar una solicitud desde un teléfono o una computadora, recibir una decisión electrónicamente y que los fondos aprobados se depositen en una cuenta bancaria.
 

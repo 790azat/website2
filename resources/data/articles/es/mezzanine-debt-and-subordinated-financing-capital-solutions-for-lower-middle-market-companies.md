@@ -2,7 +2,7 @@
 title: "Deuda mezzanine y financiamiento subordinado: soluciones de capital para empresas del mercado medio-bajo"
 section: loans-financing
 author: claire-odonnell
-date: 2026-10-13
+date: 2026-06-05
 ---
 Las empresas del mercado medio-bajo a menudo llegan a un punto en el que la deuda senior tradicional no es suficiente para financiar una adquisición, una recapitalización, una transición de propiedad, una expansión o una inversión importante. Al mismo tiempo, emitir acciones comunes adicionales puede diluir a los propietarios existentes más de lo que la dirección o los patrocinadores desean.
 

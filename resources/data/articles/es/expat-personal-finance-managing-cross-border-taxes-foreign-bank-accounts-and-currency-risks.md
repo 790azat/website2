@@ -2,7 +2,7 @@
 title: "Finanzas personales para expatriados: cómo gestionar impuestos transfronterizos, cuentas bancarias extranjeras y riesgos cambiarios"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2025-12-01
 ---
 Vivir en el extranjero puede crear nuevas oportunidades de trabajo, negocios, viajes y flexibilidad de estilo de vida. También puede hacer que las finanzas personales sean considerablemente más complicadas.
 

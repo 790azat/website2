@@ -2,7 +2,7 @@
 title: "Gold IRA explicado: cómo encaja el oro en la inversión para el retiro"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-23
 ---
 Una Gold IRA es un tipo de cuenta individual de retiro autodirigida que puede contener ciertos metales preciosos físicos en lugar de limitar la cuenta a valores tradicionales como acciones, bonos y fondos mutuos. El oro puede servir como un componente de una cartera de retiro, pero usar una IRA para poseer lingotes físicos implica reglas adicionales, costos, requisitos de custodia y arreglos de almacenamiento que no se aplican a las cuentas de corretaje ordinarias.
 

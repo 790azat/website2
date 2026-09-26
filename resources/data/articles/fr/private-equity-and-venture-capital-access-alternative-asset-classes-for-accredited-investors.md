@@ -2,7 +2,7 @@
 title: "Private Equity et capital-risque : l'accès aux classes d'actifs alternatives pour les investisseurs accrédités"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-07-01
 ---
 Les investisseurs disposant d'actifs importants cherchent souvent au-delà des actions et obligations cotées en bourse d'autres moyens de déployer leur capital. Le private equity et le capital-risque sont deux segments des marchés privés qui peuvent offrir une exposition à des entreprises détenues de manière privée, mais ils fonctionnent très différemment des investissements de courtage traditionnels.
 

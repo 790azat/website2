@@ -2,7 +2,7 @@
 title: "Chase Sapphire Preferred : récompenses, frais et avantages voyage"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2025-10-03
 ---
 La carte Chase Sapphire Preferred® s'est longtemps positionnée autour de récompenses voyage flexibles plutôt que d'avantages de carte haut de gamme comme l'accès aux salons d'aéroport. En 2026, Chase a élargi les catégories de gains de la carte et ses avantages voyage tout en maintenant sa cotisation annuelle à 95 \$.
 

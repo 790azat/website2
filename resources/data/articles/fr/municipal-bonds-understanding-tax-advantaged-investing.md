@@ -2,7 +2,7 @@
 title: "Obligations municipales : comprendre l'investissement à avantage fiscal"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-10-08
 ---
 Les obligations municipales sont des titres de créance émis par des États, des villes, des comtés, des autorités publiques et d'autres entités gouvernementales pour financer des projets et des opérations publics. Pour les investisseurs, elles peuvent générer un revenu d'intérêts tout en offrant potentiellement un traitement fiscal favorable.
 

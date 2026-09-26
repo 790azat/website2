@@ -2,7 +2,7 @@
 title: "Valores TIPS y bonos de ahorro Serie I: cómo navegar la deuda protegida contra la inflación"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-03
 ---
 La inflación puede crear un problema fácil de pasar por alto al observar un estado de cuenta de inversión: el saldo de la cuenta puede aumentar mientras el poder adquisitivo de ese dinero disminuye.
 

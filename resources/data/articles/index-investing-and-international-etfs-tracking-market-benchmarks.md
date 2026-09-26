@@ -2,7 +2,7 @@
 title: "Index Investing and International ETFs: Tracking Market Benchmarks"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-10
 ---
 Investing internationally no longer requires opening accounts in multiple countries or researching individual foreign companies one by one. Exchange-traded funds have made it possible for investors to gain exposure to hundreds or even thousands of companies across developed and emerging economies through a single security.
 

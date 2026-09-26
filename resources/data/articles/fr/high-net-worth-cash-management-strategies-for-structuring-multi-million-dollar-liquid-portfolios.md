@@ -2,7 +2,7 @@
 title: "Gestion de trésorerie pour grandes fortunes : stratégies de structuration de portefeuilles liquides de plusieurs millions de dollars"
 section: personal-finance
 author: samuel-mensah
-date: 2026-03-11
+date: 2026-05-04
 ---
 Gérer quelques milliers de dollars de liquidités d'un ménage est fondamentalement différent de la gestion de plusieurs millions de dollars en liquidités. D'importants soldes liquides peuvent provenir de la vente d'une entreprise, d'un héritage, d'une transaction immobilière, d'une rémunération en actions, de positions d'investissement concentrées ou de l'accumulation de réserves d'entreprise.
 

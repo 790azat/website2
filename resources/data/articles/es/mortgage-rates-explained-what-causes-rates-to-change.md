@@ -2,7 +2,7 @@
 title: "Las tasas hipotecarias explicadas: qué hace que las tasas cambien"
 section: loans-financing
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-05-31
 ---
 Las tasas hipotecarias pueden cambiar de una semana a otra, a veces incluso cuando un prestatario no ha cambiado nada en su situación financiera. La razón es que la fijación de precios hipotecarios depende de mucho más que el puntaje crediticio de una persona o la última decisión de tasas de interés de la Reserva Federal.
 

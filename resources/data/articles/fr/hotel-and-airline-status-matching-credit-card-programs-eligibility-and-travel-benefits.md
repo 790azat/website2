@@ -2,7 +2,7 @@
 title: "Correspondance de statut hôtelier et aérien : programmes de cartes de crédit, admissibilité et avantages voyage"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-07-13
 ---
 Le statut élite hôtelier et aérien peut offrir des avantages qui exigeraient autrement une activité de voyage substantielle pour être gagnés. Selon le programme, ces avantages peuvent inclure des surclassements de chambre, des services prioritaires, des points bonis, un accès aux salons, un embarquement prioritaire, des franchises de bagages, ou d'autres privilèges de voyage.
 

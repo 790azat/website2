@@ -2,7 +2,7 @@
 title: "Plans d'épargne-études 529 : comment fonctionnent les comptes d'épargne éducation"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-10
+date: 2025-10-20
 ---
 Planifier les dépenses d'études peut être difficile lorsque les frais de scolarité, le logement, les livres et d'autres coûts risquent de continuer à augmenter sur plusieurs années. Un compte d'épargne classique peut offrir de la liquidité, mais il n'offre pas le même traitement fiscal fédéral que celui disponible via un programme de scolarité qualifié.
 

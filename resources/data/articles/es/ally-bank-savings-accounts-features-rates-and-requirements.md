@@ -2,7 +2,7 @@
 title: "Cuentas de ahorro de Ally Bank: características, tasas y requisitos"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-10-25
+date: 2026-07-24
 ---
 La cuenta de ahorro en línea de Ally Bank está diseñada para clientes que desean una cuenta de ahorro digital sin comisión de mantenimiento mensual ni requisito de saldo mínimo. Actualmente, la cuenta paga una **APY variable del 3.00%**, según la divulgación de tasas de Ally con fecha del 10 de septiembre de 2026. El interés se capitaliza diariamente y no se requiere un depósito mínimo para abrir la cuenta ni para obtener la APY publicada.
 

@@ -2,7 +2,7 @@
 title: "Lignes de crédit garanties par des titres (SBLOC) : emprunter sur votre portefeuille sans déclencher de gains en capital"
 section: wealth-management
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-03-17
 ---
 Vendre des placements dont la valeur s'est appréciée peut créer une facture fiscale au moment précis où un investisseur a besoin de liquidités. Pour une personne détenant un vaste portefeuille d'actions, d'obligations ou de fonds communs de placement avec d'importants gains non réalisés, une solution de rechange consiste à emprunter sur ces actifs plutôt que de les vendre.
 

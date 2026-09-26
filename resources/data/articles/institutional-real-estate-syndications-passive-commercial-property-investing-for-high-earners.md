@@ -2,7 +2,7 @@
 title: "Institutional Real Estate Syndications: Passive Commercial Property Investing for High Earners"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-05-02
 ---
 Commercial real estate can require substantial capital, specialized knowledge, and ongoing management. For high-income investors who want exposure to properties without purchasing and operating an entire building themselves, **real estate syndications** offer another structure.
 

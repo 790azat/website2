@@ -2,7 +2,7 @@
 title: "Financiamiento de energía verde y solar: préstamos especializados e incentivos"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-10-18
+date: 2026-05-18
 ---
 Instalar paneles solares, almacenamiento en baterías u otro equipo de energía limpia puede requerir una inversión inicial sustancial. Para propietarios de vivienda y empresas, la decisión de financiamiento puede ser casi tan importante como la tecnología en sí.
 

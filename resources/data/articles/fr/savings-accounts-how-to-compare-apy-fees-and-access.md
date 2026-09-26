@@ -2,7 +2,7 @@
 title: "Comptes d'épargne : comment comparer le TAP, les frais et l'accessibilité"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-18
+date: 2026-06-07
 ---
 Un compte d'épargne offre un endroit dédié pour conserver de l'argent qui n'est pas nécessaire pour les dépenses quotidiennes. Contrairement à un compte-chèques, généralement utilisé pour les factures et transactions récurrentes, un compte d'épargne peut aider à séparer les fonds d'urgence, les objectifs à court terme et d'autres réserves de liquidités des dépenses quotidiennes.
 

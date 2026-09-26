@@ -2,7 +2,7 @@
 title: "Chase Sapphire Preferred: recompensas, comisiones y beneficios de viaje"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2025-10-03
 ---
 La tarjeta Chase Sapphire Preferred® se ha posicionado durante mucho tiempo en torno a recompensas de viaje flexibles, en lugar de beneficios de tarjetas premium como el acceso a salas VIP en aeropuertos. En 2026, Chase amplió las categorías de acumulación de la tarjeta y sus beneficios de viaje, manteniendo su cuota anual en \$95.
 

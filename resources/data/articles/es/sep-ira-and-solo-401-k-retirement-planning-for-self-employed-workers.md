@@ -2,7 +2,7 @@
 title: "SEP IRA y Solo 401(k): planificación de la jubilación para trabajadores autónomos"
 section: wealth-management
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-09-03
 ---
 La planificación de la jubilación se ve diferente cuando no hay un empleador que ofrezca un 401(k), aportaciones equivalentes (matching) o un sistema automático de nómina. Los freelancers, consultores, contratistas independientes, propietarios únicos (sole proprietors) y dueños de negocios tienen que crear su propia estructura de jubilación, y la elección de la cuenta puede tener un efecto significativo en cuánto pueden ahorrar y cómo se gravan las aportaciones.
 

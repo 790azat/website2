@@ -2,7 +2,7 @@
 title: "Prêts DSCR pour les investisseurs immobiliers : financer des propriétés locatives sans vérification traditionnelle des revenus W-2"
 section: loans-financing
 author: ethan-kim
-date: 2026-10-14
+date: 2026-05-04
 ---
 Les investisseurs immobiliers ne correspondent pas toujours au profil traditionnel utilisé pour la souscription des prêts hypothécaires résidentiels. Un investisseur indépendant peut avoir des revenus locatifs substantiels mais des salaires W-2 relativement modestes. Un autre investisseur peut posséder plusieurs propriétés locatives, opérer via une LLC, ou avoir des déclarations fiscales affichant d'importantes déductions même si les propriétés génèrent des flux de trésorerie considérables.
 

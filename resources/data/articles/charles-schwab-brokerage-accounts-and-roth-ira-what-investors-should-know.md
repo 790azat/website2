@@ -2,7 +2,7 @@
 title: "Charles Schwab Brokerage Accounts & Roth IRA: What Investors Should Know"
 section: wealth-management
 author: ethan-kim
-date: 2026-09-25
+date: 2026-03-18
 ---
 Choosing an investment account involves more than deciding which stocks, funds, or other securities to purchase. The account structure determines how money can be contributed, how investment income is taxed, and how easily funds can be accessed.
 

@@ -2,7 +2,7 @@
 title: "Consultas de crédito duras frente a blandas: lo que los consumidores deben saber"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2025-11-04
 ---
 Cada vez que un prestamista, una empresa de tarjetas de crédito u otra empresa revisa el informe de crédito de un consumidor, esa actividad puede registrarse como una consulta de crédito. Pero no todas las consultas tienen el mismo efecto.
 

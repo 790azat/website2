@@ -2,7 +2,7 @@
 title: "Gestion des flux de trésorerie du foyer : suivre les revenus et les dépenses récurrentes"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-08
+date: 2025-11-29
 ---
 Les finances d'un foyer peuvent devenir difficiles à gérer même lorsque les revenus sont relativement stables. L'argent arrive sur un compte-chèques, les factures récurrentes sont payées, les achats du quotidien s'accumulent et des dépenses imprévues apparaissent tout au long du mois. Sans une vision claire de ces mouvements, il peut être difficile de comprendre combien d'argent est réellement disponible pour l'épargne ou d'autres objectifs financiers.
 

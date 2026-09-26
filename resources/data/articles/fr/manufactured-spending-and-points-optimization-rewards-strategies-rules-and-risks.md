@@ -2,7 +2,7 @@
 title: "Dépenses artificielles et optimisation des points : stratégies de récompenses, règles et risques"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-07-12
 ---
 Les programmes de récompenses des cartes de crédit peuvent transformer les dépenses ordinaires en remises en argent, en miles aériens, en points hôteliers et en d'autres avantages. Pour certains consommateurs, la recherche de récompenses va plus loin, vers une pratique communément appelée **manufactured spending** (dépense artificielle)—l'utilisation de transactions conçues principalement pour générer un volume de dépenses par carte de crédit et des récompenses, plutôt que pour acheter des biens ou services dont le titulaire de la carte a réellement besoin.
 

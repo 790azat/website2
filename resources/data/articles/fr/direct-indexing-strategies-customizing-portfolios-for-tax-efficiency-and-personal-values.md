@@ -2,7 +2,7 @@
 title: "Stratégies d'indexation directe : personnaliser les portefeuilles pour l'efficacité fiscale et les valeurs personnelles"
 section: wealth-management
 author: ethan-kim
-date: 2026-09-25
+date: 2026-05-21
 ---
 Les investisseurs qui souhaitent une exposition large au marché ne sont pas nécessairement tenus d'acheter un seul fonds indiciel ou FNB. Une autre approche, connue sous le nom d'**indexation directe**, consiste à détenir bon nombre des titres individuels qui composent un indice et à gérer ces avoirs comme un portefeuille personnalisé.
 

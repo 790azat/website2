@@ -2,7 +2,7 @@
 title: "Fundamentos de la Bancarrota: Comprendiendo los Tipos y el Impacto Financiero"
 section: loans-financing
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-09-21
 ---
 La bancarrota es un proceso legal federal diseñado para abordar situaciones en las que las personas o las empresas no pueden cumplir con sus obligaciones financieras. Dependiendo del tipo de caso, la bancarrota puede implicar la liquidación de activos, un plan de reembolso supervisado por un tribunal o la reorganización de los asuntos financieros.
 

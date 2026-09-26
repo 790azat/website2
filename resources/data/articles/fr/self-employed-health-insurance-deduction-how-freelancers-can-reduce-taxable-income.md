@@ -2,7 +2,7 @@
 title: "Déduction pour assurance maladie des travailleurs autonomes : comment les pigistes peuvent réduire leur revenu imposable"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2025-10-08
 ---
 L'assurance maladie peut représenter l'une des dépenses récurrentes les plus importantes pour les pigistes, les travailleurs autonomes, les consultants et les propriétaires d'entreprise qui ne bénéficient pas d'une couverture subventionnée par un employeur. Le code fiscal fédéral prévoit une déduction potentiellement précieuse pour les travailleurs autonomes admissibles qui paient des primes pour une assurance maladie admissible.
 

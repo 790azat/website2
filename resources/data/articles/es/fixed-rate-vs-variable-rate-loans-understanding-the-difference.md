@@ -2,7 +2,7 @@
 title: "Préstamos de tasa fija frente a tasa variable: entendiendo la diferencia"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-04
+date: 2025-10-27
 ---
 La tasa de interés de un préstamo afecta a mucho más que el monto de interés que paga el prestatario. Puede influir en los pagos mensuales, en la elaboración del presupuesto, en las decisiones de refinanciamiento y en el costo total del endeudamiento a lo largo de varios años.
 

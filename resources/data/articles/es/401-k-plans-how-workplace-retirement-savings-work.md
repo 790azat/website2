@@ -2,7 +2,7 @@
 title: "Planes 401(k): cómo funcionan los planes de ahorro para la jubilación en el trabajo"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-03
 ---
 Para muchos empleados, un **plan 401(k)** es uno de los principales vehículos para acumular ahorros para la jubilación mediante aportaciones automáticas por nómina, crecimiento de inversiones con ventajas fiscales y posibles aportaciones del empleador. Los planes de jubilación en el lugar de trabajo también pueden ofrecer acceso a inversiones diversificadas, como fondos mutuos, fondos de fecha objetivo (target-date funds), fondos de acciones y fondos de bonos.
 

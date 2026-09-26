@@ -2,7 +2,7 @@
 title: "Options d'allègement fiscal : comment comparer les plans de paiement, les règlements et les autres solutions face aux dettes fiscales"
 section: personal-finance
 author: sofia-martinez
-date: 2024-05-20
+date: 2025-10-22
 ---
 Un solde d'impôt impayé peut devenir de plus en plus difficile à gérer à mesure que les intérêts et les pénalités applicables s'accumulent. Pour les contribuables qui ne peuvent pas payer immédiatement la totalité du montant, l'Internal Revenue Service (IRS) propose plusieurs façons de traiter une dette fiscale fédérale, notamment des plans de paiement à court terme, des accords d'échelonnement à long terme, des offres de compromis (offers in compromise), des reports temporaires du recouvrement et certaines formes d'allègement des pénalités.
 

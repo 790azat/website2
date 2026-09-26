@@ -2,7 +2,7 @@
 title: "How Credit Card Interest Rates Affect Your Balance"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-06-26
 ---
 A credit card's interest rate can have a significant effect on how quickly a balance grows and how long it takes to repay borrowed money. The annual percentage rate, or APR, is the standard way credit card interest costs are expressed, but the amount actually charged each billing cycle depends on factors such as the balance, daily interest calculations, payment timing, and whether a grace period applies.
 

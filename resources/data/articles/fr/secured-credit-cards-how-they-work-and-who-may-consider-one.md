@@ -2,7 +2,7 @@
 title: "Cartes de crédit garanties : comment elles fonctionnent et à qui elles peuvent convenir"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-08-28
 ---
 Obtenir l'approbation d'une carte de crédit classique peut être difficile lorsqu'un consommateur a peu d'antécédents de crédit, un profil de crédit endommagé ou a connu un revers financier récent. Une **carte de crédit garantie** offre une autre voie pour établir ou reconstruire son crédit en exigeant un dépôt de garantie remboursable qui détermine généralement la limite de crédit du compte.
 

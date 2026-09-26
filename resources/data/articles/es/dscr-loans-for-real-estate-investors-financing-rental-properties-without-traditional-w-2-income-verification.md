@@ -2,7 +2,7 @@
 title: "Préstamos DSCR para inversionistas inmobiliarios: cómo financiar propiedades de alquiler sin verificación tradicional de ingresos W-2"
 section: loans-financing
 author: ethan-kim
-date: 2026-10-14
+date: 2026-05-04
 ---
 Los inversionistas inmobiliarios no siempre encajan en el perfil tradicional utilizado para la suscripción de hipotecas residenciales. Un inversionista autónomo puede tener ingresos considerables por propiedades, pero salarios W-2 relativamente modestos. Otro inversionista puede poseer varias propiedades de alquiler, operar a través de una LLC, o tener declaraciones de impuestos que muestran deducciones significativas aunque las propiedades generen un flujo de caja sustancial.
 

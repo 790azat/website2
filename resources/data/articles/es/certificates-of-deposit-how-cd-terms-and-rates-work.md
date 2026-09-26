@@ -2,7 +2,7 @@
 title: "Certificados de depósito: cómo funcionan los plazos y las tasas de los CD"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-09
+date: 2026-03-11
 ---
 Al organizar el ahorro a corto y mediano plazo, un certificado de depósito (CD) puede ofrecer una tasa de interés predecible a cambio de comprometer el dinero durante un período específico. A diferencia de muchas cuentas de ahorro, donde la APY puede cambiar conforme cambian las condiciones del mercado, un CD tradicional de tasa fija generalmente bloquea su tasa establecida durante todo el plazo.
 

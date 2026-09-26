@@ -2,7 +2,7 @@
 title: "Estrategias de indexación directa: personalizar carteras para la eficiencia fiscal y los valores personales"
 section: wealth-management
 author: ethan-kim
-date: 2026-09-25
+date: 2026-05-21
 ---
 Los inversores que desean una exposición amplia al mercado no necesariamente tienen que comprar un solo fondo indexado o ETF. Otro enfoque, conocido como **indexación directa (direct indexing)**, consiste en poseer muchos de los valores individuales que componen un índice y gestionar esas posiciones como una cartera personalizada.
 

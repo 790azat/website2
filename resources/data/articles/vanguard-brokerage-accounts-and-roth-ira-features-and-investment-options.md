@@ -2,7 +2,7 @@
 title: "Vanguard Brokerage Accounts & Roth IRA: Features and Investment Options"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-03-30
 ---
 For investors building long-term wealth, choosing an investment account is an important decision because the account determines how contributions, taxes, withdrawals, and investment choices work together. Vanguard offers both standard brokerage accounts and Roth IRAs, giving investors options for taxable investing and retirement-focused savings.
 

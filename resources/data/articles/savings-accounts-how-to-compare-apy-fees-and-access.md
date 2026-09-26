@@ -2,7 +2,7 @@
 title: "Savings Accounts: How to Compare APY, Fees, and Access"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-18
+date: 2026-06-07
 ---
 A savings account provides a dedicated place to hold money that is not needed for everyday spending. Unlike a checking account, which is generally used for recurring bills and transactions, a savings account can help separate emergency funds, short-term goals, and other cash reserves from daily expenses.
 

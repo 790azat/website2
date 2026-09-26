@@ -2,7 +2,7 @@
 title: "Cómo afectan las tasas de interés de la tarjeta de crédito a su saldo"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-06-26
 ---
 La tasa de interés de una tarjeta de crédito puede tener un efecto significativo en la rapidez con la que crece un saldo y en cuánto tiempo lleva pagar el dinero prestado. La tasa de porcentaje anual, o APR, es la forma estándar en que se expresan los costos de interés de la tarjeta de crédito, pero el monto realmente cobrado en cada ciclo de facturación depende de factores como el saldo, los cálculos diarios de interés, el momento del pago y si se aplica un período de gracia.
 

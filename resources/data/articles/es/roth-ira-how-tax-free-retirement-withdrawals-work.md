@@ -2,7 +2,7 @@
 title: "Roth IRA: cómo funcionan los retiros libres de impuestos en la jubilación"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-18
 ---
 Al construir una estrategia de jubilación a largo plazo, gestionar la exposición fiscal futura puede ser tan importante como seleccionar inversiones y mantener una tasa de ahorro constante. Las cuentas de jubilación tradicionales pueden ofrecer beneficios fiscales potenciales cuando se aporta dinero, mientras que las **Roth IRA** utilizan un modelo de aportación después de impuestos diseñado para ofrecer distribuciones calificadas libres de impuestos más adelante.
 

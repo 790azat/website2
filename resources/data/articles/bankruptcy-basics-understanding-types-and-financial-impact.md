@@ -2,7 +2,7 @@
 title: "Bankruptcy Basics: Understanding Types and Financial Impact"
 section: loans-financing
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-09-21
 ---
 Bankruptcy is a federal legal process designed to address situations in which individuals or businesses cannot meet their financial obligations. Depending on the type of case, bankruptcy can involve liquidation of assets, a court-supervised repayment plan, or reorganization of financial affairs.
 

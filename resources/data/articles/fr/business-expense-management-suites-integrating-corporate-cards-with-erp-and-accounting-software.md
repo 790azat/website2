@@ -2,7 +2,7 @@
 title: "Suites de gestion des dépenses professionnelles : intégrer les cartes d'entreprise aux logiciels ERP et de comptabilité"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-07-31
 ---
 La gestion des dépenses par carte d'entreprise devient nettement plus complexe à mesure qu'une entreprise ajoute des employés, des départements, des filiales, des fournisseurs et des modes de paiement. Une équipe financière peut devoir rapprocher des milliers de transactions par carte tout en veillant à ce que chaque dépense soit affectée au bon compte du grand livre général, au bon département, projet, entité et à la bonne catégorie fiscale.
 

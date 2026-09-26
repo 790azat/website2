@@ -2,7 +2,7 @@
 title: "Assurance habitation : ce que la couverture protège habituellement et ce qu'elle peut exclure"
 section: personal-finance
 author: rachel-bernstein
-date: 2024-02-20
+date: 2026-04-07
 ---
 L'assurance habitation est conçue pour aider à protéger les propriétaires contre les pertes financières liées aux dommages à leur propriété, à leurs biens personnels et à certaines réclamations en responsabilité civile. Bien que les polices puissent offrir une protection étendue, elles ne couvrent pas tous les types de pertes.
 

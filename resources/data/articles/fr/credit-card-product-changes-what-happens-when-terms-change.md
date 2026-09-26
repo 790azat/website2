@@ -2,7 +2,7 @@
 title: "Changements de produit de carte de crédit : que se passe-t-il quand les conditions changent"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-12
 ---
 Les cartes de crédit ne sont pas nécessairement des produits permanents. Un émetteur de carte peut modifier les conditions d'un compte existant, changer les récompenses ou avantages, remplacer un produit de carte par un autre, ou transférer un compte à un émetteur différent. Pour les titulaires de carte, ces changements peuvent affecter le coût de l'emprunt, les frais annuels, les récompenses, le crédit disponible, et même la manière dont le compte peut être utilisé.
 

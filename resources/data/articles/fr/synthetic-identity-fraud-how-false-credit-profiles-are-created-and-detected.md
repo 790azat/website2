@@ -2,7 +2,7 @@
 title: "Fraude à l'identité synthétique : comment de faux profils de crédit sont créés et détectés"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-08-05
 ---
 La fraude à l'identité synthétique diffère du vol d'identité classique, car le criminel ne s'approprie pas nécessairement une identité complète et existante. Une identité synthétique combine plutôt des éléments d'informations légitimes avec des informations fabriquées ou manipulées pour créer un profil qui peut paraître crédible aux prêteurs, aux institutions financières et aux systèmes de vérification automatisés.
 

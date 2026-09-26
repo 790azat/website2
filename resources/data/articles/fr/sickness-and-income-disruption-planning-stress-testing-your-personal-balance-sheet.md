@@ -2,7 +2,7 @@
 title: "Planification en cas de maladie et de perte de revenu : soumettre votre bilan personnel à un test de résistance"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-02-01
 ---
 La planification financière à long terme se concentre souvent sur l'augmentation du revenu, la constitution de portefeuilles de placement, le remboursement de la dette et l'accumulation d'actifs. Ces objectifs sont importants, mais un bilan solide peut tout de même devenir vulnérable lorsque le revenu s'arrête soudainement.
 

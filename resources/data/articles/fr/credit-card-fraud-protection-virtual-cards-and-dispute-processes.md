@@ -2,7 +2,7 @@
 title: "Protection contre la fraude par carte de crédit, cartes virtuelles et procédures de contestation"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-12-25
 ---
 Les cartes de crédit offrent aux consommateurs plus qu'un simple moyen d'emprunter de l'argent. Elles fournissent également des mécanismes pour identifier les transactions non autorisées, contester certaines erreurs de facturation, et limiter les pertes potentielles lorsque les informations de la carte sont compromises.
 

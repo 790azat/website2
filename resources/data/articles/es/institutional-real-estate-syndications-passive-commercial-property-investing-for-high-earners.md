@@ -2,7 +2,7 @@
 title: "Sindicaciones institucionales de bienes raíces: inversión pasiva en propiedades comerciales para personas de altos ingresos"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-05-02
 ---
 Los bienes raíces comerciales pueden requerir capital sustancial, conocimientos especializados y gestión continua. Para los inversores de altos ingresos que desean exposición a propiedades sin comprar y operar todo un edificio por sí mismos, las **sindicaciones de bienes raíces** ofrecen otra estructura.
 

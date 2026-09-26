@@ -2,7 +2,7 @@
 title: "Finances personnelles : comment budgétiser, épargner, gérer ses dettes et bâtir son patrimoine"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-15
+date: 2026-06-29
 ---
 Gérer ses finances personnelles implique plus que le simple suivi des dépenses. Un système financier pratique relie le revenu, les dépenses, l'épargne, les dettes, les placements, l'assurance et les objectifs à long terme, de sorte que chaque volet de votre vie financière soutient les autres.
 

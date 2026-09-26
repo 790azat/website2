@@ -2,7 +2,7 @@
 title: "Charitable Giving: How to Include Giving in Your Financial Plan"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-06
+date: 2026-02-02
 ---
 Charitable giving is often viewed primarily as a personal decision based on values, community involvement, and the desire to support organizations doing meaningful work. For households that regularly donate, however, charitable contributions can also be incorporated into a broader financial plan.
 

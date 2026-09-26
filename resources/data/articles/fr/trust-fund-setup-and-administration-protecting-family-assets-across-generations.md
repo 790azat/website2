@@ -2,7 +2,7 @@
 title: "Création et administration de fiducies (trust funds) : protéger le patrimoine familial à travers les générations"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2026-04-30
 ---
 À mesure que les familles accumulent un patrimoine important, un testament de base peut ne pas répondre à tous les enjeux liés au transfert et à la gestion de la richesse. Un testament prend généralement effet au décès et régit la distribution des actifs qui passent par la procédure d'homologation (probate). Une fiducie (trust) correctement structurée peut fournir des instructions supplémentaires sur la façon dont certains actifs sont gérés, investis et distribués du vivant d'une personne et après son décès.
 

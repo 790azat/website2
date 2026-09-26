@@ -2,7 +2,7 @@
 title: "Comptes d'épargne Ally Bank : caractéristiques, taux et conditions"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-10-25
+date: 2026-07-24
 ---
 Le compte d'épargne en ligne d'Ally Bank est conçu pour les clients qui souhaitent un compte d'épargne numérique sans frais de tenue de compte mensuels ni exigence de solde minimum. Le compte verse actuellement un **APY variable de 3,00 %**, selon la communication des taux d'Ally datée du 10 septembre 2026. Les intérêts sont capitalisés quotidiennement, et aucun dépôt minimum n'est exigé pour ouvrir le compte ou obtenir l'APY publié.
 

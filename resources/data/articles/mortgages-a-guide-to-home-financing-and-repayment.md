@@ -2,7 +2,7 @@
 title: "Mortgages: A Guide to Home Financing and Repayment"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-06
+date: 2026-08-03
 ---
 A mortgage is often one of the largest financial commitments a household will make. Because many home loans are repaid over 15, 20, or 30 years, the interest rate, loan term, down payment, fees, and repayment structure can have a substantial effect on the total cost of borrowing.
 

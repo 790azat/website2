@@ -2,7 +2,7 @@
 title: "Investir dans les dividendes : comment les investisseurs tirent un revenu de la détention d'actions"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-02-27
 ---
 Lorsqu'ils bâtissent une stratégie de placement à long terme, les investisseurs se concentrent souvent sur l'appréciation du capital — la possibilité qu'un actif prenne de la valeur au fil du temps. **L'investissement en dividendes** ajoute une autre source potentielle de rendement en se concentrant sur les entreprises qui distribuent des liquidités à leurs actionnaires.
 

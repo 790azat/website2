@@ -2,7 +2,7 @@
 title: "Bonos corporativos: cómo evaluar los valores de deuda de una empresa"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-10-09
 ---
 Los bonos corporativos permiten a los inversionistas prestar dinero a empresas a cambio de pagos de interés y la eventual devolución del capital. Pueden aportar ingresos y diversificación dentro de una cartera de inversión más amplia, pero el rendimiento que ofrece un bono corporativo está estrechamente ligado a la condición financiera de la empresa que emite la deuda.
 

@@ -2,7 +2,7 @@
 title: "Hard Money and Bridge Loans: Financing for Real Estate Investors"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-20
+date: 2026-04-17
 ---
 Real estate investors sometimes need financing on a timeline that does not fit conventional mortgage underwriting. An acquisition opportunity may require a quick closing, a property may need substantial renovation before it can qualify for permanent financing, or an investor may want to purchase and reposition an underperforming property before refinancing or selling it.
 

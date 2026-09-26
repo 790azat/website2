@@ -2,7 +2,7 @@
 title: "Seguro de cuidado a largo plazo: qué deben considerar los asegurados"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2025-10-01
 ---
 La planificación de la jubilación suele centrarse en los rendimientos de inversión, los impuestos, el Seguro Social y los ingresos sostenibles. Un riesgo financiero que puede recibir menos atención es el costo potencial del cuidado a largo plazo.
 

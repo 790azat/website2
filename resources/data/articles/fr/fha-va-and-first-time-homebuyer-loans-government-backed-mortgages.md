@@ -2,7 +2,7 @@
 title: "Prêts FHA, VA et pour primo-accédants : les prêts hypothécaires soutenus par le gouvernement"
 section: loans-financing
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-03-25
 ---
 Pour de nombreux acheteurs, le plus grand obstacle n'est pas de trouver une propriété. C'est de trouver une structure hypothécaire adaptée à leur profil de crédit, à leur épargne disponible, à leur revenu et à leur budget mensuel prévu.
 

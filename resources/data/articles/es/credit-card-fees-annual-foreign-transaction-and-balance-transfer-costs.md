@@ -2,7 +2,7 @@
 title: "Cuotas de tarjetas de crédito: costos anuales, de transacciones en el extranjero y de transferencia de saldo"
 section: credit-cards
 author: lucas-vance
-date: 2026-09-25
+date: 2026-06-01
 ---
 El costo de una tarjeta de crédito no está determinado únicamente por su tasa de interés. Dependiendo de cómo se use la cuenta, los consumidores pueden encontrarse con cuotas anuales, cuotas por transacciones en el extranjero, cuotas por transferencia de saldo, cuotas por adelanto de efectivo, cargos por pago tardío y otros costos de cuenta.
 

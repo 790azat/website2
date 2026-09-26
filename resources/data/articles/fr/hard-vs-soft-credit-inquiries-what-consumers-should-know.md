@@ -2,7 +2,7 @@
 title: "Demandes de crédit dures vs douces : ce que les consommateurs devraient savoir"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2025-11-04
 ---
 Chaque fois qu'un prêteur, une société de carte de crédit, ou une autre entreprise vérifie le rapport de crédit d'un consommateur, cette activité peut être enregistrée comme une demande de renseignements sur le crédit (credit inquiry). Mais toutes les demandes n'ont pas le même effet.
 

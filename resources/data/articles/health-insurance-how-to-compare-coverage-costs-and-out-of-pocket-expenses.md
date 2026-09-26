@@ -2,7 +2,7 @@
 title: "Health Insurance: How to Compare Coverage, Costs, and Out-of-Pocket Expenses"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-02-16
+date: 2025-12-07
 ---
 Health insurance can affect both access to medical care and household finances. The monthly premium is only one part of the total cost. Deductibles, copayments, coinsurance, provider networks, prescription coverage, and the annual out-of-pocket maximum can all influence how much a person ultimately pays for healthcare.
 

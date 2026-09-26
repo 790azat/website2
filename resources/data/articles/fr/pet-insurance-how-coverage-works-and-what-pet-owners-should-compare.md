@@ -2,7 +2,7 @@
 title: "Assurance animaux de compagnie : comment fonctionne la couverture et que comparer"
 section: personal-finance
 author: hannah-cohen
-date: 2026-02-21
+date: 2026-07-24
 ---
 Les soins vétérinaires peuvent devenir coûteux lorsqu'un animal de compagnie développe une maladie imprévue ou subit une blessure. Les visites d'urgence, les tests diagnostiques, la chirurgie, l'hospitalisation et les traitements spécialisés peuvent créer des dépenses substantielles, particulièrement lorsque des soins vétérinaires avancés sont nécessaires.
 

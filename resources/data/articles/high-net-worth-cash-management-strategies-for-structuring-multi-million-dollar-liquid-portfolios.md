@@ -2,7 +2,7 @@
 title: "High-Net-Worth Cash Management: Strategies for Structuring Multi-Million-Dollar Liquid Portfolios"
 section: personal-finance
 author: samuel-mensah
-date: 2026-03-11
+date: 2026-05-04
 ---
 Managing a few thousand dollars of household liquidity is fundamentally different from managing several million dollars in cash. Large liquid balances can arise from a business sale, inheritance, real estate transaction, equity compensation, concentrated investment positions, or the accumulation of business reserves.
 

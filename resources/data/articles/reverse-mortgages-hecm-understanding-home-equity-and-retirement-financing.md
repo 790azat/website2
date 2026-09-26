@@ -2,7 +2,7 @@
 title: "Reverse Mortgages (HECM): Understanding Home Equity and Retirement Financing"
 section: loans-financing
 author: hannah-cohen
-date: 2026-10-16
+date: 2025-10-06
 ---
 For homeowners entering retirement with substantial home equity but limited monthly income, a reverse mortgage can provide another way to access housing wealth without selling the property immediately.
 

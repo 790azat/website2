@@ -2,7 +2,7 @@
 title: "Synthetic Identity Fraud: How False Credit Profiles Are Created and Detected"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-08-05
 ---
 Synthetic identity fraud is different from conventional identity theft because the criminal does not necessarily take over a complete, existing identity. Instead, a synthetic identity combines pieces of legitimate information with fabricated or manipulated information to create a profile that can appear credible to lenders, financial institutions, and automated verification systems.
 

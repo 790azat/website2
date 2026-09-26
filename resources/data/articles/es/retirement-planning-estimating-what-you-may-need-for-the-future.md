@@ -2,7 +2,7 @@
 title: "Planificación de la jubilación: cómo estimar lo que podría necesitar para el futuro"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-03-05
 ---
 Una de las preguntas centrales en la planificación de la jubilación es engañosamente simple: **¿cuánto dinero necesitaré para jubilarme?**
 

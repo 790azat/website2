@@ -2,7 +2,7 @@
 title: "Préstamos hard money y préstamos puente: financiamiento para inversionistas inmobiliarios"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-20
+date: 2026-04-17
 ---
 Los inversionistas inmobiliarios a veces necesitan financiamiento en un plazo que no encaja con la suscripción hipotecaria convencional. Una oportunidad de adquisición puede requerir un cierre rápido, una propiedad puede necesitar una renovación sustancial antes de calificar para un financiamiento permanente, o un inversionista puede querer comprar y reposicionar una propiedad de bajo rendimiento antes de refinanciarla o venderla.
 

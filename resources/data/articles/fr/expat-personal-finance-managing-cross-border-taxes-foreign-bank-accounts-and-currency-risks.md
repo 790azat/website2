@@ -2,7 +2,7 @@
 title: "Finances personnelles des expatriés : gérer la fiscalité transfrontalière, les comptes bancaires étrangers et les risques de change"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2025-12-01
 ---
 Vivre à l'étranger peut créer de nouvelles opportunités de travail, d'affaires, de voyage et de flexibilité de style de vie. Cela peut aussi rendre les finances personnelles considérablement plus complexes.
 

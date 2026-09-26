@@ -2,7 +2,7 @@
 title: "Dividend Investing: How Investors Earn Income From Stock Ownership"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-02-27
 ---
 When building a long-term investment strategy, investors often focus on capital appreciation—the potential for an asset to increase in value over time. **Dividend investing** adds another potential source of return by focusing on companies that distribute cash to shareholders.
 

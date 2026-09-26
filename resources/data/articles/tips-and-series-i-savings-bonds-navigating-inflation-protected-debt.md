@@ -2,7 +2,7 @@
 title: "TIPS and Series I Savings Bonds: Navigating Inflation-Protected Debt"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-03
 ---
 Inflation can create a problem that is easy to overlook when looking at an investment statement: the account balance may rise while the purchasing power of that money falls.
 

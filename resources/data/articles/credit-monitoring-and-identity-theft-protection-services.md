@@ -2,7 +2,7 @@
 title: "Credit Monitoring & Identity Theft Protection Services"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-15
 ---
 Identity theft can create financial problems that extend far beyond an unfamiliar credit-card charge. A stolen Social Security number or other personal information can potentially be used to apply for credit, open accounts, obtain services, or commit other forms of fraud.
 

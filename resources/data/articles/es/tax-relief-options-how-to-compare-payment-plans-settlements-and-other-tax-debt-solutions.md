@@ -2,7 +2,7 @@
 title: "Opciones de alivio fiscal: cómo comparar planes de pago, acuerdos transaccionales y otras soluciones para deudas tributarias"
 section: personal-finance
 author: sofia-martinez
-date: 2024-05-20
+date: 2025-10-22
 ---
 Un saldo de impuestos impago puede volverse más difícil de manejar a medida que se acumulan los intereses y las penalidades aplicables. Para los contribuyentes que no pueden pagar el monto total de inmediato, el Servicio de Impuestos Internos (IRS) ofrece varias formas de abordar la deuda tributaria federal, incluidos planes de pago a corto plazo, acuerdos de pago a plazos a largo plazo, ofertas de transacción (offers in compromise), aplazamientos temporales de cobro y ciertas formas de alivio de penalidades.
 

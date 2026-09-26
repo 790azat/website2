@@ -2,7 +2,7 @@
 title: "Préqualification pour un prêt personnel et frais d'origination"
 section: loans-financing
 author: sofia-martinez
-date: 2026-10-03
+date: 2026-03-01
 ---
 Magasiner un prêt personnel implique plus que de trouver un taux d'intérêt annoncé.
 

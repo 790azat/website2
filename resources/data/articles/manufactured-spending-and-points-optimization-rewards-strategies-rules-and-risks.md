@@ -2,7 +2,7 @@
 title: "Manufactured Spending and Points Optimization: Rewards Strategies, Rules, and Risks"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-07-12
 ---
 Credit card rewards can turn ordinary spending into cash back, airline miles, hotel points, and other benefits. For some consumers, the pursuit of rewards goes further into a practice commonly called **manufactured spending**—using transactions that are designed primarily to generate credit card spending volume and rewards rather than to purchase goods or services the cardholder genuinely needs.
 

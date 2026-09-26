@@ -2,7 +2,7 @@
 title: "Cuentas de ahorro empresariales: cómo pueden las empresas gestionar sus reservas de efectivo"
 section: personal-finance
 author: samuel-mensah
-date: 2026-03-10
+date: 2026-09-18
 ---
 Una cuenta corriente empresarial está diseñada para mantener en marcha las operaciones diarias. La nómina, las facturas de proveedores, las suscripciones de software, los impuestos y otros gastos recurrentes normalmente circulan a través de una cuenta operativa. Pero las empresas también pueden acumular efectivo que no se necesita de inmediato para transacciones.
 

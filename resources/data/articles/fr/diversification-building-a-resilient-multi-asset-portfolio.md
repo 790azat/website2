@@ -2,7 +2,7 @@
 title: "Diversification : bâtir un portefeuille multi-actifs résilient"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2026-02-12
 ---
 Les investisseurs savent rarement quelle catégorie d'actifs mènera le marché au cours de l'année à venir, et tenter de prévoir chaque changement peut introduire ses propres risques. Un portefeuille construit autour d'une seule entreprise, d'un seul secteur, d'un seul marché ou d'un seul type de placement peut devenir fortement dépendant d'un ensemble précis de conditions économiques.
 

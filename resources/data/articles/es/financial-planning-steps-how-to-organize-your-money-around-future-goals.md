@@ -2,7 +2,7 @@
 title: "Pasos de la planificación financiera: cómo organizar su dinero en torno a metas futuras"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-08
+date: 2026-07-04
 ---
 La planificación financiera a veces se percibe como un ejercicio restrictivo, enfocado en recortar gastos y limitar el consumo. En la práctica, un plan financiero es un marco para dirigir los ingresos hacia lo que más importa, desde los ahorros de emergencia y el pago de deudas hasta la compra de vivienda, la jubilación y la acumulación de patrimonio a largo plazo.
 

@@ -2,7 +2,7 @@
 title: "Estrategias de gestión patrimonial: cómo organizar inversiones, activos y objetivos"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-06-18
 ---
 A medida que los activos financieros crecen más allá de los ahorros básicos y las reservas de emergencia, gestionar el dinero se vuelve cada vez más complejo. Múltiples cuentas de inversión, bienes raíces, planes de jubilación, pólizas de seguro, obligaciones fiscales y documentos patrimoniales pueden crear un panorama financiero fragmentado.
 

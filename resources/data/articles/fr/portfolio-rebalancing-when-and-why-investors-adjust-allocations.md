@@ -2,7 +2,7 @@
 title: "Rééquilibrage de portefeuille : quand et pourquoi les investisseurs ajustent leurs allocations"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-08
 ---
 Un portefeuille peut progressivement devenir très différent de celui qu'un investisseur avait initialement l'intention de construire. Une forte hausse des actions peut augmenter l'exposition aux actions, tandis que la baisse des prix des obligations ou de nouveaux versements peuvent faire évoluer la répartition dans une autre direction. Avec le temps, ces changements peuvent modifier le niveau de risque pris par un investisseur sans aucune décision délibérée en ce sens.
 

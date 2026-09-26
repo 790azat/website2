@@ -2,7 +2,7 @@
 title: "Comptes chèques à haut rendement : que comparer"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-10
+date: 2026-08-21
 ---
 Un compte chèque est généralement le centre opérationnel des finances d'un ménage. Les chèques de paie arrivent par dépôt direct, les factures récurrentes sont payées, les cartes de débit servent aux achats quotidiens, et l'argent entre et sort tout au long du mois. Un compte chèque à haut rendement ajoute un avantage potentiel supplémentaire : la possibilité de gagner des intérêts sur l'argent qui resterait autrement inactif entre les dépenses.
 

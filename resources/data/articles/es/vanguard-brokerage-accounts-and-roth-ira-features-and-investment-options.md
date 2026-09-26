@@ -2,7 +2,7 @@
 title: "Cuentas de corretaje de Vanguard y Roth IRA: características y opciones de inversión"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-03-30
 ---
 Para los inversores que construyen riqueza a largo plazo, elegir una cuenta de inversión es una decisión importante, porque la cuenta determina cómo interactúan las aportaciones, los impuestos, los retiros y las opciones de inversión. Vanguard ofrece tanto cuentas de corretaje estándar como Roth IRA, lo que da a los inversores opciones para invertir de forma gravable y para el ahorro orientado a la jubilación.
 

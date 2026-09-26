@@ -2,7 +2,7 @@
 title: "Couverture Medicare : comment comparer les parties, l'inscription et les coûts courants"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-02-18
+date: 2026-02-27
 ---
 Medicare est un programme fédéral d'assurance maladie comportant plusieurs volets de couverture, chacun ayant un objectif différent. Comprendre le fonctionnement des **Parties A, B, C et D de Medicare** peut aider les personnes approchant de l'admissibilité à Medicare à évaluer les primes, les franchises, l'accès aux fournisseurs, la couverture des médicaments d'ordonnance et les dépenses potentielles à leur charge.
 

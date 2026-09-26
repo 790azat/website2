@@ -2,7 +2,7 @@
 title: "Financement d'équipement : comment les entreprises peuvent financer des achats essentiels"
 section: loans-financing
 author: ethan-kim
-date: 2026-09-28
+date: 2025-10-16
 ---
 L'équipement peut représenter l'une des plus importantes dépenses en capital qu'une entreprise engage. Un entrepreneur peut avoir besoin d'une nouvelle excavatrice, un fabricant peut nécessiter des machines de production, un restaurant peut avoir besoin d'équipement de cuisine commerciale, ou un cabinet médical peut avoir besoin de technologie spécialisée.
 

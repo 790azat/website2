@@ -2,7 +2,7 @@
 title: "Répartition d'actifs : comment les investisseurs divisent leur argent entre différents placements"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-10-15
 ---
 La répartition d'actifs est le processus qui consiste à décider combien d'argent placer dans différents types de placements. Plutôt que de considérer un portefeuille comme une collection d'actions, d'obligations, de fonds et de comptes de liquidités individuels, les investisseurs peuvent regarder le portefeuille dans son ensemble et déterminer l'exposition souhaitée à chaque grande classe d'actifs.
 

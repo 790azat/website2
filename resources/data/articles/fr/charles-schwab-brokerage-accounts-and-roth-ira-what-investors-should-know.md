@@ -2,7 +2,7 @@
 title: "Comptes de courtage Charles Schwab et Roth IRA : ce que les investisseurs doivent savoir"
 section: wealth-management
 author: ethan-kim
-date: 2026-09-25
+date: 2026-03-18
 ---
 Choisir un compte d'investissement implique bien plus que de décider quelles actions, quels fonds ou autres titres acheter. La structure du compte détermine comment l'argent peut être versé, comment les revenus de placement sont imposés, et avec quelle facilité les fonds peuvent être retirés.
 

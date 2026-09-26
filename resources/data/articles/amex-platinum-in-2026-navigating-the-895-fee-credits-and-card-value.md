@@ -2,7 +2,7 @@
 title: "Amex Platinum in 2026: Navigating the $895 Fee, Credits, and Card Value"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2025-12-30
 ---
 The **American Express Platinum Card®** has evolved into something considerably broader than a traditional travel-rewards credit card. In 2026, its \$895 annual fee is supported by a large collection of travel, dining, entertainment, shopping, and lifestyle credits.
 

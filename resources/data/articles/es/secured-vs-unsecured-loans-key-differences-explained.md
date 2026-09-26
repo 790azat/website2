@@ -2,7 +2,7 @@
 title: "Préstamos garantizados frente a no garantizados: diferencias clave explicadas"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-10
+date: 2025-12-28
 ---
 Pedir dinero prestado implica más que comparar tasas de interés. Una de las diferencias estructurales más importantes entre los préstamos es si la deuda está **garantizada por una garantía (colateral)** o es **no garantizada**.
 

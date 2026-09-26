@@ -2,7 +2,7 @@
 title: "Assurance voyage : les points à considérer avant de protéger un voyage"
 section: personal-finance
 author: hannah-cohen
-date: 2026-02-28
+date: 2025-10-26
 ---
 Que vous planifiiez des vacances à l'étranger, un itinéraire complexe passant par plusieurs villes, ou un long séjour international, l'assurance voyage peut offrir un filet de sécurité financier contre les imprévus. Des annulations de vol et bagages perdus aux urgences médicales graves à l'étranger, une police adaptée peut aider à réduire les dépenses à débourser, qui pourraient autrement peser significativement sur le coût global d'un voyage.
 

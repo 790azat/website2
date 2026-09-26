@@ -2,7 +2,7 @@
 title: "Robinhood IRA : comment fonctionne l'investissement retraite sur la plateforme"
 section: wealth-management
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-07-23
 ---
 L'investissement retraite a traditionnellement impliqué de choisir entre un régime de retraite en milieu de travail, un IRA traditionnel ou un Roth IRA, puis de gérer les investissements par l'intermédiaire d'une plateforme de courtage. Robinhood a élargi ce modèle en offrant des IRA traditionnels et Roth par l'intermédiaire de la même application que de nombreux investisseurs utilisent déjà pour l'investissement imposable.
 

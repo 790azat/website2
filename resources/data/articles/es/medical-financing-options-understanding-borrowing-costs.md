@@ -2,7 +2,7 @@
 title: "Opciones de financiamiento médico: cómo entender los costos de endeudamiento"
 section: loans-financing
 author: claire-odonnell
-date: 2026-10-02
+date: 2025-10-23
 ---
 Los gastos médicos pueden crear un problema financiero difícil porque la necesidad de tratamiento no siempre coincide con la capacidad de pagarlo. Incluso los pacientes asegurados pueden enfrentar deducibles, coseguros, copagos, exclusiones y servicios que su plan no cubre.
 

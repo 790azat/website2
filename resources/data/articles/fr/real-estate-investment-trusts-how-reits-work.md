@@ -2,7 +2,7 @@
 title: "Fonds de placement immobilier : comment fonctionnent les REIT"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-04-13
 ---
 Les fonds de placement immobilier, communément appelés REIT, offrent aux investisseurs un moyen d'obtenir une exposition à l'immobilier générateur de revenus sans acheter ni gérer une propriété directement. Au lieu d'acheter un immeuble d'appartements, un complexe de bureaux, un entrepôt, un centre commercial ou une autre propriété, un investisseur peut acheter des actions d'un REIT par l'intermédiaire d'un compte de courtage.
 

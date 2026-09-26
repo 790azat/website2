@@ -2,7 +2,7 @@
 title: "Cartes de crédit étudiantes : ce que les jeunes demandeurs devraient considérer"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-08-05
 ---
 Pour un étudiant universitaire, une carte de crédit peut être l'un des premiers produits financiers utilisés de façon indépendante. Utilisée avec soin, elle peut offrir un moyen pratique de payer les dépenses quotidiennes tout en aidant à établir un historique de crédit. Utilisée sans plan de remboursement, cependant, même un solde relativement petit peut devenir coûteux à mesure que les intérêts s'accumulent.
 

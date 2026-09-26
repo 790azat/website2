@@ -2,7 +2,7 @@
 title: "Robinhood IRA: How Retirement Investing Works on the Platform"
 section: wealth-management
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-07-23
 ---
 Retirement investing has traditionally involved choosing between a workplace retirement plan, a traditional IRA, or a Roth IRA and then managing investments through a brokerage platform. Robinhood has expanded that model by offering traditional and Roth IRAs through the same app many investors already use for taxable investing.
 

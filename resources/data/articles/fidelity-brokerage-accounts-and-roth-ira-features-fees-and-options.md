@@ -2,7 +2,7 @@
 title: "Fidelity Brokerage Accounts & Roth IRA: Features, Fees, and Options"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-11-18
 ---
 For investors deciding where to hold their investments, the account itself can be just as important as the securities inside it. A taxable brokerage account offers flexibility and broad access to investments, while a Roth IRA is designed specifically for retirement and provides a different tax structure.
 

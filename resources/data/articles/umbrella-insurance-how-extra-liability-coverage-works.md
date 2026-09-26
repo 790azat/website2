@@ -2,7 +2,7 @@
 title: "Umbrella Insurance: How Extra Liability Coverage Works"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2026-04-03
 ---
 Homeowners insurance and auto insurance provide important liability protection, but the limits on those policies may not be sufficient for every household. A serious vehicle accident, major injury on someone's property, or other liability claim can potentially create expenses that exceed the limits of an underlying insurance policy.
 

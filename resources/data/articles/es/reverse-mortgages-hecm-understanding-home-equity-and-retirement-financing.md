@@ -2,7 +2,7 @@
 title: "Hipotecas inversas (HECM): entendiendo el capital de la vivienda y el financiamiento de la jubilación"
 section: loans-financing
 author: hannah-cohen
-date: 2026-10-16
+date: 2025-10-06
 ---
 Para los propietarios de vivienda que ingresan a la jubilación con un capital inmobiliario sustancial pero ingresos mensuales limitados, una hipoteca inversa puede ofrecer otra forma de acceder a la riqueza acumulada en la vivienda sin vender la propiedad de inmediato.
 

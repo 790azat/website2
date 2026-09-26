@@ -2,7 +2,7 @@
 title: "Life Insurance Basics: How to Compare Coverage, Beneficiaries, and Policy Types"
 section: personal-finance
 author: hannah-cohen
-date: 2026-02-09
+date: 2025-10-03
 ---
 Life insurance can provide financial protection for people who depend on your income or would face significant expenses after your death. Depending on the policy, a death benefit can help replace lost income, pay outstanding debts, cover final expenses, or provide funds for future financial goals.
 

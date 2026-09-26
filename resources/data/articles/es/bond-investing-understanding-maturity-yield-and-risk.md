@@ -2,7 +2,7 @@
 title: "Inversión en Bonos: Comprendiendo el Vencimiento, el Rendimiento y el Riesgo"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-10-23
 ---
 Los bonos a menudo se describen como el lado más predecible de una cartera de inversión, pero esa descripción puede ser engañosa. Un bono es un préstamo que un inversionista hace a un gobierno, una corporación, un municipio u otro emisor. A cambio, el prestatario generalmente promete hacer pagos de intereses y devolver el capital del bono según los términos de la emisión.
 

@@ -2,7 +2,7 @@
 title: "Diversificación: construir una cartera multiactivo resiliente"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2026-02-12
 ---
 Los inversores rara vez saben qué clase de activo liderará el mercado durante el próximo año, y tratar de predecir cada cambio puede introducir riesgos propios. Una cartera construida en torno a una sola empresa, sector, mercado o tipo de inversión puede volverse muy dependiente de un único conjunto de condiciones económicas.
 

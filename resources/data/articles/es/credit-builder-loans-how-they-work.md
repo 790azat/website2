@@ -2,7 +2,7 @@
 title: "Préstamos para construir crédito: cómo funcionan"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-11
 ---
 Construir un historial crediticio puede ser difícil cuando se tiene poca o ninguna experiencia de endeudamiento. Los prestamistas generalmente quieren ver evidencia de que usted puede manejar el crédito de manera responsable, pero establecer ese historial puede ser complicado cuando aún no ha tenido la oportunidad de pedir prestado.
 

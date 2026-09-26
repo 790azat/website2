@@ -2,7 +2,7 @@
 title: "SEP IRA et Solo 401(k) : la planification de la retraite pour les travailleurs autonomes"
 section: wealth-management
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-09-03
 ---
 La planification de la retraite prend une tournure différente lorsqu'aucun employeur n'offre de 401(k), de cotisations de contrepartie ou de système de paie automatique. Les pigistes, consultants, travailleurs autonomes, entreprises individuelles et propriétaires d'entreprise doivent créer leur propre structure de retraite, et le choix du compte peut avoir un effet significatif sur le montant qu'ils peuvent épargner et sur la façon dont les cotisations sont imposées.
 

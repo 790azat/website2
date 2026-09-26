@@ -2,7 +2,7 @@
 title: "Financement d'une voiture d'occasion : les points à vérifier avant de financer un véhicule usagé"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-03-24
 ---
 Financer un véhicule d'occasion implique plus que de trouver une voiture qui correspond au budget et de choisir un paiement mensuel. L'état du véhicule, son âge, son kilométrage, son prix d'achat, le taux d'intérêt, la durée du prêt, les frais, la mise de fonds et la source de financement peuvent tous influer sur le coût total.
 

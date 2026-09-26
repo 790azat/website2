@@ -2,7 +2,7 @@
 title: "Amélioration du pointage de crédit : guide pour bâtir un meilleur crédit"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-25
 ---
 Un pointage de crédit peut influencer les taux d'intérêt, les limites de crédit et les conditions d'emprunt offertes à un consommateur. Il peut aussi avoir un impact sur les demandes de prêts hypothécaires, de prêts automobiles, de cartes de crédit et d'autres produits financiers.
 

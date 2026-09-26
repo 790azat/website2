@@ -2,7 +2,7 @@
 title: "Protocoles de transmission de patrimoine intergénérationnel : minimiser les frictions liées à l'homologation et les droits de succession"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-25
+date: 2026-01-16
 ---
 À mesure que le patrimoine familial augmente, transférer des actifs d'une génération à l'autre devient plus compliqué que de simplement rédiger un testament et désigner des bénéficiaires. L'immobilier, les comptes de placement, les intérêts commerciaux, l'assurance-vie et d'autres actifs peuvent chacun suivre des règles de propriété et de transfert différentes.
 

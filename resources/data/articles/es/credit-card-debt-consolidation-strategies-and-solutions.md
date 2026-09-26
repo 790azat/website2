@@ -2,7 +2,7 @@
 title: "Consolidación de deuda de tarjetas de crédito: estrategias y soluciones"
 section: credit-cards
 author: lucas-vance
-date: 2026-09-25
+date: 2026-09-10
 ---
 Mantener saldos en varias tarjetas de crédito puede hacer que la deuda sea más difícil de gestionar. Las diferentes tasas de interés, fechas de pago, pagos mínimos y condiciones de cuenta pueden dificultar ver cuánto cuesta realmente la deuda cada mes.
 

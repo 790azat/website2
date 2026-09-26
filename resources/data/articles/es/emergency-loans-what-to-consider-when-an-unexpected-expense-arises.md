@@ -2,7 +2,7 @@
 title: "Préstamos de emergencia: qué considerar cuando surge un gasto inesperado"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-08-29
 ---
 Los gastos inesperados rara vez llegan en un momento conveniente. Un vehículo puede necesitar una reparación urgente, un electrodoméstico importante puede dejar de funcionar, una factura médica puede llegar antes del próximo cheque de pago, o una interrupción de ingresos puede dejar a un hogar corto de efectivo.
 

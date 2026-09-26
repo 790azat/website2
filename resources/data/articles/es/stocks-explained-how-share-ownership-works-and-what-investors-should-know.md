@@ -2,7 +2,7 @@
 title: "Acciones explicadas: cómo funciona la propiedad de acciones y qué deben saber los inversionistas"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2026-03-26
 ---
 Las acciones son una de las principales formas en que las personas pueden participar del crecimiento de las empresas que cotizan en bolsa. A diferencia de un depósito bancario, una acción representa una participación de propiedad en un negocio y puede generar rendimientos mediante cambios en el valor de mercado y, para algunas empresas, mediante el pago de dividendos.
 

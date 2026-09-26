@@ -2,7 +2,7 @@
 title: "Étapes de planification financière : comment organiser votre argent autour de vos objectifs futurs"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-08
+date: 2026-07-04
 ---
 La planification financière est parfois perçue comme un exercice restrictif axé sur la réduction des dépenses et la limitation des achats. En pratique, un plan financier est un cadre pour diriger le revenu vers ce qui compte le plus, de l'épargne d'urgence et du remboursement de dettes à l'accession à la propriété, la retraite et la constitution de patrimoine à long terme.
 

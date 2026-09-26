@@ -2,7 +2,7 @@
 title: "Assurance locataire et copropriété : comprendre la couverture de biens et de responsabilité"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2025-10-12
 ---
 Les locataires et les propriétaires de copropriété font face à des risques immobiliers différents de ceux des propriétaires de maisons individuelles, mais tous deux peuvent être exposés financièrement de façon importante sans une assurance appropriée. La police d'assurance d'un propriétaire bailleur ne couvre généralement pas les biens personnels d'un locataire, tandis que la police maîtresse d'une association de copropriété peut ne pas couvrir tout ce qui se trouve à l'intérieur d'une unité individuelle.
 

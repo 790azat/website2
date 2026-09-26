@@ -2,7 +2,7 @@
 title: "Tarjetas de Crédito Comerciales y Creación de Crédito Empresarial: Gestión del Gasto de la Empresa"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-07-20
 ---
 Administrar un negocio se vuelve más complicado a medida que crecen los gastos. Las suscripciones de software, la publicidad, el inventario, los viajes, el equipo, los pagos a contratistas y los costos operativos recurrentes pueden crear rápidamente una larga lista de transacciones por rastrear.
 

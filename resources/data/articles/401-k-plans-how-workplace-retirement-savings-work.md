@@ -2,7 +2,7 @@
 title: "401(k) Plans: How Workplace Retirement Savings Work"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-03
 ---
 For many employees, a **401(k) plan** is one of the primary vehicles for building retirement savings through automatic payroll contributions, tax-advantaged investment growth, and potential employer contributions. Workplace retirement plans can also provide access to diversified investments such as mutual funds, target-date funds, stock funds, and bond funds.
 

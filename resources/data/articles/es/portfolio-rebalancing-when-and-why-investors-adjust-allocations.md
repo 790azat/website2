@@ -2,7 +2,7 @@
 title: "Reequilibrio de cartera: cuándo y por qué los inversores ajustan sus asignaciones"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-08
 ---
 Una cartera puede, con el tiempo, volverse muy diferente de la que un inversor originalmente pretendía construir. Un fuerte repunte en las acciones puede aumentar la exposición a renta variable, mientras que la caída de los precios de los bonos o las nuevas aportaciones pueden desplazar la combinación en otra dirección. Con el tiempo, estos cambios pueden alterar el nivel de riesgo que asume un inversor sin que exista una decisión deliberada de hacerlo.
 

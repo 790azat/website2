@@ -2,7 +2,7 @@
 title: "Hotel and Airline Status Matching: Credit Card Programs, Eligibility, and Travel Benefits"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-07-13
 ---
 Hotel and airline elite status can provide benefits that would otherwise require substantial travel activity to earn. Depending on the program, those benefits can include room upgrades, priority services, bonus points, lounge access, preferred boarding, baggage allowances, or other travel privileges.
 

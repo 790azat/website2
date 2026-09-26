@@ -2,7 +2,7 @@
 title: "Money Market Accounts: How They Compare With Savings Accounts"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-08
+date: 2025-12-23
 ---
 When organizing short-term cash reserves, the account you choose can affect how easily you access your money, how much interest you earn, and what fees you pay. Money market accounts (MMAs) and savings accounts can both serve as places to hold emergency savings or money earmarked for near-term expenses, but their features are not identical.
 

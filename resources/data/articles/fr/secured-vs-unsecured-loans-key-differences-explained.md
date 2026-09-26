@@ -2,7 +2,7 @@
 title: "Prêts garantis vs non garantis : principales différences expliquées"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-10
+date: 2025-12-28
 ---
 Emprunter de l'argent implique plus que de comparer les taux d'intérêt. L'une des différences structurelles les plus importantes entre les prêts est de savoir si la dette est **garantie par une sûreté (collateral)** ou **non garantie**.
 

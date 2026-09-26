@@ -2,7 +2,7 @@
 title: "Prêts hard money et prêts relais : financement pour les investisseurs immobiliers"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-20
+date: 2026-04-17
 ---
 Les investisseurs immobiliers ont parfois besoin d'un financement selon un calendrier qui ne correspond pas à la souscription hypothécaire conventionnelle. Une opportunité d'acquisition peut nécessiter une clôture rapide, une propriété peut nécessiter une rénovation substantielle avant de pouvoir se qualifier pour un financement permanent, ou un investisseur peut vouloir acheter et repositionner une propriété sous-performante avant de refinancer ou de la vendre.
 

@@ -2,7 +2,7 @@
 title: "Revenu passif : comprendre les différentes façons de générer un revenu supplémentaire"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-07
+date: 2026-02-08
 ---
 Bâtir son indépendance financière implique souvent de créer plus d'une source de revenu. Un emploi principal ou une entreprise active peut fournir la majorité des flux de trésorerie du ménage, mais des sources de revenu supplémentaires peuvent offrir davantage de flexibilité et diversifier les sources soutenant les objectifs financiers à long terme.
 

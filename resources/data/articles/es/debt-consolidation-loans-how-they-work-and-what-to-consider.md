@@ -2,7 +2,7 @@
 title: "Préstamos de consolidación de deuda: cómo funcionan y qué considerar"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-30
+date: 2025-10-17
 ---
 Gestionar varias deudas al mismo tiempo puede dificultar la organización de los pagos. Un prestatario puede tener varios saldos de tarjetas de crédito, un préstamo personal, facturas médicas u otras obligaciones elegibles, cada una con su propia fecha de pago, tasa de interés y saldo.
 

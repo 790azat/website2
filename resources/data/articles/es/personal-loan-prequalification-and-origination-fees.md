@@ -2,7 +2,7 @@
 title: "Precalificación de préstamos personales y comisiones de originación"
 section: loans-financing
 author: sofia-martinez
-date: 2026-10-03
+date: 2026-03-01
 ---
 Buscar un préstamo personal implica más que encontrar una tasa de interés anunciada.
 

@@ -2,7 +2,7 @@
 title: "Conceptos básicos del seguro de vida: cómo comparar la cobertura, los beneficiarios y los tipos de póliza"
 section: personal-finance
 author: hannah-cohen
-date: 2026-02-09
+date: 2025-10-03
 ---
 El seguro de vida puede ofrecer protección financiera a las personas que dependen de sus ingresos o que enfrentarían gastos significativos después de su fallecimiento. Según la póliza, un beneficio por fallecimiento puede ayudar a reemplazar el ingreso perdido, pagar deudas pendientes, cubrir gastos finales o proporcionar fondos para metas financieras futuras.
 

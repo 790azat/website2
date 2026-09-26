@@ -2,7 +2,7 @@
 title: "Avances de fonds de carte de crédit et transactions en devises étrangères"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-04-07
 ---
 Les cartes de crédit peuvent être pratiques lors de voyages à l'étranger, pour effectuer des achats internationaux en ligne, ou pour accéder à des liquidités d'urgence. Mais les transactions en dehors de la catégorie d'achat habituelle peuvent comporter des coûts supplémentaires faciles à négliger.
 

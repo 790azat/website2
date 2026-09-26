@@ -2,7 +2,7 @@
 title: "TIPS et obligations d'épargne de série I : comprendre la dette protégée contre l'inflation"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-03
 ---
 L'inflation peut créer un problème facile à négliger lorsqu'on consulte un relevé de placement : le solde du compte peut augmenter alors que le pouvoir d'achat de cet argent diminue.
 

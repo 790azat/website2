@@ -2,7 +2,7 @@
 title: "Récolte de pertes fiscales avancée : réduire légalement votre charge fiscale sur les plus-values"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2025-10-05
 ---
 Construire un portefeuille de placement imposable ne consiste pas seulement à générer des rendements. Les impôts peuvent affecter significativement la part de ces rendements qui reste disponible pour être réinvestie, en particulier lorsqu'un portefeuille génère des plus-values substantielles par le biais de rééquilibrages, de ventes de titres ou d'autres transactions imposables.
 

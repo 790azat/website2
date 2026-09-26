@@ -2,7 +2,7 @@
 title: "Notions de base de la planification successorale : comment organiser ses actifs et se préparer pour l'avenir"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-09-13
 ---
 Bâtir un patrimoine n'est qu'une partie de la planification financière à long terme. Protéger les actifs, documenter les volontés financières et établir un processus de transfert de biens peuvent devenir tout aussi importants à mesure que la situation financière d'un ménage se complexifie.
 

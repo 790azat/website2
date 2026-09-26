@@ -2,7 +2,7 @@
 title: "Transferencias de saldo de tarjetas de crédito y ofertas de APR de introducción"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-07-08
 ---
 La deuda de tarjeta de crédito puede volverse costosa cuando un saldo permanece pendiente mes tras mes. Los cargos por interés pueden consumir una parte significativa de cada pago, lo que dificulta reducir el capital subyacente.
 

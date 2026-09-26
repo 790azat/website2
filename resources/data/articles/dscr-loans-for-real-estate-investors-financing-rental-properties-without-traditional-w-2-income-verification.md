@@ -2,7 +2,7 @@
 title: "DSCR Loans for Real Estate Investors: Financing Rental Properties Without Traditional W-2 Income Verification"
 section: loans-financing
 author: ethan-kim
-date: 2026-10-14
+date: 2026-05-04
 ---
 Real estate investors do not always fit the traditional profile used for residential mortgage underwriting. A self-employed investor may have substantial property income but relatively modest W-2 wages. Another investor may own several rental properties, operate through an LLC, or have tax returns that show significant deductions even though the properties generate substantial cash flow.
 

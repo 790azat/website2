@@ -2,7 +2,7 @@
 title: "Virements bancaires : comment fonctionnent les virements nationaux et internationaux"
 section: personal-finance
 author: hannah-cohen
-date: 2026-10-22
+date: 2026-02-08
 ---
 Les virements bancaires sont l'un des moyens les plus utilisés pour transférer de l'argent électroniquement entre des comptes bancaires. Les particuliers y ont recours pour des achats importants, des transactions immobilières, le paiement de frais de scolarité, le soutien familial, des paiements professionnels et des transferts internationaux. Les entreprises s'appuient également sur les virements lorsque des paiements doivent parvenir à une autre institution financière avec un haut degré de rapidité et de certitude.
 

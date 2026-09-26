@@ -2,7 +2,7 @@
 title: "Utilisateurs autorisés sur les cartes de crédit : ce qu'il faut savoir"
 section: credit-cards
 author: lucas-vance
-date: 2026-09-25
+date: 2026-06-07
 ---
 Ajouter une autre personne à un compte de carte de crédit peut faciliter les dépenses du ménage, donner à un membre de la famille accès au crédit, ou aider quelqu'un à commencer à construire un historique de crédit. Mais un utilisateur autorisé n'est pas la même chose qu'un titulaire de compte conjoint, et cette distinction peut avoir des conséquences importantes sur la responsabilité, la déclaration de crédit et la gestion du compte.
 

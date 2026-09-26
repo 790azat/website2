@@ -2,7 +2,7 @@
 title: "Deducciones fiscales, créditos y ganancias de capital: formas de reducir la carga tributaria"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2026-07-06
 ---
 Los impuestos pueden tener un efecto significativo sobre cuánto ingreso y crecimiento de inversión conserva finalmente un hogar. Para los inversores, las consecuencias fiscales de vender activos revalorizados, recibir ingresos de inversión, aportar a cuentas de jubilación o reclamar deducciones y créditos elegibles pueden afectar los resultados financieros generales.
 

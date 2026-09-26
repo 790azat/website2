@@ -2,7 +2,7 @@
 title: "Prêts SBA 7(a) vs 504 : comparer les programmes de financement des petites entreprises"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-19
+date: 2026-02-19
 ---
 Les petites entreprises ont souvent besoin de financement pour plus d'une raison. Une entreprise peut avoir besoin de fonds de roulement pour embaucher des employés, acheter des stocks, acquérir une autre entreprise ou gérer des dépenses saisonnières. Une autre entreprise peut principalement avoir besoin d'un financement à long terme pour un bâtiment, un achat d'équipement majeur ou une expansion d'installation.
 

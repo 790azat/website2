@@ -2,7 +2,7 @@
 title: "Capital One Venture: Rewards, Fees, and Travel Benefits"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-12-19
 ---
 The Capital One Venture Rewards Credit Card is built around a relatively simple travel-rewards structure: unlimited 2X miles on everyday purchases, elevated rewards on eligible bookings through Capital One Travel, and flexible ways to redeem or transfer miles. The card currently carries a \$95 annual fee.
 

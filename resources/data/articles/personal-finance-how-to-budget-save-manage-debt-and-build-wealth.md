@@ -2,7 +2,7 @@
 title: "Personal Finance: How to Budget, Save, Manage Debt, and Build Wealth"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-15
+date: 2026-06-29
 ---
 Managing personal finances involves more than tracking expenses. A practical financial system connects income, spending, savings, debt, investing, insurance, and long-term goals so that each part of your financial life supports the others.
 

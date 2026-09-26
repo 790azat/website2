@@ -2,7 +2,7 @@
 title: "Real Estate Investment Trusts: How REITs Work"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-04-13
 ---
 Real estate investment trusts, commonly called REITs, provide a way for investors to gain exposure to income-producing real estate without purchasing and managing a property directly. Instead of buying an apartment building, office complex, warehouse, shopping center, or other property, an investor can purchase shares of a REIT through a brokerage account.
 

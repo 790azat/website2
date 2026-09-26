@@ -2,7 +2,7 @@
 title: "Hypothèques inversées (HECM) : comprendre la valeur nette et le financement de la retraite"
 section: loans-financing
 author: hannah-cohen
-date: 2026-10-16
+date: 2025-10-06
 ---
 Pour les propriétaires qui entament leur retraite avec une valeur nette immobilière substantielle mais un revenu mensuel limité, une hypothèque inversée peut offrir un autre moyen d'accéder à la richesse immobilière sans vendre la propriété immédiatement.
 

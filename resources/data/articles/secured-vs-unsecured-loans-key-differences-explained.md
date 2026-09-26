@@ -2,7 +2,7 @@
 title: "Secured vs. Unsecured Loans: Key Differences Explained"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-10
+date: 2025-12-28
 ---
 Borrowing money involves more than comparing interest rates. One of the most important structural differences between loans is whether the debt is **secured by collateral** or **unsecured**.
 

@@ -2,7 +2,7 @@
 title: "Credit Card Cash Advances and Foreign Currency Transactions"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-04-07
 ---
 Credit cards can be convenient when traveling abroad, making international purchases online, or accessing emergency cash. But transactions outside the usual purchase category can carry additional costs that are easy to overlook.
 

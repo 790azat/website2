@@ -2,7 +2,7 @@
 title: "Prêts immobiliers commerciaux : financer des propriétés d'entreprise"
 section: loans-financing
 author: hannah-cohen
-date: 2026-10-06
+date: 2026-07-06
 ---
 Acheter une propriété commerciale constitue une décision de financement nettement différente de la souscription d'un prêt hypothécaire résidentiel classique. Une entreprise peut avoir besoin d'un financement pour acquérir un bureau, un local commercial, un entrepôt, un établissement médical, un bâtiment industriel, un immeuble à appartements, ou un terrain à aménager. Le prêt peut aussi servir à refinancer un prêt hypothécaire commercial existant, rénover une propriété, ou financer une expansion.
 

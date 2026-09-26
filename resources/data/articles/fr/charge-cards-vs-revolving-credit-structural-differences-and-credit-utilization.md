@@ -2,7 +2,7 @@
 title: "Cartes de paiement (charge cards) contre crédit renouvelable : différences structurelles et utilisation du crédit"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-03-22
 ---
 Les cartes de paiement (charge cards) et les cartes de crédit traditionnelles peuvent sembler presque identiques dans un portefeuille, mais leurs structures de crédit sous-jacentes sont différentes. Cette distinction affecte la façon dont les soldes sont remboursés, la façon dont les intérêts peuvent s'appliquer, la façon dont le crédit disponible est déterminé, et la façon dont un compte peut interagir avec les calculs d'utilisation du crédit.
 

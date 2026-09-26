@@ -2,7 +2,7 @@
 title: "Prêts SBA : comprendre le financement garanti par l'État pour les petites entreprises"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-27
+date: 2026-07-13
 ---
 L'accès au capital peut déterminer si une petite entreprise peut acheter du matériel, embaucher des employés, acquérir une autre société, agrandir un site ou gérer un manque temporaire de fonds de roulement.
 

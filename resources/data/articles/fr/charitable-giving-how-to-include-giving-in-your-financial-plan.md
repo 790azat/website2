@@ -2,7 +2,7 @@
 title: "Dons caritatifs : comment intégrer le don dans votre plan financier"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-06
+date: 2026-02-02
 ---
 Les dons caritatifs sont souvent perçus principalement comme une décision personnelle fondée sur des valeurs, l'engagement communautaire et le désir de soutenir des organisations qui accomplissent un travail utile. Pour les foyers qui font des dons régulièrement, cependant, les contributions caritatives peuvent également être intégrées dans un plan financier plus large.
 

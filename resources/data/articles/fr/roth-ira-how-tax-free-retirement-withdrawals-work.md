@@ -2,7 +2,7 @@
 title: "Roth IRA : comment fonctionnent les retraits de retraite en franchise d'impôt"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-18
 ---
 Lors de l'élaboration d'une stratégie de retraite à long terme, gérer l'exposition fiscale future peut être aussi important que de sélectionner les investissements et de maintenir un taux d'épargne constant. Les comptes de retraite traditionnels peuvent offrir des avantages fiscaux potentiels lorsque l'argent est cotisé, tandis que les **Roth IRA** utilisent un modèle de cotisation après impôt conçu pour offrir des distributions admissibles en franchise d'impôt plus tard.
 
