@@ -2,8 +2,10 @@
 
 use App\Support\SiteContent;
 
-dataset('programs', fn () => SiteContent::programs()
-    ->mapWithKeys(fn ($program) => [$program['slug'] => [$program]])
+// Datasets are built before the application boots, so the data file is
+// read directly rather than through SiteContent.
+dataset('programs', fn () => collect((require dirname(__DIR__, 2).'/resources/data/articles.php')['programs'])
+    ->mapWithKeys(fn (array $program) => [$program['slug'] => [$program]])
     ->all());
 
 test('program page renders', function (array $program) {
