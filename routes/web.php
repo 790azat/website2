@@ -7,6 +7,7 @@ Route::view('our-team', 'team')->name('team');
 Route::view('contact', 'contact')->name('contact');
 Route::view('privacy-policy', 'privacy-policy')->name('privacy-policy');
 Route::view('terms-of-use', 'terms-of-use')->name('terms-of-use');
+Route::view('disclaimer', 'disclaimer')->name('disclaimer');
 
 // Pagination and topic filters use path segments (not query strings) so the
 // site can also be exported as static HTML (see `php artisan site:export`).

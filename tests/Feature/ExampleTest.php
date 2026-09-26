@@ -22,3 +22,15 @@ test('homepage has an article search', function () {
         ->assertOk()
         ->assertSee('id="hero-search"', false);
 });
+
+test('disclaimer page is linked from the footer', function () {
+    $this->get(route('disclaimer'))
+        ->assertOk()
+        ->assertSee('Investment Risk')
+        ->assertSee('Edufinance.site makes no representations');
+
+    $this->get(route('home'))
+        ->assertOk()
+        ->assertSee(route('disclaimer'), false)
+        ->assertSee('Past performance is not indicative of future results.');
+});
