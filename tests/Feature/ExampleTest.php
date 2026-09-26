@@ -17,6 +17,12 @@ test('hero card rotates through articles with cover images', function () {
         ->assertSee(route('article', $article['slug']), false);
 });
 
+test('homepage has an article search', function () {
+    $this->get(route('home'))
+        ->assertOk()
+        ->assertSee('id="hero-search"', false);
+});
+
 test('disclaimer page is linked from the footer', function () {
     $this->get(route('disclaimer'))
         ->assertOk()
