@@ -90,7 +90,7 @@
                                 x-model="query"
                                 @focus="open = true"
                                 @input="open = true"
-                                placeholder="{{ __('Search :count articles…', ['count' => $allArticles->count()]) }}"
+                                placeholder="{{ __('Find guides on loans, credit, investing...') }}"
                                 class="w-full rounded-full border border-line bg-surface py-4 pr-5 pl-13 text-base text-ink shadow-sm placeholder:text-muted focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 focus:outline-none"
                             />
                         </div>
