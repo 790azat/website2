@@ -269,3 +269,24 @@ select:focus[data-flux-control] {
 [x-cloak] {
     display: none !important;
 }
+
+/* Homepage hero: rotating article slides. The timer bar's animationend
+   advances the slide, so pausing the animation (hover/focus) pauses rotation. */
+@keyframes hero-timer {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+
+.hero-timer {
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.hero-timer.is-running {
+    animation: hero-timer 5s linear forwards;
+}
+
+.hero-rotator:hover .hero-timer,
+.hero-rotator:focus-within .hero-timer {
+    animation-play-state: paused;
+}
