@@ -1,7 +1,7 @@
 ---
 title: "Student Credit Cards: What Young Applicants Should Consider"
 section: credit-cards
-author: samuel-mensah
+author: rachel-bernstein
 date: 2026-08-05
 ---
 For a college student, a credit card can be one of the first financial products used independently. Used carefully, it can provide a convenient way to pay for everyday expenses while helping establish a credit history. Used without a repayment plan, however, even a relatively small balance can become expensive as interest accumulates.

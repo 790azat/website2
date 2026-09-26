@@ -1,7 +1,7 @@
 ---
 title: "Treasury Securities: How Government Debt Investments Work"
 section: wealth-management
-author: lucas-vance
+author: hannah-cohen
 date: 2026-08-12
 ---
 Treasury securities are debt investments issued by the U.S. Department of the Treasury to finance federal government operations and manage the government's borrowing needs. For investors, they provide a way to lend money to the federal government in exchange for interest or a difference between the purchase price and the amount received at maturity.

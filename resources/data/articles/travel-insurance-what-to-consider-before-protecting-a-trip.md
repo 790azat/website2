@@ -1,7 +1,7 @@
 ---
 title: "Travel Insurance: What to Consider Before Protecting a Trip"
 section: personal-finance
-author: hannah-cohen
+author: sofia-martinez
 date: 2025-10-26
 ---
 Whether you are planning a cross-border vacation, a complex multi-city itinerary, or an extended international journey, travel insurance can provide a financial safety net against unexpected disruptions. From flight cancellations and lost baggage to serious medical emergencies abroad, a suitable policy can help reduce out-of-pocket costs that might otherwise significantly affect the overall cost of a trip.

@@ -1,7 +1,7 @@
 ---
 title: "Home Loans & Mortgages: Financing Options for Buyers"
 section: loans-financing
-author: claire-odonnell
+author: lucas-vance
 date: 2026-02-04
 ---
 Buying a home is one of the largest financial commitments many households will make, and the mortgage chosen at the beginning can affect monthly cash flow, total interest costs, upfront expenses, and financial flexibility for years.

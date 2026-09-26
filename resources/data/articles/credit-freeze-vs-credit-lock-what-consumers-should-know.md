@@ -1,7 +1,7 @@
 ---
 title: "Credit Freeze vs. Credit Lock: What Consumers Should Know"
 section: credit-cards
-author: ethan-kim
+author: rachel-bernstein
 date: 2026-04-19
 ---
 A stolen Social Security number, exposed personal information, or unfamiliar account on a credit report can create a risk that someone will attempt to open new credit in another person's name. Two tools commonly discussed for limiting that risk are credit freezes and credit locks.

@@ -1,7 +1,7 @@
 ---
 title: "How to Set and Reach Your Financial Goals"
 section: personal-finance
-author: lucas-vance
+author: sofia-martinez
 date: 2026-07-09
 ---
 Financial progress usually comes from a combination of clear goals, consistent saving, responsible borrowing, and regular adjustments. Whether the objective is building an emergency fund, paying off credit card debt, saving for a home, or preparing for retirement, turning a broad financial ambition into specific targets makes it easier to determine what needs to happen each month.

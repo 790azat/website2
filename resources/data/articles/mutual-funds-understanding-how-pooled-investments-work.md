@@ -1,7 +1,7 @@
 ---
 title: "Mutual Funds: Understanding How Pooled Investments Work"
 section: wealth-management
-author: lucas-vance
+author: hannah-cohen
 date: 2025-11-11
 ---
 Building a diversified investment portfolio can be difficult when purchasing individual stocks and bonds requires ongoing research, capital, and portfolio management. **Mutual funds** address this challenge by pooling money from multiple investors and using that combined capital to purchase a portfolio of securities based on a defined investment objective.

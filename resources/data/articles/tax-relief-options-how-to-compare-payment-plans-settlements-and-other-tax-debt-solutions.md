@@ -1,7 +1,7 @@
 ---
 title: "Tax Relief Options: How to Compare Payment Plans, Settlements, and Other Tax Debt Solutions"
 section: personal-finance
-author: sofia-martinez
+author: rachel-bernstein
 date: 2025-10-22
 ---
 An unpaid tax balance can become more difficult to manage as interest and applicable penalties accumulate. For taxpayers who cannot pay the full amount immediately, the Internal Revenue Service (IRS) offers several ways to address federal tax debt, including short-term payment plans, long-term installment agreements, offers in compromise, temporary collection delays, and certain forms of penalty relief.

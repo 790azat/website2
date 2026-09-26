@@ -1,7 +1,7 @@
 ---
 title: "Certificates of Deposit: How CD Terms and Rates Work"
 section: personal-finance
-author: rachel-bernstein
+author: sofia-martinez
 date: 2026-03-11
 ---
 When organizing short- and medium-term savings, a certificate of deposit (CD) can provide a predictable interest rate in exchange for committing money for a specified period. Unlike many savings accounts, where the APY can change as market conditions change, a traditional fixed-rate CD generally locks in its stated rate for the term.

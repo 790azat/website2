@@ -1,7 +1,7 @@
 ---
 title: "Credit Card Payment Due Dates, Autopay, and Billing Cycles"
 section: credit-cards
-author: claire-odonnell
+author: rachel-bernstein
 date: 2025-11-20
 ---
 Credit card statements contain several dates and balances that can be easy to confuse. The billing cycle determines which transactions appear on a statement. The statement closing date determines when that billing period ends. The payment due date determines when at least the required minimum payment must reach the issuer. Autopay can then automate that payment, potentially reducing the risk of missed deadlines.

@@ -1,7 +1,7 @@
 ---
 title: "Comparing Personal Loan Rates and Terms"
 section: loans-financing
-author: samuel-mensah
+author: lucas-vance
 date: 2026-02-02
 ---
 Personal loans can provide a fixed amount of financing for debt consolidation, home improvements, major purchases, unexpected expenses, or other qualifying needs. But two loans with the same borrowing amount can have very different costs depending on the interest rate, APR, repayment period, fees, and other contractual terms.

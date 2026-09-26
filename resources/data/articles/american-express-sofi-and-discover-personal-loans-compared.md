@@ -1,7 +1,7 @@
 ---
 title: "American Express, SoFi, and Discover Personal Loans Compared"
 section: loans-financing
-author: rachel-bernstein
+author: lucas-vance
 date: 2026-06-12
 ---
 Personal loans can provide a fixed amount of financing for debt consolidation, home improvements, major purchases, or other qualifying expenses. But the terms available to borrowers can vary considerably between lenders, particularly when it comes to loan amounts, annual percentage rates (APRs), origination fees, repayment periods, eligibility requirements, and funding speed.

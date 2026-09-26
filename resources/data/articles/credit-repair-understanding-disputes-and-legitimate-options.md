@@ -1,7 +1,7 @@
 ---
 title: "Credit Repair: Understanding Disputes and Legitimate Options"
 section: credit-cards
-author: lucas-vance
+author: rachel-bernstein
 date: 2025-12-16
 ---
 A damaged credit report can make borrowing more expensive and complicate applications for credit cards, mortgages, auto loans, apartments, and other financial products. When consumers see late payments, collection accounts, unfamiliar inquiries, or other negative information, the term **credit repair** can sound like a straightforward solution.

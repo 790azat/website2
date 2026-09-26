@@ -1,7 +1,7 @@
 ---
 title: "Smart Ways to Cut Everyday Costs and Save More"
 section: personal-finance
-author: lucas-vance
+author: sofia-martinez
 date: 2025-10-07
 ---
 Reducing everyday expenses can create additional cash flow without requiring a major change in income. Small recurring charges, unnecessary fees, expensive debt, and inefficient household spending can collectively consume a meaningful portion of a monthly budget.

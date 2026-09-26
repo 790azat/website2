@@ -1,7 +1,7 @@
 ---
 title: "Target-Date and Money Market Funds: Short-Term vs. Long-Term Fund Strategies"
 section: wealth-management
-author: rachel-bernstein
+author: hannah-cohen
 date: 2026-06-14
 ---
 Not every investment account has the same job.

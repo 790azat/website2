@@ -1,7 +1,7 @@
 ---
 title: "Home Insurance: What Coverage Typically Protects and What It May Exclude"
 section: personal-finance
-author: rachel-bernstein
+author: sofia-martinez
 date: 2026-04-07
 ---
 Home insurance is designed to help protect homeowners from financial losses associated with damage to their property, personal belongings, and certain liability claims. While policies can provide broad protection, they do not cover every type of loss.

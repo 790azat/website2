@@ -1,7 +1,7 @@
 ---
 title: "SBA 7(a) vs. 504 Loans: Comparing Small-Business Financing Programs"
 section: loans-financing
-author: lucas-vance
+author: samuel-mensah
 date: 2026-02-19
 ---
 Small businesses often need financing for more than one reason. A company may need working capital to hire employees, purchase inventory, acquire another business, or manage seasonal expenses. Another business may primarily need long-term financing for a building, major equipment purchase, or facility expansion.

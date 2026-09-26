@@ -1,7 +1,7 @@
 ---
 title: "Renters and Condo Insurance: Understanding Property and Liability Coverage"
 section: personal-finance
-author: hannah-cohen
+author: sofia-martinez
 date: 2025-10-12
 ---
 Renters and condominium owners face different property risks from owners of detached houses, but both can face significant financial exposure without appropriate insurance. A landlord's building policy generally does not insure a tenant's personal belongings, while a condominium association's master policy may not cover everything inside an individual unit.

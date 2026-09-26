@@ -1,7 +1,7 @@
 ---
 title: "Credit Card Fees: Annual, Foreign Transaction, and Balance Transfer Costs"
 section: credit-cards
-author: lucas-vance
+author: ethan-kim
 date: 2026-06-01
 ---
 A credit card's cost is not determined by its interest rate alone. Depending on how the account is used, consumers may encounter annual fees, foreign transaction fees, balance transfer fees, cash advance fees, late payment charges, and other account costs.

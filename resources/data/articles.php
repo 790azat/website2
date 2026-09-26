@@ -51,38 +51,38 @@ return [
     'authors' => [
         'rachel-bernstein' => [
             'name' => 'Rachel Bernstein',
-            'role' => 'Senior Personal Finance & Credit Editor',
-            'bio' => 'Rachel has spent over eight years covering consumer banking, credit scoring, and debt management. Before writing full-time, she worked in community financial education, which shapes her no-nonsense, empathetic approach to helping people navigate tricky financial milestones without feeling overwhelmed.',
+            'role' => 'Senior Credit & Debt Editor',
+            'bio' => 'Rachel has spent over eight years covering credit scoring, credit reports, and debt management, from card interest and repayment plans to debt relief and bankruptcy. Before writing full-time, she worked in community financial education, which shapes her no-nonsense, empathetic approach to helping people protect their credit, recover from debt, and guard against fraud and identity theft.',
         ],
         'hannah-cohen' => [
             'name' => 'Hannah Cohen',
-            'role' => 'Wealth Management & Investment Writer',
-            'bio' => 'Hannah covers long-term financial planning, retirement strategies, and portfolio allocation. She prefers plain-English explanations over industry jargon, helping readers break down complex, long-horizon decisions into manageable, actionable steps.',
+            'role' => 'Investing & Retirement Writer',
+            'bio' => 'Hannah covers investing, retirement accounts, and long-term financial planning, from stocks, bonds, and funds to IRAs, 401(k)s, annuities, and retirement-age coverage such as Medicare and long-term care. She prefers plain-English explanations over industry jargon, helping readers break down complex, long-horizon decisions into manageable, actionable steps.',
         ],
         'lucas-vance' => [
             'name' => 'Lucas Vance',
-            'role' => 'Credit, Lending & Wealth Strategies Analyst',
-            'bio' => 'Lucas specializes in the intersection of consumer credit, structured financing, and wealth accumulation. With a background blending retail banking analysis and credit advisory, his work helps readers weigh the true cost of borrowing—from mortgages and personal loans to strategic credit card optimization—while balancing those short-term liquidity needs against long-term asset building.',
+            'role' => 'Lending & Borrowing Analyst',
+            'bio' => 'Lucas specializes in consumer and real estate lending. With a background in retail banking analysis and loan advisory, his work helps readers weigh the true cost of borrowing, from mortgages, home equity, and refinancing to auto, personal, and student loans, and compare rates, terms, and fees before they sign.',
         ],
         'sofia-martinez' => [
             'name' => 'Sofia Martinez',
-            'role' => 'Consumer Finance & Budgeting Writer',
-            'bio' => 'Sofia writes about household budgeting, everyday banking, and consumer lending. Her articles are grounded in real-world household constraints rather than idealized spreadsheets, focusing on trade-offs families and individuals actually face when managing tight monthly cash flows.',
+            'role' => 'Banking, Budgeting & Insurance Writer',
+            'bio' => 'Sofia writes about household budgeting, everyday banking, savings, and insurance. Her articles are grounded in real-world household constraints rather than idealized spreadsheets, focusing on the trade-offs families and individuals actually face when choosing accounts, protecting their homes, cars, and income, and managing tight monthly cash flows.',
         ],
         'claire-odonnell' => [
             'name' => 'Claire O’Donnell',
-            'role' => 'Private Wealth & Estate Strategy Analyst',
-            'bio' => 'Claire specializes in high-net-worth wealth planning, asset protection, and generational wealth transfer. Coming from a background in private client services, her work focuses on the human side of wealth—helping families navigate legacy planning, tax-efficient investing, and trust structures without getting lost in legal or financial complexity.',
+            'role' => 'Private Wealth, Tax & Estate Strategy Analyst',
+            'bio' => 'Claire specializes in high-net-worth wealth planning, tax strategy, and generational wealth transfer. Coming from a background in private client services, her work covers estate and trust planning, charitable giving, tax-efficient investing, and alternative investments, helping families make sense of complex decisions without getting lost in legal or financial jargon.',
         ],
         'samuel-mensah' => [
             'name' => 'Samuel Mensah',
-            'role' => 'Small Business & Strategy Contributor',
-            'bio' => 'Sam covers entrepreneurship, cash flow management, and business operations. Drawing from his background advising independent service providers and retail startups, he focuses on the unglamorous, practical hurdles of keeping a small business afloat in changing market conditions.',
+            'role' => 'Small Business Finance Contributor',
+            'bio' => 'Sam covers small business banking, financing, and cash flow management, from SBA and equipment loans to invoice factoring and retirement plans for the self-employed. Drawing from his background advising independent service providers and retail startups, he focuses on the practical hurdles of funding and running a small business in changing market conditions.',
         ],
         'ethan-kim' => [
             'name' => 'Ethan Kim',
-            'role' => 'Data Operations & Technology Consultant',
-            'bio' => 'Ethan looks at how small to mid-sized businesses use internal data and software to streamline operations. He focuses on practical, cost-effective tech adoption rather than chasing enterprise-level tools that don\'t fit everyday business needs.',
+            'role' => 'Credit Cards & Fintech Analyst',
+            'bio' => 'Ethan covers credit card products, rewards programs, and the digital tools people and businesses use to manage money. With a background in data operations and financial technology, he compares card fees, perks, and fine print, and looks at online banking, budgeting apps, and expense platforms with a focus on practical value rather than marketing claims.',
         ],
     ],
 

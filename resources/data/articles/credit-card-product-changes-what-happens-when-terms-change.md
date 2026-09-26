@@ -1,7 +1,7 @@
 ---
 title: "Credit Card Product Changes: What Happens When Terms Change"
 section: credit-cards
-author: rachel-bernstein
+author: ethan-kim
 date: 2025-12-12
 ---
 Credit cards are not necessarily permanent products. A card issuer may change the terms of an existing account, modify rewards or benefits, replace one card product with another, or transfer an account to a different issuer. For cardholders, these changes can affect the cost of borrowing, annual fees, rewards, available credit, and even how the account can be used.

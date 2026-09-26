@@ -1,7 +1,7 @@
 ---
 title: "Gold IRA Fees: Understanding Storage, Custody, and Other Costs"
 section: wealth-management
-author: rachel-bernstein
+author: hannah-cohen
 date: 2026-06-19
 ---
 A Gold IRA can provide a way to hold certain physical precious metals inside a retirement account, but the structure comes with expenses that investors may not encounter in a conventional IRA invested primarily in stocks, bonds, mutual funds, or ETFs.

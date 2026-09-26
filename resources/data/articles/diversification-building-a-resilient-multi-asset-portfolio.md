@@ -1,7 +1,7 @@
 ---
 title: "Diversification: Building a Resilient Multi-Asset Portfolio"
 section: wealth-management
-author: lucas-vance
+author: hannah-cohen
 date: 2026-02-12
 ---
 Investors rarely know which asset class will lead the market over the next year, and trying to predict every shift can introduce risks of its own. A portfolio built around a single company, sector, market, or investment type can become heavily dependent on one set of economic conditions.

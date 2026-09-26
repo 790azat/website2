@@ -1,7 +1,7 @@
 ---
 title: "Joint Bank Accounts: What Account Holders Should Know"
 section: personal-finance
-author: rachel-bernstein
+author: sofia-martinez
 date: 2026-04-18
 ---
 Combining finances can become an important part of managing a household. Couples may open a shared checking account to pay rent and utilities, adult children may help manage a parent's recurring expenses, and business partners or family members may need a shared account for a specific financial purpose.

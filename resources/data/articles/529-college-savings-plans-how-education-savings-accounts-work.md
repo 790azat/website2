@@ -1,7 +1,7 @@
 ---
 title: "529 College Savings Plans: How Education Savings Accounts Work"
 section: personal-finance
-author: sofia-martinez
+author: hannah-cohen
 date: 2025-10-20
 ---
 Planning for education expenses can be difficult when tuition, housing, books, and other costs may continue rising over many years. A standard savings account can provide liquidity, but it does not offer the same federal tax treatment available through a qualified tuition program.
