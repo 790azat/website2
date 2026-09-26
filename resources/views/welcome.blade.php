@@ -193,9 +193,9 @@
         <section class="border-t border-line bg-soft">
             <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
                 <div class="max-w-2xl">
-                    <span class="eyebrow">{{ __('Program guides') }}</span>
-                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('In-depth course & program reviews') }}</h2>
-                    <p class="mt-4 leading-relaxed text-body">{{ __('Detailed breakdowns of certifications and degree programs, including curriculum, cost, and what to expect.') }}</p>
+                    <span class="eyebrow">{{ __('Lender guides') }}</span>
+                    <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('In-depth lender & loan program reviews') }}</h2>
+                    <p class="mt-4 leading-relaxed text-body">{{ __('Detailed breakdowns of specific lenders and financing programs, including loan options, prequalification, and what to expect.') }}</p>
                 </div>
 
                 <div class="mt-12 grid gap-8 md:grid-cols-2">

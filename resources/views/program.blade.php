@@ -42,7 +42,7 @@
 
             <span class="mt-10 inline-flex items-center gap-2 rounded-full bg-zest-400 px-3 py-1 text-xs font-bold tracking-wide text-brand-950 uppercase">
                 <flux:icon name="{{ $program['hero_icon'] ?? 'academic-cap' }}" variant="micro" class="size-3.5" />
-                Program guide
+                Lender guide
             </span>
             <h1 class="mt-5 font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-white sm:text-5xl lg:text-6xl">
                 {{ $program['title'] }}
