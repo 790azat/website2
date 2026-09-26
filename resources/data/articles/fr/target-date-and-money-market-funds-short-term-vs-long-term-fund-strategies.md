@@ -2,7 +2,7 @@
 title: "Fonds à échéance cible et fonds du marché monétaire : stratégies à court terme et à long terme"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-06-14
 ---
 Tous les comptes d'investissement n'ont pas la même fonction.
 

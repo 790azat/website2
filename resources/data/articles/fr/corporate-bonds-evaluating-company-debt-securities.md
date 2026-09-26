@@ -2,7 +2,7 @@
 title: "Obligations d'entreprise : évaluer les titres de créance des sociétés"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-10-09
 ---
 Les obligations d'entreprise permettent aux investisseurs de prêter de l'argent à des sociétés en échange de paiements d'intérêts et du remboursement éventuel du capital. Elles peuvent fournir des revenus et une diversification au sein d'un portefeuille de placement plus large, mais le rendement offert par une obligation d'entreprise est étroitement lié à la situation financière de la société émettrice de la dette.
 

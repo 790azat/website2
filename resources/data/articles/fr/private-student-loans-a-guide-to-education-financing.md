@@ -2,7 +2,7 @@
 title: "Prêts étudiants privés : un guide du financement des études"
 section: loans-financing
 author: sofia-martinez
-date: 2025-10-09
+date: 2025-12-28
 ---
 Financer des études universitaires, un troisième cycle ou une formation professionnelle peut nécessiter plus de fonds que ce que fournissent les bourses, les subventions, l'épargne et l'aide financière fédérale aux étudiants. Lorsque ces ressources ne couvrent pas le coût restant, un prêt étudiant privé peut combler une partie de l'écart.
 

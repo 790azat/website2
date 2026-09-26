@@ -2,7 +2,7 @@
 title: "Fechas de vencimiento de pago de tarjetas de crédito, pago automático y ciclos de facturación"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-20
 ---
 Los estados de cuenta de tarjeta de crédito contienen varias fechas y saldos que pueden ser fáciles de confundir. El ciclo de facturación determina qué transacciones aparecen en un estado de cuenta. La fecha de cierre del estado de cuenta determina cuándo termina ese período de facturación. La fecha de vencimiento del pago determina cuándo el emisor debe recibir al menos el pago mínimo requerido. El pago automático puede entonces automatizar ese pago, reduciendo potencialmente el riesgo de fechas límite incumplidas.
 

@@ -2,7 +2,7 @@
 title: "Mejora del puntaje crediticio: guía para construir un mejor crédito"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-25
 ---
 El puntaje crediticio puede influir en las tasas de interés, los límites de crédito y las condiciones de financiamiento disponibles para un consumidor. También puede afectar las solicitudes de hipotecas, préstamos para automóviles, tarjetas de crédito y otros productos financieros.
 

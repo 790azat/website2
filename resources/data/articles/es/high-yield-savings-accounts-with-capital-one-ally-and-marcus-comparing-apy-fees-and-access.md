@@ -2,7 +2,7 @@
 title: "Cuentas de ahorro de alto rendimiento con Capital One, Ally y Marcus: comparando la APY, las comisiones y el acceso"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-25
+date: 2026-04-25
 ---
 Al construir un fondo de emergencia o mantener efectivo para un objetivo financiero de corto o mediano plazo, la tasa de interés de una cuenta de ahorros puede afectar de manera significativa la rapidez con la que crecen esos fondos.
 

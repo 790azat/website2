@@ -2,7 +2,7 @@
 title: "Debt Management Plans: How Structured Repayment Programs Work"
 section: loans-financing
 author: ethan-kim
-date: 2026-09-25
+date: 2026-07-11
 ---
 When multiple debts become difficult to manage, the problem is not always the amount owed. High interest rates, several payment dates, and different creditor requirements can make repayment difficult to organize even when a borrower has enough income to make progress.
 

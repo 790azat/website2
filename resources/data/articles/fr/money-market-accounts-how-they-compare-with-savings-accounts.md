@@ -2,7 +2,7 @@
 title: "Comptes du marché monétaire : comment ils se comparent aux comptes d'épargne"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-08
+date: 2025-12-23
 ---
 Lors de l'organisation des réserves de trésorerie à court terme, le compte que vous choisissez peut avoir une incidence sur la facilité d'accès à votre argent, le montant des intérêts que vous gagnez, et les frais que vous payez. Les comptes du marché monétaire (MMA) et les comptes d'épargne peuvent tous deux servir à conserver une épargne d'urgence ou de l'argent destiné à des dépenses à court terme, mais leurs caractéristiques ne sont pas identiques.
 

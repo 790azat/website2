@@ -2,7 +2,7 @@
 title: "Fraude de identidad sintética: cómo se crean y se detectan los perfiles de crédito falsos"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-08-05
 ---
 El fraude de identidad sintética es diferente del robo de identidad convencional porque el delincuente no necesariamente se apropia de una identidad existente y completa. En cambio, una identidad sintética combina fragmentos de información legítima con información fabricada o manipulada para crear un perfil que puede parecer creíble ante los prestamistas, las instituciones financieras y los sistemas de verificación automatizados.
 

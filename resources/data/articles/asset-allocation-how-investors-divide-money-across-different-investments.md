@@ -2,7 +2,7 @@
 title: "Asset Allocation: How Investors Divide Money Across Different Investments"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-10-15
 ---
 Asset allocation is the process of deciding how much money to place into different types of investments. Rather than viewing a portfolio as a collection of individual stocks, bonds, funds, and cash accounts, investors can look at the portfolio as a whole and determine how much exposure they want to each major asset class.
 

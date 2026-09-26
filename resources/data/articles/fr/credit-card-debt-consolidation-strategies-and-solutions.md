@@ -2,7 +2,7 @@
 title: "Consolidation de dettes de carte de crédit : stratégies et solutions"
 section: credit-cards
 author: lucas-vance
-date: 2026-09-25
+date: 2026-09-10
 ---
 Porter des soldes sur plusieurs cartes de crédit peut rendre la gestion de la dette plus difficile. Des taux d'intérêt, des dates de paiement, des paiements minimums et des conditions de compte différents peuvent compliquer l'évaluation de ce que la dette coûte réellement chaque mois.
 

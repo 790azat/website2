@@ -2,7 +2,7 @@
 title: "Comment les taux d'intérêt des cartes de crédit affectent votre solde"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-06-26
 ---
 Le taux d'intérêt d'une carte de crédit peut avoir un effet significatif sur la rapidité avec laquelle un solde augmente et sur le temps nécessaire pour rembourser l'argent emprunté. Le taux annuel en pourcentage, ou APR, est la manière standard d'exprimer les coûts d'intérêt d'une carte de crédit, mais le montant réellement facturé à chaque cycle de facturation dépend de facteurs tels que le solde, les calculs d'intérêt quotidiens, le moment du paiement, et si une période de grâce s'applique.
 

@@ -2,7 +2,7 @@
 title: "Prêts hypothécaires pour améliorations résidentielles et rénovations"
 section: loans-financing
 author: hannah-cohen
-date: 2026-10-01
+date: 2026-05-23
 ---
 Une rénovation résidentielle peut transformer une propriété désuète en un logement plus fonctionnel, plus écoénergétique ou plus valorisé, mais des améliorations majeures peuvent exiger beaucoup plus de liquidités qu'un propriétaire n'en a de disponibles.
 

@@ -2,7 +2,7 @@
 title: "Certificats de dépôt : comment fonctionnent les durées et les taux des CD"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-09
+date: 2026-03-11
 ---
 Lors de l'organisation d'une épargne à court et moyen terme, un certificat de dépôt (CD) peut offrir un taux d'intérêt prévisible en échange de l'engagement de l'argent pendant une période spécifiée. Contrairement à de nombreux comptes d'épargne, où l'APY peut changer avec les conditions du marché, un CD traditionnel à taux fixe verrouille généralement son taux déclaré pour toute la durée.
 

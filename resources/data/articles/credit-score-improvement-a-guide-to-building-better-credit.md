@@ -2,7 +2,7 @@
 title: "Credit Score Improvement: A Guide to Building Better Credit"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-25
 ---
 A credit score can influence the interest rates, credit limits, and borrowing terms available to a consumer. It can also affect applications for mortgages, auto loans, credit cards, and other financial products.
 

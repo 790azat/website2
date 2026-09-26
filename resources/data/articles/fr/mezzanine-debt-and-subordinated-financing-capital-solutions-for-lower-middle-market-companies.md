@@ -2,7 +2,7 @@
 title: "Dette mezzanine et financement subordonné : solutions de capital pour les entreprises du bas du marché intermédiaire"
 section: loans-financing
 author: claire-odonnell
-date: 2026-10-13
+date: 2026-06-05
 ---
 Les entreprises du bas du marché intermédiaire (lower-middle-market) atteignent souvent un point où la dette senior traditionnelle ne suffit pas à financer une acquisition, une recapitalisation, une transition de propriété, une expansion ou un investissement majeur. Dans le même temps, émettre des actions ordinaires supplémentaires peut diluer les propriétaires actuels plus que ne le souhaitent la direction ou les sponsors.
 

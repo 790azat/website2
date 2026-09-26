@@ -2,7 +2,7 @@
 title: "Medical Financing Options: Understanding Borrowing Costs"
 section: loans-financing
 author: claire-odonnell
-date: 2026-10-02
+date: 2025-10-23
 ---
 Medical expenses can create a difficult financial problem because the need for treatment does not always coincide with the ability to pay for it. Even insured patients can face deductibles, coinsurance, copayments, exclusions, and services that are not covered by their plan.
 

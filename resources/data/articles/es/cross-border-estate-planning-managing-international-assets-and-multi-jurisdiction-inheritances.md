@@ -2,7 +2,7 @@
 title: "Planificación patrimonial transfronteriza: gestión de activos internacionales y herencias multijurisdiccionales"
 section: wealth-management
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-01-02
 ---
 Tener activos en varios países puede crear oportunidades de diversificación, pero también puede complicar considerablemente la planificación patrimonial. Una persona puede vivir en un país, tener cuentas de corretaje en otro, ser propietaria de bienes raíces en un tercero y tener herederos repartidos en varias jurisdicciones.
 

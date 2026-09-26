@@ -2,7 +2,7 @@
 title: "Comptes IRA : comprendre les cotisations, les impôts et l'épargne-retraite"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-30
 ---
 Lors de la construction d'une stratégie patrimoniale à long terme, un compte de courtage imposable offre une flexibilité considérable, mais il n'offre pas le même traitement fiscal qu'un compte de retraite. Les **comptes de retraite individuels (IRA)** offrent des structures à avantages fiscaux qui peuvent aider les particuliers à accumuler et à investir de l'argent pour la retraite.
 

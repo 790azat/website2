@@ -2,7 +2,7 @@
 title: "Planification successorale transfrontalière : gérer les actifs internationaux et les successions multi-juridictionnelles"
 section: wealth-management
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-01-02
 ---
 Détenir des actifs dans plusieurs pays peut créer des occasions de diversification, mais cela peut aussi rendre la planification successorale considérablement plus complexe. Une personne peut vivre dans un pays, détenir des comptes de courtage dans un autre, posséder un bien immobilier dans un troisième, et avoir des héritiers répartis dans plusieurs juridictions.
 

@@ -2,7 +2,7 @@
 title: "Cross-Border Estate Planning: Managing International Assets and Multi-Jurisdiction Inheritances"
 section: wealth-management
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-01-02
 ---
 Owning assets in multiple countries can create opportunities for diversification, but it can also make estate planning considerably more complicated. A person might live in one country, hold brokerage accounts in another, own real estate in a third, and have heirs scattered across several jurisdictions.
 

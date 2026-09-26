@@ -2,7 +2,7 @@
 title: "Financiamiento del concesionario vs. préstamos bancarios: diferencias clave"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-29
+date: 2026-04-02
 ---
 Comprar un vehículo implica dos decisiones financieras independientes: elegir el vehículo y decidir cómo pagarlo.
 

@@ -2,7 +2,7 @@
 title: "Gasto artificial (manufactured spending) y optimización de puntos: estrategias de recompensas, reglas y riesgos"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-07-12
 ---
 Las recompensas de las tarjetas de crédito pueden convertir el gasto cotidiano en reembolso en efectivo, millas aéreas, puntos de hotel y otros beneficios. Para algunos consumidores, la búsqueda de recompensas va más allá, hacia una práctica comúnmente llamada **gasto artificial (manufactured spending)**: usar transacciones diseñadas principalmente para generar volumen de gasto en la tarjeta de crédito y recompensas, en lugar de comprar bienes o servicios que el titular realmente necesita.
 

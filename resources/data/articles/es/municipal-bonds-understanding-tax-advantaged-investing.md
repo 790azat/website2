@@ -2,7 +2,7 @@
 title: "Bonos municipales: cómo entender la inversión con ventajas fiscales"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-10-08
 ---
 Los bonos municipales son títulos de deuda emitidos por estados, ciudades, condados, autoridades públicas y otras entidades gubernamentales para financiar proyectos y operaciones públicas. Para los inversionistas, pueden ofrecer ingresos por intereses y, potencialmente, un tratamiento fiscal favorable.
 

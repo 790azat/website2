@@ -2,7 +2,7 @@
 title: "Preaprobación de tarjetas de crédito: qué revisan generalmente los prestamistas"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-07-05
 ---
 La preaprobación de tarjeta de crédito puede hacer que solicitar una nueva cuenta se sienta más predecible. En lugar de enviar una solicitud completa sin saber si cumple con los criterios generales de un emisor, un consumidor puede primero recibir una oferta o usar la herramienta de preaprobación en línea de un emisor para ver para qué productos podría calificar.
 

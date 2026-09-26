@@ -2,7 +2,7 @@
 title: "Plafonds de carte de crédit et paiements minimums : gérer les coûts à long terme"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-09-12
 ---
 Le plafond d'une carte de crédit peut sembler trompeusement simple : c'est le solde maximum que l'émetteur vous permet de porter. Le paiement minimum peut sembler tout aussi simple : c'est le plus petit montant que vous devez payer avant la date d'échéance pour maintenir le compte à jour.
 

@@ -2,7 +2,7 @@
 title: "Amex Platinum en 2026: cómo entender la cuota de $895, los créditos y el valor de la tarjeta"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2025-12-30
 ---
 La **American Express Platinum Card®** ha evolucionado hacia algo considerablemente más amplio que una tarjeta de crédito tradicional de recompensas de viaje. En 2026, su cuota anual de \$895 está respaldada por una gran colección de créditos de viaje, restaurantes, entretenimiento, compras y estilo de vida.
 

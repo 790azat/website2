@@ -2,7 +2,7 @@
 title: "Capital One Venture: recompensas, comisiones y beneficios de viaje"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-12-19
 ---
 La tarjeta de crédito Capital One Venture Rewards se basa en una estructura de recompensas de viaje relativamente simple: 2X millas ilimitadas en compras cotidianas, recompensas elevadas en reservas elegibles a través de Capital One Travel, y formas flexibles de canjear o transferir millas. La tarjeta actualmente tiene una cuota anual de \$95.
 

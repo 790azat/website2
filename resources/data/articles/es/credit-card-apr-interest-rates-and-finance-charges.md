@@ -2,7 +2,7 @@
 title: "APR de tarjetas de crédito, tasas de interés y cargos financieros"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-27
 ---
 Los precios de las tarjetas de crédito pueden parecer engañosamente simples. Una tarjeta puede anunciar una tasa de porcentaje anual, o APR, pero el costo real de mantener un saldo depende de cómo se calcula el interés, cuándo comienza a acumularse, qué tipo de transacción generó el saldo y si se aplican comisiones adicionales.
 

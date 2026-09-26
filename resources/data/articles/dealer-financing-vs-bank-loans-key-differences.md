@@ -2,7 +2,7 @@
 title: "Dealer Financing vs. Bank Loans: Key Differences"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-29
+date: 2026-04-02
 ---
 Buying a vehicle involves two separate financial decisions: choosing the vehicle and deciding how to pay for it.
 

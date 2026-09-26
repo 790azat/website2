@@ -2,7 +2,7 @@
 title: "Sickness and Income Disruption Planning: Stress-Testing Your Personal Balance Sheet"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-02-01
 ---
 Long-term financial planning often focuses on increasing income, building investment portfolios, paying down debt, and accumulating assets. Those objectives are important, but a strong balance sheet can still become vulnerable when income suddenly stops.
 

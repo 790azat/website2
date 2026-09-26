@@ -2,7 +2,7 @@
 title: "Equipment Financing: How Businesses Can Fund Essential Purchases"
 section: loans-financing
 author: ethan-kim
-date: 2026-09-28
+date: 2025-10-16
 ---
 Equipment can be one of the largest capital expenses a business takes on. A contractor may need a new excavator, a manufacturer may require production machinery, a restaurant may need commercial kitchen equipment, or a medical practice may need specialized technology.
 

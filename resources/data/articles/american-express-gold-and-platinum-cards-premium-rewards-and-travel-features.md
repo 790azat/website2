@@ -2,7 +2,7 @@
 title: "American Express Gold and Platinum Cards: Premium Rewards and Travel Features"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-01-22
 ---
 American Express offers two well-known premium rewards cards in its U.S. consumer lineup: the American Express® Gold Card and The Platinum Card® from American Express. Both earn Membership Rewards® points, but they are designed around different spending and travel patterns.
 

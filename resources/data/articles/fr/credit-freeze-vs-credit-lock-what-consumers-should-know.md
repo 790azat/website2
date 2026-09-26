@@ -2,7 +2,7 @@
 title: "Gel de crédit vs. verrouillage de crédit : ce que les consommateurs doivent savoir"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-04-19
 ---
 Un numéro de sécurité sociale volé, des informations personnelles exposées, ou un compte inconnu sur un rapport de crédit peuvent créer un risque que quelqu'un tente d'ouvrir un nouveau crédit au nom d'une autre personne. Deux outils couramment évoqués pour limiter ce risque sont le gel de crédit et le verrouillage de crédit.
 

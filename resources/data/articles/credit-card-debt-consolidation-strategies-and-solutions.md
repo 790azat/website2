@@ -2,7 +2,7 @@
 title: "Credit Card Debt Consolidation: Strategies and Solutions"
 section: credit-cards
 author: lucas-vance
-date: 2026-09-25
+date: 2026-09-10
 ---
 Carrying balances across several credit cards can make debt more difficult to manage. Different interest rates, payment dates, minimum payments, and account terms can make it harder to see how much debt is actually costing each month.
 

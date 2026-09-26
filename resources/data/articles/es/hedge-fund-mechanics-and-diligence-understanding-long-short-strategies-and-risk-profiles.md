@@ -2,7 +2,7 @@
 title: "Mecánica y diligencia debida de los hedge funds: entendiendo las estrategias long-short y los perfiles de riesgo"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-10-13
 ---
 Los hedge funds ocupan un lugar distintivo en el panorama de inversión. A diferencia de los fondos mutuos y los ETF convencionales, los hedge funds son vehículos de inversión privados que pueden usar una gama más amplia de estrategias, incluidas la venta en corto, el apalancamiento, los derivados y las posiciones concentradas.
 

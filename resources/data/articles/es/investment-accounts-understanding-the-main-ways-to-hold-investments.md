@@ -2,7 +2,7 @@
 title: "Cuentas de inversión: cómo entender las principales formas de mantener inversiones"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-07-05
 ---
 Cuando las personas comienzan a invertir, gran parte de la atención se centra en elegir **acciones, bonos, ETF, fondos mutuos y otros valores**. Sin embargo, la cuenta usada para mantener esas inversiones puede ser igualmente importante.
 

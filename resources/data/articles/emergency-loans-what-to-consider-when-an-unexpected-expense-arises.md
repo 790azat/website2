@@ -2,7 +2,7 @@
 title: "Emergency Loans: What to Consider When an Unexpected Expense Arises"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-08-29
 ---
 Unexpected expenses rarely arrive at a convenient time. A vehicle may need an urgent repair, a major appliance can stop working, a medical bill may arrive before the next paycheck, or an interruption in income can leave a household short on cash.
 

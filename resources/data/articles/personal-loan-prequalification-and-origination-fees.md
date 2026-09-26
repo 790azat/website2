@@ -2,7 +2,7 @@
 title: "Personal Loan Prequalification and Origination Fees"
 section: loans-financing
 author: sofia-martinez
-date: 2026-10-03
+date: 2026-03-01
 ---
 Shopping for a personal loan involves more than finding an advertised interest rate.
 

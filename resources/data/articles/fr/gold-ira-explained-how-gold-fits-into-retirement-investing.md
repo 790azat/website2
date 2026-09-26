@@ -2,7 +2,7 @@
 title: "Le Gold IRA expliqué : comment l'or s'intègre à l'investissement retraite"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-23
 ---
 Un Gold IRA est un type de compte de retraite individuel autogéré qui peut détenir certains métaux précieux physiques au lieu de limiter le compte à des titres traditionnels comme les actions, obligations et fonds communs de placement. L'or peut constituer une composante d'un portefeuille de retraite, mais utiliser un IRA pour posséder des lingots physiques implique des règles supplémentaires, des coûts, des exigences de garde et des dispositifs de stockage qui ne s'appliquent pas aux comptes de courtage ordinaires.
 

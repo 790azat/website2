@@ -2,7 +2,7 @@
 title: "Préapprobation hypothécaire : comment les acheteurs se préparent au financement immobilier"
 section: loans-financing
 author: ethan-kim
-date: 2026-10-07
+date: 2026-01-30
 ---
 L'achat d'une maison commence souvent bien avant qu'un acheteur ne fasse une offre. L'une des premières étapes les plus importantes consiste à obtenir une **préapprobation hypothécaire**, qui donne à un acheteur potentiel une indication du montant qu'un prêteur pourrait être disposé à financer en fonction de ses informations financières.
 

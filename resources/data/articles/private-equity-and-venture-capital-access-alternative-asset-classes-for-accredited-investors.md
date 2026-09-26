@@ -2,7 +2,7 @@
 title: "Private Equity and Venture Capital Access: Alternative Asset Classes for Accredited Investors"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-07-01
 ---
 Investors with substantial assets often look beyond publicly traded stocks and bonds for additional ways to deploy capital. Private equity and venture capital are two areas of the private markets that can provide exposure to privately held businesses, but they operate very differently from traditional brokerage investments.
 

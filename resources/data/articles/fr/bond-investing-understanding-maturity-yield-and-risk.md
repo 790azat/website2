@@ -2,7 +2,7 @@
 title: "Investir en obligations : comprendre l'échéance, le rendement et le risque"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-10-23
 ---
 Les obligations sont souvent décrites comme le côté plus prévisible d'un portefeuille de placement, mais cette description peut être trompeuse. Une obligation est un prêt consenti par un investisseur à un gouvernement, une société, une municipalité ou un autre émetteur. En échange, l'emprunteur s'engage généralement à effectuer des paiements d'intérêts et à rembourser le capital de l'obligation selon les modalités de l'émission.
 

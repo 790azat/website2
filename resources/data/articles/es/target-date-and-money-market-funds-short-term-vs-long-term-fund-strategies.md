@@ -2,7 +2,7 @@
 title: "Fondos con fecha objetivo y fondos del mercado monetario: estrategias de fondos a corto y largo plazo"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-06-14
 ---
 No todas las cuentas de inversión cumplen la misma función.
 

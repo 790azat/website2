@@ -2,7 +2,7 @@
 title: "Les FNB expliqués : comment fonctionnent les fonds négociés en bourse et où ils s'intègrent"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2025-11-21
 ---
 Passer des produits d'épargne de base aux marchés d'investissement peut faire paraître la construction d'un portefeuille compliquée. L'achat d'actions individuelles exige de la recherche et un suivi continu, tandis que les fonds communs de placement traditionnels offrent généralement moins de flexibilité pendant la journée de négociation. Les **fonds négociés en bourse (ETFs, ou FNB)** combinent des structures de placement collectif avec la possibilité de négocier des parts sur une bourse, ce qui en fait un outil largement utilisé pour l'investissement retraite, les comptes de courtage imposables et les portefeuilles diversifiés.
 

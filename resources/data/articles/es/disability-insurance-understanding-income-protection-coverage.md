@@ -2,7 +2,7 @@
 title: "Seguro de discapacidad: entender la cobertura de protección de ingresos"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-01-23
 ---
 Para muchos hogares, la capacidad de generar ingresos es uno de los recursos financieros más valiosos que tienen. Un salario o un ingreso por cuenta propia paga la vivienda, la alimentación, el seguro, los pagos de deudas, la educación, las aportaciones para la jubilación y los gastos cotidianos. Sin embargo, el ingreso suele estar menos protegido directamente que la propiedad física o los activos financieros.
 

@@ -2,7 +2,7 @@
 title: "Business Credit Cards & Business Credit Building: Managing Company Spending"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-07-20
 ---
 Running a business becomes more complicated as expenses grow. Software subscriptions, advertising, inventory, travel, equipment, contractor payments, and recurring operating costs can quickly create a long list of transactions to track.
 

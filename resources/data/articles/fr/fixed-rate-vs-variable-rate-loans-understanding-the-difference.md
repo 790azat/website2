@@ -2,7 +2,7 @@
 title: "Prêts à taux fixe vs taux variable : comprendre la différence"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-04
+date: 2025-10-27
 ---
 Le taux d'intérêt d'un prêt influence bien plus que le montant des intérêts payés par l'emprunteur. Il peut avoir un impact sur les mensualités, la gestion du budget, les décisions de refinancement et le coût total de l'emprunt sur plusieurs années.
 

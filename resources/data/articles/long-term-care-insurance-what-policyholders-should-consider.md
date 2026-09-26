@@ -2,7 +2,7 @@
 title: "Long-Term Care Insurance: What Policyholders Should Consider"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2025-10-01
 ---
 Retirement planning often focuses on investment returns, taxes, Social Security, and sustainable income. One financial risk that can receive less attention is the potential cost of long-term care.
 

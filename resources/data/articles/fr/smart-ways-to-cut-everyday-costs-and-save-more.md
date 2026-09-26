@@ -2,7 +2,7 @@
 title: "Des moyens astucieux de réduire les dépenses quotidiennes et d'épargner davantage"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-02
+date: 2025-10-07
 ---
 Réduire les dépenses quotidiennes peut créer des flux de trésorerie supplémentaires sans nécessiter de changement majeur de revenu. Les petits frais récurrents, les frais inutiles, la dette coûteuse et les dépenses ménagères inefficaces peuvent, collectivement, consommer une part importante d'un budget mensuel.
 

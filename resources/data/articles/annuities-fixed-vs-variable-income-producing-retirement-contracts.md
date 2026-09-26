@@ -2,7 +2,7 @@
 title: "Annuities: Fixed vs. Variable Income-Producing Retirement Contracts"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-14
 ---
 Retirement planning often involves a transition from accumulating assets to creating a dependable income stream. While Social Security, pensions, and investment withdrawals can provide part of that income, some retirees also consider annuities as a way to convert a portion of their savings into future payments.
 

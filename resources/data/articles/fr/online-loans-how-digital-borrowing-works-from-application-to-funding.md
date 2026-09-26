@@ -2,7 +2,7 @@
 title: "Prêts en ligne : comment fonctionne l'emprunt numérique, de la demande au déblocage des fonds"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-25
+date: 2026-03-19
 ---
 Le prêt en ligne a transformé la mécanique de l'emprunt d'argent. Plutôt que de se rendre en agence, de remplir des formulaires papier et d'attendre qu'un conseiller de prêt examine manuellement les documents, les emprunteurs peuvent souvent soumettre une demande depuis un téléphone ou un ordinateur, recevoir une décision par voie électronique, et voir les fonds approuvés déposés sur un compte bancaire.
 

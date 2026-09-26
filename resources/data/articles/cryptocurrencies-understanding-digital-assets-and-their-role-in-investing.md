@@ -2,7 +2,7 @@
 title: "Cryptocurrencies: Understanding Digital Assets and Their Role in Investing"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-07
 ---
 Cryptocurrencies have developed from a niche technology into a recognized category of digital assets that investors can access through exchanges, brokerage platforms, wallets, and exchange-traded products. Bitcoin, Ether, stablecoins, and thousands of other crypto assets now occupy different roles within the broader digital-asset ecosystem.
 

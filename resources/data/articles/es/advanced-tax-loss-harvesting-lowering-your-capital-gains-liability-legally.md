@@ -2,7 +2,7 @@
 title: "Cosecha de pérdidas fiscales avanzada: cómo reducir legalmente su carga tributaria por ganancias de capital"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2025-10-05
 ---
 Construir una cartera de inversión sujeta a impuestos no consiste únicamente en generar rendimientos. Los impuestos pueden afectar considerablemente cuánto de esos rendimientos queda disponible para reinvertir, en particular cuando una cartera genera ganancias de capital sustanciales mediante el reequilibrio, la venta de valores u otras transacciones sujetas a impuestos.
 

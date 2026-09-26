@@ -2,7 +2,7 @@
 title: "Cuentas de corretaje de Fidelity y la Roth IRA: características, comisiones y opciones"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-11-18
 ---
 Para los inversionistas que deciden dónde mantener sus inversiones, la cuenta en sí puede ser tan importante como los valores que contiene. Una cuenta de corretaje sujeta a impuestos ofrece flexibilidad y amplio acceso a inversiones, mientras que una Roth IRA está diseñada específicamente para la jubilación y ofrece una estructura fiscal diferente.
 

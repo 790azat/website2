@@ -2,7 +2,7 @@
 title: "Roth IRA: How Tax-Free Retirement Withdrawals Work"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-18
 ---
 When building a long-term retirement strategy, managing future tax exposure can be as important as selecting investments and maintaining a consistent savings rate. Traditional retirement accounts can provide potential tax benefits when money is contributed, while **Roth IRAs** use an after-tax contribution model designed to provide tax-free qualified distributions later.
 

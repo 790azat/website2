@@ -2,7 +2,7 @@
 title: "Authorized User Tradeline Renting: Credit Impact, Risks, and Consumer Protections"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-04-05
 ---
 An authorized user tradeline is a legitimate feature of many credit card accounts. A primary cardholder can add another person as an authorized user, allowing that person to use the account and, depending on the issuer's reporting practices, potentially have the account appear on their credit report.
 

@@ -2,7 +2,7 @@
 title: "Seguro de vivienda: qué protege generalmente la cobertura y qué puede excluir"
 section: personal-finance
 author: rachel-bernstein
-date: 2024-02-20
+date: 2026-04-07
 ---
 El seguro de vivienda está diseñado para ayudar a proteger a los propietarios frente a pérdidas financieras asociadas con daños a su propiedad, sus pertenencias personales y ciertas reclamaciones de responsabilidad civil. Si bien las pólizas pueden ofrecer una protección amplia, no cubren todos los tipos de pérdida.
 

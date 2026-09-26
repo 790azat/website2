@@ -2,7 +2,7 @@
 title: "Protocolos de transferencia patrimonial generacional: minimizando la fricción del proceso sucesorio y los impuestos al patrimonio"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-25
+date: 2026-01-16
 ---
 A medida que crece el patrimonio familiar, transferir activos de una generación a la siguiente se vuelve más complicado que simplemente redactar un testamento y designar beneficiarios. Los bienes inmuebles, las cuentas de inversión, las participaciones empresariales, los seguros de vida y otros activos pueden seguir reglas de titularidad y transferencia distintas.
 

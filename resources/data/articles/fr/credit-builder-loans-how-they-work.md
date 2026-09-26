@@ -2,7 +2,7 @@
 title: "Prêts de consolidation de crédit : comment ils fonctionnent"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-11
 ---
 Bâtir un historique de crédit peut être difficile lorsque vous avez peu ou pas d'expérience d'emprunt. Les prêteurs veulent généralement voir la preuve que vous pouvez gérer le crédit de façon responsable, mais établir ce dossier peut être un défi lorsque vous n'avez pas encore eu l'occasion d'emprunter.
 

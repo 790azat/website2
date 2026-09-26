@@ -2,7 +2,7 @@
 title: "How to Compare Credit Card Fees, Rates, and Rewards"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-17
 ---
 Choosing a credit card involves more than comparing reward points or looking for a low advertised interest rate. Annual fees, APRs, balance-transfer charges, foreign transaction fees, rewards categories, redemption rules, and promotional terms can all affect the actual cost and usefulness of a card.
 

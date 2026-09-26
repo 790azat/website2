@@ -2,7 +2,7 @@
 title: "Assurance inondation : comprendre la couverture en dehors des polices habitation standard"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-10-21
+date: 2026-07-26
 ---
 Une police d'assurance habitation standard peut offrir une protection étendue pour une maison et son contenu, mais une source majeure de dommages matériels nécessite généralement une couverture distincte : les **inondations**.
 

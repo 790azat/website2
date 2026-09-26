@@ -2,7 +2,7 @@
 title: "Options de financement médical : comprendre les coûts d'emprunt"
 section: loans-financing
 author: claire-odonnell
-date: 2026-10-02
+date: 2025-10-23
 ---
 Les dépenses médicales peuvent créer un problème financier difficile, car le besoin de traitement ne coïncide pas toujours avec la capacité de le payer. Même les patients assurés peuvent faire face à des franchises, à une coassurance, à des quotes-parts, à des exclusions et à des services non couverts par leur régime.
 

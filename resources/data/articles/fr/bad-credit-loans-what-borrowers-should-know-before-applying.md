@@ -2,7 +2,7 @@
 title: "Prêts pour mauvais crédit : ce que les emprunteurs devraient savoir avant de faire une demande"
 section: loans-financing
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-09-14
 ---
 Avoir une cote de crédit plus basse peut rendre l'emprunt plus difficile, mais cela n'élimine pas nécessairement toutes les options de financement. Les prêteurs utilisent les informations de crédit comme une partie de leur évaluation, et les demandeurs ayant des profils de crédit plus faibles peuvent tout de même se qualifier pour certains prêts personnels, produits de coopérative de crédit, financements garantis ou autres formes de crédit.
 

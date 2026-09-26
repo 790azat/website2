@@ -2,7 +2,7 @@
 title: "HELOC frente a préstamo sobre el valor líquido de la vivienda: comparando las opciones de valor líquido"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-25
+date: 2026-03-26
 ---
 Los propietarios de vivienda que han acumulado un valor líquido sustancial pueden tener acceso a otra fuente de financiamiento más allá de un préstamo personal o una tarjeta de crédito tradicionales: el valor acumulado en su propiedad.
 

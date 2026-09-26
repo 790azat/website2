@@ -2,7 +2,7 @@
 title: "Fundamentos de la planificación patrimonial: cómo organizar activos y prepararse para el futuro"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-09-13
 ---
 Acumular patrimonio es solo una parte de la planificación financiera a largo plazo. Proteger los activos, documentar los deseos financieros y establecer un proceso para transferir la propiedad puede volverse igual de importante a medida que la situación financiera de un hogar se vuelve más compleja.
 

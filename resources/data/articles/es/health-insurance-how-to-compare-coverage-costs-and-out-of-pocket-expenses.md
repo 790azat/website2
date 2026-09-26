@@ -2,7 +2,7 @@
 title: "Seguro de salud: cómo comparar la cobertura, los costos y los gastos de bolsillo"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-02-16
+date: 2025-12-07
 ---
 El seguro de salud puede afectar tanto el acceso a la atención médica como las finanzas del hogar. La prima mensual es solo una parte del costo total. Los deducibles, los copagos, el coseguro, las redes de proveedores, la cobertura de medicamentos recetados y el máximo anual de gastos de bolsillo pueden influir en cuánto termina pagando una persona por la atención médica.
 

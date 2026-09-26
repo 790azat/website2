@@ -2,7 +2,7 @@
 title: "Online Loans: How Digital Borrowing Works From Application to Funding"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-25
+date: 2026-03-19
 ---
 Online lending has changed the mechanics of borrowing money. Instead of visiting a branch, completing paper forms, and waiting for a loan officer to review documents manually, borrowers can often submit an application from a phone or computer, receive a decision electronically, and have approved funds deposited into a bank account.
 

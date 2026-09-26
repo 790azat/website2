@@ -2,7 +2,7 @@
 title: "Fondos de inversión inmobiliaria: cómo funcionan los REIT"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-04-13
 ---
 Los fondos de inversión inmobiliaria, comúnmente llamados REIT (por sus siglas en inglés, real estate investment trusts), ofrecen a los inversores una forma de obtener exposición a bienes raíces generadores de ingresos sin comprar y gestionar una propiedad directamente. En lugar de comprar un edificio de apartamentos, un complejo de oficinas, un almacén, un centro comercial u otra propiedad, un inversor puede comprar acciones de un REIT a través de una cuenta de corretaje.
 

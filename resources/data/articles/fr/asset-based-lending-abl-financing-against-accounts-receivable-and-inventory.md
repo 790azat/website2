@@ -2,7 +2,7 @@
 title: "Prêt adossé à des actifs (ABL) : financement sur créances clients et stocks"
 section: loans-financing
 author: ethan-kim
-date: 2026-10-15
+date: 2025-11-24
 ---
 Pour les entreprises disposant de créances clients, de stocks ou d'autres actifs de fonds de roulement substantiels, le prêt traditionnel adossé aux flux de trésorerie n'est pas toujours le seul moyen d'obtenir un financement. Une entreprise peut avoir des actifs précieux à son bilan tout en connaissant des bénéfices irréguliers, des besoins saisonniers de fonds de roulement, ou un accès limité au crédit conventionnel.
 

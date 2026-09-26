@@ -2,7 +2,7 @@
 title: "Investir à l'international et sur les marchés émergents : accéder aux marchés mondiaux"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-03-02
 ---
 Pendant des décennies, les investisseurs américains ont pu construire des portefeuilles presque entièrement autour d'entreprises nationales. Aujourd'hui, cette approche peut laisser de côté une grande partie de l'économie mondiale.
 

@@ -2,7 +2,7 @@
 title: "Financiamiento basado en activos (ABL): préstamos garantizados con cuentas por cobrar e inventario"
 section: loans-financing
 author: ethan-kim
-date: 2026-10-15
+date: 2025-11-24
 ---
 Para las empresas con cuentas por cobrar, inventario u otros activos de capital de trabajo sustanciales, el financiamiento tradicional basado en flujo de caja no siempre es la única forma de obtener financiamiento. Una empresa puede tener activos valiosos en su balance mientras experimenta ganancias irregulares, necesidades estacionales de capital de trabajo o acceso limitado al crédito convencional.
 

@@ -2,7 +2,7 @@
 title: "High-Yield Checking Accounts: What to Compare"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-10
+date: 2026-08-21
 ---
 A checking account is typically the operating center of a household's finances. Paychecks arrive through direct deposit, recurring bills are paid, debit cards handle everyday purchases, and cash moves in and out throughout the month. A high-yield checking account adds another potential benefit: the opportunity to earn interest on money that would otherwise sit idle between expenses.
 

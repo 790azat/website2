@@ -2,7 +2,7 @@
 title: "Disability Insurance: Understanding Income Protection Coverage"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-01-23
 ---
 For many households, the ability to earn an income is one of the most valuable financial resources they have. A salary or self-employment income pays for housing, food, insurance, debt payments, education, retirement contributions, and everyday expenses. Yet income is often less directly protected than physical property or financial assets.
 

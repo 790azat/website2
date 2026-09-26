@@ -2,7 +2,7 @@
 title: "Inversión indexada y ETF internacionales: cómo siguen los índices de referencia del mercado"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-10
 ---
 Invertir a nivel internacional ya no requiere abrir cuentas en varios países ni investigar empresas extranjeras individuales una por una. Los fondos cotizados en bolsa (ETF) han hecho posible que los inversores obtengan exposición a cientos o incluso miles de empresas en economías desarrolladas y emergentes a través de un solo valor.
 

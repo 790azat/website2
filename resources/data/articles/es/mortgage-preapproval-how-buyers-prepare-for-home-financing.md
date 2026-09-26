@@ -2,7 +2,7 @@
 title: "Preaprobación hipotecaria: cómo se preparan los compradores para financiar una vivienda"
 section: loans-financing
 author: ethan-kim
-date: 2026-10-07
+date: 2026-01-30
 ---
 Comprar una vivienda a menudo comienza mucho antes de que un comprador haga una oferta. Uno de los pasos iniciales más importantes es obtener una **preaprobación hipotecaria**, que le da al posible comprador una indicación de cuánto podría estar dispuesto a financiar un prestamista según su información financiera.
 

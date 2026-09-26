@@ -2,7 +2,7 @@
 title: "Transferts de solde de carte de crédit et offres d'APR d'introduction"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-07-08
 ---
 La dette de carte de crédit peut devenir coûteuse lorsqu'un solde demeure impayé mois après mois. Les frais d'intérêt peuvent consommer une part importante de chaque versement, rendant difficile la réduction du capital sous-jacent.
 

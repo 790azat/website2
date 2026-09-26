@@ -2,7 +2,7 @@
 title: "Comptes de placement : comprendre les principales façons de détenir des investissements"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-07-05
 ---
 Lorsque les gens commencent à investir, une grande partie de leur attention se porte sur le choix des **actions, obligations, ETF, fonds communs de placement et autres titres**. Cependant, le compte utilisé pour détenir ces placements peut être tout aussi important.
 

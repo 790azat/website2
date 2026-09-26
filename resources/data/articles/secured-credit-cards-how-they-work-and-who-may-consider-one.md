@@ -2,7 +2,7 @@
 title: "Secured Credit Cards: How They Work and Who May Consider One"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-08-28
 ---
 Getting approved for a conventional credit card can be difficult when a consumer has little credit history, a damaged credit profile, or a recent financial setback. A **secured credit card** offers another route to establishing or rebuilding credit by requiring a refundable security deposit that generally determines the account's credit limit.
 

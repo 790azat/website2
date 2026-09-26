@@ -2,7 +2,7 @@
 title: "Passive Income: Understanding Different Ways to Build Additional Income"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-07
+date: 2026-02-08
 ---
 Building financial independence often involves creating more than one source of income. A primary job or active business may provide the majority of household cash flow, but additional income streams can provide greater flexibility and diversify the sources supporting long-term financial goals.
 

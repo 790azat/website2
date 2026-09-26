@@ -2,7 +2,7 @@
 title: "Hedge Fund Mechanics and Diligence: Understanding Long-Short Strategies and Risk Profiles"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-10-13
 ---
 Hedge funds occupy a distinct place in the investment landscape. Unlike conventional mutual funds and ETFs, hedge funds are private investment vehicles that can use a wider range of strategies, including short selling, leverage, derivatives, and concentrated positions.
 

@@ -2,7 +2,7 @@
 title: "Adelantos de efectivo con tarjeta de crédito y transacciones en moneda extranjera"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-04-07
 ---
 Las tarjetas de crédito pueden ser convenientes al viajar al extranjero, hacer compras internacionales en línea o acceder a efectivo de emergencia. Pero las transacciones fuera de la categoría habitual de compra pueden tener costos adicionales que son fáciles de pasar por alto.
 

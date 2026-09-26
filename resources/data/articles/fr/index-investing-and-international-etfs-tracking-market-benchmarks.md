@@ -2,7 +2,7 @@
 title: "Investissement indiciel et ETF internationaux : suivre les indices de référence"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-08-10
 ---
 Investir à l'international ne nécessite plus d'ouvrir des comptes dans plusieurs pays ou d'analyser des entreprises étrangères une par une. Les fonds négociés en bourse (ETF) ont permis aux investisseurs d'obtenir une exposition à des centaines, voire des milliers d'entreprises réparties dans des économies développées et émergentes, via un seul titre.
 

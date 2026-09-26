@@ -2,7 +2,7 @@
 title: "Préstamos de la SBA: cómo entender el financiamiento respaldado por el gobierno para pequeñas empresas"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-27
+date: 2026-07-13
 ---
 El acceso al capital puede determinar si una pequeña empresa puede comprar equipo, contratar empleados, adquirir otra compañía, ampliar unas instalaciones o gestionar una escasez temporal de capital de trabajo.
 

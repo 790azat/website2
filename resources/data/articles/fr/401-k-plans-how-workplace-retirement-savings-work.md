@@ -2,7 +2,7 @@
 title: "Plans 401(k) : comment fonctionne l'épargne-retraite en entreprise"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-03
 ---
 Pour de nombreux salariés, un **plan 401(k)** constitue l'un des principaux véhicules pour constituer une épargne-retraite grâce aux cotisations automatiques sur salaire, à la croissance des placements à fiscalité avantageuse et aux éventuelles cotisations de l'employeur. Les plans de retraite d'entreprise peuvent aussi donner accès à des placements diversifiés tels que des fonds communs de placement, des fonds à échéance cible, des fonds actions et des fonds obligataires.
 

@@ -2,7 +2,7 @@
 title: "Inversión en dividendos: cómo los inversores obtienen ingresos de la posesión de acciones"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-02-27
 ---
 Al construir una estrategia de inversión a largo plazo, los inversores suelen centrarse en la apreciación de capital: el potencial de que un activo aumente su valor con el tiempo. La **inversión en dividendos** añade otra fuente potencial de rendimiento al centrarse en empresas que distribuyen efectivo a sus accionistas.
 

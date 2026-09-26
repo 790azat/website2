@@ -2,7 +2,7 @@
 title: "Cryptomonnaies : comprendre les actifs numériques et leur rôle dans l'investissement"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-07
 ---
 Les cryptomonnaies sont passées d'une technologie de niche à une catégorie reconnue d'actifs numériques auxquels les investisseurs peuvent accéder par des bourses, des plateformes de courtage, des portefeuilles et des produits négociés en bourse. Le bitcoin, l'ether, les stablecoins et des milliers d'autres actifs cryptographiques occupent aujourd'hui des rôles différents au sein du vaste écosystème des actifs numériques.
 

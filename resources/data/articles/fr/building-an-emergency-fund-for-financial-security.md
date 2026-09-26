@@ -2,7 +2,7 @@
 title: "Constituer un fonds d'urgence pour la sécurité financière"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-04
+date: 2026-08-06
 ---
 La vie est intrinsèquement imprévisible. Qu'il s'agisse d'une facture médicale inattendue, d'une réparation automobile soudaine, d'un entretien domiciliaire essentiel ou d'une interruption temporaire du revenu du ménage, les chocs financiers peuvent faire dérailler une planification soigneuse lorsqu'il n'y a pas de réserve de liquidités accessible. Un fonds d'urgence fournit un tampon dédié qui peut aider à couvrir des dépenses imprévues sans avoir immédiatement recours à des cartes de crédit à taux d'intérêt élevé ou à des prêts personnels.
 

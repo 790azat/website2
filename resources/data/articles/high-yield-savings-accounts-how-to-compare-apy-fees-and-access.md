@@ -2,7 +2,7 @@
 title: "High-Yield Savings Accounts: How to Compare APY, Fees, and Access"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-18
+date: 2026-06-03
 ---
 A savings account can provide a convenient place to keep emergency funds, short-term savings, and money set aside for upcoming expenses. However, the interest earned on a traditional savings account can vary significantly from one institution to another.
 

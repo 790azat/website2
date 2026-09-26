@@ -2,7 +2,7 @@
 title: "ETFs Explained: How Exchange-Traded Funds Work and Where They Fit"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2025-11-21
 ---
 Moving from basic savings products into the investment markets can make portfolio construction seem complicated. Purchasing individual stocks requires research and ongoing monitoring, while traditional mutual funds generally provide less flexibility during the trading day. **Exchange-traded funds (ETFs)** combine pooled investment structures with the ability to trade shares on an exchange, making them a widely used tool for retirement investing, taxable brokerage accounts, and diversified portfolios.
 

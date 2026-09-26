@@ -2,7 +2,7 @@
 title: "Stocks Explained: How Share Ownership Works and What Investors Should Know"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2026-03-26
 ---
 Stocks are one of the primary ways individuals can participate in the growth of publicly traded companies. Unlike a bank deposit, a stock represents an ownership interest in a business and can provide returns through changes in market value and, for some companies, dividend payments.
 

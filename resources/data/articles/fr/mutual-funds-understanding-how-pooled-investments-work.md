@@ -2,7 +2,7 @@
 title: "Fonds communs de placement : comprendre le fonctionnement des placements collectifs"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2025-11-11
 ---
 Constituer un portefeuille d'investissement diversifié peut s'avérer difficile lorsque l'achat d'actions et d'obligations individuelles exige une recherche, un capital et une gestion de portefeuille continus. Les **fonds communs de placement** répondent à ce défi en regroupant l'argent de plusieurs investisseurs et en utilisant ce capital combiné pour acheter un portefeuille de titres selon un objectif d'investissement défini.
 

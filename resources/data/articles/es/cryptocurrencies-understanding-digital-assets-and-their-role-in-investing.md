@@ -2,7 +2,7 @@
 title: "Criptomonedas: entender los activos digitales y su papel en la inversión"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-07
 ---
 Las criptomonedas han evolucionado de una tecnología de nicho a una categoría reconocida de activos digitales a la que los inversores pueden acceder a través de exchanges, plataformas de corretaje, billeteras (wallets) y productos cotizados en bolsa. Bitcoin, Ether, las stablecoins y miles de otros activos cripto ocupan hoy distintos roles dentro del ecosistema más amplio de activos digitales.
 

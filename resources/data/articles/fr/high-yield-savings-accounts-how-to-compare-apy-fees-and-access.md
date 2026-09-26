@@ -2,7 +2,7 @@
 title: "Comptes d'épargne à haut rendement : comment comparer l'APY, les frais et l'accès"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-18
+date: 2026-06-03
 ---
 Un compte d'épargne peut offrir un endroit pratique pour conserver un fonds d'urgence, une épargne à court terme et de l'argent mis de côté pour des dépenses à venir. Cependant, les intérêts gagnés sur un compte d'épargne traditionnel peuvent varier considérablement d'un établissement à l'autre.
 

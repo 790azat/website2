@@ -2,7 +2,7 @@
 title: "Portfolio Rebalancing: When and Why Investors Adjust Allocations"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-08
 ---
 A portfolio can gradually become very different from the one an investor originally intended to build. A strong run in stocks may increase equity exposure, while falling bond prices or new contributions can shift the mix in another direction. Over time, these changes can alter the amount of risk an investor is taking without any deliberate decision to do so.
 

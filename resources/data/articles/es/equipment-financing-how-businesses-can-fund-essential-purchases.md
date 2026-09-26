@@ -2,7 +2,7 @@
 title: "Financiamiento de equipo: cómo pueden las empresas costear compras esenciales"
 section: loans-financing
 author: ethan-kim
-date: 2026-09-28
+date: 2025-10-16
 ---
 El equipo puede ser uno de los mayores gastos de capital que asume una empresa. Un contratista puede necesitar una nueva excavadora, un fabricante puede requerir maquinaria de producción, un restaurante puede necesitar equipo de cocina comercial, o una consulta médica puede necesitar tecnología especializada.
 

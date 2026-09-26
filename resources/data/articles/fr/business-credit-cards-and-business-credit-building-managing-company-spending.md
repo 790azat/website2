@@ -2,7 +2,7 @@
 title: "Cartes de crédit d'entreprise et bâtir un crédit d'entreprise : gérer les dépenses de la société"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-07-20
 ---
 Gérer une entreprise devient plus compliqué à mesure que les dépenses augmentent. Les abonnements logiciels, la publicité, l'inventaire, les voyages, l'équipement, les paiements aux entrepreneurs et les coûts d'exploitation récurrents peuvent rapidement créer une longue liste de transactions à suivre.
 

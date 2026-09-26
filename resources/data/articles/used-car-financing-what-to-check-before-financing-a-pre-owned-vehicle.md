@@ -2,7 +2,7 @@
 title: "Used-Car Financing: What to Check Before Financing a Pre-Owned Vehicle"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-03-24
 ---
 Financing a used vehicle involves more than finding a car that fits the budget and choosing a monthly payment. The vehicle's condition, age, mileage, purchase price, interest rate, loan term, fees, down payment, and financing source can all affect the total cost.
 

@@ -2,7 +2,7 @@
 title: "Seguro contra inundaciones: entendiendo la cobertura fuera de las pólizas estándar de vivienda"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-10-21
+date: 2026-07-26
 ---
 Una póliza estándar de seguro de vivienda puede ofrecer una protección amplia para una casa y su contenido, pero una fuente importante de daños a la propiedad generalmente requiere una cobertura separada: las **inundaciones**.
 

@@ -2,7 +2,7 @@
 title: "Usuarios autorizados en las tarjetas de crédito: lo que hay que saber"
 section: credit-cards
 author: lucas-vance
-date: 2026-09-25
+date: 2026-06-07
 ---
 Agregar a otra persona a una cuenta de tarjeta de crédito puede facilitar el gasto del hogar, dar acceso al crédito a un familiar o ayudar a alguien a comenzar a construir un historial crediticio. Pero un usuario autorizado (authorized user) no es lo mismo que un titular conjunto de la cuenta, y la distinción puede tener consecuencias importantes en cuanto a la responsabilidad, el reporte crediticio y la administración de la cuenta.
 

@@ -2,7 +2,7 @@
 title: "Tax Deductions, Credits, and Capital Gains: Understanding Ways to Reduce Tax Liability"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2026-07-06
 ---
 Taxes can have a meaningful effect on how much income and investment growth a household ultimately keeps. For investors, the tax consequences of selling appreciated assets, receiving investment income, contributing to retirement accounts, or claiming eligible deductions and credits can affect overall financial results.
 

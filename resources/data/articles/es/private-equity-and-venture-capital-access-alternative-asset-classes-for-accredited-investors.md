@@ -2,7 +2,7 @@
 title: "Acceso al capital privado y al capital de riesgo: clases de activos alternativos para inversores acreditados"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-07-01
 ---
 Los inversores con activos sustanciales a menudo buscan más allá de las acciones y bonos que cotizan en bolsa para encontrar formas adicionales de desplegar capital. El capital privado (private equity) y el capital de riesgo (venture capital) son dos áreas de los mercados privados que pueden ofrecer exposición a empresas de propiedad privada, pero operan de manera muy diferente a las inversiones tradicionales de corretaje.
 

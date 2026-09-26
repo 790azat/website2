@@ -2,7 +2,7 @@
 title: "Business Loans and Lines of Credit: Funding Growth and Operations"
 section: loans-financing
 author: sofia-martinez
-date: 2026-09-26
+date: 2026-05-15
 ---
 For many businesses, growth requires spending money before the resulting revenue arrives. A company may need to purchase inventory, hire employees, replace equipment, expand a location, launch a marketing campaign, or cover an unexpected cash-flow gap.
 

@@ -2,7 +2,7 @@
 title: "Notions de base sur la faillite : comprendre les types et l'impact financier"
 section: loans-financing
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-09-21
 ---
 La faillite est un processus juridique fédéral conçu pour répondre aux situations dans lesquelles des particuliers ou des entreprises ne peuvent pas respecter leurs obligations financières. Selon le type de dossier, la faillite peut impliquer la liquidation d'actifs, un plan de remboursement supervisé par un tribunal, ou une réorganisation des affaires financières.
 

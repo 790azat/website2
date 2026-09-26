@@ -2,7 +2,7 @@
 title: "Cuentas de ahorro de alto rendimiento: cómo comparar la APY, las comisiones y el acceso"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-18
+date: 2026-06-03
 ---
 Una cuenta de ahorros puede ofrecer un lugar conveniente para guardar el fondo de emergencia, los ahorros a corto plazo y el dinero reservado para gastos próximos. Sin embargo, el interés que se gana en una cuenta de ahorros tradicional puede variar de manera significativa entre una institución y otra.
 

@@ -2,7 +2,7 @@
 title: "Cuentas corrientes de alto rendimiento: qué comparar"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-10
+date: 2026-08-21
 ---
 Una cuenta corriente suele ser el centro operativo de las finanzas de un hogar. Los sueldos llegan mediante depósito directo, se pagan las facturas recurrentes, las tarjetas de débito gestionan las compras diarias, y el efectivo entra y sale a lo largo del mes. Una cuenta corriente de alto rendimiento agrega otro beneficio potencial: la oportunidad de generar interés sobre el dinero que de otro modo permanecería inactivo entre gastos.
 

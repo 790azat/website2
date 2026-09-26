@@ -2,7 +2,7 @@
 title: "Mezzanine Debt and Subordinated Financing: Capital Solutions for Lower-Middle-Market Companies"
 section: loans-financing
 author: claire-odonnell
-date: 2026-10-13
+date: 2026-06-05
 ---
 Lower-middle-market companies often reach a point where traditional senior debt is not sufficient to fund an acquisition, recapitalization, ownership transition, expansion, or major investment. At the same time, issuing additional common equity can dilute existing owners more than management or sponsors want.
 

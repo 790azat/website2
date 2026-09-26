@@ -2,7 +2,7 @@
 title: "Equiparación de estatus en hoteles y aerolíneas: programas de tarjetas de crédito, elegibilidad y beneficios de viaje"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-07-13
 ---
 El estatus élite en hoteles y aerolíneas puede ofrecer beneficios que de otro modo requerirían una actividad de viaje sustancial para obtenerse. Según el programa, esos beneficios pueden incluir mejoras de habitación, servicios prioritarios, puntos adicionales, acceso a salas VIP, embarque preferente, límites de equipaje u otros privilegios de viaje.
 

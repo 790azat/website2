@@ -2,7 +2,7 @@
 title: "Creación y administración de fideicomisos: cómo proteger los activos familiares a través de generaciones"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2026-04-30
 ---
 A medida que las familias acumulan activos significativos, un testamento básico puede no abordar todas las cuestiones relacionadas con la transferencia y la gestión del patrimonio. Un testamento generalmente entra en vigor al fallecer y dirige la distribución de los activos que pasan por el proceso de sucesión testamentaria (probate). Un fideicomiso adecuadamente estructurado puede proporcionar instrucciones adicionales sobre cómo se gestionan, invierten y distribuyen los activos seleccionados durante la vida de una persona y después de su fallecimiento.
 

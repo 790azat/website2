@@ -2,7 +2,7 @@
 title: "Les titres du Trésor : comment fonctionnent les placements en dette publique"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2026-08-12
 ---
 Les titres du Trésor sont des placements de dette émis par le Département du Trésor des États-Unis afin de financer les activités du gouvernement fédéral et de gérer ses besoins d'emprunt. Pour les investisseurs, ils offrent un moyen de prêter de l'argent au gouvernement fédéral en échange d'intérêts ou d'une différence entre le prix d'achat et le montant reçu à l'échéance.
 

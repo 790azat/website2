@@ -2,7 +2,7 @@
 title: "Préapprobation de carte de crédit : ce que les prêteurs examinent généralement"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-07-05
 ---
 La préapprobation de carte de crédit peut rendre la demande d'un nouveau compte plus prévisible. Plutôt que de soumettre une demande complète sans savoir si l'on répond aux critères généraux d'un émetteur, un consommateur peut d'abord recevoir une offre ou utiliser l'outil de préapprobation en ligne d'un émetteur pour voir à quels produits il pourrait être admissible.
 

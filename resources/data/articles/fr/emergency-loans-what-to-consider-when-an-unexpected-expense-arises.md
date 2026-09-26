@@ -2,7 +2,7 @@
 title: "Prêts d'urgence : ce qu'il faut considérer face à une dépense imprévue"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-08-29
 ---
 Les dépenses imprévues arrivent rarement à un moment opportun. Un véhicule peut nécessiter une réparation urgente, un appareil électroménager important peut cesser de fonctionner, une facture médicale peut arriver avant le prochain versement de salaire, ou une interruption de revenu peut laisser un ménage à court de liquidités.
 

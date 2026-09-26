@@ -2,7 +2,7 @@
 title: "Location de tradelines d'utilisateur autorisé : impact sur le crédit, risques et protections du consommateur"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-04-05
 ---
 Un tradeline d'utilisateur autorisé est une caractéristique légitime de nombreux comptes de carte de crédit. Un titulaire de carte principal peut ajouter une autre personne comme utilisateur autorisé, permettant à cette personne d'utiliser le compte et, selon les pratiques de déclaration de l'émetteur, potentiellement de faire apparaître le compte sur son rapport de crédit.
 

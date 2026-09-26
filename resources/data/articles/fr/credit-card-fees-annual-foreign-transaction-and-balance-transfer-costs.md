@@ -2,7 +2,7 @@
 title: "Frais de carte de crédit : cotisation annuelle, transactions à l'étranger et transferts de solde"
 section: credit-cards
 author: lucas-vance
-date: 2026-09-25
+date: 2026-06-01
 ---
 Le coût d'une carte de crédit n'est pas déterminé uniquement par son taux d'intérêt. Selon la manière dont le compte est utilisé, les consommateurs peuvent rencontrer des frais annuels, des frais de transaction à l'étranger, des frais de transfert de solde, des frais d'avance de fonds, des pénalités de retard de paiement, et d'autres coûts liés au compte.
 

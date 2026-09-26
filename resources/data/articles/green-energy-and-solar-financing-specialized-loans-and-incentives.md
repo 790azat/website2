@@ -2,7 +2,7 @@
 title: "Green Energy and Solar Financing: Specialized Loans and Incentives"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-10-18
+date: 2026-05-18
 ---
 Installing solar panels, battery storage, or other clean-energy equipment can require a substantial upfront investment. For homeowners and businesses, the financing decision can be almost as important as the technology itself.
 

@@ -2,7 +2,7 @@
 title: "Comptes de courtage vs comptes de retraite : différences clés"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-07-02
 ---
 Lorsque les gens commencent à investir, la première question est souvent quoi acheter : des actions, des FNB, des obligations ou des fonds communs de placement. Le compte lui-même peut recevoir beaucoup moins d'attention.
 

@@ -2,7 +2,7 @@
 title: "Assurance invalidité : comprendre la protection du revenu"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-01-23
 ---
 Pour de nombreux ménages, la capacité de gagner un revenu est l'une des ressources financières les plus précieuses. Un salaire ou un revenu de travail autonome permet de payer le logement, la nourriture, les assurances, les paiements de dette, l'éducation, les cotisations de retraite et les dépenses quotidiennes. Pourtant, le revenu est souvent moins directement protégé que les biens physiques ou les actifs financiers.
 

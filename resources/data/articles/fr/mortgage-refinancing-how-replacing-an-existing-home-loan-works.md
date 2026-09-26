@@ -2,7 +2,7 @@
 title: "Refinancement hypothécaire : comment fonctionne le remplacement d'un prêt immobilier existant"
 section: loans-financing
 author: ethan-kim
-date: 2026-09-25
+date: 2026-09-03
 ---
 Un prêt hypothécaire n'est pas nécessairement figé jusqu'à la vente du logement. Les propriétaires peuvent remplacer un prêt hypothécaire existant par un nouveau prêt grâce à un processus appelé refinancement.
 

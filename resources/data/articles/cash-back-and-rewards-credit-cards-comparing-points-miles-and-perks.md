@@ -2,7 +2,7 @@
 title: "Cash-Back and Rewards Credit Cards: Comparing Points, Miles, and Perks"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-01-03
 ---
 Credit card rewards have become a major part of the consumer credit market. Cash back, points, miles, sign-up bonuses, travel benefits, and purchase protections can all influence how people choose and use a credit card. The challenge is that rewards programs are not interchangeable. A card offering 2% cash back works differently from one offering transferable points or airline miles, and the headline reward rate does not necessarily tell you what the benefits are worth.
 

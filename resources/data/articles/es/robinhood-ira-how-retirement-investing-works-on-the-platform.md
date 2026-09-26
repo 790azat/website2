@@ -2,7 +2,7 @@
 title: "Robinhood IRA: cómo funciona la inversión para la jubilación en la plataforma"
 section: wealth-management
 author: sofia-martinez
-date: 2026-09-25
+date: 2026-07-23
 ---
 La inversión para la jubilación tradicionalmente ha implicado elegir entre un plan de jubilación del empleador, una IRA tradicional o una Roth IRA, y luego gestionar las inversiones a través de una plataforma de corretaje. Robinhood ha ampliado ese modelo al ofrecer IRA tradicionales y Roth a través de la misma aplicación que muchos inversores ya usan para invertir en cuentas sujetas a impuestos.
 

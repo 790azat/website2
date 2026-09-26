@@ -2,7 +2,7 @@
 title: "Comisiones de la Gold IRA: entendiendo el almacenamiento, la custodia y otros costos"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-26
+date: 2026-06-19
 ---
 Una Gold IRA puede ofrecer una forma de mantener ciertos metales preciosos físicos dentro de una cuenta de retiro, pero la estructura conlleva gastos que los inversionistas quizás no encuentren en una IRA convencional invertida principalmente en acciones, bonos, fondos mutuos o ETF.
 

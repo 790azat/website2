@@ -2,7 +2,7 @@
 title: "Comptes-chèques : comment comparer les frais, l'APY et les caractéristiques"
 section: personal-finance
 author: sofia-martinez
-date: 2026-02-22
+date: 2026-03-29
 ---
 Un compte-chèques est bien plus qu'un simple endroit où déposer un chèque de paie. Pour de nombreux foyers, il constitue la plaque tournante financière utilisée pour les dépôts directs, les factures récurrentes, les achats par carte de débit, les virements et les dépenses courantes.
 

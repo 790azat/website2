@@ -2,7 +2,7 @@
 title: "Períodos de gracia de tarjetas de crédito: cómo funcionan los períodos sin intereses"
 section: credit-cards
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-04-26
 ---
 Un período de gracia de tarjeta de crédito puede permitir a los titulares usar su tarjeta de crédito para compras sin pagar intereses, siempre que cumplan con las condiciones establecidas por el emisor. Para muchas tarjetas, eso generalmente significa pagar el saldo total del estado de cuenta antes de la fecha de vencimiento del pago.
 

@@ -2,7 +2,7 @@
 title: "Inversión internacional y en mercados emergentes: cómo acceder a los mercados globales"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-03-02
 ---
 Durante décadas, los inversores estadounidenses pudieron construir carteras casi por completo en torno a empresas nacionales. Hoy, ese enfoque puede dejar fuera una gran parte de la economía global.
 

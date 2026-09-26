@@ -2,7 +2,7 @@
 title: "Préstamos SBA 7(a) frente a 504: comparación de los programas de financiamiento para pequeñas empresas"
 section: loans-financing
 author: lucas-vance
-date: 2026-10-19
+date: 2026-02-19
 ---
 Las pequeñas empresas a menudo necesitan financiamiento por más de una razón. Una empresa puede necesitar capital de trabajo para contratar empleados, comprar inventario, adquirir otro negocio o gestionar gastos estacionales. Otro negocio puede necesitar principalmente financiamiento a largo plazo para un edificio, una compra importante de equipo o una expansión de instalaciones.
 

@@ -2,7 +2,7 @@
 title: "Morgan Stanley Wealth Management contre Merrill Lynch : comparer la gestion de fortune privée à service complet pour les investisseurs fortunés"
 section: wealth-management
 author: lucas-vance
-date: 2026-09-25
+date: 2025-12-30
 ---
 Pour les investisseurs fortunés, choisir une société de gestion de fortune ne se limite rarement à sélectionner un compte de placement. À des niveaux de richesse plus élevés, la relation peut impliquer la construction de portefeuille, le crédit, la coordination de la planification successorale, des stratégies avisées sur le plan fiscal, la philanthropie, les services bancaires, la succession d'entreprise et le transfert de la richesse familiale.
 

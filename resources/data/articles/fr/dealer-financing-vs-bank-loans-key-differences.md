@@ -2,7 +2,7 @@
 title: "Financement du concessionnaire ou prêt bancaire : principales différences"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-29
+date: 2026-04-02
 ---
 Acheter un véhicule implique deux décisions financières distinctes : choisir le véhicule et décider comment le payer.
 

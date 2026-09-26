@@ -2,7 +2,7 @@
 title: "Ingresos pasivos: cómo entender las distintas formas de generar ingresos adicionales"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-07
+date: 2026-02-08
 ---
 Construir independencia financiera a menudo implica crear más de una fuente de ingresos. Un empleo principal o un negocio activo puede aportar la mayor parte del flujo de efectivo del hogar, pero las fuentes de ingresos adicionales pueden ofrecer mayor flexibilidad y diversificar las fuentes que respaldan los objetivos financieros a largo plazo.
 

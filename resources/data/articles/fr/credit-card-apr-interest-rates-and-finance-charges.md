@@ -2,7 +2,7 @@
 title: "APR des cartes de crédit, taux d'intérêt et frais financiers"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2025-12-27
 ---
 La tarification des cartes de crédit peut sembler trompeusement simple. Une carte peut annoncer un taux annuel en pourcentage, ou APR, mais le coût réel de porter un solde dépend de la façon dont les intérêts sont calculés, du moment où ils commencent à s'accumuler, du type de transaction ayant généré le solde, et de l'application ou non de frais supplémentaires.
 

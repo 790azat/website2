@@ -2,7 +2,7 @@
 title: "Cuentas IRA: cómo entender las contribuciones, los impuestos y el ahorro para la jubilación"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-11-30
 ---
 Al construir una estrategia patrimonial a largo plazo, una cuenta de corretaje sujeta a impuestos ofrece considerable flexibilidad, pero no brinda el mismo tratamiento fiscal que una cuenta de jubilación. Las **cuentas de jubilación individual (IRA)** ofrecen estructuras con ventajas fiscales que pueden ayudar a las personas a acumular e invertir dinero para la jubilación.
 

@@ -2,7 +2,7 @@
 title: "Estate Planning Basics: How to Organize Assets and Prepare for the Future"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-09-13
 ---
 Building wealth is only one part of long-term financial planning. Protecting assets, documenting financial wishes, and establishing a process for transferring property can become equally important as a household's financial situation becomes more complex.
 

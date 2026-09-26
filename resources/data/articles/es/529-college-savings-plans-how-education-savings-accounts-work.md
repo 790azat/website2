@@ -2,7 +2,7 @@
 title: "Planes de ahorro universitario 529: cómo funcionan las cuentas de ahorro para la educación"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-10
+date: 2025-10-20
 ---
 Planificar los gastos educativos puede ser difícil cuando la matrícula, la vivienda, los libros y otros costos pueden seguir aumentando durante muchos años. Una cuenta de ahorro estándar puede ofrecer liquidez, pero no brinda el mismo tratamiento fiscal federal disponible a través de un programa de matrícula calificado.
 

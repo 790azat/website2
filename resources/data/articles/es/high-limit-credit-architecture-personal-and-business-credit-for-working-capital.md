@@ -2,7 +2,7 @@
 title: "Arquitectura de crédito de límite alto: crédito personal y empresarial para capital de trabajo"
 section: credit-cards
 author: sofia-martinez
-date: 2026-09-25
+date: 2025-12-12
 ---
 El capital de trabajo es el colchón financiero que mantiene a una empresa operando entre el pago de sus gastos y el cobro de sus ingresos. La nómina, la publicidad, el inventario, el software, las facturas de proveedores, el equipo y los costos imprevistos pueden generar brechas temporales de flujo de caja incluso cuando el negocio subyacente es rentable.
 

@@ -2,7 +2,7 @@
 title: "Amex Platinum en 2026 : composer avec les frais de 895 $, les crédits et la valeur de la carte"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2025-12-30
 ---
 La **American Express Platinum Card®** a évolué vers quelque chose de considérablement plus vaste qu'une carte de crédit de récompenses voyage traditionnelle. En 2026, ses frais annuels de 895 $ sont soutenus par une vaste collection de crédits liés au voyage, à la restauration, au divertissement, au magasinage et au style de vie.
 

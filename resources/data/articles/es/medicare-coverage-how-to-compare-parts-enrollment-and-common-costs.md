@@ -2,7 +2,7 @@
 title: "Cobertura de Medicare: cómo comparar las partes, la inscripción y los costos habituales"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-02-18
+date: 2026-02-27
 ---
 Medicare es un programa federal de seguro médico con varios componentes de cobertura, cada uno con un propósito diferente. Entender cómo funcionan **Medicare Parte A, Parte B, Parte C y Parte D** puede ayudar a las personas que se acercan a la elegibilidad para Medicare a evaluar primas, deducibles, acceso a proveedores, cobertura de medicamentos recetados y posibles gastos de bolsillo.
 

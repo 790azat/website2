@@ -2,7 +2,7 @@
 title: "Cómo comparar comisiones, tasas y recompensas de las tarjetas de crédito"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2026-06-17
 ---
 Elegir una tarjeta de crédito implica algo más que comparar puntos de recompensa o buscar una tasa de interés anunciada baja. Las cuotas anuales, las APR, los cargos por transferencia de saldo, las comisiones por transacciones en el extranjero, las categorías de recompensas, las reglas de canje y los términos promocionales pueden afectar el costo real y la utilidad de una tarjeta.
 

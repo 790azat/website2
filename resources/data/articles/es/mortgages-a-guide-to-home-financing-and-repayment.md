@@ -2,7 +2,7 @@
 title: "Hipotecas: una guía sobre el financiamiento y el pago de vivienda"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-06
+date: 2026-08-03
 ---
 Una hipoteca suele ser uno de los compromisos financieros más grandes que asumirá un hogar. Dado que muchos préstamos de vivienda se pagan a lo largo de 15, 20 o 30 años, la tasa de interés, el plazo del préstamo, el pago inicial, las comisiones y la estructura de pago pueden tener un efecto sustancial en el costo total del endeudamiento.
 

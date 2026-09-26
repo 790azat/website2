@@ -2,7 +2,7 @@
 title: "Seguro paraguas: cómo funciona la cobertura de responsabilidad civil adicional"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2026-04-03
 ---
 El seguro de vivienda y el seguro de auto proporcionan una protección de responsabilidad civil importante, pero los límites de esas pólizas pueden no ser suficientes para todos los hogares. Un accidente automovilístico grave, una lesión importante en la propiedad de alguien u otra reclamación de responsabilidad civil pueden generar gastos que superen los límites de una póliza de seguro subyacente.
 

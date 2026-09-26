@@ -2,7 +2,7 @@
 title: "Mécanismes et diligence des hedge funds : comprendre les stratégies long-short et les profils de risque"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-10-13
 ---
 Les hedge funds occupent une place distincte dans le paysage de l'investissement. Contrairement aux fonds communs de placement et FNB conventionnels, les hedge funds sont des véhicules d'investissement privés qui peuvent utiliser une gamme plus large de stratégies, y compris la vente à découvert, l'effet de levier, les produits dérivés, et des positions concentrées.
 

@@ -2,7 +2,7 @@
 title: "Alquiler de tradelines de usuario autorizado: impacto en el crédito, riesgos y protecciones al consumidor"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-04-05
 ---
 Un tradeline de usuario autorizado (authorized user) es una característica legítima de muchas cuentas de tarjetas de crédito. Un titular principal de la tarjeta puede agregar a otra persona como usuario autorizado, lo que permite que esa persona use la cuenta y, dependiendo de las prácticas de reporte del emisor, potencialmente hace que la cuenta aparezca en su reporte de crédito.
 

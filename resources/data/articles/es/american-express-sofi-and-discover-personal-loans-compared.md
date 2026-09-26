@@ -2,7 +2,7 @@
 title: "Comparación de préstamos personales de American Express, SoFi y Discover"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-10-08
+date: 2026-06-12
 ---
 Los préstamos personales pueden ofrecer un monto fijo de financiamiento para la consolidación de deudas, mejoras del hogar, compras importantes u otros gastos que califiquen. Pero las condiciones disponibles para los prestatarios pueden variar considerablemente entre prestamistas, particularmente en lo que respecta a los montos del préstamo, las tasas de porcentaje anual (APR), las comisiones de originación, los plazos de reembolso, los requisitos de elegibilidad y la rapidez del desembolso.
 

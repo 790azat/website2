@@ -2,7 +2,7 @@
 title: "Les actions expliquées : comment fonctionne la détention d'actions et ce que les investisseurs devraient savoir"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2026-03-26
 ---
 Les actions sont l'un des principaux moyens par lesquels les particuliers peuvent participer à la croissance des sociétés cotées en bourse. Contrairement à un dépôt bancaire, une action représente une participation dans une entreprise et peut générer des rendements par des variations de la valeur marchande et, pour certaines sociétés, des versements de dividendes.
 

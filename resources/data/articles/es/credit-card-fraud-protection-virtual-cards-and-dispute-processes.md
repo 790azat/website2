@@ -2,7 +2,7 @@
 title: "Protección contra fraude en tarjetas de crédito, tarjetas virtuales y procesos de disputa"
 section: credit-cards
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-12-25
 ---
 Las tarjetas de crédito ofrecen a los consumidores más que una forma de pedir dinero prestado. También proporcionan mecanismos para identificar transacciones no autorizadas, disputar ciertos errores de facturación y limitar las pérdidas potenciales cuando se compromete la información de la tarjeta.
 

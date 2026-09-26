@@ -2,7 +2,7 @@
 title: "Cuentas bancarias conjuntas: lo que deben saber los titulares de la cuenta"
 section: personal-finance
 author: rachel-bernstein
-date: 2026-03-09
+date: 2026-04-18
 ---
 Combinar las finanzas puede convertirse en una parte importante de la administración de un hogar. Las parejas pueden abrir una cuenta corriente compartida para pagar el alquiler y los servicios públicos, los hijos adultos pueden ayudar a gestionar los gastos recurrentes de un padre, y los socios de negocios o los familiares pueden necesitar una cuenta compartida para un propósito financiero específico.
 

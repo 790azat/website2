@@ -2,7 +2,7 @@
 title: "Gestión del flujo de caja en los hogares: cómo hacer seguimiento de los ingresos y los gastos recurrentes"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-08
+date: 2025-11-29
 ---
 Las finanzas del hogar pueden volverse difíciles de gestionar incluso cuando los ingresos son relativamente estables. El dinero llega a una cuenta corriente, se pagan las facturas recurrentes, las compras cotidianas se acumulan, y a lo largo del mes aparecen gastos inesperados. Sin una visión clara de estos movimientos, puede ser difícil entender cuánto dinero está realmente disponible para el ahorro u otras metas financieras.
 

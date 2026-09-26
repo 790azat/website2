@@ -2,7 +2,7 @@
 title: "Asignación de activos: cómo dividen los inversores su dinero entre distintas inversiones"
 section: wealth-management
 author: hannah-cohen
-date: 2026-09-25
+date: 2025-10-15
 ---
 La asignación de activos (asset allocation) es el proceso de decidir cuánto dinero colocar en diferentes tipos de inversiones. En lugar de ver una cartera como una colección de acciones, bonos, fondos y cuentas de efectivo individuales, los inversores pueden considerar la cartera en su conjunto y determinar cuánta exposición desean a cada clase de activo principal.
 

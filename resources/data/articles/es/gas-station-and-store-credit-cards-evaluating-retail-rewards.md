@@ -2,7 +2,7 @@
 title: "Tarjetas de crédito de gasolineras y tiendas: evaluando las recompensas minoristas"
 section: credit-cards
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-01-18
 ---
 Las tarjetas de crédito de gasolineras y tiendas pueden parecer atractivas en el mostrador de pago. Una tarjeta puede ofrecer un descuento instantáneo, recompensas en combustible, cash back, puntos de lealtad o financiamiento promocional a cambio de abrir una cuenta.
 

@@ -2,7 +2,7 @@
 title: "Credit Card Balance Transfers & Introductory APR Offers"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-07-08
 ---
 Credit card debt can become expensive when a balance remains outstanding month after month. Interest charges can consume a significant portion of each payment, making it difficult to reduce the underlying principal.
 

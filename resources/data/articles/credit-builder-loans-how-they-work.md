@@ -2,7 +2,7 @@
 title: "Credit Builder Loans: How They Work"
 section: credit-cards
 author: claire-odonnell
-date: 2026-09-25
+date: 2025-11-11
 ---
 Building a credit history can be difficult when you have little or no borrowing experience. Lenders generally want to see evidence that you can manage credit responsibly, but establishing that record can be challenging when you have not yet had an opportunity to borrow.
 

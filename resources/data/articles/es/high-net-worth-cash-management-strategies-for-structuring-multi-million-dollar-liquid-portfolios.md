@@ -2,7 +2,7 @@
 title: "Gestión de efectivo para grandes patrimonios: estrategias para estructurar carteras líquidas multimillonarias"
 section: personal-finance
 author: samuel-mensah
-date: 2026-03-11
+date: 2026-05-04
 ---
 Gestionar unos pocos miles de dólares de liquidez familiar es fundamentalmente distinto de gestionar varios millones de dólares en efectivo. Los grandes saldos líquidos pueden originarse en la venta de un negocio, una herencia, una transacción inmobiliaria, compensación en acciones, posiciones de inversión concentradas o la acumulación de reservas empresariales.
 

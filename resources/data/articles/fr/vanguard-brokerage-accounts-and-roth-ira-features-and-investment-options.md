@@ -2,7 +2,7 @@
 title: "Comptes de courtage Vanguard et Roth IRA : caractéristiques et options de placement"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-03-30
 ---
 Pour les investisseurs qui bâtissent un patrimoine à long terme, le choix d'un compte de placement est une décision importante, car le compte détermine comment les cotisations, la fiscalité, les retraits et les choix de placement s'articulent entre eux. Vanguard propose à la fois des comptes de courtage standard et des Roth IRA, offrant aux investisseurs des options pour le placement imposable et l'épargne axée sur la retraite.
 

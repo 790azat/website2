@@ -2,7 +2,7 @@
 title: "Fideicomisos de remanente benéfico (CRT): cómo desbloquear el crecimiento libre de impuestos mientras se retribuye"
 section: wealth-management
 author: rachel-bernstein
-date: 2026-09-25
+date: 2026-01-27
 ---
 Para los inversionistas con activos altamente apreciados, las donaciones benéficas pueden crear un desafío de planificación interesante. Vender acciones apreciadas, bienes inmuebles u otra inversión puede generar una factura sustancial de impuestos sobre las ganancias de capital, mientras que simplemente donar el activo puede significar renunciar a la oportunidad de recibir ingresos de él.
 

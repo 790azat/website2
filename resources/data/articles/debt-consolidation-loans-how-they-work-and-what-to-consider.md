@@ -2,7 +2,7 @@
 title: "Debt Consolidation Loans: How They Work and What to Consider"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-09-30
+date: 2025-10-17
 ---
 Managing several debts at the same time can make repayment difficult to organize. A borrower might have multiple credit card balances, a personal loan, medical bills, or other eligible obligations, each with its own payment date, interest rate, and balance.
 

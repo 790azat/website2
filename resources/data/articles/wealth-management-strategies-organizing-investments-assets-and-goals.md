@@ -2,7 +2,7 @@
 title: "Wealth Management Strategies: Organizing Investments, Assets, and Goals"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-06-18
 ---
 As financial assets grow beyond basic savings and emergency reserves, managing money becomes increasingly complex. Multiple investment accounts, real estate, retirement plans, insurance policies, tax obligations, and estate documents can create a fragmented financial picture.
 

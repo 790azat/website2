@@ -2,7 +2,7 @@
 title: "Expat Personal Finance: Managing Cross-Border Taxes, Foreign Bank Accounts, and Currency Risks"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2025-12-01
 ---
 Living abroad can create new opportunities for work, business, travel, and lifestyle flexibility. It can also make personal finances considerably more complicated.
 

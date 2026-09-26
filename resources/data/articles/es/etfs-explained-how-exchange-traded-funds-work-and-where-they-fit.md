@@ -2,7 +2,7 @@
 title: "Los ETF explicados: cómo funcionan los fondos cotizados en bolsa y dónde encajan"
 section: wealth-management
 author: lucas-vance
-date: 2026-03-25
+date: 2025-11-21
 ---
 Pasar de productos básicos de ahorro a los mercados de inversión puede hacer que la construcción de una cartera parezca complicada. Comprar acciones individuales requiere investigación y monitoreo continuo, mientras que los fondos mutuos tradicionales generalmente ofrecen menos flexibilidad durante el día de negociación. Los **fondos cotizados en bolsa (ETF, por sus siglas en inglés)** combinan estructuras de inversión colectiva con la posibilidad de negociar participaciones en una bolsa, lo que los convierte en una herramienta ampliamente utilizada para la inversión de jubilación, las cuentas de corretaje sujetas a impuestos y las carteras diversificadas.
 

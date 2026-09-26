@@ -2,7 +2,7 @@
 title: "Gestión de efectivo: cómo organizar sus finanzas a corto plazo"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-03
+date: 2026-06-22
 ---
 La inversión a largo plazo y la planificación para la jubilación son importantes para construir patrimonio, pero una gestión de efectivo eficaz determina qué tan bien maneja las exigencias financieras que tiene justo delante. El alquiler, los pagos de hipoteca, los servicios públicos, las primas de seguro, las facturas de tarjetas de crédito, los impuestos, las reparaciones y los gastos inesperados requieren todos efectivo accesible.
 

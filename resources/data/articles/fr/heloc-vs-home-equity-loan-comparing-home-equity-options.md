@@ -2,7 +2,7 @@
 title: "HELOC vs prêt sur valeur domiciliaire : comparer les options sur la valeur nette du logement"
 section: loans-financing
 author: lucas-vance
-date: 2026-09-25
+date: 2026-03-26
 ---
 Les propriétaires qui ont accumulé une valeur nette substantielle peuvent avoir accès à une autre source de financement au-delà d'un prêt personnel ou d'une carte de crédit traditionnels : la valeur accumulée dans leur propriété.
 

@@ -2,7 +2,7 @@
 title: "Límites de tarjetas de crédito y pagos mínimos: cómo gestionar los costos a largo plazo"
 section: credit-cards
 author: ethan-kim
-date: 2026-09-25
+date: 2026-09-12
 ---
 El límite de una tarjeta de crédito puede parecer engañosamente simple: es el saldo máximo que el emisor le permite mantener. El pago mínimo puede parecer igualmente sencillo: es la cantidad más pequeña que debe pagar antes de la fecha de vencimiento para mantener la cuenta al día.
 

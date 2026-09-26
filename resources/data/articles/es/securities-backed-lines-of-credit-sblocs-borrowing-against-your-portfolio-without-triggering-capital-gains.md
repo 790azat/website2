@@ -2,7 +2,7 @@
 title: "Líneas de crédito respaldadas por valores (SBLOC): cómo pedir prestado contra su cartera sin generar ganancias de capital"
 section: wealth-management
 author: samuel-mensah
-date: 2026-09-25
+date: 2026-03-17
 ---
 Vender inversiones que se han revalorizado puede generar una factura de impuestos justo en el momento en que un inversionista necesita liquidez. Para alguien que mantiene una cartera grande de acciones, bonos o fondos mutuos con ganancias no realizadas sustanciales, una alternativa es pedir prestado contra esos activos en lugar de venderlos.
 

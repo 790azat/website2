@@ -2,7 +2,7 @@
 title: "Stratégies de gestion de patrimoine : organiser les placements, les actifs et les objectifs"
 section: wealth-management
 author: claire-odonnell
-date: 2026-09-25
+date: 2026-06-18
 ---
 À mesure que les actifs financiers dépassent l'épargne de base et les réserves d'urgence, la gestion de l'argent devient de plus en plus complexe. De multiples comptes de placement, des biens immobiliers, des régimes de retraite, des polices d'assurance, des obligations fiscales et des documents successoraux peuvent créer une situation financière fragmentée.
 

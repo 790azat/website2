@@ -2,7 +2,7 @@
 title: "Planificación ante enfermedad e interrupción de ingresos: cómo poner a prueba su balance personal"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-02-01
 ---
 La planificación financiera a largo plazo suele centrarse en aumentar los ingresos, construir carteras de inversión, pagar deudas y acumular activos. Esos objetivos son importantes, pero un balance sólido todavía puede volverse vulnerable cuando los ingresos se detienen de repente.
 

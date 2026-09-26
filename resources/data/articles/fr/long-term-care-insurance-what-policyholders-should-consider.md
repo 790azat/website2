@@ -2,7 +2,7 @@
 title: "Assurance soins de longue durée : ce que les titulaires de police devraient considérer"
 section: personal-finance
 author: hannah-cohen
-date: 2026-03-11
+date: 2025-10-01
 ---
 La planification de la retraite se concentre souvent sur les rendements des placements, les impôts, la Sécurité sociale et un revenu durable. Un risque financier qui reçoit parfois moins d'attention est le coût potentiel des soins de longue durée.
 

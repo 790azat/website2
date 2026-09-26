@@ -1,7 +1,7 @@
 ---
 title: "Cartes de crédit de stations-service et de magasins : évaluer les récompenses de détail"
 section: credit-cards
-date: 2026-09-25
+date: 2026-01-18
 author: rachel-bernstein
 ---
 Les cartes de crédit de stations-service et de magasins peuvent sembler attrayantes à la caisse. Une carte peut offrir une remise instantanée, des récompenses sur le carburant, du cash back, des points de fidélité ou un financement promotionnel en échange de l'ouverture d'un compte.

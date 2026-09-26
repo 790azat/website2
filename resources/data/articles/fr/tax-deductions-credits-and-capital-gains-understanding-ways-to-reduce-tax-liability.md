@@ -2,7 +2,7 @@
 title: "Déductions fiscales, crédits d'impôt et plus-values : comprendre les moyens de réduire l'impôt à payer"
 section: personal-finance
 author: lucas-vance
-date: 2026-03-11
+date: 2026-07-06
 ---
 Les impôts peuvent avoir un effet significatif sur la part du revenu et de la croissance des placements qu'un ménage conserve au final. Pour les investisseurs, les conséquences fiscales de la vente d'actifs qui ont pris de la valeur, de la perception de revenus de placement, des cotisations aux comptes de retraite ou de la demande de déductions et de crédits admissibles peuvent influer sur les résultats financiers globaux.
 

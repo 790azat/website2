@@ -2,7 +2,7 @@
 title: "Mortgage Refinancing: How Replacing an Existing Home Loan Works"
 section: loans-financing
 author: ethan-kim
-date: 2026-09-25
+date: 2026-09-03
 ---
 A mortgage does not necessarily have to remain unchanged until the home is sold. Homeowners can replace an existing mortgage with a new loan through a process known as refinancing.
 

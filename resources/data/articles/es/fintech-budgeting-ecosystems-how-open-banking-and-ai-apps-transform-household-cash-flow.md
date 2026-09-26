@@ -2,7 +2,7 @@
 title: "Ecosistemas fintech de presupuesto: cómo la banca abierta y las aplicaciones con IA transforman el flujo de caja del hogar"
 section: personal-finance
 author: sofia-martinez
-date: 2026-03-11
+date: 2026-07-20
 ---
 La elaboración de presupuestos del hogar alguna vez requería un esfuerzo manual considerable. Los consumidores llevaban un registro de recibos, mantenían hojas de cálculo, descargaban estados de cuenta bancarios e iniciaban sesión en instituciones financieras separadas para entender adónde iba su dinero.
 

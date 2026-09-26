@@ -2,7 +2,7 @@
 title: "Flood Insurance: Understanding Coverage Outside Standard Home Policies"
 section: loans-financing
 author: rachel-bernstein
-date: 2026-10-21
+date: 2026-07-26
 ---
 A standard homeowners insurance policy can provide broad protection for a home and its contents, but one major source of property damage generally requires separate coverage: **flooding**.
 
