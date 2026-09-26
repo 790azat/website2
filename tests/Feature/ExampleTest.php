@@ -16,3 +16,15 @@ test('hero card rotates through articles with cover images', function () {
         ->assertSee('hero-rotator', false)
         ->assertSee(route('article', $article['slug']), false);
 });
+
+test('disclaimer page is linked from the footer', function () {
+    $this->get(route('disclaimer'))
+        ->assertOk()
+        ->assertSee('Investment Risk')
+        ->assertSee('Edufinance.site makes no representations');
+
+    $this->get(route('home'))
+        ->assertOk()
+        ->assertSee(route('disclaimer'), false)
+        ->assertSee('Past performance is not indicative of future results.');
+});

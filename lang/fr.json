@@ -187,7 +187,6 @@
     ":site home": "Accueil de :site",
     "Clear, research-driven guides to banking, investing, borrowing, and credit — written to help you make confident money decisions.": "Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.",
     "Start learning": "Commencer à apprendre",
-    "Information shared by :site is intended for informational and educational purposes and should not be interpreted as investment, tax, or legal advice. Financial decisions carry risk, and past performance does not guarantee future results. Always seek advice from a certified professional before making financial decisions.": "Les informations publiées par :site ont une vocation informative et pédagogique et ne doivent pas être interprétées comme un conseil en investissement, fiscal ou juridique. Les décisions financières comportent des risques, et les performances passées ne préjugent pas des résultats futurs. Demandez toujours l’avis d’un professionnel certifié avant de prendre une décision financière.",
     "All rights reserved.": "Tous droits réservés.",
     "Free, independent guides to banking, investing, loans & credit": "Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit",
     "Our Team": "Notre équipe",
@@ -318,5 +317,16 @@
     "At :site, we provide clear, research-driven information to help consumers and professionals better understand today’s financial and business landscape, presenting practical information and established concepts in an accessible format.": "Chez :site, nous proposons des informations claires et fondées sur la recherche pour aider les consommateurs et les professionnels à mieux comprendre le paysage financier et économique actuel, en présentant des informations pratiques et des concepts établis de manière accessible.",
     "Learn more about our editors": "Découvrez nos rédacteurs",
     "See also": "Voir aussi",
-    "Show articles :number": "Afficher les articles :number"
+    "Show articles :number": "Afficher les articles :number",
+    "Disclaimer": "Avertissement",
+    "Disclaimer:": "Avertissement :",
+    "Read the :site disclaimer: our content is educational only and is not professional financial, legal, or tax advice.": "Lisez l’avertissement de :site : notre contenu est uniquement éducatif et ne constitue pas un conseil financier, juridique ou fiscal professionnel.",
+    "Educational Purposes Only": "À des fins éducatives uniquement",
+    "Investment Risk": "Risque d’investissement",
+    "No Warranties or Liability": "Absence de garantie et de responsabilité",
+    "The content provided on :domain is for informational and educational purposes only and should not be construed as professional financial, legal, or tax advice. The creators and editors of this site are not licensed financial advisors.": "Le contenu proposé sur :domain est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.",
+    "Investing involves risk, including the potential loss of principal. Past performance is not indicative of future results. Before making any financial decisions or implementing any investment strategies, you should conduct your own independent research and consult with a qualified, licensed professional who understands your specific financial situation.": "Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.",
+    ":domain makes no representations or warranties as to the accuracy, completeness, or suitability of the information contained herein, and assumes no liability for any financial losses or damages arising from the use of this content.": ":domain ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.",
+    "this Disclaimer": "le présent avertissement",
+    "This Disclaimer applies to all content published on :site, including articles, guides, and program pages.": "Le présent avertissement s’applique à l’ensemble du contenu publié sur :site, y compris les articles, les guides et les pages de programmes."
 }

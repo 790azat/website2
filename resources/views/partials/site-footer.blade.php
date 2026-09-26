@@ -41,14 +41,20 @@
                     <ul class="mt-5 space-y-3 text-sm">
                         <li><a href="{{ route('privacy-policy') }}" wire:navigate class="text-brand-100/80 transition hover:text-white">{{ __('Privacy Policy') }}</a></li>
                         <li><a href="{{ route('terms-of-use') }}" wire:navigate class="text-brand-100/80 transition hover:text-white">{{ __('Terms of Use') }}</a></li>
+                        <li><a href="{{ route('disclaimer') }}" wire:navigate class="text-brand-100/80 transition hover:text-white">{{ __('Disclaimer') }}</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="mt-14 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
-            <span class="font-semibold text-brand-100">{{ __('Educational content only.') }}</span>
-            {{ __('Information shared by :site is intended for informational and educational purposes and should not be interpreted as investment, tax, or legal advice. Financial decisions carry risk, and past performance does not guarantee future results. Always seek advice from a certified professional before making financial decisions.', ['site' => $siteName]) }}
+        @php($siteDomain = ucfirst(\App\Support\SiteContent::domain()))
+        <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">{{ __('Disclaimer:') }}</span>
+                {{ __('The content provided on :domain is for informational and educational purposes only and should not be construed as professional financial, legal, or tax advice. The creators and editors of this site are not licensed financial advisors.', ['domain' => $siteDomain]) }}
+            </p>
+            <p>{{ __('Investing involves risk, including the potential loss of principal. Past performance is not indicative of future results. Before making any financial decisions or implementing any investment strategies, you should conduct your own independent research and consult with a qualified, licensed professional who understands your specific financial situation.') }}</p>
+            <p>{{ __(':domain makes no representations or warranties as to the accuracy, completeness, or suitability of the information contained herein, and assumes no liability for any financial losses or damages arising from the use of this content.', ['domain' => $siteDomain]) }}</p>
         </div>
 
         <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
