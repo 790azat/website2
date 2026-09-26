@@ -121,12 +121,9 @@
                     <div class="absolute -right-16 -bottom-16 size-64 rounded-full border-[28px] border-zest-400/20"></div>
 
                     <div class="relative rounded-3xl bg-surface p-6 shadow-2xl shadow-brand-950/30 sm:p-7">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-xs font-bold tracking-[0.16em] text-muted uppercase">{{ __('Your learning path') }}</p>
-                                <p class="mt-1 font-display text-2xl font-semibold text-ink">{{ __('Build your foundation') }}</p>
-                            </div>
-                            <span class="flex size-12 items-center justify-center rounded-2xl bg-zest-300 text-brand-900">
+                        <div class="flex items-center justify-between gap-4">
+                            <p class="font-display text-2xl leading-tight font-semibold text-balance text-ink">{{ __('100% Independent & Free Financial Research') }}</p>
+                            <span class="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-zest-300 text-brand-900">
                                 <flux:icon name="academic-cap" class="size-6" />
                             </span>
                         </div>
