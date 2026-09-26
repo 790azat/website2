@@ -206,7 +206,46 @@ class SiteContent
     public static function programs(): Collection
     {
         return collect(static::data()['programs'] ?? [])
-            ->map(static::withProgramImage(...));
+            ->map(static::withProgramImage(...))
+            ->map(static::translateProgram(...));
+    }
+
+    /**
+     * Program page text in the current language. Every piece of copy is
+     * looked up in lang/{locale}.json, so a string without a translation
+     * stays in English; slugs, URLs, icons and images are left alone.
+     *
+     * @param  array<string, mixed>  $program
+     * @return array<string, mixed>
+     */
+    protected static function translateProgram(array $program): array
+    {
+        if (app()->getLocale() === 'en') {
+            return $program;
+        }
+
+        foreach (['title', 'intro', 'cta_label', 'hero_tagline', 'overview_heading', 'overview_intro'] as $key) {
+            if (is_string($program[$key] ?? null)) {
+                $program[$key] = static::translate($program[$key]);
+            }
+        }
+
+        foreach (['features', 'pros', 'extra_sections'] as $group) {
+            foreach ($program[$group] ?? [] as $i => $item) {
+                foreach ($item as $key => $value) {
+                    if (is_string($value) && ! in_array($key, ['icon'], true)) {
+                        $program[$group][$i][$key] = static::translate($value);
+                    } elseif (is_array($value)) {
+                        $program[$group][$i][$key] = array_map(
+                            fn ($text) => is_string($text) ? static::translate($text) : $text,
+                            $value,
+                        );
+                    }
+                }
+            }
+        }
+
+        return $program;
     }
 
     /**
