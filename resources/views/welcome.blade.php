@@ -13,6 +13,16 @@
     $moreArticles = $allArticles->slice(7, 4)->values();
     $programs = SiteContent::programs();
     $authors = SiteContent::authors();
+
+    // Hero card slides: each slide shows one article per topic, newest first.
+    $heroByTopic = $categories
+        ->map(fn ($category) => SiteContent::articles($category['id'])->take(5)->values())
+        ->filter(fn ($articles) => $articles->isNotEmpty())
+        ->values();
+    $heroSlides = collect(range(0, max(0, ($heroByTopic->max(fn ($articles) => $articles->count()) ?? 1) - 1)))
+        ->map(fn (int $s) => $heroByTopic->map(fn ($articles) => $articles[$s % $articles->count()]))
+        ->filter(fn ($slide) => $slide->isNotEmpty())
+        ->values();
 @endphp
 
 @section('content')
@@ -76,24 +86,64 @@
                             </span>
                         </div>
 
-                        <ol class="mt-6 space-y-3">
-                            @foreach ($categories as $i => $category)
-                                <li>
-                                    <a href="{{ route('section', $category['id']) }}" wire:navigate class="group flex items-center gap-4 rounded-2xl border border-line p-3.5 transition hover:border-brand-300 hover:bg-soft">
-                                        <span class="flex size-10 shrink-0 items-center justify-center rounded-xl {{ $i === 0 ? 'bg-brand-600 text-white' : 'bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200' }}">
-                                            <flux:icon name="{{ $category['icon'] }}" variant="mini" class="size-5" />
-                                        </span>
-                                        <span class="min-w-0 flex-1">
-                                            <span class="block font-semibold text-ink">{{ $category['title'] }}</span>
-                                            <span class="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-soft">
-                                                <span class="block h-full rounded-full bg-brand-500" style="width: {{ max(12, 88 - $i * 22) }}%"></span>
-                                            </span>
-                                        </span>
-                                        <flux:icon name="arrow-up-right" variant="mini" class="size-4 text-muted transition group-hover:text-brand-600" />
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ol>
+                        {{-- Rotating articles: one per topic per slide; advances when the timer bar finishes. --}}
+                        <div
+                            x-data="{ active: 0, count: {{ $heroSlides->count() }}, go(i) { this.active = (i + this.count) % this.count } }"
+                            class="hero-rotator mt-6"
+                        >
+                            <div class="grid">
+                                @foreach ($heroSlides as $s => $slide)
+                                    <ol
+                                        class="col-start-1 row-start-1 space-y-3 transition-all duration-500 ease-out"
+                                        @if ($s !== 0) x-cloak @endif
+                                        :class="active === {{ $s }} ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-2 opacity-0 pointer-events-none'"
+                                        :aria-hidden="active !== {{ $s }}"
+                                    >
+                                        @foreach ($slide as $i => $article)
+                                            <li>
+                                                <a href="{{ route('article', $article['slug']) }}" wire:navigate :tabindex="active === {{ $s }} ? 0 : -1" class="group flex items-center gap-4 rounded-2xl border border-line p-3.5 transition hover:border-brand-300 hover:bg-soft">
+                                                    <span class="relative flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-xl {{ $i === 0 ? 'bg-brand-600 text-white' : 'bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200' }}">
+                                                        @if ($article['image'])
+                                                            <img src="{{ asset('images/'.$article['image']) }}" alt="" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover" />
+                                                        @else
+                                                            <flux:icon name="{{ $article['section_icon'] }}" variant="mini" class="size-5" />
+                                                        @endif
+                                                    </span>
+                                                    <span class="min-w-0 flex-1">
+                                                        <span class="block text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">{{ $article['section_title'] }}</span>
+                                                        <span class="mt-0.5 block truncate font-semibold text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $article['title'] }}</span>
+                                                    </span>
+                                                    <flux:icon name="arrow-up-right" variant="mini" class="size-4 shrink-0 text-muted transition group-hover:text-brand-600" />
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ol>
+                                @endforeach
+                            </div>
+
+                            @if ($heroSlides->count() > 1)
+                                <div x-cloak class="mt-5 flex items-center gap-4">
+                                    <span class="block h-1.5 flex-1 overflow-hidden rounded-full bg-soft">
+                                        <span
+                                            x-effect="active; $el.classList.remove('is-running'); void $el.offsetWidth; $el.classList.add('is-running')"
+                                            @animationend="go(active + 1)"
+                                            class="hero-timer block h-full rounded-full bg-brand-500"
+                                        ></span>
+                                    </span>
+                                    <span class="flex items-center gap-1.5">
+                                        @foreach ($heroSlides as $s => $slide)
+                                            <button
+                                                type="button"
+                                                @click="go({{ $s }})"
+                                                class="h-1.5 rounded-full transition-all"
+                                                :class="active === {{ $s }} ? 'w-5 bg-brand-600' : 'w-1.5 bg-line hover:bg-brand-300'"
+                                                aria-label="{{ __('Show articles :number', ['number' => $s + 1]) }}"
+                                            ></button>
+                                        @endforeach
+                                    </span>
+                                </div>
+                            @endif
+                        </div>
                     </div>
 
                     <div class="relative mt-6 flex items-center gap-3 text-sm text-brand-100">
