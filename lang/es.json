@@ -320,7 +320,6 @@
     "Show articles :number": "Mostrar artículos :number",
     "The :site editorial team brings together writers and analysts with experience across personal finance, consumer credit, banking, wealth management, small business, and financial technology. Our contributors focus on clear, practical explanations of financial topics, combining research with real-world considerations to help readers understand products, costs, requirements, and long-term financial decisions without unnecessary jargon.": "El equipo editorial de :site reúne a redactores y analistas con experiencia en finanzas personales, crédito al consumo, banca, gestión patrimonial, pequeñas empresas y tecnología financiera. Nuestros colaboradores se centran en explicaciones claras y prácticas de temas financieros, combinando la investigación con consideraciones del mundo real para ayudar a los lectores a comprender productos, costes, requisitos y decisiones financieras a largo plazo sin tecnicismos innecesarios.",
     "Search articles": "Buscar artículos",
-    "Search :count articles…": "Buscar entre :count artículos…",
     "No articles found.": "No se encontraron artículos.",
     "Disclaimer": "Aviso legal",
     "Disclaimer:": "Aviso legal:",
@@ -333,5 +332,6 @@
     ":domain makes no representations or warranties as to the accuracy, completeness, or suitability of the information contained herein, and assumes no liability for any financial losses or damages arising from the use of this content.": ":domain no ofrece declaraciones ni garantías sobre la exactitud, integridad o idoneidad de la información aquí contenida, y no asume ninguna responsabilidad por pérdidas financieras ni daños derivados del uso de este contenido.",
     "this Disclaimer": "este aviso legal",
     "This Disclaimer applies to all content published on :site, including articles, guides, and program pages.": "Este aviso legal se aplica a todo el contenido publicado en :site, incluidos artículos, guías y páginas de programas.",
-    "100% Independent & Free Financial Research": "Investigación financiera 100 % independiente y gratuita"
+    "100% Independent & Free Financial Research": "Investigación financiera 100 % independiente y gratuita",
+    "Find guides on loans, credit, investing...": "Encuentre guías sobre préstamos, crédito, inversión..."
 }
