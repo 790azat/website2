@@ -21,7 +21,7 @@ use Illuminate\Support\Str;
  * generated artwork (or author initials) instead of broken images.
  *
  * @phpstan-type Section array{title: string, order?: int, icon?: string, description?: string}
- * @phpstan-type Content array{sections: array<string, Section>, authors: array<string, array<string, mixed>>, articles: list<array<string, mixed>>, programs?: list<array<string, mixed>>}
+ * @phpstan-type Content array{sections: array<string, Section>, authors: array<string, array<string, mixed>>, articles: list<array<string, mixed>>, programs?: list<array<string, mixed>>, translations: array<string, array<string, array<string, mixed>>>}
  * @phpstan-type Category array{id: string, title: string, description: string|null, icon: string, order: int, count: int}
  */
 class SiteContent
@@ -86,8 +86,8 @@ class SiteContent
             static::$categories[$locale] = collect($data['sections'])
                 ->map(fn (array $meta, string $key) => [
                     'id' => $key,
-                    'title' => __($meta['title']),
-                    'description' => isset($meta['description']) ? __($meta['description']) : null,
+                    'title' => static::translate($meta['title']),
+                    'description' => isset($meta['description']) ? static::translate($meta['description']) : null,
                     'icon' => $meta['icon'] ?? 'book-open',
                     'order' => $meta['order'] ?? 99,
                     'count' => $counts[$key] ?? 0,
@@ -281,6 +281,16 @@ class SiteContent
         }
 
         return $articles;
+    }
+
+    /**
+     * Translation of a string for the current locale, or the string itself.
+     */
+    protected static function translate(string $text): string
+    {
+        $translated = __($text);
+
+        return is_string($translated) ? $translated : $text;
     }
 
     /**
