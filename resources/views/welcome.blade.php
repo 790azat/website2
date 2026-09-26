@@ -55,18 +55,14 @@
                     <a href="{{ route('team') }}" wire:navigate class="btn-ghost">{{ __('Meet our editors') }}</a>
                 </div>
 
-                <dl class="mt-12 grid max-w-lg grid-cols-3 divide-x divide-line border-y border-line py-5">
+                <dl class="mt-12 grid max-w-sm grid-cols-2 divide-x divide-line border-y border-line py-5">
                     <div class="pr-4">
                         <dt class="text-xs font-semibold text-muted">{{ __('Guides') }}</dt>
                         <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $allArticles->count() }}</dd>
                     </div>
-                    <div class="px-4">
+                    <div class="pl-4">
                         <dt class="text-xs font-semibold text-muted">{{ __('Topics') }}</dt>
                         <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $categories->count() }}</dd>
-                    </div>
-                    <div class="pl-4">
-                        <dt class="text-xs font-semibold text-muted">{{ __('Cost to read') }}</dt>
-                        <dd class="mt-1 font-display text-3xl font-semibold text-brand-600 dark:text-brand-400">$0</dd>
                     </div>
                 </dl>
             </div>
@@ -155,10 +151,6 @@
                         </span>
                         <span>{!! __('Written by :count in personal finance & wealth', ['count' => '<span class="font-semibold text-white">'.e(trans_choice(':count specialist|:count specialists', $authors->count())).'</span>']) !!}</span>
                     </div>
-                </div>
-
-                <div class="absolute -top-5 -left-3 hidden rotate-[-6deg] rounded-2xl bg-zest-400 px-4 py-3 text-sm font-bold text-brand-950 shadow-lg sm:block">
-                    {{ __('100% free & independent') }}
                 </div>
             </div>
         </div>
