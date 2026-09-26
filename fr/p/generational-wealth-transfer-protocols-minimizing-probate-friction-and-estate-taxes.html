@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Protocoles de transmission de patrimoine intergénérationnel : minimiser les frictions liées à l&#039;homologation et les droits de succession — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="À mesure que le patrimoine familial augmente, transférer des actifs d&#039;une génération à l&#039;autre devient plus compliqué que de simplement rédiger un testamen..." />
+                            <link rel="alternate" hreflang="en" href="/p/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes" />
+                    <link rel="alternate" hreflang="es" href="/es/p/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes" />
+                <link rel="alternate" hreflang="x-default" href="/p/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/fr/our-team" wire:navigate class="transition hover:text-white">Notre équipe</a>
+                <a href="/fr/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="shrink-0" aria-label="Accueil de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/fr" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Accueil</a>
+                            <a href="/fr/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finances personnelles</a>
+                            <a href="/fr/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestion de patrimoine</a>
+                            <a href="/fr/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Prêts et financement</a>
+                            <a href="/fr/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédit et cartes</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/fr/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Tous les articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/fr" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Tous les articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Thèmes</p>
+                            <a href="/fr/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finances personnelles
+                </a>
+                            <a href="/fr/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestion de patrimoine
+                </a>
+                            <a href="/fr/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Prêts et financement
+                </a>
+                            <a href="/fr/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédit et cartes
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">À propos</p>
+            <a href="/fr/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Notre équipe</a>
+            <a href="/fr/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Fil d’Ariane">
+                <a href="/fr" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Accueil
+                </a>
+                <span class="text-line">/</span>
+                <a href="/fr/c/personal-finance" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Finances personnelles</a>
+            </nav>
+
+            <a href="/fr/c/personal-finance" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h9A1.5 1.5 0 0 1 14 3.5v.401a2.986 2.986 0 0 0-1.5-.401h-9c-.546 0-1.059.146-1.5.401V3.5ZM3.5 5A1.5 1.5 0 0 0 2 6.5v.401A2.986 2.986 0 0 1 3.5 6.5h9c.546 0 1.059.146 1.5.401V6.5A1.5 1.5 0 0 0 12.5 5h-9ZM8 10a2 2 0 0 0 1.938-1.505c.068-.268.286-.495.562-.495h2A1.5 1.5 0 0 1 14 9.5v3a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 12.5v-3A1.5 1.5 0 0 1 3.5 8h2c.276 0 .494.227.562.495A2 2 0 0 0 8 10Z"/>
+</svg>
+
+                        Finances personnelles
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Protocoles de transmission de patrimoine intergénérationnel : minimiser les frictions liées à l&#039;homologation et les droits de succession
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/fr/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/claire-odonnell.webp"
+        alt="Claire O’Donnell"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Claire O’Donnell</span>
+                        <span class="text-muted">Private Wealth, Tax &amp; Estate Strategy Analyst</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2026-01-16">16 janvier 2026</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            12 min de lecture
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/generational-wealth-transfer-protocols-minimizing-probate-friction-and-estate-taxes.webp" alt="Protocoles de transmission de patrimoine intergénérationnel : minimiser les frictions liées à l&#039;homologation et les droits de succession" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="Dans cet article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Dans cet article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#comprendre-lhomologation-et-ladministration-successorale" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comprendre l&#039;homologation et l&#039;administration successorale</a>
+                                </li>
+                                                            <li>
+                                    <a href="#le-cadre-federal-des-droits-de-succession-pour-2026" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Le cadre fédéral des droits de succession pour 2026</a>
+                                </li>
+                                                            <li>
+                                    <a href="#exclusion-annuelle-de-limpot-sur-les-donations" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Exclusion annuelle de l&#039;impôt sur les donations</a>
+                                </li>
+                                                            <li>
+                                    <a href="#fiducies-vivantes-revocables-et-planification-de-lhomologation" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Fiducies vivantes révocables et planification de l&#039;homologation</a>
+                                </li>
+                                                            <li>
+                                    <a href="#fiducies-irrevocables-et-planification-successorale" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Fiducies irrévocables et planification successorale</a>
+                                </li>
+                                                            <li>
+                                    <a href="#fiducies-irrevocables-dassurance-vie" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Fiducies irrévocables d&#039;assurance-vie</a>
+                                </li>
+                                                            <li>
+                                    <a href="#planification-du-transfert-par-saut-de-generation" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Planification du transfert par saut de génération</a>
+                                </li>
+                                                            <li>
+                                    <a href="#planification-du-transfert-de-patrimoine-etape-par-etape" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Planification du transfert de patrimoine étape par étape</a>
+                                </li>
+                                                            <li>
+                                    <a href="#en-resume" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">En résumé</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>À mesure que le patrimoine familial augmente, transférer des actifs d'une génération à l'autre devient plus compliqué que de simplement rédiger un testament et désigner des bénéficiaires. L'immobilier, les comptes de placement, les intérêts commerciaux, l'assurance-vie et d'autres actifs peuvent chacun suivre des règles de propriété et de transfert différentes.</p>
+<p>Un <strong>plan successoral</strong> bien structuré peut aider à coordonner ces actifs, réduire les frictions administratives, préserver la confidentialité lorsque cela est approprié, et traiter les éventuels droits fédéraux de succession, de donation et de transfert par saut de génération.</p>
+<p>La stratégie appropriée dépend de la taille et de la composition de la succession, des bénéficiaires concernés, du droit de l'État applicable, et du degré de contrôle que le propriétaire souhaite conserver.</p>
+<h2 id="comprendre-lhomologation-et-ladministration-successorale">Comprendre l'homologation et l'administration successorale</h2>
+<p>L'<strong>homologation</strong> (probate) est le processus supervisé par un tribunal utilisé dans de nombreuses juridictions pour valider un testament, identifier et évaluer les actifs, traiter les réclamations des créanciers, et distribuer les biens conformément au plan successoral et au droit applicables.</p>
+<p>Ce ne sont pas tous les actifs qui passent nécessairement par l'homologation.</p>
+<p>Les actifs détenus dans une fiducie révocable correctement financée, les comptes avec des désignations valides de paiement au décès (payable-on-death) ou de transfert au décès (transfer-on-death), certains biens détenus en copropriété, et certains comptes de retraite avec désignation de bénéficiaire peuvent se transférer en dehors de la succession homologuée.</p>
+<h3>Pourquoi la planification de l'homologation est importante</h3>
+<p>L'homologation peut créer des exigences administratives pour une succession, notamment :</p>
+<ul>
+<li>Le dépôt de documents judiciaires</li>
+<li>L'identification et l'évaluation des actifs</li>
+<li>La notification aux créanciers</li>
+<li>Le paiement des dettes et taxes valides</li>
+<li>La résolution des litiges</li>
+<li>La distribution des biens</li>
+<li>La tenue des registres successoraux</li>
+</ul>
+<p>Le coût et la durée de l'homologation varient considérablement selon l'État, la complexité de la succession, le type d'actif, et selon que des litiges surviennent.</p>
+<p>Il est donc trompeur de supposer que chaque succession homologuée coûte un pourcentage fixe de ses actifs ou prend un nombre de mois prédéterminé.</p>
+<h3>Considérations relatives à la confidentialité</h3>
+<p>Les procédures d'homologation peuvent impliquer des dépôts judiciaires publics, bien que la quantité d'informations accessibles au public varie selon la juridiction.</p>
+<p>Une fiducie correctement structurée peut offrir une plus grande confidentialité pour les actifs détenus par la fiducie, car la fiducie elle-même ne passe généralement pas par le même processus d'homologation public.</p>
+<p>Cela peut être particulièrement pertinent pour les familles préoccupées par l'exposition publique d'informations détaillées sur des biens de valeur ou des bénéficiaires.</p>
+<h2 id="le-cadre-federal-des-droits-de-succession-pour-2026">Le cadre fédéral des droits de succession pour 2026</h2>
+<p>Pour les personnes assujetties aux droits fédéraux américains de succession et de donation, le <strong>montant d'exclusion de base est de 15 millions $ pour 2026</strong>. Le même chiffre de 15 millions $ s'applique à l'exemption fédérale de la taxe de transfert par saut de génération pour 2026.</p>
+<p>Le régime fédéral des droits de succession applique généralement un taux maximal de <strong>40 %</strong> aux transferts imposables dépassant l'exclusion applicable, après prise en compte des déductions, crédits, dons imposables antérieurs et autres ajustements pertinents.</p>
+<p>Il est important de noter qu'une succession d'une valeur supérieure à 15 millions $ ne signifie pas que l'ensemble de la succession est automatiquement imposé à 40 %. Le calcul des droits de succession tient compte de la succession brute, des déductions, des dons imposables ajustés, de l'exclusion applicable et d'autres dispositions.</p>
+<h3>La portabilité entre conjoints</h3>
+<p>Un conjoint survivant peut potentiellement utiliser le montant d'exclusion inutilisé du conjoint décédé grâce à la <strong>portabilité</strong>.</p>
+<p>Cela nécessite généralement que l'exécuteur de la succession du premier conjoint fasse le choix approprié sur une déclaration fédérale de droits de succession déposée dans les délais.</p>
+<p>L'IRS note qu'une déclaration de droits de succession peut être exigée pour une succession se situant en dessous du seuil normal de dépôt lorsque l'exécuteur souhaite choisir la portabilité.</p>
+<p>Par conséquent, les couples mariés disposant d'actifs importants devraient discuter de la portabilité avec leurs conseillers en planification successorale et fiscale plutôt que de supposer que cela se produit automatiquement.</p>
+<h2 id="exclusion-annuelle-de-limpot-sur-les-donations">Exclusion annuelle de l'impôt sur les donations</h2>
+<p>L'<strong>exclusion annuelle de l'impôt sur les donations pour 2026 est de 19 000 $ par bénéficiaire</strong>. Un donateur peut généralement utiliser l'exclusion séparément pour chaque bénéficiaire admissible. Par exemple, des dons de 19 000 $ à plusieurs personnes différentes peuvent potentiellement se qualifier pour l'exclusion annuelle pour chaque bénéficiaire.</p>
+<p>Si deux conjoints admissibles font des dons et utilisent correctement le fractionnement des dons (gift splitting), l'exclusion annuelle combinée peut généralement atteindre <strong>38 000 $ par bénéficiaire</strong> en 2026.</p>
+<p>L'exclusion annuelle est distincte de l'exclusion de base à vie, mais les dons dépassant l'exclusion annuelle peuvent nécessiter une déclaration et peuvent réduire l'exclusion à vie restante du donateur sans nécessairement créer un impôt immédiat sur les donations.</p>
+<h3>Paiements directs pour frais de scolarité et médicaux</h3>
+<p>Certains paiements effectués <strong>directement à un établissement d'enseignement admissible pour des frais de scolarité</strong> ou directement à un fournisseur de soins médicaux pour des dépenses médicales admissibles peuvent bénéficier d'un traitement spécial et ne sont généralement pas considérés comme des dons imposables aux fins de l'impôt fédéral sur les donations.</p>
+<p>Le paiement doit satisfaire aux exigences applicables. Les paiements effectués à l'étudiant ou au patient et utilisés ultérieurement pour des frais de scolarité ou médicaux ne bénéficient généralement pas du même traitement.</p>
+<h2 id="fiducies-vivantes-revocables-et-planification-de-lhomologation">Fiducies vivantes révocables et planification de l'homologation</h2>
+<p>Une <strong>fiducie vivante révocable</strong> peut servir de structure de propriété centrale pour certains actifs.</p>
+<p>Du vivant du constituant, celui-ci conserve généralement un contrôle important sur la fiducie.</p>
+<p>Après le décès, un fiduciaire successeur peut généralement administrer les actifs détenus par la fiducie conformément à l'acte de fiducie, sans que ces actifs eux-mêmes aient à passer par l'homologation.</p>
+<h3>Ce qu'une fiducie révocable n'accomplit pas automatiquement</h3>
+<p>Une fiducie révocable ne devrait pas être considérée comme une structure universelle de protection contre les droits de succession ou de protection des actifs.</p>
+<p>Étant donné que le constituant conserve généralement le contrôle et la jouissance bénéficiaire :</p>
+<ul>
+<li>Les actifs de la fiducie sont généralement toujours inclus dans la succession imposable du constituant.</li>
+<li>La fiducie ne protège généralement pas les actifs du constituant contre les propres créanciers du constituant.</li>
+<li>Les actifs jamais transférés dans la fiducie peuvent tout de même nécessiter une homologation.</li>
+<li>Les actifs à désignation de bénéficiaire peuvent suivre des règles de transfert distinctes.</li>
+</ul>
+<p>La fiducie doit donc être correctement <strong>financée et coordonnée</strong> avec le reste du plan successoral.</p>
+<h2 id="fiducies-irrevocables-et-planification-successorale">Fiducies irrévocables et planification successorale</h2>
+<p>Une <strong>fiducie irrévocable</strong> peut être utilisée à des fins de planification successorale plus spécialisées.</p>
+<p>Selon ses termes et les droits conservés par le constituant, le transfert d'actifs vers une fiducie irrévocable peut potentiellement retirer ces actifs de la succession imposable du constituant.</p>
+<p>Cependant, ce résultat n'est pas automatique.</p>
+<p>Le traitement fiscal dépend de facteurs tels que :</p>
+<ul>
+<li>Les termes de la fiducie</li>
+<li>Les pouvoirs conservés</li>
+<li>Les intérêts des bénéficiaires</li>
+<li>Le moment des transferts</li>
+<li>Les règles fiscales fédérales applicables</li>
+<li>Le droit de l'État</li>
+</ul>
+<p>Une fiducie irrévocable peut également avoir des conséquences fiscales sur le revenu différentes d'une fiducie révocable du constituant (grantor trust).</p>
+<h2 id="fiducies-irrevocables-dassurance-vie">Fiducies irrévocables d'assurance-vie</h2>
+<p>Une <strong>fiducie irrévocable d'assurance-vie (ILIT)</strong> peut être utilisée dans certains plans successoraux impliquant des polices d'assurance-vie substantielles.</p>
+<p>Les prestations de décès de l'assurance-vie ne sont généralement pas assujetties à l'impôt fédéral sur le revenu lorsqu'elles sont versées aux bénéficiaires, mais le produit de l'assurance-vie peut être inclus dans la succession brute de l'assuré dans certaines circonstances de propriété.</p>
+<p>Une ILIT correctement structurée peut potentiellement retirer le produit de l'assurance-vie de la succession imposable de l'assuré en plaçant la propriété et le contrôle de la police en dehors de la succession de l'assuré.</p>
+<p>Cependant, la fiducie doit satisfaire à des exigences juridiques et fiscales détaillées.</p>
+<p>L'assurance-vie existante nécessite également une attention particulière, car le transfert d'une police existante peut impliquer la <strong>règle fédérale des trois ans</strong> dans certaines circonstances.</p>
+<p>Le financement des primes peut impliquer des dons à la fiducie, des droits de retrait des bénéficiaires, et des considérations de déclaration de l'impôt sur les donations.</p>
+<h2 id="planification-du-transfert-par-saut-de-generation">Planification du transfert par saut de génération</h2>
+<p>La <strong>taxe fédérale de transfert par saut de génération (GST)</strong> s'applique à certains transferts bénéficiant à des personnes se situant deux générations ou plus en dessous du cédant, ainsi qu'à certaines fiducies considérées comme des fiducies « skip-person ».</p>
+<p>Pour 2026, l'exemption GST est de <strong>15 millions $ par personne</strong>, correspondant à l'exclusion de base des droits de succession et de donation.</p>
+<p>Une fiducie multigénérationnelle correctement structurée peut potentiellement allouer l'exemption GST à des actifs destinés à bénéficier aux enfants, petits-enfants, et générations ultérieures.</p>
+<p>L'objectif n'est pas simplement d'éliminer tout impôt futur. La planification GST peut plutôt réduire la possibilité que des droits de transfert surviennent lors de certains transferts à des générations ultérieures.</p>
+<p>L'allocation de l'exemption GST et la classification des transferts peuvent être techniquement complexes, de sorte que l'acte de fiducie et les déclarations fiscales devraient être coordonnés avec soin.</p>
+<h2 id="planification-du-transfert-de-patrimoine-etape-par-etape">Planification du transfert de patrimoine étape par étape</h2>
+<h3>1. Créer un inventaire complet des actifs</h3>
+<p>Répertoriez :</p>
+<ul>
+<li>Les comptes bancaires</li>
+<li>Les comptes de courtage</li>
+<li>Les comptes de retraite</li>
+<li>L'immobilier</li>
+<li>Les intérêts commerciaux</li>
+<li>L'assurance-vie</li>
+<li>Les investissements privés</li>
+<li>Les biens personnels de valeur</li>
+<li>Les fiducies existantes</li>
+</ul>
+<p>Notez comment chaque actif est actuellement enregistré et qui est désigné comme bénéficiaire.</p>
+<h3>2. Coordonner la propriété et les désignations de bénéficiaires</h3>
+<p>Examinez si chaque actif devrait être :</p>
+<ul>
+<li>Détenu individuellement</li>
+<li>Détenu conjointement</li>
+<li>Détenu par une fiducie révocable</li>
+<li>Soumis à une désignation de transfert au décès</li>
+<li>Soumis à une désignation de paiement au décès</li>
+<li>Détenu par le biais d'une entité commerciale</li>
+<li>Couvert par une fiducie irrévocable distincte</li>
+</ul>
+<p>Une désignation de bénéficiaire peut prévaloir sur des dispositions d'un testament pour certains comptes, de sorte que les documents doivent fonctionner ensemble.</p>
+<h3>3. Évaluer l'exposition aux droits fédéraux de succession et de donation</h3>
+<p>Estimez la valeur actuelle de la succession et tenez compte de l'appréciation future.</p>
+<p>Pour les successions plus importantes, calculez comment les dons de son vivant, les dons imposables antérieurs, la portabilité, et l'exclusion fédérale pourraient affecter l'exposition future aux droits de succession.</p>
+<h3>4. Envisager des structures fiduciaires multigénérationnelles</h3>
+<p>Les familles disposant d'un patrimoine substantiel peuvent envisager des structures telles que :</p>
+<ul>
+<li>Les fiducies dynastiques</li>
+<li>Les fiducies GST</li>
+<li>Les fiducies irrévocables d'assurance-vie</li>
+<li>Les fiducies conjugales</li>
+<li>Les fiducies pour besoins spéciaux</li>
+<li>Les fiducies caritatives</li>
+</ul>
+<p>Chaque structure sert des objectifs différents et comporte ses propres exigences juridiques, fiscales et administratives.</p>
+<h3>5. Examiner le plan régulièrement</h3>
+<p>Les plans successoraux devraient être revus après des changements importants tels que :</p>
+<ul>
+<li>Le mariage</li>
+<li>Le divorce</li>
+<li>La naissance ou l'adoption</li>
+<li>Le décès d'un bénéficiaire</li>
+<li>Des achats d'actifs majeurs</li>
+<li>La vente d'entreprises</li>
+<li>Des changements significatifs de patrimoine</li>
+<li>Le déménagement vers un autre État</li>
+</ul>
+<p>Les lois fiscales et les circonstances familiales peuvent également changer, ce qui rend les révisions périodiques importantes.</p>
+<h2 id="en-resume">En résumé</h2>
+<p>La <strong>planification de la transmission du patrimoine intergénérationnel</strong> implique plus que la simple minimisation des impôts. Elle nécessite de coordonner la propriété, les désignations de bénéficiaires, les fiducies, les testaments, l'assurance, les intérêts commerciaux et les objectifs familiaux en une structure capable de fonctionner lorsque les actifs doivent réellement être transférés.</p>
+<p>Une <strong>fiducie vivante révocable</strong> peut aider à l'homologation et à l'administration des actifs qui y sont correctement transférés, tandis que les fiducies irrévocables peuvent servir des objectifs plus spécialisés liés aux droits de succession, à la transmission multigénérationnelle, ou à la protection des actifs.</p>
+<p>Pour 2026, le montant d'exclusion de base fédéral est de <strong>15 millions $ par personne</strong>, tandis que l'exclusion annuelle de l'impôt sur les donations reste à <strong>19 000 $ par bénéficiaire</strong>. L'exemption GST est également de 15 millions $ pour 2026.</p>
+<p>Ces chiffres peuvent être importants lors de l'évaluation de structures sophistiquées de transmission du patrimoine, mais les seuils numériques ne représentent qu'une partie de l'analyse. La propriété des actifs, les dispositions de la fiducie, les relations avec les bénéficiaires, les dons antérieurs, le droit de l'État, et les choix fiscaux peuvent modifier considérablement le résultat.</p>
+<p>Pour les successions substantielles, un avocat spécialisé en planification successorale et un professionnel fiscal qualifié peuvent coordonner les documents juridiques et les calculs fiscaux fédéraux afin que les stratégies de transmission du patrimoine reflètent à la fois le droit en vigueur et les objectifs à long terme de la famille.</p>
+<div class="references"><h2 id="references">Références</h2>
+<ul>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.irs.gov/">Internal Revenue Service (IRS)</a> — Directives fédérales sur les droits de succession, de donation et de transfert par saut de génération.</li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.irs.gov/instructions/i706">Formulaire IRS 706 — Déclaration fédérale des droits de succession (et de transfert par saut de génération) des États-Unis</a> — Seuils de dépôt des droits de succession pour 2026, montants d'exclusion, portabilité et informations sur la taxe GST.</li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes">Foire aux questions de l'IRS sur l'impôt sur les donations</a> — Exclusion annuelle de dons pour 2026 et informations sur le fractionnement des dons.</li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.irs.gov/forms-pubs/about-form-709">Formulaire IRS 709 — Déclaration des droits de donation et de transfert par saut de génération des États-Unis</a> — Déclaration de l'impôt sur les donations et allocation de l'exemption GST.</li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.finra.org/">Financial Industry Regulatory Authority (FINRA)</a> — Ressources d'éducation des investisseurs concernant la planification successorale et de transmission du patrimoine.</li>
+</ul>
+</div>
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/claire-odonnell.webp"
+        alt="Claire O’Donnell"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Écrit par</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Claire O’Donnell</p>
+                            <p class="text-sm text-brand-200">Private Wealth, Tax &amp; Estate Strategy Analyst</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Claire specializes in high-net-worth wealth planning, tax strategy, and generational wealth transfer. Coming from a background in private client services, her work covers estate and trust planning, charitable giving, tax-efficient investing, and alternative investments, helping families make sense of complex decisions without getting lost in legal or financial jargon.</p>
+                                        <a href="/fr/our-team" wire:navigate class="btn-zest relative mt-6">Rencontrez les rédacteurs</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenu à but uniquement pédagogique.</span>
+                    Cet article fournit des informations générales et ne constitue pas un conseil financier, d’investissement, fiscal ou juridique personnalisé.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Continuez à apprendre</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Plus dans Finances personnelles</h2>
+                    </div>
+                    <a href="/fr/c/personal-finance" wire:navigate class="link-underline text-sm font-semibold text-ink">Tout voir</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/fr/p/business-savings-accounts-how-companies-can-manage-cash-reserves" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/business-savings-accounts-how-companies-can-manage-cash-reserves.webp"
+        alt="Comptes d&#039;épargne professionnels : comment les entreprises peuvent gérer leurs réserves de trésorerie"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Finances personnelles
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Comptes d&#039;épargne professionnels : comment les entreprises peuvent gérer leurs réserves de trésorerie
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Un compte-chèques professionnel est conçu pour faire fonctionner les opérations quotidiennes. La paie, les factures fournisseurs, les abonnements logiciels, les impôts et...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/samuel-mensah.webp"
+        alt="Samuel Mensah"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Samuel Mensah</span>
+                    </span>
+                    <time datetime="2026-09-18" class="shrink-0">18 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/high-yield-checking-accounts-what-to-compare" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/high-yield-checking-accounts-what-to-compare.webp"
+        alt="Comptes chèques à haut rendement : que comparer"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Finances personnelles
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Comptes chèques à haut rendement : que comparer
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Un compte chèque est généralement le centre opérationnel des finances d&#039;un ménage. Les chèques de paie arrivent par dépôt direct, les factures récurrentes sont payées, le...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/sofia-martinez.webp"
+        alt="Sofia Martinez"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Sofia Martinez</span>
+                    </span>
+                    <time datetime="2026-08-21" class="shrink-0">21 août 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/building-an-emergency-fund-for-financial-security" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/building-an-emergency-fund-for-financial-security.webp"
+        alt="Constituer un fonds d&#039;urgence pour la sécurité financière"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Finances personnelles
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Constituer un fonds d&#039;urgence pour la sécurité financière
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">La vie est intrinsèquement imprévisible. Qu&#039;il s&#039;agisse d&#039;une facture médicale inattendue, d&#039;une réparation automobile soudaine, d&#039;un entretien domiciliaire essentiel ou...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/sofia-martinez.webp"
+        alt="Sofia Martinez"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Sofia Martinez</span>
+                    </span>
+                    <time datetime="2026-08-06" class="shrink-0">6 août 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/fr" wire:navigate aria-label="Accueil de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.
+                </p>
+                <a href="/fr/articles" wire:navigate class="btn-zest mt-7">
+                    Commencer à apprendre
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Thèmes</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/fr/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finances personnelles</a></li>
+                                                    <li><a href="/fr/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestion de patrimoine</a></li>
+                                                    <li><a href="/fr/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Prêts et financement</a></li>
+                                                    <li><a href="/fr/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédit et cartes</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Tous les articles</a></li>
+                        <li><a href="/fr/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Notre équipe éditoriale</a></li>
+                        <li><a href="/fr/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Mentions légales</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="/fr/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Conditions d’utilisation</a></li>
+                        <li><a href="/fr/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Avertissement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Avertissement :</span>
+                Le contenu proposé sur Edufinance.site est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.
+            </p>
+            <p>Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.</p>
+            <p>Edufinance.site ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Tous droits réservés.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="cw5Ntl4rtuM79Ole3Xu6Pf5RGZRUAjz7aQ612Q1p" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

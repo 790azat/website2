@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Architecture de crédit à plafond élevé : crédit personnel et professionnel pour le fonds de roulement — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Le fonds de roulement est le coussin financier qui permet à une entreprise de continuer à fonctionner entre le paiement de ses dépenses et l&#039;encaissement d..." />
+                            <link rel="alternate" hreflang="en" href="/p/high-limit-credit-architecture-personal-and-business-credit-for-working-capital" />
+                    <link rel="alternate" hreflang="es" href="/es/p/high-limit-credit-architecture-personal-and-business-credit-for-working-capital" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/high-limit-credit-architecture-personal-and-business-credit-for-working-capital" />
+                <link rel="alternate" hreflang="x-default" href="/p/high-limit-credit-architecture-personal-and-business-credit-for-working-capital" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/fr/our-team" wire:navigate class="transition hover:text-white">Notre équipe</a>
+                <a href="/fr/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/high-limit-credit-architecture-personal-and-business-credit-for-working-capital"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/high-limit-credit-architecture-personal-and-business-credit-for-working-capital"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/high-limit-credit-architecture-personal-and-business-credit-for-working-capital"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="shrink-0" aria-label="Accueil de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/fr" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Accueil</a>
+                            <a href="/fr/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finances personnelles</a>
+                            <a href="/fr/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestion de patrimoine</a>
+                            <a href="/fr/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Prêts et financement</a>
+                            <a href="/fr/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédit et cartes</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/fr/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Tous les articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/fr" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Tous les articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Thèmes</p>
+                            <a href="/fr/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finances personnelles
+                </a>
+                            <a href="/fr/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestion de patrimoine
+                </a>
+                            <a href="/fr/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Prêts et financement
+                </a>
+                            <a href="/fr/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédit et cartes
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">À propos</p>
+            <a href="/fr/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Notre équipe</a>
+            <a href="/fr/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Fil d’Ariane">
+                <a href="/fr" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Accueil
+                </a>
+                <span class="text-line">/</span>
+                <a href="/fr/c/credit-cards" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Crédit et cartes</a>
+            </nav>
+
+            <a href="/fr/c/credit-cards" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5V5h14v-.5A1.5 1.5 0 0 0 13.5 3h-11Z"/>
+  <path fill-rule="evenodd" d="M15 7H1v4.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V7ZM3 10.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Zm3.75-.75a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z" clip-rule="evenodd"/>
+</svg>
+
+                        Crédit et cartes
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Architecture de crédit à plafond élevé : crédit personnel et professionnel pour le fonds de roulement
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/fr/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/samuel-mensah.webp"
+        alt="Samuel Mensah"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Samuel Mensah</span>
+                        <span class="text-muted">Small Business Finance Contributor</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2025-12-12">12 décembre 2025</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            13 min de lecture
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/high-limit-credit-architecture-personal-and-business-credit-for-working-capital.webp" alt="Architecture de crédit à plafond élevé : crédit personnel et professionnel pour le fonds de roulement" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="Dans cet article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Dans cet article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#le-credit-personnel-ouvre-souvent-la-porte" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Le crédit personnel ouvre souvent la porte</a>
+                                </li>
+                                                            <li>
+                                    <a href="#le-credit-personnel-et-le-credit-professionnel-remplissent-des-fonctions-differentes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Le crédit personnel et le crédit professionnel remplissent des fonctions différentes</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-garanties-personnelles-modifient-la-structure-de-risque" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les garanties personnelles modifient la structure de risque</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-plafonds-de-credit-ne-sont-pas-la-meme-chose-que-le-fonds-de-roulement" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les plafonds de crédit ne sont pas la même chose que le fonds de roulement</a>
+                                </li>
+                                                            <li>
+                                    <a href="#construire-le-credit-autour-des-cycles-de-tresorerie" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Construire le crédit autour des cycles de trésorerie</a>
+                                </li>
+                                                            <li>
+                                    <a href="#plusieurs-lignes-de-credit-peuvent-creer-de-la-flexibilite" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Plusieurs lignes de crédit peuvent créer de la flexibilité</a>
+                                </li>
+                                                            <li>
+                                    <a href="#des-plafonds-eleves-peuvent-reduire-la-pression-liee-au-taux-dutilisation" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Des plafonds élevés peuvent réduire la pression liée au taux d&#039;utilisation</a>
+                                </li>
+                                                            <li>
+                                    <a href="#demander-des-plafonds-plus-eleves-necessite-des-preuves" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Demander des plafonds plus élevés nécessite des preuves</a>
+                                </li>
+                                                            <li>
+                                    <a href="#separer-lemprunt-a-court-terme-et-a-long-terme" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Séparer l&#039;emprunt à court terme et à long terme</a>
+                                </li>
+                                                            <li>
+                                    <a href="#une-ligne-de-credit-professionnelle-peut-servir-de-coussin-de-liquidite" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Une ligne de crédit professionnelle peut servir de coussin de liquidité</a>
+                                </li>
+                                                            <li>
+                                    <a href="#ne-construisez-pas-la-structure-autour-de-lemprunt-maximal" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Ne construisez pas la structure autour de l&#039;emprunt maximal</a>
+                                </li>
+                                                            <li>
+                                    <a href="#surveiller-le-volet-personnel-de-la-structure" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Surveiller le volet personnel de la structure</a>
+                                </li>
+                                                            <li>
+                                    <a href="#le-credit-devrait-soutenir-et-non-remplacer-la-gestion-de-tresorerie" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Le crédit devrait soutenir, et non remplacer, la gestion de trésorerie</a>
+                                </li>
+                                                            <li>
+                                    <a href="#construire-une-architecture-de-credit-durable" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Construire une architecture de crédit durable</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Le fonds de roulement est le coussin financier qui permet à une entreprise de continuer à fonctionner entre le paiement de ses dépenses et l'encaissement de ses revenus. Les salaires, la publicité, les stocks, les logiciels, les factures fournisseurs, l'équipement et les dépenses imprévues peuvent tous créer des écarts de trésorerie temporaires, même lorsque l'activité sous-jacente est rentable.</p>
+<p>Le crédit peut aider à combler ces écarts, mais constituer un montant important de crédit disponible est différent du simple fait de cumuler plusieurs cartes.</p>
+<p>Une approche plus réfléchie considère le crédit personnel, les cartes de crédit professionnelles, les lignes de crédit renouvelables et le financement à terme comme des composantes distinctes d'une structure d'emprunt plus large. L'objectif est de créer un accès au capital tout en maintenant des obligations de remboursement gérables et en protégeant, autant que possible, les finances personnelles.</p>
+<p>Les cartes de crédit professionnelles peuvent parfois offrir des plafonds plus élevés que les cartes personnelles, car les émetteurs peuvent tenir compte du chiffre d'affaires de l'entreprise en plus du revenu personnel et de l'historique de crédit. Cependant, de nombreuses cartes professionnelles exigent également une garantie personnelle, ce qui signifie que le propriétaire peut rester personnellement responsable des soldes impayés.</p>
+<h2 id="le-credit-personnel-ouvre-souvent-la-porte">Le crédit personnel ouvre souvent la porte</h2>
+<p>Pour les entreprises nouvelles ou de petite taille, le profil de crédit personnel du propriétaire peut jouer un rôle important dans l'obtention d'un financement professionnel.</p>
+<p>Un prêteur peut disposer de peu d'informations sur l'historique financier, les actifs, la rentabilité ou le comportement de remboursement d'une jeune entreprise. Le crédit personnel peut donc fournir une mesure supplémentaire de la solvabilité du demandeur.</p>
+<p>Les demandes de cartes professionnelles peuvent tenir compte de facteurs tels que le crédit personnel, le chiffre d'affaires de l'entreprise, ses dépenses, son ancienneté et le revenu du propriétaire.</p>
+<p>Cela crée un point de départ pratique pour les entrepreneurs : le crédit personnel peut aider à établir un accès au crédit professionnel, mais l'objectif à long terme n'a pas nécessairement à être une dépendance illimitée à l'emprunt personnel.</p>
+<p>Cette distinction devient de plus en plus importante à mesure que les soldes augmentent.</p>
+<h2 id="le-credit-personnel-et-le-credit-professionnel-remplissent-des-fonctions-differentes">Le crédit personnel et le crédit professionnel remplissent des fonctions différentes</h2>
+<p>Le crédit personnel est principalement lié à l'historique d'emprunt d'un individu. Le crédit professionnel est associé à l'identité financière de l'entreprise et à ses obligations commerciales.</p>
+<p>Un profil de crédit professionnel peut, à terme, fournir aux prêteurs des informations supplémentaires sur la manière dont l'entreprise gère ses obligations.</p>
+<p>Les cartes de crédit professionnelles peuvent également offrir des avantages administratifs en séparant les achats de l'entreprise des dépenses du ménage. Elles peuvent inclure des cartes pour les employés, des fonctionnalités de gestion des dépenses, des contrôles de dépenses et des récompenses orientées vers l'entreprise.</p>
+<p>Pour une entreprise en croissance, cette séparation peut considérablement faciliter la comptabilité et le reporting financier.</p>
+<p>Le point important est que l'ouverture d'une carte professionnelle ne rend pas automatiquement les finances personnelles du propriétaire hors de propos. Les garanties personnelles et les politiques de déclaration propres à chaque émetteur peuvent maintenir un lien entre les deux systèmes.</p>
+<h2 id="les-garanties-personnelles-modifient-la-structure-de-risque">Les garanties personnelles modifient la structure de risque</h2>
+<p>Une garantie personnelle est l'un des détails les plus importants à examiner avant d'accepter un crédit professionnel.</p>
+<p>Lorsqu'un propriétaire signe une garantie personnelle, il s'engage à rester responsable de la dette si l'entreprise ne la rembourse pas. Chase indique que les cartes de crédit professionnelles comportent généralement des garanties personnelles, et que ces garanties peuvent être limitées ou illimitées selon l'accord.</p>
+<p>Cela signifie qu'un plafond de crédit professionnel de 50 000 $ ne doit pas automatiquement être interprété comme 50 000 $ de capital d'entreprise sans risque.</p>
+<p>Si l'entreprise connaît un grave problème de trésorerie, l'obligation peut finalement retomber sur le propriétaire.</p>
+<p>Avant d'accepter un plafond élevé, il convient de vérifier si l'accord crée une responsabilité personnelle, si l'émetteur déclare l'activité aux bureaux de crédit à la consommation, et ce qui se passe en cas de défaut.</p>
+<h2 id="les-plafonds-de-credit-ne-sont-pas-la-meme-chose-que-le-fonds-de-roulement">Les plafonds de crédit ne sont pas la même chose que le fonds de roulement</h2>
+<p>Un plafond de crédit élevé crée une <strong>capacité</strong>. Il ne crée ni rentabilité ni capacité de remboursement.</p>
+<p>Considérez une entreprise disposant de 100 000 $ de crédit renouvelable total disponible et de 25 000 $ en liquidités.</p>
+<p>Sa capacité d'emprunt théorique peut sembler substantielle, mais si les dépenses d'exploitation mensuelles s'élèvent à 80 000 $ et que les clients paient habituellement leurs factures après 60 jours, l'entreprise peut tout de même rencontrer une pression de liquidité sérieuse.</p>
+<p>La planification du fonds de roulement commence donc par le calendrier des entrées et sorties de trésorerie.</p>
+<p>Le crédit est le plus utile lorsqu'il comble un écart de calendrier prévisible.</p>
+<p>Par exemple, une entreprise peut acheter des stocks aujourd'hui, les vendre le mois prochain, puis encaisser les paiements des clients plusieurs semaines plus tard. Une ligne renouvelable peut potentiellement couvrir la période intermédiaire.</p>
+<p>Utiliser le crédit renouvelable pour financer de façon permanente une activité qui dépense systématiquement plus qu'elle ne gagne crée un tout autre problème.</p>
+<h2 id="construire-le-credit-autour-des-cycles-de-tresorerie">Construire le crédit autour des cycles de trésorerie</h2>
+<p>Une structure de crédit utile commence par la compréhension du cycle d'exploitation de l'entreprise.</p>
+<p>Identifiez :</p>
+<ul>
+<li>Les dépenses d'exploitation mensuelles moyennes</li>
+<li>Les besoins de paie</li>
+<li>Les achats de stocks</li>
+<li>Les conditions de paiement des fournisseurs</li>
+<li>Les délais de recouvrement des comptes clients</li>
+<li>Les hausses de dépenses saisonnières</li>
+<li>Les obligations fiscales attendues</li>
+<li>Les achats importants à venir</li>
+<li>Les paiements de dettes existantes</li>
+</ul>
+<p>Déterminez ensuite où se situe réellement l'écart de financement.</p>
+<p>Une entreprise qui a besoin de 30 000 $ pendant deux semaines chaque mois a un besoin de financement différent de celle qui a besoin de 30 000 $ en permanence.</p>
+<p>La première situation peut se prêter au crédit renouvelable. La seconde peut nécessiter des capitaux propres supplémentaires, un financement à plus long terme, ou un ajustement fondamental de la structure de trésorerie de l'entreprise.</p>
+<h2 id="plusieurs-lignes-de-credit-peuvent-creer-de-la-flexibilite">Plusieurs lignes de crédit peuvent créer de la flexibilité</h2>
+<p>Les entreprises n'ont pas nécessairement besoin de dépendre d'un seul compte.</p>
+<p>Une architecture de crédit potentielle pourrait inclure :</p>
+<p><strong>Crédit personnel :</strong> Maintenu principalement pour les besoins financiers du ménage et dans le cadre du profil de crédit global du propriétaire.</p>
+<p><strong>Cartes de crédit professionnelles :</strong> Utilisées pour les dépenses d'exploitation, les dépenses des employés, les abonnements récurrents, la publicité, les déplacements et les achats pouvant être rapprochés via le système comptable de l'entreprise.</p>
+<p><strong>Ligne de crédit professionnelle :</strong> Utilisée pour les besoins de fonds de roulement à court terme, lorsqu'un accès renouvelable est plus approprié que de demander à répétition de nouveaux prêts.</p>
+<p><strong>Financement à terme :</strong> Utilisé pour des actifs ou des projets qui apportent de la valeur sur plusieurs années.</p>
+<p><strong>Réserves de liquidités :</strong> Utilisées comme première couche de protection contre les dépenses imprévues et les baisses temporaires de revenus.</p>
+<p>L'objectif n'est pas de maximiser le nombre de comptes. C'est de faire correspondre chaque outil de financement à un usage approprié.</p>
+<h2 id="des-plafonds-eleves-peuvent-reduire-la-pression-liee-au-taux-dutilisation">Des plafonds élevés peuvent réduire la pression liée au taux d'utilisation</h2>
+<p>Le taux d'utilisation du crédit est l'une des raisons pour lesquelles les entreprises peuvent chercher à obtenir davantage de crédit disponible.</p>
+<p>Supposons qu'une entreprise facture régulièrement 20 000 $ par mois mais ne dispose que de 25 000 $ de crédit renouvelable disponible. Son taux d'utilisation peut devenir élevé même si l'entreprise règle son solde en totalité chaque mois.</p>
+<p>Augmenter le crédit disponible peut offrir davantage de marge pour les fluctuations normales de l'exploitation.</p>
+<p>Cependant, les règles d'utilisation et les pratiques de déclaration diffèrent entre les produits de crédit professionnels et personnels. Chase indique que l'activité d'une carte professionnelle peut affecter le crédit personnel dans certaines circonstances, en particulier lorsqu'une carte implique une responsabilité personnelle et que l'émetteur déclare l'activité aux bureaux de consommation.</p>
+<p>Pour cette raison, les propriétaires d'entreprise ne devraient pas présumer qu'une carte professionnelle est automatiquement invisible pour leur profil de crédit personnel.</p>
+<h2 id="demander-des-plafonds-plus-eleves-necessite-des-preuves">Demander des plafonds plus élevés nécessite des preuves</h2>
+<p>Un plafond de crédit plus élevé est généralement plus facile à justifier lorsque l'entreprise peut démontrer une performance financière plus solide.</p>
+<p>Les émetteurs peuvent tenir compte :</p>
+<ul>
+<li>Du chiffre d'affaires de l'entreprise</li>
+<li>De l'historique de remboursement</li>
+<li>De la dette existante</li>
+<li>De l'historique de crédit de l'entreprise</li>
+<li>Du crédit personnel</li>
+<li>Du taux d'utilisation actuel</li>
+<li>De l'ancienneté de l'entreprise</li>
+<li>De la raison de l'augmentation demandée</li>
+</ul>
+<p>Chase précise que les émetteurs de cartes professionnelles peuvent tenir compte de la cote de crédit de l'entreprise, de son chiffre d'affaires, de son historique de remboursement et de sa dette existante lors de l'évaluation d'une demande d'augmentation de plafond.</p>
+<p>Cela signifie qu'une entreprise devrait tenir des registres financiers rigoureux plutôt que de simplement demander des plafonds plus élevés sans justification financière claire.</p>
+<p>Si le chiffre d'affaires a augmenté de manière significative, il peut également être pertinent de mettre à jour les informations auprès de l'émetteur. Chase note que déclarer une hausse du chiffre d'affaires de l'entreprise peut potentiellement favoriser l'accès à du crédit supplémentaire, bien que l'approbation reste à la discrétion de l'émetteur.</p>
+<h2 id="separer-lemprunt-a-court-terme-et-a-long-terme">Séparer l'emprunt à court terme et à long terme</h2>
+<p>L'un des principes les plus importants de l'architecture de crédit consiste à faire correspondre la durée de la dette au besoin en actif ou en trésorerie.</p>
+<p>Le crédit renouvelable à court terme peut convenir aux écarts temporaires de fonds de roulement.</p>
+<p>Un financement à plus long terme peut être plus adapté aux équipements, aux projets d'expansion ou à d'autres actifs qui génèrent de la valeur sur plusieurs années.</p>
+<p>Utiliser une carte de crédit pour financer une dépense qui prendra plusieurs années à rembourser peut créer une dette coûteuse et potentiellement instable. À l'inverse, contracter un prêt à long terme pour un écart de fonds de roulement de courte durée peut créer des obligations fixes inutiles.</p>
+<p>La structure de financement devrait suivre la durée de vie économique de la dépense sous-jacente.</p>
+<h2 id="une-ligne-de-credit-professionnelle-peut-servir-de-coussin-de-liquidite">Une ligne de crédit professionnelle peut servir de coussin de liquidité</h2>
+<p>Une ligne de crédit professionnelle renouvelable peut donner accès à du capital sans obliger l'entreprise à emprunter immédiatement la totalité du montant approuvé.</p>
+<p>La SBA décrit son 7(a) Working Capital Pilot comme un programme de ligne de crédit surveillé, conçu pour soutenir les entreprises en croissance, y compris celles qui ont besoin de financement pour des contrats ou des projets importants ou qui souhaitent emprunter sur la base de leurs comptes clients ou de leurs stocks. Le programme peut offrir des lignes de crédit allant jusqu'à 5 millions de dollars pour les entreprises admissibles.</p>
+<p>La SBA explique également que les lignes de crédit peuvent être utiles pour la gestion du fonds de roulement, car les intérêts sont facturés sur les fonds effectivement utilisés plutôt que sur l'ensemble de la ligne non utilisée.</p>
+<p>Les prêteurs commerciaux ont leurs propres normes de souscription, leur propre tarification, leurs propres exigences en matière de garanties et leurs propres critères d'admissibilité ; un programme de la SBA ne doit donc pas être considéré comme équivalent à une carte de crédit professionnelle ordinaire ou à une ligne bancaire classique.</p>
+<h2 id="ne-construisez-pas-la-structure-autour-de-lemprunt-maximal">Ne construisez pas la structure autour de l'emprunt maximal</h2>
+<p>Une entreprise peut avoir accès à un crédit important tout en ayant une résilience financière fragile.</p>
+<p>L'objectif devrait être une liquidité suffisante, et non une capacité d'endettement maximale.</p>
+<p>Par exemple, si une entreprise obtient un plafond de crédit de 100 000 $, cela ne signifie pas qu'elle devrait systématiquement conserver un solde de 100 000 $. Le plafond représente la capacité d'emprunt maximale selon les conditions du compte, et non un objectif d'exploitation.</p>
+<p>Maintenir une capacité inutilisée peut avoir de la valeur, car des dépenses imprévues peuvent survenir au moment même où les revenus baissent temporairement.</p>
+<p>Une entreprise qui fonctionne constamment à la limite ou près de la limite de son crédit disponible dispose de moins de marge de manœuvre lorsque les conditions changent.</p>
+<h2 id="surveiller-le-volet-personnel-de-la-structure">Surveiller le volet personnel de la structure</h2>
+<p>Les entrepreneurs devraient examiner périodiquement leurs rapports de crédit personnel en plus de leurs comptes professionnels.</p>
+<p>Cela est particulièrement important lorsque les cartes professionnelles comportent des garanties personnelles ou lorsque les émetteurs déclarent l'activité des cartes professionnelles aux bureaux de crédit à la consommation.</p>
+<p>Le propriétaire devrait comprendre :</p>
+<ul>
+<li>Quels comptes comportent des garanties personnelles</li>
+<li>Quels comptes sont déclarés aux bureaux de consommation</li>
+<li>Quels comptes sont déclarés aux bureaux professionnels</li>
+<li>Le taux d'utilisation personnel actuel</li>
+<li>Le taux d'utilisation professionnel</li>
+<li>Les garanties en cours</li>
+<li>Le total des obligations de dette mensuelles</li>
+<li>Les coûts d'intérêt variables et fixes</li>
+</ul>
+<p>Une stratégie de plafond élevé qui améliore la liquidité de l'entreprise mais crée une exposition personnelle excessive peut ne pas atteindre son objectif visé.</p>
+<h2 id="le-credit-devrait-soutenir-et-non-remplacer-la-gestion-de-tresorerie">Le crédit devrait soutenir, et non remplacer, la gestion de trésorerie</h2>
+<p>L'architecture de crédit la plus solide repose en fin de compte sur un modèle d'affaires fonctionnel.</p>
+<p>Le crédit peut combler des écarts de calendrier, financer des achats, fournir une liquidité d'urgence et soutenir l'expansion. Il ne peut pas compenser durablement des marges insuffisantes ou une trésorerie structurellement négative.</p>
+<p>Les propriétaires d'entreprise devraient donc distinguer les <strong>besoins de liquidité temporaires</strong> des <strong>déficits de financement persistants</strong>.</p>
+<p>Si les clients paient systématiquement trop lentement, renégocier les conditions de paiement peut être plus efficace qu'augmenter les plafonds de crédit.</p>
+<p>Si les stocks restent invendus pendant de longues périodes, modifier les pratiques d'achat peut être plus utile que d'ajouter une nouvelle carte.</p>
+<p>Si l'expansion nécessite un capital qui sera remboursé sur plusieurs années, un financement à plus long terme peut être plus approprié qu'un crédit renouvelable.</p>
+<p>La bonne question n'est pas de savoir combien de crédit une entreprise peut obtenir. C'est de savoir combien de financement l'entreprise peut utiliser de manière responsable tout en maintenant suffisamment de trésorerie pour honorer ses obligations.</p>
+<h2 id="construire-une-architecture-de-credit-durable">Construire une architecture de crédit durable</h2>
+<p>Le crédit personnel et le crédit professionnel peuvent fonctionner ensemble, en particulier durant les premières étapes du développement d'une entreprise. Le crédit personnel peut aider un entrepreneur à se qualifier pour des produits professionnels, tandis que les comptes professionnels peuvent établir un dossier financier distinct et fournir des outils pour gérer les dépenses de l'entreprise.</p>
+<p>À mesure que l'entreprise grandit, la structure de financement peut évoluer.</p>
+<p>Les cartes de crédit professionnelles peuvent gérer les dépenses opérationnelles récurrentes. Les lignes renouvelables peuvent offrir de la flexibilité en matière de fonds de roulement. Les prêts à terme peuvent financer des investissements de plus longue durée. Les réserves de liquidités peuvent absorber les perturbations imprévues.</p>
+<p>La structure qui en résulte est plus résiliente lorsque chaque source de capital a un objectif défini.</p>
+<p>Des plafonds de crédit élevés peuvent offrir une flexibilité précieuse, mais la qualité d'une architecture de crédit dépend moins de la taille de ces plafonds que de la manière dont l'entreprise les utilise de façon réfléchie.</p>
+<p>Une entreprise disposant d'une capacité de crédit modérée, d'une trésorerie prévisible, d'une comptabilité claire et d'une dette gérable peut disposer d'une plus grande flexibilité financière qu'une entreprise ayant une capacité d'emprunt énorme mais peu de contrôle sur son remboursement.</p>
+<div class="references"><h2 id="references">Références</h2>
+<ul>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.sba.gov/loans/7a-loans/">U.S. Small Business Administration — 7(a) Loans and Working Capital Pilot</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.sba.gov/sba-lenders/">U.S. Small Business Administration — Lender Resources and Working Capital Pilot</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.chase.com/personal/credit-cards/education/basics/personal-vs-business-credit-cards">Chase — Personal vs. Business Credit Cards</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.chase.com/personal/credit-cards/education/basics/what-is-a-personal-guarantee-on-a-credit-card">Chase — Personal Guarantees on Business Credit Cards</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.chase.com/personal/credit-cards/education/basics/business-credit-card-limit">Chase — Business Credit Card Limits</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/1071-rule/">Consumer Financial Protection Bureau — Small Business Lending Rulemaking</a></li>
+</ul>
+</div>
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/samuel-mensah.webp"
+        alt="Samuel Mensah"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Écrit par</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Samuel Mensah</p>
+                            <p class="text-sm text-brand-200">Small Business Finance Contributor</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Sam covers small business banking, financing, and cash flow management, from SBA and equipment loans to invoice factoring and retirement plans for the self-employed. Drawing from his background advising independent service providers and retail startups, he focuses on the practical hurdles of funding and running a small business in changing market conditions.</p>
+                                        <a href="/fr/our-team" wire:navigate class="btn-zest relative mt-6">Rencontrez les rédacteurs</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenu à but uniquement pédagogique.</span>
+                    Cet article fournit des informations générales et ne constitue pas un conseil financier, d’investissement, fiscal ou juridique personnalisé.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Continuez à apprendre</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Plus dans Crédit et cartes</h2>
+                    </div>
+                    <a href="/fr/c/credit-cards" wire:navigate class="link-underline text-sm font-semibold text-ink">Tout voir</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/fr/p/credit-card-limits-and-minimum-payments-managing-long-term-costs" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-limits-and-minimum-payments-managing-long-term-costs.webp"
+        alt="Plafonds de carte de crédit et paiements minimums : gérer les coûts à long terme"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédit et cartes
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Plafonds de carte de crédit et paiements minimums : gérer les coûts à long terme
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Le plafond d&#039;une carte de crédit peut sembler trompeusement simple : c&#039;est le solde maximum que l&#039;émetteur vous permet de porter. Le paiement minimum peut sembler tout au...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-12" class="shrink-0">12 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/credit-card-debt-consolidation-strategies-and-solutions" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-debt-consolidation-strategies-and-solutions.webp"
+        alt="Consolidation de dettes de carte de crédit : stratégies et solutions"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédit et cartes
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Consolidation de dettes de carte de crédit : stratégies et solutions
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Porter des soldes sur plusieurs cartes de crédit peut rendre la gestion de la dette plus difficile. Des taux d&#039;intérêt, des dates de paiement, des paiements minimums et d...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-10" class="shrink-0">10 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/secured-credit-cards-how-they-work-and-who-may-consider-one" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/secured-credit-cards-how-they-work-and-who-may-consider-one.webp"
+        alt="Cartes de crédit garanties : comment elles fonctionnent et à qui elles peuvent convenir"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédit et cartes
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Cartes de crédit garanties : comment elles fonctionnent et à qui elles peuvent convenir
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Obtenir l&#039;approbation d&#039;une carte de crédit classique peut être difficile lorsqu&#039;un consommateur a peu d&#039;antécédents de crédit, un profil de crédit endommagé ou a connu u...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-08-28" class="shrink-0">28 août 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/fr" wire:navigate aria-label="Accueil de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.
+                </p>
+                <a href="/fr/articles" wire:navigate class="btn-zest mt-7">
+                    Commencer à apprendre
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Thèmes</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/fr/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finances personnelles</a></li>
+                                                    <li><a href="/fr/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestion de patrimoine</a></li>
+                                                    <li><a href="/fr/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Prêts et financement</a></li>
+                                                    <li><a href="/fr/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédit et cartes</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Tous les articles</a></li>
+                        <li><a href="/fr/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Notre équipe éditoriale</a></li>
+                        <li><a href="/fr/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Mentions légales</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="/fr/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Conditions d’utilisation</a></li>
+                        <li><a href="/fr/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Avertissement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Avertissement :</span>
+                Le contenu proposé sur Edufinance.site est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.
+            </p>
+            <p>Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.</p>
+            <p>Edufinance.site ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Tous droits réservés.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="zTkIJzLSPO0g4F1V94vLbGsL7y32OuvMPiuc6x6t" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

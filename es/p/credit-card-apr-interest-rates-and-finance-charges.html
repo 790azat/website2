@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    APR de tarjetas de crédito, tasas de interés y cargos financieros — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Los precios de las tarjetas de crédito pueden parecer engañosamente simples. Una tarjeta puede anunciar una tasa de porcentaje anual, o APR, pero el costo..." />
+                            <link rel="alternate" hreflang="en" href="/p/credit-card-apr-interest-rates-and-finance-charges" />
+                    <link rel="alternate" hreflang="es" href="/es/p/credit-card-apr-interest-rates-and-finance-charges" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/credit-card-apr-interest-rates-and-finance-charges" />
+                <link rel="alternate" hreflang="x-default" href="/p/credit-card-apr-interest-rates-and-finance-charges" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Guías gratuitas e independientes sobre banca, inversión, préstamos y crédito
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/es/our-team" wire:navigate class="transition hover:text-white">Nuestro equipo</a>
+                <a href="/es/contact" wire:navigate class="transition hover:text-white">Contacto</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/credit-card-apr-interest-rates-and-finance-charges"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/credit-card-apr-interest-rates-and-finance-charges"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/credit-card-apr-interest-rates-and-finance-charges"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="shrink-0" aria-label="Inicio de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/es" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Inicio</a>
+                            <a href="/es/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finanzas personales</a>
+                            <a href="/es/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestión patrimonial</a>
+                            <a href="/es/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Préstamos y financiación</a>
+                            <a href="/es/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédito y tarjetas</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/es/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Todos los artículos
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/es" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Todos los artículos</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Temas</p>
+                            <a href="/es/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finanzas personales
+                </a>
+                            <a href="/es/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestión patrimonial
+                </a>
+                            <a href="/es/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Préstamos y financiación
+                </a>
+                            <a href="/es/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédito y tarjetas
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Acerca de</p>
+            <a href="/es/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Nuestro equipo</a>
+            <a href="/es/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contacto</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Ruta de navegación">
+                <a href="/es" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Inicio
+                </a>
+                <span class="text-line">/</span>
+                <a href="/es/c/credit-cards" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Crédito y tarjetas</a>
+            </nav>
+
+            <a href="/es/c/credit-cards" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5V5h14v-.5A1.5 1.5 0 0 0 13.5 3h-11Z"/>
+  <path fill-rule="evenodd" d="M15 7H1v4.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V7ZM3 10.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Zm3.75-.75a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z" clip-rule="evenodd"/>
+</svg>
+
+                        Crédito y tarjetas
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                APR de tarjetas de crédito, tasas de interés y cargos financieros
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/es/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Rachel Bernstein</span>
+                        <span class="text-muted">Senior Credit &amp; Debt Editor</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2025-12-27">27 de diciembre de 2025</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            15 min de lectura
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/credit-card-apr-interest-rates-and-finance-charges.webp" alt="APR de tarjetas de crédito, tasas de interés y cargos financieros" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="En este artículo" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">En este artículo</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#que-es-el-apr-de-una-tarjeta-de-credito" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">¿Qué es el APR de una tarjeta de crédito?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#el-apr-y-la-tasa-de-interes-estan-estrechamente-relacionados-pero-no-son-identicos" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">El APR y la tasa de interés están estrechamente relacionados pero no son idénticos</a>
+                                </li>
+                                                            <li>
+                                    <a href="#como-se-calcula-el-interes-de-una-tarjeta-de-credito" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Cómo se calcula el interés de una tarjeta de crédito</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-es-un-cargo-financiero" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">¿Qué es un cargo financiero?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#apr-de-compras" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">APR de compras</a>
+                                </li>
+                                                            <li>
+                                    <a href="#apr-de-adelanto-de-efectivo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">APR de adelanto de efectivo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#apr-de-transferencia-de-saldo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">APR de transferencia de saldo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#apr-variables" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">APR variables</a>
+                                </li>
+                                                            <li>
+                                    <a href="#apr-fijos-y-tasas-promocionales" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">APR fijos y tasas promocionales</a>
+                                </li>
+                                                            <li>
+                                    <a href="#los-periodos-de-gracia-pueden-reducir-los-costos-de-interes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Los períodos de gracia pueden reducir los costos de interés</a>
+                                </li>
+                                                            <li>
+                                    <a href="#los-pagos-minimos-no-eliminan-el-interes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Los pagos mínimos no eliminan el interés</a>
+                                </li>
+                                                            <li>
+                                    <a href="#diferentes-saldos-pueden-tener-diferentes-apr" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Diferentes saldos pueden tener diferentes APR</a>
+                                </li>
+                                                            <li>
+                                    <a href="#los-cargos-financieros-pueden-ir-mas-alla-del-interes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Los cargos financieros pueden ir más allá del interés</a>
+                                </li>
+                                                            <li>
+                                    <a href="#el-apr-puede-ser-mas-importante-que-las-recompensas" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">El APR puede ser más importante que las recompensas</a>
+                                </li>
+                                                            <li>
+                                    <a href="#como-comparar-los-precios-de-las-tarjetas-de-credito" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Cómo comparar los precios de las tarjetas de crédito</a>
+                                </li>
+                                                            <li>
+                                    <a href="#una-forma-sencilla-de-estimar-los-costos-de-interes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Una forma sencilla de estimar los costos de interés</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-buscar-en-un-estado-de-cuenta-de-tarjeta-de-credito" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qué buscar en un estado de cuenta de tarjeta de crédito</a>
+                                </li>
+                                                            <li>
+                                    <a href="#manejo-del-interes-de-la-tarjeta-de-credito-con-el-tiempo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Manejo del interés de la tarjeta de crédito con el tiempo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#en-resumen" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">En resumen</a>
+                                </li>
+                                                            <li>
+                                    <a href="#referencias" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Referencias</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Los precios de las tarjetas de crédito pueden parecer engañosamente simples. Una tarjeta puede anunciar una tasa de porcentaje anual, o APR, pero el costo real de mantener un saldo depende de cómo se calcula el interés, cuándo comienza a acumularse, qué tipo de transacción generó el saldo y si se aplican comisiones adicionales.</p>
+<p>Entender estos términos importa porque una tarjeta de crédito puede ser económica cuando el saldo del estado de cuenta se paga en su totalidad cada mes, pero considerablemente más costosa cuando la deuda se arrastra de un ciclo de facturación al siguiente.</p>
+<p>La Oficina de Protección Financiera del Consumidor (CFPB) describe el APR como una forma estándar de comparar el costo del crédito, y exige que las compañías de tarjetas de crédito divulguen los APR aplicables antes de que los consumidores acepten usar una cuenta. Las tarjetas de crédito pueden tener APR diferentes para compras, transferencias de saldo y adelantos de efectivo.</p>
+<h2 id="que-es-el-apr-de-una-tarjeta-de-credito">¿Qué es el APR de una tarjeta de crédito?</h2>
+<p>APR significa tasa de porcentaje anual. Expresa el costo anualizado del endeudamiento asociado con una tarjeta de crédito.</p>
+<p>Para una tarjeta de crédito, el APR de compras generalmente es la tasa que se aplica cuando un saldo de compras se arrastra más allá del período de gracia aplicable.</p>
+<p>Por ejemplo, una tarjeta con un APR de compras del 24% tiene una tasa anualizada del 24%. Eso no significa que el emisor simplemente sume 24% al saldo una vez al año. El interés de las tarjetas de crédito generalmente se calcula usando una tasa periódica, y muchos emisores calculan el interés de forma diaria.</p>
+<p>Por lo tanto, el costo mensual o diario depende del saldo y del método de cálculo del emisor.</p>
+<p>Un cálculo anual simplificado sobre un saldo de $5,000 al 24% sería:</p>
+<p>$5,000 × 0.24 = $1,200</p>
+<p>Ese $1,200 es solo una ilustración de la tasa anualizada. El interés real de la tarjeta de crédito puede diferir porque los saldos cambian a lo largo del ciclo de facturación y los emisores pueden calcular el interés usando un saldo diario promedio.</p>
+<h2 id="el-apr-y-la-tasa-de-interes-estan-estrechamente-relacionados-pero-no-son-identicos">El APR y la tasa de interés están estrechamente relacionados pero no son idénticos</h2>
+<p>Los consumidores a veces usan &quot;APR&quot; y &quot;tasa de interés&quot; indistintamente, pero los términos pueden tener significados distintos según el producto de crédito.</p>
+<p>Para las tarjetas de crédito, el APR divulgado representa el costo anualizado asociado con la tasa periódica aplicable. La Regulación Z exige que los emisores de tarjetas de crédito divulguen el APR para las categorías de transacción aplicables.</p>
+<p>Por lo tanto, una tarjeta puede tener varios APR en lugar de una sola tasa universal.</p>
+<p>Por ejemplo, una cuenta podría tener:</p>
+<ul>
+<li>Un APR de compras</li>
+<li>Un APR de transferencia de saldo</li>
+<li>Un APR de adelanto de efectivo</li>
+<li>Un APR de penalización bajo circunstancias específicas</li>
+</ul>
+<p>Estas tasas pueden diferir sustancialmente.</p>
+<p>La tasa que importa depende de cómo se esté usando la cuenta.</p>
+<h2 id="como-se-calcula-el-interes-de-una-tarjeta-de-credito">Cómo se calcula el interés de una tarjeta de crédito</h2>
+<p>Muchos emisores de tarjetas de crédito calculan el interés diariamente, basándose en el saldo diario promedio de la cuenta.</p>
+<p>El CFPB explica que la tasa de interés diaria a veces se llama tasa periódica diaria. Debido a que el interés puede acumularse diariamente, pagar un saldo antes puede reducir la cantidad de interés que se acumula mientras se está cobrando interés.</p>
+<p>Un ejemplo simplificado ilustra el concepto.</p>
+<p>Suponga que una tarjeta tiene un APR del 24%.</p>
+<p>Una tasa periódica diaria simplificada sería:</p>
+<p>24% ÷ 365 ≈ 0.0658% por día</p>
+<p>Si el saldo se mantuviera exactamente en $5,000 durante un día completo, el interés diario ilustrativo sería aproximadamente:</p>
+<p>$5,000 × 0.000658 ≈ $3.29</p>
+<p>Los cálculos reales dependen de la metodología del emisor, los saldos aplicables, el momento de la transacción y los términos de la cuenta.</p>
+<p>Por eso pagar un saldo antes puede importar mientras se acumula interés.</p>
+<h2 id="que-es-un-cargo-financiero">¿Qué es un cargo financiero?</h2>
+<p>Un cargo financiero representa el costo en dólares del crédito.</p>
+<p>La Regulación Z federal describe el cargo financiero como la cantidad en dólares que le costará el crédito al consumidor. Las reglas que rigen las divulgaciones de tarjetas de crédito exigen que los cargos aplicables y la información del APR se presenten claramente a los consumidores.</p>
+<p>El interés puede ser un componente importante de un cargo financiero, pero los cargos financieros también pueden involucrar ciertos otros costos asociados con el uso del crédito.</p>
+<p>Según la cuenta y la transacción, los cargos pueden incluir:</p>
+<ul>
+<li>Cargos por interés</li>
+<li>Comisiones por adelanto de efectivo</li>
+<li>Comisiones por transferencia de saldo</li>
+<li>Ciertos cargos por transacción</li>
+<li>Otros cargos que califican como cargos financieros bajo las reglas aplicables</li>
+</ul>
+<p>No todas las comisiones asociadas con una tarjeta de crédito se tratan necesariamente de manera idéntica para cada propósito de divulgación o regulatorio, por lo que los consumidores deben revisar el contrato de la tarjeta y las divulgaciones de precios.</p>
+<h2 id="apr-de-compras">APR de compras</h2>
+<p>El APR de compras es la tasa que generalmente se aplica a las compras cuando el saldo queda sujeto a interés.</p>
+<p>Para los consumidores que pagan su saldo del estado de cuenta en su totalidad y a tiempo, un período de gracia puede permitir que las compras eviten el interés. El CFPB explica que si una tarjeta tiene un período de gracia, los consumidores generalmente pueden evitar el interés sobre las compras pagando el saldo en su totalidad antes de la fecha de vencimiento, sujeto a los términos de la tarjeta.</p>
+<p>Esta distinción es importante.</p>
+<p>Una tarjeta de crédito con un APR del 25% no necesariamente le cuesta al titular de la tarjeta el 25% de cada compra. Si el titular de la tarjeta paga el saldo aplicable en su totalidad dentro del período de gracia, se puede evitar el interés de compras.</p>
+<p>El APR se vuelve particularmente importante cuando un saldo se arrastra de un ciclo de facturación a otro.</p>
+<h2 id="apr-de-adelanto-de-efectivo">APR de adelanto de efectivo</h2>
+<p>Los adelantos de efectivo generalmente tienen un precio separado de las compras ordinarias.</p>
+<p>Una tarjeta de crédito puede asignar un APR más alto a los adelantos de efectivo y también puede imponer una comisión por adelanto de efectivo.</p>
+<p>Por lo tanto, los consumidores deben evitar suponer que el APR de compras se aplica a todo tipo de transacción.</p>
+<p>El CFPB señala que las compañías de tarjetas de crédito a menudo cobran tasas de interés diferentes para compras, adelantos de efectivo y otras categorías de transacción.</p>
+<p>Los adelantos de efectivo también pueden tener reglas de acumulación de interés diferentes de las compras, lo que los convierte en una categoría de transacción especialmente importante para verificar antes de usar una tarjeta para retirar efectivo.</p>
+<h2 id="apr-de-transferencia-de-saldo">APR de transferencia de saldo</h2>
+<p>Las transferencias de saldo pueden tener su propio APR.</p>
+<p>Una oferta promocional de transferencia de saldo podría reducir temporalmente la tasa de interés sobre la deuda transferida, a veces al 0%. Sin embargo, el período promocional es limitado y la transferencia puede implicar una comisión separada.</p>
+<p>El CFPB señala que las transferencias de saldo pueden implicar una comisión basada en porcentaje o fija, y que las tasas promocionales generalmente duran un período limitado.</p>
+<p>Por lo tanto, los consumidores que consideren una transferencia de saldo deben observar el costo completo en lugar de centrarse únicamente en la tasa inicial.</p>
+<p>El cálculo relevante incluye:</p>
+<p><strong>Saldo transferido + comisión de transferencia + interés después del período promocional</strong></p>
+<p>Eso da una imagen más realista del costo potencial.</p>
+<h2 id="apr-variables">APR variables</h2>
+<p>Algunas tarjetas de crédito tienen APR variables.</p>
+<p>Una tasa variable puede cambiar según el índice y la fórmula especificados en el contrato de crédito. La Regulación Z exige divulgaciones que expliquen cuándo un APR es variable y cómo se determina la tasa.</p>
+<p>Esto significa que un titular de tarjeta no debe necesariamente esperar que el APR de hoy permanezca sin cambios durante toda la vida de la cuenta.</p>
+<p>Por ejemplo, si el APR de una tarjeta se basa en un índice más un margen fijo, los cambios en el índice subyacente pueden hacer que el APR de la tarjeta suba o baje según los términos.</p>
+<p>Al comparar tarjetas de crédito, los consumidores deben verificar si la tasa cotizada es fija o variable y entender la fórmula usada para determinar una tasa variable.</p>
+<h2 id="apr-fijos-y-tasas-promocionales">APR fijos y tasas promocionales</h2>
+<p>Un APR promocional es distinto de la tasa estándar que se aplica después del período de introducción.</p>
+<p>Por ejemplo, una tarjeta podría ofrecer:</p>
+<ul>
+<li>0% de APR durante un período de introducción especificado</li>
+<li>Un APR de compras regular después</li>
+<li>Un APR separado para adelantos de efectivo</li>
+<li>Una tasa promocional distinta para transferencias de saldo</li>
+</ul>
+<p>Por lo tanto, la tasa de introducción nunca debe evaluarse sin verificar cuándo expira y qué tasa se aplica después.</p>
+<p>Las reglas federales de divulgación exigen que se divulgue a los consumidores la información sobre los APR aplicables, las comisiones, los períodos de gracia y otros términos de la cuenta.</p>
+<h2 id="los-periodos-de-gracia-pueden-reducir-los-costos-de-interes">Los períodos de gracia pueden reducir los costos de interés</h2>
+<p>Un período de gracia es el período durante el cual las compras elegibles pueden pagarse sin incurrir en un cargo de interés periódico.</p>
+<p>Las divulgaciones de la Regulación Z de la Reserva Federal exigen específicamente que los emisores identifiquen el período de gracia y las condiciones bajo las cuales se aplica.</p>
+<p>Para un consumidor que paga el saldo completo del estado de cuenta cada mes, el período de gracia puede ser una de las características más valiosas de una tarjeta de crédito tradicional.</p>
+<p>Sin embargo, las reglas del período de gracia pueden variar.</p>
+<p>Un consumidor que arrastra un saldo existente no debe suponer automáticamente que cada nueva compra recibe el mismo tratamiento. El CFPB señala que cuando se está arrastrando un saldo, el período de gracia generalmente se aplica solo a las nuevas compras bajo las condiciones aplicables.</p>
+<h2 id="los-pagos-minimos-no-eliminan-el-interes">Los pagos mínimos no eliminan el interés</h2>
+<p>El pago mínimo de una tarjeta de crédito está diseñado para mantener la cuenta al día, no necesariamente para eliminar el saldo rápidamente.</p>
+<p>Si un titular de tarjeta paga solo el mínimo mientras arrastra un saldo significativo, el interés puede seguir acumulándose durante un período prolongado.</p>
+<p>Por ejemplo, considere un saldo hipotético de $6,000 con un APR del 24%.</p>
+<p>Un cálculo de interés anualizado simplificado sería:</p>
+<p>$6,000 × 0.24 = $1,440</p>
+<p>El monto real cobrado dependería de los cálculos diarios del emisor, los pagos y el saldo cambiante.</p>
+<p>Esto ilustra por qué los consumidores deben mirar más allá del pago mínimo que se muestra en un estado de cuenta.</p>
+<p>Pagar más del mínimo puede reducir el capital más rápido y disminuir los costos de interés futuros.</p>
+<h2 id="diferentes-saldos-pueden-tener-diferentes-apr">Diferentes saldos pueden tener diferentes APR</h2>
+<p>Una sola cuenta de tarjeta de crédito puede contener varias categorías de saldo.</p>
+<p>Por ejemplo, la misma cuenta podría tener:</p>
+<ul>
+<li>$3,000 en saldos de compra</li>
+<li>$2,000 en transferencias de saldo</li>
+<li>$500 en adelantos de efectivo</li>
+</ul>
+<p>Cada categoría podría potencialmente tener un APR diferente.</p>
+<p>El CFPB explica que los estados de cuenta deben mostrar las distintas categorías de saldo y los APR aplicables cuando se aplican varias tasas.</p>
+<p>Esto es importante al hacer pagos, porque la asignación de los pagos puede afectar la rapidez con que se reducen los saldos de mayor costo.</p>
+<p>Generalmente, los montos pagados por encima del pago mínimo se aplican primero a los saldos que tienen la tasa de interés más alta, sujeto a las reglas aplicables y a los términos de la cuenta.</p>
+<h2 id="los-cargos-financieros-pueden-ir-mas-alla-del-interes">Los cargos financieros pueden ir más allá del interés</h2>
+<p>El interés suele ser el costo más grande asociado con mantener una deuda de tarjeta de crédito, pero otros cargos también pueden afectar el costo de usar una cuenta.</p>
+<p>Según la tarjeta, los consumidores pueden encontrar:</p>
+<ul>
+<li>Cuotas anuales</li>
+<li>Comisiones por transferencia de saldo</li>
+<li>Comisiones por adelanto de efectivo</li>
+<li>Comisiones por transacciones en el extranjero</li>
+<li>Cargos por pago tardío</li>
+<li>Comisiones por pago devuelto</li>
+<li>Ciertos cargos por transacción</li>
+</ul>
+<p>Algunas comisiones no son necesariamente cargos financieros bajo toda definición regulatoria. El punto importante para los consumidores es que el costo total de una tarjeta va más allá del APR de compras anunciado.</p>
+<p>La Regulación Z exige que los emisores divulguen las comisiones y cargos financieros aplicables en formatos específicos, lo que permite a los consumidores revisar la estructura de precios antes de abrir una cuenta.</p>
+<h2 id="el-apr-puede-ser-mas-importante-que-las-recompensas">El APR puede ser más importante que las recompensas</h2>
+<p>Las recompensas pueden hacer que una tarjeta de crédito sea atractiva, pero una tasa de interés alta puede superar rápidamente el valor de esas recompensas cuando se arrastran saldos.</p>
+<p>Imagine que un consumidor gana $300 en recompensas anuales de reembolso en efectivo, pero paga $1,000 en interés adicional debido a la deuda renovable.</p>
+<p>Las recompensas no han eliminado el costo del endeudamiento.</p>
+<p>Por eso los consumidores que arrastran saldos con regularidad pueden querer enfocarse primero en el APR, las comisiones, los términos de pago y los costos generales de endeudamiento, en lugar de elegir una tarjeta principalmente por su programa de recompensas.</p>
+<p>Para los consumidores que pagan sus saldos en su totalidad de manera constante, el cálculo puede verse muy diferente porque el interés de compras puede evitarse durante el período de gracia aplicable.</p>
+<h2 id="como-comparar-los-precios-de-las-tarjetas-de-credito">Cómo comparar los precios de las tarjetas de crédito</h2>
+<p>Al evaluar una tarjeta de crédito, observe toda la estructura de precios en lugar de un solo número anunciado.</p>
+<p>Comience con el APR de compras.</p>
+<p>Luego verifique si el APR es fijo o variable y si se aplican tasas diferentes a las transferencias de saldo o los adelantos de efectivo.</p>
+<p>A continuación, revise la cuota anual y otros cargos aplicables.</p>
+<p>Después de eso, examine las reglas del período de gracia y determine qué sucede cuando se arrastra un saldo.</p>
+<p>Finalmente, revise los términos de pago y cualquier oferta promocional.</p>
+<p>El marco de la Regulación Z de la Reserva Federal exige que se divulguen a los consumidores términos de crédito importantes, incluidos los APR, las comisiones, los cargos financieros y la información del período de gracia.</p>
+<h2 id="una-forma-sencilla-de-estimar-los-costos-de-interes">Una forma sencilla de estimar los costos de interés</h2>
+<p>Un cálculo aproximado puede ayudar a demostrar el impacto del APR.</p>
+<p>Suponga:</p>
+<ul>
+<li>Saldo: $4,000</li>
+<li>APR: 24%</li>
+<li>Tasa anual simplificada: 24%</li>
+</ul>
+<p>El interés anualizado aproximado sería:</p>
+<p>$4,000 × 0.24 = $960</p>
+<p>Un equivalente mensual aproximado sería:</p>
+<p>$960 ÷ 12 = $80</p>
+<p>Este no es un cálculo de interés a nivel de estado de cuenta, porque los emisores de tarjetas de crédito pueden calcular el interés diariamente usando el saldo diario promedio.</p>
+<p>Aun así, proporciona una ilustración útil de por qué un APR del 24% puede generar costos sustanciales cuando un saldo permanece pendiente.</p>
+<p>A medida que los pagos reducen el saldo, el cálculo del interés también puede disminuir.</p>
+<h2 id="que-buscar-en-un-estado-de-cuenta-de-tarjeta-de-credito">Qué buscar en un estado de cuenta de tarjeta de crédito</h2>
+<p>Un estado de cuenta mensual puede proporcionar información más útil que el material promocional usado para anunciar la tarjeta.</p>
+<p>Revise:</p>
+<ul>
+<li>Saldo actual</li>
+<li>Saldo del estado de cuenta</li>
+<li>Pago mínimo</li>
+<li>Fecha de vencimiento del pago</li>
+<li>APR de compras</li>
+<li>APR de adelanto de efectivo</li>
+<li>APR de transferencia de saldo</li>
+<li>Cargos por interés</li>
+<li>Comisiones</li>
+<li>Saldos promocionales</li>
+<li>Crédito disponible</li>
+<li>Información sobre la asignación de pagos</li>
+</ul>
+<p>Entender estas cifras facilita identificar cuánto está costando realmente el endeudamiento.</p>
+<p>El CFPB explica que los estados de cuenta pueden mostrar el APR y el saldo aplicables para las diferentes categorías de transacción.</p>
+<h2 id="manejo-del-interes-de-la-tarjeta-de-credito-con-el-tiempo">Manejo del interés de la tarjeta de crédito con el tiempo</h2>
+<p>La forma más simple de reducir el interés de compras generalmente es evitar arrastrar un saldo que genere interés cuando sea posible.</p>
+<p>Para los consumidores que ya arrastran deuda, varios enfoques pueden reducir el costo con el tiempo:</p>
+<ul>
+<li>Pagar más del mínimo</li>
+<li>Hacer pagos antes cuando se está acumulando interés</li>
+<li>Priorizar los saldos con tasas más altas</li>
+<li>Evitar compras nuevas innecesarias</li>
+<li>Considerar una transferencia de saldo cuando la economía tenga sentido</li>
+<li>Comparar productos de crédito de menor costo</li>
+<li>Revisar las fechas de expiración del APR promocional</li>
+<li>Monitorear las comisiones recurrentes</li>
+</ul>
+<p>La estrategia adecuada depende de la situación financiera de la persona y de los términos de los productos de crédito disponibles.</p>
+<h2 id="en-resumen">En resumen</h2>
+<p>El APR, las tasas de interés y los cargos financieros de las tarjetas de crédito determinan gran parte del costo real de usar crédito renovable.</p>
+<p>El APR proporciona una medida anualizada de la tasa de endeudamiento aplicable, mientras que el interés real cobrado puede depender de los saldos diarios, las categorías de transacción, el momento del pago y los términos específicos de la tarjeta. Los cargos financieros pueden incluir interés y ciertos otros costos asociados con el uso del crédito.</p>
+<p>Una tarjeta con un APR alto aún puede ser económica para alguien que paga de manera constante las compras elegibles en su totalidad y evita el interés. La misma tarjeta puede volverse considerablemente más costosa cuando los saldos se arrastran durante meses o años.</p>
+<p>Entender la diferencia entre el APR de compras, el APR de transferencia de saldo, el APR de adelanto de efectivo, las tasas promocionales, los períodos de gracia y los cargos financieros permite a los consumidores evaluar las tarjetas de crédito según su costo real, en lugar de basarse en un solo número anunciado.</p>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/consumer-tools/credit-cards/answers/key-terms/">Oficina de Protección Financiera del Consumidor (CFPB) — Términos clave de las tarjetas de crédito</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/how-does-my-credit-card-company-calculate-the-amount-of-interest-i-owe-en-51/">Oficina de Protección Financiera del Consumidor (CFPB) — Cómo se calcula el interés de la tarjeta de crédito</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.federalreserve.gov/frrs/regulations/section-102660-credit-and-charge-card-applications-and-solicitations.htm">Reserva Federal — Regulación Z, divulgaciones de tarjetas de crédito</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.federalreserve.gov/frrs/regulations/section-102618-content-of-disclosures.htm">Reserva Federal — Regulación Z, divulgaciones de cargo financiero y APR</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.federalreserve.gov/frrs/regulations/section-22614-determination-of-annual-percentage-rate.htm">Reserva Federal — Regulación Z, determinación del APR</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.federalreserve.gov/frrs/regulations/consumer-financial-protection-bureaus-regulation-z-truth-in-lending.htm">Reserva Federal — Regulación Z de la Oficina de Protección Financiera del Consumidor sobre veracidad en los préstamos</a></li>
+</ul>
+
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Escrito por</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Rachel Bernstein</p>
+                            <p class="text-sm text-brand-200">Senior Credit &amp; Debt Editor</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Rachel has spent over eight years covering credit scoring, credit reports, and debt management, from card interest and repayment plans to debt relief and bankruptcy. Before writing full-time, she worked in community financial education, which shapes her no-nonsense, empathetic approach to helping people protect their credit, recover from debt, and guard against fraud and identity theft.</p>
+                                        <a href="/es/our-team" wire:navigate class="btn-zest relative mt-6">Conozca a los editores</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenido exclusivamente educativo.</span>
+                    Este artículo ofrece información general y no constituye asesoramiento financiero, de inversión, fiscal ni legal personalizado.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Siga aprendiendo</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Más en Crédito y tarjetas</h2>
+                    </div>
+                    <a href="/es/c/credit-cards" wire:navigate class="link-underline text-sm font-semibold text-ink">Ver todo</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/es/p/credit-card-limits-and-minimum-payments-managing-long-term-costs" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-limits-and-minimum-payments-managing-long-term-costs.webp"
+        alt="Límites de tarjetas de crédito y pagos mínimos: cómo gestionar los costos a largo plazo"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédito y tarjetas
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Límites de tarjetas de crédito y pagos mínimos: cómo gestionar los costos a largo plazo
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">El límite de una tarjeta de crédito puede parecer engañosamente simple: es el saldo máximo que el emisor le permite mantener. El pago mínimo puede parecer igualmente senc...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-12" class="shrink-0">12 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/es/p/credit-card-debt-consolidation-strategies-and-solutions" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-debt-consolidation-strategies-and-solutions.webp"
+        alt="Consolidación de deuda de tarjetas de crédito: estrategias y soluciones"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédito y tarjetas
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Consolidación de deuda de tarjetas de crédito: estrategias y soluciones
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Mantener saldos en varias tarjetas de crédito puede hacer que la deuda sea más difícil de gestionar. Las diferentes tasas de interés, fechas de pago, pagos mínimos y cond...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-10" class="shrink-0">10 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/es/p/secured-credit-cards-how-they-work-and-who-may-consider-one" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/secured-credit-cards-how-they-work-and-who-may-consider-one.webp"
+        alt="Tarjetas de crédito garantizadas: cómo funcionan y quién puede considerarlas"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédito y tarjetas
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Tarjetas de crédito garantizadas: cómo funcionan y quién puede considerarlas
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Conseguir la aprobación de una tarjeta de crédito convencional puede ser difícil cuando un consumidor tiene poco historial crediticio, un perfil de crédito dañado o un re...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-08-28" class="shrink-0">28 ago. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/es" wire:navigate aria-label="Inicio de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Guías claras y basadas en la investigación sobre banca, inversión, préstamos y crédito, escritas para ayudarle a tomar decisiones financieras con confianza.
+                </p>
+                <a href="/es/articles" wire:navigate class="btn-zest mt-7">
+                    Empezar a aprender
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Temas</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/es/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finanzas personales</a></li>
+                                                    <li><a href="/es/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestión patrimonial</a></li>
+                                                    <li><a href="/es/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Préstamos y financiación</a></li>
+                                                    <li><a href="/es/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédito y tarjetas</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/es/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Todos los artículos</a></li>
+                        <li><a href="/es/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Nuestro equipo editorial</a></li>
+                        <li><a href="/es/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Legal</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/es/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Política de privacidad</a></li>
+                        <li><a href="/es/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Términos de uso</a></li>
+                        <li><a href="/es/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Aviso legal:</span>
+                El contenido de Edufinance.site se ofrece únicamente con fines informativos y educativos y no debe interpretarse como asesoramiento financiero, legal o fiscal profesional. Los creadores y editores de este sitio no son asesores financieros autorizados.
+            </p>
+            <p>Invertir implica riesgos, incluida la posible pérdida del capital. Los rendimientos pasados no garantizan resultados futuros. Antes de tomar cualquier decisión financiera o aplicar cualquier estrategia de inversión, debe realizar su propia investigación independiente y consultar a un profesional cualificado y autorizado que conozca su situación financiera concreta.</p>
+            <p>Edufinance.site no ofrece declaraciones ni garantías sobre la exactitud, integridad o idoneidad de la información aquí contenida, y no asume ninguna responsabilidad por pérdidas financieras ni daños derivados del uso de este contenido.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Todos los derechos reservados.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="jNTPAai70qehnI2URRmDTAzMFKbyURw0KOoZL4Zf" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

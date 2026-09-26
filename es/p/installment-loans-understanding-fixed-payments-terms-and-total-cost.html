@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Préstamos a plazos: cómo entender los pagos fijos, los plazos y el costo total — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Los préstamos a plazos son una de las formas más comunes de endeudamiento para consumidores. A diferencia del crédito rotativo, en el que un prestatario pu..." />
+                            <link rel="alternate" hreflang="en" href="/p/installment-loans-understanding-fixed-payments-terms-and-total-cost" />
+                    <link rel="alternate" hreflang="es" href="/es/p/installment-loans-understanding-fixed-payments-terms-and-total-cost" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/installment-loans-understanding-fixed-payments-terms-and-total-cost" />
+                <link rel="alternate" hreflang="x-default" href="/p/installment-loans-understanding-fixed-payments-terms-and-total-cost" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Guías gratuitas e independientes sobre banca, inversión, préstamos y crédito
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/es/our-team" wire:navigate class="transition hover:text-white">Nuestro equipo</a>
+                <a href="/es/contact" wire:navigate class="transition hover:text-white">Contacto</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/installment-loans-understanding-fixed-payments-terms-and-total-cost"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/installment-loans-understanding-fixed-payments-terms-and-total-cost"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/installment-loans-understanding-fixed-payments-terms-and-total-cost"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="shrink-0" aria-label="Inicio de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/es" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Inicio</a>
+                            <a href="/es/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finanzas personales</a>
+                            <a href="/es/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestión patrimonial</a>
+                            <a href="/es/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Préstamos y financiación</a>
+                            <a href="/es/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédito y tarjetas</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/es/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Todos los artículos
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/es" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Todos los artículos</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Temas</p>
+                            <a href="/es/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finanzas personales
+                </a>
+                            <a href="/es/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestión patrimonial
+                </a>
+                            <a href="/es/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Préstamos y financiación
+                </a>
+                            <a href="/es/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédito y tarjetas
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Acerca de</p>
+            <a href="/es/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Nuestro equipo</a>
+            <a href="/es/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contacto</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Ruta de navegación">
+                <a href="/es" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Inicio
+                </a>
+                <span class="text-line">/</span>
+                <a href="/es/c/loans-financing" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Préstamos y financiación</a>
+            </nav>
+
+            <a href="/es/c/loans-financing" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M7.605 2.112a.75.75 0 0 1 .79 0l5.25 3.25A.75.75 0 0 1 13 6.707V12.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.707a.75.75 0 0 1-.645-1.345l5.25-3.25ZM4.5 8.75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 8a.75.75 0 0 0-.75.75v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 8 8Zm2 .75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
+</svg>
+
+                        Préstamos y financiación
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Préstamos a plazos: cómo entender los pagos fijos, los plazos y el costo total
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/es/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Lucas Vance</span>
+                        <span class="text-muted">Lending &amp; Borrowing Analyst</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2025-10-13">13 de octubre de 2025</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            15 min de lectura
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/installment-loans-understanding-fixed-payments-terms-and-total-cost.webp" alt="Préstamos a plazos: cómo entender los pagos fijos, los plazos y el costo total" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="En este artículo" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">En este artículo</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#como-funcionan-los-prestamos-a-plazos" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Cómo funcionan los préstamos a plazos</a>
+                                </li>
+                                                            <li>
+                                    <a href="#los-pagos-fijos-brindan-previsibilidad" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Los pagos fijos brindan previsibilidad</a>
+                                </li>
+                                                            <li>
+                                    <a href="#los-plazos-del-prestamo-determinan-mas-que-el-pago-mensual" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Los plazos del préstamo determinan más que el pago mensual</a>
+                                </li>
+                                                            <li>
+                                    <a href="#tasa-de-interes-frente-a-apr" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Tasa de interés frente a APR</a>
+                                </li>
+                                                            <li>
+                                    <a href="#las-comisiones-aumentan-el-costo-del-endeudamiento" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Las comisiones aumentan el costo del endeudamiento</a>
+                                </li>
+                                                            <li>
+                                    <a href="#el-costo-total-es-mas-importante-que-el-pago-mensual" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">El costo total es más importante que el pago mensual</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-amortizacion-explica-a-donde-va-cada-pago" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La amortización explica a dónde va cada pago</a>
+                                </li>
+                                                            <li>
+                                    <a href="#los-plazos-mas-cortos-generalmente-aumentan-los-pagos-mensuales" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Los plazos más cortos generalmente aumentan los pagos mensuales</a>
+                                </li>
+                                                            <li>
+                                    <a href="#prestamos-a-plazos-de-tasa-fija-y-de-tasa-variable" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Préstamos a plazos de tasa fija y de tasa variable</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-solvencia-crediticia-afecta-los-terminos-del-prestamo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La solvencia crediticia afecta los términos del préstamo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#prestamos-personales-frente-a-prestamos-a-plazos-garantizados" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Préstamos personales frente a préstamos a plazos garantizados</a>
+                                </li>
+                                                            <li>
+                                    <a href="#los-prestamos-a-plazos-pueden-afectar-el-credito" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Los préstamos a plazos pueden afectar el crédito</a>
+                                </li>
+                                                            <li>
+                                    <a href="#el-pago-anticipado-puede-cambiar-el-costo-total" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">El pago anticipado puede cambiar el costo total</a>
+                                </li>
+                                                            <li>
+                                    <a href="#compare-los-prestamos-en-varias-dimensiones" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Compare los préstamos en varias dimensiones</a>
+                                </li>
+                                                            <li>
+                                    <a href="#este-atento-a-caracteristicas-que-cambian-el-costo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Esté atento a características que cambian el costo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-sucede-si-deja-de-hacer-pagos" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">¿Qué sucede si deja de hacer pagos?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#una-forma-sencilla-de-evaluar-un-prestamo-a-plazos" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Una forma sencilla de evaluar un préstamo a plazos</a>
+                                </li>
+                                                            <li>
+                                    <a href="#el-papel-de-los-prestamos-a-plazos-en-las-finanzas-personales" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">El papel de los préstamos a plazos en las finanzas personales</a>
+                                </li>
+                                                            <li>
+                                    <a href="#referencias" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Referencias</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Los préstamos a plazos son una de las formas más comunes de endeudamiento para consumidores. A diferencia del crédito rotativo, en el que un prestatario puede disponer repetidamente de una línea de crédito disponible, un préstamo a plazos generalmente ofrece un monto específico por adelantado y exige el reembolso mediante cuotas programadas durante un período definido.</p>
+<p>Los préstamos personales, los préstamos para automóvil, las hipotecas y algunos préstamos educativos pueden usar una estructura a plazos. Los términos exactos varían según el producto, pero el concepto básico es constante: el prestatario recibe el financiamiento hoy y se compromete a reembolsar el capital, los intereses y los cargos aplicables según un calendario predeterminado.</p>
+<p>El pago mensual suele ser lo primero que notan los prestatarios. Pero el tamaño del pago por sí solo no revela el costo total del financiamiento. La tasa de interés, la APR, el plazo del préstamo, las comisiones, el monto financiado y el calendario de reembolso influyen en cuánto termina pagando el prestatario.</p>
+<h2 id="como-funcionan-los-prestamos-a-plazos">Cómo funcionan los préstamos a plazos</h2>
+<p>Un préstamo personal a plazos es generalmente un préstamo cerrado. El prestamista entrega los fondos prestados al inicio, y el prestatario reembolsa la deuda mediante pagos fijos o programados durante un período específico. La CFPB señala que los préstamos personales a plazos pueden ir desde varios cientos de dólares hasta varios miles de dólares o más, con períodos de reembolso que van desde varios meses hasta varios años.</p>
+<p>Un préstamo típico tiene varios componentes centrales:</p>
+<ul>
+<li>Capital o monto prestado</li>
+<li>Tasa de interés</li>
+<li>Tasa de porcentaje anual (APR)</li>
+<li>Plazo del préstamo</li>
+<li>Número de pagos</li>
+<li>Monto del pago programado</li>
+<li>Comisiones y cargos financieros</li>
+<li>Monto total reembolsado</li>
+</ul>
+<p>Por ejemplo, un prestatario podría recibir $15,000 y comprometerse a reembolsarlos en 48 meses. El calendario de pagos determina cuánto de cada cuota se destina a intereses y cuánto reduce el capital pendiente.</p>
+<p>A medida que disminuye el capital, la porción de interés de un pago de amortización estándar generalmente también disminuye.</p>
+<h2 id="los-pagos-fijos-brindan-previsibilidad">Los pagos fijos brindan previsibilidad</h2>
+<p>Una de las principales características de muchos préstamos a plazos es un calendario de pagos predecible.</p>
+<p>Con un préstamo de tasa fija, la tasa de interés permanece sin cambios durante el período acordado. Esto puede facilitar la elaboración del presupuesto mensual porque el pago programado de capital e interés no fluctúa con las tasas del mercado.</p>
+<p>La CFPB explica que el financiamiento de tasa fija mantiene la tasa de interés sin cambios durante toda la vida del préstamo y permite a los prestatarios comprender sus pagos mensuales esperados y el costo total de financiamiento.</p>
+<p>Sin embargo, &quot;pago fijo&quot; no significa necesariamente que todos los costos asociados con un préstamo permanecerán idénticos en cada situación. Ciertos préstamos pueden incluir impuestos, seguros, productos opcionales u otros cargos fuera del pago de capital e interés.</p>
+<p>Por lo tanto, los prestatarios deben examinar la obligación de pago completa en los documentos del préstamo.</p>
+<h2 id="los-plazos-del-prestamo-determinan-mas-que-el-pago-mensual">Los plazos del préstamo determinan más que el pago mensual</h2>
+<p>El <strong>plazo del préstamo</strong> es el período de tiempo durante el cual está programado que el prestatario reembolse la deuda.</p>
+<p>Un plazo más largo generalmente distribuye el capital entre más pagos. Eso puede reducir el pago mensual requerido, pero también puede aumentar el monto de intereses pagados durante la vida del préstamo.</p>
+<p>La CFPB advierte específicamente a los consumidores que no evalúen los préstamos únicamente por el pago mensual. Su guía sobre préstamos para automóvil señala que extender el plazo puede reducir el pago mensual mientras aumenta el interés total pagado.</p>
+<p>Considere un ejemplo ilustrativo.</p>
+<p>Un préstamo de $20,000 con una tasa de interés fija del 10% podría tener un pago mensual y un costo total de intereses considerablemente distintos según se reembolse en tres años, cinco años o un período más largo.</p>
+<p>El período de reembolso más largo puede mejorar el flujo de caja a corto plazo mientras aumenta el gasto total de financiamiento.</p>
+<p>Por eso la elección del plazo es, en última instancia, una disyuntiva entre la asequibilidad mensual y el costo total del endeudamiento.</p>
+<h2 id="tasa-de-interes-frente-a-apr">Tasa de interés frente a APR</h2>
+<p>La tasa de interés le indica el costo de tomar prestado el capital.</p>
+<p>La <strong>tasa de porcentaje anual</strong>, o APR, ofrece una medida más amplia porque incorpora la tasa de interés más ciertas comisiones asociadas con la obtención del préstamo.</p>
+<p>La CFPB explica que la APR está diseñada para ofrecer una forma estandarizada de comparar el costo de distintos productos de crédito.</p>
+<p>Esta distinción importa cuando dos préstamos tienen tasas de interés similares pero comisiones diferentes.</p>
+<p>Por ejemplo, suponga que un prestamista ofrece un préstamo al 10% sin comisión de originación, mientras que otro ofrece 9.5% pero cobra una comisión de originación considerable. Comparar solo las tasas de interés declaradas podría hacer que la segunda oferta parezca más barata.</p>
+<p>Comparar la APR y los términos de reembolso completos ofrece más información.</p>
+<p>Los prestatarios deben examinar igualmente la estructura de comisiones individual porque la APR no necesariamente capta todos los gastos que podrían surgir durante la vida de un préstamo.</p>
+<h2 id="las-comisiones-aumentan-el-costo-del-endeudamiento">Las comisiones aumentan el costo del endeudamiento</h2>
+<p>El interés no es necesariamente el único costo asociado con un préstamo a plazos.</p>
+<p>La CFPB identifica varias comisiones que pueden aparecer con los préstamos personales a plazos, entre ellas:</p>
+<ul>
+<li>Comisiones de originación</li>
+<li>Comisiones de documentación</li>
+<li>Seguro de crédito opcional</li>
+<li>Seguro de incapacidad opcional</li>
+<li>Seguro de no presentación en ciertos préstamos garantizados</li>
+<li>Cargos por pago atrasado</li>
+</ul>
+<p>Los cargos específicos dependen del prestamista y del producto.</p>
+<p>Una comisión de originación merece particular atención porque puede afectar cuánto dinero recibe realmente el prestatario.</p>
+<p>Por ejemplo, un prestamista podría aprobar un préstamo de $10,000 pero deducir un cargo de originación antes de distribuir los fondos. Por lo tanto, el prestatario puede recibir menos efectivo mientras adeuda según el capital contractual y la estructura de reembolso del préstamo.</p>
+<p>La divulgación del préstamo debe explicar cómo se calcula la comisión y si se deduce de los fondos o se financia como parte del préstamo.</p>
+<h2 id="el-costo-total-es-mas-importante-que-el-pago-mensual">El costo total es más importante que el pago mensual</h2>
+<p>Un pago mensual responde solo una pregunta:</p>
+<p><strong>¿Cuánto debo pagar durante cada período de facturación?</strong></p>
+<p>El costo total responde una pregunta distinta:</p>
+<p><strong>¿Cuánto me costará finalmente este financiamiento si realizo los pagos programados?</strong></p>
+<p>Las divulgaciones de préstamo exigidas por la CFPB pueden incluir el monto financiado, el cargo financiero, la tasa de porcentaje anual y el total de pagos, según el producto de crédito y los requisitos de divulgación aplicables.</p>
+<p>Estas cifras permiten a los prestatarios comparar ofertas de forma más significativa.</p>
+<p>Suponga que un préstamo tiene un pago mensual de $400 y otro tiene un pago mensual de $350. El segundo préstamo no es automáticamente más barato.</p>
+<p>Si el primer préstamo dura tres años y el segundo dura cinco años, el pago mensual más bajo podría resultar en un interés total considerablemente mayor.</p>
+<p>Por lo tanto, el número de pagos debe considerarse junto con el monto del pago.</p>
+<h2 id="la-amortizacion-explica-a-donde-va-cada-pago">La amortización explica a dónde va cada pago</h2>
+<p>Los préstamos a plazos suelen amortizarse.</p>
+<p>La amortización significa que los pagos programados están estructurados para reducir gradualmente el capital pendiente mientras también cubren el interés.</p>
+<p>Al principio del préstamo, una porción mayor del pago puede destinarse a intereses porque el capital pendiente es más alto.</p>
+<p>A medida que disminuye el saldo, el componente de interés generalmente se vuelve más pequeño y una mayor parte del pago programado se destina al capital.</p>
+<p>Por eso los prestatarios pueden hacer pagos regulares sin ver que el capital baje en el monto total de cada pago.</p>
+<p>Un calendario de amortización puede mostrar la asignación de cada pago y el saldo restante después de cada cuota.</p>
+<h2 id="los-plazos-mas-cortos-generalmente-aumentan-los-pagos-mensuales">Los plazos más cortos generalmente aumentan los pagos mensuales</h2>
+<p>Un plazo de préstamo más corto generalmente exige que el prestatario reembolse el capital más rápidamente.</p>
+<p>Eso normalmente resulta en un pago mensual más alto.</p>
+<p>La contrapartida es que el préstamo puede acumular menos interés porque el capital permanece pendiente durante un período más corto.</p>
+<p>La CFPB ilustra esta relación en su guía sobre comparación de plazos de préstamo: los plazos más cortos pueden producir pagos más altos pero costos totales de financiamiento más bajos, mientras que los plazos más largos pueden producir pagos más bajos pero costos totales más altos.</p>
+<p>Por lo tanto, el plazo adecuado depende del flujo de caja del prestatario y de la diferencia de costo entre las opciones disponibles.</p>
+<p>Un prestatario debe evitar elegir un plazo largo únicamente porque el pago mensual se vea más cómodo, sin calcular el interés adicional.</p>
+<h2 id="prestamos-a-plazos-de-tasa-fija-y-de-tasa-variable">Préstamos a plazos de tasa fija y de tasa variable</h2>
+<p>No todos los préstamos a plazos tienen una tasa de interés fija.</p>
+<p>Algunos préstamos pueden tener tasas variables o ajustables.</p>
+<p>Con un préstamo de tasa fija, la tasa de interés permanece sin cambios según el contrato.</p>
+<p>Con un préstamo de tasa variable, la tasa puede cambiar según los términos aplicables, lo que puede causar que el pago o el costo del interés cambien.</p>
+<p>La CFPB explica que el financiamiento de tasa fija ofrece mayor previsibilidad de pago, mientras que las estructuras de tasa ajustable pueden resultar en pagos que cambian a medida que cambia la tasa de interés.</p>
+<p>Los prestatarios que consideren un financiamiento de tasa variable deben comprender:</p>
+<ul>
+<li>La tasa inicial</li>
+<li>El índice de referencia</li>
+<li>Con qué frecuencia puede cambiar la tasa</li>
+<li>Los topes de tasa</li>
+<li>Los cambios en el pago</li>
+<li>Cuándo comienzan los ajustes</li>
+<li>Si existe una tasa mínima o máxima</li>
+</ul>
+<p>Estas características pueden ser particularmente importantes cuando el período de reembolso es de varios años.</p>
+<h2 id="la-solvencia-crediticia-afecta-los-terminos-del-prestamo">La solvencia crediticia afecta los términos del préstamo</h2>
+<p>Los prestamistas generalmente evalúan varias características al determinar si aprueban un préstamo a plazos y qué términos ofrecer.</p>
+<p>La CFPB identifica factores que pueden incluir:</p>
+<ul>
+<li>El puntaje de crédito y los informes de crédito</li>
+<li>Los ingresos</li>
+<li>Las deudas existentes</li>
+<li>El monto del préstamo</li>
+<li>La duración del préstamo</li>
+<li>Los límites legales aplicables</li>
+<li>Otra información financiera, como la actividad de la cuenta bancaria</li>
+</ul>
+<p>Un prestatario con un mejor historial crediticio puede recibir precios o términos de reembolso distintos de los de alguien con un historial crediticio más limitado.</p>
+<p>Esta es una de las razones por las que puede ser útil comparar varios prestamistas en lugar de suponer que la primera oferta disponible representa los términos disponibles en el mercado.</p>
+<h2 id="prestamos-personales-frente-a-prestamos-a-plazos-garantizados">Préstamos personales frente a préstamos a plazos garantizados</h2>
+<p>Los préstamos a plazos pueden ser garantizados o no garantizados.</p>
+<p>Un <strong>préstamo garantizado</strong> está respaldado por una garantía colateral. Un préstamo para automóvil, por ejemplo, generalmente está garantizado por el vehículo.</p>
+<p>Un <strong>préstamo personal no garantizado</strong> normalmente no requiere un activo específico como garantía.</p>
+<p>Esta distinción puede afectar la elegibilidad, el precio y las consecuencias del incumplimiento.</p>
+<p>Si un prestatario con garantía no cumple con las obligaciones del préstamo, el prestamista puede tener derechos sobre la garantía según el acuerdo y la ley aplicable.</p>
+<p>Un préstamo no garantizado no vincula la misma garantía específica, aunque el prestamista igualmente puede iniciar acciones de cobro y otros recursos permitidos por el acuerdo y la ley.</p>
+<h2 id="los-prestamos-a-plazos-pueden-afectar-el-credito">Los préstamos a plazos pueden afectar el crédito</h2>
+<p>Un préstamo a plazos puede formar parte del historial crediticio de un consumidor cuando el prestamista reporta la cuenta a las agencias de informes de crédito al consumidor.</p>
+<p>La CFPB señala que los prestamistas personales pueden reportar los pagos a una o más de las tres principales agencias de informes de crédito al consumidor. También advierte que los pagos atrasados pueden afectar negativamente los informes y puntajes de crédito.</p>
+<p>Por lo tanto, un historial constante de pagos puntuales puede convertirse en parte del historial crediticio más amplio de un consumidor.</p>
+<p>Al mismo tiempo, contraer un nuevo préstamo aumenta la deuda pendiente del prestatario y crea otra obligación mensual.</p>
+<p>El efecto sobre un puntaje de crédito en particular depende del perfil crediticio general y del modelo de puntuación utilizado.</p>
+<h2 id="el-pago-anticipado-puede-cambiar-el-costo-total">El pago anticipado puede cambiar el costo total</h2>
+<p>Algunos prestatarios pagan un préstamo a plazos antes de lo previsto.</p>
+<p>Si el préstamo permite el reembolso anticipado sin una penalidad significativa, pagar el capital más rápido puede reducir la cantidad de interés futuro que de otro modo se acumularía.</p>
+<p>Sin embargo, los prestatarios deben revisar el contrato antes de realizar pagos adicionales.</p>
+<p>La CFPB señala que las divulgaciones del préstamo pueden incluir información sobre si el pago anticipado está permitido sin penalidad.</p>
+<p>Un prestatario también debe determinar cómo se aplican los pagos adicionales.</p>
+<p>Un pago adicional puede aplicarse de manera distinta según los procedimientos del prestamista y el acuerdo del préstamo. Comprender si el pago reduce el capital de inmediato puede ayudar al prestatario a estimar el efecto sobre el calendario de reembolso.</p>
+<h2 id="compare-los-prestamos-en-varias-dimensiones">Compare los préstamos en varias dimensiones</h2>
+<p>Al evaluar ofertas de préstamos a plazos, considere el paquete completo en lugar de centrarse en un solo número.</p>
+<p>Comience con el <strong>monto financiado</strong>.</p>
+<p>Luego compare la <strong>APR y la tasa de interés</strong>.</p>
+<p>A continuación, examine el <strong>plazo del préstamo y el número de pagos</strong>.</p>
+<p>Después, revise el <strong>pago mensual</strong>.</p>
+<p>Finalmente, calcule el <strong>total de pagos y las comisiones aplicables</strong>.</p>
+<p>La CFPB recomienda observar la APR, la tasa de interés, la duración del préstamo, el monto financiado y el pago mensual al comparar ofertas de préstamos.</p>
+<p>Este enfoque puede exponer diferencias que quedan ocultas cuando los prestamistas anuncian solo un pago mensual.</p>
+<h2 id="este-atento-a-caracteristicas-que-cambian-el-costo">Esté atento a características que cambian el costo</h2>
+<p>Los prestatarios también deben revisar el acuerdo del préstamo en busca de disposiciones que puedan generar costos adicionales.</p>
+<p>Según el producto, estas pueden incluir:</p>
+<ul>
+<li>Comisiones por pago atrasado</li>
+<li>Penalidades por pago anticipado</li>
+<li>Ajustes de tasa variable</li>
+<li>Períodos de pago diferido</li>
+<li>Seguro opcional</li>
+<li>Cargos de originación</li>
+<li>Pagos globales (balloon payments)</li>
+<li>Requisitos de pago automático</li>
+<li>Requisitos de garantía colateral</li>
+</ul>
+<p>La presencia de una característica particular no hace que un préstamo sea automáticamente inadecuado. Lo importante es comprender qué significa financieramente.</p>
+<p>Por ejemplo, un período de pago diferido puede reducir temporalmente los pagos requeridos mientras el interés continúa acumulándose según los términos aplicables.</p>
+<h2 id="que-sucede-si-deja-de-hacer-pagos">¿Qué sucede si deja de hacer pagos?</h2>
+<p>Un préstamo a plazos no desaparece cuando un prestatario no puede realizar un pago programado.</p>
+<p>Un pago atrasado puede resultar en cargos por mora y eventualmente puede derivar en actividad de cobro o en un reporte crediticio negativo.</p>
+<p>La CFPB aconseja a los prestatarios que tienen dificultades para hacer los pagos que se comuniquen con el prestamista de inmediato y pregunten sobre las opciones disponibles, que pueden incluir aplazamiento, indulgencia (forbearance) o un acuerdo de pago, según el préstamo.</p>
+<p>Esperar hasta que una cuenta esté gravemente morosa puede reducir el número de opciones disponibles.</p>
+<p>Los prestatarios también deben evitar contraer otro préstamo costoso simplemente para hacer pagos de un préstamo existente, a menos que la refinanciación realmente mejore su posición financiera general.</p>
+<h2 id="una-forma-sencilla-de-evaluar-un-prestamo-a-plazos">Una forma sencilla de evaluar un préstamo a plazos</h2>
+<p>Antes de firmar un acuerdo, haga cinco preguntas:</p>
+<p><strong>¿Cuánto dinero recibiré realmente?</strong></p>
+<p>Esto tiene en cuenta deducciones como las comisiones de originación.</p>
+<p><strong>¿Cuál es la APR?</strong></p>
+<p>Úsela para comparar el costo del financiamiento entre distintas ofertas.</p>
+<p><strong>¿Durante cuánto tiempo haré pagos?</strong></p>
+<p>El plazo determina qué tan rápido debe reembolsarse el capital.</p>
+<p><strong>¿Cuánto pagaré en total?</strong></p>
+<p>Calcule la suma de los pagos programados y los cargos aplicables.</p>
+<p><strong>¿Puede mi situación financiera sostener cómodamente el pago?</strong></p>
+<p>Un préstamo puede ser matemáticamente asequible sobre el papel mientras crea problemas si los ingresos son inestables o es probable que otros gastos aumenten.</p>
+<h2 id="el-papel-de-los-prestamos-a-plazos-en-las-finanzas-personales">El papel de los préstamos a plazos en las finanzas personales</h2>
+<p>Los préstamos a plazos pueden ser útiles porque convierten una necesidad de financiamiento grande en un calendario de reembolso predecible.</p>
+<p>Pueden financiar compras, consolidar deudas, cubrir ciertos gastos inesperados o respaldar transacciones financieras importantes.</p>
+<p>Pero los pagos predecibles no significan necesariamente un endeudamiento económico.</p>
+<p>El costo total depende del monto prestado, la tasa de interés, la APR, el plazo, las comisiones y el comportamiento de reembolso.</p>
+<p>Un plazo más largo puede facilitar el manejo de un pago mientras aumenta el interés total. Un plazo más corto puede reducir los costos totales de financiamiento mientras exige más efectivo cada mes.</p>
+<p>Por lo tanto, la comparación más útil no es simplemente <strong>&quot;¿Qué préstamo tiene el pago más bajo?&quot;</strong></p>
+<p>Es:</p>
+<p><strong>&quot;¿Qué estructura de financiamiento ofrece el monto que necesito con un costo total y un calendario de reembolso que se ajustan a mi situación financiera?&quot;</strong></p>
+<p>Comprender los pagos fijos, los plazos del préstamo, la APR, las comisiones y el reembolso total brinda a los prestatarios la información necesaria para responder esa pregunta antes de comprometerse con una obligación financiera de varios años.</p>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li>Consumer Financial Protection Bureau — <em>What Is a Personal Installment Loan?</em></li>
+<li>Consumer Financial Protection Bureau — <em>Do Personal Installment Loans Have Fees?</em></li>
+<li>Consumer Financial Protection Bureau — <em>What Is the Difference Between a Loan Interest Rate and the APR?</em></li>
+<li>Consumer Financial Protection Bureau — <em>How Do I Compare Auto Loan Offers?</em></li>
+<li>Consumer Financial Protection Bureau — <em>What Should I Know Before I Finalize a Car or Auto Loan?</em></li>
+<li>Consumer Financial Protection Bureau — <em>What Is a Truth in Lending Disclosure for an Auto Loan?</em></li>
+<li>Consumer Financial Protection Bureau — <em>Understand the Different Kinds of Loans Available</em></li>
+</ul>
+
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Escrito por</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Lucas Vance</p>
+                            <p class="text-sm text-brand-200">Lending &amp; Borrowing Analyst</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Lucas specializes in consumer and real estate lending. With a background in retail banking analysis and loan advisory, his work helps readers weigh the true cost of borrowing, from mortgages, home equity, and refinancing to auto, personal, and student loans, and compare rates, terms, and fees before they sign.</p>
+                                        <a href="/es/our-team" wire:navigate class="btn-zest relative mt-6">Conozca a los editores</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenido exclusivamente educativo.</span>
+                    Este artículo ofrece información general y no constituye asesoramiento financiero, de inversión, fiscal ni legal personalizado.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Siga aprendiendo</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Más en Préstamos y financiación</h2>
+                    </div>
+                    <a href="/es/c/loans-financing" wire:navigate class="link-underline text-sm font-semibold text-ink">Ver todo</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/es/p/bankruptcy-basics-understanding-types-and-financial-impact" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bankruptcy-basics-understanding-types-and-financial-impact.webp"
+        alt="Fundamentos de la Bancarrota: Comprendiendo los Tipos y el Impacto Financiero"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Préstamos y financiación
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Fundamentos de la Bancarrota: Comprendiendo los Tipos y el Impacto Financiero
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">La bancarrota es un proceso legal federal diseñado para abordar situaciones en las que las personas o las empresas no pueden cumplir con sus obligaciones financieras. Dep...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-21" class="shrink-0">21 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/es/p/bad-credit-loans-what-borrowers-should-know-before-applying" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bad-credit-loans-what-borrowers-should-know-before-applying.webp"
+        alt="Préstamos para Mal Crédito: Lo Que Deben Saber los Prestatarios Antes de Solicitar"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Préstamos y financiación
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Préstamos para Mal Crédito: Lo Que Deben Saber los Prestatarios Antes de Solicitar
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Tener una puntuación de crédito más baja puede dificultar el endeudamiento, pero no necesariamente elimina todas las opciones de financiamiento. Los prestamistas utilizan...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-14" class="shrink-0">14 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/es/p/mortgage-refinancing-how-replacing-an-existing-home-loan-works" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/mortgage-refinancing-how-replacing-an-existing-home-loan-works.webp"
+        alt="Refinanciamiento hipotecario: cómo funciona reemplazar un préstamo hipotecario existente"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Préstamos y financiación
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Refinanciamiento hipotecario: cómo funciona reemplazar un préstamo hipotecario existente
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Una hipoteca no tiene que permanecer necesariamente sin cambios hasta que se venda la vivienda. Los propietarios pueden reemplazar una hipoteca existente por un préstamo...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Lucas Vance</span>
+                    </span>
+                    <time datetime="2026-09-03" class="shrink-0">3 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/es" wire:navigate aria-label="Inicio de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Guías claras y basadas en la investigación sobre banca, inversión, préstamos y crédito, escritas para ayudarle a tomar decisiones financieras con confianza.
+                </p>
+                <a href="/es/articles" wire:navigate class="btn-zest mt-7">
+                    Empezar a aprender
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Temas</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/es/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finanzas personales</a></li>
+                                                    <li><a href="/es/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestión patrimonial</a></li>
+                                                    <li><a href="/es/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Préstamos y financiación</a></li>
+                                                    <li><a href="/es/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédito y tarjetas</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/es/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Todos los artículos</a></li>
+                        <li><a href="/es/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Nuestro equipo editorial</a></li>
+                        <li><a href="/es/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Legal</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/es/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Política de privacidad</a></li>
+                        <li><a href="/es/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Términos de uso</a></li>
+                        <li><a href="/es/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Aviso legal:</span>
+                El contenido de Edufinance.site se ofrece únicamente con fines informativos y educativos y no debe interpretarse como asesoramiento financiero, legal o fiscal profesional. Los creadores y editores de este sitio no son asesores financieros autorizados.
+            </p>
+            <p>Invertir implica riesgos, incluida la posible pérdida del capital. Los rendimientos pasados no garantizan resultados futuros. Antes de tomar cualquier decisión financiera o aplicar cualquier estrategia de inversión, debe realizar su propia investigación independiente y consultar a un profesional cualificado y autorizado que conozca su situación financiera concreta.</p>
+            <p>Edufinance.site no ofrece declaraciones ni garantías sobre la exactitud, integridad o idoneidad de la información aquí contenida, y no asume ninguna responsabilidad por pérdidas financieras ni daños derivados del uso de este contenido.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Todos los derechos reservados.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="yTm0dMpwHxt43Q8WkTelBiB1cREKmfNsj1rHFrAG" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

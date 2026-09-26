@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Plans de gestion de dettes : comment fonctionnent les programmes de remboursement structurés — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Lorsque plusieurs dettes deviennent difficiles à gérer, le problème n&#039;est pas toujours le montant dû. Des taux d&#039;intérêt élevés, plusieurs dates de paiemen..." />
+                            <link rel="alternate" hreflang="en" href="/p/debt-management-plans-how-structured-repayment-programs-work" />
+                    <link rel="alternate" hreflang="es" href="/es/p/debt-management-plans-how-structured-repayment-programs-work" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/debt-management-plans-how-structured-repayment-programs-work" />
+                <link rel="alternate" hreflang="x-default" href="/p/debt-management-plans-how-structured-repayment-programs-work" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/fr/our-team" wire:navigate class="transition hover:text-white">Notre équipe</a>
+                <a href="/fr/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/debt-management-plans-how-structured-repayment-programs-work"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/debt-management-plans-how-structured-repayment-programs-work"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/debt-management-plans-how-structured-repayment-programs-work"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="shrink-0" aria-label="Accueil de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/fr" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Accueil</a>
+                            <a href="/fr/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finances personnelles</a>
+                            <a href="/fr/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestion de patrimoine</a>
+                            <a href="/fr/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Prêts et financement</a>
+                            <a href="/fr/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédit et cartes</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/fr/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Tous les articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/fr" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Tous les articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Thèmes</p>
+                            <a href="/fr/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finances personnelles
+                </a>
+                            <a href="/fr/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestion de patrimoine
+                </a>
+                            <a href="/fr/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Prêts et financement
+                </a>
+                            <a href="/fr/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédit et cartes
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">À propos</p>
+            <a href="/fr/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Notre équipe</a>
+            <a href="/fr/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Fil d’Ariane">
+                <a href="/fr" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Accueil
+                </a>
+                <span class="text-line">/</span>
+                <a href="/fr/c/loans-financing" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Prêts et financement</a>
+            </nav>
+
+            <a href="/fr/c/loans-financing" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M7.605 2.112a.75.75 0 0 1 .79 0l5.25 3.25A.75.75 0 0 1 13 6.707V12.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.707a.75.75 0 0 1-.645-1.345l5.25-3.25ZM4.5 8.75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 8a.75.75 0 0 0-.75.75v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 8 8Zm2 .75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
+</svg>
+
+                        Prêts et financement
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Plans de gestion de dettes : comment fonctionnent les programmes de remboursement structurés
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/fr/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Rachel Bernstein</span>
+                        <span class="text-muted">Senior Credit &amp; Debt Editor</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2026-07-11">11 juillet 2026</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            17 min de lecture
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/debt-management-plans-how-structured-repayment-programs-work.webp" alt="Plans de gestion de dettes : comment fonctionnent les programmes de remboursement structurés" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="Dans cet article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Dans cet article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#quest-ce-quun-plan-de-gestion-de-dettes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;est-ce qu&#039;un plan de gestion de dettes ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quelles-dettes-peuvent-etre-incluses" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Quelles dettes peuvent être incluses ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-fonctionne-le-processus-dinscription" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment fonctionne le processus d&#039;inscription</a>
+                                </li>
+                                                            <li>
+                                    <a href="#un-seul-paiement-mensuel-peut-simplifier-le-remboursement" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Un seul paiement mensuel peut simplifier le remboursement</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-taux-dinteret-peuvent-etre-reduits" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les taux d&#039;intérêt peuvent être réduits</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-dette-nest-generalement-pas-annulee" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La dette n&#039;est généralement pas annulée</a>
+                                </li>
+                                                            <li>
+                                    <a href="#combien-de-temps-un-plan-de-gestion-de-dettes-peut-il-durer" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Combien de temps un plan de gestion de dettes peut-il durer ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quadvient-il-des-cartes-de-credit" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;advient-il des cartes de crédit ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#un-plan-de-gestion-de-dettes-peut-il-affecter-le-credit" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Un plan de gestion de dettes peut-il affecter le crédit ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-frais-des-dmp-peuvent-varier" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les frais des DMP peuvent varier</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-evaluer-un-organisme-de-counseling" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment évaluer un organisme de counseling</a>
+                                </li>
+                                                            <li>
+                                    <a href="#plans-de-gestion-de-dettes-contre-consolidation-de-dettes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Plans de gestion de dettes contre consolidation de dettes</a>
+                                </li>
+                                                            <li>
+                                    <a href="#plans-de-gestion-de-dettes-contre-reglement-de-dettes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Plans de gestion de dettes contre règlement de dettes</a>
+                                </li>
+                                                            <li>
+                                    <a href="#communiquer-directement-avec-les-creanciers-peut-etre-une-solution-de-rechange" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Communiquer directement avec les créanciers peut être une solution de rechange</a>
+                                </li>
+                                                            <li>
+                                    <a href="#signaux-dalarme-des-arnaques-daide-a-la-dette" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Signaux d&#039;alarme des arnaques d&#039;aide à la dette</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-se-passe-t-il-si-un-paiement-de-dmp-est-manque" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Que se passe-t-il si un paiement de DMP est manqué ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quand-un-dmp-peut-avoir-du-sens" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Quand un DMP peut avoir du sens</a>
+                                </li>
+                                                            <li>
+                                    <a href="#questions-a-poser-avant-de-sinscrire" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Questions à poser avant de s&#039;inscrire</a>
+                                </li>
+                                                            <li>
+                                    <a href="#batir-un-budget-autour-du-plan" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Bâtir un budget autour du plan</a>
+                                </li>
+                                                            <li>
+                                    <a href="#considerations-finales" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Considérations finales</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Lorsque plusieurs dettes deviennent difficiles à gérer, le problème n'est pas toujours le montant dû. Des taux d'intérêt élevés, plusieurs dates de paiement et différentes exigences de créanciers peuvent compliquer l'organisation du remboursement, même lorsqu'un emprunteur dispose d'un revenu suffisant pour progresser.</p>
+<p>Un plan de gestion de dettes peut offrir une façon structurée de rembourser certaines dettes non garanties par l'intermédiaire d'un organisme de counseling en crédit. Au lieu d'envoyer des paiements distincts aux créanciers participants, le consommateur effectue généralement un seul paiement à l'organisme de counseling, qui distribue l'argent selon le plan de remboursement convenu.</p>
+<p>Les plans de gestion de dettes n'effacent pas la dette. Leur objectif est généralement de rendre le remboursement plus organisé et de potentiellement réduire certains frais d'intérêt ou frais grâce à des arrangements avec les créanciers participants. Le CFPB explique que les conseillers en crédit peuvent aider les consommateurs à établir ces plans et travailler avec les créanciers pour réduire les taux d'intérêt, prolonger les périodes de remboursement ou réduire certains frais.</p>
+<p>Comprendre le fonctionnement de ces plans est important avant de décider si un remboursement structuré convient à une situation financière particulière.</p>
+<h2 id="quest-ce-quun-plan-de-gestion-de-dettes">Qu'est-ce qu'un plan de gestion de dettes ?</h2>
+<p>Un plan de gestion de dettes, souvent appelé DMP, est un arrangement de remboursement généralement établi par l'intermédiaire d'un organisme de counseling en crédit.</p>
+<p>Le processus commence généralement par un examen du revenu, des dépenses, des dettes et de la situation financière globale du consommateur. Si un DMP semble approprié, le conseiller travaille avec le consommateur pour établir un calendrier de remboursement et communique avec les créanciers participants au sujet des conditions proposées.</p>
+<p>Dans le cadre d'un arrangement typique, le consommateur effectue un paiement à l'organisme de counseling en crédit chaque mois ou chaque période de paie. L'organisme distribue ensuite l'argent parmi les créanciers participants.</p>
+<p>Le plan est donc différent d'un programme de règlement de dettes.</p>
+<p>Un DMP vise généralement à rembourser la dette en totalité selon des conditions modifiées ou organisées. Le règlement de dettes, en revanche, implique une tentative de négocier un montant réduit pour régler une dette.</p>
+<h2 id="quelles-dettes-peuvent-etre-incluses">Quelles dettes peuvent être incluses ?</h2>
+<p>Les plans de gestion de dettes sont généralement associés aux <strong>dettes non garanties</strong>.</p>
+<p>Cela peut inclure certaines :</p>
+<ul>
+<li>Soldes de carte de crédit</li>
+<li>Dettes personnelles</li>
+<li>Dettes médicales</li>
+<li>Obligations de prêts étudiants</li>
+<li>Autres comptes non garantis admissibles</li>
+</ul>
+<p>Les dettes exactement acceptées dépendent de l'organisme de counseling et des créanciers individuels.</p>
+<p>Les dettes garanties, comme les prêts hypothécaires et les prêts automobiles, ne sont généralement pas traitées dans un DMP traditionnel, car ces dettes sont adossées à une garantie. La FTC note précisément que les plans de gestion de dettes s'appliquent généralement aux obligations non garanties plutôt qu'aux dettes garanties par des actifs comme des maisons ou des véhicules.</p>
+<p>Un conseiller devrait déterminer quels comptes peuvent réellement participer avant que le consommateur ne s'inscrive.</p>
+<h2 id="comment-fonctionne-le-processus-dinscription">Comment fonctionne le processus d'inscription</h2>
+<p>La première étape est habituellement une évaluation financière.</p>
+<p>Un conseiller en crédit examine le revenu, les dépenses régulières, les dettes en cours, les taux d'intérêt et les liquidités disponibles. L'objectif est de déterminer si le consommateur peut réalistement maintenir un calendrier de remboursement structuré.</p>
+<p>Un organisme de counseling réputé ne devrait pas recommander automatiquement un DMP sans examiner la situation financière de la personne. Le CFPB conseille aux consommateurs de se méfier des organismes qui présentent un plan de gestion de dettes comme la seule solution avant d'effectuer un examen détaillé.</p>
+<p>Si un DMP est approprié, le conseiller peut élaborer une structure de paiement proposée.</p>
+<p>L'organisme peut ensuite communiquer avec les créanciers participants pour demander des modifications telles que des taux d'intérêt réduits, des frais annulés ou d'autres accommodements de remboursement.</p>
+<p>Les créanciers ne sont pas nécessairement tenus d'accepter chaque condition proposée, de sorte que les consommateurs devraient confirmer quels créanciers ont accepté de participer.</p>
+<h2 id="un-seul-paiement-mensuel-peut-simplifier-le-remboursement">Un seul paiement mensuel peut simplifier le remboursement</h2>
+<p>L'une des principales caractéristiques pratiques d'un DMP est la consolidation des paiements.</p>
+<p>Sans plan, une personne ayant quatre comptes de carte de crédit pourrait avoir quatre échéances distinctes, des paiements minimums, des taux d'intérêt et des relevés à surveiller.</p>
+<p>Dans le cadre d'un DMP, le consommateur effectue généralement un paiement prévu à l'organisme de counseling. L'organisme distribue ensuite les fonds aux créanciers participants.</p>
+<p>Cela peut simplifier l'administration et réduire la probabilité d'oublier l'un de plusieurs paiements mensuels.</p>
+<p>Cependant, le consommateur doit tout de même effectuer ce paiement unique du DMP à temps. Manquer ce paiement peut nuire à l'arrangement de remboursement et créer potentiellement des problèmes avec les créanciers participants.</p>
+<h2 id="les-taux-dinteret-peuvent-etre-reduits">Les taux d'intérêt peuvent être réduits</h2>
+<p>Un DMP n'efface pas automatiquement les intérêts.</p>
+<p>Un organisme de counseling en crédit peut plutôt négocier avec les créanciers participants pour obtenir des taux d'intérêt réduits ou d'autres concessions.</p>
+<p>Le CFPB explique que les conseillers peuvent travailler avec les créanciers pour réduire les taux d'intérêt, prolonger les périodes de remboursement ou réduire certains frais.</p>
+<p>La réduction réelle dépend du créancier et de la situation du consommateur.</p>
+<p>Cette distinction est importante, car les publicités pour l'aide à la dette peuvent parfois donner l'impression que le remboursement est plus simple qu'il ne l'est réellement. Un consommateur devrait demander exactement quelles modifications de taux d'intérêt ont été négociées plutôt que de supposer que chaque compte recevra la même réduction.</p>
+<h2 id="la-dette-nest-generalement-pas-annulee">La dette n'est généralement pas annulée</h2>
+<p>Un plan de gestion de dettes est fondamentalement une stratégie de remboursement.</p>
+<p>Le consommateur demeure généralement responsable des soldes sous-jacents. Le plan est conçu pour rendre ces soldes plus faciles à rembourser plutôt que de simplement les éliminer.</p>
+<p>C'est l'une des différences les plus claires entre un DMP et le règlement de dettes.</p>
+<p>Dans le cadre du règlement de dettes, une entreprise peut tenter de négocier une réduction du montant dû. Dans le cadre du counseling en crédit et d'un DMP, l'accent est généralement mis sur l'organisation du remboursement et la réduction potentielle des intérêts ou des frais.</p>
+<p>Le CFPB affirme précisément que les conseillers en crédit n'effacent pas les dettes des consommateurs par l'intermédiaire d'un plan de gestion de dettes.</p>
+<h2 id="combien-de-temps-un-plan-de-gestion-de-dettes-peut-il-durer">Combien de temps un plan de gestion de dettes peut-il durer ?</h2>
+<p>La durée du remboursement varie selon le montant dû, les taux d'intérêt, les conditions négociées et le montant que le consommateur peut se permettre de verser chaque mois.</p>
+<p>Certains plans peuvent durer plusieurs années.</p>
+<p>La FTC note que les plans de gestion de dettes réussis exigent des paiements réguliers et ponctuels, et peuvent prendre 48 mois ou plus à compléter.</p>
+<p>La durée du programme devrait donc être prise en compte avant l'inscription.</p>
+<p>Un paiement mensuel plus bas peut faciliter le maintien du plan, mais prolonger le remboursement peut également signifier demeurer soumis à des restrictions financières pendant une période plus longue.</p>
+<p>Les consommateurs devraient demander une date d'achèvement estimée et comprendre ce qui se passe si leur revenu ou leurs dépenses changent pendant le programme.</p>
+<h2 id="quadvient-il-des-cartes-de-credit">Qu'advient-il des cartes de crédit ?</h2>
+<p>L'inscription peut affecter la façon dont les comptes de crédit participants sont gérés.</p>
+<p>Certains plans de gestion de dettes exigent que les cartes de crédit participantes soient fermées ou restreignent leur utilisation pendant que le consommateur est inscrit. Cela vise en partie à empêcher l'emprunteur d'accumuler de nouveaux soldes tout en remboursant les soldes existants.</p>
+<p>Les règles précises varient selon l'organisme de counseling et le créancier.</p>
+<p>Avant de s'inscrire, demandez si :</p>
+<ul>
+<li>Les comptes doivent être fermés</li>
+<li>Les cartes existantes peuvent continuer d'être utilisées</li>
+<li>De nouvelles demandes de crédit sont permises</li>
+<li>Les comptes continueront d'être déclarés aux agences d'évaluation du crédit</li>
+<li>Un créancier peut retirer un compte du programme</li>
+</ul>
+<p>Ces détails peuvent affecter à la fois les finances quotidiennes et le profil de crédit du consommateur.</p>
+<h2 id="un-plan-de-gestion-de-dettes-peut-il-affecter-le-credit">Un plan de gestion de dettes peut-il affecter le crédit ?</h2>
+<p>Un DMP n'équivaut pas à avoir des comptes en défaut, mais l'inscription peut tout de même avoir des implications sur le crédit.</p>
+<p>Par exemple, fermer des comptes de crédit renouvelable peut affecter le crédit disponible et le taux d'utilisation. L'effet précis dépend du profil de crédit existant du consommateur et de la façon dont les créanciers déclarent les comptes.</p>
+<p>Le CFPB note que certains programmes de gestion de dettes impliquent la fermeture de comptes et que cela peut avoir un effet initial sur la solvabilité.</p>
+<p>Les consommateurs devraient demander à l'organisme de counseling et aux créanciers participants comment le statut des comptes sera déclaré.</p>
+<p>Plus important encore, le consommateur devrait comprendre que l'objectif d'un DMP est un remboursement durable plutôt qu'un changement rapide de pointage de crédit.</p>
+<h2 id="les-frais-des-dmp-peuvent-varier">Les frais des DMP peuvent varier</h2>
+<p>Les organismes de counseling en crédit peuvent facturer des frais pour certains services, même lorsque l'organisme fonctionne comme organisme à but non lucratif.</p>
+<p>Le CFPB recommande de demander des informations sur les frais de mise en place, les frais mensuels et d'autres frais, et d'obtenir un devis précis par écrit.</p>
+<p>La structure des frais devrait être comparée aux économies potentielles découlant de la réduction des intérêts ou de l'annulation de frais.</p>
+<p>Par exemple, si un DMP réduit considérablement les intérêts mais facture des frais administratifs raisonnables, le coût global pourrait tout de même être inférieur à la poursuite de la structure de dette originale.</p>
+<p>Ce calcul devrait être effectué à l'aide de chiffres réels plutôt qu'en se fiant à une estimation d'économies annoncée.</p>
+<h2 id="comment-evaluer-un-organisme-de-counseling">Comment évaluer un organisme de counseling</h2>
+<p>Le seul fait qu'un organisme soit désigné à but non lucratif ne garantit pas qu'il sera approprié ou peu coûteux.</p>
+<p>La FTC conseille aux consommateurs d'enquêter sur les organismes avant de s'inscrire et de se renseigner sur les coûts, les services, l'agrément le cas échéant, les qualifications des conseillers, et si l'organisme fournit de l'information éducative gratuite.</p>
+<p>Le CFPB recommande également de vérifier la réputation d'un organisme et d'obtenir des renseignements détaillés sur ses services et ses frais avant de signer une entente.</p>
+<p>Un organisme réputé devrait être disposé à expliquer :</p>
+<ul>
+<li>Quels services il fournit</li>
+<li>Comment fonctionne le DMP</li>
+<li>Quelles dettes peuvent participer</li>
+<li>Combien coûte le programme</li>
+<li>Comment les paiements sont distribués</li>
+<li>Combien de temps le remboursement pourrait prendre</li>
+<li>Ce qui se passe si le consommateur manque un paiement</li>
+<li>Si les comptes doivent être fermés</li>
+<li>Ce qui se passe si un créancier refuse l'arrangement proposé</li>
+</ul>
+<p>Les consommateurs devraient recevoir par écrit les promesses et conditions importantes.</p>
+<h2 id="plans-de-gestion-de-dettes-contre-consolidation-de-dettes">Plans de gestion de dettes contre consolidation de dettes</h2>
+<p>Un DMP et la consolidation de dettes peuvent tous deux mener à une structure de paiement plus simple, mais ils fonctionnent différemment.</p>
+<p>Avec la <strong>consolidation de dettes</strong>, un emprunteur obtient généralement un nouveau prêt et en utilise le produit pour rembourser des dettes existantes. L'emprunteur rembourse ensuite le nouveau prêteur.</p>
+<p>Avec un <strong>DMP</strong>, il n'y a généralement pas de nouveau prêt. Les dettes existantes demeurent, tandis qu'un organisme de counseling en crédit aide à organiser le remboursement et peut négocier des conditions modifiées avec les créanciers.</p>
+<p>La consolidation peut donc changer le financement lui-même, tandis qu'un DMP change la façon dont les dettes existantes sont gérées.</p>
+<p>Aucune des deux structures ne réduit automatiquement le coût total. Le TAP réel, les frais, la période de remboursement et les conditions des créanciers doivent être examinés.</p>
+<h2 id="plans-de-gestion-de-dettes-contre-reglement-de-dettes">Plans de gestion de dettes contre règlement de dettes</h2>
+<p>La distinction devient encore plus importante lorsqu'on compare un DMP au règlement de dettes.</p>
+<p>Une entreprise de règlement de dettes tente généralement de négocier avec les créanciers pour qu'ils acceptent un montant inférieur au montant total dû.</p>
+<p>Le CFPB avertit que les programmes de règlement peuvent comporter des risques importants, particulièrement lorsqu'il est demandé aux consommateurs de cesser d'effectuer des paiements pendant que de l'argent est accumulé pour de futurs règlements. Les paiements manqués peuvent entraîner des frais de retard, des intérêts supplémentaires, des activités de recouvrement, une dégradation du crédit et, potentiellement, des poursuites judiciaires.</p>
+<p>Un DMP traditionnel n'exige généralement pas que le consommateur cesse de payer les créanciers afin de constituer un fonds de règlement.</p>
+<p>Les consommateurs devraient donc se méfier de tout organisme qui décrit le règlement de dettes et le counseling en crédit comme des services interchangeables.</p>
+<h2 id="communiquer-directement-avec-les-creanciers-peut-etre-une-solution-de-rechange">Communiquer directement avec les créanciers peut être une solution de rechange</h2>
+<p>Avant de s'inscrire à un programme officiel, les consommateurs peuvent communiquer eux-mêmes avec les créanciers.</p>
+<p>Le CFPB conseille aux emprunteurs qui ne peuvent pas effectuer leurs paiements de carte de crédit de communiquer immédiatement avec l'émetteur de la carte et d'expliquer leur situation. Certaines entreprises de cartes pourraient être disposées à modifier les arrangements de paiement pour les consommateurs éprouvant des difficultés financières.</p>
+<p>Un consommateur peut se renseigner au sujet :</p>
+<ul>
+<li>Des réductions temporaires de paiement</li>
+<li>Des taux d'intérêt plus bas</li>
+<li>Des annulations de frais</li>
+<li>Des programmes de difficultés financières</li>
+<li>Des périodes de remboursement prolongées</li>
+<li>D'autres arrangements de paiement disponibles</li>
+</ul>
+<p>La négociation directe ne garantit pas qu'un créancier modifiera les conditions, mais elle peut valoir la peine d'être explorée avant de payer un tiers pour obtenir de l'aide.</p>
+<h2 id="signaux-dalarme-des-arnaques-daide-a-la-dette">Signaux d'alarme des arnaques d'aide à la dette</h2>
+<p>Les consommateurs aux prises avec des dettes peuvent être particulièrement vulnérables face aux entreprises qui promettent des solutions rapides.</p>
+<p>La FTC a averti en 2026 que les fournisseurs légitimes d'aide à la dette ne devraient pas exiger un paiement initial avant de fournir le service promis. L'agence met également en garde contre les entreprises qui garantissent l'élimination de la dette ou une annulation rapide.</p>
+<p>D'autres signaux d'alarme incluent :</p>
+<ul>
+<li>Des résultats garantis</li>
+<li>Une pression pour s'inscrire immédiatement</li>
+<li>Des demandes de paiement avant que les services soient rendus</li>
+<li>Des instructions de cesser de communiquer avec les créanciers</li>
+<li>Des instructions de cesser d'effectuer les paiements requis sans explication claire</li>
+<li>Des affirmations concernant un programme gouvernemental spécial d'aide à la dette</li>
+<li>Des demandes de renseignements financiers sensibles par un appel ou un message inattendu</li>
+</ul>
+<p>Un organisme devrait être en mesure d'expliquer ses services sans recourir à la pression ou à des promesses irréalistes.</p>
+<h2 id="que-se-passe-t-il-si-un-paiement-de-dmp-est-manque">Que se passe-t-il si un paiement de DMP est manqué ?</h2>
+<p>Un DMP demeure une obligation financière.</p>
+<p>Si un consommateur manque un paiement à l'organisme de counseling, l'organisme pourrait être incapable d'effectuer les paiements prévus aux créanciers. Les conséquences dépendent du plan et des ententes individuelles avec les créanciers.</p>
+<p>Avant l'inscription, demandez ce qui se passe après :</p>
+<ul>
+<li>Un paiement manqué</li>
+<li>Plusieurs paiements manqués</li>
+<li>Une perte temporaire de revenu</li>
+<li>Une dépense imprévue importante</li>
+<li>Une demande de quitter le programme</li>
+</ul>
+<p>Comprendre les procédures de sortie et de difficultés financières peut être tout aussi important que de comprendre les conditions d'inscription initiales.</p>
+<h2 id="quand-un-dmp-peut-avoir-du-sens">Quand un DMP peut avoir du sens</h2>
+<p>Un plan de remboursement structuré peut valoir la peine d'être envisagé lorsqu'un emprunteur :</p>
+<ul>
+<li>Dispose d'un revenu suffisant pour rembourser ses dettes existantes au fil du temps</li>
+<li>Éprouve des difficultés avec plusieurs comptes non garantis</li>
+<li>Souhaite un seul paiement mensuel organisé</li>
+<li>Fait face à des frais d'intérêt élevés</li>
+<li>Peut s'engager à effectuer des paiements réguliers</li>
+<li>Souhaite de l'aide pour créer un budget de remboursement durable</li>
+</ul>
+<p>Il peut être moins approprié lorsque le consommateur ne peut pas se permettre le paiement proposé même après des réductions d'intérêt, a principalement de la dette garantie, ou a une situation financière qui nécessite des conseils juridiques sur la faillite ou d'autres recours.</p>
+<p>L'évaluation du conseiller devrait déterminer si le plan est réaliste, plutôt que de supposer que l'inscription est appropriée simplement parce que le consommateur a des dettes.</p>
+<h2 id="questions-a-poser-avant-de-sinscrire">Questions à poser avant de s'inscrire</h2>
+<p>Avant de signer une entente de DMP, demandez des réponses claires à plusieurs questions.</p>
+<p><strong>Quelles dettes peuvent être incluses ?</strong></p>
+<p>Tous les créanciers ou comptes ne participent pas nécessairement.</p>
+<p><strong>Quelles réductions de taux d'intérêt ont réellement été négociées ?</strong></p>
+<p>Ne présumez pas qu'une réduction promise s'applique à chaque compte.</p>
+<p><strong>Quels sont les frais ?</strong></p>
+<p>Demandez tous les frais de mise en place, mensuels et autres, par écrit.</p>
+<p><strong>Combien de temps prendra le remboursement ?</strong></p>
+<p>Demandez une date de remboursement estimée basée sur le paiement proposé.</p>
+<p><strong>Mes cartes de crédit seront-elles fermées ?</strong></p>
+<p>Comprenez comment les fermetures et restrictions de comptes pourraient affecter vos finances.</p>
+<p><strong>Comment les comptes seront-ils déclarés ?</strong></p>
+<p>Demandez comment les créanciers participants déclarent habituellement les comptes pendant le programme.</p>
+<p><strong>Que se passe-t-il si je manque un paiement ?</strong></p>
+<p>Comprenez les conséquences avant l'inscription.</p>
+<p><strong>Puis-je quitter le programme ?</strong></p>
+<p>Connaissez le processus et les conséquences financières d'une sortie anticipée.</p>
+<p><strong>Les créanciers ont-ils accepté le plan ?</strong></p>
+<p>Le CFPB conseille aux consommateurs de confirmer que les créanciers ont accepté l'arrangement proposé avant d'envoyer des paiements à l'organisme qui gère le plan.</p>
+<h2 id="batir-un-budget-autour-du-plan">Bâtir un budget autour du plan</h2>
+<p>Un DMP n'est utile que si le paiement est viable.</p>
+<p>Avant l'inscription, calculez le revenu mensuel net et soustrayez les dépenses essentielles comme le logement, les services publics, la nourriture, le transport, l'assurance et les obligations existantes.</p>
+<p>Déterminez ensuite le montant qui peut réalistement être consacré au remboursement de la dette.</p>
+<p>Laissez aussi de la place pour les dépenses irrégulières. Un budget qui alloue chaque dollar disponible à la dette peut échouer lorsqu'une réparation automobile, une dépense médicale, une facture d'assurance ou un autre coût imprévu survient.</p>
+<p>Un plan durable devrait tenir compte des flux de trésorerie réels du ménage plutôt que d'un mois idéalisé.</p>
+<h2 id="considerations-finales">Considérations finales</h2>
+<p>Les plans de gestion de dettes offrent une approche structurée pour rembourser certaines dettes non garanties. Au lieu de gérer plusieurs paiements de créanciers de façon indépendante, les consommateurs effectuent généralement un paiement à un organisme de counseling en crédit, qui distribue les fonds selon le plan convenu.</p>
+<p>Les avantages potentiels comprennent une administration simplifiée des paiements et, selon la participation des créanciers, des taux d'intérêt ou des frais réduits. Un DMP n'efface généralement pas la dette sous-jacente, et son achèvement réussi nécessite des paiements constants sur une période prolongée.</p>
+<p>Avant de s'inscrire, comparez les frais du programme avec ses économies potentielles, comprenez quels comptes participeront, demandez comment les comptes de crédit seront traités, et obtenez toutes les conditions importantes par écrit.</p>
+<p>Les consommateurs devraient également comparer un DMP avec les négociations directes avec les créanciers, la consolidation de dettes et d'autres options disponibles. La structure appropriée dépend du revenu, du type de dette, des flux de trésorerie et de la capacité à maintenir les paiements.</p>
+<p>Plus important encore, un counseling légitime devrait commencer par une évaluation des finances du consommateur plutôt que par un argumentaire de vente prédéterminé. La FTC et le CFPB recommandent tous deux la prudence à l'égard des organismes qui exigent des paiements initiaux, garantissent des résultats ou font pression sur les consommateurs pour qu'ils choisissent un produit d'aide à la dette en particulier.</p>
+<p>Un programme de remboursement structuré ne fonctionne que lorsque le paiement correspond à la situation financière réelle de l'emprunteur et que le consommateur comprend les engagements avant l'inscription.</p>
+<div class="references"><h2 id="references">Références</h2>
+<ul>
+<li>Consumer Financial Protection Bureau — <em>What Is Credit Counseling?</em> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/">Consumer Financial Protection Bureau</a></li>
+<li>Consumer Financial Protection Bureau — <em>What Is the Difference Between Credit Counseling and Debt Settlement, Debt Consolidation, or Credit Repair?</em> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-credit-counseling-and-debt-settlement-debt-consolidation-or-credit-repair-en-1449/">Consumer Financial Protection Bureau</a></li>
+<li>Consumer Financial Protection Bureau — <em>What Should I Do if I Can't Pay My Credit Card Bills?</em> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-should-i-do-if-i-cant-pay-my-credit-card-bills-en-1697/">Consumer Financial Protection Bureau</a></li>
+<li>Consumer Financial Protection Bureau — <em>What Is a Debt Relief Program and How Do I Know if I Should Use One?</em> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-relief-program-and-how-do-i-know-if-i-should-use-one-en-1457/">Consumer Financial Protection Bureau</a></li>
+<li>Federal Trade Commission — <em>How To Get Out of Debt</em> <a rel="nofollow noopener noreferrer" target="_blank" href="https://consumer.ftc.gov/articles/how-get-out-debt">Federal Trade Commission</a></li>
+<li>Federal Trade Commission — <em>Looking for Debt Relief? Here's How to Avoid a Scam</em> <a rel="nofollow noopener noreferrer" target="_blank" href="https://consumer.ftc.gov/consumer-alerts/2026/03/looking-debt-relief-heres-how-avoid-scam">Federal Trade Commission</a></li>
+</ul>
+</div>
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Écrit par</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Rachel Bernstein</p>
+                            <p class="text-sm text-brand-200">Senior Credit &amp; Debt Editor</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Rachel has spent over eight years covering credit scoring, credit reports, and debt management, from card interest and repayment plans to debt relief and bankruptcy. Before writing full-time, she worked in community financial education, which shapes her no-nonsense, empathetic approach to helping people protect their credit, recover from debt, and guard against fraud and identity theft.</p>
+                                        <a href="/fr/our-team" wire:navigate class="btn-zest relative mt-6">Rencontrez les rédacteurs</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenu à but uniquement pédagogique.</span>
+                    Cet article fournit des informations générales et ne constitue pas un conseil financier, d’investissement, fiscal ou juridique personnalisé.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Continuez à apprendre</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Plus dans Prêts et financement</h2>
+                    </div>
+                    <a href="/fr/c/loans-financing" wire:navigate class="link-underline text-sm font-semibold text-ink">Tout voir</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/fr/p/bankruptcy-basics-understanding-types-and-financial-impact" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bankruptcy-basics-understanding-types-and-financial-impact.webp"
+        alt="Notions de base sur la faillite : comprendre les types et l&#039;impact financier"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Notions de base sur la faillite : comprendre les types et l&#039;impact financier
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">La faillite est un processus juridique fédéral conçu pour répondre aux situations dans lesquelles des particuliers ou des entreprises ne peuvent pas respecter leurs oblig...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-21" class="shrink-0">21 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/bad-credit-loans-what-borrowers-should-know-before-applying" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bad-credit-loans-what-borrowers-should-know-before-applying.webp"
+        alt="Prêts pour mauvais crédit : ce que les emprunteurs devraient savoir avant de faire une demande"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Prêts pour mauvais crédit : ce que les emprunteurs devraient savoir avant de faire une demande
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Avoir une cote de crédit plus basse peut rendre l&#039;emprunt plus difficile, mais cela n&#039;élimine pas nécessairement toutes les options de financement. Les prêteurs utilisent...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-14" class="shrink-0">14 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/mortgage-refinancing-how-replacing-an-existing-home-loan-works" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/mortgage-refinancing-how-replacing-an-existing-home-loan-works.webp"
+        alt="Refinancement hypothécaire : comment fonctionne le remplacement d&#039;un prêt immobilier existant"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Refinancement hypothécaire : comment fonctionne le remplacement d&#039;un prêt immobilier existant
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Un prêt hypothécaire n&#039;est pas nécessairement figé jusqu&#039;à la vente du logement. Les propriétaires peuvent remplacer un prêt hypothécaire existant par un nouveau prêt grâ...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Lucas Vance</span>
+                    </span>
+                    <time datetime="2026-09-03" class="shrink-0">3 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/fr" wire:navigate aria-label="Accueil de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.
+                </p>
+                <a href="/fr/articles" wire:navigate class="btn-zest mt-7">
+                    Commencer à apprendre
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Thèmes</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/fr/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finances personnelles</a></li>
+                                                    <li><a href="/fr/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestion de patrimoine</a></li>
+                                                    <li><a href="/fr/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Prêts et financement</a></li>
+                                                    <li><a href="/fr/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédit et cartes</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Tous les articles</a></li>
+                        <li><a href="/fr/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Notre équipe éditoriale</a></li>
+                        <li><a href="/fr/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Mentions légales</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="/fr/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Conditions d’utilisation</a></li>
+                        <li><a href="/fr/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Avertissement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Avertissement :</span>
+                Le contenu proposé sur Edufinance.site est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.
+            </p>
+            <p>Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.</p>
+            <p>Edufinance.site ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Tous droits réservés.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="UX2MjDOBkD7FUIRrcpK6J5raPKDNm3dswKfsrmSC" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

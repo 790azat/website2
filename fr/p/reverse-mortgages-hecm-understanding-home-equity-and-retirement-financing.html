@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Hypothèques inversées (HECM) : comprendre la valeur nette et le financement de la retraite — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Pour les propriétaires qui entament leur retraite avec une valeur nette immobilière substantielle mais un revenu mensuel limité, une hypothèque inversée pe..." />
+                            <link rel="alternate" hreflang="en" href="/p/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing" />
+                    <link rel="alternate" hreflang="es" href="/es/p/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing" />
+                <link rel="alternate" hreflang="x-default" href="/p/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/fr/our-team" wire:navigate class="transition hover:text-white">Notre équipe</a>
+                <a href="/fr/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="shrink-0" aria-label="Accueil de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/fr" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Accueil</a>
+                            <a href="/fr/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finances personnelles</a>
+                            <a href="/fr/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestion de patrimoine</a>
+                            <a href="/fr/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Prêts et financement</a>
+                            <a href="/fr/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédit et cartes</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/fr/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Tous les articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/fr" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Tous les articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Thèmes</p>
+                            <a href="/fr/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finances personnelles
+                </a>
+                            <a href="/fr/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestion de patrimoine
+                </a>
+                            <a href="/fr/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Prêts et financement
+                </a>
+                            <a href="/fr/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédit et cartes
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">À propos</p>
+            <a href="/fr/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Notre équipe</a>
+            <a href="/fr/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Fil d’Ariane">
+                <a href="/fr" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Accueil
+                </a>
+                <span class="text-line">/</span>
+                <a href="/fr/c/loans-financing" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Prêts et financement</a>
+            </nav>
+
+            <a href="/fr/c/loans-financing" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M7.605 2.112a.75.75 0 0 1 .79 0l5.25 3.25A.75.75 0 0 1 13 6.707V12.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.707a.75.75 0 0 1-.645-1.345l5.25-3.25ZM4.5 8.75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 8a.75.75 0 0 0-.75.75v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 8 8Zm2 .75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
+</svg>
+
+                        Prêts et financement
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Hypothèques inversées (HECM) : comprendre la valeur nette et le financement de la retraite
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/fr/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Lucas Vance</span>
+                        <span class="text-muted">Lending &amp; Borrowing Analyst</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2025-10-06">6 octobre 2025</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            18 min de lecture
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/reverse-mortgages-hecm-understanding-home-equity-and-retirement-financing.webp" alt="Hypothèques inversées (HECM) : comprendre la valeur nette et le financement de la retraite" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="Dans cet article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Dans cet article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#quest-ce-quune-hypotheque-inversee" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;est-ce qu&#039;une hypothèque inversée ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quest-ce-quun-hecm" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;est-ce qu&#039;un HECM ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#qui-peut-etre-admissible-a-un-hecm" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qui peut être admissible à un HECM ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#combien-pouvez-vous-emprunter" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Combien pouvez-vous emprunter ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#un-exemple-simple-dhypotheque-inversee" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Un exemple simple d&#039;hypothèque inversée</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-le-produit-dune-hypotheque-inversee-peut-il-etre-recu" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment le produit d&#039;une hypothèque inversée peut-il être reçu ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#une-hypotheque-inversee-elimine-t-elle-les-paiements-hypothecaires-mensuels" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Une hypothèque inversée élimine-t-elle les paiements hypothécaires mensuels ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-se-passe-t-il-avec-le-solde-du-pret" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Que se passe-t-il avec le solde du prêt ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-se-passe-t-il-lorsque-le-proprietaire-demenage" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Que se passe-t-il lorsque le propriétaire déménage ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-se-passe-t-il-si-le-proprietaire-decede" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Que se passe-t-il si le propriétaire décède ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#conjoints-non-emprunteurs" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Conjoints non-emprunteurs</a>
+                                </li>
+                                                            <li>
+                                    <a href="#hypotheques-inversees-et-hypotheques-existantes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Hypothèques inversées et hypothèques existantes</a>
+                                </li>
+                                                            <li>
+                                    <a href="#couts-de-lhypotheque-inversee" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Coûts de l&#039;hypothèque inversée</a>
+                                </li>
+                                                            <li>
+                                    <a href="#assurance-hypothecaire-du-hecm" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Assurance hypothécaire du HECM</a>
+                                </li>
+                                                            <li>
+                                    <a href="#hypotheque-inversee-vs-pret-sur-valeur-domiciliaire" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Hypothèque inversée vs prêt sur valeur domiciliaire</a>
+                                </li>
+                                                            <li>
+                                    <a href="#hypotheque-inversee-vs-heloc" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Hypothèque inversée vs HELOC</a>
+                                </li>
+                                                            <li>
+                                    <a href="#utiliser-une-hypotheque-inversee-pour-le-revenu-de-retraite" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Utiliser une hypothèque inversée pour le revenu de retraite</a>
+                                </li>
+                                                            <li>
+                                    <a href="#hypotheques-inversees-et-consolidation-de-dettes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Hypothèques inversées et consolidation de dettes</a>
+                                </li>
+                                                            <li>
+                                    <a href="#hypotheque-inversee-et-planification-successorale" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Hypothèque inversée et planification successorale</a>
+                                </li>
+                                                            <li>
+                                    <a href="#entretien-de-la-propriete" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Entretien de la propriété</a>
+                                </li>
+                                                            <li>
+                                    <a href="#counseling-obligatoire" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Counseling obligatoire</a>
+                                </li>
+                                                            <li>
+                                    <a href="#questions-a-poser-avant-de-faire-une-demande" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Questions à poser avant de faire une demande</a>
+                                </li>
+                                                            <li>
+                                    <a href="#evaluer-le-financement-par-hypotheque-inversee" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Évaluer le financement par hypothèque inversée</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Pour les propriétaires qui entament leur retraite avec une valeur nette immobilière substantielle mais un revenu mensuel limité, une hypothèque inversée peut offrir un autre moyen d'accéder à la richesse immobilière sans vendre la propriété immédiatement.</p>
+<p>L'hypothèque inversée la plus courante aux États-Unis est le <strong>Home Equity Conversion Mortgage (HECM)</strong>, un programme assuré par la Federal Housing Administration (FHA) et offert par l'intermédiaire de prêteurs approuvés par la FHA. Les HECM sont généralement accessibles aux propriétaires âgés de 62 ans ou plus qui satisfont à des exigences d'éligibilité supplémentaires.</p>
+<p>Contrairement à une hypothèque conventionnelle, une hypothèque inversée n'exige généralement pas que l'emprunteur effectue des paiements mensuels de capital et d'intérêts tant que le prêt demeure en règle. Au lieu de cela, les intérêts et certains frais s'ajoutent au solde au fil du temps. Le propriétaire conserve le titre de propriété mais doit continuer à respecter des obligations telles que le paiement des taxes foncières et de l'assurance habitation et l'entretien de la maison.</p>
+<p>Étant donné que le solde du prêt augmente généralement plutôt que de diminuer, une hypothèque inversée est fondamentalement une décision de financement impliquant la valeur nette immobilière future, les flux de trésorerie de retraite et, éventuellement, le remboursement du prêt.</p>
+<h2 id="quest-ce-quune-hypotheque-inversee">Qu'est-ce qu'une hypothèque inversée ?</h2>
+<p>Une hypothèque inversée permet à un propriétaire admissible d'emprunter contre la valeur nette de sa résidence principale.</p>
+<p>Avec une hypothèque traditionnelle, l'emprunteur effectue généralement des paiements mensuels qui réduisent progressivement le capital impayé.</p>
+<p>Avec une hypothèque inversée, l'inverse peut se produire. L'emprunteur reçoit des fonds, tandis que les intérêts et les frais s'ajoutent au solde du prêt. À mesure que le solde augmente, la valeur nette restante du propriétaire diminue généralement.</p>
+<p>Le propriétaire continue de posséder la propriété.</p>
+<p>Le prêteur ne devient pas automatiquement propriétaire simplement parce qu'une hypothèque inversée a été contractée. La maison sert de garantie pour le prêt, tout comme avec une hypothèque conventionnelle.</p>
+<p>Cette distinction est importante lors de l'évaluation des publicités qui décrivent les hypothèques inversées comme si le propriétaire vendait la propriété au prêteur. Ce n'est pas ainsi que fonctionne un HECM standard.</p>
+<h2 id="quest-ce-quun-hecm">Qu'est-ce qu'un HECM ?</h2>
+<p>Un <strong>Home Equity Conversion Mortgage</strong> est le programme d'hypothèque inversée assuré par la FHA et administré par le HUD.</p>
+<p>Selon le HUD, les HECM sont disponibles par l'intermédiaire de prêteurs approuvés par la FHA, et le montant disponible pour un emprunteur dépend de facteurs incluant l'âge du plus jeune emprunteur ou conjoint non-emprunteur admissible, le taux d'intérêt et la valeur applicable du logement ou la limite hypothécaire de la FHA.</p>
+<p>Pour l'année civile 2026, le HUD indique un <strong>montant maximal de réclamation HECM de 1 249 125 $</strong>. Il s'agit d'une limite du programme FHA utilisée dans le calcul du montant maximal de réclamation ; cela ne signifie pas que chaque propriétaire peut emprunter ce montant.</p>
+<p>Le produit réel disponible pour un emprunteur individuel peut être considérablement plus bas selon la propriété, le taux d'intérêt, l'âge, le solde hypothécaire existant et d'autres facteurs.</p>
+<h2 id="qui-peut-etre-admissible-a-un-hecm">Qui peut être admissible à un HECM ?</h2>
+<p>L'âge est l'une des principales exigences d'éligibilité.</p>
+<p>Le propriétaire doit généralement être âgé de <strong>62 ans ou plus</strong>. La maison doit également être la résidence principale de l'emprunteur, et l'emprunteur doit satisfaire aux autres exigences financières et immobilières du HUD.</p>
+<p>D'autres exigences peuvent inclure :</p>
+<ul>
+<li>Posséder la maison entièrement ou avoir un solde hypothécaire existant suffisamment bas</li>
+<li>Rembourser une hypothèque existante à la clôture</li>
+<li>Satisfaire aux exigences d'évaluation financière applicables</li>
+<li>Entretenir la maison</li>
+<li>Payer les taxes foncières et l'assurance habitation</li>
+<li>Répondre aux normes de propriété du HUD</li>
+<li>Compléter la formation obligatoire auprès d'une agence de counseling approuvée par le HUD</li>
+</ul>
+<p>Si une hypothèque existante demeure sur la propriété, le produit du HECM peut généralement être utilisé pour la rembourser à la clôture, à condition que la transaction respecte les exigences applicables.</p>
+<h2 id="combien-pouvez-vous-emprunter">Combien pouvez-vous emprunter ?</h2>
+<p>Il n'existe pas de pourcentage unique de valeur nette immobilière qui s'applique à toutes les hypothèques inversées.</p>
+<p>Le montant disponible dépend de facteurs incluant :</p>
+<ul>
+<li>L'âge</li>
+<li>Le taux d'intérêt</li>
+<li>La valeur du logement</li>
+<li>Les limites HECM applicables</li>
+<li>Le solde hypothécaire existant</li>
+<li>Le statut de conjoint non-emprunteur admissible</li>
+<li>La structure du prêt</li>
+</ul>
+<p>Le CFPB explique que la <strong>limite de capital (principal limit)</strong> est influencée par l'âge de l'emprunteur, le taux d'intérêt et la valeur du logement. Généralement, des emprunteurs plus âgés et des taux d'intérêt plus bas peuvent entraîner des limites de capital plus élevées, toutes choses égales par ailleurs. Lorsqu'il y a un coemprunteur plus jeune ou un conjoint non-emprunteur admissible, l'âge de la personne plus jeune peut affecter le calcul.</p>
+<p>Cela signifie que deux propriétaires ayant des propriétés identiques peuvent potentiellement être admissibles à des montants différents.</p>
+<h2 id="un-exemple-simple-dhypotheque-inversee">Un exemple simple d'hypothèque inversée</h2>
+<p>Considérez un propriétaire hypothétique :</p>
+<ul>
+<li>Valeur du logement : 600 000 $</li>
+<li>Hypothèque existante : 50 000 $</li>
+<li>Produit HECM disponible : hypothétiquement 250 000 $</li>
+</ul>
+<p>Si le propriétaire utilise 50 000 $ du produit pour rembourser l'hypothèque existante, environ 200 000 $ resteraient disponibles avant de tenir compte d'autres coûts ou restrictions applicables.</p>
+<p>Le propriétaire pourrait ensuite potentiellement recevoir le produit restant sous forme de montant forfaitaire, de paiements mensuels ou par l'intermédiaire d'une marge de crédit, selon la structure du prêt.</p>
+<p>L'exemple est illustratif et ne constitue pas un calcul de l'admissibilité réelle au HECM.</p>
+<h2 id="comment-le-produit-dune-hypotheque-inversee-peut-il-etre-recu">Comment le produit d'une hypothèque inversée peut-il être reçu ?</h2>
+<p>Le produit du HECM peut généralement être structuré de plusieurs façons.</p>
+<h3>Paiement forfaitaire</h3>
+<p>Un emprunteur peut recevoir un montant substantiel du produit disponible en une seule fois selon une structure à taux fixe applicable.</p>
+<p>Cela peut fournir une liquidité immédiate, mais signifie que les intérêts et les frais commencent à s'accumuler sur le montant emprunté.</p>
+<h3>Paiements mensuels</h3>
+<p>Un emprunteur peut recevoir des paiements planifiés.</p>
+<p>Les structures HECM peuvent inclure des <strong>paiements de durée (tenure payments)</strong>, conçus pour continuer tant que l'emprunteur respecte les obligations du prêt et occupe la propriété comme requis, ou des <strong>paiements à terme (term payments)</strong>, qui continuent pendant une période déterminée.</p>
+<h3>Marge de crédit</h3>
+<p>Une marge de crédit permet au propriétaire de puiser des fonds au besoin, sous réserve des modalités du prêt.</p>
+<p>L'une des caractéristiques d'une marge de crédit HECM est que le crédit inutilisé peut avoir une caractéristique de croissance en vertu des modalités du programme.</p>
+<h3>Approche combinée</h3>
+<p>Certains emprunteurs peuvent combiner une marge de crédit avec un produit mensuel planifié.</p>
+<p>La structure appropriée dépend des besoins de dépenses du propriétaire, de ses besoins de liquidité, des coûts d'intérêt et de ses plans de logement à long terme.</p>
+<h2 id="une-hypotheque-inversee-elimine-t-elle-les-paiements-hypothecaires-mensuels">Une hypothèque inversée élimine-t-elle les paiements hypothécaires mensuels ?</h2>
+<p>Une hypothèque inversée peut éliminer l'exigence de paiements hypothécaires mensuels traditionnels sur le solde de l'hypothèque inversée, mais cela ne signifie <strong>pas</strong> que le propriétaire n'a aucune obligation financière liée au logement.</p>
+<p>Le propriétaire demeure responsable d'exigences telles que :</p>
+<ul>
+<li>Les taxes foncières</li>
+<li>L'assurance habitation</li>
+<li>L'entretien de la propriété</li>
+<li>Maintenir la maison comme résidence principale</li>
+</ul>
+<p>Le non-respect de ces obligations peut exposer l'emprunteur à un risque de défaut ou de saisie.</p>
+<p>C'est l'une des distinctions les plus importantes à comprendre lors de la comparaison d'une hypothèque inversée avec d'autres options de financement de la retraite.</p>
+<h2 id="que-se-passe-t-il-avec-le-solde-du-pret">Que se passe-t-il avec le solde du prêt ?</h2>
+<p>Le solde du prêt augmente généralement au fil du temps, car les intérêts et les frais applicables s'ajoutent au solde impayé.</p>
+<p>Par exemple, si un propriétaire reçoit initialement 150 000 $ et que les intérêts et les frais s'accumulent par la suite, le montant dû peut éventuellement devenir considérablement plus élevé que le montant initialement emprunté.</p>
+<p>Le propriétaire doit donc considérer à la fois :</p>
+<p><strong>La liquidité actuelle reçue</strong></p>
+<p>et</p>
+<p><strong>La valeur nette future restante dans la propriété.</strong></p>
+<p>Le CFPB décrit spécifiquement une hypothèque inversée comme un prêt plutôt qu'un argent gratuit et note que le solde croissant réduit la valeur nette immobilière au fil du temps.</p>
+<h2 id="que-se-passe-t-il-lorsque-le-proprietaire-demenage">Que se passe-t-il lorsque le propriétaire déménage ?</h2>
+<p>Un HECM devient généralement exigible lorsque le dernier emprunteur survivant décède, vend la maison ou cesse de la maintenir comme résidence principale.</p>
+<p>Certaines circonstances impliquant des séjours prolongés dans des établissements de santé peuvent également affecter le statut du prêt.</p>
+<p>Pour cette raison, les propriétaires envisageant une hypothèque inversée devraient réfléchir attentivement à d'éventuels déménagements futurs.</p>
+<p>Quelqu'un qui prévoit déménager dans quelques années peut avoir une situation de financement très différente de quelqu'un qui prévoit rester dans la maison dans un avenir prévisible.</p>
+<h2 id="que-se-passe-t-il-si-le-proprietaire-decede">Que se passe-t-il si le propriétaire décède ?</h2>
+<p>Lorsque le dernier emprunteur décède, le HECM devient généralement exigible et payable.</p>
+<p>Les héritiers peuvent généralement choisir parmi des options pouvant inclure :</p>
+<ul>
+<li>Vendre la maison et utiliser le produit pour rembourser le prêt</li>
+<li>Rembourser l'hypothèque inversée et conserver la maison</li>
+<li>Remettre la propriété au prêteur</li>
+</ul>
+<p>Pour les HECM, les héritiers ne seront généralement pas tenus de rembourser plus que la valeur de la maison en vertu des protections d'assurance hypothécaire applicables. Si le solde du prêt dépasse la valeur estimée de la maison, les héritiers peuvent être en mesure de s'acquitter de l'obligation en payant 95 % de la valeur estimée lorsque les règles HECM pertinentes s'appliquent.</p>
+<p>Cela ne signifie pas que la famille reçoit automatiquement la propriété libre de l'hypothèque inversée.</p>
+<p>Le prêt impayé doit tout de même être réglé.</p>
+<h2 id="conjoints-non-emprunteurs">Conjoints non-emprunteurs</h2>
+<p>Les circonstances conjugales requièrent une attention particulière.</p>
+<p>Un conjoint qui n'est pas coemprunteur peut bénéficier de certaines protections s'il se qualifie comme <strong>conjoint non-emprunteur admissible (Eligible Non-Borrowing Spouse)</strong> selon les exigences du HUD.</p>
+<p>L'admissibilité peut dépendre de facteurs incluant le moment où le HECM a été initié, l'état civil, la résidence et la conformité aux règles applicables.</p>
+<p>Un propriétaire devrait donc éviter de présumer qu'un conjoint a automatiquement les mêmes droits qu'un coemprunteur.</p>
+<p>Le statut de toutes les personnes vivant dans la maison devrait être discuté avant que le prêt ne soit finalisé.</p>
+<h2 id="hypotheques-inversees-et-hypotheques-existantes">Hypothèques inversées et hypothèques existantes</h2>
+<p>Un propriétaire ne peut généralement pas simplement laisser une hypothèque conventionnelle existante en place et utiliser le produit de l'hypothèque inversée entièrement à d'autres fins.</p>
+<p>S'il existe un solde hypothécaire existant, il doit généralement être remboursé à la clôture.</p>
+<p>Cela peut réduire substantiellement le montant de liquidités disponibles pour le propriétaire.</p>
+<p>Par exemple, un propriétaire pourrait avoir une propriété d'une valeur de 500 000 $ mais devoir encore 150 000 $ sur une hypothèque conventionnelle. Même si l'hypothèque inversée produit une limite de capital importante, une partie du produit pourrait devoir servir à éteindre cette dette existante.</p>
+<p>Le propriétaire devrait donc évaluer le <strong>produit net disponible</strong>, plutôt que de regarder uniquement la valeur marchande de la maison.</p>
+<h2 id="couts-de-lhypotheque-inversee">Coûts de l'hypothèque inversée</h2>
+<p>Les hypothèques inversées peuvent impliquer plusieurs catégories de coûts.</p>
+<p>Les dépenses potentielles incluent :</p>
+<ul>
+<li>Les frais de dossier (origination)</li>
+<li>Les primes d'assurance hypothécaire</li>
+<li>Les frais de clôture</li>
+<li>Les frais d'évaluation</li>
+<li>Les coûts liés au titre de propriété</li>
+<li>Les intérêts</li>
+<li>Les frais liés à l'administration du prêt</li>
+</ul>
+<p>Les coûts exacts dépendent de la structure du prêt et des limites applicables.</p>
+<p>Un prêt sans paiement hypothécaire mensuel traditionnel peut tout de même être coûteux, car les intérêts et les frais s'accumulent contre le solde impayé.</p>
+<p>C'est pourquoi comparer uniquement le produit initial peut donner une image incomplète du financement.</p>
+<h2 id="assurance-hypothecaire-du-hecm">Assurance hypothécaire du HECM</h2>
+<p>Les HECM sont assurés par la FHA.</p>
+<p>L'assurance hypothécaire est une composante importante du programme, car elle soutient les protections associées à la structure HECM, y compris le cadre sans recours (non-recourse).</p>
+<p>Un emprunteur ou ses héritiers ne peuvent généralement pas être tenus de rembourser plus que la valeur de la maison lorsque le HECM devient exigible, sous réserve des règles du programme.</p>
+<p>L'assurance hypothécaire affecte donc la structure de coûts du prêt tout en soutenant des protections importantes.</p>
+<h2 id="hypotheque-inversee-vs-pret-sur-valeur-domiciliaire">Hypothèque inversée vs prêt sur valeur domiciliaire</h2>
+<p>Les deux produits permettent aux propriétaires d'emprunter contre la valeur nette de leur maison, mais la structure de remboursement est substantiellement différente.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Caractéristique</th>
+<th>Hypothèque inversée / HECM</th>
+<th>Prêt sur valeur domiciliaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exigence d'âge typique</td>
+<td>62+ pour le HECM</td>
+<td>Généralement aucune exigence d'âge de type HECM</td>
+</tr>
+<tr>
+<td>Paiement mensuel de capital et d'intérêts</td>
+<td>Généralement non requis tant que le prêt demeure en règle</td>
+<td>Généralement requis</td>
+</tr>
+<tr>
+<td>Solde du prêt</td>
+<td>Augmente généralement</td>
+<td>Diminue généralement avec les paiements</td>
+</tr>
+<tr>
+<td>Propriété de la maison</td>
+<td>Demeure avec le propriétaire</td>
+<td>Demeure avec le propriétaire</td>
+</tr>
+<tr>
+<td>Exigence de résidence principale</td>
+<td>Oui pour le HECM</td>
+<td>Dépend du produit</td>
+</tr>
+<tr>
+<td>Taxes foncières et assurance</td>
+<td>L'emprunteur demeure responsable</td>
+<td>L'emprunteur demeure responsable</td>
+</tr>
+<tr>
+<td>Counseling</td>
+<td>Counseling approuvé par le HUD requis pour le HECM</td>
+<td>Généralement pas une exigence fédérale HECM</td>
+</tr>
+<tr>
+<td>Remboursement</td>
+<td>Généralement déclenché par la vente, le déménagement ou le décès</td>
+<td>Remboursement planifié</td>
+</tr>
+<tr>
+<td>Accès aux fonds</td>
+<td>Forfaitaire, paiements, marge de crédit, selon la structure</td>
+<td>Habituellement forfaitaire</td>
+</tr>
+</tbody>
+</table></div>
+<p>Le CFPB identifie les prêts sur valeur domiciliaire et les HELOC comme des alternatives que les propriétaires pourraient vouloir considérer avant de choisir une hypothèque inversée.</p>
+<h2 id="hypotheque-inversee-vs-heloc">Hypothèque inversée vs HELOC</h2>
+<p>Une <strong>marge de crédit sur valeur domiciliaire (HELOC)</strong> peut également offrir un accès à la valeur nette immobilière.</p>
+<p>La différence devient particulièrement importante à la retraite.</p>
+<p>Un HELOC exige généralement que l'emprunteur se qualifie pour le crédit en fonction du revenu, des dettes, de l'historique de crédit et d'autres facteurs financiers. Il exige également normalement des paiements.</p>
+<p>Une hypothèque inversée peut offrir un accès à la valeur nette sans la même structure de paiement hypothécaire mensuel conventionnel.</p>
+<p>Cependant, le solde de l'hypothèque inversée augmente généralement au fil du temps, tandis qu'un solde de HELOC bien géré peut diminuer à mesure que l'emprunteur effectue des paiements.</p>
+<p>La bonne comparaison dépend donc du revenu de retraite, de la qualification de crédit, de la durée d'occupation prévue, des besoins de liquidité et du montant de valeur nette que le propriétaire souhaite préserver.</p>
+<h2 id="utiliser-une-hypotheque-inversee-pour-le-revenu-de-retraite">Utiliser une hypothèque inversée pour le revenu de retraite</h2>
+<p>L'une des utilisations potentielles d'une hypothèque inversée est de compléter les flux de trésorerie de retraite.</p>
+<p>Un propriétaire pourrait utiliser le produit pour :</p>
+<ul>
+<li>Les dépenses de subsistance régulières</li>
+<li>Les réparations domiciliaires</li>
+<li>Les dépenses liées aux soins de santé</li>
+<li>La liquidité d'urgence</li>
+<li>Rembourser une hypothèque existante</li>
+<li>Retarder les retraits des comptes d'investissement</li>
+<li>D'autres dépenses personnelles permises</li>
+</ul>
+<p>Cependant, emprunter contre la valeur nette immobilière modifie le bilan du ménage.</p>
+<p>Un plan de retraite devrait donc considérer comment le produit de l'hypothèque inversée interagit avec :</p>
+<ul>
+<li>La Sécurité sociale</li>
+<li>Le revenu de pension</li>
+<li>Les comptes de retraite</li>
+<li>Les portefeuilles d'investissement</li>
+<li>Les actifs imposables</li>
+<li>Les dépenses de santé</li>
+<li>Les coûts de soins de longue durée</li>
+<li>Les objectifs de planification successorale</li>
+</ul>
+<p>Une hypothèque inversée est un outil de financement, et non automatiquement un remplacement pour la planification du revenu de retraite.</p>
+<h2 id="hypotheques-inversees-et-consolidation-de-dettes">Hypothèques inversées et consolidation de dettes</h2>
+<p>Certains propriétaires envisagent d'utiliser la valeur nette immobilière pour rembourser des cartes de crédit, des prêts personnels ou d'autres dettes.</p>
+<p>Cette stratégie nécessite une analyse minutieuse.</p>
+<p>Remplacer une dette non garantie par une dette garantie par la maison change les conséquences d'un défaut de paiement. Le CFPB met en garde contre le fait que l'utilisation d'une hypothèque inversée pour la consolidation de dettes peut créer des risques, car le non-respect des obligations continues telles que les taxes foncières et l'assurance peut mettre la maison en danger.</p>
+<p>Le propriétaire devrait comparer :</p>
+<ul>
+<li>Les taux d'intérêt de la dette actuelle</li>
+<li>Les coûts de l'hypothèque inversée</li>
+<li>Les alternatives disponibles</li>
+<li>Les flux de trésorerie mensuels</li>
+<li>La valeur nette immobilière restante</li>
+<li>La durée d'occupation prévue</li>
+</ul>
+<p>Rembourser une forme de dette n'élimine pas l'obligation financière sous-jacente.</p>
+<h2 id="hypotheque-inversee-et-planification-successorale">Hypothèque inversée et planification successorale</h2>
+<p>La valeur nette immobilière peut représenter une part importante de la valeur nette d'un ménage.</p>
+<p>Contracter une hypothèque inversée peut réduire le montant de valeur nette éventuellement disponible pour les héritiers.</p>
+<p>Supposons que la propriété d'un propriétaire vaille 700 000 $ et que le solde de l'hypothèque inversée atteigne éventuellement 350 000 $.</p>
+<p>En ignorant les coûts de vente et les changements de valeur de la propriété, environ 350 000 $ de valeur nette brute resteraient.</p>
+<p>Si le solde du prêt continue d'augmenter, la valeur nette restante peut diminuer.</p>
+<p>Cela rend la planification successorale particulièrement importante pour les propriétaires qui ont l'intention de léguer la propriété à leurs enfants ou à d'autres bénéficiaires.</p>
+<p>Les héritiers devraient comprendre les exigences de remboursement potentielles avant que le prêt ne soit contracté.</p>
+<h2 id="entretien-de-la-propriete">Entretien de la propriété</h2>
+<p>Le propriétaire demeure responsable de l'entretien de la propriété.</p>
+<p>Cela inclut le maintien de la maison dans un état convenable et la prise en charge des réparations requises.</p>
+<p>Un propriétaire qui laisse la propriété se détériorer peut créer des problèmes avec le prêt.</p>
+<p>Les dépenses d'entretien peuvent également être importantes pendant la retraite, en particulier pour les maisons plus anciennes.</p>
+<p>Une hypothèque inversée devrait donc être évaluée aux côtés d'une estimation réaliste de :</p>
+<ul>
+<li>Le remplacement de la toiture</li>
+<li>Les réparations du système CVC</li>
+<li>La plomberie</li>
+<li>Les travaux électriques</li>
+<li>Les taxes foncières</li>
+<li>L'assurance</li>
+<li>L'entretien courant</li>
+<li>Les modifications d'accessibilité</li>
+</ul>
+<p>L'absence d'un paiement hypothécaire mensuel traditionnel n'élimine pas ces coûts.</p>
+<h2 id="counseling-obligatoire">Counseling obligatoire</h2>
+<p>Les emprunteurs HECM doivent recevoir un counseling d'une <strong>agence de counseling sur l'hypothèque inversée approuvée par le HUD</strong>.</p>
+<p>Le processus de counseling est conçu pour aider les emprunteurs à comprendre le prêt, ses implications financières, les alternatives et les responsabilités continues.</p>
+<p>Il s'agit d'une étape importante, car les hypothèques inversées peuvent avoir des conséquences qui vont bien au-delà des liquidités initialement reçues.</p>
+<p>Un conseiller peut aider le propriétaire à examiner des alternatives telles que :</p>
+<ul>
+<li>Les prêts sur valeur domiciliaire</li>
+<li>Les HELOC</li>
+<li>Le refinancement</li>
+<li>La réduction de la taille du logement</li>
+<li>La vente de la propriété</li>
+<li>La réduction des dépenses</li>
+<li>D'autres stratégies de logement ou de revenu de retraite</li>
+</ul>
+<h2 id="questions-a-poser-avant-de-faire-une-demande">Questions à poser avant de faire une demande</h2>
+<p>Avant de procéder à une hypothèque inversée, les propriétaires devraient demander :</p>
+<ol>
+<li>Combien puis-je réellement recevoir après avoir remboursé mon hypothèque existante ?</li>
+<li>Quels sont les coûts initiaux et continus ?</li>
+<li>Comment le solde du prêt évoluera-t-il selon différents scénarios de taux d'intérêt ?</li>
+<li>Quelle structure de versement convient à mes besoins de flux de trésorerie ?</li>
+<li>Que se passe-t-il si je déménage ?</li>
+<li>Que se passe-t-il si j'entre dans un établissement de soins de longue durée ?</li>
+<li>Comment le prêt affecte-t-il mon conjoint ?</li>
+<li>Que devront faire mes héritiers ?</li>
+<li>Combien de valeur nette immobilière pourrait rester selon différents scénarios ?</li>
+<li>Que se passe-t-il si la valeur de ma maison diminue ?</li>
+<li>Puis-je me permettre les taxes foncières et l'assurance habitation ?</li>
+<li>Quelles alternatives devrais-je comparer ?</li>
+<li>Comment le prêt affectera-t-il mon plan de retraite plus large ?</li>
+<li>Le prêt pourrait-il affecter d'autres prestations financières ou gouvernementales ?</li>
+<li>Quelles obligations demeurent après la clôture ?</li>
+</ol>
+<p>Ces questions peuvent rendre les conséquences à long terme plus faciles à comprendre avant de signer les documents du prêt.</p>
+<h2 id="evaluer-le-financement-par-hypotheque-inversee">Évaluer le financement par hypothèque inversée</h2>
+<p>Une hypothèque inversée peut offrir un accès à la valeur nette immobilière sans exiger les paiements hypothécaires mensuels traditionnels associés à une hypothèque conventionnelle.</p>
+<p>Pour un propriétaire admissible, cette structure peut créer une liquidité de retraite supplémentaire tout en permettant au propriétaire de rester dans la propriété.</p>
+<p>Mais le compromis est important : <strong>le solde du prêt augmente généralement, et la valeur nette immobilière diminue généralement à mesure que les intérêts et les frais s'accumulent</strong>.</p>
+<p>La décision nécessite donc plus que de simplement demander combien de liquidités sont disponibles aujourd'hui.</p>
+<p>Les propriétaires devraient considérer le coût du financement, la durée prévue de leur occupation de la propriété, le revenu de retraite, les taxes et l'assurance, les obligations d'entretien, l'effet sur les héritiers et les autres moyens d'accéder au capital.</p>
+<p>Pour de nombreux ménages, le point de départ le plus utile est une comparaison côte à côte des options de financement disponibles plutôt que de se concentrer exclusivement sur la promesse de l'absence de paiement hypothécaire mensuel traditionnel.</p>
+<p>Une hypothèque inversée peut être un outil de financement de retraite important, mais il est essentiel d'en comprendre le fonctionnement. Le propriétaire échange une partie de la valeur future de la maison contre des liquidités aujourd'hui, tout en continuant à assumer la responsabilité de la propriété et des exigences continues du prêt.</p>
+<div class="references"><h2 id="references">Références</h2>
+<ul>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-reverse-mortgage-en-224/">Consumer Financial Protection Bureau — What Is a Reverse Mortgage?</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/consumer-tools/reverse-mortgages/">Consumer Financial Protection Bureau — Reverse Mortgage Loans</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.hud.gov/hud-partners/single-family-hecmhome">HUD — Home Equity Conversion Mortgages for Seniors</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.hud.gov/stat/sfh/HECM">HUD — 2026 HECM Maximum Claim Amount</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-should-i-think-about-before-applying-for-reverse-mortgage-en-228/">Consumer Financial Protection Bureau — Reverse Mortgage Counseling and Questions to Ask</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/with-a-reverse-mortgage-loan-can-my-heirs-keep-or-sell-my-home-after-i-die-en-242/">Consumer Financial Protection Bureau — Reverse Mortgages and Heirs</a></li>
+</ul>
+</div>
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Écrit par</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Lucas Vance</p>
+                            <p class="text-sm text-brand-200">Lending &amp; Borrowing Analyst</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Lucas specializes in consumer and real estate lending. With a background in retail banking analysis and loan advisory, his work helps readers weigh the true cost of borrowing, from mortgages, home equity, and refinancing to auto, personal, and student loans, and compare rates, terms, and fees before they sign.</p>
+                                        <a href="/fr/our-team" wire:navigate class="btn-zest relative mt-6">Rencontrez les rédacteurs</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenu à but uniquement pédagogique.</span>
+                    Cet article fournit des informations générales et ne constitue pas un conseil financier, d’investissement, fiscal ou juridique personnalisé.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Continuez à apprendre</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Plus dans Prêts et financement</h2>
+                    </div>
+                    <a href="/fr/c/loans-financing" wire:navigate class="link-underline text-sm font-semibold text-ink">Tout voir</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/fr/p/bankruptcy-basics-understanding-types-and-financial-impact" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bankruptcy-basics-understanding-types-and-financial-impact.webp"
+        alt="Notions de base sur la faillite : comprendre les types et l&#039;impact financier"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Notions de base sur la faillite : comprendre les types et l&#039;impact financier
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">La faillite est un processus juridique fédéral conçu pour répondre aux situations dans lesquelles des particuliers ou des entreprises ne peuvent pas respecter leurs oblig...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-21" class="shrink-0">21 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/bad-credit-loans-what-borrowers-should-know-before-applying" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bad-credit-loans-what-borrowers-should-know-before-applying.webp"
+        alt="Prêts pour mauvais crédit : ce que les emprunteurs devraient savoir avant de faire une demande"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Prêts pour mauvais crédit : ce que les emprunteurs devraient savoir avant de faire une demande
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Avoir une cote de crédit plus basse peut rendre l&#039;emprunt plus difficile, mais cela n&#039;élimine pas nécessairement toutes les options de financement. Les prêteurs utilisent...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-14" class="shrink-0">14 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/mortgage-refinancing-how-replacing-an-existing-home-loan-works" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/mortgage-refinancing-how-replacing-an-existing-home-loan-works.webp"
+        alt="Refinancement hypothécaire : comment fonctionne le remplacement d&#039;un prêt immobilier existant"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Refinancement hypothécaire : comment fonctionne le remplacement d&#039;un prêt immobilier existant
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Un prêt hypothécaire n&#039;est pas nécessairement figé jusqu&#039;à la vente du logement. Les propriétaires peuvent remplacer un prêt hypothécaire existant par un nouveau prêt grâ...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Lucas Vance</span>
+                    </span>
+                    <time datetime="2026-09-03" class="shrink-0">3 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/fr" wire:navigate aria-label="Accueil de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.
+                </p>
+                <a href="/fr/articles" wire:navigate class="btn-zest mt-7">
+                    Commencer à apprendre
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Thèmes</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/fr/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finances personnelles</a></li>
+                                                    <li><a href="/fr/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestion de patrimoine</a></li>
+                                                    <li><a href="/fr/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Prêts et financement</a></li>
+                                                    <li><a href="/fr/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédit et cartes</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Tous les articles</a></li>
+                        <li><a href="/fr/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Notre équipe éditoriale</a></li>
+                        <li><a href="/fr/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Mentions légales</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="/fr/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Conditions d’utilisation</a></li>
+                        <li><a href="/fr/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Avertissement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Avertissement :</span>
+                Le contenu proposé sur Edufinance.site est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.
+            </p>
+            <p>Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.</p>
+            <p>Edufinance.site ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Tous droits réservés.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="ZIQBuUorb4jPvje3ugbsVOxHK7M2YDGR2QXTxRTA" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

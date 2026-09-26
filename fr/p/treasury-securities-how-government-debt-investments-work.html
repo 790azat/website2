@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Les titres du Trésor : comment fonctionnent les placements en dette publique — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Les titres du Trésor sont des placements de dette émis par le Département du Trésor des États-Unis afin de financer les activités du gouvernement fédéral e..." />
+                            <link rel="alternate" hreflang="en" href="/p/treasury-securities-how-government-debt-investments-work" />
+                    <link rel="alternate" hreflang="es" href="/es/p/treasury-securities-how-government-debt-investments-work" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/treasury-securities-how-government-debt-investments-work" />
+                <link rel="alternate" hreflang="x-default" href="/p/treasury-securities-how-government-debt-investments-work" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/fr/our-team" wire:navigate class="transition hover:text-white">Notre équipe</a>
+                <a href="/fr/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/treasury-securities-how-government-debt-investments-work"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/treasury-securities-how-government-debt-investments-work"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/treasury-securities-how-government-debt-investments-work"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="shrink-0" aria-label="Accueil de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/fr" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Accueil</a>
+                            <a href="/fr/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finances personnelles</a>
+                            <a href="/fr/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestion de patrimoine</a>
+                            <a href="/fr/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Prêts et financement</a>
+                            <a href="/fr/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédit et cartes</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/fr/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Tous les articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/fr" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Tous les articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Thèmes</p>
+                            <a href="/fr/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finances personnelles
+                </a>
+                            <a href="/fr/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestion de patrimoine
+                </a>
+                            <a href="/fr/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Prêts et financement
+                </a>
+                            <a href="/fr/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédit et cartes
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">À propos</p>
+            <a href="/fr/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Notre équipe</a>
+            <a href="/fr/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Fil d’Ariane">
+                <a href="/fr" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Accueil
+                </a>
+                <span class="text-line">/</span>
+                <a href="/fr/c/wealth-management" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Gestion de patrimoine</a>
+            </nav>
+
+            <a href="/fr/c/wealth-management" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M13.975 6.5c.028.276-.199.5-.475.5h-4a.5.5 0 0 1-.5-.5v-4c0-.276.225-.503.5-.475A5.002 5.002 0 0 1 13.974 6.5Z"/>
+  <path d="M6.5 4.025c.276-.028.5.199.5.475v4a.5.5 0 0 0 .5.5h4c.276 0 .503.225.475.5a5 5 0 1 1-5.474-5.475Z"/>
+</svg>
+
+                        Gestion de patrimoine
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Les titres du Trésor : comment fonctionnent les placements en dette publique
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/fr/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/hannah-cohen.webp"
+        alt="Hannah Cohen"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Hannah Cohen</span>
+                        <span class="text-muted">Investing &amp; Retirement Writer</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2026-08-12">12 août 2026</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            16 min de lecture
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/treasury-securities-how-government-debt-investments-work.webp" alt="Les titres du Trésor : comment fonctionnent les placements en dette publique" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="Dans cet article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Dans cet article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#que-sont-les-titres-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Que sont les titres du Trésor ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-bons-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les bons du Trésor</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-billets-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les billets du Trésor</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-obligations-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les obligations du Trésor</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-treasury-inflation-protected-securities" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les Treasury Inflation-Protected Securities</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-billets-a-taux-variable" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les billets à taux variable</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-rendements-et-les-prix-des-titres-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les rendements et les prix des titres du Trésor</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-courbe-des-rendements-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La courbe des rendements du Trésor</a>
+                                </li>
+                                                            <li>
+                                    <a href="#acheter-des-titres-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Acheter des titres du Trésor</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-adjudications-du-tresor-par-rapport-aux-marches-secondaires" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les adjudications du Trésor par rapport aux marchés secondaires</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-titres-du-tresor-et-la-fiscalite" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les titres du Trésor et la fiscalité</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-titres-du-tresor-par-rapport-aux-certificats-de-depot" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les titres du Trésor par rapport aux certificats de dépôt</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-titres-du-tresor-par-rapport-aux-fonds-du-marche-monetaire" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les titres du Trésor par rapport aux fonds du marché monétaire</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-titres-du-tresor-et-les-comptes-de-retraite" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les titres du Trésor et les comptes de retraite</a>
+                                </li>
+                                                            <li>
+                                    <a href="#construire-une-echelle-de-titres-du-tresor" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Construire une échelle de titres du Trésor</a>
+                                </li>
+                                                            <li>
+                                    <a href="#le-risque-de-taux-dinteret-demeure-important" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Le risque de taux d&#039;intérêt demeure important</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-les-titres-du-tresor-sintegrent-dans-un-portefeuille" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment les titres du Trésor s&#039;intègrent dans un portefeuille</a>
+                                </li>
+                                                            <li>
+                                    <a href="#ce-quil-faut-examiner-avant-dacheter" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Ce qu&#039;il faut examiner avant d&#039;acheter</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Les titres du Trésor sont des placements de dette émis par le Département du Trésor des États-Unis afin de financer les activités du gouvernement fédéral et de gérer ses besoins d'emprunt. Pour les investisseurs, ils offrent un moyen de prêter de l'argent au gouvernement fédéral en échange d'intérêts ou d'une différence entre le prix d'achat et le montant reçu à l'échéance.</p>
+<p>Les titres du Trésor sont souvent utilisés pour la préservation du capital, le revenu, la liquidité et la diversification du portefeuille. Ils servent également fréquemment de substituts aux dépôts bancaires ou de composante à faible risque de crédit au sein d'un portefeuille de placement plus large.</p>
+<p>Cependant, les titres du Trésor ne sont pas tous structurés de la même façon. Les bons du Trésor, les billets, les obligations, les Treasury Inflation-Protected Securities et les billets à taux variable ont des échéances, des structures de paiement et des sensibilités aux taux d'intérêt et à l'inflation différentes.</p>
+<p>Comprendre ces différences est important avant de déterminer où les titres du Trésor s'intègrent dans un portefeuille.</p>
+<h2 id="que-sont-les-titres-du-tresor">Que sont les titres du Trésor ?</h2>
+<p>Les titres du Trésor sont des obligations émises par le gouvernement américain.</p>
+<p>Lorsqu'un investisseur achète un titre du Trésor, il prête effectivement de l'argent au gouvernement fédéral. En retour, le gouvernement s'engage à effectuer les paiements précisés par les modalités du titre.</p>
+<p>Les titres du Trésor sont généralement considérés comme présentant un risque de crédit ou de défaut très faible, car ils sont garantis par la pleine foi et le crédit du gouvernement américain. Cela ne signifie pas pour autant que leur valeur de marché ne peut pas baisser.</p>
+<p>Un titre du Trésor acheté avant l'échéance peut perdre de la valeur de marché si les taux d'intérêt augmentent. Les investisseurs qui conservent un titre individuel jusqu'à l'échéance reçoivent généralement le montant du capital précisé par ses modalités, en supposant que le gouvernement honore ses obligations.</p>
+<p>Cette distinction entre le risque de crédit et le risque de marché est essentielle pour comprendre les placements en titres du Trésor.</p>
+<h2 id="les-bons-du-tresor">Les bons du Trésor</h2>
+<p>Les bons du Trésor, communément appelés T-bills, sont des titres publics à court terme dont l'échéance est d'un an ou moins.</p>
+<p>Contrairement aux obligations classiques à coupon, les bons du Trésor sont généralement émis avec une décote par rapport à leur valeur nominale. Un investisseur peut payer moins que le montant finalement reçu à l'échéance.</p>
+<p>Par exemple, un investisseur pourrait acheter un bon du Trésor pour moins de 1 000 $ et recevoir 1 000 $ à l'échéance. La différence représente le rendement de l'investisseur, avant prise en compte des frais applicables.</p>
+<p>Les bons du Trésor peuvent être utiles pour les investisseurs qui souhaitent une exposition relativement à court terme à la dette publique et qui pourraient avoir besoin de leur argent dans un délai défini.</p>
+<p>Leurs échéances courtes les rendent également généralement moins sensibles aux variations des taux d'intérêt que les titres du Trésor à plus long terme.</p>
+<h2 id="les-billets-du-tresor">Les billets du Trésor</h2>
+<p>Les billets du Trésor (Treasury notes) ont généralement des échéances intermédiaires et versent des intérêts à taux fixe selon un calendrier régulier.</p>
+<p>Le Trésor américain émet actuellement des billets avec plusieurs échéances standard, notamment des durées de deux, trois, cinq, sept et dix ans.</p>
+<p>Un investisseur qui achète un billet du Trésor reçoit généralement des paiements d'intérêts périodiques et la valeur nominale à l'échéance, en supposant que le titre est conservé jusqu'à l'échéance et que le gouvernement honore ses obligations.</p>
+<p>Comme les billets s'étendent au-delà du marché à très court terme, leurs prix peuvent fluctuer davantage lorsque les taux d'intérêt changent.</p>
+<h2 id="les-obligations-du-tresor">Les obligations du Trésor</h2>
+<p>Les obligations du Trésor (Treasury bonds) sont des titres publics à plus long terme.</p>
+<p>Elles versent généralement des intérêts fixes à intervalles réguliers et remboursent le capital à l'échéance.</p>
+<p>En raison de leurs échéances plus longues, les obligations du Trésor peuvent être plus sensibles aux variations des taux d'intérêt du marché que les bons du Trésor à court terme.</p>
+<p>Cela crée un compromis important.</p>
+<p>Un titre du Trésor à plus long terme peut permettre de bloquer un taux fixe pour une plus longue période, mais son prix de marché peut connaître des variations plus importantes lorsque les rendements en vigueur évoluent.</p>
+<p>Les investisseurs qui ont l'intention de vendre avant l'échéance doivent donc tenir compte de la volatilité des prix, même si la qualité de crédit de l'émetteur demeure très solide.</p>
+<h2 id="les-treasury-inflation-protected-securities">Les Treasury Inflation-Protected Securities</h2>
+<p>Les Treasury Inflation-Protected Securities, ou TIPS, sont conçues pour offrir une protection contre les variations de l'inflation.</p>
+<p>La valeur du capital d'un titre TIPS est ajustée en fonction des variations de l'indice des prix à la consommation.</p>
+<p>Les paiements d'intérêts sont calculés à partir du capital ajusté, ce qui signifie que le montant en dollars des paiements d'intérêts peut changer à mesure que le capital change.</p>
+<p>À l'échéance, les investisseurs reçoivent le capital ajusté à l'inflation ou le capital d'origine, selon le montant le plus élevé, conformément aux modalités du titre.</p>
+<p>Les TIPS peuvent donc jouer un rôle différent de celui des titres du Trésor classiques à taux fixe.</p>
+<p>Plutôt que de simplement bloquer une structure de paiement nominal fixe, ils offrent une exposition liée aux mesures de l'inflation.</p>
+<h2 id="les-billets-a-taux-variable">Les billets à taux variable</h2>
+<p>Les Treasury Floating Rate Notes, ou FRN, sont des titres dont les paiements d'intérêts s'ajustent en fonction d'un taux de référence.</p>
+<p>Contrairement aux billets et obligations du Trésor classiques à taux fixe, leur coupon n'est pas fixé pour toute la durée de vie du titre.</p>
+<p>Les FRN ont généralement des échéances plus courtes que les obligations du Trésor à long terme et peuvent se comporter différemment lorsque les taux d'intérêt changent.</p>
+<p>Ils peuvent être pertinents pour les investisseurs qui souhaitent une exposition au Trésor tout en réduisant une partie de la sensibilité aux taux d'intérêt associée aux titres à taux fixe de plus longue échéance.</p>
+<h2 id="les-rendements-et-les-prix-des-titres-du-tresor">Les rendements et les prix des titres du Trésor</h2>
+<p>Les prix et les rendements des titres du Trésor évoluent en sens opposés.</p>
+<p>Si un titre du Trésor existant verse un taux d'intérêt fixe et que les titres du Trésor nouvellement émis commencent à offrir des rendements plus élevés, le titre existant devient moins attrayant à son prix d'origine.</p>
+<p>Son prix de marché peut donc diminuer jusqu'à ce que son rendement devienne plus concurrentiel.</p>
+<p>L'inverse peut se produire lorsque les rendements du marché baissent.</p>
+<p>Cette relation est particulièrement importante pour les investisseurs qui achètent des titres du Trésor à plus long terme.</p>
+<p>Un investisseur qui prévoit conserver un titre du Trésor jusqu'à l'échéance peut se soucier moins des fluctuations de prix intermédiaires, en supposant que le titre n'est pas vendu prématurément. Un investisseur qui pourrait avoir besoin de vendre avant l'échéance doit tenir compte de la possibilité de recevoir plus ou moins que le prix d'achat d'origine.</p>
+<h2 id="la-courbe-des-rendements-du-tresor">La courbe des rendements du Trésor</h2>
+<p>La courbe des rendements du Trésor présente les rendements pour différentes échéances.</p>
+<p>Elle fournit un aperçu de la façon dont le marché fixe le prix de la dette publique pour les échéances à court, moyen et long terme.</p>
+<p>Une courbe normalement ascendante signifie que les échéances plus longues offrent des rendements plus élevés que les échéances plus courtes. Une courbe plus plate ou inversée peut survenir lorsque les attentes du marché et les conditions de taux d'intérêt diffèrent.</p>
+<p>La courbe des rendements évolue continuellement à mesure que les investisseurs réagissent aux données sur l'inflation, à la politique de la Réserve fédérale, aux conditions économiques, aux émissions du Trésor et aux attentes concernant les taux d'intérêt futurs.</p>
+<p>Les investisseurs peuvent utiliser la courbe pour comparer les échéances, bien qu'elle ne fournisse aucune garantie quant aux taux d'intérêt futurs ou aux conditions économiques.</p>
+<h2 id="acheter-des-titres-du-tresor">Acheter des titres du Trésor</h2>
+<p>Les investisseurs peuvent acheter des titres du Trésor par l'intermédiaire de TreasuryDirect, de banques, de courtiers et d'autres institutions financières qui participent aux adjudications du Trésor ou qui donnent accès au marché secondaire.</p>
+<p>TreasuryDirect permet aux particuliers d'acheter certains titres du Trésor directement auprès du gouvernement américain.</p>
+<p>Un compte de courtage peut offrir une flexibilité supplémentaire, car les investisseurs peuvent acheter et vendre des titres du Trésor sur le marché secondaire et peuvent combiner des obligations d'État avec des actions, des FNB, des fonds communs de placement et d'autres placements.</p>
+<p>Le choix d'acheter directement ou par l'intermédiaire d'un compte de courtage dépend de la flexibilité souhaitée par l'investisseur, de la structure du compte et de la stratégie de placement.</p>
+<h2 id="les-adjudications-du-tresor-par-rapport-aux-marches-secondaires">Les adjudications du Trésor par rapport aux marchés secondaires</h2>
+<p>Les titres du Trésor peuvent être achetés lorsque le gouvernement émet de nouveaux titres par voie d'adjudication.</p>
+<p>Lors d'une adjudication, les investisseurs soumettent des ordres selon la structure d'adjudication du Trésor en vigueur. Les particuliers qui utilisent TreasuryDirect peuvent généralement placer des offres non compétitives, ce qui signifie qu'ils acceptent le rendement déterminé lors de l'adjudication.</p>
+<p>Les titres du Trésor peuvent également être achetés et vendus après leur émission sur le marché secondaire.</p>
+<p>Les prix sur le marché secondaire fluctuent en fonction des taux d'intérêt actuels, de la demande, de l'échéance restante, de la liquidité et d'autres facteurs de marché.</p>
+<p>Un investisseur qui achète un titre du Trésor sur le marché secondaire peut donc payer plus ou moins que sa valeur nominale.</p>
+<p>Cette distinction est importante, car le rendement offert sur un titre du Trésor nouvellement émis et le rendement d'un titre du Trésor existant sont déterminés différemment.</p>
+<h2 id="les-titres-du-tresor-et-la-fiscalite">Les titres du Trésor et la fiscalité</h2>
+<p>Les intérêts du Trésor sont assujettis à un traitement fiscal fédéral et d'État particulier.</p>
+<p>Le revenu d'intérêts provenant des titres du Trésor américain est généralement assujetti à l'impôt fédéral sur le revenu, mais exonéré des impôts sur le revenu d'État et locaux.</p>
+<p>Cela peut rendre les titres du Trésor particulièrement pertinents pour les investisseurs qui résident dans des États où l'impôt sur le revenu est élevé.</p>
+<p>Le traitement fiscal des gains et des pertes résultant de la vente de titres du Trésor avant l'échéance peut être différent de celui applicable aux intérêts eux-mêmes.</p>
+<p>Les investisseurs devraient donc tenir compte à la fois du rendement annoncé et de leur rendement après impôt lorsqu'ils comparent les titres du Trésor à des comptes bancaires, des obligations municipales, des obligations de sociétés ou d'autres placements à revenu fixe.</p>
+<h2 id="les-titres-du-tresor-par-rapport-aux-certificats-de-depot">Les titres du Trésor par rapport aux certificats de dépôt</h2>
+<p>Les titres du Trésor et les certificats de dépôt peuvent tous deux être utilisés pour les portions relativement conservatrices d'un portefeuille, mais ils ont des structures différentes.</p>
+<p>Un CD (certificat de dépôt) est un compte de dépôt offert par une banque ou une coopérative de crédit. Les dépôts admissibles peuvent bénéficier de l'assurance de la FDIC ou de la NCUA, dans les limites applicables.</p>
+<p>Un titre du Trésor est une obligation de dette du gouvernement fédéral et ne constitue pas un dépôt bancaire.</p>
+<p>Les titres du Trésor peuvent également être négociés sur le marché secondaire, tandis que les CD traditionnels peuvent imposer des pénalités de retrait anticipé ou avoir des modalités de liquidité différentes.</p>
+<p>La comparaison devrait donc tenir compte du rendement, de l'échéance, de la liquidité, de la fiscalité, de l'assurance-dépôts et des coûts de transaction potentiels, plutôt que de simplement comparer les taux annoncés.</p>
+<h2 id="les-titres-du-tresor-par-rapport-aux-fonds-du-marche-monetaire">Les titres du Trésor par rapport aux fonds du marché monétaire</h2>
+<p>Les fonds communs de placement du marché monétaire investissent dans des instruments de dette à court terme et sont conçus pour offrir de la liquidité et des valeurs relativement stables, bien qu'il s'agisse de produits de placement et non de dépôts bancaires.</p>
+<p>Les fonds du marché monétaire axés sur le Trésor peuvent détenir des montants substantiels de bons du Trésor et d'autres titres publics.</p>
+<p>Acheter un bon du Trésor individuel donne à un investisseur une date d'échéance et un titre précis. Un fonds du marché monétaire conserve généralement un portefeuille et n'a pas une date d'échéance unique pour les parts de l'investisseur.</p>
+<p>Cela crée des caractéristiques de liquidité et de gestion de portefeuille différentes.</p>
+<p>Les investisseurs devraient également faire la distinction entre les fonds communs de placement du marché monétaire et les comptes de dépôt du marché monétaire bancaires, qui sont des produits de dépôt et peuvent être régis par des règles d'assurance et de compte différentes.</p>
+<h2 id="les-titres-du-tresor-et-les-comptes-de-retraite">Les titres du Trésor et les comptes de retraite</h2>
+<p>Les titres du Trésor peuvent être détenus par l'intermédiaire de comptes de courtage imposables et de certains comptes de retraite.</p>
+<p>Au sein d'un IRA ou d'un 401(k), les intérêts du Trésor demeurent généralement à l'intérieur de la structure du compte à avantages fiscaux plutôt que d'être imposés annuellement comme ils le seraient dans un compte imposable, sous réserve des règles régissant ce compte de retraite.</p>
+<p>Une exposition au Trésor peut également être obtenue indirectement par l'intermédiaire de fonds communs de placement obligataires et de FNB.</p>
+<p>L'approche appropriée dépend du fait qu'un investisseur souhaite détenir directement des titres du Trésor précis ou obtenir une exposition diversifiée à la dette publique.</p>
+<h2 id="construire-une-echelle-de-titres-du-tresor">Construire une échelle de titres du Trésor</h2>
+<p>Les investisseurs qui souhaitent accéder régulièrement à du capital arrivant à échéance peuvent envisager une échelle de titres du Trésor (Treasury ladder).</p>
+<p>Une échelle consiste à acheter des titres du Trésor avec des dates d'échéance différentes plutôt que de placer tous les fonds disponibles dans une seule échéance.</p>
+<p>Par exemple, un investisseur pourrait répartir son argent entre plusieurs échéances afin qu'une partie du portefeuille arrive à échéance périodiquement.</p>
+<p>Lorsque chaque titre arrive à échéance, l'investisseur peut utiliser le produit ou le réinvestir dans un autre titre du Trésor.</p>
+<p>Une échelle peut aider à répartir les décisions de réinvestissement dans le temps et à réduire la dépendance à un seul contexte de taux d'intérêt.</p>
+<p>Elle n'élimine pas le risque de taux d'intérêt ni le risque de réinvestissement, mais elle peut créer un calendrier d'échéances plus structuré.</p>
+<h2 id="le-risque-de-taux-dinteret-demeure-important">Le risque de taux d'intérêt demeure important</h2>
+<p>Les titres du Trésor présentent un risque de crédit très faible par rapport à de nombreux autres placements de dette, mais ils ne sont pas à l'abri de pertes de marché.</p>
+<p>Plus l'échéance est longue, plus la sensibilité potentielle aux variations des taux d'intérêt est grande.</p>
+<p>Par exemple, une obligation du Trésor à 30 ans peut connaître des variations de prix beaucoup plus importantes qu'un bon du Trésor à court terme lorsque les rendements du marché changent.</p>
+<p>Cela est particulièrement pertinent pour les investisseurs qui détiennent des titres du Trésor dans un compte de courtage et qui pourraient avoir besoin de vendre avant l'échéance.</p>
+<p>Un investisseur devrait donc faire la distinction entre la capacité du titre à rembourser le capital et la valeur de marché de ce titre avant l'échéance.</p>
+<h2 id="comment-les-titres-du-tresor-sintegrent-dans-un-portefeuille">Comment les titres du Trésor s'intègrent dans un portefeuille</h2>
+<p>Les titres du Trésor peuvent servir différents objectifs selon l'investisseur.</p>
+<p>Les bons à court terme peuvent constituer un emplacement pour l'argent nécessaire dans un délai relativement court. Les billets à moyen terme peuvent fournir des paiements d'intérêts fixes sur plusieurs années. Les obligations du Trésor à plus long terme peuvent offrir une plus grande exposition à la duration, tandis que les TIPS peuvent répondre à des considérations liées à l'inflation.</p>
+<p>Certains investisseurs utilisent les titres du Trésor pour la préservation du capital et la liquidité. D'autres les utilisent pour diversifier leur exposition aux actions ou pour construire une stratégie de revenu de retraite.</p>
+<p>L'échéance appropriée dépend du moment où l'argent sera nécessaire et du degré de volatilité des prix que l'investisseur peut tolérer.</p>
+<p>Il n'est pas nécessaire de choisir un seul produit du Trésor pour l'ensemble d'un portefeuille. Différentes échéances et structures peuvent être combinées en fonction d'objectifs financiers précis.</p>
+<h2 id="ce-quil-faut-examiner-avant-dacheter">Ce qu'il faut examiner avant d'acheter</h2>
+<p>Avant d'acheter un titre du Trésor, les investisseurs devraient tenir compte de plusieurs facteurs.</p>
+<p>Tout d'abord, déterminez la date d'échéance et évaluez si l'argent sera nécessaire avant cette date.</p>
+<p>Ensuite, examinez le rendement actuel et faites la distinction entre le taux de coupon et le rendement réel offert au prix d'achat.</p>
+<p>Tenez compte de la sensibilité aux taux d'intérêt, en particulier pour les titres à plus long terme.</p>
+<p>Pour les comptes imposables, calculez le rendement après impôt et tenez compte du traitement fédéral applicable aux intérêts du Trésor.</p>
+<p>Enfin, déterminez si la détention directe, un FNB de titres du Trésor, un fonds obligataire ou un fonds du marché monétaire axé sur le Trésor convient le mieux à l'objectif visé.</p>
+<p>Les titres du Trésor sont des placements relativement simples, mais leurs différences comptent.</p>
+<p>Les bons, les billets, les obligations, les TIPS et les billets à taux variable offrent chacun des combinaisons différentes d'échéance, de revenu, d'exposition à l'inflation et de sensibilité aux taux d'intérêt.</p>
+<p>Comprendre ces caractéristiques permet aux investisseurs d'utiliser la dette publique de manière plus délibérée, que l'objectif soit de préserver des liquidités à court terme, de générer un revenu fixe, de diversifier un portefeuille de placement ou de construire une stratégie de retraite structurée.</p>
+<h3>Références</h3>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.treasurydirect.gov/marketable-securities/">U.S. Treasury — Treasury Securities</a></p>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.treasurydirect.gov/marketable-securities/treasury-bills/">TreasuryDirect — Treasury Bills</a></p>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.treasurydirect.gov/marketable-securities/treasury-notes/">TreasuryDirect — Treasury Notes</a></p>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.treasurydirect.gov/marketable-securities/treasury-bonds/">TreasuryDirect — Treasury Bonds</a></p>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.treasurydirect.gov/marketable-securities/tips/">TreasuryDirect — Treasury Inflation-Protected Securities</a></p>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.treasurydirect.gov/marketable-securities/floating-rate-notes/">TreasuryDirect — Floating Rate Notes</a></p>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-bonds">Investor.gov — Bonds</a></p>
+
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/hannah-cohen.webp"
+        alt="Hannah Cohen"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Écrit par</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Hannah Cohen</p>
+                            <p class="text-sm text-brand-200">Investing &amp; Retirement Writer</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Hannah covers investing, retirement accounts, and long-term financial planning, from stocks, bonds, and funds to IRAs, 401(k)s, annuities, and retirement-age coverage such as Medicare and long-term care. She prefers plain-English explanations over industry jargon, helping readers break down complex, long-horizon decisions into manageable, actionable steps.</p>
+                                        <a href="/fr/our-team" wire:navigate class="btn-zest relative mt-6">Rencontrez les rédacteurs</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenu à but uniquement pédagogique.</span>
+                    Cet article fournit des informations générales et ne constitue pas un conseil financier, d’investissement, fiscal ou juridique personnalisé.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Continuez à apprendre</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Plus dans Gestion de patrimoine</h2>
+                    </div>
+                    <a href="/fr/c/wealth-management" wire:navigate class="link-underline text-sm font-semibold text-ink">Tout voir</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/fr/p/estate-planning-basics-how-to-organize-assets-and-prepare-for-the-future" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/estate-planning-basics-how-to-organize-assets-and-prepare-for-the-future.webp"
+        alt="Notions de base de la planification successorale : comment organiser ses actifs et se préparer pour l&#039;avenir"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Gestion de patrimoine
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Notions de base de la planification successorale : comment organiser ses actifs et se préparer pour l&#039;avenir
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Bâtir un patrimoine n&#039;est qu&#039;une partie de la planification financière à long terme. Protéger les actifs, documenter les volontés financières et établir un processus de t...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/claire-odonnell.webp"
+        alt="Claire O’Donnell"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Claire O’Donnell</span>
+                    </span>
+                    <time datetime="2026-09-13" class="shrink-0">13 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/sep-ira-and-solo-401-k-retirement-planning-for-self-employed-workers" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/sep-ira-and-solo-401-k-retirement-planning-for-self-employed-workers.webp"
+        alt="SEP IRA et Solo 401(k) : la planification de la retraite pour les travailleurs autonomes"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Gestion de patrimoine
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                SEP IRA et Solo 401(k) : la planification de la retraite pour les travailleurs autonomes
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">La planification de la retraite prend une tournure différente lorsqu&#039;aucun employeur n&#039;offre de 401(k), de cotisations de contrepartie ou de système de paie automatique....</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/samuel-mensah.webp"
+        alt="Samuel Mensah"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Samuel Mensah</span>
+                    </span>
+                    <time datetime="2026-09-03" class="shrink-0">3 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/gold-ira-explained-how-gold-fits-into-retirement-investing" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/gold-ira-explained-how-gold-fits-into-retirement-investing.webp"
+        alt="Le Gold IRA expliqué : comment l&#039;or s&#039;intègre à l&#039;investissement retraite"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Gestion de patrimoine
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Le Gold IRA expliqué : comment l&#039;or s&#039;intègre à l&#039;investissement retraite
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Un Gold IRA est un type de compte de retraite individuel autogéré qui peut détenir certains métaux précieux physiques au lieu de limiter le compte à des titres traditionn...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/hannah-cohen.webp"
+        alt="Hannah Cohen"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Hannah Cohen</span>
+                    </span>
+                    <time datetime="2026-08-23" class="shrink-0">23 août 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/fr" wire:navigate aria-label="Accueil de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.
+                </p>
+                <a href="/fr/articles" wire:navigate class="btn-zest mt-7">
+                    Commencer à apprendre
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Thèmes</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/fr/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finances personnelles</a></li>
+                                                    <li><a href="/fr/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestion de patrimoine</a></li>
+                                                    <li><a href="/fr/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Prêts et financement</a></li>
+                                                    <li><a href="/fr/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédit et cartes</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Tous les articles</a></li>
+                        <li><a href="/fr/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Notre équipe éditoriale</a></li>
+                        <li><a href="/fr/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Mentions légales</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="/fr/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Conditions d’utilisation</a></li>
+                        <li><a href="/fr/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Avertissement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Avertissement :</span>
+                Le contenu proposé sur Edufinance.site est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.
+            </p>
+            <p>Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.</p>
+            <p>Edufinance.site ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Tous droits réservés.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="vSrt1jt01YUR5vr7NXykuWp1pwvMJwwq1XnS287d" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

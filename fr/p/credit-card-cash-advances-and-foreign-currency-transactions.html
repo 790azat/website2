@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Avances de fonds de carte de crédit et transactions en devises étrangères — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Les cartes de crédit peuvent être pratiques lors de voyages à l&#039;étranger, pour effectuer des achats internationaux en ligne, ou pour accéder à des liquidit..." />
+                            <link rel="alternate" hreflang="en" href="/p/credit-card-cash-advances-and-foreign-currency-transactions" />
+                    <link rel="alternate" hreflang="es" href="/es/p/credit-card-cash-advances-and-foreign-currency-transactions" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/credit-card-cash-advances-and-foreign-currency-transactions" />
+                <link rel="alternate" hreflang="x-default" href="/p/credit-card-cash-advances-and-foreign-currency-transactions" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/fr/our-team" wire:navigate class="transition hover:text-white">Notre équipe</a>
+                <a href="/fr/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/credit-card-cash-advances-and-foreign-currency-transactions"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/credit-card-cash-advances-and-foreign-currency-transactions"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/credit-card-cash-advances-and-foreign-currency-transactions"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="shrink-0" aria-label="Accueil de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/fr" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Accueil</a>
+                            <a href="/fr/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finances personnelles</a>
+                            <a href="/fr/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestion de patrimoine</a>
+                            <a href="/fr/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Prêts et financement</a>
+                            <a href="/fr/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédit et cartes</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/fr/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Tous les articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/fr" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Tous les articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Thèmes</p>
+                            <a href="/fr/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finances personnelles
+                </a>
+                            <a href="/fr/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestion de patrimoine
+                </a>
+                            <a href="/fr/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Prêts et financement
+                </a>
+                            <a href="/fr/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédit et cartes
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">À propos</p>
+            <a href="/fr/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Notre équipe</a>
+            <a href="/fr/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Fil d’Ariane">
+                <a href="/fr" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Accueil
+                </a>
+                <span class="text-line">/</span>
+                <a href="/fr/c/credit-cards" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Crédit et cartes</a>
+            </nav>
+
+            <a href="/fr/c/credit-cards" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5V5h14v-.5A1.5 1.5 0 0 0 13.5 3h-11Z"/>
+  <path fill-rule="evenodd" d="M15 7H1v4.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V7ZM3 10.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Zm3.75-.75a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z" clip-rule="evenodd"/>
+</svg>
+
+                        Crédit et cartes
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Avances de fonds de carte de crédit et transactions en devises étrangères
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/fr/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/ethan-kim.webp"
+        alt="Ethan Kim"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Ethan Kim</span>
+                        <span class="text-muted">Credit Cards &amp; Fintech Analyst</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2026-04-07">7 avril 2026</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            18 min de lecture
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/credit-card-cash-advances-and-foreign-currency-transactions.webp" alt="Avances de fonds de carte de crédit et transactions en devises étrangères" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="Dans cet article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Dans cet article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#quest-ce-quune-avance-de-fonds-de-carte-de-credit" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;est-ce qu&#039;une avance de fonds de carte de crédit ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#pourquoi-les-avances-de-fonds-coutent-plus-cher-que-les-achats-ordinaires" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Pourquoi les avances de fonds coûtent plus cher que les achats ordinaires</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-interets-davance-de-fonds-commencent-habituellement-immediatement" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les intérêts d&#039;avance de fonds commencent habituellement immédiatement</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-avances-de-fonds-peuvent-avoir-un-apr-distinct" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les avances de fonds peuvent avoir un APR distinct</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-fonctionnent-les-frais-davance-de-fonds" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment fonctionnent les frais d&#039;avance de fonds</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-frais-de-guichet-automatique-peuvent-etre-distincts" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les frais de guichet automatique peuvent être distincts</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-avances-de-fonds-a-letranger-peuvent-comporter-des-couts-supplementaires" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les avances de fonds à l&#039;étranger peuvent comporter des coûts supplémentaires</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quest-ce-quune-transaction-en-devise-etrangere" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;est-ce qu&#039;une transaction en devise étrangère ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-frais-de-transaction-a-letranger-sont-distincts-des-taux-de-change" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les frais de transaction à l&#039;étranger sont distincts des taux de change</a>
+                                </li>
+                                                            <li>
+                                    <a href="#une-transaction-a-letranger-na-pas-toujours-besoin-detre-en-devise-etrangere" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Une transaction à l&#039;étranger n&#039;a pas toujours besoin d&#039;être en devise étrangère</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-la-conversion-de-devise-apparait-sur-une-carte-de-credit" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment la conversion de devise apparaît sur une carte de crédit</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-conversion-de-devise-dynamique-peut-modifier-la-transaction" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La conversion de devise dynamique peut modifier la transaction</a>
+                                </li>
+                                                            <li>
+                                    <a href="#payer-en-dollars-americains-a-letranger-ne-signifie-pas-automatiquement-un-cout-plus-faible" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Payer en dollars américains à l&#039;étranger ne signifie pas automatiquement un coût plus faible</a>
+                                </li>
+                                                            <li>
+                                    <a href="#verifiez-si-votre-carte-facture-des-frais-de-transaction-a-letranger" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Vérifiez si votre carte facture des frais de transaction à l&#039;étranger</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-avances-de-fonds-et-les-achats-a-letranger-ne-sont-pas-la-meme-chose" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les avances de fonds et les achats à l&#039;étranger ne sont pas la même chose</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-recompenses-de-carte-de-credit-peuvent-ne-pas-compenser-les-couts-davance-de-fonds" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les récompenses de carte de crédit peuvent ne pas compenser les coûts d&#039;avance de fonds</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-avances-de-fonds-peuvent-affecter-le-credit-disponible" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les avances de fonds peuvent affecter le crédit disponible</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-avances-de-fonds-sont-mieux-traitees-comme-un-emprunt-durgence" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les avances de fonds sont mieux traitées comme un emprunt d&#039;urgence</a>
+                                </li>
+                                                            <li>
+                                    <a href="#envisagez-dautres-facons-dacceder-a-des-liquidites" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Envisagez d&#039;autres façons d&#039;accéder à des liquidités</a>
+                                </li>
+                                                            <li>
+                                    <a href="#lisez-lentente-de-carte-avant-de-voyager" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Lisez l&#039;entente de carte avant de voyager</a>
+                                </li>
+                                                            <li>
+                                    <a href="#surveillez-les-transactions-internationales" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Surveillez les transactions internationales</a>
+                                </li>
+                                                            <li>
+                                    <a href="#conservez-les-recus-des-achats-a-letranger" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Conservez les reçus des achats à l&#039;étranger</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comprendre-la-difference-entre-le-taux-de-change-et-les-frais" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comprendre la différence entre le taux de change et les frais</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-reduire-les-couts-internationaux-inutiles-de-carte" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment réduire les coûts internationaux inutiles de carte</a>
+                                </li>
+                                                            <li>
+                                    <a href="#en-resume" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">En résumé</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Les cartes de crédit peuvent être pratiques lors de voyages à l'étranger, pour effectuer des achats internationaux en ligne, ou pour accéder à des liquidités d'urgence. Mais les transactions en dehors de la catégorie d'achat habituelle peuvent comporter des coûts supplémentaires faciles à négliger.</p>
+<p>Deux domaines méritent une attention particulière : les <strong>avances de fonds</strong> et les <strong>transactions en devises étrangères</strong>.</p>
+<p>Une avance de fonds permet à un titulaire de carte d'accéder à des liquidités en utilisant une marge de crédit, souvent par le biais d'un guichet automatique ou d'une autre méthode permise par l'émetteur. Contrairement à un achat ordinaire, une avance de fonds comporte habituellement un APR et des frais distincts, les intérêts commençant généralement immédiatement plutôt qu'après un délai de grâce d'achat. Le Consumer Financial Protection Bureau (CFPB) décrit les avances de fonds comme un emprunt à court terme qui peut être coûteux en raison des frais et des intérêts.</p>
+<p>Les transactions en devises étrangères ont une structure de coût différente. Un réseau de carte convertit la transaction en dollars américains, et l'émetteur de la carte peut facturer des frais de transaction à l'étranger selon les modalités du compte. Le taux de conversion utilisé peut aussi différer du taux visible au moment de l'achat.</p>
+<p>Comprendre le fonctionnement de ces transactions peut aider les titulaires de carte à éviter des frais inattendus et à évaluer le coût réel de l'utilisation d'une carte de crédit à l'international.</p>
+<h2 id="quest-ce-quune-avance-de-fonds-de-carte-de-credit">Qu'est-ce qu'une avance de fonds de carte de crédit ?</h2>
+<p>Une avance de fonds est une façon d'emprunter des liquidités contre une marge de crédit existante.</p>
+<p>La méthode la plus familière est le retrait d'argent à un guichet automatique à l'aide d'une carte de crédit. Selon le compte, une avance de fonds peut aussi impliquer :</p>
+<ul>
+<li>Des chèques de commodité</li>
+<li>Certains transferts de compte</li>
+<li>Des transactions de découvert</li>
+<li>D'autres transactions traitées comme des équivalents de liquidités selon l'entente de carte</li>
+</ul>
+<p>Le CFPB note que de nombreuses cartes de crédit ont une limite d'avance de fonds distincte qui peut être inférieure à la limite de crédit globale.</p>
+<p>Par exemple, une carte pourrait avoir une limite de crédit globale de 10 000 $ mais ne permettre que 2 000 $ en avances de fonds.</p>
+<p>La limite précise et les transactions admissibles dépendent de l'émetteur.</p>
+<h2 id="pourquoi-les-avances-de-fonds-coutent-plus-cher-que-les-achats-ordinaires">Pourquoi les avances de fonds coûtent plus cher que les achats ordinaires</h2>
+<p>Une avance de fonds peut impliquer plusieurs coûts à la fois.</p>
+<p>La carte peut facturer :</p>
+<ul>
+<li>Des frais d'avance de fonds</li>
+<li>Un APR d'avance de fonds distinct</li>
+<li>Des frais de guichet automatique</li>
+<li>Des frais de transaction à l'étranger le cas échéant</li>
+<li>Des intérêts commençant dès le retrait des liquidités</li>
+</ul>
+<p>Le CFPB indique que les frais d'avance de fonds peuvent être un montant fixe en dollars ou un pourcentage de la transaction, selon les modalités de la carte.</p>
+<p>Cette combinaison peut rendre une avance de fonds nettement plus coûteuse qu'un achat de carte ordinaire.</p>
+<h2 id="les-interets-davance-de-fonds-commencent-habituellement-immediatement">Les intérêts d'avance de fonds commencent habituellement immédiatement</h2>
+<p>L'une des différences les plus importantes entre les achats et les avances de fonds est le moment où les intérêts commencent à s'accumuler.</p>
+<p>Pour les achats admissibles, une carte de crédit peut offrir un délai de grâce qui permet au titulaire de carte d'éviter les intérêts en payant le solde de relevé en entier.</p>
+<p>Les avances de fonds ne reçoivent généralement pas le même traitement.</p>
+<p>Le CFPB explique que les intérêts sur une avance de fonds commencent généralement dès que l'argent est retiré.</p>
+<p>Cela signifie qu'attendre l'arrivée du prochain relevé avant de payer l'avance ne prévient pas nécessairement l'accumulation d'intérêts.</p>
+<h2 id="les-avances-de-fonds-peuvent-avoir-un-apr-distinct">Les avances de fonds peuvent avoir un APR distinct</h2>
+<p>Les cartes de crédit peuvent avoir plusieurs APR.</p>
+<p>L'APR d'achat peut différer de l'APR applicable aux avances de fonds, aux transferts de solde, ou à d'autres catégories de transaction. Le CFPB note que les ententes de carte de crédit peuvent contenir des APR distincts pour différents types de soldes.</p>
+<p>Un titulaire de carte devrait donc éviter de présumer que le taux d'intérêt annoncé pour les achats s'applique aussi aux retraits de liquidités.</p>
+<p>Avant d'utiliser une avance de fonds, vérifiez les modalités actuelles du compte ou la section des taux d'intérêt du relevé de carte de crédit.</p>
+<h2 id="comment-fonctionnent-les-frais-davance-de-fonds">Comment fonctionnent les frais d'avance de fonds</h2>
+<p>Des frais d'avance de fonds peuvent être structurés soit comme un pourcentage du montant retiré, soit comme des frais minimums fixes.</p>
+<p>Par exemple, une carte hypothétique pourrait facturer :</p>
+<p>3 % de l'avance de fonds, avec un minimum de 10 $.</p>
+<p>Un retrait de 100 $ générerait des frais de 10 $, car 3 % équivaut seulement à 3 $.</p>
+<p>Un retrait de 1 000 $ générerait des frais de 30 $.</p>
+<p>Les frais réels dépendent entièrement des modalités de la carte.</p>
+<p>Le CFPB exige que les frais d'avance de fonds soient divulgués dans les demandes et sollicitations de carte de crédit selon les règles fédérales applicables.</p>
+<h2 id="les-frais-de-guichet-automatique-peuvent-etre-distincts">Les frais de guichet automatique peuvent être distincts</h2>
+<p>Les frais facturés par l'émetteur de la carte de crédit ne sont pas nécessairement le seul coût.</p>
+<p>L'exploitant du guichet automatique peut imposer ses propres frais.</p>
+<p>Par exemple, retirer 500 $ pourrait potentiellement impliquer :</p>
+<p>Des frais d'avance de fonds de l'émetteur de la carte de crédit
+Des frais d'accès au guichet automatique
+Des intérêts sur l'avance de fonds</p>
+<p>Les frais de guichet automatique et les frais d'avance de fonds de l'émetteur sont des frais distincts.</p>
+<p>Les consommateurs devraient donc tenir compte du coût total de la transaction plutôt que de regarder uniquement les frais d'avance de fonds annoncés.</p>
+<h2 id="les-avances-de-fonds-a-letranger-peuvent-comporter-des-couts-supplementaires">Les avances de fonds à l'étranger peuvent comporter des coûts supplémentaires</h2>
+<p>Utiliser une carte de crédit pour obtenir des liquidités à l'étranger peut combiner les coûts d'avance de fonds avec les coûts de transaction à l'étranger.</p>
+<p>Les directives du Regulation Z du CFPB traitent spécifiquement des avances de fonds à l'étranger et expliquent que les frais d'avance de fonds et de transaction à l'étranger applicables peuvent s'appliquer aux avances de fonds effectuées en devise étrangère ou en dehors des États-Unis.</p>
+<p>Par exemple, retirer des euros à un guichet automatique en utilisant une carte de crédit émise aux États-Unis pourrait potentiellement impliquer :</p>
+<ul>
+<li>Des frais d'avance de fonds</li>
+<li>L'APR d'avance de fonds</li>
+<li>Des frais de l'exploitant du guichet automatique</li>
+<li>Des frais de transaction à l'étranger</li>
+<li>La conversion de devise</li>
+</ul>
+<p>La combinaison exacte dépend de l'émetteur de la carte, du réseau de la carte, de l'exploitant du guichet automatique, et des modalités de la transaction.</p>
+<h2 id="quest-ce-quune-transaction-en-devise-etrangere">Qu'est-ce qu'une transaction en devise étrangère ?</h2>
+<p>Une transaction en devise étrangère se produit lorsqu'une carte de crédit est utilisée pour un achat ou une avance de fonds libellé dans une devise autre que le dollar américain.</p>
+<p>Le réseau de la carte traite la transaction et convertit le montant en devise étrangère en dollars américains pour le compte. Le CFPB explique que le taux de conversion du réseau peut être basé sur un taux imposé par le gouvernement ou un taux de gros et que le taux utilisé peut différer du taux à la date de l'achat.</p>
+<p>Cela signifie que le taux de change affiché au point de vente n'est pas nécessairement le taux final qui apparaît sur le relevé de carte de crédit.</p>
+<h2 id="les-frais-de-transaction-a-letranger-sont-distincts-des-taux-de-change">Les frais de transaction à l'étranger sont distincts des taux de change</h2>
+<p>Des frais de transaction à l'étranger et un taux de conversion de devise ne sont pas la même chose.</p>
+<p>Le taux de change détermine la valeur en dollars américains de l'achat en devise étrangère.</p>
+<p>Des frais de transaction à l'étranger sont des frais supplémentaires imposés selon les modalités de la carte pour les transactions internationales admissibles.</p>
+<p>Le CFPB explique que des frais de transaction à l'étranger peuvent s'appliquer aux transactions effectuées en devise étrangère, aux transactions à l'extérieur des États-Unis, ou aux transactions impliquant un commerçant étranger.</p>
+<p>Une transaction peut donc comporter à la fois une conversion de devise et des frais de transaction à l'étranger.</p>
+<h2 id="une-transaction-a-letranger-na-pas-toujours-besoin-detre-en-devise-etrangere">Une transaction à l'étranger n'a pas toujours besoin d'être en devise étrangère</h2>
+<p>Les transactions internationales peuvent parfois être traitées en dollars américains.</p>
+<p>Par exemple, un consommateur américain pourrait acheter quelque chose sur le site web d'un commerçant étranger et payer en dollars américains.</p>
+<p>Cela ne signifie pas nécessairement qu'il n'y aura pas de frais de transaction à l'étranger.</p>
+<p>Les directives réglementaires du CFPB reconnaissent spécifiquement que des frais de transaction à l'étranger peuvent s'appliquer lorsqu'un achat est effectué auprès d'un commerçant étranger même si la transaction est libellée en dollars américains.</p>
+<p>L'emplacement du commerçant et l'arrangement de traitement peuvent donc importer autant que la devise affichée.</p>
+<h2 id="comment-la-conversion-de-devise-apparait-sur-une-carte-de-credit">Comment la conversion de devise apparaît sur une carte de crédit</h2>
+<p>Supposons qu'un voyageur achète un article pour 500 €.</p>
+<p>Le réseau de la carte convertit la transaction de 500 € en un montant en dollars américains en utilisant le taux de conversion applicable.</p>
+<p>Le taux utilisé pour la transaction peut ne pas être identique au taux que le voyageur voit sur un site web de devises ce même jour.</p>
+<p>Le CFPB explique que le taux peut être déterminé au moment où le réseau de la carte traite la transaction, ce qui peut se produire à une date différente de celle de l'achat ou de la comptabilisation.</p>
+<p>Cette différence de calendrier peut produire une petite variation entre un montant en dollars estimé et le montant final du relevé.</p>
+<h2 id="la-conversion-de-devise-dynamique-peut-modifier-la-transaction">La conversion de devise dynamique peut modifier la transaction</h2>
+<p>Les commerçants et guichets automatiques internationaux offrent parfois aux clients le choix entre payer dans la devise locale ou faire convertir la transaction en dollars américains au point de vente.</p>
+<p>C'est communément appelé la conversion de devise dynamique.</p>
+<p>L'enjeu important est que le commerçant ou l'exploitant du guichet automatique peut déterminer le taux de conversion et toute majoration associée.</p>
+<p>Cette conversion est distincte de la conversion de devise qui serait autrement effectuée par le réseau de la carte.</p>
+<p>Lorsqu'un choix de devise est présenté, les consommateurs devraient examiner le taux de change affiché et les frais avant d'accepter la conversion.</p>
+<h2 id="payer-en-dollars-americains-a-letranger-ne-signifie-pas-automatiquement-un-cout-plus-faible">Payer en dollars américains à l'étranger ne signifie pas automatiquement un coût plus faible</h2>
+<p>Un voyageur pourrait présumer que choisir les dollars américains élimine les coûts liés à la devise.</p>
+<p>Ce n'est pas nécessairement vrai.</p>
+<p>Un commerçant ou un guichet automatique peut utiliser son propre processus de conversion lorsqu'il offre de facturer la carte en dollars américains.</p>
+<p>Le taux de change qui en résulte peut être moins favorable que le taux qui aurait été appliqué par le réseau de la carte.</p>
+<p>Les consommateurs devraient donc distinguer entre :</p>
+<p><strong>Transaction en devise locale :</strong>
+La transaction est traitée dans la devise locale du commerçant et convertie par le réseau de la carte.</p>
+<p><strong>Conversion de devise par le commerçant ou le guichet automatique :</strong>
+Le commerçant ou le guichet automatique convertit la transaction en dollars américains avant de l'envoyer par le réseau de la carte.</p>
+<p>La tarification de la deuxième option dépend du commerçant ou de l'exploitant du guichet automatique.</p>
+<h2 id="verifiez-si-votre-carte-facture-des-frais-de-transaction-a-letranger">Vérifiez si votre carte facture des frais de transaction à l'étranger</h2>
+<p>Les cartes de crédit diffèrent considérablement dans leurs structures de frais internationaux.</p>
+<p>Certaines facturent des frais de transaction à l'étranger sur les achats admissibles, tandis que d'autres non.</p>
+<p>Le CFPB conseille aux consommateurs qui voyagent à l'international d'envisager des cartes avec des frais de transaction à l'étranger réduits ou nuls.</p>
+<p>Les frais peuvent aussi s'appliquer différemment aux achats et aux avances de fonds.</p>
+<p>Les règles fédérales de divulgation exigent que les émetteurs divulguent clairement les frais de transaction à l'étranger applicables, y compris les circonstances impliquant des avances de fonds à l'étranger.</p>
+<p>Examinez la tarification et les modalités actuelles avant de voyager plutôt que de vous fier à une ancienne demande ou à une hypothèse basée sur une autre carte.</p>
+<h2 id="les-avances-de-fonds-et-les-achats-a-letranger-ne-sont-pas-la-meme-chose">Les avances de fonds et les achats à l'étranger ne sont pas la même chose</h2>
+<p>Il est important de distinguer un achat étranger ordinaire d'une avance de fonds à l'étranger.</p>
+<p>Supposons qu'un voyageur utilise une carte de crédit pour acheter un repas de 100 $ dans un autre pays.</p>
+<p>Il s'agit généralement d'une transaction d'achat.</p>
+<p>Supposons maintenant que le voyageur utilise la même carte de crédit pour retirer l'équivalent de 100 $ à un guichet automatique.</p>
+<p>Il s'agit généralement d'une avance de fonds.</p>
+<p>La deuxième transaction peut déclencher des frais d'avance de fonds et des intérêts d'avance de fonds immédiats en plus de tous frais de transaction à l'étranger ou de guichet automatique applicables.</p>
+<p>Le fait que les deux transactions aient lieu à l'étranger ne les rend pas équivalentes.</p>
+<h2 id="les-recompenses-de-carte-de-credit-peuvent-ne-pas-compenser-les-couts-davance-de-fonds">Les récompenses de carte de crédit peuvent ne pas compenser les coûts d'avance de fonds</h2>
+<p>Les cartes de crédit orientées voyage offrent parfois des points ou des milles sur les achats.</p>
+<p>Cela ne signifie pas qu'une avance de fonds est un moyen efficace de gagner des récompenses.</p>
+<p>Les avances de fonds peuvent comporter des frais et des intérêts immédiats, tandis que les programmes de récompenses peuvent exclure les avances de fonds des achats admissibles.</p>
+<p>Les consommateurs devraient vérifier les modalités de récompenses de la carte avant de présumer qu'un retrait de liquidités fait gagner des points, des milles, ou de la remise en argent.</p>
+<p>Une récompense valant quelques dollars ne compenserait généralement pas des coûts d'emprunt substantiels.</p>
+<h2 id="les-avances-de-fonds-peuvent-affecter-le-credit-disponible">Les avances de fonds peuvent affecter le crédit disponible</h2>
+<p>Une avance de fonds utilise une partie de la marge de crédit.</p>
+<p>Si un titulaire de carte a une limite de crédit de 5 000 $ et retire 1 000 $, le crédit disponible peut être réduit en conséquence, sous réserve de la façon dont l'émetteur gère les frais et les intérêts.</p>
+<p>L'avance de fonds peut aussi augmenter le ratio d'utilisation du compte.</p>
+<p>Comme l'utilisation du crédit est un facteur considéré par les modèles de notation de crédit, un solde important peut potentiellement affecter les cotes de crédit.</p>
+<p>L'effet pratique dépend du profil de crédit global de la personne et du modèle de notation utilisé.</p>
+<h2 id="les-avances-de-fonds-sont-mieux-traitees-comme-un-emprunt-durgence">Les avances de fonds sont mieux traitées comme un emprunt d'urgence</h2>
+<p>Une avance de fonds peut fournir un accès à de l'argent lorsque d'autres méthodes de paiement ne sont pas disponibles.</p>
+<p>Par exemple, un voyageur pourrait rencontrer une urgence dans un endroit où les liquidités sont nécessaires et où d'autres options de paiement échouent.</p>
+<p>Cela ne rend pas une avance de fonds peu coûteuse.</p>
+<p>Si elle est inévitable, comprendre les frais, l'APR, les frais de guichet automatique, les frais de transaction à l'étranger, et le calendrier de remboursement peut aider à limiter les dégâts.</p>
+<p>Plus l'avance est remboursée rapidement, moins le solde a généralement de temps pour générer des intérêts.</p>
+<h2 id="envisagez-dautres-facons-dacceder-a-des-liquidites">Envisagez d'autres façons d'accéder à des liquidités</h2>
+<p>Avant d'utiliser une avance de fonds par carte de crédit, examinez si une autre source de fonds est disponible.</p>
+<p>Selon les circonstances, les alternatives pourraient inclure :</p>
+<ul>
+<li>Un retrait par carte de débit</li>
+<li>Un transfert de compte bancaire</li>
+<li>Une carte de voyage dédiée</li>
+<li>Une épargne d'urgence</li>
+<li>Un prêt personnel</li>
+<li>Une marge de crédit bancaire ou de coopérative de crédit</li>
+</ul>
+<p>Chaque option a ses propres coûts et exigences d'admissibilité.</p>
+<p>La comparaison pertinente est le coût total d'obtention de l'argent, et non simplement le fait que la transaction soit pratique.</p>
+<h2 id="lisez-lentente-de-carte-avant-de-voyager">Lisez l'entente de carte avant de voyager</h2>
+<p>Les voyages internationaux sont plus faciles lorsque le titulaire de carte comprend le compte avant de partir.</p>
+<p>Examinez :</p>
+<ul>
+<li>L'APR d'achat</li>
+<li>L'APR d'avance de fonds</li>
+<li>Les frais d'avance de fonds</li>
+<li>Les frais de transaction à l'étranger</li>
+<li>Les frais de guichet automatique</li>
+<li>La limite d'avance de fonds</li>
+<li>Les restrictions de transaction à l'étranger</li>
+<li>Les modalités de conversion de devise</li>
+<li>Les exclusions de récompenses</li>
+<li>Les procédures de fraude et de notification de voyage</li>
+</ul>
+<p>Le CFPB recommande d'examiner les modalités d'une carte de crédit pour comprendre les limites d'avance de fonds, les frais, et les taux d'intérêt applicables.</p>
+<p>Cette préparation peut être particulièrement utile, car certaines transactions internationales peuvent impliquer plusieurs frais différents à la fois.</p>
+<h2 id="surveillez-les-transactions-internationales">Surveillez les transactions internationales</h2>
+<p>Voyager peut augmenter le nombre de transactions inconnues apparaissant sur un relevé de carte de crédit.</p>
+<p>Les titulaires de carte devraient surveiller leurs comptes pour :</p>
+<ul>
+<li>Des transactions en double</li>
+<li>Des montants incorrects</li>
+<li>Des commerçants non reconnus</li>
+<li>Des conversions de devise inattendues</li>
+<li>Des frais inattendus</li>
+<li>Des transactions annulées qui apparaissent encore</li>
+</ul>
+<p>De nombreux émetteurs offrent des alertes de transaction qui peuvent aviser les clients lorsqu'un achat ou un retrait de liquidités se produit.</p>
+<p>Identifier rapidement une activité inhabituelle peut faciliter la communication avec l'émetteur et l'enquête sur une transaction.</p>
+<h2 id="conservez-les-recus-des-achats-a-letranger">Conservez les reçus des achats à l'étranger</h2>
+<p>La conversion de devise peut rendre les relevés internationaux plus difficiles à concilier.</p>
+<p>Un reçu pourrait afficher un montant en euros, en livres, en yens, ou dans une autre devise, tandis que le relevé de carte de crédit affiche plus tard un montant en dollars américains.</p>
+<p>Conserver le reçu original permet au titulaire de carte de comparer :</p>
+<ul>
+<li>Le montant de la transaction d'origine</li>
+<li>La devise de la transaction</li>
+<li>Le montant en dollars converti</li>
+<li>La date d'achat</li>
+<li>Le commerçant</li>
+<li>Tous frais divulgués séparément</li>
+</ul>
+<p>Cela peut être particulièrement utile si une transaction semble sensiblement différente de ce qui était attendu.</p>
+<h2 id="comprendre-la-difference-entre-le-taux-de-change-et-les-frais">Comprendre la différence entre le taux de change et les frais</h2>
+<p>Une erreur courante consiste à traiter le taux de change comme le seul coût de transaction international.</p>
+<p>Considérez un achat hypothétique de 1 000 €.</p>
+<p>Le coût final en dollars dépend d'abord du taux de change.</p>
+<p>Si la carte impose également des frais de transaction à l'étranger, ces frais peuvent augmenter le coût total.</p>
+<p>Si le commerçant effectue sa propre conversion de devise, le taux de change lui-même peut aussi différer du taux que le réseau de la carte aurait autrement utilisé.</p>
+<p>Ce sont des composantes distinctes qui devraient être évaluées séparément.</p>
+<h2 id="comment-reduire-les-couts-internationaux-inutiles-de-carte">Comment réduire les coûts internationaux inutiles de carte</h2>
+<p>Quelques habitudes peuvent faciliter la gestion de l'utilisation internationale de carte de crédit.</p>
+<p><strong>Utilisez une carte avec une structure de frais de transaction à l'étranger appropriée.</strong></p>
+<p>Vérifiez si la carte facture un pourcentage sur les achats à l'étranger.</p>
+<p><strong>Comprenez les modalités d'avance de fonds avant qu'une urgence ne survienne.</strong></p>
+<p>Connaître les frais et l'APR à l'avance peut prévenir les surprises.</p>
+<p><strong>Comparez les montants en devise locale et convertis par le commerçant.</strong></p>
+<p>N'acceptez pas automatiquement la conversion de devise d'un commerçant sans examiner le taux et les modalités.</p>
+<p><strong>Évitez d'utiliser les avances de fonds de carte de crédit pour les dépenses courantes.</strong></p>
+<p>Elles sont généralement plus coûteuses que les achats ordinaires.</p>
+<p><strong>Remboursez rapidement les avances de fonds.</strong></p>
+<p>Les intérêts commencent généralement immédiatement.</p>
+<p><strong>Surveillez le compte pendant le voyage.</strong></p>
+<p>Les alertes de transaction peuvent aider à identifier une activité inattendue.</p>
+<p><strong>Conservez la documentation.</strong></p>
+<p>Les reçus et les registres de transaction facilitent la conciliation du relevé plus tard.</p>
+<h2 id="en-resume">En résumé</h2>
+<p>Les avances de fonds de carte de crédit et les transactions en devises étrangères peuvent toutes deux être utiles, mais elles fonctionnent différemment des achats ordinaires par carte de crédit.</p>
+<p>Une avance de fonds est essentiellement un emprunt à court terme contre une marge de crédit. Elle peut impliquer des frais distincts, un APR plus élevé, et des intérêts commençant immédiatement après le retrait.</p>
+<p>Les transactions en devises étrangères impliquent une conversion de devise en dollars américains, potentiellement combinée à des frais de transaction à l'étranger. Le taux de change utilisé par le réseau de la carte peut différer du taux visible au moment de l'achat, et des frais de transaction à l'étranger peuvent s'appliquer même lorsque la transaction est libellée en dollars américains si le commerçant ou la transaction est autrement admissible.</p>
+<p>L'essentiel est de traiter ces coûts séparément. Avant d'utiliser une carte de crédit à l'étranger, examinez l'APR d'avance de fonds, les frais d'avance de fonds, les frais de transaction à l'étranger, les frais de guichet automatique, le processus de conversion de devise, et les exigences de remboursement.</p>
+<p>Un peu de préparation peut faire la différence entre un paiement international pratique et un solde de carte de crédit inattendument coûteux.</p>
+<div class="references"><h2 id="references">Références</h2>
+<ul>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/can-i-withdraw-money-from-my-credit-card-at-an-atm-en-34/">Consumer Financial Protection Bureau — Avances de fonds de carte de crédit</a> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/can-i-withdraw-money-from-my-credit-card-at-an-atm-en-34/">CFPB : Avances de fonds de carte de crédit</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/data-research/credit-card-data/know-you-owe-credit-cards/credit-card-contract-definitions/">Consumer Financial Protection Bureau — Définitions contractuelles des cartes de crédit</a> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/data-research/credit-card-data/know-you-owe-credit-cards/credit-card-contract-definitions/">CFPB : Définitions contractuelles des cartes de crédit</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/rules-policy/regulations/1026/4/">Consumer Financial Protection Bureau — Frais financiers et frais de transaction à l'étranger</a> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/rules-policy/regulations/1026/4/">CFPB : Frais financiers et frais de transaction à l'étranger</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/rules-policy/regulations/1026/60/">Consumer Financial Protection Bureau — Demandes de carte de crédit et divulgations de frais</a> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/rules-policy/regulations/1026/60/">CFPB : Divulgations de frais de carte de crédit</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/data-research/credit-card-data/know-you-owe-credit-cards/">Consumer Financial Protection Bureau — Know Before You Owe : cartes de crédit</a> <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/data-research/credit-card-data/know-you-owe-credit-cards/">CFPB : Know Before You Owe : cartes de crédit</a></li>
+</ul>
+</div>
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/ethan-kim.webp"
+        alt="Ethan Kim"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Écrit par</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Ethan Kim</p>
+                            <p class="text-sm text-brand-200">Credit Cards &amp; Fintech Analyst</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Ethan covers credit card products, rewards programs, and the digital tools people and businesses use to manage money. With a background in data operations and financial technology, he compares card fees, perks, and fine print, and looks at online banking, budgeting apps, and expense platforms with a focus on practical value rather than marketing claims.</p>
+                                        <a href="/fr/our-team" wire:navigate class="btn-zest relative mt-6">Rencontrez les rédacteurs</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenu à but uniquement pédagogique.</span>
+                    Cet article fournit des informations générales et ne constitue pas un conseil financier, d’investissement, fiscal ou juridique personnalisé.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Continuez à apprendre</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Plus dans Crédit et cartes</h2>
+                    </div>
+                    <a href="/fr/c/credit-cards" wire:navigate class="link-underline text-sm font-semibold text-ink">Tout voir</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/fr/p/credit-card-limits-and-minimum-payments-managing-long-term-costs" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-limits-and-minimum-payments-managing-long-term-costs.webp"
+        alt="Plafonds de carte de crédit et paiements minimums : gérer les coûts à long terme"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédit et cartes
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Plafonds de carte de crédit et paiements minimums : gérer les coûts à long terme
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Le plafond d&#039;une carte de crédit peut sembler trompeusement simple : c&#039;est le solde maximum que l&#039;émetteur vous permet de porter. Le paiement minimum peut sembler tout au...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-12" class="shrink-0">12 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/credit-card-debt-consolidation-strategies-and-solutions" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-debt-consolidation-strategies-and-solutions.webp"
+        alt="Consolidation de dettes de carte de crédit : stratégies et solutions"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédit et cartes
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Consolidation de dettes de carte de crédit : stratégies et solutions
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Porter des soldes sur plusieurs cartes de crédit peut rendre la gestion de la dette plus difficile. Des taux d&#039;intérêt, des dates de paiement, des paiements minimums et d...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-10" class="shrink-0">10 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/secured-credit-cards-how-they-work-and-who-may-consider-one" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/secured-credit-cards-how-they-work-and-who-may-consider-one.webp"
+        alt="Cartes de crédit garanties : comment elles fonctionnent et à qui elles peuvent convenir"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Crédit et cartes
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Cartes de crédit garanties : comment elles fonctionnent et à qui elles peuvent convenir
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Obtenir l&#039;approbation d&#039;une carte de crédit classique peut être difficile lorsqu&#039;un consommateur a peu d&#039;antécédents de crédit, un profil de crédit endommagé ou a connu u...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-08-28" class="shrink-0">28 août 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/fr" wire:navigate aria-label="Accueil de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.
+                </p>
+                <a href="/fr/articles" wire:navigate class="btn-zest mt-7">
+                    Commencer à apprendre
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Thèmes</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/fr/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finances personnelles</a></li>
+                                                    <li><a href="/fr/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestion de patrimoine</a></li>
+                                                    <li><a href="/fr/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Prêts et financement</a></li>
+                                                    <li><a href="/fr/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédit et cartes</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Tous les articles</a></li>
+                        <li><a href="/fr/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Notre équipe éditoriale</a></li>
+                        <li><a href="/fr/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Mentions légales</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="/fr/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Conditions d’utilisation</a></li>
+                        <li><a href="/fr/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Avertissement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Avertissement :</span>
+                Le contenu proposé sur Edufinance.site est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.
+            </p>
+            <p>Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.</p>
+            <p>Edufinance.site ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Tous droits réservés.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="h7h8N0Pq1fYIJv6pnL3XddEfYJzO7dS86QgNWYZo" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

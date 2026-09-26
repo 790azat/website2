@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Prêts à taux fixe vs taux variable : comprendre la différence — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Le taux d&#039;intérêt d&#039;un prêt influence bien plus que le montant des intérêts payés par l&#039;emprunteur. Il peut avoir un impact sur les mensualités, la gestion..." />
+                            <link rel="alternate" hreflang="en" href="/p/fixed-rate-vs-variable-rate-loans-understanding-the-difference" />
+                    <link rel="alternate" hreflang="es" href="/es/p/fixed-rate-vs-variable-rate-loans-understanding-the-difference" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/fixed-rate-vs-variable-rate-loans-understanding-the-difference" />
+                <link rel="alternate" hreflang="x-default" href="/p/fixed-rate-vs-variable-rate-loans-understanding-the-difference" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Des guides gratuits et indépendants sur la banque, l’investissement, les prêts et le crédit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/fr/our-team" wire:navigate class="transition hover:text-white">Notre équipe</a>
+                <a href="/fr/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/fixed-rate-vs-variable-rate-loans-understanding-the-difference"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/fixed-rate-vs-variable-rate-loans-understanding-the-difference"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/fixed-rate-vs-variable-rate-loans-understanding-the-difference"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="shrink-0" aria-label="Accueil de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/fr" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Accueil</a>
+                            <a href="/fr/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finances personnelles</a>
+                            <a href="/fr/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestion de patrimoine</a>
+                            <a href="/fr/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Prêts et financement</a>
+                            <a href="/fr/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédit et cartes</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/fr/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Tous les articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/fr" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Tous les articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Thèmes</p>
+                            <a href="/fr/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finances personnelles
+                </a>
+                            <a href="/fr/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestion de patrimoine
+                </a>
+                            <a href="/fr/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Prêts et financement
+                </a>
+                            <a href="/fr/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédit et cartes
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">À propos</p>
+            <a href="/fr/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Notre équipe</a>
+            <a href="/fr/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Fil d’Ariane">
+                <a href="/fr" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Accueil
+                </a>
+                <span class="text-line">/</span>
+                <a href="/fr/c/loans-financing" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Prêts et financement</a>
+            </nav>
+
+            <a href="/fr/c/loans-financing" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M7.605 2.112a.75.75 0 0 1 .79 0l5.25 3.25A.75.75 0 0 1 13 6.707V12.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.707a.75.75 0 0 1-.645-1.345l5.25-3.25ZM4.5 8.75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 8a.75.75 0 0 0-.75.75v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 8 8Zm2 .75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
+</svg>
+
+                        Prêts et financement
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Prêts à taux fixe vs taux variable : comprendre la différence
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/fr/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Lucas Vance</span>
+                        <span class="text-muted">Lending &amp; Borrowing Analyst</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2025-10-27">27 octobre 2025</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            16 min de lecture
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/fixed-rate-vs-variable-rate-loans-understanding-the-difference.webp" alt="Prêts à taux fixe vs taux variable : comprendre la différence" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="Dans cet article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">Dans cet article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#quest-ce-quun-pret-a-taux-fixe" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;est-ce qu&#039;un prêt à taux fixe ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quest-ce-quun-pret-a-taux-variable" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qu&#039;est-ce qu&#039;un prêt à taux variable ?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-evoluent-les-taux-variables" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment évoluent les taux variables</a>
+                                </li>
+                                                            <li>
+                                    <a href="#taux-fixe-vs-taux-variable" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Taux fixe vs taux variable</a>
+                                </li>
+                                                            <li>
+                                    <a href="#pourquoi-les-taux-fixes-peuvent-faciliter-la-budgetisation" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Pourquoi les taux fixes peuvent faciliter la budgétisation</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-taux-variables-peuvent-baisser" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les taux variables peuvent baisser</a>
+                                </li>
+                                                            <li>
+                                    <a href="#le-risque-de-hausse-des-taux-dinteret" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Le risque de hausse des taux d&#039;intérêt</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-plafonds-de-taux-limitent-certains-ajustements" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les plafonds de taux limitent certains ajustements</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-taux-promotionnels-initiaux-necessitent-un-examen-attentif" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les taux promotionnels initiaux nécessitent un examen attentif</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-prets-a-taux-fixe-peuvent-couter-plus-cher-au-depart" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les prêts à taux fixe peuvent coûter plus cher au départ</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-duree-du-pret-modifie-limportance-du-risque-de-taux" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La durée du prêt modifie l&#039;importance du risque de taux</a>
+                                </li>
+                                                            <li>
+                                    <a href="#prets-personnels-les-taux-fixes-sont-courants" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Prêts personnels : les taux fixes sont courants</a>
+                                </li>
+                                                            <li>
+                                    <a href="#prets-automobiles-et-taux-fixes" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Prêts automobiles et taux fixes</a>
+                                </li>
+                                                            <li>
+                                    <a href="#prets-hypothecaires-taux-fixe-vs-taux-ajustable" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Prêts hypothécaires : taux fixe vs taux ajustable</a>
+                                </li>
+                                                            <li>
+                                    <a href="#heloc-et-taux-variables" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">HELOC et taux variables</a>
+                                </li>
+                                                            <li>
+                                    <a href="#les-prets-commerciaux-peuvent-utiliser-lune-ou-lautre-structure" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Les prêts commerciaux peuvent utiliser l&#039;une ou l&#039;autre structure</a>
+                                </li>
+                                                            <li>
+                                    <a href="#comment-comparer-le-cout-total" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Comment comparer le coût total</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quand-un-taux-variable-exige-plus-de-prudence" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Quand un taux variable exige plus de prudence</a>
+                                </li>
+                                                            <li>
+                                    <a href="#quand-un-taux-fixe-peut-etre-utile" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Quand un taux fixe peut être utile</a>
+                                </li>
+                                                            <li>
+                                    <a href="#le-refinancement-peut-changer-la-donne" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Le refinancement peut changer la donne</a>
+                                </li>
+                                                            <li>
+                                    <a href="#questions-a-poser-avant-de-choisir-une-structure-de-taux" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Questions à poser avant de choisir une structure de taux</a>
+                                </li>
+                                                            <li>
+                                    <a href="#un-exemple-concret-de-comparaison" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Un exemple concret de comparaison</a>
+                                </li>
+                                                            <li>
+                                    <a href="#lire-le-contrat-de-pret" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Lire le contrat de prêt</a>
+                                </li>
+                                                            <li>
+                                    <a href="#construire-une-strategie-de-taux-adaptee-a-votre-situation-financiere" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Construire une stratégie de taux adaptée à votre situation financière</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Le taux d'intérêt d'un prêt influence bien plus que le montant des intérêts payés par l'emprunteur. Il peut avoir un impact sur les mensualités, la gestion du budget, les décisions de refinancement et le coût total de l'emprunt sur plusieurs années.</p>
+<p>Deux structures de taux fondamentales existent : les <strong>prêts à taux fixe</strong> et les <strong>prêts à taux variable</strong>.</p>
+<p>Un prêt à taux fixe conserve généralement le taux d'intérêt indiqué inchangé pendant toute la durée du prêt applicable. Un prêt à taux variable peut évoluer périodiquement selon les termes de l'accord, généralement en fonction d'un indice de référence auquel s'ajoute une marge définie par le prêteur.</p>
+<p>Cette distinction devient particulièrement importante lors d'un emprunt sur une longue période. Une faible variation du taux d'intérêt peut avoir un effet significatif sur le montant que l'emprunteur finira par payer.</p>
+<p>Comprendre le fonctionnement de chaque structure — et la manière dont la mensualité pourrait évoluer selon différentes conditions économiques — peut faciliter l'évaluation d'un prêt avant de le signer.</p>
+<h2 id="quest-ce-quun-pret-a-taux-fixe">Qu'est-ce qu'un prêt à taux fixe ?</h2>
+<p>Un prêt à taux fixe a un taux d'intérêt qui reste inchangé pendant toute la période spécifiée dans le contrat de prêt.</p>
+<p>Si un emprunteur souscrit un prêt personnel de cinq ans à un taux fixe de 10 %, le taux d'intérêt ne passe pas à 11 % ou à 8 % simplement parce que les taux du marché changent.</p>
+<p>Le calendrier de paiement de l'emprunteur est généralement établi au moment de l'origination du prêt.</p>
+<p>Les taux fixes sont courants dans des produits tels que :</p>
+<ul>
+<li>Les prêts hypothécaires à taux fixe</li>
+<li>Les prêts personnels</li>
+<li>Les prêts automobiles</li>
+<li>Certains prêts étudiants</li>
+<li>Certains prêts commerciaux</li>
+<li>Certains prêts sur valeur domiciliaire (home equity loans)</li>
+</ul>
+<p>La structure exacte varie selon le prêteur et le produit, mais la caractéristique centrale est la stabilité du taux.</p>
+<h2 id="quest-ce-quun-pret-a-taux-variable">Qu'est-ce qu'un prêt à taux variable ?</h2>
+<p>Un prêt à taux variable a un taux d'intérêt qui peut évoluer pendant la période de remboursement.</p>
+<p>Le taux repose généralement sur deux composantes :</p>
+<p><strong>Indice de référence + marge du prêteur = taux d'intérêt applicable</strong></p>
+<p>L'indice de référence est un repère utilisé pour déterminer comment le taux évolue.</p>
+<p>Le contrat de prêt précise généralement :</p>
+<ul>
+<li>Quel indice est utilisé</li>
+<li>La marge du prêteur</li>
+<li>La fréquence à laquelle le taux peut changer</li>
+<li>Les éventuelles limites d'ajustement périodique</li>
+<li>Un éventuel plafond de taux à vie</li>
+<li>Comment les changements de paiement sont calculés</li>
+</ul>
+<p>L'emprunteur doit donc comprendre non seulement le taux d'intérêt actuel, mais aussi les règles régissant les ajustements futurs.</p>
+<h2 id="comment-evoluent-les-taux-variables">Comment évoluent les taux variables</h2>
+<p>Supposons qu'un prêt soit tarifé sur la base d'un indice plus une marge de 3 %.</p>
+<p>Si l'indice applicable est de 4 %, le taux du prêt pourrait être de 7 %.</p>
+<p>Si l'indice grimpe ensuite à 6 %, le prêt pourrait s'ajuster à 9 %, sous réserve des règles d'ajustement et des plafonds prévus par l'accord.</p>
+<p>Si l'indice baisse, le taux peut également diminuer.</p>
+<p>Le calendrier et l'ampleur du changement dépendent du prêt spécifique.</p>
+<p>Par exemple, certains prêts à taux variable s'ajustent mensuellement, tandis que d'autres s'ajustent annuellement ou selon un autre calendrier.</p>
+<p>Les documents du prêt déterminent les modalités réelles.</p>
+<h2 id="taux-fixe-vs-taux-variable">Taux fixe vs taux variable</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Caractéristique</th>
+<th>Prêt à taux fixe</th>
+<th>Prêt à taux variable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Taux initial</td>
+<td>Fixé selon le contrat</td>
+<td>Peut varier</td>
+</tr>
+<tr>
+<td>Mensualité</td>
+<td>Généralement plus prévisible</td>
+<td>Peut changer</td>
+</tr>
+<tr>
+<td>Exposition à la hausse des taux</td>
+<td>Plus faible</td>
+<td>Plus élevée</td>
+</tr>
+<tr>
+<td>Bénéfice en cas de baisse des taux</td>
+<td>Nécessite généralement un refinancement ou un autre ajustement contractuel</td>
+<td>Le taux peut baisser</td>
+</tr>
+<tr>
+<td>Budgétisation</td>
+<td>Plus facile à prévoir</td>
+<td>Nécessite de la flexibilité</td>
+</tr>
+<tr>
+<td>Incertitude à long terme</td>
+<td>Plus faible</td>
+<td>Plus élevée</td>
+</tr>
+<tr>
+<td>Structure courante</td>
+<td>Prêts hypothécaires, prêts automobiles, prêts personnels</td>
+<td>HELOC, certains prêts hypothécaires, crédit commercial</td>
+</tr>
+</tbody>
+</table></div>
+<p>Les caractéristiques exactes dépendent du contrat de prêt particulier.</p>
+<h2 id="pourquoi-les-taux-fixes-peuvent-faciliter-la-budgetisation">Pourquoi les taux fixes peuvent faciliter la budgétisation</h2>
+<p>La prévisibilité est l'un des principaux avantages de l'emprunt à taux fixe.</p>
+<p>Si un ménage a un prêt hypothécaire à taux fixe, il peut généralement prévoir la portion principal et intérêts de la mensualité pendant toute la durée du prêt.</p>
+<p>Cela facilite la planification financière à long terme.</p>
+<p>Une entreprise peut également bénéficier d'un service de la dette prévisible lorsqu'elle prévoit ses dépenses d'exploitation et ses flux de trésorerie.</p>
+<p>Cependant, une mensualité hypothécaire fixe ne signifie pas nécessairement que l'ensemble du paiement du logement reste inchangé.</p>
+<p>Les taxes foncières, l'assurance habitation, l'assurance hypothécaire et les exigences de compte séquestre (escrow) peuvent évoluer indépendamment du taux d'intérêt hypothécaire.</p>
+<p>La distinction se situe donc entre un <strong>taux d'intérêt</strong> fixe et une dépense du ménage entièrement fixe.</p>
+<h2 id="les-taux-variables-peuvent-baisser">Les taux variables peuvent baisser</h2>
+<p>L'emprunt à taux variable comporte un avantage potentiel important : l'emprunteur peut bénéficier d'une baisse du repère de référence concerné.</p>
+<p>Supposons qu'un prêt à taux variable débute à 8 %.</p>
+<p>Si l'indice de référence baisse par la suite et que le prêt s'ajuste à la baisse selon ses termes, l'emprunteur pourrait voir son taux d'intérêt diminuer et potentiellement ses mensualités baisser.</p>
+<p>Un emprunteur à taux fixe ne bénéficie généralement pas automatiquement de cet avantage.</p>
+<p>Au lieu de cela, un emprunteur avec un prêt à taux fixe devrait généralement refinancer ou utiliser un autre mécanisme contractuel pour obtenir un taux différent.</p>
+<p>Cette flexibilité peut rendre l'emprunt à taux variable attrayant dans certaines circonstances, mais elle s'accompagne d'une plus grande incertitude.</p>
+<h2 id="le-risque-de-hausse-des-taux-dinteret">Le risque de hausse des taux d'intérêt</h2>
+<p>La principale préoccupation liée à la dette à taux variable est que le taux peut augmenter.</p>
+<p>Considérons un emprunteur avec un solde de 100 000 $.</p>
+<p>Si le taux applicable passe de 6 % à 9 %, la charge d'intérêts annuelle selon un calcul d'intérêt simple passerait d'environ 6 000 $ à 9 000 $, avant prise en compte de l'amortissement ou d'autres mécanismes du prêt.</p>
+<p>L'augmentation réelle de la mensualité dépend de la structure du prêt.</p>
+<p>Pour un prêt important ou à long terme, même des variations de taux relativement modestes peuvent avoir un effet financier substantiel.</p>
+<p>Les emprunteurs devraient donc examiner s'ils pourraient assumer la mensualité à un taux nettement plus élevé.</p>
+<h2 id="les-plafonds-de-taux-limitent-certains-ajustements">Les plafonds de taux limitent certains ajustements</h2>
+<p>Les prêts à taux variable peuvent inclure des <strong>plafonds de taux</strong> (rate caps).</p>
+<p>Ces dispositions limitent l'ampleur de la variation possible du taux d'intérêt.</p>
+<p>Un prêt peut préciser :</p>
+<ul>
+<li>Une augmentation maximale à chaque ajustement</li>
+<li>Un taux maximal à vie</li>
+<li>Un taux minimal ou plancher</li>
+</ul>
+<p>La présence d'un plafond ne signifie pas que la mensualité ne peut pas augmenter substantiellement.</p>
+<p>Par exemple, un prêt qui démarre à 6 % et dispose d'un plafond périodique de 2 points de pourcentage pourrait potentiellement grimper à 8 % lors d'un ajustement, sous réserve des autres conditions de l'accord.</p>
+<p>L'emprunteur devrait identifier le taux maximal possible et comprendre comment il affecterait la mensualité.</p>
+<h2 id="les-taux-promotionnels-initiaux-necessitent-un-examen-attentif">Les taux promotionnels initiaux nécessitent un examen attentif</h2>
+<p>Certains prêts à taux variable annoncent un taux initial inférieur au taux qui pourrait s'appliquer par la suite.</p>
+<p>Ce taux promotionnel initial peut faire paraître le prêt peu coûteux au premier abord.</p>
+<p>Cependant, les emprunteurs devraient déterminer :</p>
+<ul>
+<li>La durée du taux promotionnel</li>
+<li>Quel indice détermine le taux ultérieur</li>
+<li>Quelle marge s'applique</li>
+<li>Quand survient le premier ajustement</li>
+<li>La fréquence des ajustements</li>
+<li>S'il existe un plafond</li>
+<li>Quel est le taux maximal potentiel</li>
+</ul>
+<p>Un faible taux initial n'est qu'une partie de la structure de financement.</p>
+<p>L'emprunteur devrait comprendre le taux qui pourrait s'appliquer une fois la période promotionnelle terminée.</p>
+<h2 id="les-prets-a-taux-fixe-peuvent-couter-plus-cher-au-depart">Les prêts à taux fixe peuvent coûter plus cher au départ</h2>
+<p>Les prêts à taux fixe peuvent parfois comporter un taux initial plus élevé que les alternatives à taux variable.</p>
+<p>Cette différence représente, en partie, la valeur de la certitude du taux.</p>
+<p>Un emprunteur peut payer davantage au départ en échange d'une protection contre de futures hausses de taux.</p>
+<p>Par exemple :</p>
+<p><strong>Taux fixe :</strong> 7,5 %</p>
+<p><strong>Taux variable :</strong> 6,5 %</p>
+<p>Le prêt à taux variable peut initialement coûter moins cher.</p>
+<p>Mais si son taux grimpe ensuite à 9 %, l'avantage initial pourrait disparaître.</p>
+<p>À l'inverse, si les taux du marché baissent et que le prêt à taux variable descend à 5,5 %, l'emprunteur à taux variable pourrait en bénéficier.</p>
+<p>L'évolution future des taux est incertaine, c'est pourquoi la capacité de l'emprunteur à absorber les changements est importante.</p>
+<h2 id="la-duree-du-pret-modifie-limportance-du-risque-de-taux">La durée du prêt modifie l'importance du risque de taux</h2>
+<p>La structure du taux devient de plus en plus importante à mesure que la période de remboursement s'allonge.</p>
+<p>Un prêt à taux variable à court terme peut avoir une exposition relativement limitée aux variations de taux.</p>
+<p>Un prêt à taux variable à long terme peut connaître de multiples ajustements sur plusieurs années.</p>
+<p>Cela concerne particulièrement les prêts hypothécaires et le financement commercial.</p>
+<p>Un emprunteur devrait tenir compte non seulement du taux actuel, mais aussi de la durée pendant laquelle la dette devrait rester en cours.</p>
+<h2 id="prets-personnels-les-taux-fixes-sont-courants">Prêts personnels : les taux fixes sont courants</h2>
+<p>De nombreux prêts personnels non garantis utilisent des taux d'intérêt fixes.</p>
+<p>Cette structure permet aux emprunteurs de connaître la mensualité prévue dès l'origination du prêt.</p>
+<p>Par exemple, un prêt personnel de 15 000 $ à taux fixe avec une période de remboursement définie peut être intégré dans un budget familial avec des paiements de principal et d'intérêts relativement prévisibles.</p>
+<p>Des prêts personnels à taux variable existent, mais leur disponibilité et leur structure dépendent du prêteur.</p>
+<p>Les emprunteurs devraient lire le contrat de prêt plutôt que de supposer que tous les prêts personnels utilisent la même structure de taux.</p>
+<h2 id="prets-automobiles-et-taux-fixes">Prêts automobiles et taux fixes</h2>
+<p>Les prêts automobiles sont couramment proposés avec des taux d'intérêt fixes.</p>
+<p>Un prêt automobile à taux fixe peut offrir une mensualité de principal et d'intérêts prévisible pendant toute la période de remboursement.</p>
+<p>Cela peut faciliter la comparaison des offres de financement.</p>
+<p>Les emprunteurs devraient tout de même évaluer les frais de financement totaux, car une durée plus longue peut augmenter le total des intérêts même lorsque le taux est fixe.</p>
+<p>Le prix d'achat du véhicule, l'acompte, la valeur de reprise, les taxes, les frais, les produits optionnels, le TAEG (APR) et la durée du prêt contribuent tous au coût total.</p>
+<h2 id="prets-hypothecaires-taux-fixe-vs-taux-ajustable">Prêts hypothécaires : taux fixe vs taux ajustable</h2>
+<p>Les prêts hypothécaires offrent l'un des exemples les plus clairs de cette distinction.</p>
+<p>Un <strong>prêt hypothécaire à taux fixe</strong> conserve généralement le taux d'intérêt contractuel inchangé pendant toute la durée du prêt.</p>
+<p>Un <strong>prêt hypothécaire à taux ajustable (ARM)</strong> commence généralement par une période à taux fixe, puis s'ajuste selon les termes du prêt.</p>
+<p>Par exemple, un ARM pourrait avoir un taux fixe pendant une période initiale avant de passer à des ajustements périodiques.</p>
+<p>Le CFPB explique que le taux futur d'un ARM dépend généralement d'un indice plus une marge, et que les termes du prêt précisent quand les ajustements surviennent et de combien le taux peut varier. (<a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-an-adjustable-rate-mortgage-en-194/">consumerfinance.gov</a>)</p>
+<p>Cela fait du taux initial une simple composante de l'analyse hypothécaire.</p>
+<h2 id="heloc-et-taux-variables">HELOC et taux variables</h2>
+<p>Les lignes de crédit sur valeur domiciliaire (HELOC) utilisent fréquemment des taux d'intérêt variables.</p>
+<p>Comme une HELOC peut permettre aux emprunteurs de puiser dans les fonds et de les rembourser pendant une période de tirage, le solde lui-même peut évoluer en plus du taux d'intérêt.</p>
+<p>Un propriétaire pourrait donc faire face à deux variables :</p>
+<p><strong>Le montant emprunté</strong></p>
+<p>et</p>
+<p><strong>Le taux d'intérêt applicable</strong></p>
+<p>Cette combinaison peut rendre les paiements futurs plus difficiles à prévoir.</p>
+<p>Le CFPB conseille aux emprunteurs de HELOC de comprendre comment le taux d'intérêt est déterminé, à quelle fréquence il peut changer, et si le prêt comporte des plafonds de taux. (<a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-en-247/">consumerfinance.gov</a>)</p>
+<h2 id="les-prets-commerciaux-peuvent-utiliser-lune-ou-lautre-structure">Les prêts commerciaux peuvent utiliser l'une ou l'autre structure</h2>
+<p>Les entreprises peuvent rencontrer des financements à taux fixe et à taux variable.</p>
+<p>Un prêt commercial à taux fixe peut simplifier les prévisions de trésorerie, car les paiements de dette prévus sont plus prévisibles.</p>
+<p>Un prêt à taux variable peut initialement offrir une tarification différente et peut devenir moins coûteux si les taux du marché baissent.</p>
+<p>Les entreprises devraient évaluer le risque de taux parallèlement à la volatilité de leurs revenus.</p>
+<p>Une entreprise dont les flux de trésorerie sont très prévisibles peut avoir une plus grande capacité à absorber l'évolution des coûts de la dette qu'une entreprise saisonnière dont les revenus fluctuent considérablement.</p>
+<p>Pour la dette commerciale à taux variable, la direction devrait modéliser des scénarios de taux plus élevés avant d'emprunter.</p>
+<h2 id="comment-comparer-le-cout-total">Comment comparer le coût total</h2>
+<p>Le taux d'intérêt seul ne détermine pas le coût d'un prêt.</p>
+<p>Les emprunteurs devraient également considérer :</p>
+<ul>
+<li>Le TAEG (APR)</li>
+<li>Les frais d'origination</li>
+<li>Les frais de clôture</li>
+<li>La période de remboursement</li>
+<li>Les dispositions de remboursement anticipé</li>
+<li>Les règles d'ajustement de taux</li>
+<li>Les plafonds de taux</li>
+<li>Le solde du prêt</li>
+<li>La mensualité</li>
+</ul>
+<p>Pour les prêts à taux variable, l'emprunteur devrait estimer le coût selon plusieurs taux potentiels.</p>
+<p>Par exemple :</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Scénario</th>
+<th>Taux d'intérêt</th>
+<th>Intérêts annuels approximatifs sur 50 000 $*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scénario à taux bas</td>
+<td>5 %</td>
+<td>2 500 $</td>
+</tr>
+<tr>
+<td>Taux initial</td>
+<td>7 %</td>
+<td>3 500 $</td>
+</tr>
+<tr>
+<td>Scénario à taux élevé</td>
+<td>9 %</td>
+<td>4 500 $</td>
+</tr>
+<tr>
+<td>Scénario de tension</td>
+<td>11 %</td>
+<td>5 500 $</td>
+</tr>
+</tbody>
+</table></div>
+<p>*Illustration simple avant amortissement du principal et autres mécanismes du prêt.</p>
+<p>Ce n'est pas un calendrier de paiement. Cela démontre comment le coût des intérêts évolue avec le taux.</p>
+<h2 id="quand-un-taux-variable-exige-plus-de-prudence">Quand un taux variable exige plus de prudence</h2>
+<p>Un emprunteur peut vouloir accorder une attention particulière au financement à taux variable lorsque :</p>
+<ul>
+<li>Le solde du prêt est important</li>
+<li>La période de remboursement est longue</li>
+<li>Les flux de trésorerie du ménage sont serrés</li>
+<li>Les revenus de l'entreprise sont imprévisibles</li>
+<li>Le taux peut s'ajuster fréquemment</li>
+<li>L'épargne d'urgence est faible</li>
+<li>Le taux maximal est nettement supérieur au taux de départ</li>
+</ul>
+<p>La question importante est de savoir si l'emprunteur pourrait encore effectuer ses paiements si le taux augmentait sensiblement.</p>
+<p>Un prêt ne devrait pas être évalué en supposant uniquement que les taux resteront au niveau actuel.</p>
+<h2 id="quand-un-taux-fixe-peut-etre-utile">Quand un taux fixe peut être utile</h2>
+<p>Le financement à taux fixe peut offrir une plus grande prévisibilité lorsque :</p>
+<ul>
+<li>L'emprunteur prévoit de conserver la dette pendant plusieurs années</li>
+<li>La certitude budgétaire est importante</li>
+<li>La mensualité s'intègre déjà confortablement dans le budget</li>
+<li>L'emprunteur ne souhaite pas surveiller les variations de taux</li>
+<li>Le solde du prêt est substantiel</li>
+<li>Les revenus futurs sont relativement incertains</li>
+</ul>
+<p>Un taux fixe peut fonctionner comme une forme de protection contre de futures hausses des taux d'intérêt.</p>
+<p>L'emprunteur paie cette certitude via le taux proposé à l'origination.</p>
+<h2 id="le-refinancement-peut-changer-la-donne">Le refinancement peut changer la donne</h2>
+<p>Un emprunteur à taux fixe peut éventuellement refinancer si les taux du marché baissent suffisamment.</p>
+<p>Cependant, le refinancement implique des coûts et ne garantit pas que l'emprunteur économisera de l'argent.</p>
+<p>Les dépenses potentielles peuvent inclure :</p>
+<ul>
+<li>Des frais de dossier</li>
+<li>Des frais d'évaluation</li>
+<li>Des services de titre</li>
+<li>Des frais d'origination</li>
+<li>Des frais de clôture</li>
+<li>Des frais de remboursement anticipé sur le prêt existant, le cas échéant</li>
+</ul>
+<p>L'emprunteur devrait calculer la période de rentabilité (break-even) et considérer combien de temps il compte conserver le nouveau prêt.</p>
+<p>Un emprunteur à taux variable peut voir son taux d'intérêt baisser automatiquement selon les règles d'ajustement du prêt, mais cet avantage n'est pas garanti.</p>
+<h2 id="questions-a-poser-avant-de-choisir-une-structure-de-taux">Questions à poser avant de choisir une structure de taux</h2>
+<p>Avant d'accepter un prêt, demandez :</p>
+<p><strong>Le taux d'intérêt est-il fixe pour toute la durée ?</strong></p>
+<p><strong>S'il est variable, quel indice est utilisé ?</strong></p>
+<p><strong>Quelle marge le prêteur ajoute-t-il à l'indice ?</strong></p>
+<p><strong>À quelle fréquence le taux peut-il changer ?</strong></p>
+<p><strong>Quand le premier ajustement peut-il survenir ?</strong></p>
+<p><strong>Y a-t-il un taux promotionnel initial ?</strong></p>
+<p><strong>Quels sont les plafonds périodiques et à vie ?</strong></p>
+<p><strong>Quel est le taux le plus élevé possible ?</strong></p>
+<p><strong>Comment ma mensualité changerait-elle à ce taux ?</strong></p>
+<p><strong>Y a-t-il des frais pour refinancer ou rembourser le prêt par anticipation ?</strong></p>
+<p><strong>Quel est le coût total selon plusieurs scénarios de taux ?</strong></p>
+<p>Ces questions peuvent révéler des risques qui ne sont pas évidents à partir du taux annoncé initial.</p>
+<h2 id="un-exemple-concret-de-comparaison">Un exemple concret de comparaison</h2>
+<p>Imaginons deux prêts de 30 000 $ avec des périodes de remboursement de cinq ans.</p>
+<h3>Option à taux fixe</h3>
+<ul>
+<li>Taux de départ : 8 %</li>
+<li>Le taux reste fixe</li>
+<li>Paiements prévus prévisibles</li>
+</ul>
+<h3>Option à taux variable</h3>
+<ul>
+<li>Taux de départ : 6,5 %</li>
+<li>Le taux peut s'ajuster selon l'accord</li>
+<li>La mensualité peut changer</li>
+</ul>
+<p>Si le taux variable reste inférieur au taux fixe pendant toute la période de remboursement, l'emprunteur pourrait payer moins d'intérêts.</p>
+<p>Si le taux variable augmente considérablement, le prêt à taux fixe pourrait finalement produire un coût total inférieur.</p>
+<p>Aucun résultat n'est garanti.</p>
+<p>L'analyse appropriée dépend du niveau de risque de taux que l'emprunteur est prêt à accepter et de la durée pendant laquelle la dette devrait rester en cours.</p>
+<h2 id="lire-le-contrat-de-pret">Lire le contrat de prêt</h2>
+<p>Les détails les plus importants sont souvent enfouis dans les documents de financement.</p>
+<p>Pour un prêt à taux fixe, vérifiez que le taux reste fixe pendant la période prévue.</p>
+<p>Pour un prêt à taux variable, localisez la section expliquant :</p>
+<ul>
+<li>L'indice</li>
+<li>La marge</li>
+<li>Les dates d'ajustement</li>
+<li>Le taux initial</li>
+<li>Le plafond périodique</li>
+<li>Le plafond à vie</li>
+<li>Le plancher</li>
+<li>Le calcul du paiement</li>
+<li>Les options de conversion, le cas échéant</li>
+</ul>
+<p>Ne vous fiez pas exclusivement à la description du vendeur ou à une publicité.</p>
+<p>Le contrat détermine les conditions d'emprunt réelles.</p>
+<h2 id="construire-une-strategie-de-taux-adaptee-a-votre-situation-financiere">Construire une stratégie de taux adaptée à votre situation financière</h2>
+<p>Les prêts à taux fixe et à taux variable représentent des approches différentes du risque de taux d'intérêt.</p>
+<p>Un prêt à taux fixe transfère une plus grande partie de cette incertitude hors de l'emprunteur. L'emprunteur accepte le taux indiqué en échange de la prévisibilité des paiements.</p>
+<p>Un prêt à taux variable laisse plus d'exposition à l'emprunteur. Le taux initial peut être plus bas, et l'emprunteur peut potentiellement bénéficier d'une baisse du taux de référence, mais les paiements peuvent augmenter si les taux montent.</p>
+<p>Ce compromis devient particulièrement important pour une dette à long terme ou à solde élevé.</p>
+<p>Avant de choisir, les emprunteurs devraient calculer la mensualité au taux actuel et selon plusieurs scénarios de taux plus élevés. Ils devraient également considérer combien de temps ils comptent conserver le prêt et si leurs revenus et réserves de trésorerie pourraient absorber une mensualité plus élevée.</p>
+<p>Pour le financement à taux fixe, l'analyse devrait se concentrer sur le taux, les frais, la période de remboursement et les coûts de refinancement potentiels.</p>
+<p>Pour le financement à taux variable, l'analyse devrait aller plus loin en examinant l'indice, la marge, le calendrier d'ajustement, les plafonds et le paiement maximal potentiel.</p>
+<p>En fin de compte, la différence entre le financement à taux fixe et à taux variable n'est pas simplement de savoir si le taux d'intérêt peut changer. Il s'agit de savoir <strong>qui porte le risque des futurs mouvements des taux d'intérêt</strong>.</p>
+<p>Comprendre ce risque avant d'emprunter peut faire la différence entre une mensualité qui reste gérable et une mensualité qui devient difficile lorsque les conditions économiques changent.</p>
+<div class="references"><h2 id="references">Références</h2>
+<ul>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-an-adjustable-rate-mortgage-en-194/">Consumer Financial Protection Bureau — Prêts hypothécaires à taux ajustable</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-en-247/">Consumer Financial Protection Bureau — Lignes de crédit sur valeur domiciliaire</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-loan-interest-rate-and-the-apr-en-733/">Consumer Financial Protection Bureau — Taux d'intérêt vs TAEG</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/do-personal-installment-loans-have-fees-en-2120/">Consumer Financial Protection Bureau — Frais des prêts personnels à tempérament</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.federalreserve.gov/consumerscommunities/consumercredit.htm">Réserve fédérale — Crédit à la consommation</a></li>
+</ul>
+</div>
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Écrit par</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Lucas Vance</p>
+                            <p class="text-sm text-brand-200">Lending &amp; Borrowing Analyst</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Lucas specializes in consumer and real estate lending. With a background in retail banking analysis and loan advisory, his work helps readers weigh the true cost of borrowing, from mortgages, home equity, and refinancing to auto, personal, and student loans, and compare rates, terms, and fees before they sign.</p>
+                                        <a href="/fr/our-team" wire:navigate class="btn-zest relative mt-6">Rencontrez les rédacteurs</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenu à but uniquement pédagogique.</span>
+                    Cet article fournit des informations générales et ne constitue pas un conseil financier, d’investissement, fiscal ou juridique personnalisé.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Continuez à apprendre</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Plus dans Prêts et financement</h2>
+                    </div>
+                    <a href="/fr/c/loans-financing" wire:navigate class="link-underline text-sm font-semibold text-ink">Tout voir</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/fr/p/bankruptcy-basics-understanding-types-and-financial-impact" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bankruptcy-basics-understanding-types-and-financial-impact.webp"
+        alt="Notions de base sur la faillite : comprendre les types et l&#039;impact financier"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Notions de base sur la faillite : comprendre les types et l&#039;impact financier
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">La faillite est un processus juridique fédéral conçu pour répondre aux situations dans lesquelles des particuliers ou des entreprises ne peuvent pas respecter leurs oblig...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-21" class="shrink-0">21 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/bad-credit-loans-what-borrowers-should-know-before-applying" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bad-credit-loans-what-borrowers-should-know-before-applying.webp"
+        alt="Prêts pour mauvais crédit : ce que les emprunteurs devraient savoir avant de faire une demande"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Prêts pour mauvais crédit : ce que les emprunteurs devraient savoir avant de faire une demande
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Avoir une cote de crédit plus basse peut rendre l&#039;emprunt plus difficile, mais cela n&#039;élimine pas nécessairement toutes les options de financement. Les prêteurs utilisent...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-14" class="shrink-0">14 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/fr/p/mortgage-refinancing-how-replacing-an-existing-home-loan-works" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/mortgage-refinancing-how-replacing-an-existing-home-loan-works.webp"
+        alt="Refinancement hypothécaire : comment fonctionne le remplacement d&#039;un prêt immobilier existant"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Prêts et financement
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Refinancement hypothécaire : comment fonctionne le remplacement d&#039;un prêt immobilier existant
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Un prêt hypothécaire n&#039;est pas nécessairement figé jusqu&#039;à la vente du logement. Les propriétaires peuvent remplacer un prêt hypothécaire existant par un nouveau prêt grâ...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Lucas Vance</span>
+                    </span>
+                    <time datetime="2026-09-03" class="shrink-0">3 sept. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/fr" wire:navigate aria-label="Accueil de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Des guides clairs et fondés sur la recherche consacrés à la banque, à l’investissement, à l’emprunt et au crédit, pour vous aider à prendre vos décisions financières en toute confiance.
+                </p>
+                <a href="/fr/articles" wire:navigate class="btn-zest mt-7">
+                    Commencer à apprendre
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Thèmes</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/fr/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finances personnelles</a></li>
+                                                    <li><a href="/fr/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestion de patrimoine</a></li>
+                                                    <li><a href="/fr/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Prêts et financement</a></li>
+                                                    <li><a href="/fr/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédit et cartes</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Tous les articles</a></li>
+                        <li><a href="/fr/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Notre équipe éditoriale</a></li>
+                        <li><a href="/fr/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Mentions légales</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/fr/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="/fr/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Conditions d’utilisation</a></li>
+                        <li><a href="/fr/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Avertissement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Avertissement :</span>
+                Le contenu proposé sur Edufinance.site est fourni à titre informatif et éducatif uniquement et ne doit pas être interprété comme un conseil financier, juridique ou fiscal professionnel. Les créateurs et rédacteurs de ce site ne sont pas des conseillers financiers agréés.
+            </p>
+            <p>Investir comporte des risques, y compris la perte possible du capital investi. Les performances passées ne préjugent pas des résultats futurs. Avant de prendre toute décision financière ou de mettre en œuvre une stratégie d’investissement, vous devez mener vos propres recherches indépendantes et consulter un professionnel qualifié et agréé qui connaît votre situation financière particulière.</p>
+            <p>Edufinance.site ne fait aucune déclaration et ne donne aucune garantie quant à l’exactitude, l’exhaustivité ou la pertinence des informations contenues sur ce site, et décline toute responsabilité pour les pertes financières ou dommages résultant de l’utilisation de ce contenu.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Tous droits réservés.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="yAXlb4DcBWsaIn3xQAHtAy0pktRzvLFx87MwilJQ" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

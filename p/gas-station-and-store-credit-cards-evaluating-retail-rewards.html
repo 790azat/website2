@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Gas Station and Store Credit Cards: Evaluating Retail Rewards — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Gas station and store credit cards can look attractive at the checkout counter. A card may offer an instant discount, fuel rewards, cash back, loyalty poin..." />
+                            <link rel="alternate" hreflang="en" href="/p/gas-station-and-store-credit-cards-evaluating-retail-rewards" />
+                    <link rel="alternate" hreflang="es" href="/es/p/gas-station-and-store-credit-cards-evaluating-retail-rewards" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/gas-station-and-store-credit-cards-evaluating-retail-rewards" />
+                <link rel="alternate" hreflang="x-default" href="/p/gas-station-and-store-credit-cards-evaluating-retail-rewards" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Free, independent guides to banking, investing, loans &amp; credit
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/our-team" wire:navigate class="transition hover:text-white">Our Team</a>
+                <a href="/contact" wire:navigate class="transition hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Language">
+            <a
+            href="/p/gas-station-and-store-credit-cards-evaluating-retail-rewards"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/gas-station-and-store-credit-cards-evaluating-retail-rewards"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/gas-station-and-store-credit-cards-evaluating-retail-rewards"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/" wire:navigate class="shrink-0" aria-label="EduFinance home">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Home</a>
+                            <a href="/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Personal Finance</a>
+                            <a href="/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Wealth Management</a>
+                            <a href="/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Loans &amp; Financing</a>
+                            <a href="/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Credit &amp; Cards</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        All Articles
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Open menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Close menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Home</a>
+            <a href="/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">All Articles</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Topics</p>
+                            <a href="/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Personal Finance
+                </a>
+                            <a href="/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Wealth Management
+                </a>
+                            <a href="/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Loans &amp; Financing
+                </a>
+                            <a href="/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Credit &amp; Cards
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">About</p>
+            <a href="/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Our Team</a>
+            <a href="/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contact</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Breadcrumb">
+                <a href="/" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Home
+                </a>
+                <span class="text-line">/</span>
+                <a href="/c/credit-cards" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Credit &amp; Cards</a>
+            </nav>
+
+            <a href="/c/credit-cards" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5V5h14v-.5A1.5 1.5 0 0 0 13.5 3h-11Z"/>
+  <path fill-rule="evenodd" d="M15 7H1v4.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V7ZM3 10.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Zm3.75-.75a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z" clip-rule="evenodd"/>
+</svg>
+
+                        Credit &amp; Cards
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Gas Station and Store Credit Cards: Evaluating Retail Rewards
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/ethan-kim.webp"
+        alt="Ethan Kim"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Ethan Kim</span>
+                        <span class="text-muted">Credit Cards &amp; Fintech Analyst</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2026-01-18">January 18, 2026</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            13 min read
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/gas-station-and-store-credit-cards-evaluating-retail-rewards.webp" alt="Gas Station and Store Credit Cards: Evaluating Retail Rewards" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="In this article" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">In this article</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#how-gas-station-credit-cards-work" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">How Gas Station Credit Cards Work</a>
+                                </li>
+                                                            <li>
+                                    <a href="#how-gas-rewards-translate-into-actual-savings" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">How Gas Rewards Translate Into Actual Savings</a>
+                                </li>
+                                                            <li>
+                                    <a href="#fuel-spending-frequency-matters" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Fuel Spending Frequency Matters</a>
+                                </li>
+                                                            <li>
+                                    <a href="#store-credit-cards-work-differently" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Store Credit Cards Work Differently</a>
+                                </li>
+                                                            <li>
+                                    <a href="#the-checkout-discount-is-not-the-entire-value" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">The Checkout Discount Is Not the Entire Value</a>
+                                </li>
+                                                            <li>
+                                    <a href="#rewards-are-most-useful-when-the-balance-is-controlled" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Rewards Are Most Useful When the Balance Is Controlled</a>
+                                </li>
+                                                            <li>
+                                    <a href="#store-cards-may-have-higher-aprs" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Store Cards May Have Higher APRs</a>
+                                </li>
+                                                            <li>
+                                    <a href="#promotional-financing-requires-extra-attention" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Promotional Financing Requires Extra Attention</a>
+                                </li>
+                                                            <li>
+                                    <a href="#deferred-interest-is-different-from-0-apr" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Deferred Interest Is Different From 0% APR</a>
+                                </li>
+                                                            <li>
+                                    <a href="#minimum-payments-may-not-be-enough" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Minimum Payments May Not Be Enough</a>
+                                </li>
+                                                            <li>
+                                    <a href="#gas-rewards-can-have-redemption-restrictions" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Gas Rewards Can Have Redemption Restrictions</a>
+                                </li>
+                                                            <li>
+                                    <a href="#look-at-the-reward-cap" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Look at the Reward Cap</a>
+                                </li>
+                                                            <li>
+                                    <a href="#location-can-affect-fuel-savings" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Location Can Affect Fuel Savings</a>
+                                </li>
+                                                            <li>
+                                    <a href="#store-rewards-can-be-more-valuable-for-frequent-shoppers" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Store Rewards Can Be More Valuable for Frequent Shoppers</a>
+                                </li>
+                                                            <li>
+                                    <a href="#consider-a-general-purpose-cash-back-card" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Consider a General-Purpose Cash-Back Card</a>
+                                </li>
+                                                            <li>
+                                    <a href="#watch-for-annual-and-other-fees" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Watch for Annual and Other Fees</a>
+                                </li>
+                                                            <li>
+                                    <a href="#retail-cards-can-affect-your-credit" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Retail Cards Can Affect Your Credit</a>
+                                </li>
+                                                            <li>
+                                    <a href="#avoid-opening-a-card-solely-for-a-one-time-discount" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Avoid Opening a Card Solely for a One-Time Discount</a>
+                                </li>
+                                                            <li>
+                                    <a href="#keep-track-of-retail-cards-after-opening-them" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Keep Track of Retail Cards After Opening Them</a>
+                                </li>
+                                                            <li>
+                                    <a href="#consider-the-opportunity-cost-of-store-rewards" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Consider the Opportunity Cost of Store Rewards</a>
+                                </li>
+                                                            <li>
+                                    <a href="#a-simple-way-to-evaluate-retail-rewards" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">A Simple Way to Evaluate Retail Rewards</a>
+                                </li>
+                                                            <li>
+                                    <a href="#when-a-gas-card-may-fit-into-a-budget" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">When a Gas Card May Fit Into a Budget</a>
+                                </li>
+                                                            <li>
+                                    <a href="#when-a-store-card-may-fit-into-a-budget" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">When a Store Card May Fit Into a Budget</a>
+                                </li>
+                                                            <li>
+                                    <a href="#the-bottom-line" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">The Bottom Line</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Gas station and store credit cards can look attractive at the checkout counter. A card may offer an instant discount, fuel rewards, cash back, loyalty points, or promotional financing in exchange for opening an account.</p>
+<p>For consumers who regularly shop at the same retailer or purchase fuel from the same network, those rewards can have practical value. But a retail credit card is still a credit product. The value of a discount or reward can disappear quickly if the account carries a high interest rate, accumulates fees, or encourages spending beyond the household budget.</p>
+<p>Retail cards generally fall into two broad categories. Private-label cards are usually restricted to a particular retailer or affiliated group of merchants, while co-branded cards operate on a major payment network and can generally be used elsewhere. The Consumer Financial Protection Bureau (CFPB) notes that retail cards remain a significant part of the U.S. credit card market and frequently use discounts, loyalty programs, and promotional financing to attract applications.</p>
+<p>Evaluating a retail rewards card therefore requires looking beyond the advertised discount.</p>
+<h2 id="how-gas-station-credit-cards-work">How Gas Station Credit Cards Work</h2>
+<p>Gas station credit cards are designed around fuel purchases and, in some cases, other transactions made at participating locations.</p>
+<p>Depending on the program, rewards may take the form of:</p>
+<ul>
+<li>A cents-per-gallon discount</li>
+<li>A percentage of fuel purchases returned as rewards</li>
+<li>Points that can be redeemed for fuel</li>
+<li>Discounts on convenience-store purchases</li>
+<li>Rewards at affiliated stations</li>
+<li>Promotional offers for new cardholders</li>
+</ul>
+<p>Some gas station cards are private-label accounts that can only be used at participating stations. Others are co-branded cards that operate on a major payment network and can be used for ordinary purchases outside the fuel network.</p>
+<p>That distinction matters because a card restricted to one retailer provides less flexibility than a general-purpose card.</p>
+<h2 id="how-gas-rewards-translate-into-actual-savings">How Gas Rewards Translate Into Actual Savings</h2>
+<p>A fuel reward should be evaluated in dollars rather than simply by its advertised percentage.</p>
+<p>Suppose a card provides a 5-cent-per-gallon discount.</p>
+<p>If a driver purchases 40 gallons during a month, the fuel savings would be:</p>
+<p>40 gallons × $0.05 = $2.00</p>
+<p>At 100 gallons per month, the same reward would equal $5.</p>
+<p>That may still be useful, but the total savings need to be compared with the card's interest charges and any applicable fees.</p>
+<p>A reward that saves several dollars per month has limited value if the cardholder regularly carries a balance at a high APR.</p>
+<h2 id="fuel-spending-frequency-matters">Fuel Spending Frequency Matters</h2>
+<p>Gas station rewards become more meaningful when the cardholder buys substantial amounts of fuel regularly.</p>
+<p>Someone who drives long distances for work may accumulate considerably more fuel spending than someone who drives occasionally.</p>
+<p>For example, a person spending $250 per month on fuel will generate more potential rewards from a fuel-focused card than someone spending $75.</p>
+<p>Before applying, estimate actual annual fuel spending rather than relying on a promotional example.</p>
+<p>A simple calculation is:</p>
+<p><strong>Annual fuel spending × effective reward rate = approximate annual rewards</strong></p>
+<p>This provides a more realistic estimate of what the card can contribute to the household budget.</p>
+<h2 id="store-credit-cards-work-differently">Store Credit Cards Work Differently</h2>
+<p>Store credit cards are usually tied to a retailer rather than a particular category such as fuel.</p>
+<p>They may provide:</p>
+<ul>
+<li>An instant discount on a purchase</li>
+<li>Store-specific cash back</li>
+<li>Loyalty points</li>
+<li>Member pricing</li>
+<li>Promotional financing</li>
+<li>Special offers</li>
+<li>Early access to certain promotions</li>
+</ul>
+<p>Some can only be used at the retailer, while co-branded versions can generally be used wherever the relevant payment network is accepted.</p>
+<p>The CFPB reported that more than half of the largest U.S. retailers offered some type of retail credit card as of 2024, illustrating how common these programs remain.</p>
+<h2 id="the-checkout-discount-is-not-the-entire-value">The Checkout Discount Is Not the Entire Value</h2>
+<p>Retailers often promote an immediate discount because it is easy to understand.</p>
+<p>For example, imagine a store offers 10% off a $500 purchase for opening its credit card.</p>
+<p>The immediate discount is $50.</p>
+<p>That sounds straightforward.</p>
+<p>But if the cardholder carries the resulting $450 balance for a prolonged period and pays significant interest, the original $50 saving may be outweighed by financing costs.</p>
+<p>The relevant question is therefore not simply:</p>
+<p><strong>How much do I save today?</strong></p>
+<p>It is:</p>
+<p><strong>How much will the entire transaction cost after considering interest, fees, and repayment time?</strong></p>
+<h2 id="rewards-are-most-useful-when-the-balance-is-controlled">Rewards Are Most Useful When the Balance Is Controlled</h2>
+<p>Credit card rewards generally make the most financial sense when purchases would have been made anyway and the balance can be paid according to the cardholder's repayment strategy.</p>
+<p>A person who spends $300 on fuel because they genuinely need the fuel is not necessarily increasing spending to earn the reward.</p>
+<p>But deliberately purchasing unnecessary items to earn points or discounts changes the economics.</p>
+<p>The CFPB has warned that retail card promotions and loyalty programs can encourage additional spending. Retailers and card issuers may have financial incentives to encourage card usage because retail card programs can generate revenue beyond the underlying merchandise sale.</p>
+<p>Rewards should therefore be treated as a reduction in the cost of planned purchases, not as a reason to purchase more.</p>
+<h2 id="store-cards-may-have-higher-aprs">Store Cards May Have Higher APRs</h2>
+<p>One important consideration is the regular purchase APR.</p>
+<p>The CFPB has found that retail credit cards can carry relatively high interest rates compared with general-purpose credit cards. That makes carrying a balance particularly important when evaluating the value of rewards.</p>
+<p>Consider a hypothetical $1,000 balance.</p>
+<p>A 5% reward on $1,000 of spending would provide $50 in rewards.</p>
+<p>If that balance remains outstanding and generates substantial interest, the financing cost can quickly exceed the value of the reward.</p>
+<p>This is why rewards should always be evaluated alongside the card's APR.</p>
+<h2 id="promotional-financing-requires-extra-attention">Promotional Financing Requires Extra Attention</h2>
+<p>Store cards frequently advertise promotional financing for large purchases.</p>
+<p>A furniture retailer, appliance store, electronics merchant, or home-improvement retailer might offer a promotion such as no interest if the qualifying balance is paid in full within a specified period.</p>
+<p>These arrangements can be useful for planned purchases, but consumers need to understand exactly how the promotion works.</p>
+<p>There is a significant difference between a genuine 0% APR promotion and a deferred-interest promotion.</p>
+<h2 id="deferred-interest-is-different-from-0-apr">Deferred Interest Is Different From 0% APR</h2>
+<p>With a traditional 0% introductory APR promotion, interest generally is not charged during the promotional period on qualifying purchases. If a balance remains when the promotion ends, interest generally begins accruing on the remaining balance from that point forward, subject to the account terms.</p>
+<p>Deferred-interest financing can work differently.</p>
+<p>A promotion may be advertised as &quot;no interest if paid in full&quot; within a specified period. If the qualifying balance is not completely paid off by the deadline, previously deferred interest can become payable under the terms of the promotion.</p>
+<p>The CFPB has repeatedly highlighted the potential for consumers to misunderstand this distinction.</p>
+<p>For a large purchase, the difference can be significant.</p>
+<h2 id="minimum-payments-may-not-be-enough">Minimum Payments May Not Be Enough</h2>
+<p>A common mistake is assuming that making the minimum payment will automatically eliminate a promotional balance before the promotion expires.</p>
+<p>That may not be the case.</p>
+<p>Suppose a $1,200 purchase receives a 12-month promotional period.</p>
+<p>Dividing the purchase into equal payments would require approximately:</p>
+<p>$1,200 ÷ 12 = $100 per month</p>
+<p>The minimum payment shown on the statement could be substantially lower.</p>
+<p>If the cardholder follows only the minimum payment requirement, the promotional balance may remain when the deadline arrives.</p>
+<p>Before accepting promotional financing, calculate the payment needed to eliminate the qualifying balance before the promotional period expires.</p>
+<h2 id="gas-rewards-can-have-redemption-restrictions">Gas Rewards Can Have Redemption Restrictions</h2>
+<p>A fuel reward is not necessarily equivalent to unrestricted cash back.</p>
+<p>The program may impose conditions concerning:</p>
+<ul>
+<li>Participating stations</li>
+<li>Maximum gallons per transaction</li>
+<li>Maximum monthly rewards</li>
+<li>Expiration dates</li>
+<li>Eligible fuel purchases</li>
+<li>Minimum redemption amounts</li>
+<li>Reward redemption windows</li>
+</ul>
+<p>A card offering 5% in fuel rewards may therefore produce a different effective return from a general-purpose card offering 2% cash back on all purchases.</p>
+<p>Read the rewards terms rather than comparing headline percentages alone.</p>
+<h2 id="look-at-the-reward-cap">Look at the Reward Cap</h2>
+<p>Reward caps can materially change the value of a card.</p>
+<p>Imagine a gas card offers 5% back on fuel but limits qualifying rewards to $100 of fuel purchases per billing cycle.</p>
+<p>Someone spending $100 per month could potentially receive the full advertised rate.</p>
+<p>Someone spending $400 would not necessarily receive 5% back on the entire amount.</p>
+<p>The effective reward rate declines when spending exceeds the qualifying limit.</p>
+<p>Reward caps should therefore be considered alongside actual household spending.</p>
+<h2 id="location-can-affect-fuel-savings">Location Can Affect Fuel Savings</h2>
+<p>Fuel prices vary substantially between locations, and the lowest posted price is not necessarily available at every station in a rewards network.</p>
+<p>A fuel card can provide a discount while the participating station's underlying fuel price remains higher than another nearby station.</p>
+<p>For example, suppose:</p>
+<p>Station A charges $3.40 per gallon and offers a 5-cent card discount.</p>
+<p>Station B charges $3.30 per gallon without the card discount.</p>
+<p>The effective price at Station A would be $3.35, still higher than Station B.</p>
+<p>This illustrates why the reward should not be considered separately from the underlying price.</p>
+<p>A discount is valuable only relative to the price actually being paid.</p>
+<h2 id="store-rewards-can-be-more-valuable-for-frequent-shoppers">Store Rewards Can Be More Valuable for Frequent Shoppers</h2>
+<p>A retail card may make more sense for someone who already spends substantial amounts at that particular retailer.</p>
+<p>Consider a household that routinely purchases groceries, home supplies, clothing, or other necessities from one retailer.</p>
+<p>If the card provides recurring discounts on purchases the household already expects to make, the rewards may have practical value.</p>
+<p>The situation is different when the card's rewards encourage someone to shift purchases toward a store simply to earn points.</p>
+<p>The relevant measure is incremental savings on planned spending.</p>
+<h2 id="consider-a-general-purpose-cash-back-card">Consider a General-Purpose Cash-Back Card</h2>
+<p>Before applying for a gas or store card, compare its rewards with the structure of a general-purpose cash-back card.</p>
+<p>A general-purpose card might provide rewards across multiple categories rather than restricting the benefit to one retailer.</p>
+<p>For example, suppose a household spends:</p>
+<p>$3,000 annually on fuel
+$4,000 at a particular retailer
+$8,000 on other eligible purchases</p>
+<p>A store card may produce significant rewards on the $4,000 retailer category but little or nothing on the remaining spending.</p>
+<p>A general-purpose card could provide rewards across a larger portion of the household's expenses.</p>
+<p>The comparison should therefore use actual spending patterns rather than the advertised reward rate.</p>
+<h2 id="watch-for-annual-and-other-fees">Watch for Annual and Other Fees</h2>
+<p>Some retail cards have no annual fee, but consumers should still review the complete fee schedule.</p>
+<p>Potential costs can include:</p>
+<ul>
+<li>Annual fees</li>
+<li>Late-payment fees</li>
+<li>Returned-payment fees</li>
+<li>Foreign transaction fees</li>
+<li>Promotional financing charges</li>
+<li>Paper statement fees</li>
+<li>Other account-related charges</li>
+</ul>
+<p>A card with strong rewards can become less attractive if recurring fees consume much of the value.</p>
+<p>The CFPB reported that some large retail card issuers increased certain fees and APRs in 2024, including paper statement fees, while also receiving complaints concerning late fees.</p>
+<p>Terms can change, so consumers should review the current card agreement rather than relying on an older advertisement.</p>
+<h2 id="retail-cards-can-affect-your-credit">Retail Cards Can Affect Your Credit</h2>
+<p>A retail credit card is generally a revolving credit account, and account activity may be reported to credit reporting companies.</p>
+<p>Depending on the account and reporting practices, information can include:</p>
+<ul>
+<li>Credit limit</li>
+<li>Balance</li>
+<li>Payment history</li>
+<li>Account status</li>
+<li>Date opened</li>
+</ul>
+<p>A store card can therefore become part of a consumer's broader credit profile.</p>
+<p>Using the card responsibly and making payments on time can contribute to a positive credit history when the account is reported. On the other hand, missed payments or high balances can have negative consequences.</p>
+<p>Opening several retail cards simply to obtain individual discounts can also result in multiple new credit accounts and inquiries.</p>
+<h2 id="avoid-opening-a-card-solely-for-a-one-time-discount">Avoid Opening a Card Solely for a One-Time Discount</h2>
+<p>An immediate discount can be useful, but it should not be the only factor in an application decision.</p>
+<p>Before opening a store card for a one-time promotion, ask:</p>
+<ul>
+<li>Would I buy this item anyway?</li>
+<li>Can I repay the balance without carrying expensive debt?</li>
+<li>What is the regular APR?</li>
+<li>Is the discount worth adding another credit account?</li>
+<li>Does the card have an annual fee?</li>
+<li>How does the rewards program work?</li>
+<li>Is there deferred-interest financing?</li>
+<li>Can the card be used outside the retailer?</li>
+</ul>
+<p>If the answer to most of these questions is unclear, the discount alone may not justify the account.</p>
+<h2 id="keep-track-of-retail-cards-after-opening-them">Keep Track of Retail Cards After Opening Them</h2>
+<p>Retail cards are easy to forget, particularly when they are used only occasionally.</p>
+<p>An unused account can still have statements, payment due dates, fees, promotional deadlines, or other account activity.</p>
+<p>A missed payment can result in fees and potentially negative credit-reporting consequences.</p>
+<p>For cards used infrequently, account alerts and automatic payments can help prevent forgotten due dates.</p>
+<p>Consumers should also periodically review statements for unfamiliar charges and changes to account terms.</p>
+<h2 id="consider-the-opportunity-cost-of-store-rewards">Consider the Opportunity Cost of Store Rewards</h2>
+<p>Every credit card occupies part of a consumer's overall credit strategy.</p>
+<p>If someone opens a new store card for a $30 discount, the decision should be considered alongside the value of maintaining a simple credit portfolio.</p>
+<p>A new account can increase administrative complexity.</p>
+<p>It may also create another payment deadline and another account to monitor.</p>
+<p>The financial value of rewards should therefore be compared with the convenience cost of managing another credit product.</p>
+<h2 id="a-simple-way-to-evaluate-retail-rewards">A Simple Way to Evaluate Retail Rewards</h2>
+<p>A practical evaluation can use four numbers:</p>
+<p><strong>Annual eligible spending</strong></p>
+<p>Estimate how much you realistically spend in the card's qualifying category.</p>
+<p><strong>Effective reward rate</strong></p>
+<p>Determine how much value you actually receive after considering caps and restrictions.</p>
+<p><strong>Annual rewards</strong></p>
+<p>Multiply eligible spending by the effective reward rate.</p>
+<p><strong>Total borrowing cost</strong></p>
+<p>Estimate interest and fees if you expect to carry a balance.</p>
+<p>The comparison becomes much clearer when these figures are considered together.</p>
+<p>For example, a card generating $120 in annual rewards but costing $250 in interest is producing a very different financial result from a card generating $120 in rewards while the balance is paid in full each month.</p>
+<h2 id="when-a-gas-card-may-fit-into-a-budget">When a Gas Card May Fit Into a Budget</h2>
+<p>A fuel-focused card can potentially fit into a household's financial strategy when the cardholder:</p>
+<ul>
+<li>Buys fuel regularly</li>
+<li>Uses participating stations</li>
+<li>Understands the reward limits</li>
+<li>Can avoid expensive revolving debt</li>
+<li>Values the specific fuel rewards</li>
+<li>Has compared the effective savings with other available cards</li>
+</ul>
+<p>The important point is that the reward should complement existing spending rather than create additional spending.</p>
+<h2 id="when-a-store-card-may-fit-into-a-budget">When a Store Card May Fit Into a Budget</h2>
+<p>A store card can potentially make sense when a consumer frequently shops with the retailer and can use the card without accumulating costly debt.</p>
+<p>Promotional financing can also be relevant for a large planned purchase, provided the consumer understands whether the offer uses deferred interest or a true promotional APR and can meet the repayment requirements.</p>
+<p>The decision becomes less attractive when the card is opened only because a salesperson presents an immediate discount or when the purchase would not otherwise fit the budget.</p>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>Gas station and store credit cards can provide meaningful discounts, rewards, and promotional financing, particularly for consumers who already spend regularly with a participating retailer or fuel network.</p>
+<p>But the advertised reward is only one part of the calculation.</p>
+<p>The regular APR, fees, reward caps, redemption restrictions, promotional terms, and actual spending pattern all influence the card's financial value. Retail cards can also carry relatively high interest rates, making it especially important to understand the cost of carrying a balance.</p>
+<p>For promotional financing, consumers should pay particular attention to whether the offer is a true 0% APR promotion or a deferred-interest arrangement. The distinction can determine whether unpaid promotional balances generate interest only going forward or potentially result in interest being charged retroactively.</p>
+<p>Retail rewards are most useful when they reduce the cost of purchases that would have happened anyway. A discount should not become a reason to spend more.</p>
+<div class="references"><h2 id="references">References</h2>
+<ul>
+<li><em>Consumer Financial Protection Bureau — <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-the-high-cost-of-retail-credit-cards/">The High Cost of Retail Credit Cards</a></em></li>
+<li><em>Consumer Financial Protection Bureau — <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/archive/blog/six-tips-when-offered-retail-store-credit-card/">Six Tips to Consider When You're Offered a Retail Store Credit Card</a></em></li>
+<li><em>Consumer Financial Protection Bureau — <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/archive/blog/how-understand-special-promotional-financing-offers-credit-cards/">How to Understand Special Promotional Financing Offers on Credit Cards</a></em></li>
+<li><em>Consumer Financial Protection Bureau — <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/i-got-a-credit-card-promising-no-interest-for-a-purchase-if-i-pay-in-full-within-12-months-how-does-this-work-en-40/">I Got a Credit Card Promising No Interest for a Purchase if I Pay in Full Within 12 Months. How Does This Work?</a></em></li>
+<li><em>Consumer Financial Protection Bureau — <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/compliance/circulars/consumer-financial-protection-circular-2024-07-design-marketing-and-administration-of-credit-card-rewards-programs/">Consumer Financial Protection Circular 2024-07: Design, Marketing, and Administration of Credit Card Rewards Programs</a></em></li>
+<li><em>Consumer Financial Protection Bureau — <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/rules-policy/regulations/1026/60/">Credit and Charge Card Applications and Solicitations</a></em></li>
+</ul>
+</div>
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/ethan-kim.webp"
+        alt="Ethan Kim"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Written by</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Ethan Kim</p>
+                            <p class="text-sm text-brand-200">Credit Cards &amp; Fintech Analyst</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Ethan covers credit card products, rewards programs, and the digital tools people and businesses use to manage money. With a background in data operations and financial technology, he compares card fees, perks, and fine print, and looks at online banking, budgeting apps, and expense platforms with a focus on practical value rather than marketing claims.</p>
+                                        <a href="/our-team" wire:navigate class="btn-zest relative mt-6">Meet the editors</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Educational content only.</span>
+                    This article is for general information and is not personalized financial, investment, tax, or legal advice.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Keep learning</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">More in Credit &amp; Cards</h2>
+                    </div>
+                    <a href="/c/credit-cards" wire:navigate class="link-underline text-sm font-semibold text-ink">See all</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/p/credit-card-limits-and-minimum-payments-managing-long-term-costs" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-limits-and-minimum-payments-managing-long-term-costs.webp"
+        alt="Credit Card Limits and Minimum Payments: Managing Long-Term Costs"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Credit &amp; Cards
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Credit Card Limits and Minimum Payments: Managing Long-Term Costs
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">A credit card&#039;s limit can look deceptively simple: it is the maximum balance the issuer allows you to carry. The minimum payment can seem equally straightforward: it is t...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-12" class="shrink-0">Sep 12, 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/p/credit-card-debt-consolidation-strategies-and-solutions" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/credit-card-debt-consolidation-strategies-and-solutions.webp"
+        alt="Credit Card Debt Consolidation: Strategies and Solutions"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Credit &amp; Cards
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Credit Card Debt Consolidation: Strategies and Solutions
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Carrying balances across several credit cards can make debt more difficult to manage. Different interest rates, payment dates, minimum payments, and account terms can mak...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-10" class="shrink-0">Sep 10, 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/p/secured-credit-cards-how-they-work-and-who-may-consider-one" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/secured-credit-cards-how-they-work-and-who-may-consider-one.webp"
+        alt="Secured Credit Cards: How They Work and Who May Consider One"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Credit &amp; Cards
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Secured Credit Cards: How They Work and Who May Consider One
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Getting approved for a conventional credit card can be difficult when a consumer has little credit history, a damaged credit profile, or a recent financial setback. A sec...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-08-28" class="shrink-0">Aug 28, 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/" wire:navigate aria-label="EduFinance home">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Clear, research-driven guides to banking, investing, borrowing, and credit — written to help you make confident money decisions.
+                </p>
+                <a href="/articles" wire:navigate class="btn-zest mt-7">
+                    Start learning
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Topics</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Personal Finance</a></li>
+                                                    <li><a href="/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Wealth Management</a></li>
+                                                    <li><a href="/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Loans &amp; Financing</a></li>
+                                                    <li><a href="/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Credit &amp; Cards</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">All Articles</a></li>
+                        <li><a href="/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Our Editorial Team</a></li>
+                        <li><a href="/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Legal</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Privacy Policy</a></li>
+                        <li><a href="/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Terms of Use</a></li>
+                        <li><a href="/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Disclaimer:</span>
+                The content provided on Edufinance.site is for informational and educational purposes only and should not be construed as professional financial, legal, or tax advice. The creators and editors of this site are not licensed financial advisors.
+            </p>
+            <p>Investing involves risk, including the potential loss of principal. Past performance is not indicative of future results. Before making any financial decisions or implementing any investment strategies, you should conduct your own independent research and consult with a qualified, licensed professional who understands your specific financial situation.</p>
+            <p>Edufinance.site makes no representations or warranties as to the accuracy, completeness, or suitability of the information contained herein, and assumes no liability for any financial losses or damages arising from the use of this content.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. All rights reserved.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="t0Ltblrk29AfL2A7NtzpUBcI4aVgr4ml0S7Wnx25" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>

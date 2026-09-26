@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14623e" />
+
+<title>
+    Precalificación de préstamos personales y comisiones de originación — EduFinance
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-PaqtzbVb.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/manrope-400-normal-8tf8FM3T.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-BYYD-dBL.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/manrope-500-normal-DMZssgOp.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-4f0koTD-.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/manrope-600-normal-BqgrALkZ.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-BZp_XxE4.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/manrope-700-normal-DGRFkw-m.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-CjxnbVsv.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-italic-Bp1RWfBU.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-O70d2LGK.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-italic-BlP2rMdV.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-BTx51a-P.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-italic-Bjyesmbf.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-DnGCNyPD.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/fraunces-500-normal-BTR4KCeb.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-BFCDtZfi.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/fraunces-600-normal-DL5QCzvS.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-CEOla-zY.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/build/assets/fraunces-700-normal-DTjk5d1Q.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-manrope: "Manrope";
+  --font-fraunces: "Fraunces";
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-CbPF0_LZ.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-CbPF0_LZ.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+                    <meta name="description" content="Buscar un préstamo personal implica más que encontrar una tasa de interés anunciada." />
+                            <link rel="alternate" hreflang="en" href="/p/personal-loan-prequalification-and-origination-fees" />
+                    <link rel="alternate" hreflang="es" href="/es/p/personal-loan-prequalification-and-origination-fees" />
+                    <link rel="alternate" hreflang="fr" href="/fr/p/personal-loan-prequalification-and-origination-fees" />
+                <link rel="alternate" hreflang="x-default" href="/p/personal-loan-prequalification-and-origination-fees" />
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="min-h-screen bg-paper font-sans text-ink antialiased selection:bg-zest-300 selection:text-brand-950"
+    >
+        <div class="bg-brand-900 text-brand-100">
+    <div class="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-6 text-xs lg:px-8">
+        <p class="flex items-center gap-2 truncate">
+            <span class="size-1.5 shrink-0 rounded-full bg-zest-400"></span>
+            Guías gratuitas e independientes sobre banca, inversión, préstamos y crédito
+        </p>
+        <div class="flex shrink-0 items-center gap-5">
+            <nav class="hidden items-center gap-5 font-medium sm:flex">
+                <a href="/es/our-team" wire:navigate class="transition hover:text-white">Nuestro equipo</a>
+                <a href="/es/contact" wire:navigate class="transition hover:text-white">Contacto</a>
+            </nav>
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/personal-loan-prequalification-and-origination-fees"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/personal-loan-prequalification-and-origination-fees"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-brand-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/personal-loan-prequalification-and-origination-fees"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-brand-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <div class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="shrink-0" aria-label="Inicio de EduFinance">
+            <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 hidden w-auto shrink-0 dark:block">
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-semibold whitespace-nowrap xl:flex">
+            <a href="/es" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Inicio</a>
+                            <a href="/es/c/personal-finance" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Finanzas personales</a>
+                            <a href="/es/c/wealth-management" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Gestión patrimonial</a>
+                            <a href="/es/c/loans-financing" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Préstamos y financiación</a>
+                            <a href="/es/c/credit-cards" wire:navigate class="relative py-2 transition after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:rounded-full after:bg-brand-500 after:transition text-body hover:text-ink after:scale-x-0 hover:after:scale-x-100">Crédito y tarjetas</a>
+                    </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/es/articles" wire:navigate class="hidden items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 sm:inline-flex dark:bg-brand-500 dark:text-brand-950 dark:hover:bg-brand-400">
+                <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z"/>
+</svg>
+
+                        Todos los artículos
+            </a>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition hover:border-brand-400 xl:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" @keydown.escape.window="mobileOpen = false">
+    <div x-show="mobileOpen" x-transition.opacity class="fixed inset-0 bg-brand-950/60 backdrop-blur-sm" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col bg-paper"
+    >
+        <div class="flex items-center justify-between border-b border-line px-6 py-5">
+            <a href="/es" wire:navigate @click="mobileOpen = false">
+                <img src="/images/brand/logo.webp" alt="EduFinance" width="760" height="128" class="h-8 w-auto shrink-0 dark:hidden">
+    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-8 hidden w-auto shrink-0 dark:block">
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-10 items-center justify-center rounded-full border border-line text-muted" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-semibold text-ink hover:bg-soft">Todos los artículos</a>
+
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Temas</p>
+                            <a href="/es/c/personal-finance" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M1 4.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 2H3.25A2.25 2.25 0 0 0 1 4.25ZM1 7.25a3.733 3.733 0 0 1 2.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0 0 16.75 5H3.25A2.25 2.25 0 0 0 1 7.25ZM7 8a1 1 0 0 1 1 1 2 2 0 1 0 4 0 1 1 0 0 1 1-1h3.75A2.25 2.25 0 0 1 19 10.25v5.5A2.25 2.25 0 0 1 16.75 18H3.25A2.25 2.25 0 0 1 1 15.75v-5.5A2.25 2.25 0 0 1 3.25 8H7Z"/>
+</svg>
+
+                            </span>
+                    Finanzas personales
+                </a>
+                            <a href="/es/c/wealth-management" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z"/>
+  <path d="M8.003 4.07C8.55 3.994 9 4.449 9 5v5a1 1 0 0 0 1 1h5c.552 0 1.008.45.93.997A7.001 7.001 0 0 1 2 11a7.002 7.002 0 0 1 6.003-6.93Z"/>
+</svg>
+
+                            </span>
+                    Gestión patrimonial
+                </a>
+                            <a href="/es/c/loans-financing" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Préstamos y financiación
+                </a>
+                            <a href="/es/c/credit-cards" wire:navigate @click="mobileOpen = false" class="flex items-center gap-3 rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">
+                    <span class="flex size-8 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/60 dark:text-brand-200">
+                        <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+                            </span>
+                    Crédito y tarjetas
+                </a>
+            
+            <p class="mt-5 mb-2 px-4 text-xs font-bold tracking-[0.16em] text-muted uppercase">Acerca de</p>
+            <a href="/es/our-team" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Nuestro equipo</a>
+            <a href="/es/contact" wire:navigate @click="mobileOpen = false" class="rounded-2xl px-4 py-3 font-medium text-body hover:bg-soft">Contacto</a>
+        </nav>
+    </div>
+</div>
+
+        <main>
+                
+    <section class="relative overflow-hidden border-b border-line">
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 pt-10 pb-12 lg:px-8 lg:pb-16">
+            <nav class="flex flex-wrap items-center gap-2 text-sm text-muted" aria-label="Ruta de navegación">
+                <a href="/es" wire:navigate class="flex items-center gap-1.5 font-medium hover:text-brand-700 dark:hover:text-brand-300">
+                    <svg class="shrink-0 [:where(&amp;)]:size-4 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z"/>
+</svg>
+
+         Inicio
+                </a>
+                <span class="text-line">/</span>
+                <a href="/es/c/loans-financing" wire:navigate class="font-medium hover:text-brand-700 dark:hover:text-brand-300">Préstamos y financiación</a>
+            </nav>
+
+            <a href="/es/c/loans-financing" wire:navigate class="tag mt-10">
+                <svg class="shrink-0 [:where(&amp;)]:size-4 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M7.605 2.112a.75.75 0 0 1 .79 0l5.25 3.25A.75.75 0 0 1 13 6.707V12.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.707a.75.75 0 0 1-.645-1.345l5.25-3.25ZM4.5 8.75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 8a.75.75 0 0 0-.75.75v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 8 8Zm2 .75a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-1.5 0v-3ZM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd"/>
+</svg>
+
+                        Préstamos y financiación
+            </a>
+
+            <h1 class="mt-5 max-w-4xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-6xl">
+                Precalificación de préstamos personales y comisiones de originación
+            </h1>
+
+            <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line pt-6 text-sm">
+                <a href="/es/our-team" wire:navigate class="flex items-center gap-3">
+                    <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-12 text-sm shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                    <span>
+                        <span class="block font-bold text-ink hover:text-brand-700 dark:hover:text-brand-300">Lucas Vance</span>
+                        <span class="text-muted">Lending &amp; Borrowing Analyst</span>
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd"/>
+</svg>
+
+                            <time datetime="2026-03-01">1 de marzo de 2026</time>
+                </span>
+                <span class="flex items-center gap-2 text-muted">
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-brand-500" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/>
+</svg>
+
+                            16 min de lectura
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <article class="mx-auto max-w-6xl px-6 lg:px-8">
+        
+                    <div class="mt-12 overflow-hidden rounded-[2rem]">
+                <img src="/images/articles/personal-loan-prequalification-and-origination-fees.webp" alt="Precalificación de préstamos personales y comisiones de originación" class="aspect-[21/9] w-full object-cover" />
+            </div>
+        
+        
+        <div class="grid gap-12 pt-10 pb-16 lg:grid-cols-12">
+            
+                            <aside class="lg:order-last lg:col-span-4">
+                    <nav class="rounded-3xl border border-line bg-surface p-6 lg:sticky lg:top-28" aria-label="En este artículo" x-data="{ open: false }">
+                        <button type="button" class="flex w-full items-center justify-between text-left lg:pointer-events-none" @click="open = ! open">
+                            <span class="text-xs font-bold tracking-[0.16em] text-muted uppercase">En este artículo</span>
+                            <svg class="shrink-0 [:where(&amp;)]:size-5 size-4 text-muted transition lg:hidden" :class="open && 'rotate-180'" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+
+                                </button>
+                        <ol class="mt-4 hidden max-h-[60vh] space-y-0.5 overflow-y-auto text-sm lg:block" :class="open && '!block'">
+                                                            <li>
+                                    <a href="#que-significa-la-precalificacion-de-un-prestamo-personal" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Qué significa la precalificación de un préstamo personal</a>
+                                </li>
+                                                            <li>
+                                    <a href="#precalificacion-frente-a-una-solicitud-de-prestamo-completa" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Precalificación frente a una solicitud de préstamo completa</a>
+                                </li>
+                                                            <li>
+                                    <a href="#por-que-la-precalificacion-puede-ayudar-al-comparar-ofertas" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Por qué la precalificación puede ayudar al comparar ofertas</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-es-una-comision-de-originacion-de-un-prestamo-personal" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">¿Qué es una comisión de originación de un préstamo personal?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#como-afectan-las-comisiones-de-originacion-al-monto-que-usted-recibe" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Cómo afectan las comisiones de originación al monto que usted recibe</a>
+                                </li>
+                                                            <li>
+                                    <a href="#las-comisiones-de-originacion-pueden-cambiar-la-comparacion-de-costos" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Las comisiones de originación pueden cambiar la comparación de costos</a>
+                                </li>
+                                                            <li>
+                                    <a href="#el-apr-ayuda-a-incorporar-los-costos-de-financiamiento" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">El APR ayuda a incorporar los costos de financiamiento</a>
+                                </li>
+                                                            <li>
+                                    <a href="#tasa-de-interes-frente-a-apr" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Tasa de interés frente a APR</a>
+                                </li>
+                                                            <li>
+                                    <a href="#todo-prestamo-personal-tiene-una-comision-de-originacion" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">¿Todo préstamo personal tiene una comisión de originación?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#como-afecta-el-credito-a-las-ofertas-de-prestamos-personales" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Cómo afecta el crédito a las ofertas de préstamos personales</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-informacion-se-usa-durante-la-precalificacion" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">¿Qué información se usa durante la precalificación?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-precalificacion-no-es-una-garantia" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La precalificación no es una garantía</a>
+                                </li>
+                                                            <li>
+                                    <a href="#que-sucede-despues-de-la-precalificacion" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">¿Qué sucede después de la precalificación?</a>
+                                </li>
+                                                            <li>
+                                    <a href="#el-plazo-del-prestamo-puede-cambiar-el-costo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">El plazo del préstamo puede cambiar el costo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#un-prestamo-sin-comision-de-originacion-aun-puede-resultar-costoso" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Un préstamo sin comisión de originación aún puede resultar costoso</a>
+                                </li>
+                                                            <li>
+                                    <a href="#este-atento-a-otras-comisiones-de-prestamos-personales" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Esté atento a otras comisiones de préstamos personales</a>
+                                </li>
+                                                            <li>
+                                    <a href="#pago-anticipado-y-reembolso-temprano" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Pago anticipado y reembolso temprano</a>
+                                </li>
+                                                            <li>
+                                    <a href="#como-comparar-varias-ofertas-precalificadas" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Cómo comparar varias ofertas precalificadas</a>
+                                </li>
+                                                            <li>
+                                    <a href="#preguntas-para-hacer-antes-de-aceptar-un-prestamo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Preguntas para hacer antes de aceptar un préstamo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#una-estrategia-practica-de-precalificacion" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Una estrategia práctica de precalificación</a>
+                                </li>
+                                                            <li>
+                                    <a href="#la-diferencia-entre-una-cotizacion-y-un-prestamo" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">La diferencia entre una cotización y un préstamo</a>
+                                </li>
+                                                            <li>
+                                    <a href="#como-entender-el-costo-total-del-endeudamiento" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Cómo entender el costo total del endeudamiento</a>
+                                </li>
+                                                            <li>
+                                    <a href="#referencias" @click="open = false" class="block rounded-xl px-3 py-2 leading-snug text-body transition hover:bg-soft hover:text-brand-700 dark:hover:text-brand-300">Referencias</a>
+                                </li>
+                                                    </ol>
+                    </nav>
+                </aside>
+            
+            <div class="min-w-0 lg:col-span-8">
+                <div class="article-body">
+    <p>Buscar un préstamo personal implica más que encontrar una tasa de interés anunciada.</p>
+<p>Antes de enviar una solicitud completa, los prestatarios pueden <strong>precalificar</strong> y recibir una estimación del monto del préstamo, la tasa de interés o la cuota mensual para la que podrían calificar. Esto puede facilitar la comparación entre prestamistas sin comprometerse de inmediato con un préstamo.</p>
+<p>Sin embargo, una vez que un prestatario avanza con un préstamo real, pueden entrar en juego costos adicionales. Uno de los más importantes es la <strong>comisión de originación</strong>, un cargo que algunos prestamistas imponen por procesar y otorgar el préstamo.</p>
+<p>Un préstamo personal con una tasa de interés ligeramente más alta y sin comisión de originación a veces puede costar menos en general que un préstamo con una tasa anunciada más baja pero un cargo inicial sustancial.</p>
+<p>Comprender cómo funciona la precalificación, para qué sirven las comisiones de originación y cómo ambas afectan el costo real del endeudamiento puede ayudar a los prestatarios a evaluar las ofertas con mayor precisión.</p>
+<h2 id="que-significa-la-precalificacion-de-un-prestamo-personal">Qué significa la precalificación de un préstamo personal</h2>
+<p>La precalificación de un préstamo personal generalmente es una evaluación inicial de si es probable que un prestatario califique para el financiamiento y, en algunos casos, qué términos de préstamo podrían estar disponibles.</p>
+<p>La CFPB señala que los prestamistas usan los términos <strong>precalificación</strong> y <strong>preaprobación</strong> de manera diferente. Algunos prestamistas se basan principalmente en la información proporcionada por el consumidor durante la precalificación, mientras que otros realizan una revisión más extensa. Ninguno de los dos términos representa necesariamente una oferta de préstamo final garantizada.</p>
+<p>Una precalificación puede mostrar:</p>
+<ul>
+<li>Monto estimado del préstamo</li>
+<li>APR estimado</li>
+<li>Cuota mensual estimada</li>
+<li>Plazo de pago potencial</li>
+<li>Posible elegibilidad según el propósito del préstamo</li>
+</ul>
+<p>La información suele ser condicional.</p>
+<p>Un prestamista puede verificar los ingresos, el empleo, las deudas, el historial crediticio y otra información durante el proceso de solicitud completa. Por lo tanto, la tasa final o el monto aprobado pueden diferir de la estimación inicial.</p>
+<h2 id="precalificacion-frente-a-una-solicitud-de-prestamo-completa">Precalificación frente a una solicitud de préstamo completa</h2>
+<p>La distinción práctica más importante es que la precalificación generalmente está diseñada para <strong>comparar ofertas</strong>, mientras que una solicitud completa forma parte del proceso de suscripción del prestamista.</p>
+<p>Un prestamista puede pedir información básica durante la precalificación y ofrecer una oferta estimada.</p>
+<p>Si el prestatario decide continuar, el prestamista puede solicitar documentación adicional y realizar una revisión crediticia más exhaustiva.</p>
+<p>Dependiendo del proceso del prestamista, la solicitud completa puede resultar en una <strong>consulta fuerte de crédito (hard inquiry)</strong>.</p>
+<p>La CFPB explica que las consultas fuertes generalmente están asociadas con solicitudes de crédito nuevo y pueden afectar los puntajes crediticios. Las consultas blandas (soft inquiries), en cambio, no afectan los puntajes crediticios.</p>
+<p>Debido a que los procedimientos de los prestamistas difieren, los prestatarios deben preguntar si una verificación de precalificación usa una consulta blanda o fuerte antes de enviar su información.</p>
+<h2 id="por-que-la-precalificacion-puede-ayudar-al-comparar-ofertas">Por qué la precalificación puede ayudar al comparar ofertas</h2>
+<p>La precalificación puede permitir a los prestatarios comparar posibles financiamientos antes de comprometerse con un prestamista en particular.</p>
+<p>Por ejemplo, alguien que busca un préstamo personal de $20,000 podría recibir ofertas estimadas de varios prestamistas.</p>
+<p>Un prestamista podría mostrar:</p>
+<ul>
+<li>Préstamo estimado de $20,000</li>
+<li>APR del 10.5%</li>
+<li>Plazo de 48 meses</li>
+</ul>
+<p>Otro podría mostrar:</p>
+<ul>
+<li>Préstamo estimado de $20,000</li>
+<li>APR del 11.2%</li>
+<li>Plazo de 48 meses</li>
+<li>Sin comisión de originación</li>
+</ul>
+<p>A primera vista, el APR más bajo puede parecer más atractivo.</p>
+<p>Pero la segunda oferta podría tener potencialmente un costo general más bajo si el primer prestamista cobra una comisión de originación significativa.</p>
+<p>Por esto, la precalificación es más útil cuando los prestatarios comparan la <strong>estructura completa de financiamiento</strong>, no solo la tasa principal.</p>
+<h2 id="que-es-una-comision-de-originacion-de-un-prestamo-personal">¿Qué es una comisión de originación de un préstamo personal?</h2>
+<p>Una <strong>comisión de originación</strong> es un cargo que un prestamista puede imponer por procesar y originar un préstamo personal.</p>
+<p>La CFPB identifica las comisiones de originación como una de varias posibles comisiones asociadas con los préstamos personales a plazos, junto con cargos como las comisiones de documentación y las comisiones por pago atrasado.</p>
+<p>La comisión puede estructurarse de diferentes maneras.</p>
+<p>Un prestamista podría cobrar un porcentaje del monto solicitado. Por ejemplo, una comisión de originación del 5% sobre un préstamo de $20,000 equivaldría a $1,000.</p>
+<p>El prestatario puede no recibir necesariamente los $20,000 completos.</p>
+<p>Si la comisión se deduce de los fondos del préstamo, el prestatario podría recibir $19,000, aunque siga debiendo el préstamo según el capital y los términos de pago declarados, dependiendo del acuerdo específico.</p>
+<p>Esa distinción es importante cuando el prestatario necesita una cantidad específica de efectivo.</p>
+<h2 id="como-afectan-las-comisiones-de-originacion-al-monto-que-usted-recibe">Cómo afectan las comisiones de originación al monto que usted recibe</h2>
+<p>Considere a un prestatario que necesita exactamente <strong>$15,000</strong> para pagar un gasto.</p>
+<p>Suponga que un prestamista cobra una comisión de originación del 4%.</p>
+<p>La comisión equivaldría a:</p>
+<p><strong>$15,000 × 4% = $600</strong></p>
+<p>Si el prestamista deduce la comisión de los fondos del préstamo, el prestatario podría recibir $14,400 en lugar de los $15,000 completos.</p>
+<p>Por lo tanto, el prestatario podría necesitar solicitar un monto de préstamo mayor para recibir los fondos netos deseados.</p>
+<p>Eso puede aumentar la cantidad de deuda e intereses pagados.</p>
+<p>Alternativamente, el prestamista puede estructurar la comisión de otra manera, por lo que el prestatario debe revisar el acuerdo de préstamo real en lugar de suponer cómo se manejará el cargo.</p>
+<h2 id="las-comisiones-de-originacion-pueden-cambiar-la-comparacion-de-costos">Las comisiones de originación pueden cambiar la comparación de costos</h2>
+<p>Imagine que dos prestamistas ofrecen al mismo prestatario un préstamo personal de $20,000 a 48 meses.</p>
+<h3>Prestamista A</h3>
+<ul>
+<li>APR: 10%</li>
+<li>Comisión de originación: 5%</li>
+</ul>
+<h3>Prestamista B</h3>
+<ul>
+<li>APR: 10.75%</li>
+<li>Comisión de originación: 0%</li>
+</ul>
+<p>La primera oferta tiene la tasa de interés más baja, pero cobra una comisión de originación de $1,000.</p>
+<p>La segunda tiene una tasa más alta, pero ningún cargo de originación inicial.</p>
+<p>Dependiendo del período de pago y los términos exactos del préstamo, el segundo préstamo podría tener potencialmente un costo general más bajo.</p>
+<p>El ejemplo ilustra por qué comparar únicamente las tasas de interés puede llevar a una conclusión equivocada.</p>
+<h2 id="el-apr-ayuda-a-incorporar-los-costos-de-financiamiento">El APR ayuda a incorporar los costos de financiamiento</h2>
+<p>La <strong>tasa de porcentaje anual</strong>, o APR, está diseñada para expresar el costo del endeudamiento en un porcentaje estandarizado.</p>
+<p>La CFPB explica que el APR incorpora la tasa de interés más ciertas comisiones adicionales asociadas con el préstamo, incluidos los cargos de originación.</p>
+<p>Esto hace que el APR sea una cifra útil al comparar ofertas de préstamos que, por lo demás, son similares.</p>
+<p>Sin embargo, los prestatarios aún deben examinar las cantidades reales en dólares.</p>
+<p>El APR de un préstamo no cuenta toda la historia si el prestatario está comparando diferentes montos de préstamo, plazos, productos opcionales o fondos netos recibidos.</p>
+<p>Revisar tanto el APR como el costo total en dólares ofrece una imagen más clara.</p>
+<h2 id="tasa-de-interes-frente-a-apr">Tasa de interés frente a APR</h2>
+<p>Estas dos cifras están relacionadas, pero no son idénticas.</p>
+<p>La <strong>tasa de interés</strong> representa el costo del endeudamiento expresado como un porcentaje del capital pendiente.</p>
+<p>El <strong>APR</strong> incorpora la tasa de interés y ciertos cargos financieros adicionales.</p>
+<p>Por ejemplo, un prestamista podría anunciar un préstamo personal con una tasa de interés del 9.99%, mientras que el APR es más alto debido a una comisión de originación.</p>
+<p>Por lo tanto, un prestatario que compara ofertas debe evitar comparar la tasa de interés de un prestamista con el APR de otro.</p>
+<p>Compare:</p>
+<p><strong>APR frente a APR</strong></p>
+<p>y luego examine por separado:</p>
+<p><strong>Cargos financieros totales frente a cargos financieros totales.</strong></p>
+<h2 id="todo-prestamo-personal-tiene-una-comision-de-originacion">¿Todo préstamo personal tiene una comisión de originación?</h2>
+<p>No.</p>
+<p>Algunos prestamistas cobran comisiones de originación, mientras que otros anuncian préstamos sin ellas.</p>
+<p>Un prestamista también puede variar la comisión según factores como el perfil crediticio, el monto del préstamo, el plazo de pago u otras características de suscripción.</p>
+<p>La ausencia de una comisión de originación no hace que un préstamo sea automáticamente menos costoso.</p>
+<p>Un prestamista podría compensar la ausencia de la comisión con una tasa de interés más alta u otros cargos.</p>
+<p>La pregunta relevante es el <strong>costo total del endeudamiento</strong>.</p>
+<h2 id="como-afecta-el-credito-a-las-ofertas-de-prestamos-personales">Cómo afecta el crédito a las ofertas de préstamos personales</h2>
+<p>El perfil crediticio de un prestatario puede influir en los términos que ofrece un prestamista.</p>
+<p>Los factores considerados pueden incluir:</p>
+<ul>
+<li>Historial crediticio</li>
+<li>Puntaje crediticio</li>
+<li>Ingresos</li>
+<li>Deuda existente</li>
+<li>Relación deuda-ingresos</li>
+<li>Monto del préstamo</li>
+<li>Plazo del préstamo</li>
+<li>Estabilidad del empleo o los ingresos</li>
+<li>Propósito del préstamo, según el prestamista</li>
+</ul>
+<p>Un perfil crediticio más sólido puede calificar para un APR más bajo, aunque los prestamistas usan diferentes modelos de suscripción.</p>
+<p>La CFPB señala que los prestamistas pueden considerar factores como los ingresos, la deuda y el historial crediticio al decidir si ofrecer crédito y qué términos proporcionar.</p>
+<p>Por lo tanto, la precalificación puede ser útil para ver cómo se comparan los términos estimados de un prestamista con otras ofertas disponibles antes de avanzar hacia una solicitud completa.</p>
+<h2 id="que-informacion-se-usa-durante-la-precalificacion">¿Qué información se usa durante la precalificación?</h2>
+<p>El proceso exacto varía.</p>
+<p>Un prestamista podría solicitar:</p>
+<ul>
+<li>Nombre</li>
+<li>Dirección</li>
+<li>Ingresos</li>
+<li>Información de empleo</li>
+<li>Monto de préstamo solicitado</li>
+<li>Plazo de pago deseado</li>
+<li>Información crediticia estimada</li>
+<li>Propósito del préstamo</li>
+</ul>
+<p>Algunos prestamistas también pueden pedir información sobre deudas existentes.</p>
+<p>Debido a que la precalificación no está estandarizada entre prestamistas, dos empresas pueden ofrecer estimaciones usando procesos de suscripción diferentes.</p>
+<p>La precalificación de un prestamista puede implicar una consulta blanda de crédito e información básica, mientras que otro puede requerir documentación más detallada.</p>
+<p>Por lo tanto, los prestatarios deben leer la divulgación del prestamista que explica qué representa la precalificación y qué no.</p>
+<h2 id="la-precalificacion-no-es-una-garantia">La precalificación no es una garantía</h2>
+<p>Una oferta precalificada puede cambiar después de que el prestamista verifique la información del prestatario.</p>
+<p>Por ejemplo, un prestamista podría estimar inicialmente un APR del 10% con base en la información proporcionada por el prestatario.</p>
+<p>Durante la suscripción, el prestamista podría descubrir:</p>
+<ul>
+<li>Ingresos verificados más bajos</li>
+<li>Deuda existente más alta</li>
+<li>Información crediticia diferente</li>
+<li>Un monto de préstamo diferente</li>
+<li>Discrepancias en la documentación</li>
+</ul>
+<p>Por lo tanto, la oferta final puede tener una tasa, un monto de préstamo o un plazo de pago diferentes.</p>
+<p>La CFPB señala específicamente que la información de precalificación y preaprobación no representa necesariamente una oferta de préstamo garantizada.</p>
+<h2 id="que-sucede-despues-de-la-precalificacion">¿Qué sucede después de la precalificación?</h2>
+<p>Si el prestatario decide continuar, el prestamista puede solicitar documentación y realizar una revisión de suscripción completa.</p>
+<p>El proceso puede incluir la verificación de:</p>
+<ul>
+<li>Identidad</li>
+<li>Ingresos</li>
+<li>Empleo</li>
+<li>Información de la cuenta bancaria</li>
+<li>Historial crediticio</li>
+<li>Deudas existentes</li>
+</ul>
+<p>El prestamista determina entonces si el prestatario cumple con sus requisitos finales de suscripción.</p>
+<p>Si se aprueba, el prestatario recibe los términos finales del préstamo y puede decidir si aceptarlos.</p>
+<p>Este es el momento en que el prestatario debe comparar la oferta final con las estimaciones recibidas durante la precalificación.</p>
+<h2 id="el-plazo-del-prestamo-puede-cambiar-el-costo">El plazo del préstamo puede cambiar el costo</h2>
+<p>Las comisiones de originación son solo una parte de la ecuación.</p>
+<p>El período de pago también puede afectar de manera importante los costos totales de endeudamiento.</p>
+<p>Un préstamo de $20,000 con un plazo de tres años puede requerir cuotas mensuales más altas que el mismo préstamo a cinco años.</p>
+<p>El préstamo a cinco años podría hacer que la cuota mensual sea más manejable, pero el prestatario podría pagar intereses durante dos años adicionales.</p>
+<p>Esto significa que una cuota mensual más baja no necesariamente indica un préstamo más barato.</p>
+<p>Una comparación útil incluye:</p>
+<ul>
+<li>APR</li>
+<li>Monto del préstamo</li>
+<li>Comisión de originación</li>
+<li>Cuota mensual</li>
+<li>Período de pago</li>
+<li>Interés total</li>
+<li>Monto total reembolsado</li>
+<li>Monto neto recibido</li>
+</ul>
+<h2 id="un-prestamo-sin-comision-de-originacion-aun-puede-resultar-costoso">Un préstamo sin comisión de originación aún puede resultar costoso</h2>
+<p>&quot;Sin comisión de originación&quot; puede ser una característica atractiva, pero no debe evaluarse de manera aislada.</p>
+<p>Imagine dos ofertas hipotéticas por $25,000:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Préstamo A</th>
+<th>Préstamo B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tasa de interés</td>
+<td>9.5%</td>
+<td>10.5%</td>
+</tr>
+<tr>
+<td>Comisión de originación</td>
+<td>5%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Plazo</td>
+<td>48 meses</td>
+<td>48 meses</td>
+</tr>
+<tr>
+<td>Monto del préstamo</td>
+<td>$25,000</td>
+<td>$25,000</td>
+</tr>
+</tbody>
+</table></div>
+<p>El préstamo A tiene una tasa de interés más baja, pero una comisión de originación de $1,250.</p>
+<p>El préstamo B tiene una tasa de interés más alta, pero ninguna comisión de originación.</p>
+<p>Dependiendo de cómo se maneje la comisión y de la estructura exacta de pago, la diferencia en intereses podría ser menor o mayor que la comisión inicial.</p>
+<p>El prestatario debe calcular el costo real en dólares en lugar de basarse en el lenguaje de marketing asociado con cualquiera de las dos ofertas.</p>
+<h2 id="este-atento-a-otras-comisiones-de-prestamos-personales">Esté atento a otras comisiones de préstamos personales</h2>
+<p>Los cargos de originación no son las únicas comisiones posibles.</p>
+<p>La CFPB identifica varios otros posibles cargos de los préstamos personales a plazos, incluidas las comisiones de documentación y las comisiones por pago atrasado. También se puede ofrecer un seguro opcional de crédito o de discapacidad.</p>
+<p>Antes de aceptar un préstamo, verifique:</p>
+<ul>
+<li>Comisiones de originación</li>
+<li>Comisiones de solicitud</li>
+<li>Comisiones de documentación</li>
+<li>Comisiones por pago atrasado</li>
+<li>Comisiones por pago devuelto</li>
+<li>Disposiciones de pago anticipado</li>
+<li>Seguro opcional</li>
+<li>Otros cargos de administración de cuenta</li>
+</ul>
+<p>No todos los prestamistas cobran todas estas comisiones.</p>
+<p>El acuerdo de préstamo debe mostrar cuáles se aplican.</p>
+<h2 id="pago-anticipado-y-reembolso-temprano">Pago anticipado y reembolso temprano</h2>
+<p>Algunos prestatarios tienen la intención de pagar un préstamo personal antes de tiempo.</p>
+<p>Si eso forma parte de la estrategia de pago, revise el acuerdo de préstamo en busca de disposiciones o penalizaciones por pago anticipado.</p>
+<p>El reembolso anticipado puede reducir los intereses futuros porque el interés generalmente se acumula según el saldo pendiente y los términos del préstamo aplicables.</p>
+<p>Pero el beneficio financiero depende de la estructura del préstamo y de si se aplican cargos adicionales.</p>
+<p>Un prestatario no debe suponer que todo préstamo personal tiene reglas idénticas de reembolso anticipado.</p>
+<h2 id="como-comparar-varias-ofertas-precalificadas">Cómo comparar varias ofertas precalificadas</h2>
+<p>La precalificación se vuelve particularmente útil cuando los prestatarios recopilan información comparable de varios prestamistas.</p>
+<p>Para cada oferta, registre:</p>
+<p><strong>Monto estimado del préstamo</strong></p>
+<p><strong>APR estimado</strong></p>
+<p><strong>Tasa de interés</strong></p>
+<p><strong>Comisión de originación</strong></p>
+<p><strong>Cuota mensual estimada</strong></p>
+<p><strong>Plazo de pago</strong></p>
+<p><strong>Reembolso total estimado</strong></p>
+<p><strong>Fondos netos recibidos</strong></p>
+<p>Luego identifique qué cifras son estimaciones y cuáles están garantizadas solo después de la suscripción final.</p>
+<p>Esto evita que un prestatario compare una oferta preliminar de un prestamista con una oferta final de otro como si fueran idénticas.</p>
+<h2 id="preguntas-para-hacer-antes-de-aceptar-un-prestamo">Preguntas para hacer antes de aceptar un préstamo</h2>
+<p>Antes de pasar de la precalificación a una solicitud completa, pregunte:</p>
+<p><strong>¿La precalificación usará una consulta de crédito blanda o fuerte?</strong></p>
+<p><strong>¿El APR cotizado está garantizado o es una estimación?</strong></p>
+<p><strong>¿Qué información crediticia se utilizó?</strong></p>
+<p><strong>¿Cuál es la comisión de originación?</strong></p>
+<p><strong>¿La comisión se deduce de los fondos del préstamo?</strong></p>
+<p><strong>¿Cuánto efectivo recibiré en realidad?</strong></p>
+<p><strong>¿Qué otras comisiones se aplican?</strong></p>
+<p><strong>¿Cuál es la cuota mensual?</strong></p>
+<p><strong>¿Cuál es el monto total que reembolsaré?</strong></p>
+<p><strong>¿Puedo pagar el préstamo antes de tiempo?</strong></p>
+<p><strong>¿Existen cargos por pago anticipado?</strong></p>
+<p><strong>¿Qué documentación se requerirá para la aprobación final?</strong></p>
+<p>Estas preguntas ayudan a identificar diferencias entre la estimación inicial y el acuerdo de financiamiento final.</p>
+<h2 id="una-estrategia-practica-de-precalificacion">Una estrategia práctica de precalificación</h2>
+<p>Un prestatario que desea un préstamo personal puede abordar el proceso por etapas.</p>
+<h3>1. Determine el monto realmente necesario</h3>
+<p>Pedir prestado más de lo necesario aumenta el saldo y potencialmente el costo de intereses.</p>
+<h3>2. Consulte a varios prestamistas</h3>
+<p>La precalificación puede ofrecer una base preliminar para comparar posibles tasas y términos.</p>
+<h3>3. Confirme el tipo de consulta crediticia</h3>
+<p>Pregunte si el proceso implica una consulta blanda o fuerte.</p>
+<h3>4. Compare los APR</h3>
+<p>El APR puede incorporar los intereses y ciertas comisiones del préstamo, lo que lo hace más útil que comparar únicamente las tasas de interés.</p>
+<h3>5. Calcule la comisión de originación</h3>
+<p>Convierta el porcentaje en dólares.</p>
+<h3>6. Verifique los fondos netos</h3>
+<p>Asegúrese de que la cantidad realmente recibida sea suficiente para el gasto previsto.</p>
+<h3>7. Compare el reembolso total</h3>
+<p>Considere todo el período de pago, no solo la cuota mensual.</p>
+<h3>8. Revise el acuerdo final</h3>
+<p>Asegúrese de que los términos finales coincidan con las expectativas creadas durante la precalificación.</p>
+<h2 id="la-diferencia-entre-una-cotizacion-y-un-prestamo">La diferencia entre una cotización y un préstamo</h2>
+<p>La precalificación es valiosa porque puede ofrecer una indicación temprana de cómo podría verse el financiamiento.</p>
+<p>Pero no es lo mismo que recibir un préstamo formalizado.</p>
+<p>La decisión final del prestamista puede depender de la información verificada y de una revisión crediticia completa.</p>
+<p>De igual manera, una comisión de originación o un APR anunciados no necesariamente le dicen al prestatario exactamente qué contendrá su oferta individual.</p>
+<p>El acuerdo de préstamo es el documento que finalmente determina las obligaciones del prestatario.</p>
+<h2 id="como-entender-el-costo-total-del-endeudamiento">Cómo entender el costo total del endeudamiento</h2>
+<p>Buscar un préstamo personal a menudo comienza con una tasa de interés anunciada, pero el costo real involucra varias variables.</p>
+<p>Un prestatario debe considerar el <strong>APR, la comisión de originación, el plazo de pago, la cuota mensual, el interés total, el reembolso total y los fondos netos recibidos</strong>.</p>
+<p>La precalificación puede facilitar este proceso al permitir que los posibles prestatarios exploren términos estimados antes de comprometerse con una solicitud completa. Sin embargo, debido a que los prestamistas usan los términos &quot;precalificación&quot; y &quot;preaprobación&quot; de manera diferente, los prestatarios deben verificar qué implica realmente el proceso del prestamista en particular.</p>
+<p>Las comisiones de originación merecen especial atención porque pueden reducir el efectivo recibido o aumentar el costo efectivo del financiamiento. La CFPB recomienda revisar las divulgaciones del prestamista y comparar ofertas de varios prestamistas al considerar préstamos personales a plazos.</p>
+<p>En última instancia, un préstamo personal debe evaluarse según el monto realmente necesario, el efectivo recibido, el costo del endeudamiento y la capacidad del prestatario para hacer los pagos programados.</p>
+<p>Una tasa anunciada baja puede tener menos importancia si va acompañada de una comisión alta, mientras que un préstamo sin comisión de originación aún puede resultar costoso si su APR o período de pago es elevado.</p>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/do-personal-installment-loans-have-fees-en-2120/">Consumer Financial Protection Bureau — Personal Installment Loan Fees</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-loan-interest-rate-and-the-apr-en-733/">Consumer Financial Protection Bureau — Interest Rate vs. APR</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-prequalification-letter-and-a-preapproval-letter-en-127/">Consumer Financial Protection Bureau — Prequalification vs. Preapproval</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-inquiry-en-1317/">Consumer Financial Protection Bureau — Credit Inquiries</a></li>
+<li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.consumerfinance.gov/ask-cfpb/when-will-a-lender-run-a-credit-check-or-obtain-a-copy-of-my-credit-report-en-322/">Consumer Financial Protection Bureau — When Lenders Check Your Credit</a></li>
+</ul>
+
+</div>
+
+                
+                <div class="relative mt-16 overflow-hidden rounded-3xl bg-brand-800 p-7 sm:p-9">
+                    <div class="absolute -top-12 -right-12 size-48 rounded-full border-[24px] border-zest-400/20"></div>
+                    <div class="relative flex items-center gap-4">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-16 text-lg shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <div>
+                            <p class="text-xs font-bold tracking-[0.16em] text-zest-300 uppercase">Escrito por</p>
+                            <p class="mt-1 font-display text-2xl font-semibold text-white">Lucas Vance</p>
+                            <p class="text-sm text-brand-200">Lending &amp; Borrowing Analyst</p>
+                        </div>
+                    </div>
+                                            <p class="relative mt-5 leading-relaxed text-brand-100">Lucas specializes in consumer and real estate lending. With a background in retail banking analysis and loan advisory, his work helps readers weigh the true cost of borrowing, from mortgages, home equity, and refinancing to auto, personal, and student loans, and compare rates, terms, and fees before they sign.</p>
+                                        <a href="/es/our-team" wire:navigate class="btn-zest relative mt-6">Conozca a los editores</a>
+                </div>
+
+                <p class="mt-8 rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-muted">
+                    <span class="font-semibold text-body">Contenido exclusivamente educativo.</span>
+                    Este artículo ofrece información general y no constituye asesoramiento financiero, de inversión, fiscal ni legal personalizado.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    
+            <section class="border-t border-line bg-surface">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <span class="eyebrow">Siga aprendiendo</span>
+                        <h2 class="mt-3 font-display text-3xl font-semibold text-ink">Más en Préstamos y financiación</h2>
+                    </div>
+                    <a href="/es/c/loans-financing" wire:navigate class="link-underline text-sm font-semibold text-ink">Ver todo</a>
+                </div>
+                <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                                            <a href="/es/p/bankruptcy-basics-understanding-types-and-financial-impact" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bankruptcy-basics-understanding-types-and-financial-impact.webp"
+        alt="Fundamentos de la Bancarrota: Comprendiendo los Tipos y el Impacto Financiero"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Préstamos y financiación
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Fundamentos de la Bancarrota: Comprendiendo los Tipos y el Impacto Financiero
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">La bancarrota es un proceso legal federal diseñado para abordar situaciones en las que las personas o las empresas no pueden cumplir con sus obligaciones financieras. Dep...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-21" class="shrink-0">21 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/es/p/bad-credit-loans-what-borrowers-should-know-before-applying" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/bad-credit-loans-what-borrowers-should-know-before-applying.webp"
+        alt="Préstamos para Mal Crédito: Lo Que Deben Saber los Prestatarios Antes de Solicitar"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Préstamos y financiación
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Préstamos para Mal Crédito: Lo Que Deben Saber los Prestatarios Antes de Solicitar
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Tener una puntuación de crédito más baja puede dificultar el endeudamiento, pero no necesariamente elimina todas las opciones de financiamiento. Los prestamistas utilizan...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/rachel-bernstein.webp"
+        alt="Rachel Bernstein"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Rachel Bernstein</span>
+                    </span>
+                    <time datetime="2026-09-14" class="shrink-0">14 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                            <a href="/es/p/mortgage-refinancing-how-replacing-an-existing-home-loan-works" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
+        <div class="relative flex aspect-[16/10] items-center justify-center overflow-hidden">
+            <img
+        src="/images/articles/mortgage-refinancing-how-replacing-an-existing-home-loan-works.webp"
+        alt="Refinanciamiento hipotecario: cómo funciona reemplazar un préstamo hipotecario existente"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+    />
+            <span class="absolute top-4 left-4 rounded-full bg-surface/95 px-2.5 py-1 text-[11px] font-bold tracking-wide text-brand-800 uppercase shadow-sm backdrop-blur dark:text-brand-200">
+                Préstamos y financiación
+            </span>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+            <h3 class="font-display text-xl leading-snug font-semibold text-balance text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">
+                Refinanciamiento hipotecario: cómo funciona reemplazar un préstamo hipotecario existente
+            </h3>
+            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-muted">Una hipoteca no tiene que permanecer necesariamente sin cambios hasta que se venda la vivienda. Los propietarios pueden reemplazar una hipoteca existente por un préstamo...</p>
+            <div class="mt-auto pt-6">
+                <div class="flex items-center justify-between gap-3 border-t border-line pt-4 text-xs text-muted">
+                    <span class="flex min-w-0 items-center gap-2">
+                        <img
+        src="/images/team/lucas-vance.webp"
+        alt="Lucas Vance"
+        loading="lazy"
+        decoding="async"
+        class="size-7 text-[10px] shrink-0 rounded-full object-cover ring-2 ring-surface"
+    />
+                        <span class="truncate font-semibold text-body">Lucas Vance</span>
+                    </span>
+                    <time datetime="2026-09-03" class="shrink-0">3 sep. 2026</time>
+                </div>
+            </div>
+        </div>
+    </a>
+                                    </div>
+            </div>
+        </section>
+            </main>
+
+        <footer class="relative overflow-hidden bg-brand-950 text-brand-100">
+    <div class="pointer-events-none absolute -top-32 -right-24 size-96 rounded-full bg-brand-700/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+                <a href="/es" wire:navigate aria-label="Inicio de EduFinance">
+                    <img src="/images/brand/logo-light.webp" alt="EduFinance" width="760" height="128" class="h-10 w-auto shrink-0">
+                </a>
+                <p class="mt-5 max-w-sm leading-relaxed text-brand-200/80">
+                    Guías claras y basadas en la investigación sobre banca, inversión, préstamos y crédito, escritas para ayudarle a tomar decisiones financieras con confianza.
+                </p>
+                <a href="/es/articles" wire:navigate class="btn-zest mt-7">
+                    Empezar a aprender
+                    <svg class="shrink-0 [:where(&amp;)]:size-5 size-4" data-flux-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+</svg>
+
+                        </a>
+            </div>
+
+            <div class="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Temas</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                                                    <li><a href="/es/c/personal-finance" wire:navigate class="text-brand-100/80 transition hover:text-white">Finanzas personales</a></li>
+                                                    <li><a href="/es/c/wealth-management" wire:navigate class="text-brand-100/80 transition hover:text-white">Gestión patrimonial</a></li>
+                                                    <li><a href="/es/c/loans-financing" wire:navigate class="text-brand-100/80 transition hover:text-white">Préstamos y financiación</a></li>
+                                                    <li><a href="/es/c/credit-cards" wire:navigate class="text-brand-100/80 transition hover:text-white">Crédito y tarjetas</a></li>
+                                            </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">EduFinance</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/es/articles" wire:navigate class="text-brand-100/80 transition hover:text-white">Todos los artículos</a></li>
+                        <li><a href="/es/our-team" wire:navigate class="text-brand-100/80 transition hover:text-white">Nuestro equipo editorial</a></li>
+                        <li><a href="/es/contact" wire:navigate class="text-brand-100/80 transition hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold tracking-[0.16em] text-zest-400 uppercase">Legal</p>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="/es/privacy-policy" wire:navigate class="text-brand-100/80 transition hover:text-white">Política de privacidad</a></li>
+                        <li><a href="/es/terms-of-use" wire:navigate class="text-brand-100/80 transition hover:text-white">Términos de uso</a></li>
+                        <li><a href="/es/disclaimer" wire:navigate class="text-brand-100/80 transition hover:text-white">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="mt-14 space-y-3 rounded-2xl border border-brand-800 bg-brand-900/40 p-5 text-xs leading-relaxed text-brand-200/70">
+            <p>
+                <span class="font-semibold text-brand-100">Aviso legal:</span>
+                El contenido de Edufinance.site se ofrece únicamente con fines informativos y educativos y no debe interpretarse como asesoramiento financiero, legal o fiscal profesional. Los creadores y editores de este sitio no son asesores financieros autorizados.
+            </p>
+            <p>Invertir implica riesgos, incluida la posible pérdida del capital. Los rendimientos pasados no garantizan resultados futuros. Antes de tomar cualquier decisión financiera o aplicar cualquier estrategia de inversión, debe realizar su propia investigación independiente y consultar a un profesional cualificado y autorizado que conozca su situación financiera concreta.</p>
+            <p>Edufinance.site no ofrece declaraciones ni garantías sobre la exactitud, integridad o idoneidad de la información aquí contenida, y no asume ninguna responsabilidad por pérdidas financieras ni daños derivados del uso de este contenido.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-brand-300/70 sm:flex-row">
+            <p>&copy; 2026 EduFinance. Todos los derechos reservados.</p>
+            <p>edufinance.site</p>
+        </div>
+    </div>
+
+    <p aria-hidden="true" class="pointer-events-none -mb-6 text-center font-display text-[18vw] leading-none font-semibold tracking-tighter text-brand-900/70 select-none lg:text-[13rem]">
+        EduFinance
+    </p>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-eb630740/livewire.js?id=0ae8dee3"   data-csrf="RBInNV5H5mYvkg3wh265gDexWCkNgZP0dKhthYaJ" data-module-url="/livewire-eb630740" data-update-uri="/livewire-eb630740/update" data-navigate-once="true"></script>
+</body>
+</html>
