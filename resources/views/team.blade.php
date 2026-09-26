@@ -31,12 +31,12 @@
 
         <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-6 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
             <div>
-                <span class="eyebrow">{{ __('Our editorial team') }}</span>
+                <span class="eyebrow">{{ __('Our Editorial Team') }}</span>
                 <h1 class="mt-5 font-display text-5xl leading-[1.04] font-semibold tracking-tight text-balance text-ink sm:text-6xl">
-                    {{ __('The people who make :site', ['site' => $siteName]) }} <span class="italic text-brand-600 dark:text-brand-400">{{ __('make sense.') }}</span>
+                    {{ __(':site Editorial Team', ['site' => $siteName]) }}
                 </h1>
                 <p class="mt-7 text-lg leading-relaxed text-body">
-                    {{ __('At :site, we provide clear, research-driven information to help consumers and professionals make better money decisions — from everyday banking and budgeting to investing, borrowing, and credit.', ['site' => $siteName]) }}
+                    {{ __('The :site editorial team brings together writers and analysts with experience across personal finance, consumer credit, banking, wealth management, small business, and financial technology. Our contributors focus on clear, practical explanations of financial topics, combining research with real-world considerations to help readers understand products, costs, requirements, and long-term financial decisions without unnecessary jargon.', ['site' => $siteName]) }}
                 </p>
                 <a href="#team" class="btn-primary mt-9">
                     {{ __('Meet the editors') }}
@@ -99,13 +99,6 @@
                 <h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-ink">{{ __('Experience you can learn from') }}</h2>
                 <p class="mt-4 leading-relaxed text-body">
                     {{ __('Our writers and analysts bring experience across consumer banking, credit, lending, wealth planning, and small-business finance.') }}
-                </p>
-            </div>
-
-            <div class="mx-auto mt-14 max-w-4xl rounded-3xl border border-line bg-paper p-8 sm:p-10">
-                <h3 class="font-display text-2xl font-semibold text-ink">{{ __(':site Editorial Team', ['site' => $siteName]) }}</h3>
-                <p class="mt-4 leading-relaxed text-body">
-                    {{ __('The :site editorial team brings together writers and analysts with experience across personal finance, consumer credit, banking, wealth management, small business, and financial technology. Our contributors focus on clear, practical explanations of financial topics, combining research with real-world considerations to help readers understand products, costs, requirements, and long-term financial decisions without unnecessary jargon.', ['site' => $siteName]) }}
                 </p>
             </div>
 
