@@ -1,5 +1,7 @@
 <?php
 
+use App\Support\SiteContent;
+
 test('returns a successful response', function () {
     $response = $this->get(route('home'));
 
@@ -7,7 +9,7 @@ test('returns a successful response', function () {
 });
 
 test('hero card rotates through article links', function () {
-    $article = \App\Support\SiteContent::articles('personal-finance')->first();
+    $article = SiteContent::articles('personal-finance')->first();
 
     $this->get(route('home'))
         ->assertOk()
