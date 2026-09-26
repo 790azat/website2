@@ -122,9 +122,9 @@
 
                     <div class="relative rounded-3xl bg-surface p-6 shadow-2xl shadow-brand-950/30 sm:p-7">
                         <div class="flex items-center justify-between gap-4">
-                            <p class="font-display text-2xl leading-tight font-semibold text-balance text-ink">{{ __('100% Independent & Free Financial Research') }}</p>
+                            <p class="font-display text-2xl leading-tight font-semibold text-balance text-ink">{{ __('Trending topics') }}</p>
                             <span class="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-zest-300 text-brand-900">
-                                <flux:icon name="academic-cap" class="size-6" />
+                                <flux:icon name="sparkles" class="size-6" />
                             </span>
                         </div>
 
