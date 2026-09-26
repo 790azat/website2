@@ -30,7 +30,7 @@
 
 @section('content')
     {{-- Hero --}}
-    <section class="relative overflow-hidden">
+    <section class="relative z-10 overflow-x-clip">
         <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(var(--color-line)_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent_85%)]"></div>
 
         <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pt-14 pb-20 lg:grid-cols-12 lg:px-8 lg:pt-20 lg:pb-28">
