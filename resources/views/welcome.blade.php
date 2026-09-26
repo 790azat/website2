@@ -55,16 +55,62 @@
                     <a href="{{ route('team') }}" wire:navigate class="btn-ghost">{{ __('Meet our editors') }}</a>
                 </div>
 
-                <dl class="mt-12 grid max-w-sm grid-cols-2 divide-x divide-line border-y border-line py-5">
-                    <div class="pr-4">
-                        <dt class="text-xs font-semibold text-muted">{{ __('Guides') }}</dt>
-                        <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $allArticles->count() }}</dd>
+                {{-- Article search: filters an inline index of this locale's articles as you type. --}}
+                @php
+                    $searchIndex = $allArticles->map(fn ($article) => [
+                        'title' => $article['title'],
+                        'section' => $article['section_title'],
+                        'url' => route('article', $article['slug']),
+                        'text' => mb_strtolower($article['title'].' '.$article['section_title'].' '.$article['excerpt']),
+                    ])->values();
+                @endphp
+                <div
+                    x-data="{
+                        query: '',
+                        open: false,
+                        items: @js($searchIndex),
+                        get results() {
+                            const words = this.query.toLowerCase().split(/\s+/).filter(Boolean);
+                            if (! words.length) return [];
+                            return this.items.filter(item => words.every(word => item.text.includes(word))).slice(0, 6);
+                        },
+                    }"
+                    @click.outside="open = false"
+                    @keydown.escape="open = false"
+                    class="relative mt-12 max-w-lg"
+                >
+                    <form role="search" @submit.prevent="if (results.length) window.location.href = results[0].url">
+                        <label for="hero-search" class="sr-only">{{ __('Search articles') }}</label>
+                        <div class="relative">
+                            <flux:icon name="magnifying-glass" variant="mini" class="pointer-events-none absolute top-1/2 left-5 size-5 -translate-y-1/2 text-muted" />
+                            <input
+                                id="hero-search"
+                                type="search"
+                                autocomplete="off"
+                                x-model="query"
+                                @focus="open = true"
+                                @input="open = true"
+                                placeholder="{{ __('Search :count articles…', ['count' => $allArticles->count()]) }}"
+                                class="w-full rounded-full border border-line bg-surface py-4 pr-5 pl-13 text-base text-ink shadow-sm placeholder:text-muted focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 focus:outline-none"
+                            />
+                        </div>
+                    </form>
+
+                    <div
+                        x-cloak
+                        x-show="open && query.trim() !== ''"
+                        x-transition.opacity
+                        class="absolute inset-x-0 top-full z-30 mt-2 overflow-hidden rounded-2xl border border-line bg-surface shadow-xl shadow-brand-900/10"
+                    >
+                        <template x-for="item in results" :key="item.url">
+                            <a :href="item.url" class="block border-b border-line px-5 py-3 last:border-b-0 hover:bg-soft focus:bg-soft focus:outline-none">
+                                <span class="block text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300" x-text="item.section"></span>
+                                <span class="mt-0.5 block text-sm font-semibold text-ink" x-text="item.title"></span>
+                            </a>
+                        </template>
+                        <p x-show="results.length === 0" class="px-5 py-4 text-sm text-muted">{{ __('No articles found.') }}</p>
                     </div>
-                    <div class="pl-4">
-                        <dt class="text-xs font-semibold text-muted">{{ __('Topics') }}</dt>
-                        <dd class="mt-1 font-display text-3xl font-semibold text-ink">{{ $categories->count() }}</dd>
-                    </div>
-                </dl>
+                </div>
             </div>
 
             {{-- Hero visual: learning-path card --}}
