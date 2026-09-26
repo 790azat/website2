@@ -233,7 +233,11 @@ class SiteContent
         foreach (['features', 'pros', 'extra_sections'] as $group) {
             foreach ($program[$group] ?? [] as $i => $item) {
                 foreach ($item as $key => $value) {
-                    if (is_string($value) && ! in_array($key, ['icon'], true)) {
+                    if ($key === 'icon') {
+                        continue;
+                    }
+
+                    if (is_string($value)) {
                         $program[$group][$i][$key] = static::translate($value);
                     } elseif (is_array($value)) {
                         $program[$group][$i][$key] = array_map(
