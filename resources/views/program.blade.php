@@ -35,14 +35,14 @@
 
         <div class="relative mx-auto max-w-5xl px-6 pt-10 pb-16 lg:px-8 lg:pb-24">
             <nav class="flex flex-wrap items-center gap-2 text-sm text-brand-200" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}" wire:navigate class="font-medium hover:text-white">Home</a>
+                <a href="{{ route('home') }}" wire:navigate class="font-medium hover:text-white">{{ __('Home') }}</a>
                 <span class="text-brand-500">/</span>
                 <a href="{{ route('section', $program['section']) }}" wire:navigate class="font-medium hover:text-white">{{ $sectionMeta['title'] ?? '' }}</a>
             </nav>
 
             <span class="mt-10 inline-flex items-center gap-2 rounded-full bg-zest-400 px-3 py-1 text-xs font-bold tracking-wide text-brand-950 uppercase">
                 <flux:icon name="{{ $program['hero_icon'] ?? 'academic-cap' }}" variant="micro" class="size-3.5" />
-                Lender guide
+                {{ __('Lender guide') }}
             </span>
             <h1 class="mt-5 font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-white sm:text-5xl lg:text-6xl">
                 {{ $program['title'] }}
@@ -97,7 +97,7 @@
         <div class="mt-12 rounded-3xl bg-brand-800 p-8">
             <h2 class="flex items-center gap-3 font-display text-2xl font-semibold text-white">
                 <flux:icon name="sparkles" class="size-6 text-zest-400" />
-                Pros
+                {{ __('Pros') }}
             </h2>
             <ul class="mt-6 space-y-5">
                 @foreach ($program['pros'] as $pro)
@@ -135,12 +135,12 @@
         <div class="mt-16 rounded-3xl border border-line bg-surface p-7">
             <div class="flex items-center gap-3">
                 @include('partials.logo', ['size' => 'sm'])
-                <span class="text-sm font-semibold text-muted">Editorial Team</span>
+                <span class="text-sm font-semibold text-muted">{{ __('Editorial Team') }}</span>
             </div>
             <p class="mt-5 text-sm leading-relaxed text-body">
-                At {{ $siteName }}, we provide clear, research-driven information to help consumers and professionals better understand today&rsquo;s financial and business landscape, presenting practical information and established concepts in an accessible format.
+                {{ __('At :site, we provide clear, research-driven information to help consumers and professionals better understand today’s financial and business landscape, presenting practical information and established concepts in an accessible format.', ['site' => $siteName]) }}
             </p>
-            <a href="{{ route('team') }}" wire:navigate class="btn-ghost mt-6">Learn more about our editors</a>
+            <a href="{{ route('team') }}" wire:navigate class="btn-ghost mt-6">{{ __('Learn more about our editors') }}</a>
         </div>
     </article>
 
@@ -148,7 +148,7 @@
     @if ($relatedArticle)
         <section class="border-t border-line bg-surface">
             <div class="mx-auto max-w-5xl px-6 py-16 lg:px-8">
-                <span class="eyebrow">See also</span>
+                <span class="eyebrow">{{ __('See also') }}</span>
                 <div class="mt-6">
                     @include('partials.article-card', ['article' => $relatedArticle, 'variant' => 'featured'])
                 </div>
