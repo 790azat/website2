@@ -34,3 +34,11 @@ test('disclaimer page is linked from the footer', function () {
         ->assertSee(route('disclaimer'), false)
         ->assertSee('Past performance is not indicative of future results.');
 });
+
+test('homepage hero lists the three latest guides', function () {
+    $response = $this->get(route('home'))->assertOk()->assertSee('Latest Guides');
+
+    foreach (SiteContent::articles()->take(3) as $article) {
+        $response->assertSee(route('article', $article['slug']), false);
+    }
+});

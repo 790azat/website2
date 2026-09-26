@@ -35,15 +35,24 @@
 
         <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pt-14 pb-20 lg:grid-cols-12 lg:px-8 lg:pt-20 lg:pb-28">
             <div class="lg:col-span-6">
-                <span class="eyebrow">{{ __('Financial education, made clear') }}</span>
-                <h1 class="mt-6 font-display text-5xl leading-[1.02] font-semibold tracking-tight text-balance text-ink sm:text-6xl lg:text-7xl">
-                    {{ __('Learn money skills that') }}
-                    <span class="relative whitespace-nowrap italic text-brand-600 dark:text-brand-400">
-                        <svg class="absolute -bottom-2 left-0 h-3 w-full text-zest-400" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c40-6 110-8 196-3" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" /></svg>
-                        <span class="relative">{{ __('grow') }}</span>
-                    </span>
-                    {{ __('with you.') }}
-                </h1>
+                <h1 class="font-display text-4xl leading-tight font-semibold tracking-tight text-ink sm:text-5xl">{{ __('Latest Guides') }}</h1>
+                <ol class="mt-7 space-y-3">
+                    @foreach ($allArticles->take(3) as $article)
+                        <li>
+                            <a href="{{ route('article', $article['slug']) }}" wire:navigate class="group flex items-center gap-4 rounded-2xl border border-line bg-surface p-3 transition hover:border-brand-300 hover:bg-soft">
+                                <span class="relative flex size-20 shrink-0 items-center justify-center overflow-hidden rounded-xl">
+                                    @include('partials.article-art', ['iconClass' => 'size-7'])
+                                </span>
+                                <span class="min-w-0 flex-1">
+                                    <span class="block text-[11px] font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">{{ $article['section_title'] }}</span>
+                                    <span class="mt-1 line-clamp-2 font-semibold leading-snug text-ink group-hover:text-brand-700 dark:group-hover:text-brand-300">{{ $article['title'] }}</span>
+                                    <time datetime="{{ $article['date'] }}" class="mt-1 block text-xs text-muted">{{ \Carbon\Carbon::parse($article['date'])->translatedFormat(__('M j, Y')) }}</time>
+                                </span>
+                                <flux:icon name="arrow-up-right" variant="mini" class="size-4 shrink-0 text-muted transition group-hover:text-brand-600" />
+                            </a>
+                        </li>
+                    @endforeach
+                </ol>
                 <p class="mt-7 max-w-xl text-lg leading-relaxed text-body">
                     {{ __(':site turns banking, investing, borrowing, and credit into practical lessons — researched carefully, written plainly, and free for everyone.', ['site' => $siteName]) }}
                 </p>
