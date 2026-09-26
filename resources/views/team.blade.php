@@ -102,6 +102,13 @@
                 </p>
             </div>
 
+            <div class="mx-auto mt-14 max-w-4xl rounded-3xl border border-line bg-paper p-8 sm:p-10">
+                <h3 class="font-display text-2xl font-semibold text-ink">{{ __(':site Editorial Team', ['site' => $siteName]) }}</h3>
+                <p class="mt-4 leading-relaxed text-body">
+                    {{ __('The :site editorial team brings together writers and analysts with experience across personal finance, consumer credit, banking, wealth management, small business, and financial technology. Our contributors focus on clear, practical explanations of financial topics, combining research with real-world considerations to help readers understand products, costs, requirements, and long-term financial decisions without unnecessary jargon.', ['site' => $siteName]) }}
+                </p>
+            </div>
+
             <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 @foreach ($team as $member)
                     <div class="flex flex-col rounded-3xl border border-line bg-paper p-7">
