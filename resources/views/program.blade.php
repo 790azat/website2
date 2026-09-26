@@ -27,9 +27,6 @@
 @section('content')
     {{-- Hero --}}
     <section class="relative overflow-hidden bg-brand-800">
-        @if ($program['hero_image'])
-            <img src="{{ asset('images/'.$program['hero_image']) }}" alt="" class="absolute inset-0 size-full object-cover opacity-25" />
-        @endif
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_85%_0%,var(--color-brand-600),transparent_50%)]"></div>
         <div class="absolute -right-24 -bottom-24 size-96 rounded-full border-[48px] border-zest-400/15"></div>
 
@@ -57,6 +54,13 @@
     </section>
 
     <article class="mx-auto max-w-3xl px-6 py-16 lg:px-8">
+        {{-- Cover image --}}
+        @if ($program['hero_image'])
+            <div class="mb-12 overflow-hidden rounded-[2rem]">
+                <img src="{{ asset('images/'.$program['hero_image']) }}" alt="{{ $program['title'] }}" fetchpriority="high" class="aspect-video w-full object-cover" />
+            </div>
+        @endif
+
         @if (! empty($program['hero_tagline']))
             <p class="rounded-3xl bg-zest-200 p-6 font-display text-xl font-semibold text-balance text-brand-900">{{ $program['hero_tagline'] }}</p>
         @endif

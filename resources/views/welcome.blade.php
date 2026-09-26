@@ -252,10 +252,9 @@
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     @foreach ($programs as $program)
                         <a href="{{ route('program', $program['slug']) }}" wire:navigate class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-900/5">
-                            <div class="relative flex h-44 items-center justify-center overflow-hidden bg-brand-700">
+                            <div class="relative flex aspect-video items-center justify-center overflow-hidden bg-brand-700">
                                 @if ($program['hero_image'])
                                     <img src="{{ asset('images/'.$program['hero_image']) }}" alt="{{ $program['title'] }}" loading="lazy" decoding="async" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105" />
-                                    <div class="absolute inset-0 bg-brand-950/35"></div>
                                 @else
                                     <div class="absolute inset-0 bg-[radial-gradient(var(--color-brand-500)_1px,transparent_1px)] [background-size:18px_18px] opacity-40"></div>
                                     <flux:icon name="{{ $program['hero_icon'] ?? 'academic-cap' }}" class="relative size-12 text-white/90" />
