@@ -25,40 +25,30 @@
 @endphp
 
 @section('content')
-    {{-- Hero --}}
-    <section class="relative overflow-hidden bg-brand-800">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_85%_0%,var(--color-brand-600),transparent_50%)]"></div>
-        <div class="absolute -right-24 -bottom-24 size-96 rounded-full border-[48px] border-zest-400/15"></div>
+    <article class="mx-auto max-w-3xl px-6 pt-8 pb-16 lg:px-8 lg:pt-12">
+        {{-- Headline, then the lead text and button, then the cover image --}}
+        <nav class="flex flex-wrap items-center justify-center gap-2 text-sm text-muted" aria-label="Breadcrumb">
+            <a href="{{ route('home') }}" wire:navigate class="font-medium hover:text-ink">{{ __('Home') }}</a>
+            <span class="text-brand-500">/</span>
+            <a href="{{ route('section', $program['section']) }}" wire:navigate class="font-medium hover:text-ink">{{ $sectionMeta['title'] ?? '' }}</a>
+        </nav>
 
-        <div class="relative mx-auto max-w-5xl px-6 pt-10 pb-16 lg:px-8 lg:pb-24">
-            <nav class="flex flex-wrap items-center gap-2 text-sm text-brand-200" aria-label="Breadcrumb">
-                <a href="{{ route('home') }}" wire:navigate class="font-medium hover:text-white">{{ __('Home') }}</a>
-                <span class="text-brand-500">/</span>
-                <a href="{{ route('section', $program['section']) }}" wire:navigate class="font-medium hover:text-white">{{ $sectionMeta['title'] ?? '' }}</a>
-            </nav>
+        <h1 class="mt-6 text-center font-display text-[1.75rem] leading-tight font-semibold tracking-tight text-balance text-ink sm:text-4xl lg:text-5xl">
+            {{ $program['title'] }}
+        </h1>
+        <p class="mt-6 text-lg leading-relaxed text-body">{{ $program['intro'] }}</p>
 
-            <span class="mt-10 inline-flex items-center gap-2 rounded-full bg-zest-400 px-3 py-1 text-xs font-bold tracking-wide text-brand-950 uppercase">
-                <flux:icon name="{{ $program['hero_icon'] ?? 'academic-cap' }}" variant="micro" class="size-3.5" />
-                {{ __('Lender guide') }}
-            </span>
-            <h1 class="mt-5 font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-white sm:text-5xl lg:text-6xl">
-                {{ $program['title'] }}
-            </h1>
-            <p class="mt-6 max-w-3xl text-lg leading-relaxed text-brand-100">{{ $program['intro'] }}</p>
+        <a href="{{ $program['cta_url'] }}" target="_blank" rel="noopener noreferrer nofollow" class="btn-zest mt-8 w-full px-8 py-4 text-base">
+            {{ $program['cta_label'] }}
+            <flux:icon name="arrow-top-right-on-square" variant="mini" class="size-4" />
+        </a>
 
-            <a href="{{ $program['cta_url'] }}" target="_blank" rel="noopener noreferrer nofollow" class="btn-zest mt-9 px-8 py-4 text-base">
-                {{ $program['cta_label'] }}
-                <flux:icon name="arrow-top-right-on-square" variant="mini" class="size-4" />
-            </a>
-        </div>
-    </section>
-
-    <article class="mx-auto max-w-3xl px-6 py-16 lg:px-8">
-        {{-- Cover image --}}
         @if ($program['hero_image'])
-            <div class="mb-12 overflow-hidden rounded-[2rem]">
+            <div class="mt-8 mb-12 overflow-hidden rounded-[2rem]">
                 <img src="{{ asset('images/'.$program['hero_image']) }}" alt="{{ $program['title'] }}" fetchpriority="high" class="aspect-video w-full object-cover" />
             </div>
+        @else
+            <div class="mb-12"></div>
         @endif
 
         @if (! empty($program['hero_tagline']))
