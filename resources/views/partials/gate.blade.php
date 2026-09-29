@@ -2,7 +2,9 @@
     Entry gate (slide-to-verify captcha) shown over the site until the visitor
     completes it. The pass is kept in localStorage for 24 hours; add ?gate=1
     to any URL to show it again. Legal pages stay open so the gate's own links work.
+    After passing, the visitor is sent to one of the main guides (random).
 --}}
+<script>window.__gateGuides = @json(\App\Support\SiteContent::programs()->pluck('slug')->values());</script>
 @verbatim
 <style>
     html.gate-on { background: #f7f5ee; }
@@ -156,6 +158,11 @@
                     '<div class="ef-wait">' + t.wait + '</div>';
             }, 550);
             setTimeout(function () {
+                var guides = window.__gateGuides || [];
+                if (guides.length && !/\/programs\//.test(location.pathname)) {
+                    location.replace(pre + '/programs/' + guides[Math.floor(Math.random() * guides.length)]);
+                    return;
+                }
                 g.classList.add('is-leaving');
                 root.classList.remove('gate-on');
                 setTimeout(function () { g.remove(); }, 460);
