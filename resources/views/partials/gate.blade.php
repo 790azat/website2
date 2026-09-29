@@ -1,7 +1,6 @@
 {{--
     Entry gate (slide-to-verify captcha) shown over the site until the visitor
-    completes it. The pass is kept in localStorage for 24 hours; add ?gate=1
-    to any URL to show it again. Legal pages stay open so the gate's own links work.
+    completes it. It shows on every page load; nothing is remembered. Legal pages stay open so the gate's own links work.
     After passing, the visitor is sent to one of the main guides (random).
 --}}
 <script>window.__gateGuides = @json(\App\Support\SiteContent::programs()->pluck('slug')->values());</script>
@@ -28,9 +27,7 @@
         animation: ef-rise .45s cubic-bezier(.2, .8, .2, 1) both;
     }
     @keyframes ef-rise { from { opacity: 0; transform: translateY(12px); } }
-    .ef-brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 16px; letter-spacing: -.01em; color: #14623e; }
-    .ef-brand i { width: 26px; height: 26px; border-radius: 8px; background: #14623e; display: grid; place-items: center; }
-    .ef-shield { margin: 24px auto 16px; width: 64px; height: 64px; border-radius: 20px; display: grid; place-items: center; background: #edf3ea; color: #187a4b; }
+    .ef-shield { margin: 0 auto 16px; width: 64px; height: 64px; border-radius: 20px; display: grid; place-items: center; background: #edf3ea; color: #187a4b; }
     .ef-title { margin: 0; font-size: 24px; line-height: 1.2; font-weight: 800; letter-spacing: -.02em; color: #072418; }
     .ef-sub { margin: 8px 0 24px; font-size: 15px; line-height: 1.5; color: #4b5b52; }
     .ef-track {
@@ -57,7 +54,7 @@
     .ef-track.is-done .ef-label { animation: none; color: #fff; -webkit-text-fill-color: #fff; background: none; padding-left: 0; }
     .ef-track.is-back .ef-knob, .ef-track.is-back .ef-fill { transition: left .3s ease, width .3s ease; }
     .ef-hint { margin: 12px 0 0; font-size: 12px; color: #7a867f; }
-    .ef-state { display: inline-flex; align-items: center; gap: 8px; margin: 24px 0 14px; padding: 6px 12px; border-radius: 999px; background: #eefaf2; color: #14623e; font-size: 13px; font-weight: 700; }
+    .ef-state { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 14px; padding: 6px 12px; border-radius: 999px; background: #eefaf2; color: #14623e; font-size: 13px; font-weight: 700; }
     .ef-state b { width: 8px; height: 8px; border-radius: 50%; background: #26975f; box-shadow: 0 0 0 0 rgba(38, 151, 95, .6); animation: ef-ping 1.2s ease-out infinite; }
     @keyframes ef-ping { to { box-shadow: 0 0 0 10px rgba(38, 151, 95, 0); } }
     .ef-bar { margin-top: 22px; height: 8px; border-radius: 99px; background: #edf3ea; overflow: hidden; }
@@ -70,10 +67,11 @@
 </style>
 <script>
 (function () {
-    var KEY = 'ef_gate_pass', TTL = 864e5, root = document.documentElement;
-    try { if (/[?&]gate=1\b/.test(location.search)) localStorage.removeItem(KEY); } catch (e) {}
+    var KEY = 'ef_gate_pass', root = document.documentElement;
+    // No lasting pass: the gate shows on every page load. Passing it lets only
+    // the main guide it opens next through, once.
     var passed = false;
-    try { passed = Number(localStorage.getItem(KEY)) > Date.now() - TTL; } catch (e) {}
+    try { passed = sessionStorage.getItem(KEY) === '1'; sessionStorage.removeItem(KEY); } catch (e) {}
     if (passed || /\/(terms-of-use|privacy-policy)(\.html)?$/.test(location.pathname)) return;
     root.classList.add('gate-on');
 
@@ -83,9 +81,17 @@
         fr: { title: 'Vérification rapide', sub: 'Confirmez que vous êtes humain pour ouvrir le site.', slide: 'Glissez pour vérifier', done: 'Vérifié', hint: "Faites glisser le bouton vert jusqu'à droite", ok: 'Accès accordé', live: 'Session active', prep: "Préparation de l'accès", fin: 'Encore un instant.', wait: 'Veuillez patienter', foot: "Le contenu suivant est informatif et éducatif et ne constitue pas un conseil financier, juridique ou professionnel.", agree: 'En continuant, vous acceptez nos {t} et notre {p}.', t: "Conditions d'utilisation", p: 'Politique de confidentialité' }
     };
     var lang = (root.lang || 'en').slice(0, 2), t = T[lang] || T.en, pre = T[lang] && lang !== 'en' ? '/' + lang : '';
-    var brand = '<div class="ef-brand"><i><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d4f38a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17l5-5 4 4 7-8"/></svg></i>EduFinance</div>';
+
+    var TITLES = { en: 'Security check', es: 'Verificación de seguridad', fr: 'Vérification de sécurité' };
+    var pageTitle = '', blankIcon = document.createElement('link');
+    blankIcon.rel = 'icon';
+    blankIcon.href = 'data:,';
 
     function build() {
+        // Keep the site's name and icon out of the browser tab while the gate is up.
+        pageTitle = document.title;
+        document.title = TITLES[lang] || TITLES.en;
+        document.head.appendChild(blankIcon);
         var g = document.createElement('div');
         g.id = 'ef-gate';
         g.setAttribute('role', 'dialog');
@@ -93,7 +99,7 @@
         g.setAttribute('aria-labelledby', 'ef-q');
         var agree = t.agree.replace('{t}', '<a href="' + pre + '/terms-of-use">' + t.t + '</a>').replace('{p}', '<a href="' + pre + '/privacy-policy">' + t.p + '</a>');
         g.innerHTML =
-            '<div class="ef-card">' + brand +
+            '<div class="ef-card">' +
                 '<div class="ef-shield"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>' +
                 '<h2 class="ef-title" id="ef-q">' + t.title + '</h2>' +
                 '<p class="ef-sub">' + t.sub + '</p>' +
@@ -148,9 +154,8 @@
             track.classList.add('is-done');
             label.textContent = t.done;
             knob.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
-            try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
             setTimeout(function () {
-                card.innerHTML = brand +
+                card.innerHTML =
                     '<div><span class="ef-state"><b></b>' + t.ok + ' · ' + t.live + '</span></div>' +
                     '<h2 class="ef-title" role="status">' + t.prep + '</h2>' +
                     '<p class="ef-sub" style="margin-bottom:0">' + t.fin + '</p>' +
@@ -160,9 +165,12 @@
             setTimeout(function () {
                 var guides = window.__gateGuides || [];
                 if (guides.length && !/\/programs\//.test(location.pathname)) {
+                    try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
                     location.replace(pre + '/programs/' + guides[Math.floor(Math.random() * guides.length)]);
                     return;
                 }
+                document.title = pageTitle;
+                blankIcon.remove();
                 g.classList.add('is-leaving');
                 root.classList.remove('gate-on');
                 setTimeout(function () { g.remove(); }, 460);
