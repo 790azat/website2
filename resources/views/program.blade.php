@@ -22,6 +22,7 @@
 
     $title = $program['title'];
     $description = Str::limit($program['intro'], 155);
+    $pageLocales = SiteContent::programLocales($program['slug']);
 @endphp
 
 @section('content')

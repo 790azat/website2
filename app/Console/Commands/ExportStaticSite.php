@@ -27,7 +27,8 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
  * keep that prefix (mirroring the session-remembered language on the live
  * site). Search links ("q") cannot be pre-rendered and are left untouched.
  * PHP-served scripts (livewire.js, flux.js), public/ assets, a 404.html and a
- * vercel.json are written alongside.
+ * vercel.json are written alongside, as are sitemap.xml and robots.txt
+ * (rendered by the app itself, see SitemapController).
  */
 class ExportStaticSite extends Command
 {
@@ -48,7 +49,7 @@ class ExportStaticSite extends Command
     protected array $excludedPrefixes = [
         '/login', '/logout', '/register', '/forgot-password', '/reset-password',
         '/email', '/two-factor', '/user', '/dashboard', '/settings', '/livewire/update',
-        '/sitemap.xml', '/up',
+        '/up',
     ];
 
     /**
@@ -87,7 +88,7 @@ class ExportStaticSite extends Command
         $this->copyPublicAssets($files, $out);
 
         /** @var list<array{0: string, 1: array<string, string>}> $queue */
-        $queue = [['/', []], ['/captcha', []]];
+        $queue = [['/', []], ['/captcha', []], ['/sitemap.xml', []], ['/robots.txt', []]];
         $pages = 0;
 
         while ($queue !== []) {
@@ -284,7 +285,7 @@ class ExportStaticSite extends Command
         foreach ($files->allFiles(public_path(), true) as $file) {
             $relative = str_replace('\\', '/', $file->getRelativePathname());
 
-            if (in_array($relative, ['index.php', '.htaccess', 'hot'], true) || str_starts_with($relative, 'storage/')) {
+            if (in_array($relative, ['index.php', '.htaccess', 'hot', 'robots.txt'], true) || str_starts_with($relative, 'storage/')) {
                 continue;
             }
 
