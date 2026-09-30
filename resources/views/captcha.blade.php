@@ -65,6 +65,16 @@
     .ef-bar i { display: block; height: 100%; width: 0; border-radius: 99px; background: linear-gradient(90deg, #26975f, #a3d136); animation: ef-load 1.5s ease-in-out forwards; }
     @keyframes ef-load { to { width: 100%; } }
     .ef-wait { margin-top: 12px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #7a867f; }
+    .ef-lang { display: flex; gap: 4px; margin-bottom: 18px; padding: 4px; border-radius: 999px; background: #fff; border: 1px solid #e2e0d4; }
+    .ef-lang a {
+        display: inline-flex; align-items: center; gap: 7px; padding: 6px 11px; border-radius: 999px;
+        color: #4b5b52; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .08em;
+        transition: background-color .2s ease, color .2s ease;
+    }
+    .ef-lang a:hover { background: #f4f7f1; color: #072418; }
+    .ef-lang a[aria-current] { background: #edf3ea; color: #14623e; }
+    .ef-lang a:focus-visible { outline: 2px solid #14623e; outline-offset: 2px; }
+    .ef-lang svg { display: block; width: 20px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(7, 36, 24, .15); }
     .ef-foot { max-width: 420px; margin-top: 20px; font-size: 12px; line-height: 1.55; text-align: center; color: #6b7a71; }
     .ef-foot a { color: #14623e; text-decoration: underline; text-underline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) { #ef-gate * { animation: none !important; } .ef-bar i { width: 100%; } }
@@ -93,8 +103,31 @@ window.Gate = (function () {
         fr: { foot: "Le contenu suivant est informatif et éducatif et ne constitue pas un conseil financier, juridique, médical ou professionnel. Les résultats ne sont pas garantis ; votre expérience peut varier.", rights: 'Tous droits réservés.', agree: 'En continuant, vous acceptez nos {t} et notre {p}.', t: "Conditions d'utilisation", p: 'Politique de confidentialité' }
     };
 
+    var FLAGS = {
+        en: '<svg viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>',
+        es: '<svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg>',
+        fr: '<svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#FFFFFF"/><rect width="10" height="20" fill="#002654"/><rect x="20" width="10" height="20" fill="#CE1126"/></svg>'
+    };
+    var NAMES = { en: 'English', es: 'Español', fr: 'Français' };
+
+    // The page they asked for, in language l: "?lang=" links keep that form, others get the /es or /fr prefix.
+    function nextIn(l) {
+        var cut = next.search(/#/), hash = cut < 0 ? '' : next.slice(cut), url = cut < 0 ? next : next.slice(0, cut);
+        if (/[?&]lang=(?:en|es|fr)\b/.test(url)) return url.replace(/([?&]lang=)(?:en|es|fr)\b/, '$1' + l) + hash;
+        url = url.replace(/^\/(?:es|fr)(?=[\/?#]|$)/, '');
+        if (url === '' || url.charAt(0) === '?') url = '/' + url;
+        if (l !== 'en') url = '/' + l + (url.charAt(1) === '?' || url === '/' ? url.slice(1) : url);
+        return url + hash;
+    }
+
     return {
         lang: lang,
+        switcher: function (cls) {
+            return '<nav class="' + cls + '" aria-label="Language">' + ['en', 'es', 'fr'].map(function (l) {
+                return '<a href="' + location.pathname + '?next=' + encodeURIComponent(nextIn(l)) + '" hreflang="' + l + '" lang="' + l + '" title="' + NAMES[l] + '"' +
+                    (l === lang ? ' aria-current="true"' : '') + '>' + FLAGS[l] + l.toUpperCase() + '</a>';
+            }).join('') + '</nav>';
+        },
         footer: function () {
             var f = FOOT[lang];
             return f.foot + '<br>' + f.agree
@@ -130,6 +163,7 @@ window.Gate = (function () {
         g.setAttribute('aria-modal', 'true');
         g.setAttribute('aria-labelledby', 'ef-q');
         g.innerHTML =
+            Gate.switcher('ef-lang') +
             '<div class="ef-card">' +
                 '<div class="ef-shield"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>' +
                 '<h2 class="ef-title" id="ef-q">' + t.title + '</h2>' +
