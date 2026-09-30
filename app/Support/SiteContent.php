@@ -253,6 +253,17 @@ class SiteContent
     }
 
     /**
+     * Languages a main guide can be read in. Program text is translated
+     * through lang/{locale}.json, so every guide exists in every language.
+     *
+     * @return list<string>
+     */
+    public static function programLocales(string $slug): array
+    {
+        return ['en', ...self::TRANSLATION_LOCALES];
+    }
+
+    /**
      * @return array<string, mixed>|null
      */
     public static function program(string $slug): ?array
