@@ -28,7 +28,7 @@ test('disclaimer page is linked from the footer', function () {
     $this->get(route('disclaimer'))
         ->assertOk()
         ->assertSee('Investment Risk')
-        ->assertSee('Edufinance.site makes no representations');
+        ->assertSee('Flexstarsolutions.com makes no representations');
 
     $this->get(route('home'))
         ->assertOk()
