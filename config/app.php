@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'name' => 'EduFinance',
+    'name' => 'FlexStar Solutions',
 
     // Public domain used for contact email addresses (hello@, editorial@).
-    'domain' => 'edufinance.site',
+    'domain' => 'flexstarsolutions.com',
 
     /*
     |--------------------------------------------------------------------------
